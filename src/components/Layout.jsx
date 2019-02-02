@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import "./PageTemplate.css";
+import "./Layout.css";
 
 export default props => (
   <>

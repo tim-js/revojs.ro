@@ -1,8 +1,8 @@
 import React from "react";
-import PageTemplate from "../components/PageTemplate";
+import Layout from "../components/Layout";
 
 export default () => (
-  <PageTemplate>
+  <Layout>
     <h1>:( We've lost this page</h1>
-  </PageTemplate>
+  </Layout>
 );
