@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 
 import Layout from "../components/Layout";
+import Img from "../components/Img";
 
 export default props => {
   const { allSpeakersJson } = props.data;
@@ -14,7 +15,11 @@ export default props => {
       <ul>
         {speakers.map(speaker => (
           <li key={speaker.id}>
-            <Link to={`/speakers/${speaker.id}`}>{speaker.name}</Link>
+            <Link to={`/speakers/${speaker.id}`}>
+              <Img src={speaker.image} alt={speaker.name} height="50" />
+
+              {speaker.name}
+            </Link>
           </li>
         ))}
       </ul>
@@ -29,6 +34,7 @@ export const pageQuery = graphql`
         node {
           id
           name
+          image
         }
       }
     }

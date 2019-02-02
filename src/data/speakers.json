@@ -2,21 +2,25 @@
   {
     "id": "martin-hochel",
     "name": "Martin Hochel",
-    "description": "this is Martin Hochel's description"
+    "description": "this is Martin Hochel's description",
+    "image": "speakers/_martin.jpg"
   },
   {
     "id": "carmen-popoviciu",
     "name": "Carmen Popoviciu",
-    "description": "this is Carmen Popoviciu's description"
+    "description": "this is Carmen Popoviciu's description",
+    "image": "speakers/_carmen.jpg"
   },
   {
     "id": "boyan-mihaylov",
     "name": "Boyan Mihaylov",
-    "description": "this is Boyan's description"
+    "description": "this is Boyan's description",
+    "image": "speakers/_boyan.jpeg"
   },
   {
     "id": "horia-dragomir",
     "name": "Horia Dragomir",
-    "description": "this is Horia Dragomir's description"
+    "description": "this is Horia Dragomir's description",
+    "image": "speakers/_horia.jpg"
   }
 ]

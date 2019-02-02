@@ -41,8 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
         path: `/speakers/${slug(edge.node.id.toLowerCase())}/`,
         component: slash(speakerTemplate),
         context: {
-          id: edge.node.id,
-          name: edge.node.name
+          id: edge.node.id
         }
       });
     });
