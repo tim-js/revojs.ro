@@ -5,8 +5,8 @@ export default () => (
   <nav>
     <Link to="/">home</Link>
     {"."}
-    <Link to="/speakers">speakers</Link>
+    <Link to="/speakers/">speakers</Link>
     {"."}
-    <Link to="/contact">contact</Link>
+    <Link to="/contact/">contact</Link>
   </nav>
 );

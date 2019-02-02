@@ -13,7 +13,6 @@ export default props => {
 
 export const speakerDetailFragment = graphql`
   fragment SpeakerDetail on SpeakersJson {
-    # Specify the fields from the post we need.
     name
     description
   }

@@ -12,11 +12,11 @@ export default () => (
       getProps={({ isPartiallyCurrent }) => {
         return isPartiallyCurrent ? { className: "active" } : null;
       }}
-      to="/speakers"
+      to="/speakers/"
     >
       speakers
     </Link>
-    <Link activeClassName="active" to="/contact">
+    <Link activeClassName="active" to="/contact/">
       contact
     </Link>
   </nav>
