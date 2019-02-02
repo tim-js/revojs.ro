@@ -1,0 +1,18 @@
+html {
+  --darkgrey: #30343a;
+  --lightgrey: #adb3bc;
+  --primary: #f45919;
+}
+
+html {
+  color: var(--darkgrey);
+}
+
+a:link,
+a:visited {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
