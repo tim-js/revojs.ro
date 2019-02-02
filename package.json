@@ -13,10 +13,14 @@
   },
   "dependencies": {
     "gatsby": "^2.0.111",
+    "gatsby-plugin-manifest": "^2.0.17",
+    "gatsby-plugin-offline": "^2.0.22",
+    "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-json": "^2.1.8",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
     "slug": "^0.9.3"
   },
   "devDependencies": {
