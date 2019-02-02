@@ -5,16 +5,19 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "npx gatsby build",
+    "develop": "npx gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "npx gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
     "gatsby": "^2.0.111",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "gatsby-cli": "^2.4.8"
   },
   "repository": {
     "type": "git",
