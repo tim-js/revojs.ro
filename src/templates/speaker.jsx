@@ -1,15 +1,19 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
 import SpeakerDetails from "../components/SpeakerDetails";
 
 export default props => {
-  // const { name } = props.pageContext;
+  const { speakersJson } = props.data;
+
   return (
     <Layout>
-      {/* <h1>Speaker {name}</h1> */}
-      <SpeakerDetails speaker={props.data.speakersJson} />
+      <Helmet>
+        <title>{speakersJson.name}</title>
+      </Helmet>
+      <SpeakerDetails speaker={speakersJson} />
     </Layout>
   );
 };
