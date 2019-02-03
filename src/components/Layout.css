@@ -6,6 +6,7 @@ html {
 
 html {
   color: var(--darkgrey);
+  font-family: "WorkSans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:link,
@@ -15,4 +16,45 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "RobotoMono", "Courier New", Courier, monospace;
+}
+
+.faded {
+  color: var(--lightgrey);
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-LightItalic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }

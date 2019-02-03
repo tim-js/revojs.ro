@@ -6,8 +6,10 @@ export default () => (
     <h1>Welcome</h1>
 
     <p>
-      Many species of gecko have adhesive toe pads which enable them to climb
-      walls and even windows.
+      <strong>Many species</strong> of <i>gecko have adhesive toe</i> pads which
+      enable them to climb walls and even windows.
     </p>
+
+    <p className="faded">This is a light grey text.</p>
   </Layout>
 );
