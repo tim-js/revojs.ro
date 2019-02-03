@@ -12,8 +12,20 @@ exports.createPages = ({ graphql, actions }) => {
         allSpeakersJson(limit: 1000) {
           edges {
             node {
-              id,
+              id
               image
+            }
+          }
+        }
+        allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              frontmatter {
+                path
+              }
             }
           }
         }
@@ -45,6 +57,18 @@ exports.createPages = ({ graphql, actions }) => {
           id: edge.node.id,
           image: edge.node.image
         }
+      });
+    });
+
+    const blogPostTemplate = path.resolve(`src/templates/blog-post.jsx`);
+
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: blogPostTemplate,
+        context: {
+          url: node.frontmatter.path
+        } // additional data can be passed via context
       });
     });
   });
