@@ -16,7 +16,7 @@ export default props => {
         {speakers.map(speaker => (
           <li key={speaker.id}>
             <Link to={`/speakers/${speaker.id}`}>
-              <Img src={speaker.image} alt={speaker.name} height="50" />
+              <Img src={speaker.image} alt="" height="50" />
 
               {speaker.name}
             </Link>

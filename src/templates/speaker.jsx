@@ -18,7 +18,7 @@ export default props => {
 
       <h1>{name}</h1>
       <p>{description}</p>
-      <Img src={image} alt={name} height="50" />
+      <Img src={image} alt="" height="200" />
     </Layout>
   );
 };
