@@ -27,6 +27,15 @@ module.exports = {
       options: {
         trackingId: "UA-131215010-1"
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `./src/images`,
+      }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ]
 };

@@ -1,11 +1,11 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import Img from "gatsby-image";
 
 import Layout from "../components/Layout";
-import Img from "../components/Img";
 
 export default props => {
-  const { allSpeakersJson } = props.data;
+  const { allSpeakersJson, speakerImages } = props.data;
   const speakers = allSpeakersJson.edges.map(e => e.node);
 
   return (
@@ -13,15 +13,21 @@ export default props => {
       <h1>Speakers</h1>
 
       <ul>
-        {speakers.map(speaker => (
-          <li key={speaker.id}>
-            <Link to={`/speakers/${speaker.id}`}>
-              <Img src={speaker.image} alt="" height="50" />
+        {speakers.map(speaker => {
+          const imageSizes = speakerImages.edges.find(e =>
+            speaker.image.includes(e.node.base)
+          );
 
-              {speaker.name}
-            </Link>
-          </li>
-        ))}
+          return (
+            <li key={speaker.id}>
+              <Link to={`/speakers/${speaker.id}`}>
+                <Img fixed={imageSizes.node.image.fixed} alt="" />
+
+                {speaker.name}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </Layout>
   );
@@ -35,6 +41,18 @@ export const pageQuery = graphql`
           id
           name
           image
+        }
+      }
+    }
+    speakerImages: allFile(filter: { relativePath: { glob: "speakers/*" } }) {
+      edges {
+        node {
+          base
+          image: childImageSharp {
+            fixed(width: 200, height: 200, grayscale: true) {
+              ...GatsbyImageSharpFixed
+            }
+          }
         }
       }
     }

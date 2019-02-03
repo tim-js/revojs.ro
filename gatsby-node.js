@@ -12,7 +12,8 @@ exports.createPages = ({ graphql, actions }) => {
         allSpeakersJson(limit: 1000) {
           edges {
             node {
-              id
+              id,
+              image
             }
           }
         }
@@ -41,7 +42,8 @@ exports.createPages = ({ graphql, actions }) => {
         path: `/speakers/${slug(edge.node.id.toLowerCase())}/`,
         component: slash(speakerTemplate),
         context: {
-          id: edge.node.id
+          id: edge.node.id,
+          image: edge.node.image
         }
       });
     });

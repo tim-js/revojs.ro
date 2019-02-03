@@ -1,13 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
+import Img from "gatsby-image";
 
 import Layout from "../components/Layout";
-import Img from "../components/Img";
 
 export default props => {
   const {
-    speakersJson: { name, description, image }
+    speakersJson: { name, description },
+    file
   } = props.data;
 
   return (
@@ -18,17 +19,25 @@ export default props => {
 
       <h1>{name}</h1>
       <p>{description}</p>
-      <Img src={image} alt="" height="200" />
+      <Img fixed={file.image.fixed} alt="" />
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query($id: String!, $image: String!) {
     speakersJson(id: { eq: $id }) {
       name
       description
       image
+    }
+    file(relativePath: { eq: $image }) {
+      base
+      image: childImageSharp {
+        fixed(width: 400, height: 400, grayscale: true) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
   }
 `;
