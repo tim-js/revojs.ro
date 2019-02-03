@@ -28,6 +28,11 @@ h3 {
   color: var(--lightgrey);
 }
 
+/* header styles */
+.active {
+  border: 1px var(--primary) solid;
+}
+
 @font-face {
   font-family: "WorkSans";
   src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
