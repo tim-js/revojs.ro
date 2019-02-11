@@ -22,7 +22,7 @@ export default props => {
 
           return (
             <li key={speaker.id}>
-              <Link to={`/speakers/${speaker.id}`}>
+              <Link to={`/speakers/${speaker.id}`} className="speaker-link">
                 <Img fixed={imageSizes.node.image.fixed} alt="" className="speaker-img" />
                 {speaker.name}
               </Link>
