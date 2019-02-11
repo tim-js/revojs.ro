@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 export default () => (
   <Layout>
-    <h1>Welcome</h1>
+    <h1>Welcome, updated</h1>
 
     <p>
       <strong>Many species</strong> of <i>gecko have adhesive toe</i> pads which
