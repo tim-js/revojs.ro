@@ -4,6 +4,8 @@ import Img from "gatsby-image";
 
 import Layout from "../components/Layout";
 
+import "./speakers.css";
+
 export default props => {
   const { allSpeakersJson, speakerImages } = props.data;
   const speakers = allSpeakersJson.edges.map(e => e.node);
@@ -21,8 +23,7 @@ export default props => {
           return (
             <li key={speaker.id}>
               <Link to={`/speakers/${speaker.id}`}>
-                <Img fixed={imageSizes.node.image.fixed} alt="" />
-
+                <Img fixed={imageSizes.node.image.fixed} alt="" className="speaker-img" />
                 {speaker.name}
               </Link>
             </li>
