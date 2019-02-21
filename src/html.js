@@ -12,6 +12,10 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta
+          name="Description"
+          content="revo.js is a two-day JavaScript Conference in Timisoara, Romania"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
