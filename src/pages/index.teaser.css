@@ -150,7 +150,6 @@ ul li:last-child span::after {
 @media screen and (min-width: 1024px) {
   .content {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: flex-start;
   }

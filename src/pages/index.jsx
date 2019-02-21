@@ -16,7 +16,7 @@ export default () => (
         </h2>
         <div className="loading">
           <div className="progress-bar">
-            <div className="progress"></div>
+            <div className="progress" />
           </div>
           environment loading
         </div>
@@ -27,6 +27,25 @@ export default () => (
       </header>
 
       <div className="content">
+        <ul className="numbers">
+          <li>
+            <strong className="number">12</strong>
+            <span>Team Members</span>
+          </li>
+          <li>
+            <strong className="number">4036</strong>
+            <span>Slack Messages</span>
+          </li>
+          <li>
+            <strong className="number">186</strong>
+            <span>Caffeinated Beverages</span>
+          </li>
+          {/* <li>
+            <strong className="number">2GB</strong>
+            <span>Generated Materials</span>
+          </li> */}
+        </ul>
+
         <div className="contact">
           <strong className="heading">
             We are working hard to bring you a great experience.
@@ -58,25 +77,6 @@ export default () => (
             </a> */}
           </div>
         </div>
-
-        <ul className="numbers">
-          <li>
-            <strong className="number">12</strong>
-            <span>Team Members</span>
-          </li>
-          <li>
-            <strong className="number">3918</strong>
-            <span>Slack Messages</span>
-          </li>
-          <li>
-            <strong className="number">432</strong>
-            <span>Caffeinated Beverages</span>
-          </li>
-          <li>
-            <strong className="number">2GB</strong>
-            <span>Generated Materials</span>
-          </li>
-        </ul>
       </div>
     </main>
 
