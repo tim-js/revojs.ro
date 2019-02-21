@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "name": "revojs",
+  "private": false,
+  "description": "Official website for revo.js JavaScript conference",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/tim-js/revojs.ro"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/tim-js/revojs.ro/issues"
   }
 }
