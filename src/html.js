@@ -6,7 +6,7 @@ export default function HTML(props) {
     <html lang="en" {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
-        <title>revo.js conference</title>
+        <title>revo.js JavaScript Conference</title>
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
           name="viewport"
