@@ -44,18 +44,18 @@ export default () => (
             <a href="https://twitter.com/revojsro">
               <img src="twitter.svg" alt="Twitter" />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <img src="facebook.svg" alt="Facebook" />
             </a>
             <a href="#">
               <img src="instagram.svg" alt="Instagram" />
-            </a>
+            </a> */}
             <a href="https://www.linkedin.com/company/revojs">
               <img src="linkedin.svg" alt="Linkedin" />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <img src="medium.svg" alt="Medium" />
-            </a>
+            </a> */}
           </div>
         </div>
 
