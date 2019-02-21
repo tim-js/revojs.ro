@@ -1,0 +1,43 @@
+{
+  "name": "revojs",
+  "private": false,
+  "description": "Official website for revo.js JavaScript conference",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx gatsby build",
+    "develop": "npx gatsby develop",
+    "start": "npm run develop",
+    "serve": "npx gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "dependencies": {
+    "gatsby": "^2.1.14",
+    "gatsby-image": "^2.0.29",
+    "gatsby-plugin-catch-links": "^2.0.10",
+    "gatsby-plugin-google-analytics": "^2.0.13",
+    "gatsby-plugin-manifest": "^2.0.17",
+    "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-sharp": "^2.0.20",
+    "gatsby-remark-images": "^3.0.3",
+    "gatsby-source-filesystem": "^2.0.21",
+    "gatsby-transformer-json": "^2.1.8",
+    "gatsby-transformer-remark": "^2.2.3",
+    "gatsby-transformer-sharp": "^2.1.13",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "slug": "^0.9.3"
+  },
+  "devDependencies": {
+    "gatsby-cli": "^2.4.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tim-js/revojs.ro"
+  },
+  "bugs": {
+    "url": "https://github.com/tim-js/revojs.ro/issues"
+  }
+}
