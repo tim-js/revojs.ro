@@ -3,6 +3,8 @@ const path = require(`path`);
 const slug = require(`slug`);
 const slash = require(`slash`);
 
+return;
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
