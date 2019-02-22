@@ -60,21 +60,41 @@ export default () => (
           <br />
           <br />
           <div className="social-media">
-            <a href="https://twitter.com/revojsro">
+            <a
+              href="https://twitter.com/revojsro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="twitter.svg" alt="Twitter" />
             </a>
-            {/* <a href="#">
+            <a
+              href="https://www.facebook.com/revojsro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="facebook.svg" alt="Facebook" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/revo.js/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="instagram.svg" alt="Instagram" />
-            </a> */}
-            <a href="https://www.linkedin.com/company/revojs">
+            </a>
+            <a
+              href="https://www.linkedin.com/company/revojs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="linkedin.svg" alt="Linkedin" />
             </a>
-            {/* <a href="#">
+            <a
+              href="https://medium.com/revo-js"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="medium.svg" alt="Medium" />
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
