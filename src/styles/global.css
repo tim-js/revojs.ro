@@ -47,43 +47,43 @@ h3,
 
 @font-face {
   font-family: "WorkSans";
-  src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+  src: url("../fonts/WorkSans-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "WorkSans";
-  src: url("../fonts/WorkSans-SemiBold.ttf") format("truetype");
+  src: url("../fonts/WorkSans-SemiBold.woff") format("woff");
   font-weight: bold;
   font-display: swap;
 }
 
 @font-face {
   font-family: "RobotoMono";
-  src: url("../fonts/RobotoMono-Light.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-Light.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("../fonts/RobotoMono-LightItalic.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-LightItalic.woff") format("woff");
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("../fonts/RobotoMono-Bold.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-Bold.woff") format("woff");
   font-weight: bold;
   font-display: swap;
 }
 @font-face {
   font-family: "RobotoMono";
-  src: url("../fonts/RobotoMono-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "SometypeMono";
-  src: url("../fonts/SometypeMono-Bold.ttf") format("truetype");
+  src: url("../fonts/SometypeMono-Bold.woff") format("woff");
   font-weight: bold;
   font-display: swap;
 }
