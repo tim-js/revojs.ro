@@ -20,7 +20,7 @@ export default () => (
           </div>
           environment loading
         </div>
-        <time className="heading" datetime="2019-10-03">
+        <time className="heading" dateTime="2019-10-03">
           Oct.3-4.2019
         </time>
         <span className="location">Timisoara_RO</span>
