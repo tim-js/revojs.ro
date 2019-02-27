@@ -88,7 +88,7 @@ export default () => (
             >
               <img src="linkedin.svg" alt="Linkedin" />
             </a>
-            <!--
+            {/*
             <a
               href="https://medium.com/revo-js"
               target="_blank"
@@ -96,7 +96,7 @@ export default () => (
             >
               <img src="medium.svg" alt="Medium" />
             </a>
-            -->
+            */}
           </div>
         </div>
       </div>
