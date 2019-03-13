@@ -29,15 +29,15 @@ export default () => (
       <div className="content">
         <ul className="numbers">
           <li>
-            <strong className="number">12</strong>
+            <strong className="number">13</strong>
             <span>Team Members</span>
           </li>
           <li>
-            <strong className="number">4281</strong>
+            <strong className="number">4425</strong>
             <span>Slack Messages</span>
           </li>
           <li>
-            <strong className="number">201</strong>
+            <strong className="number">233</strong>
             <span>Caffeinated Beverages</span>
           </li>
           {/* <li>
