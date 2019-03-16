@@ -3,6 +3,12 @@ import { Link } from "gatsby";
 
 import "./footer.scss";
 
+import facebook from "@assets/facebook.svg";
+import twitter from "@assets/twitter.svg";
+import instagram from "@assets/instagram.svg";
+import linkedin from "@assets/linkedin.svg";
+import medium from "@assets/medium.svg";
+
 export default () => (
   <footer className="footer">
     <nav>
@@ -54,28 +60,28 @@ export default () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="twitter.svg" alt="Twitter" />
+            <img src={twitter} alt="Twitter" />
           </a>
           <a
             href="https://www.facebook.com/revojsro"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="facebook.svg" alt="Facebook" />
+            <img src={facebook} alt="Facebook" />
           </a>
           <a
             href="https://www.instagram.com/revo.js/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="instagram.svg" alt="Instagram" />
+            <img src={instagram} alt="Instagram" />
           </a>
           <a
             href="https://www.linkedin.com/company/revojs"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="linkedin.svg" alt="Linkedin" />
+            <img src={linkedin} alt="Linkedin" />
           </a>
           {/*
           <a
@@ -83,7 +89,7 @@ export default () => (
           target="_blank"
           rel="noopener noreferrer"
           >
-          <img src="medium.svg" alt="Medium" />
+          <img src={medium} alt="Medium" />
           </a>
           */}
         </div>
