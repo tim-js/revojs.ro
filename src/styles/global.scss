@@ -2,6 +2,7 @@
 @import "../styles/mixins";
 
 :root {
+  --lightgrey: #dadce1;
   --darkgrey: #30343a;
   --primary: #f45919;
   --background-dark: #15161a;
@@ -42,6 +43,8 @@ h2,
 h3,
 .heading {
   @include font(mono);
+  margin: 0;
+  padding: 0;
 }
 
 .number {
