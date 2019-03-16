@@ -63,6 +63,7 @@ module.exports = {
         path: `${__dirname}/src/blog`
       }
     },
-    `gatsby-plugin-catch-links`
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-sass`
   ]
 };
