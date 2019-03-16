@@ -37,14 +37,6 @@
   @include clip-hex(30%);
 }
 
-// .speaker-info-inner,
-// .speaker-img {
-//   @include breakpoint(sm) {
-//     width: calc((100vw - 2 * var(--spacing-content)) / 4);
-//     height: calc((100vw - 2 * var(--spacing-content)) / 4);
-//   }
-// }
-
 .speaker-info {
   color: white;
   display: flex;
@@ -73,7 +65,6 @@
 }
 
 .speaker-name {
-  font-size: 10vw;
   display: block;
   margin-bottom: 0.5em;
   margin-top: 0;
