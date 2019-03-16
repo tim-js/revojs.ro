@@ -1,29 +1,65 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const PartialMatchLink = props => (
+import "./header.scss";
+
+const PartialMatchLink = ({ to, text, ...props }) => (
   <Link
     getProps={({ isPartiallyCurrent }) => {
       return isPartiallyCurrent ? { className: "active" } : null;
     }}
-    to={props.to}
+    to={to}
+    {...props}
   >
-    {props.text}
+    {text}
   </Link>
 );
 
 export default () => (
-  <nav>
-    <Link to="/">
-      <img src="/logo-revo.js.svg" alt="revo.js" height="50" />
-    </Link>
+  <>
+    <input type="checkbox" id="toggle-navigation" />
 
-    <PartialMatchLink to="/speakers/" text="speakers" />
-    {" | "}
-    <PartialMatchLink to="/blog/" text="blog" />
-    {" | "}
-    <Link activeClassName="active" to="/contact/">
-      contact
-    </Link>
-  </nav>
+    <div className="header">
+      <Link to="/">
+        <img
+          src="logo-revojs.svg"
+          alt="revo.js"
+          height="50"
+          className="header-logo"
+        />
+      </Link>
+
+      <nav>
+        <label htmlFor="toggle-navigation" id="toggle-navigation-button" />
+        <ul className="header-navigation">
+          <li>
+            <PartialMatchLink
+              to="/speakers/"
+              text="Speakers"
+              className="main-link"
+            />
+          </li>
+          <li>
+            <Link activeClassName="active" to="/cfp/" className="main-link">
+              Call for Papers
+            </Link>
+          </li>
+          <li>
+            <Link activeClassName="active" to="/tickets/" className="main-link">
+              Tickets
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClassName="active"
+              to="/supporters/"
+              className="main-link"
+            >
+              Our Supporters
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </>
 );

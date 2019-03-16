@@ -1,0 +1,97 @@
+@import "../styles/mixins";
+@import "../styles/fonts";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--background-dark);
+  transition: all 0.5s;
+}
+
+.header-logo {
+  display: block;
+}
+
+.header-navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.5s;
+
+  @include breakpoint(sm, min) {
+    display: flex;
+  }
+  @include breakpoint(sm, max) {
+    opacity: 0;
+    padding: var(--spacing-content);
+    transform: translateX(-100%);
+    position: fixed;
+    top: calc(50px + 6em);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: calc(100vh - 50px - 6em);
+    background-color: #060b10;
+    border-top: 1px var(--darkgrey) solid;
+    border-bottom: 1px var(--darkgrey) solid;
+    text-align: right;
+  }
+}
+
+.header-navigation > li:not(:first-child) {
+  @include breakpoint(sm) {
+    margin-left: 2em;
+  }
+  @include breakpoint(sm, max) {
+    line-height: 2em;
+  }
+}
+
+.main-link:link,
+.main-link:visited {
+  @include font(mono);
+  font-weight: bold;
+  color: #646974;
+  transition: all 0.3s;
+}
+.main-link:hover {
+  color: white;
+}
+.main-link.active {
+  color: var(--primary);
+}
+
+#toggle-navigation {
+  opacity: 0;
+  // this is to prevent scroll to top
+  // because the browser automatically focuses the input
+  position: fixed;
+
+  @include breakpoint(sm, max) {
+    &:checked ~ .header .header-navigation {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+#toggle-navigation-button {
+  @include breakpoint(sm, max) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    cursor: pointer;
+    z-index: 101;
+  }
+  @include breakpoint(sm, min) {
+    display: none;
+  }
+}

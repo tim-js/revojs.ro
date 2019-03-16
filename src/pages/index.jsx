@@ -19,10 +19,8 @@ export default () => {
         <span className="location">Timisoara, RO</span>
       </header>
 
-      <main role="main">
-        <IndexSpeakers />
-        <IndexSponsors />
-      </main>
+      <IndexSpeakers />
+      <IndexSponsors />
     </Layout>
   );
 };
