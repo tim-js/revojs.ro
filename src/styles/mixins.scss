@@ -1,0 +1,23 @@
+$breakpoint-sm: 767px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+@mixin breakpoint($point) {
+  @if $point == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $point == md {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $point == sm {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $point) {
+      @content;
+    }
+  }
+}

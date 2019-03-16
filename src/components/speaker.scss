@@ -1,0 +1,121 @@
+@import "../styles/mixins";
+
+@mixin clip-hex($cutoff) {
+  clip-path: polygon(
+    $cutoff 0%,
+    100% 0%,
+    100% calc(100% - #{$cutoff}),
+    calc(100% - #{$cutoff}) 100%,
+    0% 100%,
+    0% $cutoff
+  );
+}
+
+.speaker {
+  position: relative;
+  width: 100%;
+
+  @include breakpoint(sm) {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+
+  }
+}
+
+.speaker-info,
+.speaker-info-inner,
+.speaker-img {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+  flex: 1;
+  overflow: hidden;
+}
+
+.speaker-img {
+  @include clip-hex(30%);
+}
+
+// .speaker-info-inner,
+// .speaker-img {
+//   @include breakpoint(sm) {
+//     width: calc((100vw - 2 * var(--spacing-body)) / 4);
+//     height: calc((100vw - 2 * var(--spacing-body)) / 4);
+//   }
+// }
+
+.speaker-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include breakpoint(sm) {
+    @include clip-hex(30%);
+    transform: translateY(-30%);
+    background-color: var(--primary);
+  }
+}
+
+.speaker-info-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include breakpoint(sm) {
+    @include clip-hex(30%);
+    margin: 3px;
+    background-color: var(--background-dark);
+    width: calc(100% - 2 * 3px);
+    height: calc(100% - 2 * 3px);
+  }
+}
+
+.speaker-name {
+  font-size: 10vw;
+  display: block;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+
+  @include breakpoint(sm) {
+    font-size: 5vw;
+    padding: 0 15%;
+  }
+  @include breakpoint(md) {
+    font-size: 2.6vw;
+  }
+}
+.speaker-title {
+  display: block;
+
+  @include breakpoint(sm) {
+    padding: 0 15%;
+  }
+}
+.speaker-company {
+  display: block;
+
+  @include breakpoint(sm) {
+    padding: 0 15%;
+  }
+}
+
+.speaker:hover .speaker-img {
+  @include breakpoint(sm) {
+    @include clip-hex(20%);
+    transform: translateY(-5%) translateX(5%);
+  }
+}
+.speaker:hover .speaker-info {
+  @include breakpoint(sm) {
+    @include clip-hex(20%);
+    transform: translateY(-25%) translateX(-5%);
+  }
+}
+.speaker:hover .speaker-info-inner {
+  @include breakpoint(sm) {
+    @include clip-hex(20%);
+    background: var(--primary);
+  }
+}

@@ -1,8 +1,10 @@
-html {
+:root {
   --darkgrey: #30343a;
   --lightgrey: #adb3bc;
   --primary: #f45919;
   --background-dark: #15161a;
+
+  --spacing-body: 8.33vw;
 }
 
 html {
@@ -11,6 +13,11 @@ html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   backface-visibility: hidden;
+}
+
+body {
+  margin: 0;
+  padding: var(--spacing-body);
 }
 
 a:link,
