@@ -1,57 +1,3 @@
-:root {
-  --darkgrey: #30343a;
-  --lightgrey: #adb3bc;
-  --primary: #f45919;
-  --background-dark: #15161a;
-
-  --spacing-body: 8.33vw;
-}
-
-html {
-  color: var(--darkgrey);
-  font-family: "WorkSans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
-  backface-visibility: hidden;
-}
-
-body {
-  margin: 0;
-  padding: var(--spacing-body);
-}
-
-a:link,
-a:visited {
-  color: var(--primary);
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-h1,
-h2,
-h3,
-.heading {
-  font-family: "RobotoMono", "Courier New", Courier, monospace;
-}
-
-.number {
-  font-family: "SometypeMono", "Courier New", Courier, monospace;
-}
-
-.faded {
-  color: var(--lightgrey);
-}
-.highlight {
-  color: var(--primary);
-}
-
-/* header styles */
-.active {
-  border: 1px var(--primary) solid;
-}
-
 @font-face {
   font-family: "WorkSans";
   src: url("../fonts/WorkSans-Regular.woff") format("woff");
@@ -93,4 +39,14 @@ h3,
   src: url("../fonts/SometypeMono-Bold.woff") format("woff");
   font-weight: bold;
   font-display: swap;
+}
+
+@mixin font($type) {
+  @if $type == number {
+    font-family: "SometypeMono", "Courier New", Courier, monospace;
+  } @else if $type == mono {
+    font-family: "RobotoMono", "Courier New", Courier, monospace;
+  } @else {
+    font-family: "WorkSans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 }

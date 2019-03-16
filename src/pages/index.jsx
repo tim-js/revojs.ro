@@ -1,5 +1,5 @@
 import React from "react";
-// import Layout from "../components/Layout";
+import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 
 import Speaker from "../components/Speaker";
@@ -11,7 +11,7 @@ export default props => {
   const speakers = allSpeakersJson.edges.map(e => e.node);
 
   return (
-    <>
+    <Layout>
       <h1 href="/" className="logo">
         <img src="logo-revojs.svg" alt="revo.js" height="64" />
       </h1>
@@ -49,9 +49,7 @@ export default props => {
           </ul>
         </div>
       </main>
-
-      <p className="copyright">&copy; revo.js 2019. All rights reserved.</p>
-    </>
+    </Layout>
   );
 };
 

@@ -14,7 +14,7 @@ export default props => (
       />
     </Helmet>
     <Header />
-    <main role="main">{props.children}</main>
+    {props.children}
     <Footer />
   </>
 );

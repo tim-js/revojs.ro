@@ -1,0 +1,50 @@
+@import "../styles/fonts";
+
+:root {
+  --darkgrey: #30343a;
+  --primary: #f45919;
+  --background-dark: #15161a;
+
+  --spacing-content: 8.33vw;
+}
+
+html {
+  @include font(default);
+  // color: var(--darkgrey);
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+
+  background-color: var(--background-dark);
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+a:link,
+a:visited {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+.heading {
+  @include font(mono);
+}
+
+.number {
+  @include font(number);
+}
+
+.highlight {
+  color: var(--primary);
+}

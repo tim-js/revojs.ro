@@ -1,4 +1,4 @@
-require("./src/styles/global.css");
+require("./src/styles/global.scss");
 
 exports.onServiceWorkerUpdateReady = () => {
   window.location.reload();
