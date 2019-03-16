@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import Layout from "../components/Layout";
-// import '../css/index.css'; // add some style if you want!
+import Layout from "@components/Layout";
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;

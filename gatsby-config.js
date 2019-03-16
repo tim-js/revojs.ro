@@ -64,6 +64,18 @@ module.exports = {
       }
     },
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@styles": "src/styles",
+          "@assets": "src/assets"
+        },
+        extensions: ["jsx", "scss", "js"]
+      }
+    }
   ]
 };

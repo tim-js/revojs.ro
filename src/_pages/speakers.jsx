@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 
-import Layout from "../components/Layout";
-import Speaker from "../components/Speaker";
+import Layout from "@components/Layout";
+import Speaker from "@components/Speaker";
 
 export default props => {
   const { allSpeakersJson, speakerImages } = props.data;

@@ -1,8 +1,8 @@
 import React from "react";
 
-import Layout from "../components/Layout";
-import IndexSpeakers from "../components/index/speakers";
-import IndexSponsors from "../components/index/sponsors";
+import Layout from "@components/Layout";
+import IndexSpeakers from "@components/index/speakers";
+import IndexSponsors from "@components/index/sponsors";
 
 import "./index.scss";
 

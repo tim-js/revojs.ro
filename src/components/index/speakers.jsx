@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
 
-import Speaker from "../Speaker";
+import Speaker from "@components/Speaker";
 
 import "./speakers.scss";
 
