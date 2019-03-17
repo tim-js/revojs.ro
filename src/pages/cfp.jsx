@@ -32,7 +32,7 @@ export default () => {
         </Content>
       </Header>
 
-      <Section light content className="cfp-content">
+      <Section light content>
         <section>
           <h2>Topics</h2>
           <p>
