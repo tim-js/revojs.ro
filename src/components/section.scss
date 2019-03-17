@@ -1,15 +1,9 @@
-@import "../styles/mixins";
-
+.section {
+  padding: var(--spacing-content);
+}
 .section--light {
   background: white;
-  padding: var(--spacing-content);
   color: var(--text-dark);
-}
-.section--content {
-  @include breakpoint(md) {
-    padding-left: calc((100% - 650px) / 2);
-    padding-right: calc((100% - 650px) / 2);
-  }
 }
 .section--centered {
   text-align: center;

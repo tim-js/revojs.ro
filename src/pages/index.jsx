@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
+import IndexUpdates from "@components/index/updates";
 import IndexSpeakers from "@components/index/speakers";
 import IndexSponsors from "@components/index/sponsors";
 
@@ -20,6 +21,7 @@ export default () => {
         <span className="location">Timisoara, RO</span>
       </Header>
 
+      <IndexUpdates />
       <IndexSpeakers />
       <IndexSponsors />
     </Layout>

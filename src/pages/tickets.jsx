@@ -18,7 +18,7 @@ export default () => {
         </Content>
       </Header>
 
-      <Section light content>
+      <Section light>
         <p>
           Follow us on social media to be notified when tickets become
           available.

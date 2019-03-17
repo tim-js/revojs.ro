@@ -1,0 +1,49 @@
+@import "../../styles/mixins";
+
+.updates-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  margin-top: 6em;
+  display: grid;
+  grid-gap: var(--spacing-content);
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+}
+
+.updates-list a {
+  &:link,
+  &:visited {
+    color: white;
+    display: block;
+    border-top: 2px white solid;
+    padding-top: 1em;
+    position: relative;
+    transition: border 0.3s;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("/arrow.svg");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -31px;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border-color: var(--primary);
+
+    &::before {
+      right: -10px;
+    }
+  }
+}
