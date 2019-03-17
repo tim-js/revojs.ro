@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 
 import "./header.scss";
@@ -15,51 +15,66 @@ const PartialMatchLink = ({ to, text, ...props }) => (
   </Link>
 );
 
-export default () => (
-  <>
-    <input type="checkbox" id="toggle-navigation" />
+export default () => {
+  const [showMenu, toggleMenu] = useState(false);
 
-    <div className="header">
-      <Link to="/">
-        <img
-          src="logo-revojs.svg"
-          alt="revo.js"
-          height="50"
-          className="header-logo"
-        />
-      </Link>
+  return (
+    <>
+      <input type="checkbox" id="toggle-navigation" />
 
-      <nav>
-        <label htmlFor="toggle-navigation" id="toggle-navigation-button" />
-        <ul className="header-navigation">
-          <li>
-            <PartialMatchLink
-              to="/speakers/"
-              text="Speakers"
-              className="main-link"
-            />
-          </li>
-          <li>
-            <Link activeClassName="active" to="/cfp/" className="main-link">
-              Call for Papers
-            </Link>
-          </li>
-          <li>
-            <Link activeClassName="active" to="/tickets/" className="main-link">
-              Tickets
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClassName="active"
-              to="/supporters/"
-              className="main-link"
-            >
-              Our Supporters
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </>
-);
+      <div className={`header ${showMenu ? 'is-active' : ''}`}>
+        <Link to="/">
+          <img
+            src="logo-revojs.svg"
+            alt="revo.js"
+            height="50"
+            className="header-logo"
+          />
+        </Link>
+
+        <nav>
+          <label
+            htmlFor="toggle-navigation"
+            id="toggle-navigation-button"
+            className="hamburger-box"
+            onClick={() => toggleMenu(!showMenu)}
+          >
+            <span className="hamburger-inner" />
+          </label>
+          <ul className="header-navigation">
+            <li>
+              <PartialMatchLink
+                to="/speakers/"
+                text="Speakers"
+                className="main-link"
+              />
+            </li>
+            <li>
+              <Link activeClassName="active" to="/cfp/" className="main-link">
+                Call for Papers
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClassName="active"
+                to="/tickets/"
+                className="main-link"
+              >
+                Tickets
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClassName="active"
+                to="/supporters/"
+                className="main-link"
+              >
+                Our Supporters
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </>
+  );
+};

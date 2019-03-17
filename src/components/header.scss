@@ -1,11 +1,13 @@
 @import "../styles/mixins";
 @import "../styles/fonts";
 
+$darker-background: #060b10;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3em;
+  padding: 2em;
   position: fixed;
   top: 0;
   right: 0;
@@ -13,10 +15,23 @@
   z-index: 100;
   background: var(--background-dark);
   transition: all 0.5s;
+
+  .is-scrolled & {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    background: $darker-background;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 }
 
 .header-logo {
   display: block;
+  transform: all 0.3s;
+
+  .is-scrolled & {
+    height: 25px;
+  }
 }
 
 .header-navigation {
@@ -30,18 +45,24 @@
   }
   @include breakpoint(sm, max) {
     opacity: 0;
-    padding: var(--spacing-content);
-    transform: translateX(-100%);
+    padding: 2em;
     position: fixed;
-    top: calc(50px + 6em);
+    top: calc(50px + 4em);
     left: 0;
     right: 0;
     bottom: 0;
-    min-height: calc(100vh - 50px - 6em);
-    background-color: #060b10;
+    min-height: calc(100vh - 50px - 4em);
+    background-color: $darker-background;
     border-top: 1px var(--darkgrey) solid;
     border-bottom: 1px var(--darkgrey) solid;
     text-align: right;
+
+    transition: top 0.3s;
+
+    .is-scrolled & {
+      top: calc(25px + 2em);
+      min-height: calc(100vh - 25px - 2em);
+    }
   }
 }
 
@@ -85,13 +106,66 @@
 #toggle-navigation-button {
   @include breakpoint(sm, max) {
     display: block;
-    width: 50px;
-    height: 50px;
-    background: #fff;
     cursor: pointer;
     z-index: 101;
   }
   @include breakpoint(sm, min) {
     display: none;
+  }
+}
+
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition-duration: 75ms;
+  transition-property: transform;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.hamburger-inner {
+  top: 50%;
+  display: block;
+  margin-top: -2px;
+
+  .is-active & {
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: rotate(45deg);
+  }
+}
+.hamburger-inner::before {
+  display: block;
+  content: "";
+  top: -8px;
+  transition: top 75ms ease 0.12s, opacity 75ms ease;
+
+  .is-active & {
+    top: 0;
+    transition: top 75ms ease, opacity 75ms ease 0.12s;
+    opacity: 0;
+  }
+}
+.hamburger-inner::after {
+  display: block;
+  content: "";
+  bottom: -8px;
+  transition: bottom 75ms ease 0.12s,
+    transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+  .is-active & {
+    bottom: 0;
+    transition: bottom 75ms ease,
+      transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+    transform: rotate(-90deg);
   }
 }
