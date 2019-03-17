@@ -1,6 +1,13 @@
+@import "../../styles/mixins";
+
 .page-header {
-  min-height: 100vh;
   flex: 1;
-  padding-left: var(--spacing-content);
-  padding-right: var(--spacing-content);
+  padding: var(--spacing-content);
+
+  @include breakpoint(md, max) {
+    padding-top: calc(var(--spacing-content) + 12rem);
+  }
+  @include breakpoint(md, min) {
+    min-height: calc(100vh - 2 * var(--spacing-content));
+  }
 }

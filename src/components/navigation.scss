@@ -13,7 +13,6 @@ $darker-background: #060b10;
   right: 0;
   left: 0;
   z-index: 100;
-  background: var(--background-dark);
   transition: all 0.5s;
 
   .is-scrolled & {
@@ -40,10 +39,10 @@ $darker-background: #060b10;
   margin: 0;
   transition: opacity 0.5s;
 
-  @include breakpoint(sm, min) {
+  @include breakpoint(md, min) {
     display: flex;
   }
-  @include breakpoint(sm, max) {
+  @include breakpoint(md, max) {
     opacity: 0;
     padding: 2em;
     position: fixed;
@@ -72,10 +71,10 @@ $darker-background: #060b10;
 }
 
 .header-navigation > li:not(:first-child) {
-  @include breakpoint(sm) {
+  @include breakpoint(md) {
     margin-left: 2em;
   }
-  @include breakpoint(sm, max) {
+  @include breakpoint(md, max) {
     line-height: 2em;
   }
 }
@@ -95,12 +94,12 @@ $darker-background: #060b10;
 }
 
 #toggle-navigation-button {
-  @include breakpoint(sm, max) {
+  @include breakpoint(md, max) {
     display: block;
     cursor: pointer;
     z-index: 101;
   }
-  @include breakpoint(sm, min) {
+  @include breakpoint(md, min) {
     display: none;
   }
 }

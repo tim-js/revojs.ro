@@ -2,20 +2,24 @@
 @import "../styles/fonts";
 
 .cfp-header {
-  align-items: flex-start;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-
-  // text-align: center;
-
   @include breakpoint(md) {
+    padding-right: calc(40vw);
+
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
     background: url("/cfp_graphic.svg") no-repeat;
-    background-position-x: 150%;
-    background-position-y: 80%;
+    background-position-x: 100%;
+    background-position-y: 50%;
+
+    background-size: 50% 50%;
   }
   @include breakpoint(lg) {
     background-position-x: 90%;
+    background-position-y: 90%;
+    background-size: auto auto;
   }
 }
 
