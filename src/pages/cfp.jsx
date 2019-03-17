@@ -26,7 +26,7 @@ export default () => {
           <br />
           <br />
           <br />
-          <Button href="#" white>
+          <Button href="#">
             Submit a Proposal Now
           </Button>
         </Content>
