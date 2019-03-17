@@ -14,7 +14,7 @@ export default () => {
         <h1>
           A two-day JavaScript <strong className="highlight">conference</strong>
         </h1>
-        <time className="heading" dateTime="2019-10-03">
+        <time className="mono" dateTime="2019-10-03">
           Oct.3-4.2019
         </time>
         <span className="location">Timisoara, RO</span>
