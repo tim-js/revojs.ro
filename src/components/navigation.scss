@@ -2,12 +2,15 @@
 @import "../styles/fonts";
 
 $darker-background: #060b10;
+$menu-height: 150px;
+$menu-height-scrolled: 60px;
 
-.header {
+.navigation {
+  height: $menu-height;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
+  padding: 0 2em;
   position: fixed;
   top: 0;
   right: 0;
@@ -18,22 +21,23 @@ $darker-background: #060b10;
   .is-scrolled & {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
     background: $darker-background;
+    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
 
-    padding-top: 1em;
-    padding-bottom: 1em;
+    height: $menu-height-scrolled;
   }
 }
 
-.header-logo {
+.navigation-logo {
   display: block;
-  transform: all 0.3s;
+  transition: all 0.3s;
 
   .is-scrolled & {
-    height: 25px;
+    transform: scale(0.6);
+    transform-origin: center left;
   }
 }
 
-.header-navigation {
+.navigation-menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -47,21 +51,21 @@ $darker-background: #060b10;
     padding: 2em;
     position: fixed;
     transform: translateX(-100%);
-    top: calc(50px + 4em);
+    top: $menu-height;
     left: 0;
     right: 0;
     bottom: 0;
-    min-height: calc(100vh - 50px - 4em);
+    min-height: calc(100vh - $menu-height);
     background-color: $darker-background;
     border-top: 1px var(--text-dark) solid;
     border-bottom: 1px var(--text-dark) solid;
     text-align: right;
 
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, top 0.3s;
 
     .is-scrolled & {
-      top: calc(25px + 2em);
-      min-height: calc(100vh - 25px - 2em);
+      top: $menu-height-scrolled;
+      min-height: calc(100vh - $menu-height-scrolled);
     }
     .is-active & {
       transform: translateX(0);
@@ -70,7 +74,7 @@ $darker-background: #060b10;
   }
 }
 
-.header-navigation > li:not(:first-child) {
+.navigation-menu > li:not(:first-child) {
   @include breakpoint(md) {
     margin-left: 2em;
   }
@@ -94,10 +98,10 @@ $darker-background: #060b10;
 }
 
 #toggle-navigation-button {
+  height: 18px;
   @include breakpoint(md, max) {
     display: block;
     cursor: pointer;
-    z-index: 101;
   }
   @include breakpoint(md, min) {
     display: none;

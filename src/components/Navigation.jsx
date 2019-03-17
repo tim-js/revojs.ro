@@ -23,9 +23,14 @@ export default () => {
 
   return (
     <>
-      <div className={`header ${showMenu ? "is-active" : ""}`}>
+      <div className={`navigation ${showMenu ? "is-active" : ""}`}>
         <Link to="/">
-          <img src={logo} alt="revo.js" height="50" className="header-logo" />
+          <img
+            src={logo}
+            alt="revo.js"
+            height="40"
+            className="navigation-logo"
+          />
         </Link>
 
         <nav>
@@ -35,7 +40,7 @@ export default () => {
           >
             <Hamburger />
           </label>
-          <ul className="header-navigation">
+          <ul className="navigation-menu">
             <li>
               <PartialMatchLink
                 to="/speakers/"
