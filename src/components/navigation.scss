@@ -54,8 +54,8 @@ $darker-background: #060b10;
     bottom: 0;
     min-height: calc(100vh - 50px - 4em);
     background-color: $darker-background;
-    border-top: 1px var(--darkgrey) solid;
-    border-bottom: 1px var(--darkgrey) solid;
+    border-top: 1px var(--text-dark) solid;
+    border-bottom: 1px var(--text-dark) solid;
     text-align: right;
 
     transition: opacity 0.3s;

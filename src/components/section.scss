@@ -3,7 +3,7 @@
 .section--light {
   background: white;
   padding: var(--spacing-content);
-  color: var(--darkgrey);
+  color: var(--text-dark);
 }
 .section--content {
   @include breakpoint(md) {

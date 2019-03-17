@@ -1,4 +1,6 @@
 .page-header {
   min-height: 100vh;
   flex: 1;
+  padding-left: var(--spacing-content);
+  padding-right: var(--spacing-content);
 }

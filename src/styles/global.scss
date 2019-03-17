@@ -3,16 +3,18 @@
 
 :root {
   --lightgrey: #dadce1;
-  --darkgrey: #30343a;
   --primary: #f45919;
   --background-dark: #15161a;
 
+  --text-dark: #30343a;
+  --text-light: #979da7;
+
   --spacing-content: 8.33vw;
+  --width-content: 690px;
 }
 
 html {
   @include font(default);
-  // color: var(--darkgrey);
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   backface-visibility: hidden;
@@ -60,7 +62,7 @@ h1 {
   font-size: 4rem;
 
   @include breakpoint(md) {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 }
 

@@ -1,0 +1,29 @@
+@import "../styles/mixins";
+@import "../styles/fonts";
+
+.cfp-header {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  // text-align: center;
+
+  @include breakpoint(md) {
+    background: url("/cfp_graphic.svg") no-repeat;
+    background-position-x: 150%;
+    background-position-y: 80%;
+  }
+  @include breakpoint(lg) {
+    background-position-x: 90%;
+  }
+}
+
+.cfp-text {
+  color: var(--text-light);
+}
+
+.cfp-highlight {
+  @include font(mono);
+  color: var(--primary);
+}

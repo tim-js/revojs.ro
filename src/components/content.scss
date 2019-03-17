@@ -1,0 +1,10 @@
+@import "../styles/mixins";
+
+.content {
+  @include breakpoint(md) {
+    width: var(--width-content);
+  }
+}
+.content--centered {
+  margin: 0 auto;
+}
