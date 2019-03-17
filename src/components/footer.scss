@@ -77,6 +77,11 @@
 .footer-email {
   @include font(mono);
   font-weight: bold;
+  display: block;
+
+  @include breakpoint(md) {
+    text-align: right;
+  }
 }
 .copyright {
   font-size: 1.2rem;
