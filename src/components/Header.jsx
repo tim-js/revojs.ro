@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
+import Hamburger from "@components/layout/Hamburger";
+
 import "./header.scss";
 
 const PartialMatchLink = ({ to, text, ...props }) => (
@@ -22,7 +24,7 @@ export default () => {
     <>
       <input type="checkbox" id="toggle-navigation" />
 
-      <div className={`header ${showMenu ? 'is-active' : ''}`}>
+      <div className={`header ${showMenu ? "is-active" : ""}`}>
         <Link to="/">
           <img
             src="logo-revojs.svg"
@@ -36,10 +38,9 @@ export default () => {
           <label
             htmlFor="toggle-navigation"
             id="toggle-navigation-button"
-            className="hamburger-box"
             onClick={() => toggleMenu(!showMenu)}
           >
-            <span className="hamburger-inner" />
+            <Hamburger />
           </label>
           <ul className="header-navigation">
             <li>
