@@ -40,7 +40,7 @@ export default () => {
             tighter description? Here are some additional hints:
           </p>
 
-          <ul>
+          <ul className="bullet">
             <li>Hot topics</li>
             <li>Crazy ideas</li>
             <li>Language fundamentals</li>

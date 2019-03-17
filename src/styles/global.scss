@@ -69,9 +69,30 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  margin-top: 80px;
+  margin-bottom: 32px;
 }
 
 h3 {
   font-size: 1.8rem;
   color: var(--primary);
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 16px 0;
+}
+
+ul.bullet {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul.bullet > li {
+  background: url("/logo-shape.svg") no-repeat;
+  background-size: 2.5em;
+  background-position: 0 0.65em;
+  padding-left: 20px;
+  line-height: 2em;
 }
