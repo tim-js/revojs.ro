@@ -8,6 +8,7 @@ import twitter from "@assets/twitter.svg";
 import instagram from "@assets/instagram.svg";
 import linkedin from "@assets/linkedin.svg";
 // import medium from "@assets/medium.svg";
+import revojs from "@assets/revo.js.svg";
 
 export default () => (
   <footer className="footer">
@@ -99,6 +100,9 @@ export default () => (
       </div>
     </nav>
 
-    <p className="copyright">&copy; revo.js 2019. All rights reserved.</p>
+    <p className="copyright">
+      &copy; <img className="revojs-text" src={revojs} alt="revo.js" /> 2019.
+      All rights reserved.
+    </p>
   </footer>
 );
