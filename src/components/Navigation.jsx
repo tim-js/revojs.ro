@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Hamburger from "@components/layout/Hamburger";
 
-import "./header.scss";
+import "./navigation.scss";
 
 const PartialMatchLink = ({ to, text, ...props }) => (
   <Link

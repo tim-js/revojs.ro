@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import Header from "@components/Header";
+import Navigation from "@components/Navigation";
 import Footer from "@components/Footer";
 
 export default props => (
@@ -13,7 +13,7 @@ export default props => (
         content="revo.js - Technology Focused. Community Driven. JavaScript Conference."
       />
     </Helmet>
-    <Header />
+    <Navigation />
     <main role="main">{props.children}</main>
     <Footer />
   </>
