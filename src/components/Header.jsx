@@ -22,8 +22,6 @@ export default () => {
 
   return (
     <>
-      <input type="checkbox" id="toggle-navigation" />
-
       <div className={`header ${showMenu ? "is-active" : ""}`}>
         <Link to="/">
           <img
@@ -36,7 +34,6 @@ export default () => {
 
         <nav>
           <label
-            htmlFor="toggle-navigation"
             id="toggle-navigation-button"
             onClick={() => toggleMenu(!showMenu)}
           >

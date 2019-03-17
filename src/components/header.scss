@@ -47,6 +47,7 @@ $darker-background: #060b10;
     opacity: 0;
     padding: 2em;
     position: fixed;
+    transform: translateX(-100%);
     top: calc(50px + 4em);
     left: 0;
     right: 0;
@@ -57,11 +58,15 @@ $darker-background: #060b10;
     border-bottom: 1px var(--darkgrey) solid;
     text-align: right;
 
-    transition: top 0.3s;
+    transition: opacity 0.3s;
 
     .is-scrolled & {
       top: calc(25px + 2em);
       min-height: calc(100vh - 25px - 2em);
+    }
+    .is-active & {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 }
@@ -87,20 +92,6 @@ $darker-background: #060b10;
 }
 .main-link.active {
   color: var(--primary);
-}
-
-#toggle-navigation {
-  opacity: 0;
-  // this is to prevent scroll to top
-  // because the browser automatically focuses the input
-  position: fixed;
-
-  @include breakpoint(sm, max) {
-    &:checked ~ .header .header-navigation {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
 }
 
 #toggle-navigation-button {
