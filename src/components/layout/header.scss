@@ -11,3 +11,10 @@
     min-height: calc(100vh - 2 * var(--spacing-content));
   }
 }
+
+.header--centered {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
