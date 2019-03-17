@@ -5,10 +5,11 @@ import "./section.scss";
 
 const Section = props => {
   const theme = props.light ? "section--light" : "";
+  const content = props.content ? "section--content" : "";
   const centered = props.centered ? "section--centered" : "";
 
   return (
-    <section className={`section ${theme} ${centered}`}>
+    <section className={`section ${theme} ${centered} ${content}`}>
       {props.children}
     </section>
   );
@@ -16,6 +17,7 @@ const Section = props => {
 
 Section.propTypes = {
   light: PropTypes.bool,
+  content: PropTypes.bool,
   centered: PropTypes.bool
 };
 
