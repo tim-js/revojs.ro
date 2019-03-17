@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 
 import Hamburger from "@components/layout/Hamburger";
+import logo from "@assets/logo-revojs.svg";
 
 import "./navigation.scss";
 
@@ -24,12 +25,7 @@ export default () => {
     <>
       <div className={`header ${showMenu ? "is-active" : ""}`}>
         <Link to="/">
-          <img
-            src="logo-revojs.svg"
-            alt="revo.js"
-            height="50"
-            className="header-logo"
-          />
+          <img src={logo} alt="revo.js" height="50" className="header-logo" />
         </Link>
 
         <nav>
