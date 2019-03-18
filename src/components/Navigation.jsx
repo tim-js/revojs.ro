@@ -6,10 +6,12 @@ import logo from "@assets/logo-revojs.svg";
 
 import "./navigation.scss";
 
-const PartialMatchLink = ({ to, text, ...props }) => (
+const PartialMatchLink = ({ to, text, className, ...props }) => (
   <Link
     getProps={({ isPartiallyCurrent }) => {
-      return isPartiallyCurrent ? { className: "active" } : null;
+      return isPartiallyCurrent
+        ? { className: `${className} active` }
+        : { className };
     }}
     to={to}
     {...props}
