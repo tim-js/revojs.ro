@@ -103,7 +103,7 @@
   }
 }
 .speaker:hover .speaker-img-inner {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .speaker:hover .speaker-info {
   @include breakpoint(sm) {
