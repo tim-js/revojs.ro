@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./Content.scss";
+import "./content.scss";
 
 const Content = ({ children, centered, ...props }) => {
   const _centered = centered ? "content--centered" : "";
