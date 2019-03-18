@@ -34,6 +34,12 @@
 
 .speaker-img {
   @include clip-hex(30%);
+  margin: 0;
+}
+.speaker-img-inner {
+  display: block;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
 }
 
 .speaker-info {
@@ -93,9 +99,11 @@
 
 .speaker:hover .speaker-img {
   @include breakpoint(sm) {
-    @include clip-hex(20%);
     transform: translateY(-5%) translateX(5%);
   }
+}
+.speaker:hover .speaker-img-inner {
+  transform: scale(1.1);
 }
 .speaker:hover .speaker-info {
   @include breakpoint(sm) {
