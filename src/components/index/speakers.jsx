@@ -11,7 +11,7 @@ const Speakers = ({ data }) => {
 
   return (
     <section className="speakers-content">
-      <h1 className="speakers-title">Invited Speakers</h1>
+      <h1 className="speakers-title">Our Speakers</h1>
       <ul className="speakers-list">
         {speakers.map(speaker => {
           const speakerImageFluid = speakerImages.edges.find(e =>
