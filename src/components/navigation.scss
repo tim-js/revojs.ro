@@ -59,7 +59,7 @@ $menu-height-scrolled: 60px;
     left: 0;
     right: 0;
     bottom: 0;
-    min-height: calc(100vh - $menu-height);
+    min-height: calc(100vh - #{$menu-height});
     background-color: $darker-background;
     border-top: 1px var(--text-dark) solid;
     border-bottom: 1px var(--text-dark) solid;
@@ -69,7 +69,7 @@ $menu-height-scrolled: 60px;
 
     .is-scrolled & {
       top: $menu-height-scrolled;
-      min-height: calc(100vh - $menu-height-scrolled);
+      min-height: calc(100vh - #{$menu-height-scrolled});
     }
     .is-active & {
       transform: translateX(0);
