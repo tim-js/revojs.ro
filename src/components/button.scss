@@ -1,5 +1,6 @@
 @import "../styles/fonts";
 
+.button,
 .button:link,
 .button:visited {
   height: 54px;
@@ -16,6 +17,7 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
 }
 
+.button--white,
 .button--white:link,
 .button--white:visited {
   color: white;

@@ -7,9 +7,9 @@ const Button = ({ children, white, ...props }) => {
   const _white = white ? "button--white" : "";
 
   return (
-    <a className={`button ${_white}`} {...props}>
+    <span className={`button ${_white}`} {...props}>
       {children}
-    </a>
+    </span>
   );
 };
 

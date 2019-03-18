@@ -28,7 +28,9 @@ export default () => {
           <br />
           <br />
           <br />
-          <Button href="#">Submit a Proposal Now</Button>
+          <a href="https://revojs.typeform.com/to/WWcdJ2">
+            <Button>Submit a Proposal Now</Button>
+          </a>
         </Content>
       </Header>
 
