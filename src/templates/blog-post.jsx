@@ -21,6 +21,7 @@ export default function Template({ data }) {
   );
 }
 
+/*
 export const pageQuery = graphql`
   query BlogPostByPath($url: String!) {
     post: markdownRemark(frontmatter: { path: { eq: $url } }) {
@@ -33,3 +34,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/

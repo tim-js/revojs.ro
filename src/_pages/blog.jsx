@@ -24,6 +24,7 @@ export default function Index({ data }) {
   );
 }
 
+/*
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
@@ -43,3 +44,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/

@@ -28,6 +28,7 @@ export default props => {
   );
 };
 
+/*
 export const pageQuery = graphql`
   query($id: String!, $image: String!) {
     speakersJson(id: { eq: $id }) {
@@ -46,3 +47,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/

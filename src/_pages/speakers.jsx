@@ -31,6 +31,7 @@ export default props => {
   );
 };
 
+/*
 export const pageQuery = graphql`
   query {
     allSpeakersJson {
@@ -57,3 +58,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/
