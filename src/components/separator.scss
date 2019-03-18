@@ -1,0 +1,17 @@
+@import "../styles/mixins";
+
+$width: 47px;
+$gap: 21px;
+
+.separator {
+  background-image: url("/sep_arrow_01.svg"), url("/sep_arrow_02.svg"),
+    url("/sep_arrow_03.svg"), url("/sep_arrow_04.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 0 center, calc(#{$width} + #{$gap}) center,
+    calc(2 * #{$width} + 2 * #{$gap}) center,
+    calc(3 * #{$width} + 3 * #{$gap}) center;
+
+  height: 69px;
+  margin: 5rem auto;
+  width: calc(4 * #{$width} + 3 * #{$gap});
+}

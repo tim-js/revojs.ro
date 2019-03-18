@@ -5,6 +5,7 @@ import Header from "@components/layout/Header";
 import IndexUpdates from "@components/index/updates";
 import IndexSpeakers from "@components/index/speakers";
 import IndexSponsors from "@components/index/sponsors";
+import Separator from "@components/Separator";
 
 import "./index.scss";
 
@@ -22,6 +23,7 @@ export default () => {
       </Header>
 
       <IndexUpdates />
+      <Separator />
       <IndexSpeakers />
       <IndexSponsors />
     </Layout>
