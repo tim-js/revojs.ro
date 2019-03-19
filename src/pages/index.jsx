@@ -33,11 +33,11 @@ export default () => (
             <span>Team Members</span>
           </li>
           <li>
-            <strong className="number">4425</strong>
+            <strong className="number">4861</strong>
             <span>Slack Messages</span>
           </li>
           <li>
-            <strong className="number">233</strong>
+            <strong className="number">297</strong>
             <span>Caffeinated Beverages</span>
           </li>
           {/* <li>
