@@ -25,7 +25,7 @@ export default () => (
             <Link to="/tickets/">Tickets</Link>
           </li>
           <li>
-            <Link to="/supporters/">Our Supporters</Link>
+            <Link to="/supporters/">Supporters</Link>
           </li>
         </ul>
 

@@ -7,7 +7,7 @@ import "./sponsors.scss";
 export default () => {
   return (
     <Section light centered>
-      <h1>Our Sponsors</h1>
+      <h1>Sponsors</h1>
       <p>
         We are very proud of our sponsors, couldn't have made it without them.
       </p>

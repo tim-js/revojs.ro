@@ -70,7 +70,7 @@ export default () => {
                 to="/supporters/"
                 className="main-link"
               >
-                Our Supporters
+                Supporters
               </Link>
             </li>
           </ul>
