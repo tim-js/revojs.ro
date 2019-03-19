@@ -40,7 +40,7 @@ export default () => {
             id="toggle-primary-navigation"
             onClick={() => toggleMenu(!showMenu)}
           >
-            <Hamburger />
+            <Hamburger active={showMenu} />
           </button>
           <ul className="primary-navigation">
             <li>
@@ -78,7 +78,7 @@ export default () => {
                 id="toggle-secondary-navigation"
                 onClick={() => toggleMenu(!showMenu)}
               >
-                <Hamburger />
+                <Hamburger active={showMenu} />
               </button>
               <ul className={`secondary-navigation`}>
                 <li>
