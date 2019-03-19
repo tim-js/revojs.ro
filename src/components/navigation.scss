@@ -41,44 +41,60 @@ $menu-height-scrolled: 60px;
   }
 }
 
-.navigation-menu {
+@mixin hiddenMenu() {
+  opacity: 0;
+  padding: 2em;
+  position: fixed;
+  transform: translateX(-100%);
+  top: $menu-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: calc(100vh - #{$menu-height});
+  background-color: $darker-background;
+  border-top: 1px var(--text-dark) solid;
+  border-bottom: 1px var(--text-dark) solid;
+  text-align: right;
+
+  transition: opacity 0.3s, top 0.3s;
+
+  .is-active & {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .is-scrolled & {
+    top: $menu-height-scrolled;
+    min-height: calc(100vh - #{$menu-height-scrolled});
+  }
+}
+
+.secondary-navigation,
+.primary-navigation {
   list-style-type: none;
   padding: 0;
   margin: 0;
   transition: opacity 0.5s;
-
+}
+.primary-navigation {
   @include breakpoint(md, min) {
     display: flex;
   }
   @include breakpoint(md, max) {
-    opacity: 0;
-    padding: 2em;
-    position: fixed;
-    transform: translateX(-100%);
-    top: $menu-height;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    min-height: calc(100vh - #{$menu-height});
-    background-color: $darker-background;
-    border-top: 1px var(--text-dark) solid;
-    border-bottom: 1px var(--text-dark) solid;
-    text-align: right;
-
-    transition: opacity 0.3s, top 0.3s;
-
-    .is-scrolled & {
-      top: $menu-height-scrolled;
-      min-height: calc(100vh - #{$menu-height-scrolled});
-    }
-    .is-active & {
-      transform: translateX(0);
-      opacity: 1;
-    }
+    @include hiddenMenu();
   }
 }
 
-.navigation-menu > li:not(:first-child) {
+.secondary-navigation {
+  @include breakpoint(md, max) {
+    border: 0;
+  }
+  @include breakpoint(md) {
+    @include hiddenMenu();
+  }
+}
+
+.primary-navigation > li:not(:first-child) {
   @include breakpoint(md) {
     margin-left: 2em;
   }
@@ -101,7 +117,9 @@ $menu-height-scrolled: 60px;
   color: var(--primary);
 }
 
-#toggle-navigation-button {
+#toggle-primary-navigation {
+  background: none;
+  border: 0;
   height: 18px;
   @include breakpoint(md, max) {
     display: block;
@@ -109,5 +127,17 @@ $menu-height-scrolled: 60px;
   }
   @include breakpoint(md, min) {
     display: none;
+  }
+}
+
+#toggle-secondary-navigation {
+  display: none;
+  background: none;
+  border: 0;
+  height: 18px;
+
+  @include breakpoint(md) {
+    display: block;
+    cursor: pointer;
   }
 }
