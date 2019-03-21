@@ -2,12 +2,8 @@
 @import "../styles/fonts";
 
 .footer {
-  --text-color: #979da7;
-}
-
-.footer {
   padding: var(--spacing-content);
-  color: var(--text-color);
+  color: var(--text-light);
 }
 
 .footer nav {
@@ -51,13 +47,13 @@
 
 .footer-menu a:link,
 .footer-menu a:visited {
-  color: var(--text-color);
+  color: var(--text-light);
   transition: all 0.2s;
   line-height: 2em;
 }
 .footer-menu a:hover {
   color: var(--primary);
-  // text-decoration: none;
+  text-decoration: none;
 }
 
 .social-media {
