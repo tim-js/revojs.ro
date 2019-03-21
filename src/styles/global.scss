@@ -99,3 +99,7 @@ ul.bullet > li {
   padding-left: 20px;
   line-height: 2em;
 }
+
+button:focus {
+  outline: 0;
+}
