@@ -12,25 +12,30 @@
   font-weight: bold;
   display: inline-block;
 
-  transition: clip-path 0.2s;
+  transition: clip-path 0.2s, color 0.2s;
 
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    clip-path: polygon(
+      20px 0%,
+      100% 0%,
+      100% calc(100% - 20px),
+      calc(100% - 20px) 100%,
+      0% 100%,
+      0% 20px
+    );
+  }
 }
 
 .button--white,
 .button--white:link,
 .button--white:visited {
   color: white;
-}
 
-.button:hover {
-  text-decoration: none;
-  clip-path: polygon(
-    20px 0%,
-    100% 0%,
-    100% calc(100% - 20px),
-    calc(100% - 20px) 100%,
-    0% 100%,
-    0% 20px
-  );
+  &:hover {
+    color: var(--background-dark);
+  }
 }
