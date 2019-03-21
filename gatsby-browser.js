@@ -1,3 +1,4 @@
+require("./src/styles/variables.css");
 require("./src/styles/global.scss");
 
 exports.onServiceWorkerUpdateReady = () => {

@@ -1,18 +1,6 @@
 @import "../styles/fonts";
 @import "../styles/mixins";
 
-:root {
-  --lightgrey: #dadce1;
-  --primary: #f45919;
-  --background-dark: #15161a;
-
-  --text-dark: #30343a;
-  --text-light: #979da7;
-
-  --spacing-content: 8.33vw;
-  --width-content: 690px;
-}
-
 html {
   @include font(default);
   font-size: 62.5%;
@@ -72,19 +60,19 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  margin-top: 80px;
-  margin-bottom: 32px;
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
 }
 
 h3 {
   font-size: 1.8rem;
   color: var(--primary);
-  margin-top: 32px;
-  margin-bottom: 16px;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
 }
 
 p {
-  margin: 16px 0;
+  margin: var(--space-2) 0;
 }
 
 ul.bullet {
@@ -95,9 +83,10 @@ ul.bullet {
 ul.bullet > li {
   background: url("/logo-shape.svg") no-repeat;
   background-size: 2.5em;
-  background-position: 0 0.65em;
-  padding-left: 20px;
-  line-height: 2em;
+  background-position: 0 0.30em;
+  margin-top: var(--space-2);
+  padding-left: 1.25em;
+  line-height: 1.4em;
 }
 
 button:focus {
