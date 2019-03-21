@@ -19,8 +19,8 @@ $menu-height-scrolled: 60px;
   transition: all 0.5s;
 
   .is-scrolled & {
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
-    background: $darker-background;
+    box-shadow: 0 3px 3px 0 rgba(21, 22, 26, 0.3);
+    background: var(--background-dark);
     border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
 
     height: $menu-height-scrolled;
