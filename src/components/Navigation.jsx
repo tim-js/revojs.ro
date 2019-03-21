@@ -74,6 +74,15 @@ export default () => {
               </Link>
             </li>
             <li>
+              <Link
+                activeClassName="active"
+                to="/venue/"
+                className="main-link"
+              >
+                Venue
+              </Link>
+            </li>
+            <li>
               <button
                 id="toggle-secondary-navigation"
                 onClick={() => toggleMenu(!showMenu)}
@@ -84,8 +93,17 @@ export default () => {
                 <li>
                   <Link
                     activeClassName="active"
+                    to="/travel/"
+                    className="main-link secondary"
+                  >
+                    Travel Info
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClassName="active"
                     to="/about/"
-                    className="main-link"
+                    className="main-link secondary"
                   >
                     About
                   </Link>

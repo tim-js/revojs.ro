@@ -88,6 +88,7 @@ $menu-height-scrolled: 60px;
 .secondary-navigation {
   @include breakpoint(md, max) {
     border: 0;
+    margin-top: var(--space-4);
   }
   @include breakpoint(md) {
     @include hiddenMenu();
@@ -98,9 +99,9 @@ $menu-height-scrolled: 60px;
   @include breakpoint(md) {
     margin-left: 1em;
   }
-  @include breakpoint(md, max) {
-    line-height: 1em;
-  }
+  // @include breakpoint(md, max) {
+  //   line-height: 1em;
+  // }
 }
 
 .main-link:link,
@@ -110,9 +111,12 @@ $menu-height-scrolled: 60px;
   color: var(--text-light);
   transition: all 0.3s;
   display: inline-block;
+  padding: 0 var(--space-2);
 
-  @include breakpoint(md) {
-    padding: 0 var(--space-2);
+  @include breakpoint(md, max) {
+    font-size: var(--space-3);
+  }
+  @include breakpoint(md, min) {
     height: calc(#{$menu-height-scrolled} - 1px);
     line-height: $menu-height-scrolled;
   }
@@ -124,8 +128,10 @@ $menu-height-scrolled: 60px;
 .main-link.active {
   color: var(--primary);
 
-  @include breakpoint(md) {
-    border-bottom: 3px var(--primary) solid;
+  &:not(.secondary) {
+    @include breakpoint(md) {
+      border-bottom: 3px var(--primary) solid;
+    }
   }
 }
 

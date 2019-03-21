@@ -27,11 +27,14 @@ export default () => (
           <li>
             <Link to="/supporters/">Supporters</Link>
           </li>
+          <li>
+            <Link to="/venue/">Venue</Link>
+          </li>
         </ul>
 
         <ul className="footer-menu">
           <li>
-            <Link to="/travel-info/">Travel Info</Link>
+            <Link to="/travel/">Travel Info</Link>
           </li>
           <li>
             <Link to="/about/">About</Link>
