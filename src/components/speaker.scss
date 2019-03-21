@@ -94,7 +94,6 @@
 }
 .speaker-company {
   display: block;
-  margin-top: 0.25em;
   color: var(--text-light);
   transition: color 0.3s;
 
@@ -122,9 +121,11 @@
     @include clip-hex(20%);
     background: var(--primary);
 
-    .speaker-title,
-    .speaker-company {
+    .speaker-title {
       color: white;
+    }
+    .speaker-company {
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 }
