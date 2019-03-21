@@ -11,8 +11,8 @@
   width: 25px;
   height: 2px;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition-duration: 75ms;
-  transition-property: transform;
+  transition-duration: 75ms, 150ms;
+  transition-property: transform, background;
   border-radius: 2px;
   background-color: #fff;
 }
@@ -51,5 +51,13 @@
     transition: bottom 75ms ease,
       transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
     transform: rotate(-90deg);
+  }
+}
+
+.hamburger-box:hover {
+  .hamburger-inner::after,
+  .hamburger-inner::before,
+  .hamburger-inner {
+    background: var(--primary);
   }
 }
