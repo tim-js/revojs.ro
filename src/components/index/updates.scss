@@ -64,9 +64,13 @@
       right: -10px;
     }
 
-    .update-title,
+    .update-title {
+      transform: translateY(-3em);
+      color: var(--primary);
+    }
     .update-content {
       transform: translateY(-3em);
+      color: white;
     }
   }
 }
