@@ -96,10 +96,10 @@ $menu-height-scrolled: 60px;
 
 .primary-navigation > li:not(:first-child) {
   @include breakpoint(md) {
-    margin-left: 2em;
+    margin-left: 1em;
   }
   @include breakpoint(md, max) {
-    line-height: 2em;
+    line-height: 1em;
   }
 }
 
@@ -107,14 +107,26 @@ $menu-height-scrolled: 60px;
 .main-link:visited {
   @include font(mono);
   font-weight: bold;
-  color: #646974;
+  color: var(--text-light);
   transition: all 0.3s;
+  display: inline-block;
+
+  @include breakpoint(md) {
+    padding: 0 var(--space-2);
+    height: calc(#{$menu-height-scrolled} - 1px);
+    line-height: $menu-height-scrolled;
+  }
 }
 .main-link:hover {
-  color: white;
+  color: var(--primary);
+  text-decoration: none;
 }
 .main-link.active {
   color: var(--primary);
+
+  @include breakpoint(md) {
+    border-bottom: 3px var(--primary) solid;
+  }
 }
 
 #toggle-primary-navigation {
@@ -134,7 +146,9 @@ $menu-height-scrolled: 60px;
   display: none;
   background: none;
   border: 0;
-  height: 18px;
+  height: $menu-height-scrolled;
+  padding: 0 var(--space-1);
+  transform: translateY(2px);
 
   @include breakpoint(md) {
     display: block;

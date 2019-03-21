@@ -8,6 +8,7 @@
     padding-top: calc(var(--spacing-content) + 12rem);
   }
   @include breakpoint(md, min) {
+    padding-top: 150px;
     min-height: calc(100vh - 2 * var(--spacing-content));
   }
 }
