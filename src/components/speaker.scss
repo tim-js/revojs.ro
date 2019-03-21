@@ -58,7 +58,7 @@
 .speaker-info-inner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 
   @include breakpoint(sm) {
     @include clip-hex(30%);
@@ -71,7 +71,7 @@
 
 .speaker-name {
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 32px;
   margin-top: 0;
 
   @include breakpoint(sm) {
@@ -79,11 +79,14 @@
     padding: 0 15%;
   }
   @include breakpoint(md) {
-    font-size: 2.6vw;
+    font-size: 2.5vw;
   }
 }
 .speaker-title {
   display: block;
+  line-height: 1.2;
+  color: var(--primary);
+  transition: color 0.3s;
 
   @include breakpoint(sm) {
     padding: 0 15%;
@@ -91,9 +94,12 @@
 }
 .speaker-company {
   display: block;
+  margin-top: 0.25em;
+  color: var(--text-light);
+  transition: color 0.3s;
 
   @include breakpoint(sm) {
-    padding: 0 15%;
+    padding: 0 15% 15% 15%;
   }
 }
 
@@ -115,5 +121,10 @@
   @include breakpoint(sm) {
     @include clip-hex(20%);
     background: var(--primary);
+
+    .speaker-title,
+    .speaker-company {
+      color: white;
+    }
   }
 }
