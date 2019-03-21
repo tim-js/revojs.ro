@@ -32,7 +32,7 @@ export default () => {
       <Section light>
         <Content centered>
           <section>
-            <h2>Organizers</h2>
+            <h2 className="first">Organizers</h2>
             <p>
               The revo.js conference is organized by <strong>tim.js</strong> in
               partnership with <strong>BanatIT</strong>.

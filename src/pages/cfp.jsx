@@ -37,7 +37,7 @@ export default () => {
       <Section light>
         <Content centered>
           <section>
-            <h2>Topics</h2>
+            <h2 className="first">Topics</h2>
             <p>
               Is your talk JavaScript related? Then it’s a perfect fit! Need a
               tighter description? Here are some additional hints:
