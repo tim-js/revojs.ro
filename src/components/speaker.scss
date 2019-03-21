@@ -71,8 +71,14 @@
 
 .speaker-name {
   display: block;
-  margin-bottom: 32px;
-  margin-top: 0;
+  margin-bottom: var(--space-4);
+
+  @include breakpoint(sm, max) {
+    margin-top: var(--space-2);
+    font-size: 8vw;
+    margin-bottom: var(--space-1);
+    line-height: 1.1;
+  }
 
   @include breakpoint(sm) {
     font-size: 5vw;
