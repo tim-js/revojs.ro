@@ -19,13 +19,26 @@
   &:visited {
     color: white;
     display: block;
-    border-top: 2px white solid;
-    padding-top: 1em;
+    padding-top: 1.5em;
     position: relative;
-    transition: border 0.3s;
   }
 
   &::before {
+    content: "";
+    background: white;
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s;
+    animation-name: lineSwitchOff;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+  }
+
+  &::after {
     content: "";
     background-image: url("/arrow.svg");
     background-repeat: no-repeat;
@@ -40,10 +53,103 @@
 
   &:hover {
     text-decoration: none;
-    border-color: var(--primary);
 
     &::before {
+      animation-name: lineSwitchOn;
+      animation-duration: 0.6s;
+      animation-fill-mode: both;
+    }
+
+    &::after {
       right: -10px;
     }
+
+    .update-title,
+    .update-content {
+      transform: translateY(-3em);
+    }
+  }
+}
+
+.update-title {
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+.update-content {
+  margin-top: 0;
+  display: block;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+
+@keyframes lineSwitchOn {
+  0% {
+    width: 100%;
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    background-color: white;
+  }
+  49% {
+    width: 0;
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    background-color: white;
+  }
+  50% {
+    width: 0;
+    top: auto;
+    bottom: 1em;
+    right: auto;
+    left: 0;
+    background-color: var(--primary);
+  }
+  100% {
+    width: 100%;
+    top: auto;
+    bottom: 1em;
+    right: auto;
+    left: 0;
+    background-color: var(--primary);
+  }
+}
+
+@keyframes lineSwitchOff {
+  0% {
+    width: 100%;
+    top: auto;
+    bottom: 1em;
+    right: 0;
+    left: auto;
+    background-color: var(--primary);
+  }
+  49% {
+    width: 0;
+    top: auto;
+    bottom: 1em;
+    right: 0;
+    left: auto;
+    background-color: var(--primary);
+  }
+  50% {
+    width: 0;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    left: 0;
+    background-color: white;
+  }
+  100% {
+    width: 100%;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    left: 0;
+    background-color: white;
   }
 }
