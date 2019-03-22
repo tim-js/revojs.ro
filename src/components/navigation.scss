@@ -136,9 +136,10 @@ $menu-height-scrolled: 60px;
 }
 
 #toggle-primary-navigation {
-  background: none;
-  border: 0;
-  height: 18px;
+  height: $menu-height-scrolled;
+  padding: 0 var(--space-1);
+  transform: translateY(2px);
+
   @include breakpoint(md, max) {
     display: block;
     cursor: pointer;
@@ -150,8 +151,6 @@ $menu-height-scrolled: 60px;
 
 #toggle-secondary-navigation {
   display: none;
-  background: none;
-  border: 0;
   height: $menu-height-scrolled;
   padding: 0 var(--space-1);
   transform: translateY(2px);

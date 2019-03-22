@@ -36,12 +36,12 @@ export default () => {
         </Link>
 
         <nav>
-          <button
+          <Hamburger
+            active={showMenu}
             id="toggle-primary-navigation"
             onClick={() => toggleMenu(!showMenu)}
-          >
-            <Hamburger active={showMenu} />
-          </button>
+          />
+
           <ul className="primary-navigation">
             <li>
               <PartialMatchLink
@@ -74,21 +74,17 @@ export default () => {
               </Link>
             </li>
             <li>
-              <Link
-                activeClassName="active"
-                to="/venue/"
-                className="main-link"
-              >
+              <Link activeClassName="active" to="/venue/" className="main-link">
                 Venue
               </Link>
             </li>
             <li>
-              <button
+              <Hamburger
+                active={showMenu}
                 id="toggle-secondary-navigation"
                 onClick={() => toggleMenu(!showMenu)}
-              >
-                <Hamburger active={showMenu} />
-              </button>
+              />
+
               <ul className={`secondary-navigation`}>
                 <li>
                   <Link

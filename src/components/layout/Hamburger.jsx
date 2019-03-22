@@ -3,18 +3,21 @@ import PropTypes from "prop-types";
 
 import "./hamburger.scss";
 
-const Hamburger = props => {
-  const active = props.active ? "active" : "";
+const Hamburger = ({ active, ...props }) => {
+  const _active = active ? "active" : "";
 
   return (
-    <span className={`hamburger-box ${active}`}>
-      <span className="hamburger-inner" />
-    </span>
+    <button className={`hamburger ${_active}`} {...props}>
+      <span className={`hamburger-box`}>
+        <span className="hamburger-inner" />
+      </span>
+    </button>
   );
 };
 
 Hamburger.propTypes = {
-  active: PropTypes.bool
+  active: PropTypes.bool,
+  onClick: PropTypes.func.isRequired
 };
 
 export default Hamburger;

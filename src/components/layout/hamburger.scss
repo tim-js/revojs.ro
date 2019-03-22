@@ -1,3 +1,8 @@
+.hamburger {
+  background: none;
+  border: 0;
+}
+
 .hamburger-box {
   position: relative;
   display: inline-block;
@@ -54,7 +59,7 @@
   }
 }
 
-.hamburger-box:hover {
+.hamburger:hover {
   .hamburger-inner::after,
   .hamburger-inner::before,
   .hamburger-inner {
