@@ -6,8 +6,8 @@
     "description": "this is Martin Hochel's description",
     "image": "speakers/martin_hochel.jpg",
     "twitter": "",
-    "title": "Developer Advocate",
-    "company": "New Company"
+    "title": "UI Tech Lead",
+    "company": "Twisto.cz"
   },
   {
     "id": "carmen-popoviciu",
@@ -16,8 +16,8 @@
     "description": "this is Carmen Popoviciu's description",
     "image": "speakers/carmen_popoviciu.jpg",
     "twitter": "",
-    "title": "Event Organizer",
-    "company": "AmsterdamJS"
+    "title": "Developer Advocate",
+    "company": "Nulab"
   },
   {
     "id": "boyan-mihaylov",
@@ -26,7 +26,7 @@
     "description": "this is Boyan's description",
     "image": "speakers/boyan_mihaylov.jpg",
     "twitter": "",
-    "title": "Senior Developer",
-    "company": "Retirement Stuff"
+    "title": "Software architect and developer",
+    "company": "MP Pension"
   }
 ]
