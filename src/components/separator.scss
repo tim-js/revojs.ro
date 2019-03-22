@@ -4,6 +4,28 @@ $width: 47px;
 $gap: 21px;
 
 .separator {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@include breakpoint(md) {
+  .separator::before {
+    content: "";
+    margin-right: $gap;
+  }
+}
+@include breakpoint(lg) {
+  .separator::after {
+    content: "";
+    margin-left: $gap;
+  }
+}
+
+.separator::before,
+.separator::after,
+.separator-content {
   background-image: url("/sep_arrow_01.svg"), url("/sep_arrow_02.svg"),
     url("/sep_arrow_03.svg"), url("/sep_arrow_04.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
@@ -12,6 +34,5 @@ $gap: 21px;
     calc(3 * #{$width} + 3 * #{$gap}) center;
 
   height: 69px;
-  margin: 5rem auto;
   width: calc(4 * #{$width} + 3 * #{$gap});
 }
