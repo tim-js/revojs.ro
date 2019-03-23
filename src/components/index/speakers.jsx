@@ -20,9 +20,9 @@ const Speakers = ({ data }) => {
 
           return (
             <li key={speaker.id}>
-              <Link to={`/speakers/${speaker.id}`} className="speakers-link">
-                <Speaker data={speaker} image={speakerImageFluid} />
-              </Link>
+              {/* <Link to={`/speakers/${speaker.id}`} className="speakers-link"> */}
+              <Speaker data={speaker} image={speakerImageFluid} />
+              {/* </Link> */}
             </li>
           );
         })}
