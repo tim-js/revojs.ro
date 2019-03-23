@@ -52,7 +52,10 @@ export default () => {
             </ul>
 
             <br />
-
+            <p>
+              We expect all participants to follow these rules at conference,
+              workshop venues and conference-related social events.
+            </p>
             <p className="highlight">
               <strong>
                 Participants asked to stop any harassing behavior are expected
@@ -96,11 +99,6 @@ export default () => {
               security or local law enforcement, provide escorts, or otherwise
               assist those experiencing harassment to feel safe for the duration
               of the conference. We value your attendance.
-            </p>
-
-            <p>
-              We expect all participants to follow these rules at conference,
-              workshop venues and conference-related social events.
             </p>
           </section>
         </Content>
