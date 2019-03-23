@@ -1,12 +1,9 @@
 import React from "react";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
-
-import revojs from "@assets/revo.js.svg";
 
 export default () => {
   return (
