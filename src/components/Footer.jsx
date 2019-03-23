@@ -24,12 +24,12 @@ export default () => (
           <li>
             <Link to="/tickets/">Tickets</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/supporters/">Supporters</Link>
           </li>
           <li>
             <Link to="/venue/">Venue</Link>
-          </li>
+          </li> */}
         </ul>
 
         <ul className="footer-menu">
@@ -39,12 +39,12 @@ export default () => (
           <li>
             <Link to="/about/">About</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/press/">Press</Link>
           </li>
           <li>
             <Link to="/contact/">Contact</Link>
-          </li>
+          </li> */}
         </ul>
 
         <ul className="footer-menu">
