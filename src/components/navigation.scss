@@ -8,7 +8,7 @@ $darker-background: #060b10;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  padding: 0 1.5em;
   position: fixed;
   top: 0;
   right: 0;
@@ -17,6 +17,7 @@ $darker-background: #060b10;
   transition: all 0.5s;
 
   .is-scrolled & {
+    justify-content: space-between;
     box-shadow: 0 3px 3px 0 rgba(21, 22, 26, 0.3);
     background: var(--background-dark);
     border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
@@ -27,15 +28,29 @@ $darker-background: #060b10;
   @include breakpoint(lg) {
     padding: 0 3em;
   }
+
+  @include breakpoint(md) {
+    body:not(.is-scrolled) &.is-home {
+      justify-content: center;
+    }
+  }
 }
 
 .navigation-logo {
   display: block;
   transition: all 0.3s;
 
+  .is-home & {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+  }
+
   .is-scrolled & {
-    transform: scale(0.6);
+    transform: scale(0.6) translateY(0);
     transform-origin: center left;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -109,10 +124,17 @@ $darker-background: #060b10;
   color: var(--text-light);
   transition: all 0.3s;
   display: inline-block;
-  padding: 0 var(--space-2);
+
+  &.secondary {
+    @include breakpoint(md) {
+      padding: 0;
+      line-height: 2.5;
+    }
+  }
 
   @include breakpoint(md, max) {
     font-size: var(--space-3);
+    line-height: 1.7;
   }
   @include breakpoint(md, min) {
     line-height: var(--menu-height-scrolled);

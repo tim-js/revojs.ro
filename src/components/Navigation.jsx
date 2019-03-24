@@ -40,10 +40,17 @@ function renderPage(page, classNames) {
 
 export default props => {
   const [showMenu, toggleMenu] = useState(false);
+  const isHome = (props.location && props.location.pathname === "/") || false;
 
   return (
     <>
-      <div className={`navigation ${showMenu ? "is-active" : ""}`}>
+      <div
+        className={`
+          navigation
+          ${showMenu ? "is-active" : ""}
+          ${isHome ? "is-home" : ""}
+        `}
+      >
         <Link to="/">
           <img
             src={logo}
