@@ -19,8 +19,6 @@ export default () => {
   const startIndex = 2;
   const monthPercent = Math.floor((currentDay * 100) / 31);
 
-  console.log({ now, currentMonth, currentDay, monthPercent });
-
   return (
     <Layout>
       <Header type="main" image="tickets-image">
