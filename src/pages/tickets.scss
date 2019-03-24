@@ -1,0 +1,99 @@
+@import "../styles/mixins";
+
+.tickets-image {
+  @include breakpoint(md) {
+    background: url("/illustration_tickets.svg") no-repeat;
+    background-size: contain;
+  }
+}
+
+.tickets-timeline {
+  --size: 15px;
+  --thickness: 3px;
+  --gap: 0px;
+}
+
+.tickets-timeline {
+  display: flex;
+  list-style-type: none;
+  counter-reset: step;
+  padding: 0;
+  margin: 4em 0;
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.tickets-timeline li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.tickets-timeline li::first-letter {
+  color: blue;
+}
+
+.tickets-timeline li:before {
+  margin: 0 auto 1rem auto;
+  counter-increment: step;
+  content: "";
+  width: calc(var(--size) - 2 * var(--thickness));
+  height: calc(var(--size) - 2 * var(--thickness));
+  display: block;
+  border-radius: 50%;
+  border-width: var(--thickness);
+  border-style: solid;
+}
+
+.tickets-timeline li:not(:first-child)::after {
+  content: "";
+  display: block;
+  // background: var(--primary);
+  height: var(--thickness);
+  width: calc(100% - var(--size) - var(--gap) * 2);
+  position: absolute;
+  top: calc((var(--size) - var(--thickness)) / 2);
+  left: calc(-50% + var(--size) / 2 + var(--gap));
+  z-index: -1;
+}
+
+.early::before {
+  border-color: white;
+}
+.early::after {
+  background: white;
+}
+.regular::before {
+  border-color: var(--primary);
+}
+.regular::after {
+  background: var(--primary);
+}
+.late::before {
+  border-color: #C61212;
+}
+.late::after {
+  background: #C61212;
+}
+
+.current-day {
+  text-align: center;
+  height: var(--size);
+  display: block;
+  position: absolute;
+  margin-left: 50%;
+  top: -35px;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.current-day::after {
+  background-color: var(--primary);
+  content: "";
+  width: 2px;
+  height: 10px;
+  display: block;
+  margin-left: calc(50% - 1px);
+}

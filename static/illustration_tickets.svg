@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580px" height="650px" viewBox="0 0 580 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>illustration_tickets</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="580" height="650"></rect>
+        <linearGradient x1="87.8266793%" y1="44.891807%" x2="-139.342309%" y2="47.6073068%" id="linearGradient-3">
+            <stop stop-color="#15161A" offset="0%"></stop>
+            <stop stop-color="#242E35" offset="59.4562059%"></stop>
+            <stop stop-color="#383E43" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="39.5648249%" y1="91.1399645%" x2="-58.692103%" y2="-152.517345%" id="linearGradient-4">
+            <stop stop-color="#31373F" offset="0%"></stop>
+            <stop stop-color="#060B10" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9999242%" y1="-4.36789773%" x2="50%" y2="77.9369987%" id="linearGradient-5">
+            <stop stop-color="#293038" offset="0%"></stop>
+            <stop stop-color="#242A2E" offset="53.1666305%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="211.524823%" y1="49.9999076%" x2="0%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#383E43" offset="0%"></stop>
+            <stop stop-color="#242E35" offset="20.1094959%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-New" transform="translate(-772.000000, -1606.000000)">
+            <g id="Illustration" transform="translate(772.000000, 1606.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="container" opacity="0.5"></g>
+                <g id="t" mask="url(#mask-2)">
+                    <g transform="translate(119.000000, 1.000000)">
+                        <polygon id="Rectangle" fill="url(#linearGradient-3)" fill-rule="evenodd" points="0 45 281 45 281 185.861538 71 186.07336 1 115.07336"></polygon>
+                        <polygon id="Rectangle" fill="url(#linearGradient-4)" fill-rule="evenodd" transform="translate(36.000000, 150.573360) scale(-1, -1) translate(-36.000000, -150.573360) " points="1 115.07336 71 186.07336 1 186.07336"></polygon>
+                        <path d="M109.221074,414.304129 L185.998832,491.872895 L424.778912,250.635107 L185.999621,9.39889677 L109.221079,86.9684542 L271.221875,250.635892 L109.221074,414.304129 Z M262.779696,250.635903 L100.778921,86.9684849 L185.999594,0.86982118 L433.221088,250.635101 L185.998812,500.401977 L100.778926,414.304108 L262.779696,250.635903 Z" id="Stroke-1" fill="#F45919" fill-rule="nonzero"></path>
+                        <polygon id="Rectangle" fill="url(#linearGradient-5)" fill-rule="evenodd" points="141 186.113077 281 45 281 587 141 587"></polygon>
+                        <polygon id="Path" fill="#F45919" fill-rule="nonzero" points="426.867846 248.524673 431.132154 252.745536 185.998812 500.401977 102.867836 416.41454 107.132164 412.193698 185.998832 491.872895"></polygon>
+                        <rect id="Rectangle" fill="url(#linearGradient-6)" fill-rule="evenodd" x="281" y="45" width="160" height="140.861538"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
