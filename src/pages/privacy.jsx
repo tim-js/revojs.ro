@@ -128,6 +128,7 @@ export default () => {
                 <a
                   href="https://www.facebook.com/about/privacy/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Facebook’s Data Policy
                 </a>
@@ -144,6 +145,7 @@ export default () => {
                 <a
                   href="https://support.google.com/chrome/answer/95647?hl=en&amp;p=cpn_cookies"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Google Chrome
                 </a>
@@ -152,6 +154,7 @@ export default () => {
                 <a
                   href="https://support.microsoft.com/en-us/help/4027947/windows-delete-cookies"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Microsoft Edge
                 </a>
@@ -160,6 +163,7 @@ export default () => {
                 <a
                   href="https://support.mozilla.org/en-US/kb/exp/enable-and-disable-cookies-website-preferences"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Mozilla Firefox
                 </a>
@@ -168,6 +172,7 @@ export default () => {
                 <a
                   href="https://support.apple.com/en-us/HT201265"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Safari
                 </a>
@@ -190,7 +195,11 @@ export default () => {
             </p>
             <ul>
               <li>
-                <a href="https://ti.to/privacy" target="_blank">
+                <a
+                  href="https://ti.to/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Ti.to
                 </a>
               </li>
@@ -198,6 +207,7 @@ export default () => {
                 <a
                   href="https://support.google.com/analytics/answer/7105316"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Google Analytics
                 </a>
@@ -206,6 +216,7 @@ export default () => {
                 <a
                   href="https://cloud.google.com/security/gdpr/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Google Forms
                 </a>
@@ -214,6 +225,7 @@ export default () => {
                 <a
                   href="https://www.paypal.com/en/webapps/mpp/ua/privacy-full"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   PayPal
                 </a>
@@ -222,6 +234,7 @@ export default () => {
                 <a
                   href="https://www.facebook.com/about/privacyshield"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Facebook
                 </a>
