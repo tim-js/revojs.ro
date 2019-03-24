@@ -4,47 +4,48 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
+import Note from "@components/Note";
 
 export default () => {
   return (
     <Layout>
       <Header centered>
-        <div>
-          <h1>Code of Conduct</h1>
-          <Content centered>
-            <br />
-            <p className="light-faded">
-              All attendees, speakers, sponsors and volunteers at our conference
-              are required to agree with the following code of conduct.
-              Organisers will enforce this code throughout the event. We expect
-              cooperation from all participants to help ensure a safe
-              environment for everybody.
-            </p>
-          </Content>
-        </div>
+        <h1>Code of Conduct</h1>
       </Header>
 
       <Section light>
         <Content centered>
-          <section>
-            <h2 className="first">No harassment</h2>
+          <Note>
             <p>
-              Harassment includes offensive verbal or written comments related,
-              but not limited to:
+              All attendees, speakers, sponsors and volunteers at our conference
+              are required to agree with the following code of conduct.
+            </p>
+            <p>
+              Organisers will enforce this code throughout the event. We expect
+              cooperation from all participants to help ensure a safe
+              environment for everybody.
+            </p>
+          </Note>
+
+          <section>
+            <h2>No harassment</h2>
+            <p>
+              Harassment includes any offensive verbal or written comments
+              related, but not limited to any of the following:
             </p>
             <ul className="bullet">
-              <li>gender, gender identity or expression</li>
-              <li>sexual orientation, race, ethnicity, religion</li>
-              <li>age, disability, physical appearance, body size</li>
-              <li>technology choices</li>
+              <li>gender, gender identity or expression;</li>
+              <li>sexual orientation, race, ethnicity, religion;</li>
+              <li>age, disability, physical appearance, body size;</li>
+              <li>technology choices;</li>
               <li>
                 deliberate intimidation, stalking, following, harassing
-                photography or recording
+                photography or recording;
               </li>
-              <li>sustained disruption of talks or other events</li>
-              <li>sexual images in public spaces</li>
+              <li>sustained disruption of talks or other events;</li>
+              <li>sexual images in public spaces;</li>
               <li>
-                inappropriate physical contact and unwelcome sexual attention
+                inappropriate physical contact and unwelcome sexual attention;
               </li>
             </ul>
 
@@ -86,7 +87,10 @@ export default () => {
                 If you are being harassed, notice that someone else is being
                 harassed, or have any other concerns, please contact a member of
                 conference staff immediately.
-              </strong>{" "}
+              </strong>
+            </p>
+
+            <p>
               Conference staff can be identified as they'll be wearing branded
               clothing and/or badges.
             </p>
@@ -95,7 +99,8 @@ export default () => {
               Conference staff will be happy to help participants contact venue
               security or local law enforcement, provide escorts, or otherwise
               assist those experiencing harassment to feel safe for the duration
-              of the conference. We value your attendance.
+              of the conference.{" "}
+              <strong className="highlight">We value your attendance</strong>.
             </p>
           </section>
         </Content>
