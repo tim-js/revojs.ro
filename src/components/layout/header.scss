@@ -5,9 +5,13 @@
   padding: var(--spacing-content);
   padding-top: calc(var(--menu-height) + var(--space-4));
 
-  @include breakpoint(md, min) {
+  @include breakpoint(md) {
     min-height: calc(100vh - 2 * var(--spacing-content));
   }
+}
+
+.header--page {
+  min-height: 30vh;
 }
 
 .header--centered {
