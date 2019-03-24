@@ -72,7 +72,8 @@ module.exports = {
           "@src": "src",
           "@components": "src/components",
           "@styles": "src/styles",
-          "@assets": "src/assets"
+          "@assets": "src/assets",
+          "@data": "src/data"
         },
         extensions: ["jsx", "scss", "js"]
       }

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import { main, secondary, tertiary } from "@data/pages";
+
 import "./footer.scss";
 
 import facebook from "@assets/facebook.svg";
@@ -9,8 +11,6 @@ import instagram from "@assets/instagram.svg";
 import linkedin from "@assets/linkedin.svg";
 // import medium from "@assets/medium.svg";
 import revojs from "@assets/revo.js.svg";
-
-import { main, secondary, tertiary } from "./_pages";
 
 function renderPage(page) {
   const name = page.name;

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
-import { main, secondary, tertiary } from "./_pages";
+import { main, secondary, tertiary } from "@data/pages";
+
 import Hamburger from "@components/layout/Hamburger";
 import logo from "@assets/logo-revojs.svg";
 
