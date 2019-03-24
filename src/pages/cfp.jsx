@@ -72,6 +72,11 @@ export default () => {
               presentation accordingly in advance.
             </p>
           </section>
+          <br />
+          <br />
+          <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2">
+            <Button white>Submit your Proposal</Button>
+          </OutboundLink>
         </Content>
       </Section>
     </Layout>
