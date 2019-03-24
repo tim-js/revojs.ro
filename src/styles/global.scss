@@ -70,7 +70,7 @@ h2 {
     margin-top: 0;
   }
 
-  @include breakpoint(md) {
+  @include breakpoint(sm) {
     font-size: 4rem;
     margin-top: var(--space-10);
     margin-bottom: var(--space-4);
