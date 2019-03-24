@@ -62,12 +62,18 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
-  margin-top: var(--space-10);
-  margin-bottom: var(--space-4);
+  font-size: 2.5rem;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-2);
 
   &.first {
     margin-top: 0;
+  }
+
+  @include breakpoint(md) {
+    font-size: 4rem;
+    margin-top: var(--space-10);
+    margin-bottom: var(--space-4);
   }
 }
 
