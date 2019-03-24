@@ -13,7 +13,7 @@ export default props => (
         content="revo.js - Technology Focused. Community Driven. JavaScript Conference."
       />
     </Helmet>
-    <Navigation />
+    <Navigation location={props.location} />
     <main role="main">{props.children}</main>
     <Footer />
   </>

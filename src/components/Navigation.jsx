@@ -38,7 +38,7 @@ function renderPage(page, classNames) {
   );
 }
 
-export default () => {
+export default props => {
   const [showMenu, toggleMenu] = useState(false);
 
   return (

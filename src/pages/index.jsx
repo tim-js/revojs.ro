@@ -9,9 +9,9 @@ import Separator from "@components/Separator";
 
 import "./index.scss";
 
-export default () => {
+export default props => {
   return (
-    <Layout>
+    <Layout location={props.location}>
       <Header className="header-index">
         <h1>
           A two-day JavaScript <strong className="highlight">conference</strong>
