@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
-import { main, secondary } from "./_pages";
+import { main, secondary, tertiary } from "./_pages";
 import Hamburger from "@components/layout/Hamburger";
 import logo from "@assets/logo-revojs.svg";
 
@@ -80,7 +80,7 @@ export default props => {
               />
 
               <ul className={`secondary-navigation`}>
-                {secondary.map(page => {
+                {[...secondary, ...tertiary].map(page => {
                   return (
                     <li key={page.name}>
                       {renderPage(page, "main-link secondary")}
