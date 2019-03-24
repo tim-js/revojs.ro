@@ -10,7 +10,7 @@ export default () => {
   return (
     <Layout>
       <Header centered type="secondary">
-        <h1>Privacy Statement</h1>
+        <h1>Privacy Policy</h1>
       </Header>
 
       <Section light>
