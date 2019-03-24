@@ -9,6 +9,6 @@ exports.onInitialClientRender = () => {
   window.addEventListener("scroll", () => {
     document
       .querySelector("body")
-      .classList.toggle("is-scrolled", window.scrollY > 10);
+      .classList.toggle("is-scrolled", window.scrollY > 100);
   });
 };
