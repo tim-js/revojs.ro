@@ -1,6 +1,9 @@
 import React from "react";
 
 import Section from "@components/Section";
+import Logos from "@components/Logos";
+
+import { sponsors } from "@data/sponsors";
 
 import "./sponsors.scss";
 
@@ -12,17 +15,7 @@ export default () => {
         We are very proud of our sponsors, couldn't have made it without them.
       </p>
 
-      <ul className="sponsors-list">
-        <li>
-          <strong className="sponsor">Dream Production</strong>
-        </li>
-        <li>
-          <strong className="sponsor">Busy Machines</strong>
-        </li>
-        <li>
-          <strong className="sponsor">Visma</strong>
-        </li>
-      </ul>
+      <Logos list={sponsors} />
     </Section>
   );
 };
