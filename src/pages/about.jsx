@@ -8,6 +8,8 @@ import Section from "@components/Section";
 import Note from "@components/Note";
 
 import revojs from "@assets/revo.js.svg";
+import timjs from "@assets/tim.js-logo.svg";
+import banatit from "@assets/Banat_IT_Logo.svg";
 
 export default () => {
   return (
@@ -37,18 +39,30 @@ export default () => {
 
           <section>
             <h2>Organizers</h2>
-            <p>
+            {/* <p>
               The revo.js conference is organized by <strong>tim.js</strong> in
               partnership with <strong>BanatIT</strong>.
+            </p> */}
+
+            <br />
+
+            <h3>
+              <OutboundLink href="https://timjs.ro">
+                <img src={timjs} alt="tim.js" height="50" />
+              </OutboundLink>
+            </h3>
+            <p>
+              Founded in 2013, <strong>tim.js</strong> is the local JavaScript
+              Community in Timisoara.
             </p>
 
-            <h3>
-              <OutboundLink href="https://timjs.ro">tim.js</OutboundLink>
-            </h3>
-            <p>The local JavaScript Community, active since 2013.</p>
+            <br />
+            <br />
 
             <h3>
-              <OutboundLink href="https://banatit.ro">BanatIT</OutboundLink>
+              <OutboundLink href="https://banatit.ro">
+                <img src={banatit} alt="Banat IT" height="45" />
+              </OutboundLink>
             </h3>
             <p>
               Dedicated to all stakeholders in the local IT industry:
@@ -58,7 +72,7 @@ export default () => {
           </section>
 
           <section>
-            <h2>Team</h2>
+            <h2>Core Team</h2>
 
             <p>
               This event takes place thanks to the many people involved at many
