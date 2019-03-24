@@ -53,6 +53,9 @@ h3,
 h1 {
   font-size: 4rem;
 
+  @include breakpoint(sm) {
+    font-size: 6rem;
+  }
   @include breakpoint(md) {
     font-size: 8rem;
   }
