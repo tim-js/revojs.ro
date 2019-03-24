@@ -5,34 +5,40 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
+import Note from "@components/Note";
 
 import revojs from "@assets/revo.js.svg";
 
 export default () => {
   return (
     <Layout>
-      <Header centered>
-        <Content>
-          <h1>
-            About{" "}
-            <img
-              style={{ height: "80px", verticalAlign: "bottom" }}
-              className="revojs-text"
-              src={revojs}
-              alt="revo.js"
-            />
-          </h1>
-          <br />
-          <span className="light-faded">
-            Technology Focused. Community Driven. JavaScript Conference.
-          </span>
-        </Content>
+      <Header centered type="secondary">
+        <h1>
+          About{" "}
+          <img
+            style={{ height: "80px", verticalAlign: "bottom" }}
+            className="revojs-text"
+            src={revojs}
+            alt="revo.js"
+          />
+        </h1>
+        <br />
+        <span className="light-faded" />
       </Header>
 
       <Section light>
         <Content centered>
+          <Note>
+            <p className="mono">
+              <strong>
+                Technology Focused. Community Driven.{" "}
+                <span className="highlight">JavaScript Conference.</span>
+              </strong>
+            </p>
+          </Note>
+
           <section>
-            <h2 className="first">Organizers</h2>
+            <h2>Organizers</h2>
             <p>
               The revo.js conference is organized by <strong>tim.js</strong> in
               partnership with <strong>BanatIT</strong>.
