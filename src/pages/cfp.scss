@@ -1,33 +1,8 @@
 @import "../styles/mixins";
-@import "../styles/fonts";
 
-.cfp-header {
+.cfp-image {
   @include breakpoint(md) {
-    padding-right: calc(40vw);
-
-    align-items: flex-start;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-
-    background: url("/cfp_graphic.svg") no-repeat;
-    background-position-x: 100%;
-    background-position-y: 50%;
-
-    background-size: 50% 50%;
+    background: url("/illustration_cfp.svg") no-repeat;
+    background-size: contain;
   }
-  @include breakpoint(lg) {
-    background-position-x: 90%;
-    background-position-y: 90%;
-    background-size: auto auto;
-  }
-}
-
-.cfp-text {
-  color: var(--text-light);
-}
-
-.cfp-highlight {
-  @include font(mono);
-  color: var(--primary);
 }

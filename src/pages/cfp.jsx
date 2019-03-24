@@ -1,43 +1,42 @@
 import React from "react";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
+import Note from "@components/Note";
 
 import "./cfp.scss";
 
 export default () => {
   return (
     <Layout>
-      <Header className="cfp-header">
+      <Header type="main" image="cfp-image">
         <h1>Call For Papers</h1>
-        <Content>
-          <p className="cfp-text">
-            This is a shoutout to all members of the JavaScript community who
-            have a memorable talk to share. Please submit your talk proposal
-            until ??? and have a shot at presenting it at the first edition of
-            the revo.js, which will take place in Timisoara, Romania between 3-4
-            Oct 2019.
-          </p>
-          <br />
-          <strong className="cfp-highlight">
-            Type fast, the Call for Speakers closes on ???
-          </strong>
-          <br />
-          <br />
-          <br />
-          <a href="https://revojs.typeform.com/to/WWcdJ2">
-            <Button>Submit a Proposal Now</Button>
-          </a>
-        </Content>
+        <br />
+        <strong className="highlight mono">
+          Type fast, the Call for Speakers closes on ???
+        </strong>
+        <br />
+        <br />
+        <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2">
+          <Button>Submit your Proposal</Button>
+        </OutboundLink>
       </Header>
 
       <Section light>
         <Content centered>
+          <Note>
+            <p>
+              This is a shoutout to all members of the JavaScript community who
+              have a memorable talk to share.
+            </p>
+          </Note>
+
           <section>
-            <h2 className="first">Topics</h2>
+            <h2>Topics</h2>
             <p>
               Is your talk JavaScript related? Then it’s a perfect fit! Need a
               tighter description? Here are some additional hints:
