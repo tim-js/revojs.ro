@@ -4,28 +4,28 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
+import Note from "@components/Note";
 
 export default () => {
   return (
     <Layout>
-      <Header centered>
-        <div>
-          <h1>Privacy Statement</h1>
-          <Content centered>
-            <p>
-              The primary purpose of this website is to provide you all the
-              information you might need to attend revo.js conference. The
-              following provides an overview of how we protect your privacy
-              during your visit.
-            </p>
-          </Content>
-        </div>
+      <Header centered page>
+        <h1>Privacy Statement</h1>
       </Header>
 
       <Section light>
+        <Note>
+          <p>
+            The primary purpose of this website is to provide you all the
+            information you might need to attend revo.js conference. The
+            following provides an overview of how we protect your privacy during
+            your visit.
+          </p>
+        </Note>
+
         <Content centered>
           <section>
-            <h2 className="first">How do we gather data?</h2>
+            <h2>How do we gather data?</h2>
             <p>
               Personal information may be collected from you in 2 different
               ways:
