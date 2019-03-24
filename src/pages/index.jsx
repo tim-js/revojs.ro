@@ -32,7 +32,7 @@ export default props => {
         </div>
 
         <div className="index-cta">
-          <Button>View our Speakers</Button>
+          <a href="#speakers"><Button>View our Speakers</Button></a>
         </div>
 
         {/* <div className="description mono">

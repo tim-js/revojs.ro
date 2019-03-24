@@ -10,7 +10,7 @@ const Speakers = ({ data }) => {
   const speakers = allSpeakersJson.edges.map(e => e.node);
 
   return (
-    <section className="speakers-content">
+    <section id="speakers" className="speakers-content">
       <h1 className="speakers-title">Speakers</h1>
       <ul className="speakers-list">
         {speakers.map(speaker => {
