@@ -62,7 +62,7 @@ export default () => {
 
           <ul className="primary-navigation">
             {main.map(page => {
-              return <li>{renderPage(page, "main-link")}</li>;
+              return <li key={page.name}>{renderPage(page, "main-link")}</li>;
             })}
 
             <li>
@@ -74,7 +74,11 @@ export default () => {
 
               <ul className={`secondary-navigation`}>
                 {secondary.map(page => {
-                  return <li>{renderPage(page, "main-link secondary")}</li>;
+                  return (
+                    <li key={page.name}>
+                      {renderPage(page, "main-link secondary")}
+                    </li>
+                  );
                 })}
               </ul>
             </li>

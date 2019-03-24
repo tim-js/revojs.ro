@@ -25,19 +25,19 @@ export default () => (
       <div className="internal-links">
         <ul className="footer-menu">
           {main.map(page => {
-            return <li>{renderPage(page)}</li>;
+            return <li key={page.name}>{renderPage(page)}</li>;
           })}
         </ul>
 
         <ul className="footer-menu">
           {secondary.map(page => {
-            return <li>{renderPage(page)}</li>;
+            return <li key={page.name}>{renderPage(page)}</li>;
           })}
         </ul>
 
         <ul className="footer-menu">
           {tertiary.map(page => {
-            return <li>{renderPage(page)}</li>;
+            return <li key={page.name}>{renderPage(page)}</li>;
           })}
         </ul>
       </div>
