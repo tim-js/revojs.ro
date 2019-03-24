@@ -52,7 +52,7 @@ export default props => {
           ${isHome ? "is-home" : ""}
         `}
       >
-        <Link to="/">
+        <Link to="/" title="go to homepage">
           <img
             src={logo}
             alt="revo.js"
