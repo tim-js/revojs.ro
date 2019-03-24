@@ -2,11 +2,9 @@
 @import "../styles/fonts";
 
 $darker-background: #060b10;
-$menu-height: 150px;
-$menu-height-scrolled: 60px;
 
 .navigation {
-  height: $menu-height;
+  height: var(--menu-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +21,7 @@ $menu-height-scrolled: 60px;
     background: var(--background-dark);
     border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
 
-    height: $menu-height-scrolled;
+    height: var(--menu-height-scrolled);
   }
 
   @include breakpoint(lg) {
@@ -46,11 +44,11 @@ $menu-height-scrolled: 60px;
   padding: 2em;
   position: fixed;
   transform: translateX(-100%);
-  top: $menu-height;
+  top: var(--menu-height);
   left: 0;
   right: 0;
   bottom: 0;
-  min-height: calc(100vh - #{$menu-height});
+  min-height: calc(100vh - var(--menu-height));
   background-color: $darker-background;
   border-top: 1px var(--text-dark) solid;
   border-bottom: 1px var(--text-dark) solid;
@@ -64,8 +62,8 @@ $menu-height-scrolled: 60px;
   }
 
   .is-scrolled & {
-    top: $menu-height-scrolled;
-    min-height: calc(100vh - #{$menu-height-scrolled});
+    top: var(--menu-height-scrolled);
+    min-height: calc(100vh - var(--menu-height-scrolled));
   }
 }
 
@@ -117,8 +115,10 @@ $menu-height-scrolled: 60px;
     font-size: var(--space-3);
   }
   @include breakpoint(md, min) {
-    height: calc(#{$menu-height-scrolled} - 1px);
-    line-height: $menu-height-scrolled;
+    line-height: var(--menu-height-scrolled);
+    &:not(.secondary) {
+      padding: 0 var(--space-2);
+    }
   }
 }
 .main-link:hover {
@@ -136,8 +136,8 @@ $menu-height-scrolled: 60px;
 }
 
 #toggle-primary-navigation {
-  height: $menu-height-scrolled;
-  padding: 0 var(--space-1);
+  height: var(--menu-height-scrolled);
+  padding: 0;
   transform: translateY(2px);
 
   @include breakpoint(md, max) {
@@ -151,9 +151,9 @@ $menu-height-scrolled: 60px;
 
 #toggle-secondary-navigation {
   display: none;
-  height: $menu-height-scrolled;
-  padding: 0 var(--space-1);
-  transform: translateY(2px);
+  height: var(--menu-height-scrolled);
+  // padding: 0 var(--space-1);
+  transform: translateY(4px);
 
   @include breakpoint(md) {
     display: block;

@@ -17,4 +17,7 @@
   --space-8: calc(var(--space-1) * 8); /* 64 */
   --space-10: calc(var(--space-1) * 10); /* 80 */
   --space-16: calc(var(--space-1) * 16); /* 128 */
+
+  --menu-height: 120px;
+  --menu-height-scrolled: 60px;
 }
