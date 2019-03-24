@@ -124,6 +124,7 @@ $darker-background: #060b10;
   color: var(--text-light);
   transition: all 0.3s;
   display: inline-block;
+  border-bottom: 3px transparent solid;
 
   &.secondary {
     @include breakpoint(md) {
@@ -137,7 +138,7 @@ $darker-background: #060b10;
     line-height: 1.7;
   }
   @include breakpoint(md, min) {
-    line-height: var(--menu-height-scrolled);
+    line-height: calc(var(--menu-height-scrolled) - 3px);
     &:not(.secondary) {
       padding: 0 var(--space-2);
     }
