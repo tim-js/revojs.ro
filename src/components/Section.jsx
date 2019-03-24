@@ -8,9 +8,9 @@ const Section = props => {
   const centered = props.centered ? "section--centered" : "";
 
   return (
-    <section className={`section ${theme} ${centered}`}>
+    <div className={`section ${theme} ${centered}`}>
       {props.children}
-    </section>
+    </div>
   );
 };
 
