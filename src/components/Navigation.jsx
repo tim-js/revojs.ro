@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
+import { main, secondary } from "./_pages";
 import Hamburger from "@components/layout/Hamburger";
 import logo from "@assets/logo-revojs.svg";
 
@@ -19,6 +20,23 @@ const PartialMatchLink = ({ to, text, className, ...props }) => (
     {text}
   </Link>
 );
+
+function renderPage(page, classNames) {
+  const name = page.name;
+  const path = page.path || name.toLowerCase();
+
+  if (page.hasSubpages) {
+    return (
+      <PartialMatchLink to={`/${path}/`} text={name} className={classNames} />
+    );
+  }
+
+  return (
+    <Link activeClassName="active" to={`/${path}/`} className={classNames}>
+      {name}
+    </Link>
+  );
+}
 
 export default () => {
   const [showMenu, toggleMenu] = useState(false);
@@ -43,41 +61,10 @@ export default () => {
           />
 
           <ul className="primary-navigation">
-            <li>
-              <PartialMatchLink
-                to="/speakers/"
-                text="Speakers"
-                className="main-link"
-              />
-            </li>
-            <li>
-              <Link activeClassName="active" to="/cfp/" className="main-link">
-                Call for Papers
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClassName="active"
-                to="/tickets/"
-                className="main-link"
-              >
-                Tickets
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClassName="active"
-                to="/supporters/"
-                className="main-link"
-              >
-                Supporters
-              </Link>
-            </li>
-            <li>
-              <Link activeClassName="active" to="/venue/" className="main-link">
-                Venue
-              </Link>
-            </li>
+            {main.map(page => {
+              return <li>{renderPage(page, "main-link")}</li>;
+            })}
+
             <li>
               <Hamburger
                 active={showMenu}
@@ -86,24 +73,9 @@ export default () => {
               />
 
               <ul className={`secondary-navigation`}>
-                <li>
-                  <Link
-                    activeClassName="active"
-                    to="/travel/"
-                    className="main-link secondary"
-                  >
-                    Travel Info
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClassName="active"
-                    to="/about/"
-                    className="main-link secondary"
-                  >
-                    About
-                  </Link>
-                </li>
+                {secondary.map(page => {
+                  return <li>{renderPage(page, "main-link secondary")}</li>;
+                })}
               </ul>
             </li>
           </ul>

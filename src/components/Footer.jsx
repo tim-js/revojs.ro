@@ -10,50 +10,35 @@ import linkedin from "@assets/linkedin.svg";
 // import medium from "@assets/medium.svg";
 import revojs from "@assets/revo.js.svg";
 
+import { main, secondary, tertiary } from "./_pages";
+
+function renderPage(page) {
+  const name = page.name;
+  const path = page.path || name.toLowerCase();
+
+  return <Link to={`/${path}/`}>{name}</Link>;
+}
+
 export default () => (
   <footer className="footer">
     <nav>
       <div className="internal-links">
         <ul className="footer-menu">
-          <li>
-            <Link to="/speakers/">Speakers</Link>
-          </li>
-          <li>
-            <Link to="/cfp/">Call for Papers</Link>
-          </li>
-          <li>
-            <Link to="/tickets/">Tickets</Link>
-          </li>
-          {/* <li>
-            <Link to="/supporters/">Supporters</Link>
-          </li>
-          <li>
-            <Link to="/venue/">Venue</Link>
-          </li> */}
+          {main.map(page => {
+            return <li>{renderPage(page)}</li>;
+          })}
         </ul>
 
         <ul className="footer-menu">
-          <li>
-            <Link to="/travel/">Travel Info</Link>
-          </li>
-          <li>
-            <Link to="/about/">About</Link>
-          </li>
-          {/* <li>
-            <Link to="/press/">Press</Link>
-          </li>
-          <li>
-            <Link to="/contact/">Contact</Link>
-          </li> */}
+          {secondary.map(page => {
+            return <li>{renderPage(page)}</li>;
+          })}
         </ul>
 
         <ul className="footer-menu">
-          <li>
-            <Link to="/code-of-conduct/">Code of Conduct</Link>
-          </li>
-          <li>
-            <Link to="/privacy-policy/">Privacy Policy</Link>
-          </li>
+          {tertiary.map(page => {
+            return <li>{renderPage(page)}</li>;
+          })}
         </ul>
       </div>
 
