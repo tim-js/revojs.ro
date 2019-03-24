@@ -9,7 +9,7 @@ import Note from "@components/Note";
 export default () => {
   return (
     <Layout>
-      <Header centered>
+      <Header centered page>
         <h1>Code of Conduct</h1>
       </Header>
 
