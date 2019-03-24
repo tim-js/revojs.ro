@@ -1,5 +1,10 @@
 @import "../../styles/mixins";
 
+.index-sponsors {
+  background-image: url("/pixel_separation_sponsors.svg"),
+    linear-gradient(to bottom, var(--background-dark) 128px, white 128px);
+}
+
 .sponsors-list {
   list-style-type: none;
   padding: 0;
