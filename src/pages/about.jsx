@@ -22,8 +22,6 @@ export default () => {
             alt="revo.js"
           />
         </h1>
-        <br />
-        <span className="light-faded" />
       </Header>
 
       <Section light>
