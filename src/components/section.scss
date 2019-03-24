@@ -2,8 +2,15 @@
   padding: var(--spacing-content);
 }
 .section--light {
-  background: white;
+  // background: white;
   color: var(--text-dark);
+
+  background-image: url("/pixel_separation_pages.svg"),
+    linear-gradient(to bottom, var(--background-dark) 128px, white 128px);
+  background-position: center top;
+  background-repeat: no-repeat, no-repeat;
+
+  padding-top: calc(256px + var(--spacing-content));
 }
 .section--centered {
   text-align: center;
