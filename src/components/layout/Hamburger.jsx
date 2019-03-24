@@ -7,7 +7,11 @@ const Hamburger = ({ active, ...props }) => {
   const _active = active ? "active" : "";
 
   return (
-    <button className={`hamburger ${_active}`} {...props}>
+    <button
+      aria-label="Toggle menu"
+      className={`hamburger ${_active}`}
+      {...props}
+    >
       <span className={`hamburger-box`}>
         <span className="hamburger-inner" />
       </span>
