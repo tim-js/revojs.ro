@@ -13,7 +13,7 @@ import "./index.scss";
 
 export default props => {
   return (
-    <Layout location={props.location}>
+    <Layout location={props.location} className="index-graphics">
       <Header className="header-index">
         <div className="index-logo">
           <img src={logo} alt="revo.js" height="70" />

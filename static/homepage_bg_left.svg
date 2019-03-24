@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="540px" height="1445px" viewBox="0 0 540 1445" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>homepage_bg_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="14.9185726%" y1="82.9880902%" x2="48.7358817%" y2="41.6158046%" id="linearGradient-1">
+            <stop stop-color="#1D2227" offset="0%"></stop>
+            <stop stop-color="#22272D" offset="35.0779184%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="41.6525526%" y1="23.1031182%" x2="56.2952827%" y2="72.5281635%" id="linearGradient-2">
+            <stop stop-color="#32373C" offset="0%"></stop>
+            <stop stop-color="#262E33" offset="34.0361962%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="72.03002%" y1="2.1642869%" x2="44.4178003%" y2="105.223873%" id="linearGradient-3">
+            <stop stop-color="#2A2E33" offset="0%"></stop>
+            <stop stop-color="#060B10" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-New">
+            <g id="stanga" transform="translate(-200.000000, 90.000000)">
+                <polygon id="01-s" fill="url(#linearGradient-1)" points="731.543289 141.421356 180 692.964646 180 410.121933 590.121933 5.68434189e-14"></polygon>
+                <polygon id="Shape" fill="#F45919" fill-rule="nonzero" points="238.503391 378.514335 163.866683 303.110446 168.130961 298.889554 242.76768 374.293454 413.221088 546.500742 168.130976 794.113508 163.866668 789.892645 404.778912 546.500749"></polygon>
+                <polygon id="02-s" fill="url(#linearGradient-2)" points="494.776695 718.553391 494.776695 1001.3961 141.223305 647.842712 141.223305 365"></polygon>
+                <polygon id="03-s" fill="url(#linearGradient-3)" points="9.9475983e-13 1213.97475 494.974747 719 494.974747 1001.84271 141.421356 1355.3961"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,5 +1,17 @@
 @import "../styles/mixins";
 
+.index-graphics {
+  @include breakpoint(sm) {
+    background-image: url("/homepage_bg_left.svg"),
+      url("/homepage_bg_right.svg");
+    background-position: -150px top, calc(100% + 150px) top;
+    background-repeat: no-repeat, no-repeat;
+  }
+  @include breakpoint(lg) {
+    background-position: left top, right top;
+  }
+}
+
 .header-index {
   align-items: center;
   justify-content: flex-start;
