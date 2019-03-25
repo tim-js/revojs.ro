@@ -13,7 +13,7 @@ export const sponsors = [
   {
     name: "Busy Machines",
     image: "sponsors/busy_machines_logo.png",
-    url: "hhttps://www.busymachines.com/"
+    url: "https://www.busymachines.com/"
   },
   {
     name: "Visma",
