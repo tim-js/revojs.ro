@@ -1,0 +1,11 @@
+@import "../styles/mixins";
+
+.about-organizers {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--spacing-content);  
+  }
+}
