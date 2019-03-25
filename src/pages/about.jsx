@@ -47,7 +47,7 @@ export default () => {
             <br />
 
             <h3>
-              <OutboundLink href="https://timjs.ro">
+              <OutboundLink href="https://timjs.ro" target="_blank">
                 <img src={timjs} alt="tim.js" height="50" />
               </OutboundLink>
             </h3>
@@ -60,7 +60,7 @@ export default () => {
             <br />
 
             <h3>
-              <OutboundLink href="https://banatit.ro">
+              <OutboundLink href="https://banatit.ro" target="_blank">
                 <img src={banatit} alt="Banat IT" height="45" />
               </OutboundLink>
             </h3>

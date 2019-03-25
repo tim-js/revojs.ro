@@ -13,7 +13,7 @@ const Logos = ({ list = [] }) => {
 
         return (
           <li key={logo.name} className={isPremium && "is-premium"}>
-            <OutboundLink href={logo.url} className="logo">
+            <OutboundLink href={logo.url} className="logo" target="_blank">
               <img src={image} alt={logo.name} width="100%" />
             </OutboundLink>
           </li>

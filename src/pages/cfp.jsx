@@ -130,7 +130,7 @@ export default () => {
           </section>
           <br />
           <br />
-          {/* <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2">
+          {/* <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2" target="_blank">
             <Button white>Submit your Proposal</Button>
           </OutboundLink> */}
         </Content>

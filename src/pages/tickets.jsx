@@ -49,7 +49,7 @@ export default () => {
           })}
         </ul>
         <br />
-        <OutboundLink href="https://ti.to/revojs/revojs2019">
+        <OutboundLink href="https://ti.to/revojs/revojs2019" target="_blank">
           <Button>Get Your Ticket</Button>
         </OutboundLink>
       </Header>
@@ -102,7 +102,7 @@ export default () => {
           <br />
           <br />
           <br />
-          <OutboundLink href="https://ti.to/revojs/revojs2019">
+          <OutboundLink href="https://ti.to/revojs/revojs2019" target="_blank">
             <Button white>Get Your Ticket</Button>
           </OutboundLink>
         </Content>
