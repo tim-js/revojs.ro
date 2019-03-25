@@ -14,16 +14,16 @@ export default () => {
       </Header>
 
       <Section light>
-        <Note>
-          <p>
-            The primary purpose of this website is to provide you all the
-            information you might need to attend revo.js conference. The
-            following provides an overview of how we protect your privacy during
-            your visit.
-          </p>
-        </Note>
-
         <Content centered>
+          <Note>
+            <p>
+              The primary purpose of this website is to provide you all the
+              information you might need to attend revo.js conference. The
+              following provides an overview of how we protect your privacy
+              during your visit.
+            </p>
+          </Note>
+
           <section>
             <h2>How do we gather data?</h2>
             <p>
