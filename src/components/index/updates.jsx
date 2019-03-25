@@ -8,7 +8,7 @@ import "./updates.scss";
 export default () => {
   return (
     <Section centered>
-      <h2>Latest Updates</h2>
+      <h2>Coming Soon</h2>
 
       <ul className="updates-list">
         <li>
