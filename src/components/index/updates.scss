@@ -3,13 +3,16 @@
 .updates-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   text-align: left;
   margin-top: 6em;
   display: grid;
-  grid-gap: var(--spacing-content);
+  grid-gap: var(--space-10);
+  grid-template-columns: minmax(1fr, 300px);
+  max-width: 800px;
 
   @include breakpoint(sm) {
+    grid-gap: var(--spacing-content);
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   }
 }
