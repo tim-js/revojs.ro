@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
@@ -128,6 +129,120 @@ export default () => {
               it feel `like brand new`.
             </p>
           </section>
+
+          <section>
+            <h2>Need help?</h2>
+
+            <p>
+              We know that putting together a winning talk proposal can be
+              daunting. But count on us! We’re happy to help and guide you all
+              the way with:
+            </p>
+            <ul>
+              <li>Brainstorming ideas</li>
+              <li>Proposal submission</li>
+              <li>Slides or live code preparation</li>
+              <li>Talk delivery on stage</li>
+            </ul>
+
+            <p>
+              We’re here to help you nail the JS talk! Don’t be shy, get in
+              touch:
+              <br />
+              <a
+                href="mailto:info@revojs.ro?subject=[help cfp]"
+                className="mono"
+              >
+                <strong>info@revojs.ro</strong>
+              </a>{" "}
+              (just please don’t use this email to submit your proposal).
+            </p>
+          </section>
+
+          <section>
+            <h2>Perks for selected talks</h2>
+
+            <p>If your proposal gets picked, here’s what we’ll do:</p>
+
+            <ul className="bullet">
+              <li>Cover all your travel expenses</li>
+              <li>
+                Offer 4 nights accommodation close to the conference venue (if
+                you’d like to stay longer, we can help you arrange things, just
+                let us know)
+              </li>
+              <li>
+                Give you free entrance at all the talks and happenings during
+                the conference
+              </li>
+              <li>
+                Buy an extra ticket and upgrade to a double room in case you
+                want to bring someone along for support
+              </li>
+              <li>
+                Take you on a trip outside Timisoara on Saturday; we’ll tag
+                along{" "}
+              </li>
+              <li>Take you out at a speakers’ dinner</li>
+              <li>Get you involved in other activities around the event</li>
+            </ul>
+
+            <h3>Does your company have your back?</h3>
+            <p>
+              If your employer wants to cover your travel expenses and
+              accommodation, we’d be happy to list them as partners. The money
+              saved will be invested into the general running of the conference
+              and scholarships for attendees from underrepresented groups.
+            </p>
+          </section>
+
+          <section>
+            <h2>Video recordings</h2>
+
+            <p>
+              We plan to record all talks and publish them online for free,
+              along with a recording of the slide deck, live demo, and any
+              on-presenter-screen activity. We do this for the benefit of the
+              larger JS community and those who couldn’t make it to the
+              conference.
+            </p>
+
+            <p>
+              We hope you agree with us, but if you are uncomfortable with this
+              in any way, let us know and we will work things out. Note that we
+              disabled comments on our published videos by default.
+            </p>
+
+            <p>
+              Finally, since you retain full ownership of your slides and
+              recording,{" "}
+              <strong>
+                we’d like to ask you to make your materials and recording
+                available under a Creative Commons (we default to non-commercial
+                reuse) or other open source license
+              </strong>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2>Code of Conduct</h2>
+
+            <p>
+              Our Code of Conduct aims to create a safe and welcoming space for
+              our community members, and to protect every attendee, staff member
+              and speaker from harassment.
+            </p>
+
+            <p>
+              We thus need you to read, understand, and comply with our{" "}
+              <Link to="/code-of-conduct/">
+                <strong>Code of Conduct</strong>
+              </Link>
+              .
+            </p>
+          </section>
+
           <br />
           <br />
           {/* <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2" target="_blank">
