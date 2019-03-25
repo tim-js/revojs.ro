@@ -1,5 +1,5 @@
 import React from "react";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -10,8 +10,8 @@ import Note from "@components/Note";
 
 import "./cfp.scss";
 
-const CFP_OPEN = "17th of April";
-// const CFP_CLOSE = "17th of June";
+const CFP_OPEN = "April 17th";
+// const CFP_CLOSE = "June 17th";
 
 export default () => {
   return (
@@ -20,12 +20,12 @@ export default () => {
         <h1>Call For Papers</h1>
         <br />
         <strong className="highlight mono">
-          {/* Type fast, the Call for Speakers closes on ??? */}
-          Opens on the {CFP_OPEN}
+          {/* Type fast, the Call for Speakers closes on {CFP_CLOSE} */}
+          Opens on {CFP_OPEN}
         </strong>
         <br />
         <br />
-        {/* <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2">
+        {/* <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2" target="_blank">
           <Button>Submit your Proposal</Button>
         </OutboundLink> */}
         <a href="#topics">
@@ -43,7 +43,7 @@ export default () => {
             </p>
             <p>Stay tuned to share it!</p>
             <p>
-              The Call for Papers opens on the{" "}
+              The Call for Papers opens on{" "}
               <strong className="highlight mono">{CFP_OPEN}</strong>.
             </p>
           </Note>
