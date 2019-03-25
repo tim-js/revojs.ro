@@ -97,10 +97,15 @@ ul.bullet {
 ul.bullet > li {
   background: url("/logo-shape.svg") no-repeat;
   background-size: 2.5em;
-  background-position: 0 7px;
   margin-top: var(--space-3);
-  padding-left: 1.5em;
+  margin-left: var(--space-3);
+  padding-left: 1.25em;
   line-height: 1.4em;
+  background-position: 0 5px;
+
+  @include breakpoint(md) {
+    background-position: 0 7px;
+  }
 }
 
 button:focus {
