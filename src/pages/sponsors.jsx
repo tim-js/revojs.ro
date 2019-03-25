@@ -23,22 +23,36 @@ export default () => {
         <Content centered>
           <Note>
             <p>
-              revo.js was made possible thanks to many companies, service
-              providers, communities and individuals.
+              Change comes one step at a time, <br />
+              and a conference is built one supporter at a time.
+            </p>
+            <p>
+              This is a shoutout to all our sustainers who helped make revo.js a
+              reality.
+            </p>
+            <p>
+              Hopefully, it will become a{" "}
+              <strong className="mono">const</strong>.{" "}
             </p>
           </Note>
         </Content>
 
         <section style={{ textAlign: "center" }}>
           <h1 className="sponsors-heading">Sponsors</h1>
-          <p>They gave us money to pay for stuff:</p>
+          <p>
+            We are very grateful and proud of our awesome sponsors. <br />
+            We couldn’t have done without them. <strong>For real-real</strong>.
+          </p>
 
           <Logos list={sponsors} />
         </section>
 
         <section style={{ textAlign: "center" }}>
           <h1 className="sponsors-heading">Partners</h1>
-          <p>They have us stuff, so we don't have to pay for it:</p>
+          <p>
+            A big thank you to all our partners. <br />
+            They brought the "spice and everything nice".
+          </p>
 
           <Logos list={[]} />
         </section>
@@ -46,8 +60,8 @@ export default () => {
         <section style={{ textAlign: "center" }}>
           <h1 className="sponsors-heading">Communities</h1>
           <p>
-            They helped us spread the word, offered us support when needed,
-            advised us:
+            High five, up high to all the amazing JavaScript communities that
+            have our back.
           </p>
 
           <Logos list={[]} />
