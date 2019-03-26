@@ -20,7 +20,7 @@ export default () => {
       <Header type="main" image="cfp-image">
         <h1>Call For Papers</h1>
         <br />
-        <strong className="highlight mono">
+        <strong className="cfp-important highlight mono">
           {/* Type fast, the Call for Speakers closes on {CFP_CLOSE} */}
           Opens on {CFP_OPEN}
         </strong>
@@ -29,7 +29,7 @@ export default () => {
         {/* <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2" target="_blank">
           <Button>Submit your Proposal</Button>
         </OutboundLink> */}
-        <a href="#topics">
+        <a href="#topics" className="cfp-cta">
           <Button>View our Topics</Button>
         </a>
       </Header>

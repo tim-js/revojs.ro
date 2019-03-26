@@ -4,5 +4,15 @@
   @include breakpoint(md) {
     background: url("/illustration_cfp.svg") no-repeat;
     background-size: contain;
+    background-position: center center;
   }
+}
+
+.cfp-important {
+  font-size: 24px;
+}
+
+.cfp-cta {
+  margin-top: var(--space-6);
+  display: inline-block;
 }

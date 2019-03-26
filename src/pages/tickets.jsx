@@ -49,7 +49,11 @@ export default () => {
           })}
         </ul>
         <br />
-        <OutboundLink href="https://ti.to/revojs/revojs2019" target="_blank">
+        <OutboundLink
+          className="tickets-cta"
+          href="https://ti.to/revojs/revojs2019"
+          target="_blank"
+        >
           <Button>Get Your Ticket</Button>
         </OutboundLink>
       </Header>
