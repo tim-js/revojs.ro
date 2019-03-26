@@ -12,7 +12,8 @@ export default () => {
     <Section light centered className="index-sponsors">
       <h1>Sponsors</h1>
       <p>
-        We are very proud of our sponsors, couldn't have made it without them.
+        Bulshit free! This event would not be possible without these awesome
+        sponsors.
       </p>
 
       <Logos list={sponsors} />
