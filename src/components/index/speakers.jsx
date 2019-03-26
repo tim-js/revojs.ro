@@ -28,7 +28,7 @@ const Speakers = ({ data }) => {
         })}
       </ul>
       <p className="speakers-more mono">
-        <strong>More speakers will be announced soon.</strong>
+        <strong>More speakers will be announced soon</strong>
         <br />
         <br />
         <strong className="highlight">Stay Tuned</strong>
