@@ -15,7 +15,8 @@ export default () => {
           <Link to="/cfp/">
             <strong className="update-title mono">Call For Papers</strong>
             <p className="update-content light-faded">
-              Some quick CTA text for papers, bla bla bla lorem ipsum now etc.
+              Learn everything about the application process and get ready to
+              submit your proposal starting with the 17th of April.
             </p>
           </Link>
         </li>
@@ -23,7 +24,8 @@ export default () => {
           <Link to="/tickets/">
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              Some quick CTA text for papers, bla bla bla lorem ipsum now etc.
+              Discover what types of tickets you can purchase and stay tuned!
+              Early Bird starts in April.
             </p>
           </Link>
         </li>
