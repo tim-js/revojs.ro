@@ -24,7 +24,7 @@ export default function HTML(props) {
         />
         <meta
           property="og:image"
-          content="/revojs-cover.png"
+          content="https://revojs.ro/revojs-cover.png"
         />
         <meta
           property="og:url"
