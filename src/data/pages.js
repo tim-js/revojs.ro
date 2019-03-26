@@ -11,21 +11,24 @@ export const main = [
     name: "Tickets"
   },
   {
-    name: "Sponsors"
+    name: "Venue"
   },
   {
-    name: "Venue"
+    name: "Sponsors"
   }
 ];
 
 export const secondary = [
-  {
-    name: "Travel Info",
-    path: "travel"
-  },
+  // {
+  //   name: "Travel Info",
+  //   path: "travel"
+  // },
   {
     name: "About"
   },
+  // {
+  //   name: "Manifest"
+  // },
   // {
   //   name: "Media"
   // },
