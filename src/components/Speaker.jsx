@@ -19,7 +19,7 @@ export default props => {
             {props.data.lastname}
           </h2>
           <span className="speaker-title">{props.data.title}</span>
-          <span className="speaker-company">{props.data.company}</span>
+          <span className="speaker-company">at {props.data.company}</span>
         </div>
       </div>
     </section>
