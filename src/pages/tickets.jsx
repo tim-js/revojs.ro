@@ -13,41 +13,98 @@ import "./tickets.scss";
 export default () => {
   const now = new Date();
   const currentMonth = now.getMonth();
-  const currentDay = now.getDate();
 
-  const months = ["Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"];
-  const startIndex = 2;
-  const monthPercent = Math.floor((currentDay * 100) / 31);
+  // const INDEX_START_EARLY = 3;
+  const INDEX_START_REGULAR = 5;
+  const INDEX_START_LATE = 8;
+
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct"
+  ];
+
+  let countEarly = 0;
+  let countRegular = 0;
+  let countLate = 0;
+
+  months.map((m, index) => {
+    if (index < currentMonth) {
+      return;
+    }
+    if (index < INDEX_START_REGULAR) {
+      countEarly++;
+    } else if (index >= INDEX_START_LATE) {
+      countLate++;
+    } else {
+      countRegular++;
+    }
+  });
 
   return (
     <Layout>
       <Header type="main" image="tickets-image">
         <h1>Tickets</h1>
         <br />
+        <br />
+        <div
+          className="mono tag-wrapper"
+          style={{
+            display: "flex",
+            margin: `0 calc((50vw - var(--spacing-content)) / ${months.length -
+              currentMonth +
+              1} / 2)`
+          }}
+        >
+          {!!countEarly && (
+            <strong style={{ flex: countEarly }} className="tag-early">
+              Early Bird
+            </strong>
+          )}
+          {!!countRegular && (
+            <strong style={{ flex: countRegular }} className="tag-regular">
+              Regular
+            </strong>
+          )}
+          {!!countLate && (
+            <strong style={{ flex: countLate - 1 }} className="tag-late">
+              Late Bird
+            </strong>
+          )}
+        </div>
         <ul className="tickets-timeline">
           {months.map((m, index) => {
-            let css = "regular";
-            if (index <= 2) {
+            if (index < currentMonth) {
+              return;
+            }
+
+            let css = "";
+            if (index < INDEX_START_REGULAR) {
               css = "early";
-            }
-            if (index >= months.length - 1) {
+              countEarly++;
+            } else if (index >= INDEX_START_LATE) {
               css = "late";
+              countLate++;
+            } else {
+              css = "regular";
+              countRegular++;
             }
+
             return (
               <li key={m} className={css}>
-                {m}
-                {index + startIndex === currentMonth && (
-                  <span
-                    style={{ left: `${monthPercent}%` }}
-                    className="current-day"
-                  >
-                    Today
-                  </span>
-                )}
+                <span className="month">{m}</span>
               </li>
             );
           })}
         </ul>
+
         <br />
         <OutboundLink
           className="tickets-cta"

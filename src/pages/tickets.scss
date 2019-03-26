@@ -23,12 +23,30 @@
   --gap: 0px;
 }
 
+.tag-wrapper {
+  display: flex;
+  white-space: nowrap;
+}
+.tag-early {
+  justify-self: flex-start;
+  color: white;
+}
+.tag-regular {
+  justify-self: center;
+  text-align: center;
+  color: var(--primary);
+}
+.tag-late {
+  justify-self: flex-end;
+  color: #c61212;
+}
+
 .tickets-timeline {
   display: flex;
   list-style-type: none;
   counter-reset: step;
   padding: 0;
-  margin: 4em 0;
+  margin: 1.5em 0 4em 0;
   font-size: 12px;
   color: var(--text-light);
 }
@@ -55,15 +73,14 @@
   border-style: solid;
 }
 
-.tickets-timeline li:not(:first-child)::after {
+.tickets-timeline li:not(:last-child)::after {
   content: "";
   display: block;
-  // background: var(--primary);
   height: var(--thickness);
   width: calc(100% - var(--size) - var(--gap) * 2);
   position: absolute;
   top: calc((var(--size) - var(--thickness)) / 2);
-  left: calc(-50% + var(--size) / 2 + var(--gap));
+  right: calc(-50% + var(--size) / 2 + var(--gap));
   z-index: -1;
 }
 
@@ -80,30 +97,8 @@
   background: var(--primary);
 }
 .late::before {
-  border-color: #C61212;
+  border-color: #c61212;
 }
 .late::after {
-  background: #C61212;
-}
-
-.current-day {
-  text-align: center;
-  height: var(--size);
-  display: block;
-  position: absolute;
-  margin-left: 50%;
-  top: -35px;
-  transform: translateX(-50%);
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.current-day::after {
-  background-color: var(--primary);
-  content: "";
-  width: 2px;
-  height: 10px;
-  display: block;
-  margin-left: calc(50% - 1px);
+  background: #c61212;
 }
