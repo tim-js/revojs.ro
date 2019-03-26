@@ -12,7 +12,7 @@ const Logos = ({ list = [] }) => {
         const isPremium = !!logo.premium;
 
         return (
-          <li key={logo.name} className={isPremium && "is-premium"}>
+          <li key={logo.name} className={isPremium ? "is-premium" : ""}>
             <OutboundLink href={logo.url} className="logo" target="_blank">
               <img src={image} alt={logo.name} width="100%" />
             </OutboundLink>
