@@ -2,6 +2,7 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
 import Speaker from "@components/Speaker";
+import Subscribe from "@components/Subscribe";
 
 import "./speakers.scss";
 
@@ -33,6 +34,13 @@ const Speakers = ({ data }) => {
         <br />
         <strong className="highlight">Stay Tuned</strong>
       </p>
+
+      <div style={{ paddingTop: "96px" }} id="subscribe">
+        <p style={{ textAlign: "center" }}>
+          Full lineup to be announced mid summer. Get notified about event news:
+        </p>
+        <Subscribe centered />
+      </div>
     </section>
   );
 };

@@ -7,6 +7,7 @@ import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
 import Note from "@components/Note";
+import Subscribe from "@components/Subscribe";
 
 import "./tickets.scss";
 
@@ -106,12 +107,15 @@ export default () => {
         </ul>
 
         <br />
-        <OutboundLink
+        {/* <OutboundLink
           className="tickets-cta"
           href="https://ti.to/revojs/revojs2019"
           target="_blank"
         >
           <Button>Get Your Ticket</Button>
+        </OutboundLink> */}
+        <OutboundLink href="#subscribe">
+          <Button>Subscribe for Updates</Button>
         </OutboundLink>
       </Header>
 
@@ -160,12 +164,17 @@ export default () => {
             </p>
           </section>
 
+          <div style={{ paddingTop: "96px" }} id="subscribe">
+            <p>Subscribe to our newsletter to get updates:</p>
+            <Subscribe light />
+          </div>
+
           <br />
           <br />
           <br />
-          <OutboundLink href="https://ti.to/revojs/revojs2019" target="_blank">
+          {/* <OutboundLink href="https://ti.to/revojs/revojs2019" target="_blank">
             <Button white>Get Your Ticket</Button>
-          </OutboundLink>
+          </OutboundLink> */}
         </Content>
       </Section>
     </Layout>

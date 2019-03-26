@@ -11,10 +11,18 @@ html {
   color: #ffffff;
 }
 
+body,
+input,
+select,
+textarea,
+button {
+  font-size: 1.6rem;
+  @include font(default);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
   line-height: 1.6;
 }
 
