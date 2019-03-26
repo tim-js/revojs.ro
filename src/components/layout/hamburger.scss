@@ -19,7 +19,7 @@
   transition-duration: 75ms, 150ms;
   transition-property: transform, background;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: var(--text-light);
 }
 .hamburger-inner {
   top: 50%;

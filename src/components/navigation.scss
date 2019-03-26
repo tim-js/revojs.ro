@@ -174,7 +174,7 @@ $darker-background: #060b10;
   display: none;
   height: var(--menu-height-scrolled);
   // padding: 0 var(--space-1);
-  transform: translateY(4px);
+  transform: translateY(2px);
 
   @include breakpoint(md) {
     display: block;
