@@ -35,7 +35,7 @@ export default () => {
   let countRegular = 0;
   let countLate = 0;
 
-  months.map((m, index) => {
+  months.forEach(function(m, index) {
     if (index < currentMonth) {
       return;
     }
@@ -82,7 +82,7 @@ export default () => {
         <ul className="tickets-timeline">
           {months.map((m, index) => {
             if (index < currentMonth) {
-              return;
+              return null;
             }
 
             let css = "";
