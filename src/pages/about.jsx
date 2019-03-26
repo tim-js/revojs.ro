@@ -101,14 +101,14 @@ export default () => {
               </section>
             </div>
 
-            <section>
+            {/* <section>
               <h3>Core Team</h3>
 
               <p>
                 This event takes place thanks to the many people involved at
                 many different levels.
               </p>
-            </section>
+            </section> */}
           </section>
         </Content>
       </Section>
