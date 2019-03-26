@@ -77,6 +77,12 @@ module.exports = {
         },
         extensions: ["jsx", "scss", "js"]
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=70186e00f0b7d4f60f978c2b7&amp;id=af1c3cfb3c',
+      },
+    },
   ]
 };

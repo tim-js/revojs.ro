@@ -1,0 +1,20 @@
+@import "../styles/fonts";
+
+.input {
+  height: 54px;
+  line-height: 54px;
+  @include font(mono);
+
+  color: var(--background-dark);
+  font-weight: bold;
+  display: inline-block;
+  color: var(--text-light);
+  background-color: transparent;
+  border: 0;
+  outline: none;
+
+  &:hover {
+    position: relative;
+    border-bottom: 1px solid var(--text-light);
+  }
+}
