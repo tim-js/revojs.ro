@@ -4,9 +4,9 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import "./logos.scss";
 
-const Logos = ({ list = [] }) => {
+const Logos = ({ list = [], ...props }) => {
   return (
-    <ul className="logos-list">
+    <ul className="logos-list" {...props}>
       {list.map(logo => {
         const image = require(`@assets/${logo.image}`);
         const isPremium = !!logo.premium;
