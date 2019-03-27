@@ -46,11 +46,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0.9);
-  transition: all 0.3s;
-  filter: grayscale(100%);
-}
-.logo:hover {
-  transform: scale(1);
-  filter: grayscale(0%);
+  transition: box-shadow 0.3s;
+
+  img {
+    filter: grayscale(100%);
+    transform: scale(0.9) translateZ(0);
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px var(--primary);
+    z-index: 1;
+    img {
+      transform: scale(1);
+      filter: grayscale(0%);
+    }
+  }
 }
