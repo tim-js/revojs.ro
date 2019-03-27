@@ -205,6 +205,15 @@ export default () => {
               </li>
               <li>
                 <a
+                  href="https://mailchimp.com/legal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Mailchimp
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://support.google.com/analytics/answer/7105316"
                   target="_blank"
                   rel="noopener noreferrer"
