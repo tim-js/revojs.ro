@@ -70,7 +70,7 @@ export default () => {
               <li>Language fundamentals</li>
               <li>Tips and tricks for daily use</li>
               <li>Tools for a better developer experience</li>
-              <li>Mobile, Desktop, Embeded or Hardware JS</li>
+              <li>Mobile, Desktop, Embedded or Hardware JS</li>
               <li>The human side of software development</li>
               <li>Any JS topic that makes your heart beat faster</li>
             </ul>

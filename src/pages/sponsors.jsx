@@ -42,7 +42,8 @@ export default () => {
           <h1 className="sponsors-heading">Sponsors</h1>
           <p>
             We are very grateful and proud of our awesome sponsors. <br />
-            We couldn’t have done without them. <strong>For real-real</strong>.
+            We couldn’t have done it without them.{" "}
+            <strong>For real-real</strong>.
           </p>
 
           <Logos list={sponsors} />
