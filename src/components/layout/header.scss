@@ -1,0 +1,39 @@
+@import "../../styles/mixins";
+
+.header {
+  flex: 1;
+  padding: var(--spacing-content);
+  padding-top: calc(var(--menu-height) + var(--space-4));
+
+  @include breakpoint(md) {
+    min-height: calc(100vh - 2 * var(--spacing-content));
+  }
+}
+
+.header--main {
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+}
+
+.header-content {
+  flex: 1;
+  align-self: center;
+}
+
+.header-image {
+  flex: 1;
+}
+
+.header--secondary {
+  min-height: 30vh;
+}
+
+.header--centered {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}

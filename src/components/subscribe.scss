@@ -1,0 +1,98 @@
+@import "../styles/mixins";
+@import "../styles/fonts";
+
+.subscribe-form {
+  display: flex;
+
+  @include breakpoint(sm) {
+    max-width: 500px;
+  }
+}
+.subscribe-form--centered {
+  margin: 0 auto;
+}
+
+.subscribe-input {
+  border: 0;
+  border-bottom: 1px var(--text-dark) solid;
+  height: 54px;
+  background: 0;
+  line-height: 54px;
+  flex: 1;
+  box-sizing: border-box;
+  margin-right: 24px;
+  color: white;
+  @include font(mono);
+  font-weight: bold;
+
+  &:focus {
+    outline: 0;
+    border-color: var(--text-light);
+  }
+
+  .subscribe-form--light & {
+    color: var(--text-dark);
+    border-bottom: 1px var(--lightgrey) solid;
+  }
+}
+.subscribe-button {
+  box-sizing: border-box;
+  width: 54px;
+  height: 54px;
+  background: var(--primary);
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  text-indent: -9999em;
+}
+
+.subscribe-arrow {
+  position: relative;
+  width: 21px;
+  height: 2px;
+  transition: all 0.2s;
+  transform: translateX(-16px);
+  background: var(--background-dark);
+
+  .subscribe-form--light & {
+    background: white;
+  }
+}
+.subscribe-arrow::after,
+.subscribe-arrow::before {
+  transition: all 0.3s;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  top: 0;
+  right: -1px;
+  background: var(--background-dark);
+
+  .subscribe-form--light & {
+    background: white;
+  }
+}
+.subscribe-arrow::before {
+  transform-origin: bottom right;
+  transform: rotate(-45deg);
+  top: -1px;
+}
+.subscribe-arrow::after {
+  transform-origin: top right;
+  transform: rotate(45deg);
+  top: 1px;
+}
+
+.subscribe-button:hover {
+  .subscribe-arrow {
+    width: 1px;
+    transform: translateX(-14px);
+  }
+}

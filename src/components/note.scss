@@ -1,0 +1,10 @@
+@import "../styles/mixins";
+
+.note {
+  font-size: 18px;
+  font-style: italic;
+
+  @include breakpoint(md) {
+    font-size: 20px;
+  }
+}

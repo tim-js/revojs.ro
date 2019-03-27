@@ -1,0 +1,50 @@
+@import "../../styles/mixins";
+
+.speakers-content {
+  padding: var(--spacing-content);
+}
+
+.speakers-title {
+  padding-bottom: var(--spacing-content);
+  text-align: center;
+}
+
+.speakers-list {
+  display: grid;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr;
+  grid-gap: var(--space-16) 0;
+  margin-top: 5em;
+
+  @include breakpoint(md) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: calc((100vw - 2 * var(--spacing-content)) / 4 * 40 / 100) 0;
+  }
+}
+.speakers-list > li:nth-child(3) {
+  @include breakpoint(md) {
+    transform: translateX(
+      calc((100vw - 2 * var(--spacing-content)) / 4 * 70 / 100)
+    );
+  }
+}
+.speakers-list > li:nth-child(3n + 2) {
+  @include breakpoint(md) {
+    transform: translateY(
+      calc((100vw - 2 * var(--spacing-content)) / 4 * 10 / 100)
+    );
+  }
+}
+
+.speakers-link:hover,
+.speakers-link {
+  text-decoration: none;
+}
+
+.speakers-more {
+  margin-top: 5em;
+  font-size: 32px;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+<svg
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 721 215.11"
+>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f45919;
+      }
+    </style>
+  </defs>
+  <path
+    class="cls-1"
+    d="M2,106.29V258.13H153.84l63.27-63.27V43H65.27Z"
+    transform="translate(-2 -43.02)"
+  />
+</svg>

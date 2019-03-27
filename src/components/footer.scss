@@ -1,0 +1,98 @@
+@import "../styles/mixins";
+@import "../styles/fonts";
+
+.footer {
+  color: var(--text-light);
+
+  background-image: url("/pixel_separation_footer.svg"),
+    linear-gradient(to bottom, white 128px, var(--background-dark) 128px);
+  background-position: left top;
+  background-repeat: no-repeat, no-repeat;
+
+  padding: var(--spacing-content);
+  padding-top: calc(192px + 32px);
+}
+
+.footer nav {
+  @include breakpoint(md, min) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.internal-links {
+  @include breakpoint(md, max) {
+    margin-bottom: 5em;
+  }
+  @include breakpoint(sm, min) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.external-links {
+  @include breakpoint(md) {
+    text-align: right;
+  }
+}
+
+.footer-menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-weight: bold;
+
+  @include font(mono);
+
+  &:not(:first-child) {
+    @include breakpoint(sm, max) {
+      margin-top: 1em;
+      border-top: 1px rgba(255, 255, 255, 0.1) solid;
+      padding-top: 1em;
+    }
+    @include breakpoint(md, min) {
+      padding-left: 5em;
+    }
+  }
+}
+
+.footer-menu a:link,
+.footer-menu a:visited {
+  color: var(--text-light);
+  transition: all 0.2s;
+  line-height: 2em;
+}
+.footer-menu a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.social-media {
+  margin-bottom: 1em;
+}
+.social-media a {
+  transition: all 0.3s;
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 1em;
+  }
+}
+.social-media a:hover {
+  transform: scale(1.2);
+}
+.footer-email {
+  @include font(mono);
+  font-weight: bold;
+}
+.copyright {
+  font-size: 1.2rem;
+  margin-top: 5em;
+}
+
+.revojs-text {
+  height: 13px;
+  vertical-align: text-top;
+}

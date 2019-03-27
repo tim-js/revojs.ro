@@ -1,107 +1,51 @@
 import React from "react";
-// import Layout from "../components/Layout";
 
-import "./index.teaser.css";
+import Layout from "@components/Layout";
+import Header from "@components/layout/Header";
+import IndexUpdates from "@components/index/updates";
+import IndexSpeakers from "@components/index/speakers";
+import IndexSponsors from "@components/index/sponsors";
+import Separator from "@components/Separator";
+import Button from "@components/Button";
 
-export default () => (
-  <>
-    <h1 href="/" className="logo">
-      <img src="logo-revojs.svg" alt="revo.js" height="64" />
-    </h1>
+import logo from "@assets/logo-revojs.svg";
+import "./index.scss";
 
-    <main role="main">
-      <header className="splash">
-        <h2>
-          A two-day JavaScript <strong className="highlight">conference</strong>
-        </h2>
-        <div className="loading">
-          <div className="progress-bar">
-            <div className="progress" />
-          </div>
-          environment loading
+export default props => {
+  return (
+    <Layout location={props.location} className="index-graphics">
+      <Header className="header-index">
+        <div className="index-logo">
+          <img src={logo} alt="revo.js" height="70" />
         </div>
-        <time className="heading" dateTime="2019-10-03">
-          Oct.3-4.2019
-        </time>
-        <span className="location">Timisoara_RO</span>
-      </header>
 
-      <div className="content">
-        <ul className="numbers">
-          <li>
-            <strong className="number">13</strong>
-            <span>Team Members</span>
-          </li>
-          <li>
-            <strong className="number">4861</strong>
-            <span>Slack Messages</span>
-          </li>
-          <li>
-            <strong className="number">297</strong>
-            <span>Caffeinated Beverages</span>
-          </li>
-          {/* <li>
-            <strong className="number">2GB</strong>
-            <span>Generated Materials</span>
-          </li> */}
-        </ul>
-
-        <div className="contact">
-          <strong className="heading">
-            We are working hard to bring you a great experience.
-          </strong>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <span className="highlight">info@revojs.ro</span>
-          <br />
-          <br />
-          <div className="social-media">
-            <a
-              href="https://twitter.com/revojsro"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="twitter.svg" alt="Twitter" />
-            </a>
-            <a
-              href="https://www.facebook.com/revojsro"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="facebook.svg" alt="Facebook" />
-            </a>
-            <a
-              href="https://www.instagram.com/revo.js/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="instagram.svg" alt="Instagram" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/revojs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="linkedin.svg" alt="Linkedin" />
-            </a>
-            {/*
-            <a
-              href="https://medium.com/revo-js"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="medium.svg" alt="Medium" />
-            </a>
-            */}
+        <div className="index-header-content">
+          <h1>
+            Change is the <span className="tagline-block">only const.</span>
+          </h1>
+          <div className="date-location">
+            <time className="index-date mono" dateTime="2019-10-03">
+              <strong>October.3-4.2019</strong>
+            </time>
+            <strong className="index-location mono">Timisoara_RO</strong>
           </div>
         </div>
-      </div>
-    </main>
 
-    <p className="copyright">&copy; revo.js 2019. All rights reserved.</p>
-  </>
-);
+        <div className="index-cta">
+          <a href="#speakers"><Button>Meet the Speakers</Button></a>
+        </div>
+
+        {/* <div className="description mono">
+          <strong>Technology focused.</strong>
+          <strong>Community driven.</strong>
+          <strong className="highlight">JavaScript conference.</strong>
+        </div> */}
+      </Header>
+
+      <IndexUpdates />
+      <Separator />
+      <IndexSpeakers />
+      <IndexSponsors />
+    </Layout>
+  );
+};

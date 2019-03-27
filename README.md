@@ -21,4 +21,4 @@ npm run build
 
 Pushing to
 * `master` will automatically fetch `master/HEAD` and deploy to [revojs.ro](https://revojs.ro).
-* `develop` will automatically fetch `develop/HEAD` and deploy to [dev.revojs.ro](https://dev.revojs.ro).
+* `develop` will automatically fetch `develop/HEAD` and deploy on the development server.

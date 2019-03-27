@@ -1,0 +1,23 @@
+:root {
+  --lightgrey: #dadce1;
+  --primary: #f45919;
+  --background-dark: #15161a;
+
+  --text-dark: #30343a;
+  --text-light: #979da7;
+
+  --spacing-content: 7vw;
+  --width-content: 750px;
+
+  --space-1: 8px;
+  --space-2: calc(var(--space-1) * 2); /* 16 */
+  --space-3: calc(var(--space-1) * 3); /* 24 */
+  --space-4: calc(var(--space-1) * 4); /* 32 */
+  --space-6: calc(var(--space-1) * 6); /* 48 */
+  --space-8: calc(var(--space-1) * 8); /* 64 */
+  --space-10: calc(var(--space-1) * 10); /* 80 */
+  --space-16: calc(var(--space-1) * 16); /* 128 */
+
+  --menu-height: 120px;
+  --menu-height-scrolled: 60px;
+}

@@ -3,31 +3,37 @@ import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import Img from "gatsby-image";
 
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 
 export default props => {
   const {
-    speakersJson: { name, description },
+    speakersJson: { firstname, lastname, description },
     file
   } = props.data;
 
   return (
     <Layout>
       <Helmet>
-        <title>{name}</title>
+        <title>
+          {firstname} {lastname}
+        </title>
       </Helmet>
 
-      <h1>{name}</h1>
+      <h1>
+        {firstname} {lastname}
+      </h1>
       <p>{description}</p>
       <Img fixed={file.image.fixed} alt="" />
     </Layout>
   );
 };
 
+/*
 export const pageQuery = graphql`
   query($id: String!, $image: String!) {
     speakersJson(id: { eq: $id }) {
-      name
+      firstname
+      lastname
       description
       image
     }
@@ -41,3 +47,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/

@@ -1,10 +1,8 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
 
-import Layout from "../components/Layout";
-
-import "./speakers.css";
+import Layout from "@components/Layout";
+import Speaker from "@components/Speaker";
 
 export default props => {
   const { allSpeakersJson, speakerImages } = props.data;
@@ -16,15 +14,14 @@ export default props => {
 
       <ul>
         {speakers.map(speaker => {
-          const imageSizes = speakerImages.edges.find(e =>
+          const speakerImage = speakerImages.edges.find(e =>
             speaker.image.includes(e.node.base)
           );
 
           return (
             <li key={speaker.id}>
-              <Link to={`/speakers/${speaker.id}`} className="speaker-link">
-                <Img fixed={imageSizes.node.image.fixed} alt="" className="speaker-img" />
-                {speaker.name}
+              <Link to={`/speakers/${speaker.id}`}>
+                <Speaker data={speaker} image={speakerImage} />
               </Link>
             </li>
           );
@@ -34,13 +31,15 @@ export default props => {
   );
 };
 
+/*
 export const pageQuery = graphql`
   query {
     allSpeakersJson {
       edges {
         node {
           id
-          name
+          firstname
+          lastname
           image
         }
       }
@@ -50,8 +49,8 @@ export const pageQuery = graphql`
         node {
           base
           image: childImageSharp {
-            fixed(width: 200, height: 200, grayscale: true) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -59,3 +58,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/

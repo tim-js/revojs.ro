@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580px" height="650px" viewBox="0 0 580 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>illustration_cfp</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="580" height="650"></rect>
+        <linearGradient x1="211.524823%" y1="49.9998808%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#383E43" offset="0%"></stop>
+            <stop stop-color="#242E35" offset="20.1094959%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="206.416223%" y1="100%" x2="0%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#383E43" offset="0%"></stop>
+            <stop stop-color="#242E35" offset="20.1094959%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0000011%" y1="17.0926076%" x2="50.699731%" y2="131.943728%" id="linearGradient-5">
+            <stop stop-color="#2F353B" offset="0%"></stop>
+            <stop stop-color="#060B10" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9999606%" y1="-4.36789773%" x2="50%" y2="77.9369987%" id="linearGradient-6">
+            <stop stop-color="#292E33" offset="0%"></stop>
+            <stop stop-color="#313537" offset="53.1666305%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-New" transform="translate(-70.000000, -1606.000000)">
+            <g id="illustration_cfp" transform="translate(70.000000, 1606.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="container" opacity="0.5"></g>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(59.000000, 0.000000)">
+                        <path d="M9.22107408,449.304129 L85.9988324,526.872895 L324.778912,285.635107 L85.9996211,44.3988968 L9.22107914,121.968454 L171.221875,285.635892 L9.22107408,449.304129 Z M162.779696,285.635903 L0.778920855,121.968485 L85.9995936,35.8698212 L333.221088,285.635101 L85.9988117,535.401977 L0.778925918,449.304108 L162.779696,285.635903 Z" id="Stroke-1" fill="#F45919" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" fill="url(#linearGradient-3)" fill-rule="evenodd" x="240" y="0" width="141" height="141"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-4)" fill-rule="evenodd" x="240" y="285.747692" width="141" height="141"></rect>
+                        <polygon id="Rectangle" fill="url(#linearGradient-5)" fill-rule="evenodd" points="381 0 521 140.871897 521 285.128103 381 426"></polygon>
+                        <polygon id="Rectangle" fill="url(#linearGradient-6)" fill-rule="evenodd" points="100 141 240 0 240 752 100 752"></polygon>
+                        <path d="M7.12781745,123.859419 L2.87218255,119.629812 L83.8721825,38.1313506 L88.1278175,42.3609571 L7.12781745,123.859419 Z M247.869652,208.373044 L252.131831,204.150033 L333.223188,285.993489 L85.9988117,535.511609 L2.8688968,451.609603 L7.1311032,447.386618 L85.9988324,526.986853 L324.776812,285.993496 L247.869652,208.373044 Z" id="Shape" fill="#F45919" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

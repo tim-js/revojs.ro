@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url("../assets/fonts/WorkSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("../assets/fonts/WorkSans-SemiBold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../assets/fonts/RobotoMono-Light.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../assets/fonts/RobotoMono-LightItalic.woff") format("woff");
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../assets/fonts/RobotoMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../assets/fonts/RobotoMono-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SometypeMono";
+  src: url("../assets/fonts/SometypeMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@mixin font($type) {
+  @if $type == number {
+    font-family: "SometypeMono", "Courier New", Courier, monospace;
+  } @else if $type == mono {
+    font-family: "RobotoMono", "Courier New", Courier, monospace;
+  } @else {
+    font-family: "WorkSans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}

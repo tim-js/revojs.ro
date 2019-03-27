@@ -1,0 +1,41 @@
+@import "../styles/fonts";
+
+.button,
+.button:link,
+.button:visited {
+  height: 54px;
+  line-height: 54px;
+  background-color: var(--primary);
+  @include font(mono);
+  padding: 0 var(--space-4);
+  color: var(--background-dark);
+  font-weight: bold;
+  display: inline-block;
+
+  transition: clip-path 0.2s, color 0.2s;
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    clip-path: polygon(
+      20px 0%,
+      100% 0%,
+      100% calc(100% - 20px),
+      calc(100% - 20px) 100%,
+      0% 100%,
+      0% 20px
+    );
+  }
+}
+
+.button--white,
+.button--white:link,
+.button--white:visited {
+  color: white;
+
+  &:hover {
+    color: var(--background-dark);
+  }
+}

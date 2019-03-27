@@ -1,0 +1,11 @@
+@import "../styles/mixins";
+
+.content {
+  @include breakpoint(md) {
+    font-size: 18px;
+    max-width: var(--width-content);
+  }
+}
+.content--centered {
+  margin: 0 auto;
+}

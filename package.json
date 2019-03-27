@@ -12,26 +12,29 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
-    "gatsby": "^2.1.14",
-    "gatsby-image": "^2.0.29",
-    "gatsby-plugin-catch-links": "^2.0.10",
-    "gatsby-plugin-google-analytics": "^2.0.13",
-    "gatsby-plugin-manifest": "^2.0.17",
-    "gatsby-plugin-offline": "^2.0.24",
-    "gatsby-plugin-react-helmet": "^3.0.6",
-    "gatsby-plugin-sharp": "^2.0.20",
-    "gatsby-remark-images": "^3.0.3",
-    "gatsby-source-filesystem": "^2.0.21",
-    "gatsby-transformer-json": "^2.1.8",
-    "gatsby-transformer-remark": "^2.2.3",
-    "gatsby-transformer-sharp": "^2.1.13",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "gatsby": "^2.2.11",
+    "gatsby-image": "^2.0.33",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-catch-links": "^2.0.13",
+    "gatsby-plugin-google-analytics": "^2.0.17",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.9",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.30",
+    "gatsby-remark-images": "^3.0.9",
+    "gatsby-source-filesystem": "^2.0.24",
+    "gatsby-transformer-json": "^2.1.10",
+    "gatsby-transformer-remark": "^2.3.2",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
-    "slug": "^0.9.3"
+    "slug": "^0.9.4"
   },
   "devDependencies": {
-    "gatsby-cli": "^2.4.8"
+    "gatsby-cli": "^2.4.15"
   },
   "repository": {
     "type": "git",

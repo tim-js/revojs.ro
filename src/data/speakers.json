@@ -1,26 +1,32 @@
 [
   {
     "id": "martin-hochel",
-    "name": "Martin Hochel",
-    "description": "this is Martin Hochel's description",
-    "image": "speakers/_martin.jpg"
+    "firstname": "Martin",
+    "lastname": "Hochel",
+    "description": "this is Martin Hochel's description update",
+    "image": "speakers/martin_hochel.jpg",
+    "twitter": "",
+    "title": "UI Tech Lead",
+    "company": "Twisto.cz"
   },
   {
     "id": "carmen-popoviciu",
-    "name": "Carmen Popoviciu",
+    "firstname": "Carmen",
+    "lastname": "Popoviciu",
     "description": "this is Carmen Popoviciu's description",
-    "image": "speakers/_carmen.jpg"
+    "image": "speakers/carmen_popoviciu.jpg",
+    "twitter": "",
+    "title": "Developer Advocate",
+    "company": "Nulab"
   },
   {
     "id": "boyan-mihaylov",
-    "name": "Boyan Mihaylov",
+    "firstname": "Boyan",
+    "lastname": "Mihaylov",
     "description": "this is Boyan's description",
-    "image": "speakers/_boyan.jpeg"
-  },
-  {
-    "id": "horia-dragomir",
-    "name": "Horia Dragomir",
-    "description": "this is Horia Dragomir's description",
-    "image": "speakers/_horia.jpg"
+    "image": "speakers/boyan_mihaylov.jpg",
+    "twitter": "",
+    "title": "Software Architect and Developer",
+    "company": "MP Pension"
   }
 ]

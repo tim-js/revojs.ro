@@ -2,8 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
-import Layout from "../components/Layout";
-// import '../css/blog-post.css'; // make it pretty!
+import Layout from "@components/Layout";
 
 export default function Template({ data }) {
   const { post } = data;
@@ -22,6 +21,7 @@ export default function Template({ data }) {
   );
 }
 
+/*
 export const pageQuery = graphql`
   query BlogPostByPath($url: String!) {
     post: markdownRemark(frontmatter: { path: { eq: $url } }) {
@@ -34,3 +34,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/
