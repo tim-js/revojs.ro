@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import "./subscribe.scss";
 
@@ -10,7 +11,7 @@ const Subscribe = props => {
 
   return (
     <form
-      onSubmit={() => openSubscribePage(email)}
+      onSubmit={() => openSubscribePage(email, props.list)}
       className={`subscribe-form ${_theme} ${_centered}`}
     >
       <input
@@ -28,10 +29,26 @@ const Subscribe = props => {
   );
 };
 
+Subscribe.propTypes = {
+  list: PropTypes.arrayOf(["cfp", "default"]),
+  light: PropTypes.bool,
+  centered: PropTypes.bool
+};
+
+Subscribe.defaultProps = {
+  list: "default"
+};
+
 export default Subscribe;
 
-function openSubscribePage(email) {
+const listIds = Object.freeze({
+  cfp: "57960db8f5",
+  default: "ec632308b8"
+});
+
+function openSubscribePage(email, list) {
+  const listId = listIds[list] || listIds.default;
   window.open(
-    `https://revojs.us20.list-manage.com/subscribe?u=34c79aeaaf8573f6289982fdd&id=ec632308b8&EMAIL=${email}`
+    `https://revojs.us20.list-manage.com/subscribe?u=34c79aeaaf8573f6289982fdd&id=${listId}&EMAIL=${email}`
   );
 }
