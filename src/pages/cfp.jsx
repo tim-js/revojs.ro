@@ -8,11 +8,12 @@ import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
 import Note from "@components/Note";
+import Subscribe from "@components/Subscribe";
 
 import "./cfp.scss";
 
-const CFP_OPEN = "April 17th";
-// const CFP_CLOSE = "June 17th";
+const CFP_OPEN = "17th of April";
+// const CFP_CLOSE = "17th of June";
 
 export default () => {
   return (
@@ -20,9 +21,10 @@ export default () => {
       <Header type="main" image="cfp-image">
         <h1>Call For Papers</h1>
         <br />
-        <strong className="cfp-important highlight mono">
-          {/* Type fast, the Call for Speakers closes on {CFP_CLOSE} */}
-          Opens on {CFP_OPEN}
+        <strong className="cfp-important light-faded mono">
+          {/* Type fast, the Call for Speakers closes on the {CFP_CLOSE} */}
+          Better prepare! <br />
+          CFP opens on the <span className="highlight">{CFP_OPEN}.</span>
         </strong>
         <br />
         <br />
@@ -44,10 +46,16 @@ export default () => {
             </p>
             <p>Stay tuned to share it!</p>
             <p>
-              The Call for Papers opens on{" "}
+              The Call for Papers opens on the{" "}
               <strong className="highlight mono">{CFP_OPEN}</strong>.
             </p>
           </Note>
+
+          <section id="topics">
+            <h2>Stay up to date!</h2>
+            <p>Subscribe to find out when Call for Papers starts:</p>
+            <Subscribe light list="cfp" />
+          </section>
 
           <section id="topics">
             <h2>Topics</h2>
