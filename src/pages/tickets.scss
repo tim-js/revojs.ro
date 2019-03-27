@@ -27,6 +27,11 @@
 .tag-wrapper {
   display: flex;
   white-space: nowrap;
+  font-size: 14px;
+
+  @include breakpoint(sm) {
+    font-size: inherit;
+  }
 }
 .tag-early {
   justify-self: flex-start;
@@ -40,6 +45,7 @@
 .tag-late {
   justify-self: flex-end;
   color: #c61212;
+  text-align: right;
 }
 
 .tickets-timeline {

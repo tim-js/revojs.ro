@@ -12,12 +12,12 @@ import Subscribe from "@components/Subscribe";
 import "./tickets.scss";
 
 export default () => {
-  const now = new Date();
-  const currentMonth = now.getMonth();
-
-  // const INDEX_START_EARLY = 3;
+  const INDEX_START_EARLY = 3;
   const INDEX_START_REGULAR = 5;
   const INDEX_START_LATE = 8;
+
+  const now = new Date();
+  const currentMonth = Math.max(now.getMonth(), INDEX_START_EARLY);
 
   const months = [
     "Jan",
@@ -55,15 +55,7 @@ export default () => {
         <h1>Tickets</h1>
         <br />
         <br />
-        <div
-          className="mono tag-wrapper"
-          style={{
-            display: "flex",
-            margin: `0 calc((50vw - var(--spacing-content)) / ${months.length -
-              currentMonth +
-              1} / 2)`
-          }}
-        >
+        <div className="mono tag-wrapper">
           {!!countEarly && (
             <strong style={{ flex: countEarly }} className="tag-early">
               Early Bird
@@ -121,15 +113,15 @@ export default () => {
 
       <Section light>
         <Content centered>
-          <Note>
+          {/* <Note>
             <p>
               Get your ticket for change and get ready for insightful talks,
               exciting networking and a good time all-around.
             </p>
-          </Note>
+          </Note> */}
 
           <section>
-            <h2>All tickets include</h2>
+            <h2 className="first">All tickets include</h2>
 
             <ul className="bullet">
               <li>
@@ -165,7 +157,9 @@ export default () => {
           </section>
 
           <div style={{ paddingTop: "96px" }} id="subscribe">
-            <p>Subscribe to our newsletter to get updates:</p>
+            <p>
+              Subscribe to find out when Early Bird tickets become available:
+            </p>
             <Subscribe light />
           </div>
 
