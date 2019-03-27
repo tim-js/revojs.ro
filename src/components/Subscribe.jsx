@@ -30,7 +30,7 @@ const Subscribe = props => {
 };
 
 Subscribe.propTypes = {
-  list: PropTypes.arrayOf(["cfp", "default"]),
+  list: PropTypes.oneOf(["cfp", "default"]),
   light: PropTypes.bool,
   centered: PropTypes.bool
 };
