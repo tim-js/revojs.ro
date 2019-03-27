@@ -51,7 +51,7 @@ export default () => {
             </p>
           </Note>
 
-          <section id="topics">
+          <section>
             <h2>Stay up to date!</h2>
             <p>Subscribe to find out when Call for Papers starts:</p>
             <Subscribe light list="cfp" />
