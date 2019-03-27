@@ -17,7 +17,7 @@ export default () => {
   return (
     <Layout>
       <Header centered type="secondary">
-        <h1>Sponsors &amp; Partners</h1>
+        <h1>Sponsors</h1>
       </Header>
 
       <Section light centered>
