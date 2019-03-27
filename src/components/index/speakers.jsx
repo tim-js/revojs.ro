@@ -37,7 +37,7 @@ const Speakers = ({ data }) => {
 
       <div style={{ paddingTop: "96px" }} id="subscribe">
         <p style={{ textAlign: "center" }}>
-          Full lineup to be announced mid summer. Get notified about event news:
+          Subscribe to stay on top the latest changes and revo.news:
         </p>
         <Subscribe centered />
       </div>
