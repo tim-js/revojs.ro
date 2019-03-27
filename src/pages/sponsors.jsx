@@ -9,6 +9,7 @@ import Note from "@components/Note";
 import Logos from "@components/Logos";
 
 import { sponsors } from "@data/sponsors";
+import { communities } from "@data/communities";
 
 import "./sponsors.scss";
 
@@ -47,7 +48,7 @@ export default () => {
           <Logos list={sponsors} />
         </section>
 
-        <section style={{ textAlign: "center" }}>
+        {/* <section style={{ textAlign: "center" }}>
           <h1 className="sponsors-heading">Partners</h1>
           <p>
             A big thank you to all our partners. <br />
@@ -55,7 +56,7 @@ export default () => {
           </p>
 
           <Logos list={[]} />
-        </section>
+        </section> */}
 
         <section style={{ textAlign: "center" }}>
           <h1 className="sponsors-heading">Communities</h1>
@@ -64,7 +65,7 @@ export default () => {
             have our back.
           </p>
 
-          <Logos list={[]} />
+          <Logos style={{ width: "150px" }} list={communities} />
         </section>
       </Section>
     </Layout>
