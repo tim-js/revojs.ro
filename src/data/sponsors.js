@@ -1,10 +1,10 @@
 export const sponsors = [
-  // {
-  //   name: "e-spres-oh",
-  //   image: "sponsors/esoh_logo.png",
-  //   url: "https://e-spres-oh.com",
-  //   premium: true
-  // },
+  {
+    name: "e-spres-oh",
+    image: "sponsors/e-spres-oh_logo.svg",
+    url: "https://e-spres-oh.com",
+    premium: true
+  },
   {
     name: "Dream Production",
     image: "sponsors/dream_production_logo.svg",
