@@ -6,7 +6,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
-import Note from "@components/Note";
+// import Note from "@components/Note";
 import Subscribe from "@components/Subscribe";
 
 import "./tickets.scss";
