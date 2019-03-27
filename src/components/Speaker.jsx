@@ -14,9 +14,8 @@ export default props => {
       <div className="speaker-info">
         <div className="speaker-info-inner">
           <h2 className="speaker-name">
-            {props.data.firstname}
-            <br />
-            {props.data.lastname}
+            <span className="firstname">{props.data.firstname}</span>{" "}
+            <span className="lastname">{props.data.lastname}</span>
           </h2>
           <span className="speaker-title">{props.data.title}</span>
           <span className="speaker-company">at {props.data.company}</span>

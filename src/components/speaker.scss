@@ -90,6 +90,12 @@
     padding-bottom: var(--space-2);
   }
 }
+.firstname,
+.lastname {
+  @include breakpoint(sm) {
+    display: block;
+  }
+}
 .speaker-title {
   display: block;
   line-height: 1.2;
