@@ -21,7 +21,7 @@ export const sponsors = [
     url: "https://www.visma.ro/"
   },
   {
-    name: "3PG",
+    name: "3 Pillar Global",
     image: "sponsors/3pg_logo.svg",
     url: "https://careers.3pillarglobal.com/company"
   },
