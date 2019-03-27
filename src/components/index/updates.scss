@@ -5,9 +5,9 @@
   padding: 0;
   margin: 0 auto;
   text-align: left;
-  margin-top: 6em;
+  margin-top: 4em;
   display: grid;
-  grid-gap: var(--space-10);
+  grid-gap: var(--space-8);
   grid-template-columns: minmax(1fr, 300px);
   max-width: 800px;
 

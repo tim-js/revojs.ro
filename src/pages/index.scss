@@ -28,19 +28,25 @@
   display: block;
 }
 
+.index-tagline {
+  @include breakpoint(sm, max) {
+    font-size: 3.5rem;
+  }
+}
 .date-location {
   margin-top: var(--space-4);
 }
 .index-date {
   font-size: 20px;
   display: inline-block;
-  margin-right: var(--space-2);
+  margin: 0 var(--space-1);
 }
 
 .index-location {
   font-size: 20px;
   color: var(--primary);
   display: inline-block;
+  margin: 0 var(--space-1);
 }
 
 .index-cta {
