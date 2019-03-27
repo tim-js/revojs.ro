@@ -45,14 +45,14 @@ export default () => {
               <li>sustained disruption of talks or other events;</li>
               <li>sexual images in public spaces;</li>
               <li>
-                inappropriate physical contact and unwelcome sexual attention;
+                inappropriate physical contact and unwelcome sexual attention.
               </li>
             </ul>
 
             <br />
             <p>
-              We expect all participants to follow these rules at conference,
-              workshop venues and conference-related social events.
+              We expect all participants to follow these rules at the
+              conference, workshop venues and conference-related social events.
             </p>
             <p className="highlight">
               <strong>
