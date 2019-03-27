@@ -88,8 +88,8 @@ export default () => {
 
             <h3>Duration</h3>
             <p>
-              20 min talks are encouraged for a more dynamic event. We will also
-              throw in 30 min talks and Lightning Talks for even more dynamism.
+              Most talks will be 20-25 minutes long, but we will also throw in
+              some longer talks for more dynamism.
             </p>
             <p>
               However, we will be on a tight schedule and will enforce the time
@@ -180,16 +180,17 @@ export default () => {
                 let us know)
               </li>
               <li>
+                Upgrade your room to a double one in case you want to bring
+                someone along for support (the conference ticket for an extra
+                person will not be included, though)
+              </li>
+              <li>
                 Give you free entrance at all the talks and happenings during
                 the conference
               </li>
               <li>
-                Buy an extra ticket and upgrade to a double room in case you
-                want to bring someone along for support
-              </li>
-              <li>
                 Take you on a trip outside Timisoara on Saturday; we’ll tag
-                along{" "}
+                along
               </li>
               <li>Take you out at a speakers’ dinner</li>
               <li>Get you involved in other activities around the event</li>
@@ -211,8 +212,7 @@ export default () => {
               We plan to record all talks and publish them online for free,
               along with a recording of the slide deck, live demo, and any
               on-presenter-screen activity. We do this for the benefit of the
-              larger JS community and those who couldn’t make it to the
-              conference.
+              larger JS community and those who can’t make it to the conference.
             </p>
 
             <p>
