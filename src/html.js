@@ -23,10 +23,7 @@ export default function HTML(props) {
           property="og:description"
           content="Two-day not-for-profit JavaScript Conference in Timisoara, Romania"
         />
-        <meta
-          property="og:image"
-          content="https://revojs.ro/revojs-cover.png"
-        />
+        <meta property="og:image" content="/revojs-cover.png" />
         <meta property="og:url" content="https://revojs.ro" />
         <meta name="twitter:card" content="summary_large_image" />
 
