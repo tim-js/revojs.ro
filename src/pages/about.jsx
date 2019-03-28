@@ -15,7 +15,7 @@ import "./about.scss";
 
 export default () => {
   return (
-    <Layout>
+    <Layout title="About revo.js">
       <Header centered type="secondary">
         <h1>
           About{" "}

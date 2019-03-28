@@ -10,7 +10,7 @@ import Button from "@components/Button";
 
 export default () => {
   return (
-    <Layout>
+    <Layout title="revo.js Press Info">
       <Header centered type="secondary">
         <h1>Press Info</h1>
       </Header>

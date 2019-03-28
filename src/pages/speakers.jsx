@@ -9,7 +9,7 @@ import Note from "@components/Note";
 
 export default () => {
   return (
-    <Layout>
+    <Layout title="revo.js Speakers">
       <Header centered type="secondary">
         <h1>Speakers</h1>
       </Header>

@@ -15,7 +15,7 @@ import "./sponsors.scss";
 
 export default () => {
   return (
-    <Layout>
+    <Layout title="revo.js Sponsors">
       <Header centered type="secondary">
         <h1>Sponsors</h1>
       </Header>

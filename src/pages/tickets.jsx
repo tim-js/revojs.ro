@@ -50,7 +50,7 @@ export default () => {
   });
 
   return (
-    <Layout>
+    <Layout title="revo.js Tickets">
       <Header type="main" image="tickets-image">
         <h1>Tickets</h1>
         <br />

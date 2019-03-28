@@ -17,7 +17,7 @@ const CFP_OPEN = "17th of April";
 
 export default () => {
   return (
-    <Layout>
+    <Layout title="revo.js Call for Papers">
       <Header type="main" image="cfp-image">
         <h1>Call For Papers</h1>
         <br />

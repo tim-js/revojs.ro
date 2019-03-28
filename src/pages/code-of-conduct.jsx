@@ -8,7 +8,7 @@ import Note from "@components/Note";
 
 export default () => {
   return (
-    <Layout>
+    <Layout title="revo.js Code of Conduct">
       <Header centered type="secondary">
         <h1>Code of Conduct</h1>
       </Header>

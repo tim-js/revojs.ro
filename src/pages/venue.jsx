@@ -10,7 +10,7 @@ import Button from "@components/Button";
 
 export default () => {
   return (
-    <Layout>
+    <Layout title="revo.js Venue">
       <Header centered type="secondary">
         <h1>Venue</h1>
       </Header>

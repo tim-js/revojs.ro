@@ -8,7 +8,7 @@ import Note from "@components/Note";
 
 export default () => {
   return (
-    <Layout>
+    <Layout title="revo.js Privacy Policy">
       <Header centered type="secondary">
         <h1>Privacy Policy</h1>
       </Header>
