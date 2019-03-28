@@ -23,7 +23,8 @@ export default function HTML(props) {
           property="og:description"
           content="revo.js is the first JavaScript conference in Timisoara, Romania, taking place between the 3rd and 4th of October. The conference aims to bring JavaScript enthusiasts two full days of tech-focused talks, community networking and thought-provoking ideas meant to inspire change, the only constant there is."
         />
-        <meta property="og:image" content="revojs-cover.png" />
+        <meta property="og:image" content="revojs.png" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:url" content="https://revojs.ro/" />
         <meta name="twitter:card" content="summary_large_image" />
 
