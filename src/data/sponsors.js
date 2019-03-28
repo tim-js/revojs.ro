@@ -39,5 +39,10 @@ export const sponsors = [
     name: "WeVideo",
     image: "sponsors/wevideo_logo.svg",
     url: "https://www.wevideo.com/"
+  },
+  {
+    name: "UnifiedPost",
+    image: "sponsors/unified_post_logo.svg",
+    url: "http://www.unifiedpost.com"
   }
 ];
