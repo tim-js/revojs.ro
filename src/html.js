@@ -18,6 +18,7 @@ export default function HTML(props) {
         />
 
         <meta property="og:title" content="revo.js" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="Two-day not-for-profit JavaScript Conference in Timisoara, Romania"
@@ -26,10 +27,7 @@ export default function HTML(props) {
           property="og:image"
           content="https://revojs.ro/revojs-cover.png"
         />
-        <meta
-          property="og:url"
-          content="https://revojs.ro"
-        />
+        <meta property="og:url" content="https://revojs.ro" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <script
