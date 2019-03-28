@@ -217,8 +217,8 @@ export default () => {
 
             <p>
               We hope you agree with us, but if you are uncomfortable with this
-              in any way, let us know and we will work things out. Note that we
-              disabled comments on our published videos by default.
+              in any way, let us know and we will work things out. Note that
+              we'll disable comments on our published videos by default.
             </p>
 
             <p>
