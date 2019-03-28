@@ -88,13 +88,14 @@ export default () => {
 
             <h3>Duration</h3>
             <p>
-              Most talks will be 20-25 minutes long, but we will also throw in
-              some longer talks for more dynamism.
+              The standard duration for all talks selected through the CFP will
+              be of 20-25 minutes. For a more dynamic routine, we’ll also throw
+              in a few longer presentations.
             </p>
             <p>
-              However, we will be on a tight schedule and will enforce the time
-              limits rigorously. We strongly suggest that you time your
-              presentation accordingly in advance.
+              Since we’ll be on a tight schedule, we’ll enforce the time limits
+              rigorously. We strongly suggest that you time your presentation
+              accordingly in advance.
             </p>
 
             <h3>Attention to details</h3>
