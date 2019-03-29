@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
+import Helmet, { HelmetProvider } from "react-helmet-async";
 
 import Layout from "@components/Layout";
 
@@ -9,7 +9,10 @@ export default function Template({ data }) {
   console.log(data);
   return (
     <Layout>
-      <Helmet title={`revo.js - ${post.frontmatter.title}`} />
+      <HelmetProvider>
+        <Helmet title={`revo.js - ${post.frontmatter.title}`} />
+      </HelmetProvider>
+
       <article className="blog-post">
         <h1>{post.frontmatter.title}</h1>
         <div

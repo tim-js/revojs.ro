@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Helmet from "react-helmet";
+import Helmet, { HelmetProvider } from "react-helmet-async";
 import Img from "gatsby-image";
 
 import Layout from "@components/Layout";
@@ -13,11 +13,13 @@ export default props => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>
-          {firstname} {lastname}
-        </title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>
+            {firstname} {lastname}
+          </title>
+        </Helmet>
+      </HelmetProvider>
 
       <h1>
         {firstname} {lastname}
