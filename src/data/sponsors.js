@@ -44,5 +44,10 @@ export const sponsors = [
     name: "UnifiedPost",
     image: "sponsors/unifiedpost_logo.svg",
     url: "http://www.unifiedpost.com"
+  },
+  {
+    name: "Imobiliare.ro",
+    image: "sponsors/imobiliare_logo.svg",
+    url: "https://www.imobiliare.ro/"
   }
 ];
