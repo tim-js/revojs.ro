@@ -42,7 +42,7 @@ export const sponsors = [
   },
   {
     name: "UnifiedPost",
-    image: "sponsors/unified_post_logo.svg",
+    image: "sponsors/unifiedpost_logo.svg",
     url: "http://www.unifiedpost.com"
   }
 ];
