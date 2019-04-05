@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Helmet, { HelmetProvider } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Img from "gatsby-image";
 
 import Layout from "@components/Layout";

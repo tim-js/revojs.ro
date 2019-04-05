@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet, { HelmetProvider } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Navigation from "@components/Navigation";
 import Footer from "@components/Footer";
