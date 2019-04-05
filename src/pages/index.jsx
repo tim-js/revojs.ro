@@ -18,7 +18,6 @@ export default props => {
   useEffect(() => {
     const search = queryString.parse(props.location.search);
     if (search.fbclid) {
-      console.log("xx");
       const clearedSearch = queryString.stringify({
         ...search,
         fbclid: undefined
