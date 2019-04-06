@@ -5,23 +5,27 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Button from "@components/Button";
+import Section from "@components/Section";
 
 export default () => {
   return (
     <Layout>
-      <Header centered>
-        <Content>
-          <h1>404 not found</h1>
-          <span className="light-faded">
-            Are your sure this page was here before?
-          </span>
-          <br />
-          <br />
-          <Link to="/">
-            <Button>Got to Homepage</Button>
-          </Link>
-        </Content>
+      <Header centered type="secondary">
+        <h1>404 not found</h1>
       </Header>
+      <Section light>
+        <Content centered>
+          <div style={{ textAlign: "center" }}>
+            <p>No idea if this page was here before, but apparently it doesn't exist anymore.</p>
+            <Link to="/">
+              <Button white>Got to Homepage</Button>
+            </Link>
+            <br />
+            <br />
+            <br />
+          </div>
+        </Content>
+      </Section>
     </Layout>
   );
 };
