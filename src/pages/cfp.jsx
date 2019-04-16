@@ -8,7 +8,7 @@ import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
 import Note from "@components/Note";
-import Subscribe from "@components/Subscribe";
+// import Subscribe from "@components/Subscribe";
 
 import "./cfp.scss";
 
