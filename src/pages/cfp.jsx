@@ -32,8 +32,7 @@ export default () => {
         <strong className="cfp-important light-faded mono">
           <span>Hurray! CFP is now open.</span>
           <br />
-          Better type fast, you have only until the{" "}
-          <span className="highlight">{CFP_CLOSE}</span> to apply.
+          Apply until the <span className="highlight">{CFP_CLOSE}</span>.
           {/* Better prepare! <br />
           CFP opens on the <span className="highlight">{CFP_OPEN}.</span> */}
         </strong>
