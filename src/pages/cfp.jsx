@@ -30,7 +30,10 @@ export default () => {
         <h1>Call For Papers</h1>
         <br />
         <strong className="cfp-important light-faded mono">
-          CFP closes on the <span className="highlight">{CFP_CLOSE}.</span>
+          <span>Hurray! CFP is now open.</span>
+          <br />
+          Better type fast, you have only until the{" "}
+          <span className="highlight">{CFP_CLOSE}</span> to apply.
           {/* Better prepare! <br />
           CFP opens on the <span className="highlight">{CFP_OPEN}.</span> */}
         </strong>
@@ -47,10 +50,17 @@ export default () => {
       <Section light>
         <Content centered>
           <Note>
-            <p>
+            {/* <p>
               Do you have a technical presentation that can change minds,
               perspectives, work approaches, or why not, even the mood of JS
               programmers?
+            </p> */}
+
+            <p>
+              This is a call out to all members of the JavaScript community who
+              have a memorable talk that can stir up change. Submit your talk
+              proposal until the <strong>17th of June</strong> and hopefully
+              we’ll meet on the 3rd and 4th of October in Timisoara.
             </p>
 
             {/* <p>Stay tuned to share it!</p>
@@ -60,6 +70,8 @@ export default () => {
             </p> */}
           </Note>
 
+          <br />
+          <br />
           <SubmitProposal white />
 
           {/* <section>
