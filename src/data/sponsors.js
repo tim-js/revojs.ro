@@ -49,5 +49,10 @@ export const sponsors = [
     name: "Imobiliare.ro",
     image: "sponsors/imobiliare_logo.svg",
     url: "https://www.imobiliare.ro/"
+  },
+  {
+    name: "Plentymarkets",
+    image: "sponsors/plentymarkets_logo.svg",
+    url: "https://www.plentymarkets.co.uk/"
   }
 ];
