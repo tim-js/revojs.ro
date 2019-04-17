@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -8,12 +8,20 @@ import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
 import Note from "@components/Note";
-import Subscribe from "@components/Subscribe";
+// import Subscribe from "@components/Subscribe";
 
 import "./cfp.scss";
 
-const CFP_OPEN = "17th of April";
-// const CFP_CLOSE = "17th of June";
+// const CFP_OPEN = "17th of April";
+const CFP_CLOSE = "17th of June";
+
+const SubmitProposal = props => {
+  return (
+    <OutboundLink href="https://revojs.typeform.com/to/WWcdJ2" target="_blank">
+      <Button {...props}>Submit your Proposal</Button>
+    </OutboundLink>
+  );
+};
 
 export default () => {
   return (
@@ -22,40 +30,54 @@ export default () => {
         <h1>Call For Papers</h1>
         <br />
         <strong className="cfp-important light-faded mono">
-          {/* Type fast, the Call for Speakers closes on the {CFP_CLOSE} */}
-          Better prepare! <br />
-          CFP opens on the <span className="highlight">{CFP_OPEN}.</span>
+          <span>Hurray! CFP is now open.</span>
+          <br />
+          Apply until the <span className="highlight">{CFP_CLOSE}</span>.
+          {/* Better prepare! <br />
+          CFP opens on the <span className="highlight">{CFP_OPEN}.</span> */}
         </strong>
         <br />
         <br />
-        {/* <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2" target="_blank">
-          <Button>Submit your Proposal</Button>
-        </OutboundLink> */}
-        <a href="#topics" className="cfp-cta">
+
+        <SubmitProposal />
+
+        {/* <a href="#topics" className="cfp-cta">
           <Button>View our Topics</Button>
-        </a>
+        </a> */}
       </Header>
 
       <Section light>
         <Content centered>
           <Note>
-            <p>
+            {/* <p>
               Do you have a technical presentation that can change minds,
               perspectives, work approaches, or why not, even the mood of JS
               programmers?
+            </p> */}
+
+            <p>
+              This is a call out to all members of the JavaScript community who
+              have a memorable talk that can stir up change. Submit your talk
+              proposal until the <strong>17th of June</strong> and hopefully
+              we’ll meet on the 3rd and 4th of October in Timisoara.
             </p>
-            <p>Stay tuned to share it!</p>
+
+            {/* <p>Stay tuned to share it!</p>
             <p>
               The Call for Papers opens on the{" "}
               <strong className="highlight mono">{CFP_OPEN}</strong>.
-            </p>
+            </p> */}
           </Note>
 
-          <section>
+          <br />
+          <br />
+          <SubmitProposal white />
+
+          {/* <section>
             <h2>Stay up to date!</h2>
             <p>Subscribe to find out when Call for Papers starts:</p>
             <Subscribe light list="cfp" />
-          </section>
+          </section> */}
 
           <section id="topics">
             <h2>Topics</h2>
@@ -254,9 +276,8 @@ export default () => {
 
           <br />
           <br />
-          {/* <OutboundLink href="https://goo.gl/forms/YlqNgEnl9DLrtufx2" target="_blank">
-            <Button white>Submit your Proposal</Button>
-          </OutboundLink> */}
+
+          <SubmitProposal white />
         </Content>
       </Section>
     </Layout>

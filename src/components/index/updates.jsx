@@ -8,15 +8,15 @@ import "./updates.scss";
 export default () => {
   return (
     <Section centered>
-      <h2>Coming Soon</h2>
+      <h2>Updates</h2>
 
       <ul className="updates-list">
         <li>
           <Link to="/cfp/">
             <strong className="update-title mono">Call For Papers</strong>
             <p className="update-content light-faded">
-              Learn everything about the application process and get ready to
-              submit your proposal starting with the 17th of April.
+              CFP is now open. Ready, steady, apply for change until the 17th of
+              June.
             </p>
           </Link>
         </li>
@@ -24,8 +24,8 @@ export default () => {
           <Link to="/tickets/">
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              Discover what types of tickets you can purchase and stay tuned!
-              Early Bird starts in April.
+              Just a few days left until Early Bird tickets become available.
+              Tick-tock, tick-tock!
             </p>
           </Link>
         </li>
