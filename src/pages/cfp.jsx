@@ -18,7 +18,7 @@ const CFP_CLOSE = "17th of June";
 const SubmitProposal = props => {
   return (
     <OutboundLink href="https://revojs.typeform.com/to/WWcdJ2" target="_blank">
-      <Button {...props}>Submit your Proposal</Button>
+      <Button {...props}>Submit a Proposal</Button>
     </OutboundLink>
   );
 };
@@ -30,9 +30,12 @@ export default () => {
         <h1>Call For Papers</h1>
         <br />
         <strong className="cfp-important light-faded mono">
-          <span>Hurray! CFP is now open.</span>
+          Hurray! CFP is now open until the{" "}
+          <span className="highlight">{CFP_CLOSE}.</span>
           <br />
-          Apply until the <span className="highlight">{CFP_CLOSE}</span>.
+          <span>
+            Submit more proposals to increase your odds.
+          </span>
           {/* Better prepare! <br />
           CFP opens on the <span className="highlight">{CFP_OPEN}.</span> */}
         </strong>
@@ -58,7 +61,7 @@ export default () => {
             <p>
               This is a call out to all members of the JavaScript community who
               have a memorable talk that can stir up change. Submit your talk
-              proposal until the <strong>17th of June</strong> and hopefully
+              proposals until the <strong>17th of June</strong> and hopefully
               we’ll meet on the 3rd and 4th of October in Timisoara.
             </p>
 
