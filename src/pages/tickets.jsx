@@ -1,27 +1,14 @@
 import React from "react";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
-import Button from "@components/Button";
 import Note from "@components/Note";
-import Subscribe from "@components/Subscribe";
+import { PurchaseTicket } from "@components/CTA";
+// import Subscribe from "@components/Subscribe";
 
 import "./tickets.scss";
-
-const BuyTicket = props => {
-  return (
-    <OutboundLink
-      className="tickets-cta"
-      href="https://ti.to/revojs/revojs2019"
-      target="_blank"
-    >
-      <Button {...props}>Get Your Ticket</Button>
-    </OutboundLink>
-  );
-};
 
 export default () => {
   const INDEX_START_EARLY = 3;
@@ -111,7 +98,7 @@ export default () => {
         </ul>
 
         <br />
-        <BuyTicket />
+        <PurchaseTicket />
         {/* <OutboundLink href="#subscribe">
           <Button>Subscribe for Updates</Button>
         </OutboundLink> */}
@@ -133,7 +120,8 @@ export default () => {
             <ul className="bullet">
               <li>
                 <strong>Early Bird Tickets</strong>: until 31st of May (limited
-                to 50 tickets) <strong className="highlight">(ON SALE)</strong>
+                to 50 tickets){" "}
+                <strong className="highlight">(ON SALE NOW)</strong>
               </li>
               <li>
                 <strong>Regular Tickets</strong>: until 31st of August
@@ -189,7 +177,7 @@ export default () => {
 
           <br />
           <br />
-          <BuyTicket white />
+          <PurchaseTicket white />
         </Content>
       </Section>
     </Layout>

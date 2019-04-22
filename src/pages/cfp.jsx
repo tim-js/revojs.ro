@@ -1,27 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
-import Button from "@components/Button";
 import Note from "@components/Note";
+import { SubmitCFP } from "@components/CTA";
 // import Subscribe from "@components/Subscribe";
 
 import "./cfp.scss";
 
 // const CFP_OPEN = "17th of April";
 const CFP_CLOSE = "17th of June";
-
-const SubmitProposal = props => {
-  return (
-    <OutboundLink href="https://revojs.typeform.com/to/WWcdJ2" target="_blank">
-      <Button {...props}>Submit your Proposal</Button>
-    </OutboundLink>
-  );
-};
 
 export default () => {
   return (
@@ -39,7 +30,7 @@ export default () => {
         <br />
         <br />
 
-        <SubmitProposal />
+        <SubmitCFP />
 
         {/* <a href="#topics" className="cfp-cta">
           <Button>View our Topics</Button>
@@ -71,7 +62,7 @@ export default () => {
 
           <br />
           <br />
-          <SubmitProposal white />
+          <SubmitCFP white />
 
           {/* <section>
             <h2>Stay up to date!</h2>
@@ -277,7 +268,7 @@ export default () => {
           <br />
           <br />
 
-          <SubmitProposal white />
+          <SubmitCFP white />
         </Content>
       </Section>
     </Layout>
