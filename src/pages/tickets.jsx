@@ -6,10 +6,22 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
-// import Note from "@components/Note";
+import Note from "@components/Note";
 import Subscribe from "@components/Subscribe";
 
 import "./tickets.scss";
+
+const BuyTicket = props => {
+  return (
+    <OutboundLink
+      className="tickets-cta"
+      href="https://ti.to/revojs/revojs2019"
+      target="_blank"
+    >
+      <Button {...props}>Get Your Ticket</Button>
+    </OutboundLink>
+  );
+};
 
 export default () => {
   const INDEX_START_EARLY = 3;
@@ -99,29 +111,41 @@ export default () => {
         </ul>
 
         <br />
-        {/* <OutboundLink
-          className="tickets-cta"
-          href="https://ti.to/revojs/revojs2019"
-          target="_blank"
-        >
-          <Button>Get Your Ticket</Button>
-        </OutboundLink> */}
-        <OutboundLink href="#subscribe">
+        <BuyTicket />
+        {/* <OutboundLink href="#subscribe">
           <Button>Subscribe for Updates</Button>
-        </OutboundLink>
+        </OutboundLink> */}
       </Header>
 
       <Section light>
         <Content centered>
-          {/* <Note>
+          <Note>
             <p>
               Get your ticket for change and get ready for insightful talks,
               exciting networking and a good time all-around.
             </p>
-          </Note> */}
+          </Note>
 
           <section>
-            <h2 className="first">All tickets include</h2>
+            <h2>Rollout plan</h2>
+
+            <p>Tickets will be available according to the following plan:</p>
+            <ul className="bullet">
+              <li>
+                <strong>Early Bird Tickets</strong>: until 31st of May (limited
+                to 50 tickets) <strong className="highlight">(ON SALE)</strong>
+              </li>
+              <li>
+                <strong>Regular Tickets</strong>: until 31st of August
+              </li>
+              <li>
+                <strong>Late Bird Tickets</strong>: until 30th of September
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>All tickets include</h2>
 
             <ul className="bullet">
               <li>
@@ -156,19 +180,16 @@ export default () => {
             </p>
           </section>
 
-          <div style={{ paddingTop: "96px" }} id="subscribe">
+          {/* <div style={{ paddingTop: "96px" }} id="subscribe">
             <p>
               Subscribe to find out when Early Bird tickets become available:
             </p>
             <Subscribe light />
-          </div>
+          </div> */}
 
           <br />
           <br />
-          <br />
-          {/* <OutboundLink href="https://ti.to/revojs/revojs2019" target="_blank">
-            <Button white>Get Your Ticket</Button>
-          </OutboundLink> */}
+          <BuyTicket white />
         </Content>
       </Section>
     </Layout>
