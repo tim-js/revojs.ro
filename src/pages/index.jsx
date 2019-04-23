@@ -6,7 +6,7 @@ import IndexUpdates from "@components/index/updates";
 import IndexSpeakers from "@components/index/speakers";
 import IndexSponsors from "@components/index/sponsors";
 import Separator from "@components/Separator";
-import Button from "@components/Button";
+// import Button from "@components/Button";
 import { PurchaseTicket } from "@components/CTA";
 
 import logo from "@assets/logo-revojs.svg";
