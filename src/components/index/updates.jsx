@@ -16,15 +16,17 @@ export default () => {
             <strong className="update-title mono">Call For Papers</strong>
             <p className="update-content light-faded">
               CFP is now open. Ready, steady, apply for change until the 17th of
-              June.
+              June.ƒ
             </p>
           </Link>
         </li>
         <li>
           <Link to="/tickets/">
-            <strong className="update-title mono">Tickets</strong>
+            <strong className="update-title mono">Early Bird tickets available</strong>
             <p className="update-content light-faded">
-              Early Bird tickets are on sale. Only 50 available. Get yours until 31st of May.
+              Be fast to grab yours until
+              the 31st of May or until the 50 available Early Birds fly
+              away.
             </p>
           </Link>
         </li>
