@@ -140,12 +140,10 @@ export default () => {
                 Full conference access on the 3rd and 4th of October (Thursday +
                 Friday)
               </li>
-              <li>After party access (Friday evening)</li>
-              <li>
-                Lunch and snacks during breaks (including vegetarian and vegan
-                options)
-              </li>
               <li>Coffee, water and beverages</li>
+              <li>Lunch, including vegetarian and vegan options</li>
+              <li>Snacks during coffee breaks</li>
+              <li>After party access (Friday evening)</li>
             </ul>
           </section>
 
