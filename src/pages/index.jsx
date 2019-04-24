@@ -6,7 +6,8 @@ import IndexUpdates from "@components/index/updates";
 import IndexSpeakers from "@components/index/speakers";
 import IndexSponsors from "@components/index/sponsors";
 import Separator from "@components/Separator";
-import Button from "@components/Button";
+// import Button from "@components/Button";
+import { PurchaseTicket } from "@components/CTA";
 
 import { replace } from "gatsby";
 import queryString from "query-string";
@@ -50,9 +51,10 @@ export default props => {
         </div>
 
         <div className="index-cta">
-          <a href="#speakers">
+          {/* <a href="#speakers">
             <Button>Meet the Speakers</Button>
-          </a>
+          </a> */}
+          <PurchaseTicket />
         </div>
 
         {/* <div className="description mono">
