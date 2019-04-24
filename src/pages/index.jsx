@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -9,10 +9,28 @@ import Separator from "@components/Separator";
 // import Button from "@components/Button";
 import { PurchaseTicket } from "@components/CTA";
 
+import { replace } from "gatsby";
+import queryString from "query-string";
+
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
 
 export default props => {
+  useEffect(() => {
+    const search = queryString.parse(props.location.search);
+    if (search.fbclid) {
+      const clearedSearch = queryString.stringify({
+        ...search,
+        fbclid: undefined
+      });
+      if (clearedSearch.length) {
+        replace(props.location.pathname + "?" + clearedSearch);
+      } else {
+        replace(props.location.pathname);
+      }
+    }
+  });
+
   return (
     <Layout location={props.location} className="index-graphics">
       <Header className="header-index">
