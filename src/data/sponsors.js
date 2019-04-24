@@ -54,5 +54,10 @@ export const sponsors = [
     name: "Plentymarkets",
     image: "sponsors/plentymarkets_logo.svg",
     url: "https://www.plentymarkets.co.uk/"
+  },
+  {
+    name: "Haufe",
+    image: "sponsors/haufe_logo.svg",
+    url: "https://www.haufegroup.com/"
   }
 ];
