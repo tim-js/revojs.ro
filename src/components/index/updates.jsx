@@ -13,10 +13,10 @@ export default () => {
       <ul className="updates-list">
         <li>
           <Link to="/cfp/">
-            <strong className="update-title mono">Call For Papers</strong>
+            <strong className="update-title mono">Call For Papers is Open</strong>
             <p className="update-content light-faded">
               CFP is now open. Ready, steady, apply for change until the 17th of
-              June.ƒ
+              June.
             </p>
           </Link>
         </li>
