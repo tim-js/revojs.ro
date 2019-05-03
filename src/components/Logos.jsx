@@ -13,7 +13,12 @@ const Logos = ({ list = [], ...props }) => {
 
         return (
           <li key={logo.name} className={isPremium ? "is-premium" : ""}>
-            <OutboundLink href={logo.url} className="logo" target="_blank">
+            <OutboundLink
+              href={logo.url}
+              className="logo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={image} alt={logo.name} width="100%" />
             </OutboundLink>
           </li>
