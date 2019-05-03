@@ -66,7 +66,7 @@ export default () => {
             have our back.
           </p>
 
-          <Logos style={{ width: "150px" }} list={communities} />
+          <Logos list={communities} />
         </section>
       </Section>
     </Layout>
