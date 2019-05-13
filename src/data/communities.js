@@ -33,5 +33,25 @@ export const communities = [
     name: "MadridJS",
     image: "communities/madridJS@2x.png",
     url: "https://www.meetup.com/madridjs/"
+  },
+  {
+    name: "VueJS Barcelona",
+    image: "communities/vueJSbarcelona_logo.svg",
+    url: "https://www.meetup.com/VueJS-BCN/"
+  },
+  {
+    name: "Oradea Tech Hub",
+    image: "communities/OradeaTechHub_logo@2x.png",
+    url: "https://www.facebook.com/OradeaTechHub/"
+  },
+  {
+    name: "ngBucharest",
+    image: "communities/ngBucharest_logo@2x.png",
+    url: "https://www.meetup.com/AngularJS-Bucharest/"
+  },
+  {
+    name: "IasiJS",
+    image: "communities/iasiJS_logo.svg",
+    url: "https://www.meetup.com/Iasi-JS/"
   }
 ];
