@@ -53,5 +53,20 @@ export const communities = [
     name: "IasiJS",
     image: "communities/iasiJS_logo.svg",
     url: "https://www.meetup.com/Iasi-JS/"
+  },
+  {
+    name: "ReactJS Academy",
+    image: "communities/ReactJSAcademy_logo@2x.png",
+    url: "https://reactjs.academy/"
+  },
+  {
+    name: "Tabara de Testare",
+    image: "communities/tdt_logo.svg",
+    url: "https://www.meetup.com/Tabara-de-Testare-Timisoara/"
+  },
+  {
+    name: "BudapestJS",
+    image: "communities/BudapestJS_logo@2x.png",
+    url: "https://www.meetup.com/budapest-js/"
   }
 ];
