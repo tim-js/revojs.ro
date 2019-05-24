@@ -19,6 +19,17 @@
   @include breakpoint(lg) {
     grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
   }
+
+  &.logos-list--small {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    }
+    @include breakpoint(lg) {
+      grid-template-columns: repeat(auto-fit, minmax(12%, 1fr));
+    }
+  }
 }
 .is-premium {
   grid-column-start: 1;

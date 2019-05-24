@@ -66,7 +66,7 @@ export default () => {
             have our back.
           </p>
 
-          <Logos list={communities} />
+          <Logos list={communities} small />
         </section>
       </Section>
     </Layout>
