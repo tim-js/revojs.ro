@@ -20,16 +20,6 @@
     "company": "Nulab"
   },
   {
-    "id": "raluca-nicola",
-    "firstname": "Raluca",
-    "lastname": "Nicola",
-    "description": "Raluca works at Esri as a Product Engineer for ArcGIS API for JavaScript. She enjoys prototyping visualizations that involve spatial data. Most of them are in 3D and all of them live on the web. In the past she also made maps for the Atlas of Switzerland and the Swiss National Park.",
-    "image": "speakers/raluca_nicola.jpg",
-    "twitter": "https://twitter.com/nicolaraluk",
-    "title": "Product Engineer",
-    "company": "Esri"
-  },
-  {
     "id": "boyan-mihaylov",
     "firstname": "Boyan",
     "lastname": "Mihaylov",
@@ -48,5 +38,15 @@
     "twitter": "https://twitter.com/bahmutov",
     "title": "VP of Engineering",
     "company": "Cypress.io"
+  },
+  {
+    "id": "raluca-nicola",
+    "firstname": "Raluca",
+    "lastname": "Nicola",
+    "description": "Raluca works at Esri as a Product Engineer for ArcGIS API for JavaScript. She enjoys prototyping visualizations that involve spatial data. Most of them are in 3D and all of them live on the web. In the past she also made maps for the Atlas of Switzerland and the Swiss National Park.",
+    "image": "speakers/raluca_nicola.jpg",
+    "twitter": "https://twitter.com/nicolaraluk",
+    "title": "Product Engineer",
+    "company": "Esri"
   }
 ]
