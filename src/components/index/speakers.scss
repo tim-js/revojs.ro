@@ -23,14 +23,14 @@
     grid-gap: calc((100vw - 2 * var(--spacing-content)) / 4 * 40 / 100) 0;
   }
 }
-.speakers-list > li:nth-child(3) {
+.speakers-list > li:nth-child(5) {
   @include breakpoint(md) {
     transform: translateX(
       calc((100vw - 2 * var(--spacing-content)) / 4 * 70 / 100)
     );
   }
 }
-.speakers-list > li:nth-child(3n + 2) {
+.speakers-list > li:nth-child(even) {
   @include breakpoint(md) {
     transform: translateY(
       calc((100vw - 2 * var(--spacing-content)) / 4 * 10 / 100)
