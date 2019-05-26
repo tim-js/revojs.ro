@@ -1,0 +1,147 @@
+@import "../styles/mixins";
+
+@mixin clip-hex($cutoff) {
+  clip-path: polygon(
+    $cutoff 0%,
+    100% 0%,
+    100% calc(100% - #{$cutoff}),
+    calc(100% - #{$cutoff}) 100%,
+    0% 100%,
+    0% $cutoff
+  );
+}
+
+.speaker {
+  position: relative;
+  width: 100%;
+
+  @include breakpoint(sm) {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+}
+
+.speaker-info,
+.speaker-info-inner,
+.speaker-img {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+  flex: 1;
+  overflow: hidden;
+}
+
+.speaker-img {
+  @include clip-hex(30%);
+  margin: 0;
+}
+.speaker-img-inner {
+  display: block;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+}
+
+.speaker-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include breakpoint(sm) {
+    @include clip-hex(30%);
+    transform: translateY(-30%);
+    background-color: var(--primary);
+  }
+}
+
+.speaker-info-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include breakpoint(sm) {
+    @include clip-hex(30%);
+    margin: 3px;
+    background-color: var(--background-dark);
+    width: calc(100% - 2 * 3px);
+    height: calc(100% - 2 * 3px);
+  }
+}
+
+.speaker-name {
+  display: block;
+  margin: 0;
+
+  @include breakpoint(sm, max) {
+    margin-top: var(--space-2);
+    font-size: 8vw;
+    margin-bottom: var(--space-1);
+    line-height: 1.1;
+  }
+
+  @include breakpoint(sm) {
+    font-size: 5vw;
+    padding-left: 15%;
+    padding-bottom: var(--space-4);
+  }
+  @include breakpoint(md) {
+    font-size: 2vw;
+    padding-bottom: var(--space-2);
+  }
+}
+.firstname,
+.lastname {
+  @include breakpoint(sm) {
+    display: block;
+  }
+}
+.speaker-title {
+  display: block;
+  line-height: 1.2;
+  color: var(--text-light);
+  transition: color 0.3s;
+
+  @include breakpoint(sm) {
+    padding: 0 15%;
+  }
+}
+.speaker-company {
+  display: block;
+  color: var(--primary);
+  transition: color 0.3s;
+
+  @include breakpoint(sm) {
+    padding: 0 15% 15% 15%;
+  }
+}
+
+/*
+.speaker:hover .speaker-img {
+  @include breakpoint(sm) {
+    transform: translateY(-5%) translateX(5%);
+  }
+}
+.speaker:hover .speaker-img-inner {
+  transform: scale(1.05);
+}
+.speaker:hover .speaker-info {
+  @include breakpoint(sm) {
+    @include clip-hex(20%);
+    transform: translateY(-25%) translateX(-5%);
+  }
+}
+.speaker:hover .speaker-info-inner {
+  @include breakpoint(sm) {
+    @include clip-hex(20%);
+    background: var(--primary);
+
+    .speaker-title {
+      color: white;
+    }
+    .speaker-company {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+*/

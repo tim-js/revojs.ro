@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
-import Speaker from "@components/Speaker";
+import SpeakerIndex from "@components/SpeakerIndex";
 import Subscribe from "@components/Subscribe";
 
 import "./speakers.scss";
@@ -22,7 +22,7 @@ const Speakers = ({ data }) => {
           return (
             <li key={speaker.id}>
               {/* <Link to={`/speakers/${speaker.id}`} className="speakers-link"> */}
-              <Speaker data={speaker} image={speakerImageFluid} />
+              <SpeakerIndex data={speaker} image={speakerImageFluid} />
               {/* </Link> */}
             </li>
           );
