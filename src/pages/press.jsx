@@ -39,6 +39,12 @@ export default () => {
               talks, community networking and thought-provoking ideas meant to
               inspire change, the only constant there is.
             </p>
+            <ul>
+              <li>2 days, single track conference</li>
+              <li>community driven, not-for-profit event</li>
+              <li>16+ international speakers</li>
+              <li>300 participants</li>
+            </ul>
             <h3>Română</h3>
             <p>
               revo.js este prima conferință de JavaScript din Timișoara,
@@ -48,8 +54,14 @@ export default () => {
               comunități de profil și idei menite să inspire schimbare, singura
               constantă într-o lume în continuă transformare.
             </p>
+            <ul>
+              <li>2 zile de prezentari tehnice, exclusiv in limba engleză</li>
+              <li>Un eveniment non-profit, organizat de comunitatea locală</li>
+              <li>16+ prezentatori internaționali</li>
+              <li>300 participanți</li>
+            </ul>
           </section>
-          
+
           <br />
           <br />
           <br />
