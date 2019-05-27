@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580px" height="650px" viewBox="0 0 580 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>illustration_venue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="580" height="650"></rect>
+        <linearGradient x1="48.4049627%" y1="31.8421709%" x2="51.1731634%" y2="82.2795462%" id="linearGradient-3">
+            <stop stop-color="#2F353B" offset="0%"></stop>
+            <stop stop-color="#15161A" offset="71.9165426%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="47.8982086%" y1="23.4125665%" x2="50.0000018%" y2="83.1220911%" id="linearGradient-4">
+            <stop stop-color="#414951" offset="0%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-New" transform="translate(-2320.000000, -2512.000000)">
+            <g id="illustration_venue" transform="translate(2320.000000, 2512.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="container" opacity="0.5"></g>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(40.000000, 0.000000)" id="Group-12">
+                        <g>
+                            <polygon id="Rectangle" fill="url(#linearGradient-3)" points="-2.22044605e-15 0 140 0 320 752 180 752"></polygon>
+                            <path d="M233.2207,74.5290756 L156.442158,152.098633 L318.442954,315.766071 L156.442153,479.434308 L233.219912,557.003073 L471.999992,315.765286 L233.2207,74.5290756 Z M310.000775,315.766081 L148,152.098664 L233.220673,66 L480.442167,315.765279 L233.219891,565.532156 L148.000005,479.434287 L310.000775,315.766081 Z" id="Stroke-1" fill="#F45919" fill-rule="nonzero"></path>
+                            <polygon id="Rectangle" fill="url(#linearGradient-4)" transform="translate(341.000000, 376.000000) scale(-1, 1) translate(-341.000000, -376.000000) " points="181 0 321 0 501 752 361 752"></polygon>
+                            <path d="M463.975979,307.658711 L233.2207,74.5290756 L237.441764,70.2645242 L480.442167,315.765279 L463.975979,307.658711 Z M228.999609,70.2645514 L233.2207,74.5290756 L153.67616,154.893128 L148,152.098664 L228.999609,70.2645514 Z" id="Path" fill="#F45919" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

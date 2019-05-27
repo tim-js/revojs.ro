@@ -1,0 +1,23 @@
+@import "../styles/mixins";
+
+.speakers-image {
+  @include breakpoint(md) {
+    background: url("/illustration_speakers.svg") no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+.speakers-list {
+  padding: 0;
+  margin: 0;
+}
+
+.speakers-list a:link,
+.speakers-list a:hover {
+  text-decoration: none;
+}
+
+.speakers-bottom {
+  background: white;
+}

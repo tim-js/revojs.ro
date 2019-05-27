@@ -1,33 +1,105 @@
 import React from "react";
+import { StaticQuery, graphql, Link } from "gatsby";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
-import Note from "@components/Note";
+import Speaker from "@components/Speaker";
+import { PurchaseTicket } from "@components/CTA";
 
-export default () => {
+import "./speakers.scss";
+
+const Speakers = ({ data }) => {
+  const { allSpeakersJson, speakerImages } = data;
+  const speakers = allSpeakersJson.edges.map(e => e.node);
+  const offset = (allSpeakersJson.edges.length % 2) + 1;
+
   return (
     <Layout title="revo.js Speakers">
-      <Header centered type="secondary">
+      <Header type="main" image="speakers-image">
         <h1>Speakers</h1>
+        <br />
       </Header>
 
       <Section light>
-        <Content centered>
-          <Note>
-            <p>
-              More details about the speakers and their talks will be published
-              soon.
-            </p>
-            <br />
-            <br />
-            <br />
-            <br />
-          </Note>
+        <Content centered style={{ textAlign: "center" }}>
+          <h1>Meet the speakers</h1>
+          <br />
+          <br />
+          <br />
+        </Content>
+      </Section>
+
+      <ul className="speakers-list">
+        {speakers.map((speaker, index) => {
+          const speakerImageFluid = speakerImages.edges.find(e =>
+            speaker.image.includes(e.node.base)
+          );
+
+          const type = (index + offset) % 2 === 0 ? "odd" : "even";
+
+          return (
+            <li key={speaker.id}>
+              <Link to={`/speakers/${speaker.id}`} className="speakers-link">
+                <Speaker
+                  data={speaker}
+                  image={speakerImageFluid}
+                  type={type}
+                  first={index === 0}
+                />
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+
+      <Section light>
+        <Content centered style={{ textAlign: "center" }}>
+          <PurchaseTicket white />
         </Content>
       </Section>
     </Layout>
+  );
+};
+
+export default props => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          allSpeakersJson {
+            edges {
+              node {
+                id
+                firstname
+                lastname
+                image
+                title
+                company
+                talk
+                abstract
+              }
+            }
+          }
+          speakerImages: allFile(
+            filter: { relativePath: { glob: "speakers/*" } }
+          ) {
+            edges {
+              node {
+                base
+                image: childImageSharp {
+                  fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => <Speakers data={data} {...props} />}
+    />
   );
 };

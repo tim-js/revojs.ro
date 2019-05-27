@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="580px" height="650px" viewBox="0 0 580 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>illustration_speakers</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="580" height="650"></rect>
+        <linearGradient x1="211.524823%" y1="49.9998808%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#383E43" offset="0%"></stop>
+            <stop stop-color="#242E35" offset="20.1094959%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="206.416223%" y1="100%" x2="0%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#383E43" offset="0%"></stop>
+            <stop stop-color="#242E35" offset="38.8672344%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="206.416223%" y1="100%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#383E43" offset="0%"></stop>
+            <stop stop-color="#242E35" offset="61.9301608%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="36.1419821%" x2="49.5708799%" y2="94.0654343%" id="linearGradient-6">
+            <stop stop-color="#2F353B" offset="0%"></stop>
+            <stop stop-color="#060B10" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0000101%" y1="44.1497946%" x2="50.0000101%" y2="173.545701%" id="linearGradient-7">
+            <stop stop-color="#2F353B" offset="0%"></stop>
+            <stop stop-color="#060B10" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0000101%" y1="42.4275508%" x2="50.0000101%" y2="153.556044%" id="linearGradient-8">
+            <stop stop-color="#2F353B" offset="0%"></stop>
+            <stop stop-color="#060B10" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0000044%" y1="17.0926076%" x2="52.7989238%" y2="131.943728%" id="linearGradient-9">
+            <stop stop-color="#2F353B" offset="0%"></stop>
+            <stop stop-color="#060B10" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="54.6443966%" y1="0%" x2="54.6443966%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#15161A" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-New" transform="translate(-2320.000000, -1606.000000)">
+            <g id="illustration_speakers" transform="translate(2320.000000, 1606.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="container" opacity="0.5"></g>
+                <g id="Group" mask="url(#mask-2)">
+                    <rect id="Rectangle" fill="url(#linearGradient-3)" x="252" y="0" width="141" height="141"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-4)" x="252" y="285.747692" width="141" height="141"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-5)" x="252" y="571" width="141" height="141"></rect>
+                    <polygon id="Rectangle" fill="url(#linearGradient-6)" points="393 286 533 426.871897 533 571.128103 393 712"></polygon>
+                    <polygon id="Rectangle" fill="url(#linearGradient-7)" points="393 0 533 140.871897 533 213 393 213"></polygon>
+                    <path d="M133.2207,79.5290756 L56.4421583,157.098633 L218.442954,320.766071 L56.4421532,484.434308 L133.219912,562.003073 L371.999992,320.765286 L133.2207,79.5290756 Z M210.000775,320.766081 L48,157.098664 L133.220673,71 L380.442167,320.765279 L133.219891,570.532156 L48.0000051,484.434287 L210.000775,320.766081 Z" id="Stroke-1" fill="#F45919" fill-rule="nonzero"></path>
+                    <polygon id="Rectangle" fill="url(#linearGradient-8)" points="112 141 252 0 252 426.747692 112 286.747692"></polygon>
+                    <polygon id="Rectangle" fill="url(#linearGradient-9)" points="252 712 112 571.128103 112 499 252 499"></polygon>
+                    <rect id="Rectangle" fill="url(#linearGradient-10)" x="0" y="509" width="580" height="141"></rect>
+                </g>
+                <path d="M363.975979,312.658711 L133.2207,79.5290756 L137.441764,75.2645242 L380.442167,320.765279 L363.975979,312.658711 Z" id="Path" fill="#F45919" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

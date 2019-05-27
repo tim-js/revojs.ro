@@ -3,11 +3,13 @@
     "id": "martin-hochel",
     "firstname": "Martin",
     "lastname": "Hochel",
-    "description": "Martin is a Technical Lead for UI at Twisto.cz and a Google Developer Expert for Web, with a strong passion for JavaScript/TypeScript and clean code. He loves contributing to open source (TypeScript, rex-tils, ng-metadata, @skatejs, React, Preact), enjoys writing technical articles on medium.com and also runs the biggest JavaScript meetup in Prague/CZ - ngParty. Martin loves to travel the world and meet new people at conferences. When he’s not busy preparing the next meetup or talk, you can find him outside, on one of his skate/snow/wakeboards (depends on the weather conditions, yo!)",
+    "description": "<p>Martin is a Technical Lead for UI at Twisto.cz and a Google Developer Expert for Web, with a strong passion for JavaScript/TypeScript and clean code. He loves contributing to open source (TypeScript, rex-tils, ng-metadata, @skatejs, React, Preact), enjoys writing technical articles on medium.com and also runs the biggest JavaScript meetup in Prague/CZ - ngParty. Martin loves to travel the world and meet new people at conferences.</p> <p>When he’s not busy preparing the next meetup or talk, you can find him outside, on one of his skate/snow/wakeboards (depends on the weather conditions, yo!)</p>",
     "image": "speakers/martin_hochel.jpg",
-    "twitter": "https://twitter.com/martin_hotell",
+    "twitter": "martin_hotell",
     "title": "UI Tech Lead",
-    "company": "Twisto.cz"
+    "company": "Twisto.cz",
+    "talk": "[Talk title coming soon]",
+    "abstract": ""
   },
   {
     "id": "carmen-popoviciu",
@@ -15,9 +17,11 @@
     "lastname": "Popoviciu",
     "description": "Carmen is a web developer currently doing all things DevRel at Nulab. She enjoys building things with code and solving programming challenges. She thinks computer engineers are artists of code and is aspiring to one day be the engineering version of Anne Theresa de Keersmaeker. If you want to catch her at the after party, she'll probably be on the dance floor.",
     "image": "speakers/carmen_popoviciu.jpg",
-    "twitter": "https://twitter.com/CarmenPopoviciu",
+    "twitter": "CarmenPopoviciu",
     "title": "Developer Advocate",
-    "company": "Nulab"
+    "company": "Nulab",
+    "talk": "[Talk title coming soon]",
+    "abstract": ""
   },
   {
     "id": "boyan-mihaylov",
@@ -25,9 +29,11 @@
     "lastname": "Mihaylov",
     "description": "Boyan is a software architect and developer, thinking human-first when writing software. He likes experimenting and talking about technology and its application to solving everyday problems. Prefers working solutions over concrete frameworks and languages. Boyan believes technology needs more storytelling and he tries to convey such. In his free time he performs improvised comedy with his group.",
     "image": "speakers/boyan_mihaylov.jpg",
-    "twitter": "https://twitter.com/boyanio",
+    "twitter": "boyanio",
     "title": "Software Architect and Developer",
-    "company": "MP Pension"
+    "company": "MP Pension",
+    "talk": "[Talk title coming soon]",
+    "abstract": ""
   },
   {
     "id": "gleb-bahmutov",
@@ -35,9 +41,11 @@
     "lastname": "Bahmutov",
     "description": "Boyan is a software architect and developer, thinking human-first when writing software. He likes experimenting and talking about technology and its application to solving everyday problems. Prefers working solutions over concrete frameworks and languages. Boyan believes technology needs more storytelling and he tries to convey such. In his free time he performs improvised comedy with his group.",
     "image": "speakers/gleb_bahmutov.jpg",
-    "twitter": "https://twitter.com/bahmutov",
+    "twitter": "bahmutov",
     "title": "VP of Engineering",
-    "company": "Cypress.io"
+    "company": "Cypress.io",
+    "talk": "[Talk title coming soon]",
+    "abstract": ""
   },
   {
     "id": "raluca-nicola",
@@ -45,8 +53,10 @@
     "lastname": "Nicola",
     "description": "Raluca works at Esri as a Product Engineer for ArcGIS API for JavaScript. She enjoys prototyping visualizations that involve spatial data. Most of them are in 3D and all of them live on the web. In the past she also made maps for the Atlas of Switzerland and the Swiss National Park.",
     "image": "speakers/raluca_nicola.jpg",
-    "twitter": "https://twitter.com/nicolaraluk",
+    "twitter": "nicolaraluk",
     "title": "Product Engineer",
-    "company": "Esri"
+    "company": "Esri",
+    "talk": "The web developer’s guide to cartography",
+    "abstract": "<p>Maps are everywhere! Whether you want to find your hotel, plan your next hike or see the results of a recent election: maps are indispensable.</p> <p>But how do we create such maps? Web mapping APIs have come a long way. They are easy to use and not only allow you to create 2D maps, but more recently also 3D ones. Add some magic geo data and cartographic knowledge and you are on your way to build your first mapping master piece.</p> <p>In this talk we’ll go through the process of creating a web map: Starting from an idea, gathering and processing the data, and finishing up with a beautiful web map visualization. No geo-knowledge required! Enthusiasm for maps will be provided in the beginning of the talk.</p>"
   }
 ]
