@@ -150,7 +150,7 @@
 .speaker-talk {
   font-size: 4vw;
   color: var(--color);
-  margin: 1em 0 0 0;
+  margin: 1em 0;
 
   @include breakpoint(sm) {
     font-size: 2vw;
