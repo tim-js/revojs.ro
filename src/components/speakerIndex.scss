@@ -72,6 +72,7 @@
 .speaker-name {
   display: block;
   margin: 0;
+  padding-top: var(--space-1);
 
   @include breakpoint(sm, max) {
     margin-top: var(--space-2);
