@@ -24,7 +24,7 @@ export default () => {
           <Link to="/tickets/">
             <strong className="update-title mono">Early Bird tickets SOLD OUT</strong>
             <p className="update-content light-faded">
-              The first 50 Early Birds flew away. Regular tickets are now On Sale.
+              The 50 Early Birds flew away. Regular tickets are now On Sale.
             </p>
           </Link>
         </li>
