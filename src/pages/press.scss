@@ -1,0 +1,28 @@
+.visual-guide {
+  & figure {
+    margin: 2em 0;
+
+    & img {
+      margin-right: 2em;
+      margin-bottom: 1em;
+    }
+  }
+
+  h3 {
+    color: inherit;
+    font-size: 180%;
+    margin-top: 3em;
+  }
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  font-weight: bold;
+  row-gap: 0.5em;
+  column-gap: 1em;
+
+  & dd {
+    margin: 0;
+  }
+}
