@@ -37,14 +37,15 @@
   color: white;
 }
 .tag-regular {
-  justify-self: center;
-  text-align: center;
+  // justify-self: center;
+  justify-self: flex-start;
+  // text-align: center;
   color: var(--primary);
 }
 .tag-late {
   justify-self: flex-end;
   color: #c61212;
-  text-align: right;
+  // text-align: right;
 }
 
 .tickets-timeline {

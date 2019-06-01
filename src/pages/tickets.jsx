@@ -11,12 +11,12 @@ import { PurchaseTicket } from "@components/CTA";
 import "./tickets.scss";
 
 export default () => {
-  const INDEX_START_EARLY = 3;
+  // const INDEX_START_EARLY = 3;
   const INDEX_START_REGULAR = 5;
   const INDEX_START_LATE = 8;
 
   const now = new Date();
-  const currentMonth = Math.max(now.getMonth(), INDEX_START_EARLY);
+  const currentMonth = Math.max(now.getMonth(), INDEX_START_REGULAR);
 
   const months = [
     "Jan",
@@ -118,13 +118,13 @@ export default () => {
 
             <p>Tickets will be available according to the following plan:</p>
             <ul className="bullet">
-              <li>
-                <strong>Early Bird Tickets</strong>: until 31st of May (limited
-                to 50 tickets){" "}
-                <strong className="highlight">(ON SALE NOW)</strong>
+              <li className="light-faded">
+                <strong>Early Bird Tickets</strong>: until 31st of May{" "}
+                <strong>(SOLD OUT)</strong>
               </li>
               <li>
-                <strong>Regular Tickets</strong>: until 31st of August
+                <strong>Regular Tickets</strong>: until 31st of August{" "}
+                <strong className="highlight">(ON SALE NOW)</strong>
               </li>
               <li>
                 <strong>Late Bird Tickets</strong>: until 30th of September
