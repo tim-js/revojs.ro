@@ -25,11 +25,11 @@ export default props => {
   } = props.data;
 
   return (
-    <Layout title="revo.js Travel info">
+    <Layout>
       <HelmetProvider>
         <Helmet>
           <title>
-            {firstname} {lastname}
+            revo.js {firstname} {lastname}
           </title>
         </Helmet>
       </HelmetProvider>
