@@ -6,6 +6,7 @@ import Img from "gatsby-image";
 import Layout from "@components/Layout";
 import Content from "@components/Content";
 import Section from "@components/Section";
+import { PurchaseTicket } from "@components/CTA";
 
 import "./speakerDetails.scss";
 
@@ -61,6 +62,9 @@ export default props => {
 
           <h2>About {firstname}</h2>
           <div dangerouslySetInnerHTML={{ __html: description }} />
+
+          <h2>Want to see {firstname}'s talk?</h2>
+          <PurchaseTicket white style={{ margin: 0 }} />
         </Content>
       </Section>
     </Layout>

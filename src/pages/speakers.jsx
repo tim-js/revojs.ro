@@ -57,6 +57,8 @@ const Speakers = ({ data }) => {
 
       <Section light>
         <Content centered style={{ textAlign: "center" }}>
+          <p>Don't miss your chance to meet these wonderful speakers.</p>
+          <br />
           <PurchaseTicket white />
         </Content>
       </Section>
