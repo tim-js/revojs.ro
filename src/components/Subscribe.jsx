@@ -23,6 +23,7 @@ const Subscribe = props => {
       method="GET"
     >
       <input
+        aria-label="Your email address"
         className="subscribe-input"
         placeholder="Your email address"
         type="email"

@@ -48,6 +48,7 @@ fbq('track', 'PageView');`
             __html: `<img
             height="1"
             width="1"
+            alt=""
             src="https://www.facebook.com/tr?id=333160550657034&amp;ev=PageView
             &amp;noscript=1"
           />`
