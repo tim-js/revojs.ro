@@ -57,10 +57,10 @@ export default () => {
               </li>
               <li>
                 For security purposes, to ensure that our site is safe and
-                secure
+                secure;
               </li>
               <li>
-                To send emails regarding event updates or importangt information
+                To send emails regarding event updates or important information
                 when we have your permission;
               </li>
               {/* <li>
