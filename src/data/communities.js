@@ -55,9 +55,9 @@ export const communities = [
     url: "https://www.meetup.com/Iasi-JS/"
   },
   {
-    name: "ReactJS Academy",
-    image: "communities/ReactJSAcademy_logo@2x.png",
-    url: "https://reactjs.academy/"
+    name: "React GraphQL Academy",
+    image: "communities/ReactGraphQL-Academy_logo@2x.png",
+    url: "https://reactgraphql.academy/"
   },
   {
     name: "Tabara de Testare",
