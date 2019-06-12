@@ -3,11 +3,11 @@
     "id": "martin-hochel",
     "firstname": "Martin",
     "lastname": "Hochel",
-    "description": "<p>Martin is a Technical Lead for UI at Twisto.cz and a Google Developer Expert for Web, with a strong passion for JavaScript/TypeScript and clean code. He loves contributing to open source (TypeScript, rex-tils, ng-metadata, @skatejs, React, Preact), enjoys writing technical articles on medium.com and also runs the biggest JavaScript meetup in Prague/CZ - ngParty. Martin loves to travel the world and meet new people at conferences.</p> <p>When he’s not busy preparing the next meetup or talk, you can find him outside, on one of his skate/snow/wakeboards (depends on the weather conditions, yo!)</p>",
+    "description": "<p>Martin is a Technical Lead for UI and a Google Developer Expert for Web, with a strong passion for JavaScript/TypeScript and clean code. He loves contributing to open source (TypeScript, rex-tils, ng-metadata, @skatejs, React, Preact), enjoys writing technical articles on medium.com and also runs the biggest JavaScript meetup in Prague/CZ - ngParty. Martin loves to travel the world and meet new people at conferences.</p> <p>When he’s not busy preparing the next meetup or talk, you can find him outside, on one of his skate/snow/wakeboards (depends on the weather conditions, yo!)</p>",
     "image": "speakers/martin_hochel.jpg",
     "twitter": "martin_hotell",
     "title": "UI Tech Lead",
-    "company": "Twisto.cz",
+    "company": "",
     "talk": "[Talk title coming soon]",
     "abstract": ""
   },
@@ -31,7 +31,7 @@
     "image": "speakers/boyan_mihaylov.jpg",
     "twitter": "boyanio",
     "title": "Software Architect and Developer",
-    "company": "MP Pension",
+    "company": "",
     "talk": "[Talk title coming soon]",
     "abstract": ""
   },

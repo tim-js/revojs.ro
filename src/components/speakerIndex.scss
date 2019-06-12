@@ -55,6 +55,10 @@
     background-color: var(--background-dark);
     width: calc(100% - 2 * 3px);
     height: calc(100% - 2 * 3px);
+
+    &:last-child {
+      padding-bottom: 15%;
+    }
   }
 }
 
@@ -93,7 +97,7 @@
   transition: color 0.3s;
 
   @include breakpoint(sm) {
-    padding: 0 15%;
+    padding: 0 20% 0 15%;
   }
 }
 .index-speaker-company {
@@ -102,7 +106,8 @@
   transition: color 0.3s;
 
   @include breakpoint(sm) {
-    padding: 0 15% 15% 15%;
+    // padding: 0 15% 15% 15%;
+    padding: 0 15%;
   }
 }
 

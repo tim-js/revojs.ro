@@ -3,6 +3,8 @@ import Img from "gatsby-image";
 
 import "./speaker.scss";
 
+const Company = name => (name ? `at ${name}` : null);
+
 export default props => {
   let classes = `speaker ${props.type}`;
   if (props.first) {
@@ -21,7 +23,7 @@ export default props => {
           {props.data.firstname} {props.data.lastname}
         </h2>
         <span className="speaker-title">
-          {props.data.title} at {props.data.company}
+          {props.data.title} {Company(props.data.company)}
         </span>
         <h3 className="speaker-talk">{props.data.talk}</h3>
       </div>

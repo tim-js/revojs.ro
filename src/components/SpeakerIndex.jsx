@@ -3,6 +3,11 @@ import Img from "gatsby-image";
 
 import "./speakerIndex.scss";
 
+function Company(name) {
+  if (!name) return null;
+  return <span className="index-speaker-company">at {name}</span>;
+}
+
 export default props => {
   return (
     <section className="index-speaker">
@@ -18,7 +23,7 @@ export default props => {
             <span className="index-speaker-lastname">{props.data.lastname}</span>
           </h2>
           <span className="index-speaker-title">{props.data.title}</span>
-          <span className="index-speaker-company">at {props.data.company}</span>
+          {Company(props.data.company)}
         </div>
       </div>
     </section>
