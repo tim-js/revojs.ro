@@ -11,9 +11,9 @@ const Speakers = ({ data }) => {
   const speakers = allSpeakersJson.edges.map(e => e.node);
 
   return (
-    <section id="speakers" className="speakers-content">
-      <h1 className="speakers-title">Speakers</h1>
-      <ul className="speakers-list">
+    <section id="speakers" className="index-speakers-content">
+      <h1 className="index-speakers-title">Speakers</h1>
+      <ul className="index-speakers-list">
         {speakers.map(speaker => {
           const speakerImageFluid = speakerImages.edges.find(e =>
             speaker.image.includes(e.node.base)
@@ -21,14 +21,14 @@ const Speakers = ({ data }) => {
 
           return (
             <li key={speaker.id}>
-              {/* <Link to={`/speakers/${speaker.id}`} className="speakers-link"> */}
+              {/* <Link to={`/speakers/${speaker.id}`} className="index-speakers-link"> */}
               <SpeakerIndex data={speaker} image={speakerImageFluid} />
               {/* </Link> */}
             </li>
           );
         })}
       </ul>
-      <p className="speakers-more mono">
+      <p className="index-speakers-more mono">
         <strong>More speakers will be announced soon</strong>
         <br />
         <br />

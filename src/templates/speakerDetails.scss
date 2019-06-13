@@ -1,0 +1,54 @@
+@import "../styles/mixins";
+
+.content-speaker {
+  position: relative;
+
+  @include breakpoint(sm, max) {
+    margin-top: 100vw;
+    background: white;
+    padding-top: 40vw;
+  }
+
+  @include breakpoint(sm) {
+    margin-top: 30rem;
+    background-image: url("/pixel_separation_speaker_detail.svg"),
+      linear-gradient(to bottom, var(--background-dark) 171px, white 96px);
+    background-position: calc(var(--spacing-content) - 280px) top, center top;
+    padding-top: calc(267px + var(--spacing-content));
+  }
+
+  @include breakpoint(md) {
+    background-position: calc((100vw - var(--width-content)) / 2 - 280px) top,
+      center top;
+  }
+}
+
+.speaker-image {
+  @include clip-hex(30%);
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+
+  @include breakpoint(sm, max) {
+    // transform: translateY(-70%);
+    margin-top: -60%;
+    width: calc(100vw - 2 * var(--spacing-content));
+  }
+
+  @include breakpoint(sm) {
+    // 171px = to part of the pixel graphics
+    // 70%  = top part of image until cuttof
+    transform: translateY(calc(171px - 70%));
+    width: 360px;
+  }
+}
+
+.speaker-twitter {
+  background: url("/twitter_speaker.svg") no-repeat left center;
+  height: 22px;
+  padding-left: 30px;
+  line-height: 22px;
+  display: inline-block;
+}

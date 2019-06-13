@@ -3,8 +3,6 @@ const path = require(`path`);
 const slug = require(`slug`);
 const slash = require(`slash`);
 
-return;
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -39,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // Create image post pages.
-    const speakerTemplate = path.resolve(`src/templates/speaker.jsx`);
+    const speakerTemplate = path.resolve(`src/templates/speakerDetails.jsx`);
     // We want to create a detailed page for each
     // Instagram post. Since the scrapped Instagram data
     // already includes an ID field, we just use that for
@@ -62,16 +60,16 @@ exports.createPages = ({ graphql, actions }) => {
       });
     });
 
-    const blogPostTemplate = path.resolve(`src/templates/blog-post.jsx`);
+    // const blogPostTemplate = path.resolve(`src/templates/blog-post.jsx`);
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: blogPostTemplate,
-        context: {
-          url: node.frontmatter.path
-        } // additional data can be passed via context
-      });
-    });
+    // result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    //   createPage({
+    //     path: node.frontmatter.path,
+    //     component: blogPostTemplate,
+    //     context: {
+    //       url: node.frontmatter.path
+    //     } // additional data can be passed via context
+    //   });
+    // });
   });
 };

@@ -1,17 +1,6 @@
 @import "../styles/mixins";
 
-@mixin clip-hex($cutoff) {
-  clip-path: polygon(
-    $cutoff 0%,
-    100% 0%,
-    100% calc(100% - #{$cutoff}),
-    calc(100% - #{$cutoff}) 100%,
-    0% 100%,
-    0% $cutoff
-  );
-}
-
-.speaker {
+.index-speaker {
   position: relative;
   width: 100%;
 
@@ -22,9 +11,9 @@
   }
 }
 
-.speaker-info,
-.speaker-info-inner,
-.speaker-img {
+.index-speaker-info,
+.index-speaker-info-inner,
+.index-speaker-img {
   transition-property: all;
   transition-duration: 0.3s;
   transition-delay: 0.1s;
@@ -32,17 +21,17 @@
   overflow: hidden;
 }
 
-.speaker-img {
+.index-speaker-img {
   @include clip-hex(30%);
   margin: 0;
 }
-.speaker-img-inner {
+.index-speaker-img-inner {
   display: block;
   transition-duration: 0.3s;
   transition-delay: 0.1s;
 }
 
-.speaker-info {
+.index-speaker-info {
   color: white;
   display: flex;
   flex-direction: column;
@@ -55,7 +44,7 @@
   }
 }
 
-.speaker-info-inner {
+.index-speaker-info-inner {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -66,10 +55,14 @@
     background-color: var(--background-dark);
     width: calc(100% - 2 * 3px);
     height: calc(100% - 2 * 3px);
+
+    &:last-child {
+      padding-bottom: 15%;
+    }
   }
 }
 
-.speaker-name {
+.index-speaker-name {
   display: block;
   margin: 0;
   padding-top: var(--space-1);
@@ -91,56 +84,57 @@
     padding-bottom: var(--space-2);
   }
 }
-.firstname,
-.lastname {
+.index-speaker-firstname,
+.index-speaker-lastname {
   @include breakpoint(sm) {
     display: block;
   }
 }
-.speaker-title {
+.index-speaker-title {
   display: block;
   line-height: 1.2;
   color: var(--text-light);
   transition: color 0.3s;
 
   @include breakpoint(sm) {
-    padding: 0 15%;
+    padding: 0 20% 0 15%;
   }
 }
-.speaker-company {
+.index-speaker-company {
   display: block;
   color: var(--primary);
   transition: color 0.3s;
 
   @include breakpoint(sm) {
-    padding: 0 15% 15% 15%;
+    // padding: 0 15% 15% 15%;
+    padding: 0 15%;
   }
 }
 
 /*
-.speaker:hover .speaker-img {
+.index-speaker:hover .index-speaker-img {
   @include breakpoint(sm) {
     transform: translateY(-5%) translateX(5%);
   }
 }
-.speaker:hover .speaker-img-inner {
+.index-speaker:hover .index-speaker-img-inner {
   transform: scale(1.05);
 }
-.speaker:hover .speaker-info {
+.index-speaker:hover .index-speaker-info {
   @include breakpoint(sm) {
     @include clip-hex(20%);
     transform: translateY(-25%) translateX(-5%);
   }
 }
-.speaker:hover .speaker-info-inner {
+.index-speaker:hover .index-speaker-info-inner {
   @include breakpoint(sm) {
     @include clip-hex(20%);
     background: var(--primary);
 
-    .speaker-title {
+    .index-speaker-title {
       color: white;
     }
-    .speaker-company {
+    .index-speaker-company {
       color: rgba(255, 255, 255, 0.6);
     }
   }

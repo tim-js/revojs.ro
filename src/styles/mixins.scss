@@ -26,3 +26,14 @@ $breakpoint-lg: 1200px;
     }
   }
 }
+
+@mixin clip-hex($cutoff) {
+  clip-path: polygon(
+    $cutoff 0%,
+    100% 0%,
+    100% calc(100% - #{$cutoff}),
+    calc(100% - #{$cutoff}) 100%,
+    0% 100%,
+    0% $cutoff
+  );
+}

@@ -2,7 +2,7 @@ require("./src/styles/variables.css");
 require("./src/styles/global.scss");
 
 exports.onServiceWorkerUpdateReady = () => {
-  window.location.reload();
+  window.location.reload(true);
 };
 
 exports.onInitialClientRender = () => {

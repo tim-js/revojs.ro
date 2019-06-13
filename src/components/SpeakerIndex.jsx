@@ -3,22 +3,27 @@ import Img from "gatsby-image";
 
 import "./speakerIndex.scss";
 
+function Company(name) {
+  if (!name) return null;
+  return <span className="index-speaker-company">at {name}</span>;
+}
+
 export default props => {
   return (
-    <section className="speaker">
-      <figure className="speaker-img">
-        <div className="speaker-img-inner">
+    <section className="index-speaker">
+      <figure className="index-speaker-img">
+        <div className="index-speaker-img-inner">
           <Img fluid={props.image.node.image.fluid} alt="" />
         </div>
       </figure>
-      <div className="speaker-info">
-        <div className="speaker-info-inner">
-          <h2 className="speaker-name">
-            <span className="firstname">{props.data.firstname}</span>{" "}
-            <span className="lastname">{props.data.lastname}</span>
+      <div className="index-speaker-info">
+        <div className="index-speaker-info-inner">
+          <h2 className="index-speaker-name">
+            <span className="index-speaker-firstname">{props.data.firstname}</span>{" "}
+            <span className="index-speaker-lastname">{props.data.lastname}</span>
           </h2>
-          <span className="speaker-title">{props.data.title}</span>
-          <span className="speaker-company">at {props.data.company}</span>
+          <span className="index-speaker-title">{props.data.title}</span>
+          {Company(props.data.company)}
         </div>
       </div>
     </section>
