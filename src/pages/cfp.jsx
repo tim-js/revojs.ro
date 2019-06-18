@@ -6,7 +6,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Note from "@components/Note";
-import { SubmitCFP } from "@components/CTA";
+// import { SubmitCFP } from "@components/CTA";
 // import Subscribe from "@components/Subscribe";
 
 import "./cfp.scss";
