@@ -13,10 +13,9 @@ export default () => {
       <ul className="updates-list">
         <li>
           <Link to="/cfp/">
-            <strong className="update-title mono">Call For Papers is Open</strong>
+            <strong className="update-title mono">Call For Papers has Closed</strong>
             <p className="update-content light-faded">
-              CFP is now open. Ready, steady, apply for change until the 17th of
-              June.
+              CFP was open between 17 Apr - 17 Jun. We will annouce the selected speakers around Mid July.
             </p>
           </Link>
         </li>
