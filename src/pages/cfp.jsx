@@ -6,13 +6,13 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Note from "@components/Note";
-import { SubmitCFP } from "@components/CTA";
+// import { SubmitCFP } from "@components/CTA";
 // import Subscribe from "@components/Subscribe";
 
 import "./cfp.scss";
 
 // const CFP_OPEN = "17th of April";
-const CFP_CLOSE = "17th of June";
+// const CFP_CLOSE = "17th of June";
 
 export default () => {
   return (
@@ -21,19 +21,19 @@ export default () => {
         <h1>Call For Papers</h1>
         <br />
         <strong className="cfp-important light-faded mono">
-          Hurray! CFP is now open until the{" "}
-          <span className="highlight">{CFP_CLOSE}.</span>
+          <span className="highlight">CFP has closed on the 17th of June.</span>
+          {/* <span className="highlight">{CFP_CLOSE}.</span>
           <br />
           <span>
-            Submit more proposals to increase your odds.
-          </span>
+            You can submit more than proposal.
+          </span> */}
           {/* Better prepare! <br />
           CFP opens on the <span className="highlight">{CFP_OPEN}.</span> */}
         </strong>
         <br />
         <br />
 
-        <SubmitCFP />
+        {/* <SubmitCFP /> */}
 
         {/* <a href="#topics" className="cfp-cta">
           <Button>View our Topics</Button>
@@ -49,23 +49,31 @@ export default () => {
               programmers?
             </p> */}
 
-            <p>
-              This is a call out to all members of the JavaScript community who
-              have a memorable talk that can stir up change. Submit your talk
-              proposals until the <strong>17th of June</strong> and hopefully
-              we’ll meet on the 3rd and 4th of October in Timisoara.
-            </p>
-
             {/* <p>Stay tuned to share it!</p>
             <p>
               The Call for Papers opens on the{" "}
               <strong className="highlight mono">{CFP_OPEN}</strong>.
             </p> */}
+
+            {/* <p>
+              This is a call out to all members of the JavaScript community who
+              have a memorable talk that can stir up change. Submit your talk
+              proposals until the <strong>17th of June</strong> and hopefully
+              we’ll meet on the 3rd and 4th of October in Timisoara.
+            </p> */}
+            <p>
+              We've received <strong>92 proposals</strong>, which is a lot more
+              than we've initially expected.
+            </p>
+            <p>
+              We're currently thoroughly reviewing all proposals and we're
+              planning to annouce the selected speakers in Mid-July.
+            </p>
           </Note>
 
+          {/* <br />
           <br />
-          <br />
-          <SubmitCFP white />
+          <SubmitCFP white /> */}
 
           {/* <section>
             <h2>Stay up to date!</h2>
@@ -271,7 +279,7 @@ export default () => {
           <br />
           <br />
 
-          <SubmitCFP white />
+          {/* <SubmitCFP white /> */}
         </Content>
       </Section>
     </Layout>
