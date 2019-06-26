@@ -68,5 +68,10 @@ export const communities = [
     name: "BudapestJS",
     image: "communities/BudapestJS_logo@2x.png",
     url: "https://www.meetup.com/budapest-js/"
+  },
+  {
+    name: "TechHub Bucharest",
+    image: "communities/tech_hub_logo.svg",
+    url: "https://bucharest.techhub.com/"
   }
 ];
