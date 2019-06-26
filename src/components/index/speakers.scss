@@ -23,13 +23,13 @@
     grid-gap: calc((100vw - 2 * var(--spacing-content)) / 4 * 40 / 100) 0;
   }
 }
-.index-speakers-list > li:nth-child(5) {
-  @include breakpoint(md) {
-    transform: translateX(
-      calc((100vw - 2 * var(--spacing-content)) / 4 * 70 / 100)
-    );
-  }
-}
+// .index-speakers-list > li:nth-child(5) {
+//   @include breakpoint(md) {
+//     transform: translateX(
+//       calc((100vw - 2 * var(--spacing-content)) / 4 * 70 / 100)
+//     );
+//   }
+// }
 .index-speakers-list > li:nth-child(even) {
   @include breakpoint(md) {
     transform: translateY(
