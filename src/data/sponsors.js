@@ -59,5 +59,10 @@ export const sponsors = [
     name: "Haufe",
     image: "sponsors/haufe_logo.svg",
     url: "https://www.haufegroup.com/"
+  },
+  {
+    name: "IBM",
+    image: "sponsors/IBM_logo.svg",
+    url: "https://www.ibm.com/ro-en"
   }
 ];
