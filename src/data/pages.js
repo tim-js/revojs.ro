@@ -14,7 +14,7 @@ export const main = [
     name: "Venue"
   },
   {
-    name: "Sponsors"
+    name: "Supporters"
   }
 ];
 
