@@ -8,8 +8,8 @@
     "twitter": "martin_hotell",
     "title": "UI Tech Lead",
     "company": "",
-    "talk": "[Talk title coming soon]",
-    "abstract": ""
+    "talk": "The (Real) State of WebComponents",
+    "abstract": "<p>2018 is gonna be the year of WebComponents they said... Was it? The year is 2019 and people are asking, are WebComponents everywhere? Probably not. Why?</p><p>This talk will try to answer all these questions you might be asking yourself, by going through a real evaluation of WebComponents as primary tool for authoring web pages and applications.</p>"
   },
   {
     "id": "carmen-popoviciu",
@@ -31,9 +31,9 @@
     "image": "speakers/boyan_mihaylov.jpg",
     "twitter": "boyanio",
     "title": "Software Architect and Developer",
-    "company": "",
-    "talk": "[Talk title coming soon]",
-    "abstract": ""
+    "company": "Fadata",
+    "talk": "A journey of multithreading using WebAssembly",
+    "abstract": "WebAssembly is a new programming language, allowing us to compile C/C++ or other statically typed languages and run them in the browser and Node.js. While languages like C/C++ support multi-threading, JavaScript is single-threaded and this raises the question of how WebAssembly will behave. In this talk we will discuss the design of threads for WebAssembly, the implementation challenges in terms of security and we will see examples of how multithreading can be achieved using Web Workers."
   },
   {
     "id": "gleb-bahmutov",
