@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="620px" height="650px" viewBox="0 0 620 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>illustration_worshops</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="48.2870729%" y1="31.8421709%" x2="51.2598723%" y2="82.2795462%" id="linearGradient-1">
+            <stop stop-color="#2F353B" offset="0%"></stop>
+            <stop stop-color="#15161A" offset="71.9165426%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="47.7428645%" y1="23.4125665%" x2="50.000002%" y2="83.1220911%" id="linearGradient-2">
+            <stop stop-color="#414951" offset="0%"></stop>
+            <stop stop-color="#15161A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-New" transform="translate(-2320.000000, -3287.000000)">
+            <g id="Group-13" transform="translate(2320.000000, 3287.000000)">
+                <g id="Group-12" transform="translate(243.000000, 0.000000)">
+                    <polygon id="Rectangle" fill="url(#linearGradient-1)" points="-1.49106305e-15 0 134.012114 0 254.884831 578 120.872718 578"></polygon>
+                    <polygon id="Rectangle" fill="url(#linearGradient-2)" transform="translate(249.557584, 289.000000) scale(-1, 1) translate(-249.557584, -289.000000) " points="122.115169 0 256.127282 0 377 578 242.987886 578"></polygon>
+                </g>
+                <g id="Group-12">
+                    <polygon id="Rectangle" fill="url(#linearGradient-1)" points="-1.49106305e-15 0 134.012114 0 254.884831 578 120.872718 578"></polygon>
+                    <path d="M237.779686,279.766086 L75.7789209,116.098679 L165.220659,25.7354622 L416.663254,279.765276 L165.219881,533.796697 L75.7789209,443.434277 L237.779686,279.766086 Z M84.2210742,116.098648 L246.221864,279.766076 L84.2210742,443.434297 L165.219901,525.267615 L408.221074,279.765283 L165.220687,34.2645378 L84.2210742,116.098648 Z" id="Stroke-1" fill="#F45919" fill-rule="nonzero"></path>
+                    <polygon id="Rectangle" fill="url(#linearGradient-2)" transform="translate(249.557584, 289.000000) scale(-1, 1) translate(-249.557584, -289.000000) " points="122.115169 0 256.127282 0 377 578 242.987886 578"></polygon>
+                    <polygon id="Shape" fill="#F45919" fill-rule="nonzero" points="165.220687 34.2645378 408.221079 279.765283 165.219901 525.267615 82.1321638 441.323866 77.8678362 445.544708 165.219881 533.796697 416.663254 279.765276 165.220659 25.7354622 77.8678361 113.988243 82.1321639 118.209085"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

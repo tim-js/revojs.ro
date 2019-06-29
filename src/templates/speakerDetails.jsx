@@ -15,7 +15,7 @@ export default props => {
     speakersJson: {
       firstname,
       lastname,
-      description,
+      bio,
       talk,
       abstract,
       twitter,
@@ -61,7 +61,7 @@ export default props => {
           <div dangerouslySetInnerHTML={{ __html: abstract }} />
 
           <h2>About {firstname}</h2>
-          <div dangerouslySetInnerHTML={{ __html: description }} />
+          <div dangerouslySetInnerHTML={{ __html: bio }} />
 
           <h2>Want to see {firstname}'s talk?</h2>
           <PurchaseTicket white style={{ margin: 0 }} />
@@ -79,7 +79,7 @@ export const pageQuery = graphql`
       twitter
       title
       company
-      description
+      bio
       image
       talk
       abstract
