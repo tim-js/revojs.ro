@@ -74,12 +74,6 @@ export default props => {
             })}
 
             <li>
-              <Hamburger
-                active={showMenu}
-                id="toggle-secondary-navigation"
-                onClick={() => toggleMenu(!showMenu)}
-              />
-
               <ul className={`secondary-navigation`}>
                 {[...secondary, ...tertiary].map(page => {
                   return (

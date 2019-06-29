@@ -1,8 +1,6 @@
 @import "../styles/mixins";
 @import "../styles/fonts";
 
-$darker-background: #060b10;
-
 .navigation {
   height: var(--menu-height);
   display: flex;
@@ -34,6 +32,13 @@ $darker-background: #060b10;
       justify-content: center;
     }
   }
+
+  &.is-active {
+    height: 100vh;
+    background: var(--background-dark);
+    justify-content: space-between !important;
+    align-items: flex-start;
+  }
 }
 
 .navigation-logo {
@@ -50,33 +55,24 @@ $darker-background: #060b10;
     transform-origin: center left;
     display: block;
   }
+
+  .is-active & {
+    display: none;
+  }
 }
 
 @mixin hiddenMenu() {
+  height: 0;
+  width: 0;
+  overflow: auto;
   opacity: 0;
-  padding: 2em;
-  position: fixed;
-  transform: translateX(-100%);
-  top: var(--menu-height);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  min-height: calc(100vh - var(--menu-height));
-  background-color: $darker-background;
-  border-top: 1px var(--text-dark) solid;
-  border-bottom: 1px var(--text-dark) solid;
   text-align: right;
-
-  transition: opacity 0.3s, top 0.3s;
+  transition: all 0.3s;
 
   .is-active & {
-    transform: translateX(0);
     opacity: 1;
-  }
-
-  .is-scrolled & {
-    top: var(--menu-height-scrolled);
-    min-height: calc(100vh - var(--menu-height-scrolled));
+    height: auto;
+    width: auto;
   }
 }
 
@@ -86,10 +82,21 @@ $darker-background: #060b10;
   padding: 0;
   margin: 0;
   transition: opacity 0.5s;
+  text-align: right;
 }
 .primary-navigation {
+  align-items: center;
+  height: var(--menu-height-scrolled);
+
   @include breakpoint(md, min) {
     display: flex;
+    margin-right: 2em;
+
+    .is-active & {
+      display: block;
+      margin-top: 3em;
+      margin-right: 0;
+    }
   }
   @include breakpoint(md, max) {
     @include hiddenMenu();
@@ -97,22 +104,11 @@ $darker-background: #060b10;
 }
 
 .secondary-navigation {
-  @include breakpoint(md, max) {
-    border: 0;
-    margin-top: var(--space-4);
-  }
+  margin-top: var(--space-4);
+
   @include breakpoint(md) {
     @include hiddenMenu();
   }
-}
-
-.primary-navigation > li:not(:first-child) {
-  @include breakpoint(md) {
-    margin-left: 1em;
-  }
-  // @include breakpoint(md, max) {
-  //   line-height: 1em;
-  // }
 }
 
 .main-link:link,
@@ -122,23 +118,18 @@ $darker-background: #060b10;
   color: var(--text-light);
   transition: all 0.3s;
   display: inline-block;
-  border-bottom: 3px transparent solid;
+  font-size: var(--space-3);
+  line-height: 2;
 
-  &.secondary {
-    @include breakpoint(md) {
-      padding: 0;
-      line-height: 2.5;
-    }
-  }
-
-  @include breakpoint(md, max) {
-    font-size: var(--space-3);
-    line-height: 1.7;
-  }
   @include breakpoint(md, min) {
-    line-height: calc(var(--menu-height-scrolled) - 3px);
-    &:not(.secondary) {
+    .navigation:not(.is-active) &:not(.secondary) {
+      line-height: calc(var(--menu-height-scrolled) - 3px);
       padding: 0 var(--space-2);
+      border-bottom: 3px transparent solid;
+    }
+    .navigation:not(.is-active) & {
+      font-size: inherit;
+      line-height: 1.7;
     }
   }
 }
@@ -149,9 +140,9 @@ $darker-background: #060b10;
 .main-link.active {
   color: var(--primary);
 
-  &:not(.secondary) {
+  .navigation:not(.is-active) &:not(.secondary) {
     @include breakpoint(md) {
-      border-bottom: 3px var(--primary) solid;
+      border-color: var(--primary);
     }
   }
 }
@@ -160,24 +151,21 @@ $darker-background: #060b10;
   height: var(--menu-height-scrolled);
   padding: 0;
   transform: translateY(2px);
+  margin-left: auto;
+  display: block;
+  cursor: pointer;
+  transition: top 0.3s;
 
-  @include breakpoint(md, max) {
-    display: block;
-    cursor: pointer;
-  }
   @include breakpoint(md, min) {
-    display: none;
-  }
-}
+    position: absolute;
+    right: 1.5em;
+    top: 2em;
 
-#toggle-secondary-navigation {
-  display: none;
-  height: var(--menu-height-scrolled);
-  // padding: 0 var(--space-1);
-  transform: translateY(2px);
-
-  @include breakpoint(md) {
-    display: block;
-    cursor: pointer;
+    .is-scrolled & {
+      top: 0;
+    }
+    .is-active & {
+      top: 0 !important;
+    }
   }
 }
