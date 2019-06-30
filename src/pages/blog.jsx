@@ -34,7 +34,7 @@ export default function Blog({ data }) {
                     </Link>
                   </h2>
                   <strong>
-                    <time datetime={post.frontmatter.date}>
+                    <time dateTime={post.frontmatter.date}>
                       {post.frontmatter.date}
                     </time>
                   </strong>
