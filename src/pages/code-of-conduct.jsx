@@ -99,8 +99,11 @@ export default () => {
               Conference staff will be happy to help participants contact venue
               security or local law enforcement, provide escorts, or otherwise
               assist those experiencing harassment to feel safe for the duration
-              of the conference.{" "}
-              <strong className="highlight">We value your attendance</strong>.
+              of the conference.
+            </p>
+
+            <p>
+              <strong className="highlight">We value your attendance.</strong>
             </p>
           </section>
         </Content>

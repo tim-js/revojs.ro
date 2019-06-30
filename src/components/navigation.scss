@@ -69,12 +69,12 @@
   text-align: right;
   transition: all 0.3s;
   overflow: hidden;
+  padding-bottom: 2em;
 
   .is-active & {
     opacity: 1;
     height: auto;
     width: auto;
-    padding-bottom: 2em;
     overflow: visible;
   }
 }

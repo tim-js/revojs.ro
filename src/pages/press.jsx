@@ -42,12 +42,9 @@ export default () => {
             <h2>Content Essentials</h2>
             <p>
               Whether you want to write a full-fledged article or craft a
-              snippet, our{" "}
-              <Link to="/about">
-                <strong>About page</strong>
-              </Link>{" "}
-              has the essential information to get you started. Feel free to use
-              the descriptions you find there as such.{" "}
+              snippet, our <Link to="/about">About page</Link> has the essential
+              information to get you started. Feel free to use the descriptions
+              you find there as such.{" "}
             </p>
 
             <p>
@@ -58,9 +55,7 @@ export default () => {
             <p>
               If you’re still craving more details or want to do a
               revo.interview, don’t hesitate to contact us at{" "}
-              <a href="mailto:info@revojs.ro?subject=[press]" className="mono">
-                <strong>info@revojs.ro</strong>
-              </a>
+              <a href="mailto:info@revojs.ro?subject=[press]">info@revojs.ro</a>
               .
             </p>
           </section>
