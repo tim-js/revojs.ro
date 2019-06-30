@@ -15,7 +15,7 @@ export default function Blog({ data }) {
 
   return (
     <Layout title="revo.js Blog">
-      <Header centered type="secondary">
+      <Header centered className="blog-header">
         <h1>
           <img className="about-logo-text" src={revojs} alt="revo.js" /> Blog
         </h1>
