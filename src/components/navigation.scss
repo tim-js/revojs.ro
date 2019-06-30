@@ -13,13 +13,13 @@
   left: 0;
   z-index: 100;
   transition: all 0.5s;
+  overflow: hidden;
 
   .is-scrolled & {
     justify-content: space-between;
     box-shadow: 0 6px 10px 0 rgba(21, 22, 26, 0.3);
     background: var(--background-dark);
     border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
-
     height: var(--menu-height-scrolled);
   }
 
@@ -38,6 +38,7 @@
     background: var(--background-dark);
     justify-content: space-between !important;
     align-items: flex-start;
+    overflow: auto;
   }
 }
 
@@ -64,15 +65,17 @@
 @mixin hiddenMenu() {
   height: 0;
   width: 0;
-  overflow: auto;
   opacity: 0;
   text-align: right;
   transition: all 0.3s;
+  overflow: hidden;
 
   .is-active & {
     opacity: 1;
     height: auto;
     width: auto;
+    padding-bottom: 2em;
+    overflow: visible;
   }
 }
 
@@ -86,7 +89,6 @@
 }
 .primary-navigation {
   align-items: center;
-  height: var(--menu-height-scrolled);
 
   @include breakpoint(md, min) {
     display: flex;
@@ -94,17 +96,20 @@
 
     .is-active & {
       display: block;
-      margin-top: 3em;
-      margin-right: 0;
     }
   }
   @include breakpoint(md, max) {
     @include hiddenMenu();
   }
+  .is-active & {
+    margin-top: calc(var(--menu-height-scrolled) + 2em);
+    margin-right: 0;
+  }
 }
 
 .secondary-navigation {
   margin-top: var(--space-4);
+  font-weight: normal;
 
   @include breakpoint(md) {
     @include hiddenMenu();
@@ -115,11 +120,11 @@
 .main-link:visited {
   @include font(mono);
   font-weight: bold;
-  color: var(--text-light);
+  color: var(--lightgrey);
   transition: all 0.3s;
   display: inline-block;
-  font-size: var(--space-3);
-  line-height: 2;
+  font-size: 4vh;
+  line-height: 1.9;
 
   @include breakpoint(md, min) {
     .navigation:not(.is-active) &:not(.secondary) {
@@ -129,8 +134,11 @@
     }
     .navigation:not(.is-active) & {
       font-size: inherit;
-      line-height: 1.7;
     }
+  }
+
+  &.secondary {
+    font-weight: 100;
   }
 }
 .main-link:hover {
@@ -140,6 +148,8 @@
 .main-link.active {
   color: var(--primary);
 
+  // set colored border on active links
+  // when menu is not extended
   .navigation:not(.is-active) &:not(.secondary) {
     @include breakpoint(md) {
       border-color: var(--primary);
@@ -155,6 +165,7 @@
   display: block;
   cursor: pointer;
   transition: top 0.3s;
+  position: relative;
 
   @include breakpoint(md, min) {
     position: absolute;
@@ -164,8 +175,11 @@
     .is-scrolled & {
       top: 0;
     }
-    .is-active & {
-      top: 0 !important;
-    }
+  }
+
+  .is-active & {
+    top: 2em !important;
+    position: absolute;
+    right: 1.5em;
   }
 }
