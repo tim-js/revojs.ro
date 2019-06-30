@@ -1,5 +1,16 @@
 @import "../styles/mixins";
 
+@mixin clip-logo($cutoff) {
+  clip-path: polygon(
+    0px 0px,
+    100% 0px,
+    100% calc(100% - #{$cutoff}),
+    calc(100% - #{$cutoff}) 100%,
+    0px 100%,
+    0px 0px
+  );
+}
+
 .logos-list {
   list-style-type: none;
   padding: 0;
@@ -53,18 +64,23 @@
   justify-content: center;
   align-items: center;
   transition: box-shadow 0.3s;
+  will-change: contents;
 
   img {
+    @include no-clip();
     filter: grayscale(100%);
     transform: scale(1) translateZ(0);
-    transition: all 0.3s;
+    transition: filter 0.3s, clip-path 0.3s;
+    background: white;
   }
 
   &:hover {
-    box-shadow: 0 0 0 1px var(--primary);
+    background: black;
+    box-shadow: 0 0 0 6px black;
     z-index: 1;
+
     img {
-      transform: scale(0.9) translateZ(0);
+      @include clip-logo(20%);
       filter: grayscale(0%);
     }
   }

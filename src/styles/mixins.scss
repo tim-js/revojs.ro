@@ -37,3 +37,7 @@ $breakpoint-lg: 1200px;
     0% $cutoff
   );
 }
+
+@mixin no-clip() {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+}
