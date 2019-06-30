@@ -1,0 +1,14 @@
+@import "../styles/mixins";
+
+.blog-post {
+  margin-top: 2em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.blog-post-title {
+  margin-bottom: 0;
+  margin-top: 0;
+}

@@ -50,9 +50,11 @@ module.exports = {
               maxWidth: 1024,
               quality: 70,
               withWebp: true,
-              showCaptions: true
+              showCaptions: true,
+              tracedSVG: true
             }
-          }
+          },
+          `gatsby-remark-autolink-headers`
         ]
       }
     },

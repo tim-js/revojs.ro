@@ -1,0 +1,42 @@
+@import "../styles/mixins";
+
+.blog-post-header {
+  padding-bottom: 0;
+  min-height: auto;
+
+  h1 {
+    padding: 1em 0;
+  }
+}
+
+.blog-post-toc {
+  margin-bottom: 8rem;
+  h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+}
+
+.blog-post {
+  margin-bottom: 4em;
+
+  h2 {
+    margin-top: 0;
+    padding-top: 10rem;
+  }
+
+  figure {
+    margin: 2em 0 5em 0;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 80%;
+    font-style: italic;
+    padding-top: 1em;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+}

@@ -60,16 +60,16 @@ exports.createPages = ({ graphql, actions }) => {
       });
     });
 
-    // const blogPostTemplate = path.resolve(`src/templates/blog-post.jsx`);
+    const blogPostTemplate = path.resolve(`src/templates/blogPost.jsx`);
 
-    // result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    //   createPage({
-    //     path: node.frontmatter.path,
-    //     component: blogPostTemplate,
-    //     context: {
-    //       url: node.frontmatter.path
-    //     } // additional data can be passed via context
-    //   });
-    // });
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: blogPostTemplate,
+        context: {
+          url: node.frontmatter.path
+        } // additional data can be passed via context
+      });
+    });
   });
 };

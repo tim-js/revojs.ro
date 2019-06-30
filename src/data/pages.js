@@ -29,6 +29,9 @@ export const secondary = [
   {
     name: "About"
   },
+  {
+    name: "Blog"
+  },
   // {
   //   name: "Manifest"
   // },
