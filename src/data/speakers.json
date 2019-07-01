@@ -39,7 +39,7 @@
     "id": "gleb-bahmutov",
     "firstname": "Gleb",
     "lastname": "Bahmutov",
-    "bio": "Gleb Bahmutov is JavaScript ninja, image processing expert and software quality fanatic. During the day Gleb is making the web a better place as VP of Engineering at Cypress.io. At night he is fighting software bugs and blogs about it at https://glebbahmutov.com/blog/. Microsoft MVP for Open Source Software. You can follow him and his work @bahmutov and find the slides from conference presentations at https://slides.com/bahmutov.",
+    "bio": "<p>Gleb Bahmutov is a JavaScript ninja, image processing expert and software quality fanatic. During the day Gleb is making the web a better place as VP of Engineering at Cypress.io.</p> <p>At night he is fighting software bugs and blogs about it at <a href=\"https://glebbahmutov.com/blog/\">glebbahmutov.com/blog</a>. Microsoft MVP for Open Source Software, you can follow him and his work <a href=\"https://twitter.com/bahmutov\">@bahmutov</a> and find the slides from conference presentations at <a href=\"https://slides.com/bahmutov\">slides.com/bahmutov</a>.</p>",
     "image": "speakers/gleb_bahmutov.jpg",
     "twitter": "bahmutov",
     "title": "VP of Engineering",
