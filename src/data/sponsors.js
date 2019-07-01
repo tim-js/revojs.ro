@@ -64,5 +64,10 @@ export const sponsors = [
     name: "IBM",
     image: "sponsors/IBM_logo.svg",
     url: "https://www.ibm.com/ro-en"
+  },
+  {
+    name: "Cognizant Softvision",
+    image: "sponsors/Cognizant_Softvision_logo.svg",
+    url: "https://www.cognizantsoftvision.com/"
   }
 ];
