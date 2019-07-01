@@ -12,7 +12,7 @@ We got **92 proposals** from **67 speakers**.
 
 Except Africa and Antarctica, we've received proposals from all continents of the globe, which is something that we've never dreamed about, considering this is the first edition of the event.
 
-### Distribution per continent:
+### Distribution by continent:
 
 - **Europe - 45** (from 18 different countries, see breakdown below)
 - **North America - 10** (USA: 9, Canada: 1)
@@ -25,7 +25,7 @@ Except Africa and Antarctica, we've received proposals from all continents of th
   <figcaption>revo.js CFP proposals distribution by continent</figcaption>
 </figure>
 
-### Distribution per Europe countries:
+### Distribution by European countries:
 
 - 9 from Romania;
 - 5 from UK;
@@ -100,7 +100,7 @@ Not a very relevant metric, but an interesting one was to see when do speakers s
 
 But looking at the chart, even though the last week got a lot of submissions, the distribution was a lot more uniform than we've expected.
 
-## CFP aquisition
+## Aquisition
 
 Last but not least, we've asked the speakers where did they hear about revo.js Call for Papers. Not a surprise that Social Media ended up on the first position.
 

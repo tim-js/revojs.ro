@@ -28,8 +28,8 @@ export default function BlogTemplate({ data }) {
           <article className="blog-post">
             <span className="light-faded">
               Written on{" "}
-              <time dateTime={post.frontmatter.date} className="highlight">
-                {post.frontmatter.date}
+              <time dateTime={post.frontmatter.date}>
+                <strong>{post.frontmatter.date}</strong>
               </time>
             </span>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
