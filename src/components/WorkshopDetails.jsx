@@ -56,7 +56,13 @@ export default props => {
             <OutboundLink href="https://devplant.ro/" target="_blank">
               DevPlant
             </OutboundLink>
-            , 9 Gh. Lazar Street, Timisoara
+            ,{" "}
+            <OutboundLink
+              href="https://goo.gl/maps/2RqaQueye1TyR69x7"
+              target="_blank"
+            >
+              9 Gh. Lazar Street, Timisoara
+            </OutboundLink>
           </dd>
           <dt>
             <strong>What’s included?</strong>
