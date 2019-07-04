@@ -60,7 +60,7 @@ export default () => {
           <Logos
             list={partners}
             style={{
-              maxWidth: "150px",
+              maxWidth: "450px",
               marginLeft: "auto",
               marginRight: "auto"
             }}
