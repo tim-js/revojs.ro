@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Content from "@components/Content";
 import Section from "@components/Section";
@@ -50,7 +51,13 @@ export default props => {
           <dt>
             <strong>When and Where?</strong>
           </dt>
-          <dd>9AM to 5PM, DevPlant, 9 Gh. Lazar Street, Timisoara</dd>
+          <dd>
+            9AM to 5PM,{" "}
+            <OutboundLink href="https://devplant.ro/" target="_blank">
+              DevPlant
+            </OutboundLink>
+            , 9 Gh. Lazar Street, Timisoara
+          </dd>
           <dt>
             <strong>What’s included?</strong>
           </dt>
