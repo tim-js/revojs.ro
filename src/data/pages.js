@@ -11,7 +11,8 @@ export const main = [
     name: "Tickets"
   },
   {
-    name: "Workshops"
+    name: "Workshop",
+    path: "workshops"
   },
   {
     name: "Venue"

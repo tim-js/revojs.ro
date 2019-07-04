@@ -4,10 +4,10 @@ import { StaticQuery, graphql } from "gatsby";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
+import Button from "@components/Button";
 // import Content from "@components/Content";
 // import Section from "@components/Section";
 import WorkshopDetails from "@components/WorkshopDetails";
-import { PurchaseTicket } from "@components/CTA";
 
 import "./workshops.scss";
 
@@ -18,16 +18,21 @@ const Workshops = ({ data }) => {
   return (
     <Layout title="revo.js Workshops">
       <Header type="main" image="workshops-image">
-        <h1>Workshops</h1>
+        <h1>Workshop</h1>
         <br />
         <strong className="cfp-important light-faded mono">
-          There's only one workshop this edition
+          a full day of "testing, testing..."
+        </strong>
+        <br />
+        <strong className="cfp-important highlight mono">
+          2nd of October, at DevPlant
         </strong>
         <br />
         <br />
         <br />
-        <br />
-        <PurchaseTicket label="Book your spot now!" />
+        <a href={`#${workshops[0].id}`}>
+          <Button>Learn more</Button>
+        </a>
       </Header>
 
       {workshops.map((workshop, index) => {

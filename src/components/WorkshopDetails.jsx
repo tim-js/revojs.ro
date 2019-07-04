@@ -3,13 +3,14 @@ import Img from "gatsby-image";
 
 import Content from "@components/Content";
 import Section from "@components/Section";
-import { PurchaseTicket } from "@components/CTA";
+import { WorkshopTicket } from "@components/CTA";
 import "./workshopDetails.scss";
 
 const Company = name => (name ? `at ${name}` : null);
 
 export default props => {
   const {
+    id,
     workshop,
     firstname,
     lastname,
@@ -21,7 +22,9 @@ export default props => {
   return (
     <Section light>
       <Content centered style={{ maxWidth: "830px" }}>
-        <h1 className="workshop-title">{workshop}</h1>
+        <h1 id={id} className="workshop-title">
+          {workshop}
+        </h1>
 
         <header className="workshop-header">
           <figure className="workshop-speaker-img">
@@ -43,8 +46,27 @@ export default props => {
           </div>
         </header>
 
+        <dl className="workshop-info">
+          <dt>
+            <strong>When and Where?</strong>
+          </dt>
+          <dd>9AM to 5PM, DevPlant, 9 Gh. Lazar Street, Timisoara</dd>
+          <dt>
+            <strong>What’s included?</strong>
+          </dt>
+          <dd>Lunch, snacks, coffee and beverages</dd>
+          <dt>
+            <strong>Spots available</strong>
+          </dt>
+          <dd className="spots">24</dd>
+        </dl>
+
+        <div className="workshop-purchase-button">
+          <WorkshopTicket label="Book your workshop spot" white />
+        </div>
+
         <section>
-          <h2>Workshop Details</h2>
+          <h2>Workshop details</h2>
           <p>
             This workshop teaches how to test a modern web application using
             Cypress.io end-to-end test runner. The application uses Vue.js
@@ -107,10 +129,12 @@ export default props => {
 
         <br />
         <br />
-
-        <PurchaseTicket label="Book your spot now!" white />
         <br />
-        <p className="light-faded">
+
+        <WorkshopTicket label="Book your workshop spot" white />
+        <br />
+        <br />
+        <p>
           <strong>Note</strong>: The workshop is not included in the conference
           ticket and requires a separate booking. If you have any questions,
           drop us a line at{" "}

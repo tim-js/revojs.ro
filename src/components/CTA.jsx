@@ -14,6 +14,18 @@ export const PurchaseTicket = ({ label = "Grab Your Ticket", ...props }) => {
   );
 };
 
+export const WorkshopTicket = ({ label = "Book your spot", ...props }) => {
+  return (
+    <OutboundLink
+      className="tickets-cta"
+      href="https://ti.to/revojs/revojs2019/with/uhjrtmhvpo0"
+      target="_blank"
+    >
+      <Button {...props}>{label}</Button>
+    </OutboundLink>
+  );
+};
+
 export const SubmitCFP = props => {
   return (
     <OutboundLink href="https://revojs.typeform.com/to/WWcdJ2" target="_blank">
