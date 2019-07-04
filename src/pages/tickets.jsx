@@ -1,4 +1,5 @@
 import React from "react";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -108,7 +109,7 @@ export default () => {
         <Content centered>
           <Note>
             <p>
-              Get your ticket for change and get ready for insightful talks,
+              Grab your ticket for change and get ready for insightful talks,
               exciting networking and a good time all-around.
             </p>
           </Note>
@@ -129,11 +130,15 @@ export default () => {
               <li>
                 <strong>Late Bird Tickets</strong>: until 30th of September
               </li>
+              <li>
+                <strong>Workshop Tickets</strong>: until 27th of September{" "}
+                <strong className="highlight">(ON SALE NOW)</strong>
+              </li>
             </ul>
           </section>
 
           <section>
-            <h2>All tickets include</h2>
+            <h2>All conference tickets include</h2>
 
             <ul className="bullet">
               <li>
@@ -145,7 +150,31 @@ export default () => {
               <li>Snacks during coffee breaks</li>
               <li>After party access (Friday evening)</li>
             </ul>
+
+            <p>
+              <strong>Note:</strong> <br />
+              Conference tickets do not include access to workshop. <br />
+              You need to purchase a separate workshop ticket.
+            </p>
           </section>
+
+          <section>
+            <h2>Workshop tickets</h2>
+            <p>Workshop tickets are sold separately and they include:</p>
+            <ul className="bullet">
+              <li>lunch and snacks</li>
+              <li>coffee and beverages</li>
+            </ul>
+            <p>
+              <strong>Note:</strong> <br />
+              Workshop tickets don't offer access to the conference. <br />
+              You need to purchase a conference ticket.
+            </p>
+          </section>
+
+          <br />
+          <br />
+          <PurchaseTicket white />
 
           <section>
             <h2>Bulk Tickets for Companies</h2>
@@ -168,8 +197,14 @@ export default () => {
             <h2>Diversity Support Tickets</h2>
 
             <p>
-              We also offer Scholarships and Diversity Support Tickets meant to
-              ignite change among young talents.
+              We also offer Scholarships and{" "}
+              <OutboundLink
+                target="_blank"
+                href="https://diversitytickets.org/en/events/446"
+              >
+                Diversity Support Tickets
+              </OutboundLink>{" "}
+              meant to ignite change among young talents.
             </p>
 
             <p>
