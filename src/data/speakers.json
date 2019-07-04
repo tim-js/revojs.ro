@@ -70,5 +70,17 @@
     "company": "Progress",
     "talk": "[Talk title coming soon]",
     "abstract": ""
+  },
+  {
+    "id": "laura-carvajal",
+    "firstname": "Laura",
+    "lastname": "Carvajal",
+    "bio": "SLaura has been a Software Engineer for 15 years and is currently a Senior Developer at The Financial Times. She has led the accessibility team for FT.com in 2016 and currently works as a full-stack developer for the Internal Products team at Financial Times.",
+    "image": "speakers/laura_carvajal.png",
+    "twitter": "lc512k",
+    "title": "Principal Engineer",
+    "company": "The Financial Times",
+    "talk": "Common Ways We Break Accessibility And How To Avoid Them",
+    "abstract": "<p>A great deal of what makes a website accessible is fairly straightforward to achieve, but only once we know what to look out for! Over 70% of websites are broken for disabled users, including those who rely on assistive tech, such as screen readers and magnifiers, to navigate the web. That's a good 10%-20% of your user base who can't access your content or pay for your product, even though they may want to.</p> <p>In this talk we will go over some common front-end (anti)patterns and how they affect accessibility while otherwise going virtually undetected. We will see real user testimonials of how these affect their interaction with the web and their daily lives. Lastly, we'll cover how to get the same results without breaking your site for disabled users, including real-life examples of how we've avoided these pitfalls at The Financial Times.</p>"
   }
 ]
