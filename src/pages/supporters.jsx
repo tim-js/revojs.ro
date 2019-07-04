@@ -79,7 +79,7 @@ export default () => {
           <Logos
             list={media}
             style={{
-              maxWidth: "150px",
+              maxWidth: "300px",
               marginLeft: "auto",
               marginRight: "auto"
             }}
