@@ -64,23 +64,38 @@
   justify-content: center;
   align-items: center;
   will-change: contents;
+  overflow: hidden;
 
   img {
     @include no-clip();
     filter: grayscale(100%);
-    transform: scale(1) translateZ(0);
-    transition: filter 0.3s, clip-path 0.3s;
     background: white;
+    transform: translateZ(0);
+    transition: filter 0.3s, transform 0.3s;
+    background: white;
+    transition-timing-function: ease-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: var(--primary);
+    display: block;
+    transform: translateY(6px);
+    transition: transform 0.3s;
   }
 
   &:hover {
-    background: black;
-    box-shadow: 0 0 0 3px black;
-    z-index: 1;
-
     img {
-      @include clip-logo(20%);
       filter: grayscale(0%);
+      transform: translateY(-6px);
+    }
+    &::after {
+      transform: translateY(0);
     }
   }
 }
