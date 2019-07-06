@@ -84,6 +84,8 @@
   display: block;
   transition: 0.3s;
   transition-delay: 0.1s;
+
+  max-width: calc(100% - 30px);
 }
 .update-content {
   margin-top: 0;
