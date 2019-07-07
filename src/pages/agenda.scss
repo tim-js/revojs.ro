@@ -1,0 +1,41 @@
+@import "../styles/mixins";
+
+.agenda-image {
+  @include breakpoint(md) {
+    background: url("/illustration_agenda.svg") no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+.agenda-nav {
+  position: sticky;
+  top: var(--menu-height-scrolled);
+  background: white;
+  box-shadow: 0 20px 20px 0 rgba(255, 255, 255, 1);
+  display: flex;
+
+  a {
+    flex: 1;
+    text-align: center;
+    padding: 1em 0;
+
+    strong {
+      display: block;
+    }
+
+    &.active {
+      background: var(--primary);
+      color: white;
+    }
+  }
+}
+
+.agenda-content {
+  text-align: center;
+
+  h2 {
+    margin-top: 0;
+    padding-top: 5em;
+  }
+}
