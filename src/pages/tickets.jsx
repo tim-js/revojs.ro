@@ -153,8 +153,9 @@ export default () => {
 
             <p>
               <strong>Note:</strong> <br />
-              Conference tickets do not include access to workshop. <br />
-              You need to purchase a separate workshop ticket.
+              Conference tickets don't include access to the workshop. <br />
+              There is a separate ticket that you have to purchase in order to
+              attend the workshop.
             </p>
           </section>
 
@@ -168,7 +169,8 @@ export default () => {
             <p>
               <strong>Note:</strong> <br />
               Workshop tickets don't offer access to the conference. <br />
-              You need to purchase a conference ticket.
+              You have to also purchase a conference ticket if you want to
+              attend both events.
             </p>
           </section>
 
@@ -182,8 +184,8 @@ export default () => {
             <p>Change happens when like-minded people get together.</p>
 
             <p>
-              So, if you want to purchase revo.js tickets for an entire crew of
-              change please contact us directly by{" "}
+              So if you want to purchase revo.js tickets for an entire crew of
+              change, please contact us directly by{" "}
               <a href="mailto:info@revojs.ro?subject=[tickets bulk]">
                 sending an e-mail
               </a>{" "}
