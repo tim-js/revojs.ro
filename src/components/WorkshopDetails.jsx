@@ -81,15 +81,16 @@ export default props => {
         <section>
           <h2>Workshop details</h2>
           <p>
-            This workshop teaches how to test a modern web application using
-            Cypress.io end-to-end test runner. The application uses Vue.js
-            framework with Vuex data management and REST API calls, but the
-            testing will be applicable to any modern web app.
+            This workshop teaches you how to test a modern web application using
+            the Cypress.io end-to-end test runner. The application we are going
+            to test uses the Vue.js framework, with Vuex data management and
+            REST API calls, but the testing will be applicable to any modern web
+            app, regardless of the technology it uses.
           </p>
 
           <p>
-            Knowledge of web development using JavaScript is required, plus some
-            basic Node.js skills.
+            Knowledge of web development using JavaScript is required. Some
+            basic Node.js skills are required as well.
           </p>
 
           <section>
