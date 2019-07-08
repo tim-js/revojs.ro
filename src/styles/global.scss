@@ -123,3 +123,11 @@ ul.bullet > li {
 button:focus {
   outline: 0;
 }
+
+.permalink {
+  svg {
+    @include breakpoint(sm) {
+      height: 30px;
+    }
+  }
+}
