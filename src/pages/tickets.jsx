@@ -197,14 +197,14 @@ export default () => {
             <h2>Diversity Support Tickets</h2>
 
             <p>
-              We also offer Scholarships and{" "}
+              We also offer{" "}
               <OutboundLink
                 target="_blank"
                 href="https://diversitytickets.org/en/events/446"
               >
                 Diversity Support Tickets
               </OutboundLink>{" "}
-              meant to ignite change among young talents.
+              and Scholarships meant to ignite change among young talents.
             </p>
 
             <p>
