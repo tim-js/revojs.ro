@@ -43,22 +43,22 @@ Except Africa and Antarctica, we've received proposals from all continents of th
 
 revo.js is dedicated to the entire JavaScript ecosystem, not focused on a specific technology. We expected a wide variety of topics from the CFP and the proposals trully raised up to our expectations:
 
-- **Web Standards (15)**
-  includes anything regarding HTML, CSS, ECMAScript, DOM and Browser APIs, WebAssembly, Web Components, etc;
-- **Frameworks (26)**
-  includes all framework and development libraries specific talks;
+- **Web Standards (17)**
+  include anything regarding HTML, CSS, ECMAScript, DOM and Browser APIs, WebAssembly, Web Components, etc;
+- **Frameworks &amp; Libraries (26)**
+  include all framework and development libraries specific talks;
 - **Performance (6)**
-  includes any proposal regarding performance optimizations, weather its page load, rendering or server load;
+  includes any proposal regarding performance optimizations, weather its page/server load or regarding rendering;
 - **Graphics (6)**
-  includes all proposals with an emphasis on 2D or 3D graphics, WebGL, animations and games;
+  include all proposals with an emphasis on 2D or 3D graphics, WebGL, animations, VR/AR and games;
 - **Tools (4)**
-  includes any talks focused on DX (Developer eXperience) like debugging, code editors, etc;
+  include any talks focused on DX (Developer eXperience) like debugging, code editors/IDEs, etc;
 - **Node.js (9)**
   includes all talks that touch Node.js, server-side development, databases, serverless, etc;
 - **OSS / Communities (2)**
   includes any proposal regarding Open Source ecosystem and JavaScript communities;
 - **Testing (7)**
-  testing is a huge topic, so this includes anything regarding unit, integration, end-to-end or any other kind of testing;
+  testing is a huge topic, so this includes anything regarding unit, integration, end-to-end or any other type of testing;
 - **Security (3)**
   includes all topics regarding security from Authentication, XSS, CSRF or any data protection;
 - **Native (2)**
@@ -71,7 +71,7 @@ revo.js is dedicated to the entire JavaScript ecosystem, not focused on a specif
 
 We also got proposals that couldn't be included in any of the above topics, which include:
 
-- 2 proposals each for: **Accessibility**, **Code Reviews**, **Leadership**, **Management**;
+- 2 proposals each for: **Code Reviews**, **Leadership**, **Management**;
 - 1 proposal for: **Ethics**, **History**, **JavaScript Fatigue**.
 
 ## Experience level
@@ -87,7 +87,7 @@ Another metric that played a minor role during our selection process was the exp
   <figcaption>revo.js CFP proposal distribution by experience level</figcaption>
 </figure>
 
-This distribution was exactly what we were looking for, because we wanted to have a few Beginner and Expert level talks, but the majority we were planning to be addressed to the vast number of intermediate developers.
+This distribution was exactly what we were looking for, because we wanted to have a few Beginner and Expert level talks, but the majority of talks should be addressed to the vast number of intermediate developers.
 
 ## Submission date
 
