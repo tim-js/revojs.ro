@@ -1,4 +1,5 @@
 @import "../styles/mixins";
+@import "../styles/fonts";
 
 .blog-post-header {
   padding-bottom: 0;
@@ -38,5 +39,46 @@
 
   li {
     margin-bottom: 1em;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  position: relative;
+  margin: 0;
+  padding: 1em 3em;
+  color: var(--text-light);
+
+  @include breakpoint(sm) {
+    font-size: 1.25em;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '"';
+    position: absolute;
+    font-size: 5em;
+    display: block;
+    height: 1em;
+    font-family: cursive;
+    top: -0.25em;
+    left: -0.125em;
+  }
+}
+
+hr {
+  border: 0;
+  margin: 2em 0;
+  &::before {
+    content: "...";
+    text-align: center;
+    display: block;
+    letter-spacing: 1rem;
   }
 }
