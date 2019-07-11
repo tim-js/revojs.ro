@@ -5,8 +5,6 @@ Available at [revojs.ro](https://revojs.ro). Built with [Gatsby](https://www.gat
 ## Development
 
 ```
-// pull repo
-
 // install dependencies
 npm i
 
