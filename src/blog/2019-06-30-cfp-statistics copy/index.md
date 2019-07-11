@@ -4,13 +4,13 @@ date: "2019-06-30"
 title: "2019 Call for Papers Statistics"
 ---
 
-On the 17th of June 2019 ended the **Call for Speakers** of the first edition of [revo.js](https://revojs.ro), a two-day JavaScript conference in Timisoara, Romania. We would like to share some statistics about the proposals we got, which were beyond our expectations regarding their number, diversity, quality and topics.
+On June 17th 2019 the **Call for Speakers** for the first edition of [revo.js](https://revojs.ro) ended. As a wrap-up, we would like to share some statistics about the submission we received and the proposals which exceeded our expectations in terms of number, diversity, quality and topics.
 
 We got **92 proposals** from **67 speakers**.
 
 ## Demographics
 
-Except Africa and Antarctica, we've received proposals from all continents of the globe, which is something that we've never dreamed about, considering this is the first edition of the event.
+Except Africa and Antarctica, we've received proposals from all continents of the globe, which is something that we've never dreamed about, considering this is the first edition of our conference.
 
 ### Distribution by continent:
 
@@ -41,7 +41,7 @@ Except Africa and Antarctica, we've received proposals from all continents of th
 
 ## Topics
 
-revo.js is dedicated to the entire JavaScript ecosystem, not focused on a specific technology. We expected a wide variety of topics from the CFP and the proposals trully raised up to our expectations:
+revo.js is dedicated to the entire JavaScript ecosystem, not focused on a specific technology. We expected a wide variety of topics from the CFP and the proposals truly raised up to our expectations:
 
 - **Web Standards (17)**
   include anything regarding HTML, CSS, ECMAScript, DOM and Browser APIs, WebAssembly, Web Components, etc;
@@ -69,14 +69,14 @@ revo.js is dedicated to the entire JavaScript ecosystem, not focused on a specif
   <figcaption>revo.js CFP proposal distribution by topic</figcaption>
 </figure>
 
-We also got proposals that couldn't be included in any of the above topics, which include:
+We also got proposals that couldn't be included in any of the above topics, namely:
 
 - 2 proposals each for: **Code Reviews**, **Leadership**, **Management**;
 - 1 proposal for: **Ethics**, **History**, **JavaScript Fatigue**.
 
 ## Experience level
 
-Another metric that played a minor role during our selection process was the experience level required to understand the topic. Of course, this is pretty subjective and not trivial to measure, so we left it to the speakers' appreciation to decide this:
+Another metric that played a minor role during our selection process was the experience level required to understand the topic. Of course, this is pretty subjective and hard to measure, so we left it to the speakers' appreciation to decide this:
 
 - **Beginner**: 30 proposals
 - **Intermediate**: 56 proposals
@@ -87,7 +87,7 @@ Another metric that played a minor role during our selection process was the exp
   <figcaption>revo.js CFP proposal distribution by experience level</figcaption>
 </figure>
 
-This distribution was exactly what we were looking for, because we wanted to have a few Beginner and Expert level talks, but the majority of talks should be addressed to the vast number of intermediate developers.
+This distribution was exactly what we were looking for, because we wanted to have some Beginner and Expert level talks, but address the majority of presentations to intermediate developers, who make the most of our target.
 
 ## Submission date
 
@@ -98,18 +98,18 @@ Not a very relevant metric, but an interesting one was to see when do speakers s
   <figcaption>revo.js CFP proposal distribution by submission date</figcaption>
 </figure>
 
-But looking at the chart, even though the last week got a lot of submissions, the distribution was a lot more uniform than we've expected.
+But looking at the chart, even though the last week got a lot of submissions, the distribution was a lot more uniform than we expected.
 
 ## Aquisition
 
-Last but not least, we've asked the speakers where did they hear about revo.js Call for Papers. Not a surprise that Social Media ended up on the first position.
+Last but not least, we've asked the speakers where did they hear about revo.js Call for Papers. It's not a surprise that Social Media was the most frequent answer.
 
 <figure>
   <img src="6-revo.js-cfp-distribution-by-acquisition.png" alt="revo.js CFP proposal distribution by acquisition"/>
   <figcaption>revo.js CFP proposal distribution by acquisition</figcaption>
 </figure>
 
-What surprised us is that word of mouth played an important role and 12% of the speakers submitted their proposals because a friend recommended them. Huge props to those speakers and their friends.
+What amazed us was that word-of-mouth played an important role and 12% of the speakers submitted their proposals because of a friend’s recommendation. Huge props to those speakers and their friends.
 
 Also, we were really happy that we got submissions from online CFP publications and we want to send them a big **revo.thanks**:
 
