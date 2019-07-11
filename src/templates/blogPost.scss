@@ -21,9 +21,21 @@
 .blog-post {
   margin-bottom: 4em;
 
+  :target::before {
+    content: "";
+    display: block;
+    height: calc(var(--menu-height-scrolled) + 1em);
+    margin-top: -calc(var(--menu-height-scrolled) + 1em);
+  }
+
   h2 {
-    margin-top: 0;
-    padding-top: 10rem;
+    margin-top: 3em;
+    padding-top: 0;
+  }
+
+  h3 {
+    margin-top: 2em;
+    padding-top: 0;
   }
 
   figure {
