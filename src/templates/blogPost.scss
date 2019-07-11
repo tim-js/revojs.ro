@@ -25,7 +25,7 @@
     content: "";
     display: block;
     height: calc(var(--menu-height-scrolled) + 1em);
-    margin-top: -calc(var(--menu-height-scrolled) + 1em);
+    margin-top: calc(0px - var(--menu-height-scrolled) - 1em);
   }
 
   h2 {
