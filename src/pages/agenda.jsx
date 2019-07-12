@@ -50,7 +50,7 @@ export default () => {
       <Section light>
         <Content centered>
           <nav className="agenda-nav">
-            <a href="#workshops-day">
+            <a href="#workshop-day">
               <strong>Workshop</strong> Day
             </a>
             <a href="#conference-day1">
@@ -61,10 +61,7 @@ export default () => {
             </a>
           </nav>
 
-          <section
-            id="workshops-day"
-            className="agenda-content genda-workshops"
-          >
+          <section id="workshop-day" className="agenda-content genda-workshops">
             <h2>Workshop Day</h2>
 
             <p>Workshop with Gleb</p>
