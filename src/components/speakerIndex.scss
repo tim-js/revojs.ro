@@ -111,14 +111,13 @@
   }
 }
 
-/*
 .index-speaker:hover .index-speaker-img {
   @include breakpoint(sm) {
     transform: translateY(-5%) translateX(5%);
   }
 }
 .index-speaker:hover .index-speaker-img-inner {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .index-speaker:hover .index-speaker-info {
   @include breakpoint(sm) {
@@ -139,4 +138,3 @@
     }
   }
 }
-*/

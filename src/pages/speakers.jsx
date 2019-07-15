@@ -1,12 +1,12 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
-import Speaker from "@components/Speaker";
+import SpeakersListIndex from "@components/SpeakersListIndex";
 import { PurchaseTicket } from "@components/CTA";
 
 import "./speakers.scss";
@@ -14,7 +14,7 @@ import "./speakers.scss";
 const Speakers = ({ data }) => {
   const { allSpeakersJson, speakerImages } = data;
   const speakers = allSpeakersJson.edges.map(e => e.node);
-  const offset = (allSpeakersJson.edges.length % 2) + 1;
+  // const offset = (allSpeakersJson.edges.length % 2) + 1;
 
   return (
     <Layout title="revo.js Speakers">
@@ -23,16 +23,18 @@ const Speakers = ({ data }) => {
         <br />
       </Header>
 
-      <Section light>
+      {/* <Section light>
         <Content centered style={{ textAlign: "center" }}>
           <h1>Meet the speakers</h1>
           <br />
           <br />
           <br />
         </Content>
-      </Section>
+      </Section> */}
 
-      <ul className="speakers-list">
+      <SpeakersListIndex speakers={speakers} images={speakerImages} />
+
+      {/* <ul className="speakers-list">
         {speakers.map((speaker, index) => {
           const speakerImageFluid = speakerImages.edges.find(e =>
             speaker.image.includes(e.node.base)
@@ -53,7 +55,7 @@ const Speakers = ({ data }) => {
             </li>
           );
         })}
-      </ul>
+      </ul> */}
 
       <Section light>
         <Content centered style={{ textAlign: "center" }}>

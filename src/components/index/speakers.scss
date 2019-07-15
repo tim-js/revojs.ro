@@ -1,46 +1,8 @@
 @import "../../styles/mixins";
 
-.index-speakers-content {
-  padding: var(--spacing-content);
-}
-
 .index-speakers-title {
   padding-bottom: var(--spacing-content);
   text-align: center;
-}
-
-.index-speakers-list {
-  display: grid;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  grid-template-columns: 1fr;
-  grid-gap: var(--space-16) 0;
-  margin-top: 5em;
-
-  @include breakpoint(md) {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: calc((100vw - 2 * var(--spacing-content)) / 4 * 40 / 100) 0;
-  }
-}
-.index-speakers-list > li:nth-child(7) {
-  @include breakpoint(md) {
-    transform: translateX(
-      calc((100vw - 2 * var(--spacing-content)) / 4 * 70 / 100)
-    );
-  }
-}
-.index-speakers-list > li:nth-child(even) {
-  @include breakpoint(md) {
-    transform: translateY(
-      calc((100vw - 2 * var(--spacing-content)) / 4 * 10 / 100)
-    );
-  }
-}
-
-.index-speakers-link:hover,
-.index-speakers-link {
-  text-decoration: none;
 }
 
 .index-speakers-more {
