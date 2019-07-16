@@ -5,6 +5,7 @@ import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 import Note from "@components/Note";
+import SEO from "@components/SEO";
 
 import Logos from "@components/Logos";
 
@@ -17,7 +18,9 @@ import "./supporters.scss";
 
 export default () => {
   return (
-    <Layout title="revo.js Sponsors">
+    <Layout>
+      <SEO title="revo.js Supporters" />
+
       <Header centered type="secondary">
         <h1>Supporters</h1>
       </Header>

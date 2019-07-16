@@ -2,6 +2,7 @@
 path: "/blog/cfp-statistics"
 date: "2019-06-30"
 title: "2019 Call for Papers Statistics"
+image: "/seo/revojs-cfp-distribution-by-continent.png"
 ---
 
 On June 17th 2019 the **Call for Speakers** for the first edition of [revo.js](https://revojs.ro) ended. As a wrap-up, we would like to share some statistics about the submission we received and the proposals which exceeded our expectations in terms of number, diversity, quality and topics.

@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Button from "@components/Button";
+import SEO from "@components/SEO";
 // import Content from "@components/Content";
 // import Section from "@components/Section";
 import WorkshopDetails from "@components/WorkshopDetails";
@@ -16,7 +17,9 @@ const Workshops = ({ data }) => {
   const workshops = allWorkshopsJson.edges.map(e => e.node);
 
   return (
-    <Layout title="revo.js Workshop">
+    <Layout>
+      <SEO title="revo.js Workshop" />
+
       <Header type="main" image="workshops-image">
         <h1>Workshop</h1>
         <br />

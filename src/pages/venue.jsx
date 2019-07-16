@@ -7,10 +7,13 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import Note from "@components/Note";
 import Button from "@components/Button";
+import SEO from "@components/SEO";
 
 export default () => {
   return (
-    <Layout title="revo.js Venue">
+    <Layout>
+      <SEO title="revo.js Venue" />
+
       <Header centered type="secondary">
         <h1>Venue</h1>
       </Header>

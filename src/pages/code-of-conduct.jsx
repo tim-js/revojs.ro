@@ -5,10 +5,13 @@ import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 import Note from "@components/Note";
+import SEO from "@components/SEO";
 
 export default () => {
   return (
-    <Layout title="revo.js Code of Conduct">
+    <Layout>
+      <SEO title="revo.js Code of Conduct" />
+
       <Header centered type="secondary">
         <h1>Code of Conduct</h1>
       </Header>

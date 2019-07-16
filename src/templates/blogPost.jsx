@@ -1,12 +1,12 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 import Button from "@components/Button";
+import SEO from "@components/SEO";
 
 import "./blogPost.scss";
 
@@ -14,10 +14,12 @@ export default function BlogTemplate({ data }) {
   const { post } = data;
 
   return (
-    <Layout title="revo.js Blog">
-      <HelmetProvider>
-        <Helmet title={`revo.js - ${post.frontmatter.title}`} />
-      </HelmetProvider>
+    <Layout>
+      <SEO
+        title={`${post.frontmatter.title}`}
+        description={post.frontmatter.description || post.excerpt}
+        image={post.frontmatter.image}
+      />
 
       <Header centered className="blog-post-header">
         <h1>{post.frontmatter.title}</h1>
@@ -52,6 +54,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        image
       }
     }
   }

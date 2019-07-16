@@ -7,6 +7,7 @@ import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 import Speaker from "@components/Speaker";
+import SEO from "@components/SEO";
 import { PurchaseTicket } from "@components/CTA";
 
 import "./speakers.scss";
@@ -17,7 +18,9 @@ const Speakers = ({ data }) => {
   const offset = (allSpeakersJson.edges.length % 2) + 1;
 
   return (
-    <Layout title="revo.js Speakers">
+    <Layout>
+      <SEO title="revo.js Speakers" />
+
       <Header type="main" image="speakers-image">
         <h1>Speakers</h1>
         <br />

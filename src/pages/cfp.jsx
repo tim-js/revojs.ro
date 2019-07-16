@@ -6,6 +6,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Note from "@components/Note";
+import SEO from "@components/SEO";
 // import { SubmitCFP } from "@components/CTA";
 // import Subscribe from "@components/Subscribe";
 
@@ -16,7 +17,9 @@ import "./cfp.scss";
 
 export default () => {
   return (
-    <Layout title="revo.js Call for Papers">
+    <Layout>
+      <SEO title="revo.js Call for Papers" />
+
       <Header type="main" image="cfp-image">
         <h1>Call For Papers</h1>
         <br />
