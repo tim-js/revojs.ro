@@ -9,9 +9,24 @@ export default function HTML(props) {
         <title>revo.js JavaScript Conference</title>
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
 
+        <meta property="og:title" content="revo.js" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://revojs.ro/revojs.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:url" content="https://revojs.ro/" />
+        <meta
+          property="og:description"
+          content="revo.js is the first JavaScript conference in Timisoara, Romania, taking place between the 3rd and 4th of October. The conference aims to bring JavaScript enthusiasts two full days of tech-focused talks, community networking and thought-provoking ideas meant to inspire change, the only constant there is."
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          name="Description"
+          content="revo.js is a two-day JavaScript Conference in Timisoara, Romania"
         />
 
         <script

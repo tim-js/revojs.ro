@@ -8,7 +8,6 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import Note from "@components/Note";
 import Button from "@components/Button";
-import SEO from "@components/SEO";
 
 import logo from "@assets/press/01.logo.svg";
 import symbol from "@assets/press/02.symbol.svg";
@@ -25,9 +24,7 @@ import "./press.scss";
 
 export default () => {
   return (
-    <Layout>
-      <SEO title="revo.js Press Info" />
-
+    <Layout title="revo.js Press Info">
       <Header centered type="secondary">
         <h1>Press Info</h1>
       </Header>

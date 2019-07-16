@@ -1,15 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: "revo.js conference",
-    titleTemplate: "%s · revo.js",
-    description:
-      "revo.js is a two-day JavaScript Conference in Timisoara, Romania",
-    url: "https://revojs.ro", // no trailing slash!
-    image: "/seo/revojs.png",
-    owner: "revo.js",
-    twitterUsername: "@revojsro",
-    facebookAppID: ""
-  },
   plugins: [
     `gatsby-transformer-json`,
     {

@@ -1,14 +1,22 @@
 import React from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Navigation from "@components/Navigation";
 import Footer from "@components/Footer";
-import SEOcomponent from "@components/SEO";
 
-export default ({ location, children, SEO, ...props }) => {
-  const _SEO = SEO || <SEOcomponent />;
+export default ({ location, children, title, ...props }) => {
+  const _title = title || "revo.js conference";
   return (
     <>
-      {_SEO}
+      <HelmetProvider>
+        <Helmet>
+          <title>{_title}</title>
+          <meta
+            name="Description"
+            content="revo.js - Technology Focused. Community Driven. JavaScript Conference."
+          />
+        </Helmet>
+      </HelmetProvider>
 
       <Navigation location={location} />
 

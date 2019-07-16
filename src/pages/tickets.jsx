@@ -6,7 +6,6 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Note from "@components/Note";
-import SEO from "@components/SEO";
 import { PurchaseTicket } from "@components/CTA";
 // import Subscribe from "@components/Subscribe";
 
@@ -51,9 +50,7 @@ export default () => {
   });
 
   return (
-    <Layout>
-      <SEO title="revo.js Tickets" />
-
+    <Layout title="revo.js Tickets">
       <Header type="main" image="tickets-image">
         <h1>Tickets</h1>
         <br />
