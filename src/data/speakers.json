@@ -12,18 +12,6 @@
     "abstract": "<p>2018 is gonna be the year of WebComponents they said... Was it? The year is 2019 and people are asking, are WebComponents everywhere? Probably not. Why?</p><p>This talk will try to answer all these questions you might be asking yourself, by going through a real evaluation of WebComponents as primary tool for authoring web pages and applications.</p>"
   },
   {
-    "id": "carmen-popoviciu",
-    "firstname": "Carmen",
-    "lastname": "Popoviciu",
-    "bio": "Carmen is a web developer currently doing all things DevRel at Nulab. She enjoys building things with code and solving programming challenges. She thinks computer engineers are artists of code and is aspiring to one day be the engineering version of Anne Theresa de Keersmaeker. If you want to catch her at the after party, she'll probably be on the dance floor.",
-    "image": "speakers/carmen_popoviciu.jpg",
-    "twitter": "CarmenPopoviciu",
-    "title": "Developer Advocate",
-    "company": "Nulab",
-    "talk": "[Talk title coming soon]",
-    "abstract": ""
-  },
-  {
     "id": "boyan-mihaylov",
     "firstname": "Boyan",
     "lastname": "Mihaylov",
