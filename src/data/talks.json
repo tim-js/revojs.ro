@@ -3,248 +3,84 @@
     "id": "wc",
     "talk": "The (Real) State of WebComponents",
     "abstract": "<p>2018 is gonna be the year of WebComponents they said... Was it? The year is 2019 and people are asking, are WebComponents everywhere? Probably not. Why?</p><p>This talk will try to answer all these questions you might be asking yourself, by going through a real evaluation of WebComponents as primary tool for authoring web pages and applications.</p>",
-    "speakers": [
-      {
-        "id": "martin-hochel",
-        "firstname": "Martin",
-        "lastname": "Hochel",
-        "bio": "<p>Martin is a Technical Lead for UI and a Google Developer Expert for Web, with a strong passion for JavaScript/TypeScript and clean code. He loves contributing to open source (TypeScript, rex-tils, ng-metadata, @skatejs, React, Preact), enjoys writing technical articles on medium.com and also runs the biggest JavaScript meetup in Prague/CZ - ngParty. Martin loves to travel the world and meet new people at conferences.</p> <p>When he’s not busy preparing the next meetup or talk, you can find him outside, on one of his skate/snow/wakeboards (depends on the weather conditions, yo!)</p>",
-        "image": "speakers/martin_hochel.jpg",
-        "twitter": "martin_hotell",
-        "title": "UI Tech Lead",
-        "company": ""
-      }
-    ]
+    "speakers": [{ "id": "martin-hochel" }]
   },
   {
     "id": "wa",
     "talk": "A journey of multithreading using WebAssembly",
     "abstract": "WebAssembly is a new programming language, allowing us to compile C/C++ or other statically typed languages and run them in the browser and Node.js. While languages like C/C++ support multi-threading, JavaScript is single-threaded and this raises the question of how WebAssembly will behave. In this talk we will discuss the design of threads for WebAssembly, the implementation challenges in terms of security and we will see examples of how multithreading can be achieved using Web Workers.",
-    "speakers": [
-      {
-        "id": "boyan-mihaylov",
-        "firstname": "Boyan",
-        "lastname": "Mihaylov",
-        "bio": "Boyan is a software architect and developer, thinking human-first when writing software. He likes experimenting and talking about technology and its application to solving everyday problems. Prefers working solutions over concrete frameworks and languages. Boyan believes technology needs more storytelling and he tries to convey such. In his free time he performs improvised comedy with his group.",
-        "image": "speakers/boyan_mihaylov.jpg",
-        "twitter": "boyanio",
-        "title": "Software Architect and Developer",
-        "company": "Fadata"
-      }
-    ]
+    "speakers": [{ "id": "boyan-mihaylov" }]
   },
   {
     "id": "e2e",
     "talk": "[Talk title coming soon]",
     "abstract": "",
-    "speakers": [
-      {
-        "id": "gleb-bahmutov",
-        "firstname": "Gleb",
-        "lastname": "Bahmutov",
-        "bio": "<p>Gleb Bahmutov is a JavaScript ninja, image processing expert and software quality fanatic. During the day Gleb is making the web a better place as VP of Engineering at Cypress.io.</p> <p>At night he is fighting software bugs and blogs about it at <a href=\"https://glebbahmutov.com/blog/\">glebbahmutov.com/blog</a>. Microsoft MVP for Open Source Software, you can follow him and his work <a href=\"https://twitter.com/bahmutov\">@bahmutov</a> and find the slides from conference presentations at <a href=\"https://slides.com/bahmutov\">slides.com/bahmutov</a>.</p>",
-        "image": "speakers/gleb_bahmutov.jpg",
-        "twitter": "bahmutov",
-        "title": "VP of Engineering",
-        "company": "Cypress.io"
-      }
-    ]
+    "speakers": [{ "id": "gleb-bahmutov" }]
   },
   {
     "id": "gis",
     "talk": "The web developer’s guide to cartography",
     "abstract": "<p>Maps are everywhere! Whether you want to find your hotel, plan your next hike or see the results of a recent election: maps are indispensable.</p> <p>But how do we create such maps? Web mapping APIs have come a long way. They are easy to use and not only allow you to create 2D maps, but more recently also 3D ones. Add some magic geo data and cartographic knowledge and you are on your way to build your first mapping master piece.</p> <p>In this talk we’ll go through the process of creating a web map: Starting from an idea, gathering and processing the data, and finishing up with a beautiful web map visualization. No geo-knowledge required! Enthusiasm for maps will be provided in the beginning of the talk.</p>",
-    "speakers": [
-      {
-        "id": "raluca-nicola",
-        "firstname": "Raluca",
-        "lastname": "Nicola",
-        "bio": "Raluca works at Esri as a Product Engineer for ArcGIS API for JavaScript. She enjoys prototyping visualizations that involve spatial data. Most of them are in 3D and all of them live on the web. In the past she also made maps for the Atlas of Switzerland and the Swiss National Park.",
-        "image": "speakers/raluca_nicola.jpg",
-        "twitter": "nicolaraluk",
-        "title": "Product Engineer",
-        "company": "Esri"
-      }
-    ]
+    "speakers": [{ "id": "raluca-nicola" }]
   },
   {
     "id": "bots",
     "talk": "Adopt an AI-driven chatbot today",
     "abstract": "<p>If you ever asked yourself any of these questions: What do chatbots eat? Do chatbots have dreams? What are the usual chatbot challenges? Then this talk is for you. We will answer all of the above questions and many more.</p> <p>You will learn how to build a fully functioning chatbot in less than 10 minutes – without a single IF statement – and train it to understand human language. Then we will top it up with a quick AI training to make it understand the language normal people speak.</p>",
-    "speakers": [
-      {
-        "id": "sebastian-witalec",
-        "firstname": "Sebastian",
-        "lastname": "Witalec",
-        "bio": "Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world.",
-        "image": "speakers/sebastian_witalec.png",
-        "twitter": "sebawita",
-        "title": "Senior Developer Advocate",
-        "company": "Progress"
-      }
-    ]
+    "speakers": [{ "id": "sebastian-witalec" }]
   },
   {
     "id": "keynote1",
     "talk": "Common Ways We Break Accessibility And How To Avoid Them",
     "abstract": "<p>A great deal of what makes a website accessible is fairly straightforward to achieve, but only once we know what to look out for! Over 70% of websites are broken for disabled users, including those who rely on assistive tech, such as screen readers and magnifiers, to navigate the web. That's a good 10%-20% of your user base who can't access your content or pay for your product, even though they may want to.</p> <p>In this talk we will go over some common front-end (anti)patterns and how they affect accessibility while otherwise going virtually undetected. We will see real user testimonials of how these affect their interaction with the web and their daily lives. Lastly, we'll cover how to get the same results without breaking your site for disabled users, including real-life examples of how we've avoided these pitfalls at The Financial Times.</p>",
-    "speakers": [
-      {
-        "id": "laura-carvajal",
-        "firstname": "Laura",
-        "lastname": "Carvajal",
-        "bio": "Laura has been a Software Engineer for 15 years and is currently a Senior Developer at The Financial Times. She has led the accessibility team for FT.com in 2016 and currently works as a full-stack developer for the Internal Products team at Financial Times.",
-        "image": "speakers/laura_carvajal.png",
-        "twitter": "lc512k",
-        "title": "Principal Engineer",
-        "company": "The Financial Times"
-      }
-    ]
+    "speakers": [{ "id": "laura-carvajal" }]
   },
   {
     "id": "keynote2",
     "talk": "Closing keynote",
     "abstract": "",
-    "speakers": [
-      {
-        "id": "kenneth-auchenberg",
-        "firstname": "Kenneth",
-        "lastname": "Auchenberg",
-        "bio": "Kenneth is a Program Manager at Microsoft and lives in Vancouver, Canada, where he leads the next generation of web developer tooling. He's a Global Shaper for Word Economic Forum, serves on multiple advisory boards, and is a frequent public speaker who travels the world.SLaura has been a Software Engineer for 15 years and is currently a Senior Developer at The Financial Times. She has led the accessibility team for FT.com in 2016 and currently works as a full-stack developer for the Internal Products team at Financial Times.",
-        "image": "speakers/kenneth_auchenberg.jpg",
-        "twitter": "auchenberg",
-        "title": "Project Manager",
-        "company": "VS Code"
-      }
-    ]
+    "speakers": [{ "id": "kenneth-auchenberg" }]
   },
   {
     "id": "xxss",
     "talk": "XXSS: Exotic Cross-Site Scripting Vectors",
     "abstract": "<p>XSS is one of the most well known attacks on the web, perhaps second only to SQL injection. While the general idea behind it is relatively simple, due to the colorfulness of the web and the quirks of the browsers it has a surprising depth to it.</p> <p>In this talk we'll journey deep down the rabbit hole of XSS attacks and take a look at all the weird ways malicious inputs may hurt our users, from the non-JS based injections (CSS, HTML, image) through mXSS, up to blind XSS.</p>",
-    "speakers": [
-      {
-        "id": "benedek-gagyi",
-        "firstname": "Benedek",
-        "lastname": "Gagyi",
-        "bio": "Developer, teacher, sports-fanatic. As a developer, he's working on making password management more secure at LastPass. In his free time, he's researching the patterns and algorithms connecting basketball, tea and drums. His devotion to impeccable and secure user experience is rivaled only by his constant search for the perfect brew of Chinese pu'er.",
-        "image": "speakers/benedek_gagyi.jpg",
-        "twitter": "BenedekGagyi",
-        "title": "Software Engineer",
-        "company": "Cloudera"
-      }
-    ]
+    "speakers": [{ "id": "benedek-gagyi" }]
   },
   {
     "id": "oss",
     "talk": "You can do open source!",
     "abstract": "<p>Have you ever felt like open source is too much of a hassle to get into? Ever felt like you do not know enough about programming yet to get into open source? What if I told you that you’re not alone in this thought but this thought is a misrepresentation of the facts? Join me as we take a deep dive.</p> <p>Developers both Junior, Intermediate and Seniors and Non-Developers very often find themselves mulling towards the idea of contributing to open source projects. A lot of the times this is because they might not know how to get started in contributing to open source, a concern about not believing in yourself about being able to contribute or the feeling that only developers and people who are code guru’s can actually contribute to open source. These are all misconceptions and the goal of this talk is to correct those misconceptions as well as give a clear outline about how to go about it for both developers and non developers.</p>",
-    "speakers": [
-      {
-        "id": "kenigbolo-meya-stephen",
-        "firstname": "Kenigbolo",
-        "lastname": "Meya Stephen",
-        "bio": "<p>I'm Kenigbolo Meya Stephen, Full Stack Software Engineer working as the Frontend Engineering Team Lead at [BCaster](https://bcaster.com). I'm the Arch Conveyer/Community Manager of CodeAfrique (also now known as Reload for the classroom version), a not-for-profit weekend intensive software engineering bootcamp for underrepresented groups in IT started out first in Estonia.</p> <p>During my free time I sometimes volunteer as an open source developer for [ADSBx](https://adsbexchange.com), spend time playing golf or on the pitch playing/coaching football (soccer as Americans call it).</p>",
-        "image": "speakers/kenigbolo_meya_stephen.jpg",
-        "twitter": "expensivestevie",
-        "title": "Frontend Engineering Lead",
-        "company": "BCaster"
-      }
-    ]
+    "speakers": [{ "id": "kenigbolo-meya-stephen" }]
   },
   {
     "id": "ts",
     "talk": "",
     "abstract": "",
-    "speakers": [
-      {
-        "id": "titian-cernicova-dragomir",
-        "firstname": "Titian",
-        "lastname": "Cernicova-Dragomir",
-        "bio": "",
-        "image": "speakers/titian_cernicova_dragomir.png",
-        "twitter": "TitianCernicova",
-        "title": "Freelancer",
-        "company": ""
-      }
-    ]
+    "speakers": [{ "id": "titian-cernicova-dragomir" }]
   },
   {
     "id": "perf",
     "talk": "Done in 0.0166666666 seconds",
     "abstract": "In order to ensure a smooth, jank-free experience on the web, we need to render a constant stream of 60 frames per second. This means that the browser has 16 milliseconds to execute our code and render the changes on the screen. Let’s find out how the rendering pipeline works and how JavaScript and CSS might affect the rendering performance.",
-    "speakers": [
-      {
-        "id": "alex-moldovan",
-        "firstname": "Alex",
-        "lastname": "Moldovan",
-        "bio": "Alex is an Open Source Engineer at teleportHQ and one of the founders of JSHeroes. He is an active voice in the JavaScript community and his mission is to help and inspire others to build an accessible, secure and faster web.",
-        "image": "speakers/alex_moldovan.jpg",
-        "twitter": "alexnmoldovan",
-        "title": "Open Source Engineer",
-        "company": "teleportHQ"
-      }
-    ]
+    "speakers": [{ "id": "alex-moldovan" }]
   },
   {
     "id": "auth",
     "talk": "WebAuthn Rocks!: Stop authenticating as if it were the 60s",
     "abstract": "In the last year, WebAuthn advanced to a W3C Candidate Recommendation, making a giant leap toward enabling strong authentication on the Web for consumers. Does this mean the end of passwords, or even more phishing? Let’s learn about the javascript credential management API and how to enable authentication via WebAuthn on a website.",
-    "speakers": [
-      {
-        "id": "ruben-restrepo",
-        "firstname": "Ruben",
-        "lastname": "Restrepo",
-        "bio": "Some friends call me Siri ;) it's because I know many (unuseful?) facts, like the name of the inventors of all programming languages and the history behind it. That's because I'm really curious about knowing the not so obvious things.",
-        "image": "speakers/ruben_restrepo.png",
-        "twitter": "degrammer",
-        "title": "Software Engineer",
-        "company": "Auth0"
-      }
-    ]
+    "speakers": [{ "id": "ruben-restrepo" }]
   },
   {
     "id": "pa11y",
     "talk": "Become an Accessibility BFF with your new friend Pa11y!",
     "abstract": "Like Blair Waldorf and Serena van der Woodsen, Pa11y is an accessibility tester’s BFF. You already have a million issues on your plate, so how do you find a way to get started on accessibility testing? Pa11y to the rescue! Pa11y is a lightweight JS a11y testing tool with some serious “it” factor. This talk will explain what pa11y does and does not cover, review examples of both command line and scripted usage, dive into the pa11y web service and show how to best accessorize a Pa11y setup with your current testing process. Bonus content: how to convince the rest of your team and business why accessibility is totally worth prioritizing and how getting started with low-hanging fruit can vastly glamorize your product. Now you can take on creating a more accessible product like S & B take on the Upper East Side. XOXO Accessibility Girl 💋",
-    "speakers": [
-      {
-        "id": "jennifer-wadella",
-        "firstname": "Jennifer",
-        "lastname": "Wadella",
-        "bio": "Jennifer Wadella has been writing code since before she realized it was a credible career path. She currently works as a JavaScript Consultant and loves building performant web applications, speaking at technical conferences, and brewing kombucha. Jennifer is an active member of the KC tech community and the founder of Kansas City Women in Technology (KCWiT), an organization aimed at growing the number of women in technology careers in Kansas City. She is the PubConf Sydney 2018 Champion, a Silicon Prairie Champion Award Nominee, Rising Trendsetter STEMMy award-winner, and is apparently Missouri's Coolest Woman according to Pure Wow.",
-        "image": "speakers/jennifer_wadella.jpg",
-        "twitter": "likeOMGitsFEDAY",
-        "title": "JavaScript Developer",
-        "company": "Bitovi"
-      }
-    ]
+    "speakers": [{ "id": "jennifer-wadella" }]
   },
   {
     "id": "angular",
     "talk": "Hacking the Angular compiler with your own syntax",
     "abstract": "<p>In this talk, we are going to take a deep dive into how Angular transforms components into DOM elements.</p> <p>We will see how we hooked into this process to be able to teach our own template syntax to Angular so we can make our own code more concise and start using some features/APIs we've always wanted.</p> <p>Attendees will walk away with a deep understanding of the Angular compiler and learn an (experimental) way to hack their own syntax into it!</p>",
-    "speakers": [
-      {
-        "id": "kwinten-pisman",
-        "firstname": "Kwinten",
-        "lastname": "Pisman",
-        "bio": "Kwinten is a frontend architect focused on Angular with a reactive passion. He shares this passion this through blogposts and training sessions with the company he co-founded called Strongbrew.",
-        "image": "speakers/kwinten_pisman.jpg",
-        "twitter": "kwintenp",
-        "title": "Co-founder and Mentor",
-        "company": "Strongbrew"
-      },
-      {
-        "id": "dominic-elm",
-        "firstname": "Dominic",
-        "lastname": "Elm",
-        "bio": "Dominic is a GDE for Web Technologies and Angular. He loves RxJS, TypeScript and Machine Learning. He is also a Software Engineer at @StackBlitz and provides high-quality trainings for @thoughtram. Besides work, you will most likely find him outside with his race bike, hiking or climbing.",
-        "image": "speakers/dominic_elm.jpg",
-        "twitter": "elmd_",
-        "title": "Software Engineer,",
-        "company": "StackBlitz"
-      }
-    ]
+    "speakers": [{ "id": "kwinten-pisman" }, { "id": "dominic-elm" }]
   }
 ]

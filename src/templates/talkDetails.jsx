@@ -8,14 +8,18 @@ import Talk from "./Talk";
 export default props => {
   const {
     talksJson: { talk, abstract, speakers },
+    allSpeakersJson,
     speakerImages
   } = props.data;
 
   const speakersData = speakers.map(speaker => {
+    const speakerDetails = allSpeakersJson.edges.find(
+      e => e.node.id === speaker.id
+    ).node;
     const image = speakerImages.edges.find(e =>
-      speaker.image.includes(e.node.base)
+      speakerDetails.image.includes(e.node.base)
     );
-    return { ...speaker, image: image.node };
+    return { ...speakerDetails, image: image.node };
   });
 
   const talkData = {
@@ -45,13 +49,20 @@ export const pageQuery = graphql`
       abstract
       speakers {
         id
-        firstname
-        lastname
-        bio
-        image
-        twitter
-        title
-        company
+      }
+    }
+    allSpeakersJson {
+      edges {
+        node {
+          id
+          firstname
+          lastname
+          image
+          title
+          company
+          twitter
+          bio
+        }
       }
     }
     speakerImages: allFile(filter: { relativePath: { glob: "speakers/*" } }) {
