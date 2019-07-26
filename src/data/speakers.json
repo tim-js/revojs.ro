@@ -8,8 +8,7 @@
     "twitter": "martin_hotell",
     "title": "UI Tech Lead",
     "company": "",
-    "talk": "The (Real) State of WebComponents",
-    "abstract": "<p>2018 is gonna be the year of WebComponents they said... Was it? The year is 2019 and people are asking, are WebComponents everywhere? Probably not. Why?</p><p>This talk will try to answer all these questions you might be asking yourself, by going through a real evaluation of WebComponents as primary tool for authoring web pages and applications.</p>"
+    "talkId": "wc"
   },
   {
     "id": "boyan-mihaylov",
@@ -20,8 +19,7 @@
     "twitter": "boyanio",
     "title": "Software Architect and Developer",
     "company": "Fadata",
-    "talk": "A journey of multithreading using WebAssembly",
-    "abstract": "WebAssembly is a new programming language, allowing us to compile C/C++ or other statically typed languages and run them in the browser and Node.js. While languages like C/C++ support multi-threading, JavaScript is single-threaded and this raises the question of how WebAssembly will behave. In this talk we will discuss the design of threads for WebAssembly, the implementation challenges in terms of security and we will see examples of how multithreading can be achieved using Web Workers."
+    "talkId": "wa"
   },
   {
     "id": "gleb-bahmutov",
@@ -32,8 +30,7 @@
     "twitter": "bahmutov",
     "title": "VP of Engineering",
     "company": "Cypress.io",
-    "talk": "[Talk title coming soon]",
-    "abstract": ""
+    "talkId": "e2e"
   },
   {
     "id": "raluca-nicola",
@@ -44,8 +41,7 @@
     "twitter": "nicolaraluk",
     "title": "Product Engineer",
     "company": "Esri",
-    "talk": "The web developer’s guide to cartography",
-    "abstract": "<p>Maps are everywhere! Whether you want to find your hotel, plan your next hike or see the results of a recent election: maps are indispensable.</p> <p>But how do we create such maps? Web mapping APIs have come a long way. They are easy to use and not only allow you to create 2D maps, but more recently also 3D ones. Add some magic geo data and cartographic knowledge and you are on your way to build your first mapping master piece.</p> <p>In this talk we’ll go through the process of creating a web map: Starting from an idea, gathering and processing the data, and finishing up with a beautiful web map visualization. No geo-knowledge required! Enthusiasm for maps will be provided in the beginning of the talk.</p>"
+    "talkId": "gis"
   },
   {
     "id": "sebastian-witalec",
@@ -56,8 +52,7 @@
     "twitter": "sebawita",
     "title": "Senior Developer Advocate",
     "company": "Progress",
-    "talk": "Adopt an AI-driven chatbot today",
-    "abstract": "<p>If you ever asked yourself any of these questions: What do chatbots eat? Do chatbots have dreams? What are the usual chatbot challenges? Then this talk is for you. We will answer all of the above questions and many more.</p> <p>You will learn how to build a fully functioning chatbot in less than 10 minutes – without a single IF statement – and train it to understand human language. Then we will top it up with a quick AI training to make it understand the language normal people speak.</p>"
+    "talkId": "bots"
   },
   {
     "id": "laura-carvajal",
@@ -68,8 +63,7 @@
     "twitter": "lc512k",
     "title": "Principal Engineer",
     "company": "The Financial Times",
-    "talk": "Common Ways We Break Accessibility And How To Avoid Them",
-    "abstract": "<p>A great deal of what makes a website accessible is fairly straightforward to achieve, but only once we know what to look out for! Over 70% of websites are broken for disabled users, including those who rely on assistive tech, such as screen readers and magnifiers, to navigate the web. That's a good 10%-20% of your user base who can't access your content or pay for your product, even though they may want to.</p> <p>In this talk we will go over some common front-end (anti)patterns and how they affect accessibility while otherwise going virtually undetected. We will see real user testimonials of how these affect their interaction with the web and their daily lives. Lastly, we'll cover how to get the same results without breaking your site for disabled users, including real-life examples of how we've avoided these pitfalls at The Financial Times.</p>"
+    "talkId": "keynote1"
   },
   {
     "id": "kenneth-auchenberg",
@@ -80,8 +74,7 @@
     "twitter": "auchenberg",
     "title": "Project Manager",
     "company": "VS Code",
-    "talk": "Closing keynote",
-    "abstract": ""
+    "talkId": "keynote2"
   },
   {
     "id": "benedek-gagyi",
@@ -92,8 +85,7 @@
     "twitter": "BenedekGagyi",
     "title": "Software Engineer",
     "company": "Cloudera",
-    "talk": "XXSS: Exotic Cross-Site Scripting Vectors",
-    "abstract": "<p>XSS is one of the most well known attacks on the web, perhaps second only to SQL injection. While the general idea behind it is relatively simple, due to the colorfulness of the web and the quirks of the browsers it has a surprising depth to it.</p> <p>In this talk we'll journey deep down the rabbit hole of XSS attacks and take a look at all the weird ways malicious inputs may hurt our users, from the non-JS based injections (CSS, HTML, image) through mXSS, up to blind XSS.</p>"
+    "talkId": "xxss"
   },
   {
     "id": "kenigbolo-meya-stephen",
@@ -104,8 +96,7 @@
     "twitter": "expensivestevie",
     "title": "Frontend Engineering Lead",
     "company": "BCaster",
-    "talk": "You can do open source!",
-    "abstract": "<p>Have you ever felt like open source is too much of a hassle to get into? Ever felt like you do not know enough about programming yet to get into open source? What if I told you that you’re not alone in this thought but this thought is a misrepresentation of the facts? Join me as we take a deep dive.</p> <p>Developers both Junior, Intermediate and Seniors and Non-Developers very often find themselves mulling towards the idea of contributing to open source projects. A lot of the times this is because they might not know how to get started in contributing to open source, a concern about not believing in yourself about being able to contribute or the feeling that only developers and people who are code guru’s can actually contribute to open source. These are all misconceptions and the goal of this talk is to correct those misconceptions as well as give a clear outline about how to go about it for both developers and non developers.</p>"
+    "talkId": "oss"
   },
   {
     "id": "titian-cernicova-dragomir",
@@ -116,8 +107,7 @@
     "twitter": "TitianCernicova",
     "title": "Freelancer",
     "company": "",
-    "talk": "",
-    "abstract": ""
+    "talkId": "ts"
   },
   {
     "id": "alex-moldovan",
@@ -128,8 +118,7 @@
     "twitter": "alexnmoldovan",
     "title": "Open Source Engineer",
     "company": "teleportHQ",
-    "talk": "Done in 0.0166666666 seconds",
-    "abstract": "In order to ensure a smooth, jank-free experience on the web, we need to render a constant stream of 60 frames per second. This means that the browser has 16 milliseconds to execute our code and render the changes on the screen. Let’s find out how the rendering pipeline works and how JavaScript and CSS might affect the rendering performance."
+    "talkId": "perf"
   },
   {
     "id": "ruben-restrepo",
@@ -140,20 +129,7 @@
     "twitter": "degrammer",
     "title": "Software Engineer",
     "company": "Auth0",
-    "talk": "WebAuthn Rocks!: Stop authenticating as if it were the 60s",
-    "abstract": "In the last year, WebAuthn advanced to a W3C Candidate Recommendation, making a giant leap toward enabling strong authentication on the Web for consumers. Does this mean the end of passwords, or even more phishing? Let’s learn about the javascript credential management API and how to enable authentication via WebAuthn on a website."
-  },
-  {
-    "id": "narendra-shetty",
-    "firstname": "Narendra",
-    "lastname": "Shetty",
-    "bio": "Narendra works at Twilio as Senior Software Engineer. He is working on building Twilio Flex which is a programmable UI product. Previously worked at Booking.com.",
-    "image": "speakers/narendra_shetty.png",
-    "twitter": "narendra_shetty",
-    "title": "Sr. Software Engineer",
-    "company": "Twilio",
-    "talk": "Programmable Components",
-    "abstract": "<p>Components are the building blocks of any React application. Organizing components for scalability and reusability are important. Thus, much has already been written about this important concept, like smart and dumb components, renderProps and compound components.</p> <p>I would like to talk about an alternative pattern we built at Twilio called Programmable Components with it’s use case.</p>"
+    "talkId": "auth"
   },
   {
     "id": "jennifer-wadella",
@@ -164,8 +140,7 @@
     "twitter": "likeOMGitsFEDAY",
     "title": "JavaScript Developer",
     "company": "Bitovi",
-    "talk": "Become an Accessibility BFF with your new friend Pa11y!",
-    "abstract": "Like Blair Waldorf and Serena van der Woodsen, Pa11y is an accessibility tester’s BFF. You already have a million issues on your plate, so how do you find a way to get started on accessibility testing? Pa11y to the rescue! Pa11y is a lightweight JS a11y testing tool with some serious “it” factor. This talk will explain what pa11y does and does not cover, review examples of both command line and scripted usage, dive into the pa11y web service and show how to best accessorize a Pa11y setup with your current testing process. Bonus content: how to convince the rest of your team and business why accessibility is totally worth prioritizing and how getting started with low-hanging fruit can vastly glamorize your product. Now you can take on creating a more accessible product like S & B take on the Upper East Side. XOXO Accessibility Girl 💋"
+    "talkId": "pa11y"
   },
   {
     "id": "kwinten-pisman",
@@ -176,8 +151,7 @@
     "twitter": "kwintenp",
     "title": "Co-founder and Mentor",
     "company": "Strongbrew",
-    "talk": "Hacking the Angular compiler with your own syntax",
-    "abstract": "<p>In this talk, we are going to take a deep dive into how Angular transforms components into DOM elements.</p> <p>We will see how we hooked into this process to be able to teach our own template syntax to Angular so we can make our own code more concise and start using some features/APIs we've always wanted.</p> <p>Attendees will walk away with a deep understanding of the Angular compiler and learn an (experimental) way to hack their own syntax into it!</p>"
+    "talkId": "angular"
   },
   {
     "id": "dominic-elm",
@@ -186,9 +160,8 @@
     "bio": "Dominic is a GDE for Web Technologies and Angular. He loves RxJS, TypeScript and Machine Learning. He is also a Software Engineer at @StackBlitz and provides high-quality trainings for @thoughtram. Besides work, you will most likely find him outside with his race bike, hiking or climbing.",
     "image": "speakers/dominic_elm.jpg",
     "twitter": "elmd_",
-    "title": "Software Engineer,",
+    "title": "Software Engineer",
     "company": "StackBlitz",
-    "talk": "Hacking the Angular compiler with your own syntax",
-    "abstract": "<p>In this talk, we are going to take a deep dive into how Angular transforms components into DOM elements.</p> <p>We will see how we hooked into this process to be able to teach our own template syntax to Angular so we can make our own code more concise and start using some features/APIs we've always wanted.</p> <p>Attendees will walk away with a deep understanding of the Angular compiler and learn an (experimental) way to hack their own syntax into it!</p>"
+    "talkId": "angular"
   }
 ]

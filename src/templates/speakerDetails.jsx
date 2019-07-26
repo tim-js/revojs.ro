@@ -1,79 +1,42 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Img from "gatsby-image";
 
 import Layout from "@components/Layout";
-import Content from "@components/Content";
-import Section from "@components/Section";
-import { PurchaseTicket } from "@components/CTA";
-
-import "./speakerDetails.scss";
+import Talk from "./Talk";
 
 export default props => {
-  const {
-    speakersJson: {
-      firstname,
-      lastname,
-      bio,
-      talk,
-      abstract,
-      twitter,
-      title,
-      company
-    },
-    file
-  } = props.data;
+  const { speakersJson, talksJson, file } = props.data;
+
+  const speakerData = {
+    ...speakersJson,
+    image: file
+  };
+
+  const talkData = {
+    ...talksJson,
+    speakers: [speakerData]
+  };
 
   return (
     <Layout>
       <HelmetProvider>
         <Helmet>
           <title>
-            revo.js {firstname} {lastname}
+            revo.js {speakersJson.firstname} {speakersJson.lastname}
           </title>
         </Helmet>
       </HelmetProvider>
 
-      <Section light className="content-speaker">
-        <Content centered>
-          <figure className="speaker-image">
-            <Img fluid={file.image.fluid} alt="" />
-          </figure>
-          <h1>
-            {firstname} {lastname}
-          </h1>
-          <br />
-          <span className="speaker-title">
-            {title} at {company}
-          </span>
-          <br />
-          <a
-            className="speaker-twitter"
-            href={`https://twitter.com/${twitter}`}
-          >
-            @{twitter}
-          </a>
-          <br />
-          <br />
-
-          <h2>{talk}</h2>
-          <div dangerouslySetInnerHTML={{ __html: abstract }} />
-
-          <h2>About {firstname}</h2>
-          <div dangerouslySetInnerHTML={{ __html: bio }} />
-
-          <h2>Want to see {firstname}'s talk?</h2>
-          <PurchaseTicket white style={{ margin: 0 }} />
-        </Content>
-      </Section>
+      <Talk talk={talkData} />
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
-  query($id: String!, $image: String!) {
+  query($id: String!, $image: String!, $talkId: String!) {
     speakersJson(id: { eq: $id }) {
+      id
       firstname
       lastname
       twitter
@@ -81,9 +44,14 @@ export const pageQuery = graphql`
       company
       bio
       image
+    }
+
+    talksJson(id: { eq: $talkId }) {
+      id
       talk
       abstract
     }
+
     file(relativePath: { eq: $image }) {
       base
       image: childImageSharp {

@@ -14,6 +14,14 @@ exports.createPages = ({ graphql, actions }) => {
             node {
               id
               image
+              talkId
+            }
+          }
+        }
+        allTalksJson(limit: 1000) {
+          edges {
+            node {
+              id
             }
           }
         }
@@ -53,6 +61,19 @@ exports.createPages = ({ graphql, actions }) => {
         // can query data specific to each page.
         path: `/speakers/${slug(edge.node.id.toLowerCase())}/`,
         component: slash(speakerTemplate),
+        context: {
+          id: edge.node.id,
+          image: edge.node.image,
+          talkId: edge.node.talkId
+        }
+      });
+    });
+
+    const talkTemplate = path.resolve(`src/templates/talkDetails.jsx`);
+    _.each(result.data.allTalksJson.edges, edge => {
+      createPage({
+        path: `/talk/${slug(edge.node.id.toLowerCase())}/`,
+        component: slash(talkTemplate),
         context: {
           id: edge.node.id,
           image: edge.node.image

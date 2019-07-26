@@ -9,7 +9,16 @@ import "./speakers.scss";
 
 const Speakers = ({ data }) => {
   const { allSpeakersJson, speakerImages } = data;
-  const speakers = allSpeakersJson.edges.map(e => e.node);
+  const speakers = allSpeakersJson.edges
+    .map(e => e.node)
+    .map(speaker => {
+      const speakerImage = getImage(speaker.image);
+
+      return {
+        ...speaker,
+        speakerImage
+      };
+    });
   const filteredRandomSpeakers = shuffle(speakers).filter((s, i) => i < 3);
 
   function shuffle(array) {
@@ -18,14 +27,15 @@ const Speakers = ({ data }) => {
     });
   }
 
+  function getImage(image) {
+    return speakerImages.edges.find(e => image.includes(e.node.base));
+  }
+
   return (
     <section id="speakers" className="index-speakers-content">
       <h1 className="index-speakers-title">Speakers</h1>
 
-      <SpeakersListIndex
-        speakers={filteredRandomSpeakers}
-        images={speakerImages}
-      />
+      <SpeakersListIndex speakers={filteredRandomSpeakers} />
 
       {/* <p className="index-speakers-more mono">
         <strong>More speakers will be announced soon</strong>

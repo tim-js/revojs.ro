@@ -12,9 +12,29 @@ import { PurchaseTicket } from "@components/CTA";
 import "./speakers.scss";
 
 const Speakers = ({ data }) => {
-  const { allSpeakersJson, speakerImages } = data;
-  const speakers = allSpeakersJson.edges.map(e => e.node);
-  // const offset = (allSpeakersJson.edges.length % 2) + 1;
+  const { allSpeakersJson, speakerImages, allTalksJson } = data;
+
+  function getTalk(id) {
+    return allTalksJson.edges.find(t => t.node.id === id);
+  }
+
+  function getImage(image) {
+    return speakerImages.edges.find(e => image.includes(e.node.base));
+  }
+
+  const speakers = allSpeakersJson.edges
+    .map(e => e.node)
+    .map(speaker => {
+      const { talk, abstract } = getTalk(speaker.talkId);
+      const speakerImage = getImage(speaker.image);
+
+      return {
+        ...speaker,
+        talk,
+        abstract,
+        speakerImage
+      };
+    });
 
   return (
     <Layout title="revo.js Speakers">
@@ -32,7 +52,7 @@ const Speakers = ({ data }) => {
         </Content>
       </Section> */}
 
-      <SpeakersListIndex speakers={speakers} images={speakerImages} />
+      <SpeakersListIndex speakers={speakers} />
 
       {/* <ul className="speakers-list">
         {speakers.map((speaker, index) => {
@@ -82,8 +102,26 @@ export default props => {
                 image
                 title
                 company
+                talkId
+              }
+            }
+          }
+          allTalksJson {
+            edges {
+              node {
+                id
                 talk
                 abstract
+                speakers {
+                  id
+                  firstname
+                  lastname
+                  bio
+                  image
+                  twitter
+                  title
+                  company
+                }
               }
             }
           }
