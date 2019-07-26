@@ -8,7 +8,7 @@
   {
     "id": "wa",
     "talk": "A journey of multithreading using WebAssembly",
-    "abstract": "WebAssembly is a new programming language, allowing us to compile C/C++ or other statically typed languages and run them in the browser and Node.js. While languages like C/C++ support multi-threading, JavaScript is single-threaded and this raises the question of how WebAssembly will behave. In this talk we will discuss the design of threads for WebAssembly, the implementation challenges in terms of security and we will see examples of how multithreading can be achieved using Web Workers.",
+    "abstract": "<p>WebAssembly is a new programming language, allowing us to compile C/C++ or other statically typed languages and run them in the browser and Node.js. While languages like C/C++ support multi-threading, JavaScript is single-threaded and this raises the question of how WebAssembly will behave.</p> <p>In this talk we will discuss the design of threads for WebAssembly, the implementation challenges in terms of security and we will see examples of how multithreading can be achieved using Web Workers.</p>",
     "speakers": [{ "id": "boyan-mihaylov" }]
   },
   {
@@ -55,8 +55,8 @@
   },
   {
     "id": "ts",
-    "talk": "",
-    "abstract": "",
+    "talk": "Can I really type THAT in TypeScript!?",
+    "abstract": "<p>Have you mastered the basics of TypeScript and are now struggling to type your more complicated code? Want to learn how to remove pesky “any” types from your code base? Then this talk is for you!</p> <p>We will take a journey through the world of advanced TypeScript types (unions, intersections, tuples, mapped types and conditional types) and talk about how you can put them to practical use, with real-world examples from stackoverflow.com.<p>",
     "speakers": [{ "id": "titian-cernicova-dragomir" }]
   },
   {
@@ -68,13 +68,13 @@
   {
     "id": "auth",
     "talk": "WebAuthn Rocks!: Stop authenticating as if it were the 60s",
-    "abstract": "In the last year, WebAuthn advanced to a W3C Candidate Recommendation, making a giant leap toward enabling strong authentication on the Web for consumers. Does this mean the end of passwords, or even more phishing? Let’s learn about the javascript credential management API and how to enable authentication via WebAuthn on a website.",
+    "abstract": "<p>In the last year, WebAuthn advanced to a W3C Candidate Recommendation, making a giant leap toward enabling strong authentication on the Web for consumers. Does this mean the end of passwords, or even more phishing?</p> <p>Let’s learn about the JavaScript credential management API and how to enable authentication via WebAuthn on a website.</p>",
     "speakers": [{ "id": "ruben-restrepo" }]
   },
   {
     "id": "pa11y",
     "talk": "Become an Accessibility BFF with your new friend Pa11y!",
-    "abstract": "Like Blair Waldorf and Serena van der Woodsen, Pa11y is an accessibility tester’s BFF. You already have a million issues on your plate, so how do you find a way to get started on accessibility testing? Pa11y to the rescue! Pa11y is a lightweight JS a11y testing tool with some serious “it” factor. This talk will explain what pa11y does and does not cover, review examples of both command line and scripted usage, dive into the pa11y web service and show how to best accessorize a Pa11y setup with your current testing process. Bonus content: how to convince the rest of your team and business why accessibility is totally worth prioritizing and how getting started with low-hanging fruit can vastly glamorize your product. Now you can take on creating a more accessible product like S & B take on the Upper East Side. XOXO Accessibility Girl 💋",
+    "abstract": "<p>Like Blair Waldorf and Serena van der Woodsen, Pa11y is an accessibility tester’s BFF. You already have a million issues on your plate, so how do you find a way to get started on accessibility testing? Pa11y to the rescue! Pa11y is a lightweight JS a11y testing tool with some serious “it” factor.</p> <p>This talk will explain what pa11y does and does not cover, review examples of both command line and scripted usage, dive into the pa11y web service and show how to best accessorize a Pa11y setup with your current testing process.</p> <p>Bonus content: how to convince the rest of your team and business why accessibility is totally worth prioritizing and how getting started with low-hanging fruit can vastly glamorize your product. Now you can take on creating a more accessible product like S & B take on the Upper East Side.</p> <p>XOXO Accessibility Girl 💋</p>",
     "speakers": [{ "id": "jennifer-wadella" }]
   },
   {
