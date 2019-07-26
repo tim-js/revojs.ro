@@ -66,17 +66,6 @@
     "talkId": "keynote1"
   },
   {
-    "id": "kenneth-auchenberg",
-    "firstname": "Kenneth",
-    "lastname": "Auchenberg",
-    "bio": "Kenneth is a Program Manager at Microsoft and lives in Vancouver, Canada, where he leads the next generation of web developer tooling. He's a Global Shaper for Word Economic Forum, serves on multiple advisory boards, and is a frequent public speaker who travels the world.SLaura has been a Software Engineer for 15 years and is currently a Senior Developer at The Financial Times. She has led the accessibility team for FT.com in 2016 and currently works as a full-stack developer for the Internal Products team at Financial Times.",
-    "image": "speakers/kenneth_auchenberg.jpg",
-    "twitter": "auchenberg",
-    "title": "Project Manager",
-    "company": "VS Code",
-    "talkId": "keynote2"
-  },
-  {
     "id": "benedek-gagyi",
     "firstname": "Benedek",
     "lastname": "Gagyi",
