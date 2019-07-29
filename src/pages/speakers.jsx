@@ -7,6 +7,7 @@ import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 import SpeakersListIndex from "@components/SpeakersListIndex";
+import Separator from "@components/Separator";
 import { PurchaseTicket } from "@components/CTA";
 
 import "./speakers.scss";
@@ -24,6 +25,7 @@ const Speakers = ({ data }) => {
 
   const speakers = allSpeakersJson.edges
     .map(e => e.node)
+    .filter(speaker => speaker.talkId)
     .map(speaker => {
       const { talk, abstract } = getTalk(speaker.talkId);
       const speakerImage = getImage(speaker.image);
@@ -32,6 +34,18 @@ const Speakers = ({ data }) => {
         ...speaker,
         talk,
         abstract,
+        speakerImage
+      };
+    });
+
+  const mc = allSpeakersJson.edges
+    .map(e => e.node)
+    .filter(speaker => !speaker.talkId)
+    .map(speaker => {
+      const speakerImage = getImage(speaker.image);
+
+      return {
+        ...speaker,
         speakerImage
       };
     });
@@ -53,6 +67,16 @@ const Speakers = ({ data }) => {
       </Section> */}
 
       <SpeakersListIndex speakers={speakers} />
+
+      <Separator />
+
+      <Section style={{ paddingTop: 0 }}>
+        <Content centered style={{ textAlign: "center" }}>
+          <h2>revo.js 2019 will be hosted by:</h2>
+        </Content>
+      </Section>
+
+      <SpeakersListIndex speakers={mc} />
 
       {/* <ul className="speakers-list">
         {speakers.map((speaker, index) => {
@@ -114,13 +138,6 @@ export default props => {
                 abstract
                 speakers {
                   id
-                  firstname
-                  lastname
-                  bio
-                  image
-                  twitter
-                  title
-                  company
                 }
               }
             }

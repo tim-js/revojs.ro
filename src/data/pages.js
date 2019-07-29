@@ -3,9 +3,9 @@ export const main = [
     name: "Speakers",
     hasSubpages: true
   },
-  // {
-  //   name: "Agenda"
-  // },
+  {
+    name: "Agenda"
+  },
   // {
   //   name: "Call for Papers",
   //   path: "cfp"

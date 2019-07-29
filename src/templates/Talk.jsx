@@ -69,7 +69,10 @@ export default props => {
           </React.Fragment>
         ))}
 
-        <h2>Want to see {getName(speakers)} talk?</h2>
+        <br />
+        <br />
+        {talk && <h2>Want to see {getName(speakers)} talk?</h2>}
+        <br />
         <PurchaseTicket white style={{ margin: 0 }} />
       </Content>
     </Section>

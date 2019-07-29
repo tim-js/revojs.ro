@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="255px" height="96px" viewBox="0 0 255 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>agenda_pixels_left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Agenda-V2" transform="translate(-120.000000, -882.000000)">
+            <g id="agenda_pixels_left" transform="translate(120.000000, 882.000000)">
+                <polygon id="Rectangle" fill="#15161A" points="128 32 128 96 32 96 32 32"></polygon>
+                <polygon id="Rectangle" fill="#15161A" points="255 32 255 64 160 64 160 32"></polygon>
+                <polygon id="Rectangle" fill="#FFFFFF" points="255 64 255 96 160 96 160 64"></polygon>
+                <polygon id="Rectangle" fill="#15161A" points="32 32 32 64 0 64 0 32"></polygon>
+                <polygon id="Rectangle" fill="#15161A" points="160 64 160 96 64 96 64 64"></polygon>
+                <polygon id="Rectangle" fill="#FFFFFF" points="32 32 32 64 0 64 0 32"></polygon>
+                <polygon id="Rectangle" fill="#FFFFFF" points="192 0 192 32 160 32 160 0"></polygon>
+                <polygon id="Rectangle" fill="#FFFFFF" points="160 32 160 64 128 64 128 32"></polygon>
+                <polygon id="Rectangle" fill="#15161A" points="32 64 32 96 0 96 0 64"></polygon>
+                <polygon id="Rectangle" fill="#FFFFFF" points="96 64 96 96 32 96 32 64"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
