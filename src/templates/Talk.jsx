@@ -56,11 +56,15 @@ export default props => {
           <Speaker key={speaker.id} speaker={speaker} />
         ))}
 
-        <br />
-        <br />
-
-        <h2>{talk}</h2>
-        <div dangerouslySetInnerHTML={{ __html: abstract }} />
+        {talk && (
+          <>
+            }
+            <br />
+            <br />
+            <h2>{talk}</h2>
+            <div dangerouslySetInnerHTML={{ __html: abstract }} />
+          </>
+        )}
 
         {speakers.map(speaker => (
           <React.Fragment key={speaker.id}>

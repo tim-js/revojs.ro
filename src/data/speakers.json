@@ -152,5 +152,16 @@
     "title": "Software Engineer",
     "company": "StackBlitz",
     "talkId": "angular"
+  },
+  {
+    "id": "diana-macau",
+    "firstname": "Diana",
+    "lastname": "Macau",
+    "bio": "<p>Diana is an IT Recruiter by day and full-time nerd by night. In her free time, she also gets involved in organizing and hosting various events in the local IT community.</p> <p>With more than 7 years of experience in HR and IT Recruitment, strengthened by a background in Organizational & Occupational Health Psychology, Diana believes in the compatibility between what a person is looking for in their next job as well as what a company is searching for in their next employee.</p>",
+    "image": "speakers/diana_macau.jpg",
+    "twitter": "DianaMacau",
+    "title": "MC and Host",
+    "company": "",
+    "talkId": ""
   }
 ]
