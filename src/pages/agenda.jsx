@@ -111,7 +111,7 @@ const Agenda = ({ data }) => {
         <DayHeader data={data} />
         <ul className="agenda-slots">
           {workshops.map(workshop => (
-            <li key={workshop.time} className="agenda-slot">
+            <li key={workshop.time} className="agenda-slot talk">
               <time
                 dateTime={`${dateIso}T${workshop.time}:00`}
                 className="slot-time"
@@ -225,6 +225,7 @@ function Workshop({ data }) {
       <Link to={`/workshop/`}>
         <h3>{data.title}</h3>
       </Link>
+      <span>{data.description}</span>
       <SpeakersDetails list={data.speakers} />
     </div>
   );
