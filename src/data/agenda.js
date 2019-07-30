@@ -7,6 +7,7 @@ export const day0 = {
     {
       time: "09:00",
       title: "Efficient End-to-End Testing with Cypress.io",
+      description: "Full-day workshop. Pre-registration required.",
       speakers: [{ id: "gleb-bahmutov" }]
     }
   ]
@@ -23,19 +24,19 @@ export const day1 = {
     { time: "09:30", placeholder: "/* talks will be announced soon */" },
     // { time: "09:30", talkId: "keynote1" },
     // { time: "10:00", talkId: "oss" },
-    { time: "10:30", description: "Coffee Break" },
-    { time: "11:00", placeholder: "/* talks will be announced soon */" },
-    // { time: "11:00", talkId: "wc" },
-    // { time: "11:30", talkId: "wa" },
-    { time: "12:00", description: "Lunch Break" },
-    { time: "12:30", placeholder: "/* talks will be announced soon */" },
+    { time: "10:45", description: "Coffee Break" },
+    { time: "11:15", placeholder: "/* talks will be announced soon */" },
+    // { time: "11:15", talkId: "wc" },
+    // { time: "11:45", talkId: "wa" },
+    { time: "12:30", description: "Lunch Break" },
+    { time: "13:30", placeholder: "/* talks will be announced soon */" },
     // { time: "13:30", talkId: "e2e" },
     // { time: "14:00", talkId: "gis" },
-    { time: "14:30", description: "Coffee Break" },
-    { time: "15:00", placeholder: "/* talks will be announced soon */" },
-    // { time: "15:00", talkId: "angular" },
-    // { time: "15:30", talkId: "bots" }
-    { time: "16:00", description: "Networking" }
+    { time: "14:45", description: "Coffee Break" },
+    { time: "15:15", placeholder: "/* talks will be announced soon */" },
+    // { time: "15:15", talkId: "angular" },
+    // { time: "15:45", talkId: "bots" }
+    { time: "16:30", description: "Networking" }
   ]
 };
 
@@ -50,19 +51,19 @@ export const day2 = {
     { time: "09:30", placeholder: "/* talks will be announced soon */" },
     // { time: "09:30", talkId: "keynote1" },
     // { time: "10:00", talkId: "oss" },
-    { time: "10:30", description: "Coffee Break" },
-    { time: "11:00", placeholder: "/* talks will be announced soon */" },
+    { time: "10:45", description: "Coffee Break" },
+    { time: "11:15", placeholder: "/* talks will be announced soon */" },
     // { time: "11:00", talkId: "wc" },
     // { time: "11:30", talkId: "wa" },
-    { time: "12:00", description: "Lunch Break" },
-    { time: "12:30", placeholder: "/* talks will be announced soon */" },
+    { time: "12:30", description: "Lunch Break" },
+    { time: "13:30", placeholder: "/* talks will be announced soon */" },
     // { time: "13:30", talkId: "e2e" },
     // { time: "14:00", talkId: "gis" },
-    { time: "14:30", description: "Coffee Break" },
-    { time: "15:00", placeholder: "/* talks will be announced soon */" },
-    // { time: "15:00", talkId: "angular" },
+    { time: "14:45", description: "Coffee Break" },
+    { time: "15:15", placeholder: "/* talks will be announced soon */" },
+    // { time: "15:15", talkId: "angular" },
     // { time: "15:30", talkId: "bots" }
-    { time: "16:00", description: "Closing words" },
+    { time: "16:30", description: "Closing words" },
     { time: "19:00", description: "After party (details will be announced)" }
   ]
 };
