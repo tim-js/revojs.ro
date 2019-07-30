@@ -104,7 +104,7 @@
     @include hiddenMenu();
   }
   .is-active & {
-    margin-top: calc(var(--menu-height-scrolled) + 2em);
+    margin-top: calc(var(--menu-height-scrolled) + 1em);
     margin-right: 0;
   }
 }
@@ -129,8 +129,8 @@
   color: var(--lightgrey);
   transition: all 0.3s;
   display: inline-block;
-  font-size: 3.5vh;
-  line-height: 1.9;
+  font-size: 3.4vh;
+  line-height: 1.8;
 
   @include breakpoint(md, min) {
     .navigation:not(.is-active) &:not(.secondary) {
@@ -180,7 +180,7 @@
   }
 
   .is-active & {
-    top: 2em !important;
+    top: 1em !important;
     position: absolute;
     right: 0;
   }
