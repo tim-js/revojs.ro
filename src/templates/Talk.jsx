@@ -58,7 +58,6 @@ export default props => {
 
         {talk && (
           <>
-            }
             <br />
             <br />
             <h2>{talk}</h2>
