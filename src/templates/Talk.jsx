@@ -28,6 +28,7 @@ function Speaker(props) {
         className="speaker-twitter"
         href={`https://twitter.com/${twitter}`}
         target="_blank"
+        rel="noopener noreferrer"
       >
         {twitter}
       </a>

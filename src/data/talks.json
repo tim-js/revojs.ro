@@ -2,7 +2,7 @@
   {
     "id": "wc",
     "talk": "The (Real) State of WebComponents",
-    "abstract": "<p>2018 is gonna be the year of WebComponents they said... Was it? The year is 2019 and people are asking, are WebComponents everywhere? Probably not. Why?</p><p>This talk will try to answer all these questions you might be asking yourself, by going through a real evaluation of WebComponents as primary tool for authoring web pages and applications.</p>",
+    "abstract": "<p>2018 is gonna be the year of WebComponents they said... Was it? The year is 2019 and people are asking, are WebComponents everywhere? Probably not. Why?</p><p>This talk will try to answer all these questions you might be asking yourself, by going through a real evaluation of WebComponents as the primary tool for authoring web pages and applications.</p>",
     "speakers": [{ "id": "martin-hochel" }]
   },
   {
@@ -20,25 +20,25 @@
   {
     "id": "gis",
     "talk": "The web developer’s guide to cartography",
-    "abstract": "<p>Maps are everywhere! Whether you want to find your hotel, plan your next hike or see the results of a recent election: maps are indispensable.</p> <p>But how do we create such maps? Web mapping APIs have come a long way. They are easy to use and not only allow you to create 2D maps, but more recently also 3D ones. Add some magic geo data and cartographic knowledge and you are on your way to build your first mapping master piece.</p> <p>In this talk we’ll go through the process of creating a web map: Starting from an idea, gathering and processing the data, and finishing up with a beautiful web map visualization. No geo-knowledge required! Enthusiasm for maps will be provided in the beginning of the talk.</p>",
+    "abstract": "<p>Maps are everywhere! Whether you want to find your hotel, plan your next hike or see the results of a recent election, maps are indispensable.</p> <p>But how do we create such maps? Web mapping APIs have come a long way. They are easy to use and not only allow us to create 2D maps, but more recently also 3D ones. Add some magic geo data and cartographic knowledge and you are on your way to building your first mapping master piece.</p> <p>In this talk we’ll go through the process of creating a web map: starting from an idea, gathering and processing the data, and finishing up with a beautiful web map visualization. No geo-knowledge required! Enthusiasm for maps will be provided in the beginning of the talk.</p>",
     "speakers": [{ "id": "raluca-nicola" }]
   },
   {
     "id": "bots",
     "talk": "Adopt an AI-driven chatbot today",
-    "abstract": "<p>If you ever asked yourself any of these questions: What do chatbots eat? Do chatbots have dreams? What are the usual chatbot challenges? Then this talk is for you. We will answer all of the above questions and many more.</p> <p>You will learn how to build a fully functioning chatbot in less than 10 minutes – without a single IF statement – and train it to understand human language. Then we will top it up with a quick AI training to make it understand the language normal people speak.</p>",
+    "abstract": "<p>Have you ever asked yourself any of these questions: What do chatbots eat? Do chatbots have dreams? What are the usual chatbot challenges? If so, this talk is for you. We will answer all of the above questions and many more.</p> <p>You will learn how to build a fully functioning chatbot in less than 10 minutes – without a single IF statement – and train it to understand human language. Then we will top it up with a quick AI training to make it understand human language.</p>",
     "speakers": [{ "id": "sebastian-witalec" }]
   },
   {
     "id": "keynote1",
     "talk": "Common Ways We Break Accessibility And How To Avoid Them",
-    "abstract": "<p>A great deal of what makes a website accessible is fairly straightforward to achieve, but only once we know what to look out for! Over 70% of websites are broken for disabled users, including those who rely on assistive tech, such as screen readers and magnifiers, to navigate the web. That's a good 10%-20% of your user base who can't access your content or pay for your product, even though they may want to.</p> <p>In this talk we will go over some common front-end (anti)patterns and how they affect accessibility while otherwise going virtually undetected. We will see real user testimonials of how these affect their interaction with the web and their daily lives. Lastly, we'll cover how to get the same results without breaking your site for disabled users, including real-life examples of how we've avoided these pitfalls at The Financial Times.</p>",
+    "abstract": "<p>A great deal of what makes a website accessible is fairly straightforward to achieve, but only once we know what to look out for! Over 70% of websites are broken for disabled users, including those who rely on assistive tech - such as screen readers and magnifiers - to navigate the web. That’s a good 10%-20% of your user base who can’t access your content or pay for your product, even though they may want to.</p> <p>In this talk we will go over some common front-end (anti)patterns and how they affect accessibility while otherwise going virtually undetected. We will see real user testimonials of how these affect people’s interaction with the web and their daily lives. Lastly, we’ll cover how to get the same results without breaking your site for disabled users, including real-life examples of how we’ve avoided these pitfalls at The Financial Times.</p>",
     "speakers": [{ "id": "laura-carvajal" }]
   },
   {
     "id": "xxss",
     "talk": "XXSS: Exotic Cross-Site Scripting Vectors",
-    "abstract": "<p>XSS is one of the most well known attacks on the web, perhaps second only to SQL injection. While the general idea behind it is relatively simple, due to the colorfulness of the web and the quirks of the browsers it has a surprising depth to it.</p> <p>In this talk we'll journey deep down the rabbit hole of XSS attacks and take a look at all the weird ways malicious inputs may hurt our users, from the non-JS based injections (CSS, HTML, image) through mXSS, up to blind XSS.</p>",
+    "abstract": "<p>XSS is one of the most well known attacks on the web, perhaps second only to SQL Injection. While the general idea behind it is relatively simple, due to the colorfulness of the web and the quirks of the browsers, it has a surprising depth to it.</p> <p>In this talk we’ll journey deep down the rabbit hole of XSS attacks and take a look at all the weird ways malicious inputs may hurt our users, from the non-JS based injections (CSS, HTML, image) through mXSS, up to blind XSS.</p>",
     "speakers": [{ "id": "benedek-gagyi" }]
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "id": "auth",
-    "talk": "WebAuthn Rocks!: Stop authenticating as if it were the 60s",
+    "talk": "WebAuthn Rocks! Stop authenticating as if it were the 60s",
     "abstract": "<p>In the last year, WebAuthn advanced to a W3C Candidate Recommendation, making a giant leap toward enabling strong authentication on the Web for consumers. Does this mean the end of passwords, or even more phishing?</p> <p>Let’s learn about the JavaScript credential management API and how to enable authentication via WebAuthn on a website.</p>",
     "speakers": [{ "id": "ruben-restrepo" }]
   },
@@ -74,7 +74,7 @@
   {
     "id": "angular",
     "talk": "Hacking the Angular compiler with your own syntax",
-    "abstract": "<p>In this talk, we are going to take a deep dive into how Angular transforms components into DOM elements.</p> <p>We will see how we hooked into this process to be able to teach our own template syntax to Angular so we can make our own code more concise and start using some features/APIs we've always wanted.</p> <p>Attendees will walk away with a deep understanding of the Angular compiler and learn an (experimental) way to hack their own syntax into it!</p>",
+    "abstract": "<p>In this duo-talk, Kwinten Pisman and Dominic Elm are going to take us on a deep dive into how Angular transforms components into DOM elements.</p> <p>We will see how we hooked into this process to be able to teach our own template syntax to Angular so we can make our own code more concise and start using some features/APIs we've always wanted.</p> <p>Attendees will walk away with a deep understanding of the Angular compiler and learn an (experimental) way to hack their own syntax into it!</p>",
     "speakers": [{ "id": "kwinten-pisman" }, { "id": "dominic-elm" }]
   }
 ]
