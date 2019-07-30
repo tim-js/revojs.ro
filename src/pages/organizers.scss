@@ -1,6 +1,7 @@
 @import "../styles/mixins";
+@import "../styles/fonts";
 
-.about-organizers {
+.organizers {
   display: grid;
   grid-template-columns: 1fr;
 
@@ -11,25 +12,61 @@
 }
 
 .organizers-team {
+  text-align: center;
+}
+
+.team-list {
   list-style-type: none;
-  padding: 0;
+  padding: 5rem 0;
   margin: 0;
-  display: inline;
+  display: grid;
 
-  &::before {
-    content: " ";
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
+}
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    transform: translateY(105%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary);
+    // mix-blend-mode: normal;
+    filter: opacity(0.7);
+    transition: transform 0.3s;
   }
 
-  li {
-    display: inline;
-
-    strong {
-      white-space: nowrap;
-      display: inline-block;
-    }
-
-    &::after {
-      content: ", ";
-    }
+  &:hover .team-member-name,
+  &:hover::after {
+    transform: translateY(0);
   }
+}
+
+.team-member-name {
+  @include font(mono);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  line-height: 1.2;
+  text-align: center;
+  transform: translateY(200%);
+  transition: transform 0.3s;
+  transition-delay: 75ms;
+  z-index: 1;
 }

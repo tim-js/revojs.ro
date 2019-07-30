@@ -1,30 +1,48 @@
 import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
+import Img from "gatsby-image";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
-import Note from "@components/Note";
 
 import timjs from "@assets/tim.js-logo.svg";
 import banatit from "@assets/Banat_IT_Logo.svg";
 
 import "./organizers.scss";
 
-export default () => {
+const Organizers = ({ data }) => {
+  const { allTeamJson, teamImages } = data;
+
+  function getImage(image) {
+    return teamImages.edges.find(e => image.includes(e.node.base));
+  }
+
+  const team = allTeamJson.edges
+    .map(e => e.node)
+    .map(member => {
+      const memberImage = getImage(member.image);
+
+      return {
+        ...member,
+        memberImage
+      };
+    });
+
   return (
-    <Layout title="revo.js Organizers">
+    <Layout title="revo.js Organizers" noFooterSeparation>
       <Header centered type="secondary">
-        <h1 className="about-title">Organizers</h1>
+        <h1>Organizers</h1>
       </Header>
 
-      <Section light className="blog-post">
+      <Section light>
         <Content centered>
           <section>
             <h2>Main Organizers</h2>
 
-            <div className="about-organizers">
+            <div className="organizers">
               <section>
                 <h3>
                   <OutboundLink
@@ -74,57 +92,65 @@ export default () => {
                 </p>
               </section>
             </div>
-
-            <section>
-              <h2>Core Team</h2>
-
-              <p>
-                This event takes place only because the following humans got
-                involved:
-                <ul className="organizers-team">
-                  <li>
-                    <strong>Andrei Pfeiffer</strong>
-                  </li>
-                  <li>
-                    <strong>Lucian Pacurar</strong>
-                  </li>
-                  <li>
-                    <strong>Cassian Lup</strong>
-                  </li>
-                  <li>
-                    <strong>Ilona Iftode</strong>
-                  </li>
-                  <li>
-                    <strong>Simina Sirbu</strong>
-                  </li>
-                  <li>
-                    <strong>Andreea Nicu</strong>
-                  </li>
-                  <li>
-                    <strong>Andrea Sisak</strong>
-                  </li>
-                  <li>
-                    <strong>Ion Mosincat</strong>
-                  </li>
-                  <li>
-                    <strong>Horia Radu</strong>
-                  </li>
-                  <li>
-                    <strong>Ovidiu Bite</strong>
-                  </li>
-                  <li>
-                    <strong>Anca Spatariu</strong>
-                  </li>
-                  <li>
-                    <strong>Amalia Sisak</strong>
-                  </li>
-                </ul>{" "}
-                and many many others.
-              </p>
-            </section>
           </section>
         </Content>
       </Section>
+
+      <div className="footer-separation">
+        <Section>
+          <section className="organizers-team">
+            <h2>Core Team</h2>
+            <p>
+              This event takes place only because the following humans got
+              involved:
+            </p>
+            <ul className="team-list">
+              {team.map(member => (
+                <li className="team-member" key={member.name}>
+                  <Img
+                    fluid={member.memberImage.node.image.fluid}
+                    alt={`${member.name} black and white photo`}
+                  />
+                  <strong className="team-member-name">{member.name}</strong>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </Section>
+      </div>
     </Layout>
+  );
+};
+
+export default props => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          allTeamJson {
+            edges {
+              node {
+                name
+                image
+                title
+              }
+            }
+          }
+          teamImages: allFile(filter: { relativePath: { glob: "team/*" } }) {
+            edges {
+              node {
+                base
+                image: childImageSharp {
+                  fluid(maxWidth: 240, maxHeight: 240, grayscale: true) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => <Organizers data={data} {...props} />}
+    />
   );
 };

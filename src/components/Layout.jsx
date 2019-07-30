@@ -4,7 +4,13 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Navigation from "@components/Navigation";
 import Footer from "@components/Footer";
 
-export default ({ location, children, title, ...props }) => {
+export default ({
+  location,
+  children,
+  title,
+  noFooterSeparation,
+  ...props
+}) => {
   const _title = title || "revo.js conference";
   return (
     <>
@@ -24,7 +30,7 @@ export default ({ location, children, title, ...props }) => {
         {children}
       </main>
 
-      <Footer />
+      <Footer noFooterSeparation={noFooterSeparation} />
     </>
   );
 };

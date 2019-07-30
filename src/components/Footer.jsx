@@ -19,60 +19,63 @@ function renderPage(page) {
   return <Link to={`/${path}/`}>{name}</Link>;
 }
 
-export default () => (
-  <footer className="footer">
-    <nav>
-      <div className="internal-links">
-        <ul className="footer-menu">
-          {main.map(page => {
-            return <li key={page.name}>{renderPage(page)}</li>;
-          })}
-        </ul>
+export default props => {
+  const separation = !props.noFooterSeparation ? "footer-separation" : "";
 
-        <ul className="footer-menu">
-          {secondary.map(page => {
-            return <li key={page.name}>{renderPage(page)}</li>;
-          })}
-        </ul>
+  return (
+    <footer className={`footer ${separation}`}>
+      <nav>
+        <div className="internal-links">
+          <ul className="footer-menu">
+            {main.map(page => {
+              return <li key={page.name}>{renderPage(page)}</li>;
+            })}
+          </ul>
 
-        <ul className="footer-menu">
-          {tertiary.map(page => {
-            return <li key={page.name}>{renderPage(page)}</li>;
-          })}
-        </ul>
-      </div>
+          <ul className="footer-menu">
+            {secondary.map(page => {
+              return <li key={page.name}>{renderPage(page)}</li>;
+            })}
+          </ul>
 
-      <div className="external-links">
-        <div className="social-media">
-          <a
-            href="https://twitter.com/revojsro"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={twitter} alt="Twitter" />
-          </a>
-          <a
-            href="https://www.facebook.com/revojsro"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={facebook} alt="Facebook" />
-          </a>
-          <a
-            href="https://www.instagram.com/revo.js/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={instagram} alt="Instagram" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/revojs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedin} alt="Linkedin" />
-          </a>
-          {/*
+          <ul className="footer-menu">
+            {tertiary.map(page => {
+              return <li key={page.name}>{renderPage(page)}</li>;
+            })}
+          </ul>
+        </div>
+
+        <div className="external-links">
+          <div className="social-media">
+            <a
+              href="https://twitter.com/revojsro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={twitter} alt="Twitter" />
+            </a>
+            <a
+              href="https://www.facebook.com/revojsro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebook} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/revo.js/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagram} alt="Instagram" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/revojs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedin} alt="Linkedin" />
+            </a>
+            {/*
           <a
           href="https://medium.com/revo-js"
           target="_blank"
@@ -81,16 +84,17 @@ export default () => (
           <img src={medium} alt="Medium" />
           </a>
           */}
+          </div>
+          <a href="mailto:info@revojs.ro" className="footer-email">
+            info@revojs.ro
+          </a>
         </div>
-        <a href="mailto:info@revojs.ro" className="footer-email">
-          info@revojs.ro
-        </a>
-      </div>
-    </nav>
+      </nav>
 
-    <p className="copyright">
-      &copy; <img className="revojs-text" src={revojs} alt="revo.js" /> 2019.
-      All rights reserved.
-    </p>
-  </footer>
-);
+      <p className="copyright">
+        &copy; <img className="revojs-text" src={revojs} alt="revo.js" /> 2019.
+        All rights reserved.
+      </p>
+    </footer>
+  );
+};
