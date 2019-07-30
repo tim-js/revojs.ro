@@ -55,6 +55,13 @@ const Speakers = ({ data }) => {
       <Header type="main" image="speakers-image">
         <h1>Speakers</h1>
         <br />
+        <strong className="speakers-important light-faded mono">
+          <span className="highlight">
+            Meet our international crew of change.
+          </span>
+          <br />
+          <span>14 speakers from 11 countries.</span>
+        </strong>
       </Header>
 
       {/* <Section light>

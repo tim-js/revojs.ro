@@ -8,6 +8,15 @@
   }
 }
 
+.speakers-important {
+  line-height: 1.7;
+  font-size: 16px;
+
+  @include breakpoint(sm) {
+    font-size: 24px;
+  }
+}
+
 .speakers-list {
   padding: 0;
   margin: 0;

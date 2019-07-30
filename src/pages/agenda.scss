@@ -9,6 +9,15 @@
   }
 }
 
+.agenda-important {
+  line-height: 1.7;
+  font-size: 16px;
+
+  @include breakpoint(sm) {
+    font-size: 24px;
+  }
+}
+
 .agenda-section {
   background: #ffffff;
   padding-top: 0;

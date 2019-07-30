@@ -59,6 +59,14 @@ const Agenda = ({ data }) => {
     <Layout title="revo.js Agenda">
       <Header type="main" image="agenda-image">
         <h1>Agenda</h1>
+        <br />
+        <strong className="speakers-important light-faded mono">
+          <span className="highlight">
+            Change can’t be scheduled but it can kindle from our revo.agenda.
+          </span>
+          <br />
+          <span>Learn more and plan accordingly.</span>
+        </strong>
       </Header>
 
       <div className="agenda-nav-wrapper">
