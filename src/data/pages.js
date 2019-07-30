@@ -45,6 +45,9 @@ export const secondary = [
   {
     name: "Press Info",
     path: "press"
+  },
+  {
+    name: "Organizers"
   }
 ];
 

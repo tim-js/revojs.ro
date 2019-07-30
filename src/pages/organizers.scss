@@ -1,0 +1,35 @@
+@import "../styles/mixins";
+
+.about-organizers {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--spacing-content);
+  }
+}
+
+.organizers-team {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+
+  &::before {
+    content: " ";
+  }
+
+  li {
+    display: inline;
+
+    strong {
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    &::after {
+      content: ", ";
+    }
+  }
+}
