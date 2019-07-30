@@ -93,7 +93,7 @@
 .index-speaker-title {
   display: block;
   line-height: 1.2;
-  color: var(--text-light);
+  color: var(--primary);
   transition: color 0.3s;
 
   @include breakpoint(sm) {
@@ -102,8 +102,8 @@
 }
 .index-speaker-company {
   display: block;
-  color: var(--primary);
   transition: color 0.3s;
+  color: var(--text-light);
 
   @include breakpoint(sm) {
     // padding: 0 15% 15% 15%;
