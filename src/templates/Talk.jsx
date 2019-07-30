@@ -64,7 +64,6 @@ export default props => {
         {talk && (
           <>
             <br />
-            <br />
             <h2>{talk}</h2>
             <div dangerouslySetInnerHTML={{ __html: abstract }} />
           </>
@@ -77,7 +76,6 @@ export default props => {
           </React.Fragment>
         ))}
 
-        <br />
         <br />
         {talk && <h2>Want to see {getName(speakers)} talk?</h2>}
         <br />

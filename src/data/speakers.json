@@ -78,8 +78,8 @@
   },
   {
     "id": "kenigbolo-meya-stephen",
-    "firstname": "Kenigbolo",
-    "lastname": "Meya Stephen",
+    "firstname": "Stephen",
+    "lastname": "Meya Kenigbolo",
     "bio": "<p>I'm Kenigbolo Meya Stephen, Full Stack Software Engineer working as the Frontend Engineering Team Lead at <a href=\"https://bcaster.com\" target=\"_blank\">BCaster</a>. I'm the Arch Conveyer/Community Manager of CodeAfrique (also now known as Reload for the classroom version), a not-for-profit weekend intensive software engineering bootcamp for underrepresented groups in IT started out first in Estonia.</p> <p>During my free time I sometimes volunteer as an open source developer for <a href=\"https://adsbexchange.com\" target=\"_blank\">ADSBx</a>, spend time playing golf or on the pitch playing/coaching football (soccer, as Americans call it).</p>",
     "image": "speakers/kenigbolo_meya_stephen.jpg",
     "twitter": "expensivestevie",
@@ -89,7 +89,7 @@
   },
   {
     "id": "titian-cernicova-dragomir",
-    "firstname": "Titian",
+    "firstname": "Tițian",
     "lastname": "Cernicova-Dragomir",
     "bio": "<p>Titian Cernicova-Dragomir is a software engineer with 15 years of experience in C# and 6 years of experience in TypeScript. He is often found on <a href=\"https://stackoverflow.com/users/125734/titian-cernicova-dragomir\" target=\"_blank\">stackoverflow.com</a>, answering TypeScript queries and contributing to the TypeScript compiler.</p> <p>He loves teaching functional programming to first year university students (although he doubts the feeling is always mutual). In his spare time, he enjoys spending time with his wonderful wife and two daughters.</p>",
     "image": "speakers/titian_cernicova_dragomir.png",
