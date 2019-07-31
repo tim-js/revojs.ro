@@ -111,7 +111,10 @@ const Organizers = ({ data }) => {
                     fluid={member.memberImage.node.image.fluid}
                     alt={`${member.name} black and white photo`}
                   />
-                  <strong className="team-member-name">{member.name}</strong>
+                  <strong className="team-member-name">
+                    {member.name}
+                    <span className="team-member-title">{member.title}</span>
+                  </strong>
                 </li>
               ))}
             </ul>

@@ -34,6 +34,7 @@
 .team-member {
   position: relative;
   overflow: hidden;
+  padding-bottom: 2em;
 
   &::after {
     content: "";
@@ -44,11 +45,12 @@
     left: 0;
     right: 0;
     background-color: var(--primary);
-    // mix-blend-mode: normal;
+    // mix-blend-mode: screen;
     filter: opacity(0.7);
     transition: transform 0.3s;
   }
 
+  &:hover .team-member-title,
   &:hover .team-member-name,
   &:hover::after {
     transform: translateY(0);
@@ -62,11 +64,21 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1em;
-  line-height: 1.2;
+  padding: 0.5em 1em;
+  line-height: 1.1;
   text-align: center;
   transform: translateY(200%);
   transition: transform 0.3s;
   transition-delay: 75ms;
   z-index: 1;
+  font-size: 1.5em;
+}
+.team-member-title {
+  display: block;
+  color: black;
+  padding: 0.5em;
+  line-height: 1.2;
+  transform: translateY(300%);
+  transition-delay: 100ms;
+  font-size: 0.75em;
 }
