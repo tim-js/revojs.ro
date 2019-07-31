@@ -6,8 +6,6 @@ import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 
-import revojs from "@assets/revo.js.svg";
-
 import "./blog.scss";
 
 export default function Blog({ data }) {
@@ -16,9 +14,7 @@ export default function Blog({ data }) {
   return (
     <Layout title="revo.js Blog">
       <Header centered className="blog-header">
-        <h1>
-          <img className="about-logo-text" src={revojs} alt="revo.js" /> Blog
-        </h1>
+        <h1>revo.js Blog</h1>
       </Header>
 
       <Section light>
