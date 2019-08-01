@@ -6,11 +6,9 @@ title: "Conference content accessibility"
 
 Conference accessibility refers to the series of actions taken to make an event inclusive of people with disabilities and involves 2 different parties: **organizers** and **speakers**.
 
-While organizers are the firsts in line to ensure inclusiveness, since conferences are mostly about the shared content, speakers are also responsible for delivering their talks following some simple rules for accessibility.
+While organizers are the firsts in line to ensure inclusiveness, since conferences are mostly about the shared content, speakers are also responsible for delivering their talks following some simple **guidelines for accessibility**:
 
-In this post we’ll focus on how speakers can make their presentations more accessible:
-
-1. [**Provide content warnings**](#provide-content-warnings) for flashing content, audio/video/animations, strong language or violent content.
+1. [**Provide content warnings**](#provide-content-warnings) for flashing content, audio/video/animations, strong language or disturbing content.
 2. [**Use large fonts**](#use-large-fonts) for all the content on slides, code editors and CLI tools.
 3. [**Use high contrast**](#use-high-contrast) in your slides, code editors and CLI tools.
 4. [**Use magnifying tools**](#use-magnifying-tools) for anything that you cannot control the size of, like operating system menus and buttons.
@@ -20,7 +18,7 @@ In this post we’ll focus on how speakers can make their presentations more acc
 
 We all have good intentions, especially when we want to present something in front of a crowd. But the content that we deliver might hurt some people from the audience, both physically and emotionally.
 
-That's why it helps a lot to **provide content warnings at the beginning of your talk** for various types of content:
+That's why it helps a lot to **provide content warnings at the beginning of your talk** for various types of content.
 
 ### Flashing content, animations or videos
 
@@ -55,9 +53,9 @@ You should display a warning such as:
 
 > This presentation contains strong language.
 
-### Violent content
+### Disturbing content
 
-Some people from your audience might be emotionally affected by certain types of content that could be considered violent, so this should be avoided.
+Some people from your audience might be emotionally affected by certain types of content that could be considered violent or upsetting, so this should be avoided.
 
 However, if this kind of content is required for your presentation, then please make sure to warn your audience about it, using a warning such as:
 
@@ -65,7 +63,7 @@ However, if this kind of content is required for your presentation, then please 
 
 ### Sexual content
 
-Sexual or sexist content should be **completely avoided**.
+Sexual or sexist content should be **completely avoided**. This should also be mentioned in the [Code of Conduct](/code-of-conduct).
 
 ## Use large fonts
 
@@ -94,7 +92,7 @@ Always remember that nobody will ever tell you that the font is too big.
 
 ## Use high contrast
 
-Some LED screens might have very bright colors, while an old projector might have low contrast. So, setting a good contrast from the very beginning will ensure your content is well displayed on any screen.
+Some LED screens might have very bright colors, while an old projector might have low contrast. So, setting a high contrast from the very beginning will ensure your content is well displayed on any screen.
 
 We suggest you stick as much as you can with **black and white**, unless you are aware of the different levels of [color blindness](https://en.wikipedia.org/wiki/Color_blindness) and you plan your presentation accordingly.
 
@@ -109,10 +107,7 @@ You may show content that cannot be zoomed in, such as:
 - operating system menus;
 - code editors or browser buttons, etc;
 
-For content that you cannot control in terms of size, you should use the accessibility magnifying tools from your operating system, to magnify the area that you want to present:
-
-- for Mac: https://mcmw.abilitynet.org.uk/macos-mojave-magnifying-screen;
-- for Windows: https://support.microsoft.com/en-us/help/11542/windows-use-magnifier-to-make-things-easier-to-see;
+For content that you cannot control in terms of size, you should use the **accessibility magnifying tools**, available on [**Mac**](https://mcmw.abilitynet.org.uk/macos-mojave-magnifying-screen) and [**Windows**](https://support.microsoft.com/en-us/help/11542/windows-use-magnifier-to-make-things-easier-to-see), to magnify the area that you want to present.
 
 ## Describe in words all visual content
 
@@ -140,11 +135,11 @@ Describing code is a bit more difficult, but not impossible.
 
 You might think: _"But what if my talk is very visual? How can a blind person experience what I'm presenting?"_. The answer is **imagination**.
 
-Think about reading a book. You get no visual content, only text. But if the text describes what you should imagine, then you just visualize it.
+Think about reading a book. You get no visual content, only text. But if the text describes well what you should imagine, then you just **visualize** it, without actually seeing it.
 
 ---
 
-Describing in words all your visual content has huge benefits:
+Describing in words all your visual content brings additional benefits:
 
 - **Detailed descriptions can be transformed into live captions** at the conference, so hearing impaired people can also benefit from them.
 - **Live captions can be used in transcripts** on the recorded videos, so everybody around the world can benefit from them as well.
