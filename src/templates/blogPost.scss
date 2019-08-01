@@ -64,6 +64,7 @@ blockquote {
   margin: 0;
   padding: 1em 3em;
   color: var(--text-light);
+  display: inline-block;
 
   @include breakpoint(sm) {
     font-size: 1.25em;
@@ -76,6 +77,7 @@ blockquote {
     margin-bottom: 0;
   }
 
+  &::after,
   &::before {
     content: '"';
     position: absolute;
@@ -85,6 +87,10 @@ blockquote {
     font-family: cursive;
     top: -0.25em;
     left: -0.125em;
+  }
+  &::after {
+    right: 0.25em;
+    left: auto;
   }
 }
 
