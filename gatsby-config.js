@@ -63,6 +63,9 @@ module.exports = {
               maintainCase: false,
               removeAccents: true
             }
+          },
+          {
+            resolve: "gatsby-remark-external-links"
           }
         ]
       }
