@@ -6,7 +6,7 @@ title: "Conference content accessibility"
 
 Conference accessibility refers to the series of actions taken to make an event inclusive of people with disabilities and involves 2 different parties: **organizers** and **speakers**.
 
-While organizers are the firsts in line to ensure inclusiveness, since conferences are mostly about the shared content, speakers are also responsible for delivering their talks following some simple **guidelines for accessibility**:
+While organizers are the first in line to ensure inclusiveness, since conferences are mostly about the shared content, speakers are also responsible for delivering their talks following some simple **guidelines for accessibility**:
 
 1. [**Provide content warnings**](#provide-content-warnings) for flashing content, audio/video/animations, strong language or disturbing content.
 2. [**Use large fonts**](#use-large-fonts) for all the content on slides, code editors and CLI tools.
@@ -33,7 +33,7 @@ Keep in mind that there might be people suffering from [Photosensitive Epilepsy]
 Seizures can also be triggered by various types of sounds in the case of persons suffering from [Musicogenic Epilepsy](https://epilepsyontario.org/musicogenic-seizures/) or [ADPEAF](https://ghr.nlm.nih.gov/condition/autosomal-dominant-partial-epilepsy-with-auditory-features). You should warn the audience if your presentation contains any of the following:
 
 - buzzing, humming or ringing sounds;
-- any type of music;
+- any type of music.
 
 ### Strong language
 
@@ -47,7 +47,7 @@ If you really want to stick with it, then please make sure you warn your audienc
 - swearing;
 - blasphemous language;
 - vulgar language;
-- anything else that could be considered offensive;
+- anything else that could be considered offensive.
 
 You should display a warning such as:
 
@@ -63,7 +63,7 @@ However, if this kind of content is required for your presentation, then please 
 
 ### Sexual content
 
-Sexual or sexist content should be **completely avoided**. This should also be mentioned in the [Code of Conduct](/code-of-conduct).
+Sexual or sexist content should be **completely avoided**. We also mentioned this in the [Code of Conduct](/code-of-conduct).
 
 ## Use large fonts
 
@@ -98,14 +98,14 @@ We suggest you stick as much as you can with **black and white**, unless you are
 
 Always use **dark colors on light backgrounds** or **light colors on dark backgrounds**. Try to avoid colored text on colored backgrounds.
 
-**NOTE**: code editors and CLI tools should also have high contrast color themes if you use them during your presentation.
+**NOTE**: code editors and CLI tools should also display high contrast color themes if you use them during your presentation.
 
 ## Use magnifying tools
 
 You may show content that cannot be zoomed in, such as:
 
 - operating system menus;
-- code editors or browser buttons, etc;
+- code editors or browser buttons, etc.
 
 For content that you cannot control in terms of size, you should use the **accessibility magnifying tools**, available on [**Mac**](https://mcmw.abilitynet.org.uk/macos-mojave-magnifying-screen) and [**Windows**](https://support.microsoft.com/en-us/help/11542/windows-use-magnifier-to-make-things-easier-to-see), to magnify the area that you want to present.
 
@@ -133,7 +133,7 @@ Describing code is a bit more difficult, but not impossible.
 
 ---
 
-You might think: _"But what if my talk is very visual? How can a blind person experience what I'm presenting?"_. The answer is **imagination**.
+You might think: _"But what if my talk is very visual? How can a visually impaired person experience what I'm presenting?"_. The answer is **imagination**.
 
 Think about reading a book. You get no visual content, only text. But if the text describes well what you should imagine, then you just **visualize** it, without actually seeing it.
 
@@ -148,7 +148,7 @@ Describing in words all your visual content brings additional benefits:
 
 Making conference content more accessible is not difficult. In fact, by adhering to simple guidelines for accessibility, you might even discover new dimensions to your presentation, which will be highly appreciated by people with:
 
-- low vision or blind;
+- visual impairment;
 - hearing impairment;
 - epilepsy;
 - dyslexia;
