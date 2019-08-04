@@ -14,7 +14,7 @@ While organizers are the first in line to ensure inclusiveness, since conference
 4. [**Use magnifying tools**](#use-magnifying-tools) for anything that you cannot control the size of, like operating system menus and buttons.
 5. [**Describe in words all visual content**](#describe-in-words-all-visual-content) to make it available for people that cannot see.
 
-## Provide content warnings
+## 1. Provide content warnings
 
 We all have good intentions, especially when we want to present something in front of a crowd. But the content that we deliver might hurt some people from the audience, both physically and emotionally.
 
@@ -49,7 +49,7 @@ If you really want to stick with it, then please make sure you warn your audienc
 - vulgar language;
 - anything else that could be considered offensive.
 
-You should display a warning such as:
+You should display and say that:
 
 > This presentation contains strong language.
 
@@ -65,7 +65,7 @@ However, if this kind of content is required for your presentation, then please 
 
 Sexual or sexist content should be **completely avoided**. We also mentioned this in the [Code of Conduct](/code-of-conduct).
 
-## Use large fonts
+## 2. Use large fonts
 
 This might seem obvious and you’d think it should go without saying. But remember how many times you told a fellow speaker to increase the font size because you couldn't see the text or the code in his/her presentation.
 
@@ -79,7 +79,7 @@ This applies to all the content that you display on the screen:
 The minimum recommended font size is:
 
 - **40pt** for slides;
-- **28pt** for code and CLI.
+- **30pt** for code and CLI.
 
 ---
 
@@ -90,7 +90,7 @@ Also to keep in mind:
 
 Always remember that nobody will ever tell you that the font is too big.
 
-## Use high contrast
+## 3. Use high contrast
 
 Some LED screens might have very bright colors, while an old projector might have low contrast. So, setting a high contrast from the very beginning will ensure your content is well displayed on any screen.
 
@@ -100,7 +100,7 @@ Always use **dark colors on light backgrounds** or **light colors on dark backgr
 
 **NOTE**: code editors and CLI tools should also display high contrast color themes if you use them during your presentation.
 
-## Use magnifying tools
+## 4. Use magnifying tools
 
 You may show content that cannot be zoomed in, such as:
 
@@ -109,7 +109,7 @@ You may show content that cannot be zoomed in, such as:
 
 For content that you cannot control in terms of size, you should use the **accessibility magnifying tools**, available on [**Mac**](https://mcmw.abilitynet.org.uk/macos-mojave-magnifying-screen) and [**Windows**](https://support.microsoft.com/en-us/help/11542/windows-use-magnifier-to-make-things-easier-to-see), to magnify the area that you want to present.
 
-## Describe in words all visual content
+## 5. Describe in words all visual content
 
 This is a **very important topic**. The basic idea is to explain in words all the visual content that you present.
 
