@@ -36,6 +36,12 @@
     "speakers": [{ "id": "laura-carvajal" }]
   },
   {
+    "id": "keynote2",
+    "talk": " Closing keynote",
+    "abstract": "Abstract coming soon",
+    "speakers": [{ "id": "kenneth-auchenberg" }]
+  },
+  {
     "id": "xxss",
     "talk": "XXSS: Exotic Cross-Site Scripting Vectors",
     "abstract": "<p>XSS is one of the most well known attacks on the web, perhaps second only to SQL Injection. While the general idea behind it is relatively simple, due to the colorfulness of the web and the quirks of the browsers, it has a surprising depth to it.</p> <p>In this talk we’ll journey deep down the rabbit hole of XSS attacks and take a look at all the weird ways malicious inputs may hurt our users, from the non-JS based injections (CSS, HTML, image) through mXSS, up to blind XSS.</p>",

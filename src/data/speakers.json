@@ -66,6 +66,17 @@
     "talkId": "keynote1"
   },
   {
+    "id": "kenneth-auchenberg",
+    "firstname": "Kenneth",
+    "lastname": "Auchenberg",
+    "bio": "<p>Kenneth works at Stripe building the next generation of developer experience(s) and tool(s) for the economic infrastructure of the internet 🌍💰🛠 Previously he worked on @code at Microsoft.</p> <p>He’s the co-founder of @coldfrontconf in Copenhagen, started the @remotedebug initiative, and is a Global Shaper for @wef. He lives in Seattle, USA, and blogs occasionally at <a href=\"https://kenneth.io/\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">kenneth.io</a>, and tweets as @auchenberg.</p>",
+    "image": "speakers/kenneth_auchenberg.jpg",
+    "twitter": "auchenberg",
+    "title": "Developer Experience",
+    "company": "Stripe",
+    "talkId": "keynote2"
+  },
+  {
     "id": "benedek-gagyi",
     "firstname": "Benedek",
     "lastname": "Gagyi",
