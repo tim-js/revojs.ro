@@ -13,8 +13,8 @@
   },
   {
     "id": "e2e",
-    "talk": "/* TBA */",
-    "abstract": "",
+    "talk": "Wait, before you write your next test...",
+    "abstract": "This presentation looks at the variety of ways we can test a typical web application. From unit tests to end-to-end, from functional to visual testing, from happy paths to the edge cases - there are a lot of solutions available, and each new technique gives us additional confidence in our application. This presentation will teach you how to guide test writing using code coverage, how to reach into the application code to test edge cases, and how to decide when to stub a network API request and when to let it go through.",
     "speakers": [{ "id": "gleb-bahmutov" }]
   },
   {
