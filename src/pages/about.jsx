@@ -28,7 +28,8 @@ export default () => {
             </p>
 
             <ul className="bullet">
-              <li>2 days, single track conference</li>
+              <li>2 full days</li>
+              <li>single track conference</li>
               <li>community driven, not-for-profit event</li>
               <li>16+ international speakers</li>
               <li>300 participants</li>
@@ -36,7 +37,7 @@ export default () => {
           </section>
           <p>
             When we talk about revo.js, we like to describe it in 3 short
-            sentences: <br />
+            phrases: <br />
             <strong>
               Technology focused. Community driven. JavaScript conference.
             </strong>
@@ -47,18 +48,18 @@ export default () => {
           </p>
           <hr />
           <p>
-            In the next paragraphs, we would like to motivate the above
+            In the following paragraphs, we would like to motivate the above
             descriptions by sharing with you:
           </p>
           <ol>
             <li>
-              <a href="#how-did-revojs-came-to-be">
-                How did revo.js came to be?
+              <a href="#how-did-revojs-come-to-be">
+                How did revo.js come to be?
               </a>
             </li>
             <li>
-              <a href="#why-do-we-organize-this-conference">
-                Why do we organize this conference?
+              <a href="#why-are-we-organizing-this-conference">
+                Why are we organizing this conference?
               </a>
             </li>
 
@@ -68,8 +69,8 @@ export default () => {
               </a>
             </li>
             <li>
-              <a href="#how-do-we-plan-to-cover-all-the-costs">
-                How do we plan to cover all the costs?
+              <a href="#how-do-we-plan-to-cover-the-costs">
+                How do we plan to cover the costs?
               </a>
             </li>
             <li>
@@ -83,16 +84,15 @@ export default () => {
               </a>
             </li>
             <li>
-              <a href="#where-does-revojs-come-from">
-                Where does revo.js come from?
-              </a>
+              <a href="#why-revojs">Why revo.js?</a>
             </li>
           </ol>
+
           <section>
-            <h2 id="how-did-revojs-came-to-be">How did revo.js came to be?</h2>
+            <h2 id="how-did-revojs-come-to-be">How did revo.js come to be?</h2>
 
             <p>
-              Since 2013 we've been organizing{" "}
+              Ever since 2013 we've been organizing{" "}
               <a
                 href="https://timjs.ro"
                 target="_blank"
@@ -101,9 +101,9 @@ export default () => {
                 tim.js
               </a>
               , a monthly JavaScript meetup in Timisoara. We've been tackling
-              with the idea of having a bigger event for more than 3 years, but
-              we knew that it takes a huge amount of effort to organize a
-              conference, and there was nobody to take the lead.
+              the idea of organizing a bigger event for more than 3 years now,
+              but we knew that it would take a huge amount of effort, and there
+              was nobody to take the lead.
             </p>
 
             <p>
@@ -111,13 +111,13 @@ export default () => {
               was a series of 3 factors:
             </p>
 
-            <ul>
+            <ol>
               <li>
-                we saw <strong>the need</strong> from our community members, who
-                were asking for such an event;
+                We recognized <strong>the need</strong> inside our community, as
+                more and more members kept asking for such an event.
               </li>
               <li>
-                we got <strong>the motivation</strong> from the organizers of{" "}
+                We were <strong>inspired by</strong> by the{" "}
                 <a
                   href="https://jsheroes.io/"
                   target="_blank"
@@ -125,11 +125,10 @@ export default () => {
                 >
                   JSHeroes
                 </a>{" "}
-                and their attitude towards open-source conferences;
+                organizers and their attitude towards open-source conferences;
               </li>
               <li>
-                we've received <strong>a helping hand</strong> from our friends
-                from{" "}
+                We received <strong>a helping hand</strong> from our friends at{" "}
                 <a
                   href="https://banatit.ro/"
                   target="_blank"
@@ -137,29 +136,33 @@ export default () => {
                 >
                   BanatIT
                 </a>
-                , which have a lot of experience in organizing various tech
-                events;
+                , who have a lot of experience in organizing various tech
+                events.
               </li>
-            </ul>
+            </ol>
 
             <hr />
 
             <p>
               We all wanted a local JavaScript conference, so instead of just
-              waiting for somebody to organize it, we said that maybe it's up to
-              us to do it.
+              waiting for somebody to organize it, took the matter in our own
+              hands.
             </p>
           </section>
+
           <section>
-            <h2 id="why-do-we-organize-this-conference">
-              Why do we organize this conference?
+            <h2 id="why-are-we-organizing-this-conference">
+              Why are we organizing this conference?
             </h2>
 
-            <p>You might be thinking:</p>
-            <blockquote>Aren't there enough JavaScript conferences?</blockquote>
+            <p>You might ask yourselves:</p>
+            <blockquote>
+              Aren't there enough JavaScript conferences out there?
+            </blockquote>
 
             <p>
-              If you look it up, there are between 1 and 5{" "}
+              According to <strong>confs.tech</strong>, there are between 1 and
+              5{" "}
               <a
                 href="https://confs.tech/javascript"
                 target="_blank"
@@ -167,19 +170,26 @@ export default () => {
               >
                 JavaScript conferences
               </a>{" "}
-              in the world every single week. So, globally speaking, the simple
-              answer is <strong>No</strong>. There isn't a need for another
-              JavaScript conference.
+              in the world every single week. So, from a global point of view,
+              the answer is{" "}
+              <strong>
+                <em>
+                  "No, there is no need for yet another JavaScript conference"
+                </em>
+              </strong>
+              .
             </p>
             <p>
-              But in the <strong>local community</strong> the need is huge. Not
-              many developers afford to attend conferences in other countries.
+              But the <strong>local community</strong> is in great need of this.
+              Not many developers can afford to attend conferences in other
+              countries.
             </p>
             <p>
               So why not bring the speakers here in Timisoara, instead? This
               way, many more people can benefit and attend the event.
             </p>
           </section>
+
           <section>
             <h2 id="what-topics-are-we-interested-in">
               What topics are we interested in?
@@ -199,7 +209,7 @@ export default () => {
               </li>
               <li>
                 <strong>Frameworks &amp; Libraries</strong> or any utilities
-                that help you during development;
+                that may help during development;
               </li>
               <li>
                 <strong>Graphics</strong>: CSS, Animations, 2D &amp; 3D, SVG,
@@ -221,74 +231,82 @@ export default () => {
               </li>
             </ul>
             <p>
-              We intend not to have more than 2 talks from the same topic
-              category.
+              We intend o have a maximum of 2 talks in the same topic category.
             </p>
             <hr />
             <p>
-              We also plan to touch on other non-technical topics, if they are
-              at least tangential to JavaScript, such as:
+              We also plan on tackling some non-technical topics, if they are at
+              least tangential to JavaScript, such as:
             </p>
             <ul>
               <li>open source, communities; </li>
               <li>development culture, soft skills; </li>
-              <li>teaching, learning, etc;</li>
+              <li>teaching, learning, etc.</li>
             </ul>
             <p>
-              However, these topics would not cover more than 20% of the talks.
+              However, these topics will not cover more than 20% of the talks.
             </p>
             <hr />
 
             <p>
               Generally speaking, we are not looking for topics regarding
               management, leadership or general software development not related
-              to JavaScript, Front-end or UI development. It would spread our
-              scope too much, plus there are plenty other events dedicated to
-              these topics.
+              to JavaScript, Front-end or UI development. It would dilute our
+              scope and we believe there are other events that do a better job
+              at specifically tackling these areas.
             </p>
           </section>
           <section>
-            <h2 id="how-do-we-plan-to-cover-all-the-costs">
-              How do we plan to cover all the costs?
+            <h2 id="how-do-we-plan-to-cover-the-costs">
+              How do we plan to cover the costs?
             </h2>
-
             <p>
-              revo.js is also a <strong>Community driven</strong> event. What
-              does this mean and how is this different from other types of
+              revo.js is a <strong>community driven</strong> event. What does
+              this mean and how does this make it different from other types of
               conferences?
             </p>
             <ul>
               <li>
-                we are not looking to make a profit, so the ticket prices are
-                low;
+                We are not looking to make a profit, so the tickets' prices are
+                low.
               </li>
               <li>
-                we put a lot of effort into it because our only purpose is to
-                make a great event for everybody, <strong>attendees</strong>,{" "}
-                <strong>speakers</strong>, <strong>sponsors</strong> and{" "}
-                <strong>partners</strong>;
+                We put a lot of effort into it because our only purpose is to
+                serve the entire community and deliver a great event for
+                everybody: <strong>attendees</strong>, <strong>speakers</strong>
+                , <strong>sponsors</strong> and <strong>partners</strong>.
               </li>
             </ul>
-
-            <hr />
+            <h3>Let's talk money</h3>
             <p>
               Our initial estimated budget was 60K EUR. We expected to raise 40K
-              from sponsors and 20K from tickets. In case we would make a profit
-              after the event, there are so many things to do with the extra
-              money:
+              from sponsors and 20K from selling tickets.
+            </p>
+            <p>
+              In case we will make a profit out of the event, we will redirect
+              it in causes that will benefit the entire community. Some examples
+              are:
             </p>
             <ul>
               <li>
-                donate part of it for various causes: open source, diversity
-                support, or anybody who could use money more than we do;
+                <strong>donate part of it to various causes</strong>: open
+                source, diversity support, or anybody who could use money more
+                than we do;
               </li>
               <li>
-                make the local JavaScript meetup even better, by bringing
-                speakers from outside Timisoara;
+                <strong>make the local JavaScript meetup even better</strong>,
+                by bringing speakers from outside Timisoara;
               </li>
               <li>invest it into a future edition.</li>
             </ul>
+            <p>
+              We want to be as transparent as possible and thus we'll keep you
+              updated in case the conference makes a profit. At that given
+              moment, we'll tell you more about the exact causes the extra money
+              will be used for.
+            </p>
           </section>
+
           <section>
             <h2 id="what-type-of-talks-and-speakers-are-we-looking-for">
               What type of talks and speakers are we looking for?
@@ -297,41 +315,45 @@ export default () => {
               revo.js is <strong>Technology focused</strong> so you should
               expect the vast majority of talks to be technical. They should
               either <strong>teach</strong>, <strong>inspire</strong> and/or{" "}
-              <strong>entertain</strong>. If all 3 apply, then that's the ideal
-              talk.
+              <strong>entertain</strong>. The ideal talk is a combination of all
+              3.
             </p>
+
             <section>
               <h3>Teach</h3>
               <p>
                 We all want to learn something new when we attend a conference,
-                weather it's:
+                whether it's:
               </p>
               <ul>
                 <li>a fundamental language feature; </li>
-                <li>an exotic utility library; </li>
+                <li>a new standard API; </li>
                 <li>how a particular concept works; </li>
+                <li>a new library that you've worked on;</li>
+                <li>valuable tips &amp; tricks;</li>
+                <li>actionable pieces of advice;</li>
                 <li>
-                  a new library that you've worked on and the problems that it
-                  solves;
-                </li>
-                <li>
-                  something that I can apply on my project the very next day.
+                  something we can apply to our projects the very next day.
                 </li>
               </ul>
             </section>
+
             <section>
               <h3>Inspire</h3>
               <p>
-                We all want to be inspired and motivated in many different ways,
+                From time to time, we all need some inspiration and motivation,
                 such as:
               </p>
               <ul>
                 <li>
-                  presenting a new perspective or a mind shift that you never
-                  thought before;{" "}
+                  getting a new perspective or a mind shift that we never
+                  considered before;
                 </li>
-                <li>out-of-the-box applications using everyday tools; </li>
-                <li>creative usage of web technologies;</li>
+                <li>
+                  finding out about out-of-the-box applications using everyday
+                  tools;
+                </li>
+                <li>witnessing creative usage of web technologies.</li>
               </ul>
             </section>
             <section>
@@ -339,86 +361,96 @@ export default () => {
               <p>
                 We all want to have a good time, smile or even laugh our heads
                 off, so any talk that can mix usefulness with entertainment,
-                will have a priority.
+                will be prioritized.
               </p>
             </section>
+
             <hr />
+
             <p>
-              The types of <strong>speakers</strong> you should expect vary
-              from:
+              The <strong>types of speakers</strong> you should expect to see on
+              stage vary from:
             </p>
             <ul>
-              <li>
-                people with vast experience in the topic they will talk about;{" "}
-              </li>
-              <li>developers passionate about a specific topic; </li>
+              <li>people with vast experience in certain areas;</li>
+              <li>developers passionate about specific topics; </li>
               <li>open source maintainers; </li>
               <li>advocates for various technologies and tools;</li>{" "}
-              <li>entertaining speakers.</li>
+              <li>technical speakers with a sense of humor.</li>
             </ul>
+
             <hr />
+
             <p>
               Another important aspect is the <strong>delivery</strong>, so
-              speakers are expected to have prior stage experience. This doesn't
-              mean you have to have attended all the big conferences around the
-              world. You could record yourself at work or even in your own
-              apartment.
+              speakers are expected to have prior stage experience or at least a
+              lot of confidence.
             </p>
-            <p>We are looking for speakers that are either:</p>
+            <p>
+              This doesn't mean that we selected only speakers who have attended
+              international conferences. We accepted various types of speakers
+              and even speakers who have recorded themselves at home in order to
+              show us their delivery skills.
+            </p>
+            <p>We looked for speakers that are:</p>
             <ul>
               <li>comfortable in front of a crowd;</li>
               <li>coherent;</li>
-              <li>funny;</li>
+              <li>funny.</li>
             </ul>
 
             <hr />
 
             <p>
-              What we try to <strong>avoid</strong>?
+              What are we trying to <strong>avoid</strong>?
             </p>
             <ul>
               <li>
                 <em>"Intro to framework/library X"</em> type of talks. They are
-                more suited for meetups and we plan to have workshops that would
-                cover such content;
+                more suitable for meetups and we plan on having workshops that
+                will cover such content.
               </li>
               <li>
                 Subjects that have been presented many times before at other
-                conferences;
+                conferences.
               </li>
               <li>
-                Highly focused topics on a very particular problem that very few
-                attendees might benefit from.
+                Topics that are highly focused on a very particular problem,
+                that very few attendees might benefit from.
               </li>
             </ul>
           </section>
+
           <section>
-            <h2 id="what-does-the-tagline-meanZ">
-              What does the tagline mean?
-            </h2>
+            <h2 id="what-does-the-tagline-mean">What does the tagline mean?</h2>
             <p>
-              JavaScript is currently during its teenage, so it's very unstable,
-              dynamic and energetic. That's not gonna change any time soon.
+              JavaScript is currently during its teenage years, so it's very
+              unstable, dynamic and energetic. That's not going to change any
+              time soon.
             </p>
             <p>
-              So, instead of complaining about this, let's accept the fact that{" "}
+              So, instead of being constantly frustrated because of this, we
+              should all accept the fact that{" "}
               <strong>
                 things will <em>change</em>
               </strong>
-              . Resistance is futile and we cannot fight its nature.
+              . Resistance is futile.
             </p>
             <hr />
             <p>
-              Also, <strong>change</strong> is benefic. We, as developers, are
-              constantly changing. Whenever you talk to a new colleague, learn a
-              new language, framework or technology, you change bit by bit.
-              Every project you work on and every team you work with will change
-              the way you think, behave and write code.
+              Also, <strong>change</strong> is beneficial. We, as developers,
+              are constantly changing. Whenever we talk to a new colleague or
+              learn a new language/framework/technology, we change bit by bit.
+              Every project we work on and every team we work with will change
+              the way we think, behave and write code.
             </p>
             <p>
-              It's only because of "change" that we got here today, where we
-              don't use goto statements anymore and build mobile apps using
-              JavaScript.
+              It's only because of <em>change</em> that we got here today, not
+              using{" "}
+              <strong>
+                <code>GOTO</code>
+              </strong>{" "}
+              statements anymore and building mobile apps using JavaScript.
             </p>
             <hr />
             <blockquote>
@@ -426,14 +458,14 @@ export default () => {
               And it's the only <strong>const</strong>.
             </blockquote>
           </section>
+
           <section>
-            <h2 id="where-does-revojs-come-from">
-              Where does revo.js come from?
-            </h2>
+            <h2 id="why-revojs">Why revo.js?</h2>
             <p>
               As you might have guessed, revo.js is short for{" "}
               <strong>JavaScript Revolution</strong>.
             </p>
+
             <section>
               <h3>Why "Revolution"?</h3>{" "}
               <p>
@@ -443,13 +475,14 @@ export default () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Romanian Communism Revolution
+                  the 1989 Romanian Revolution started
                 </a>{" "}
-                started. It's something that we're proud of and would like to
+                started. It's something that we're proud of and makes us
                 identify ourselves with the concept of{" "}
                 <strong>changing something bad into something good</strong>.
               </p>
             </section>
+
             <section>
               <h3>Ok, but why "revo"?</h3>
               <p>
@@ -457,28 +490,30 @@ export default () => {
                 pronouncing only the first 2 syllables. For instance "Timi",
                 instead of Timisoara.
               </p>
-              <section>
-                <h3>So, what are you planning to revolutionize?</h3>
-              </section>
+            </section>
+
+            <section>
+              <h3>So, what are we planning to revolutionize?</h3>
               <p>
-                Actually not too much. We believe that all revolutions start
-                small and very isolated. But if their cause is just, they will
-                naturally expand and grow.
+                We'll take things one step at a time. We believe that all
+                revolutions start small and are very isolated in the beginning.
+                But if their cause is just, they will naturally expand and grow.
               </p>
               <p>
-                This first edition is mostly an experiment for us, to understand
-                what it takes to organize such an event. We have experience
-                attending conferences both as participants and as speakers, so
-                we try to create an eclectic event by taking all the good things
-                from other conferences and avoid the things that should be
-                avoided.
+                This first edition is mostly an experiment for us, as we’re
+                trying to understand what it takes to organize such an event. We
+                have experience attending conferences both as participants and
+                as speakers, so we're trying to create an eclectic event by
+                implementing the good things we came across and avoiding the not
+                so good things.
               </p>
               <p>
-                However, we put a lot of focus on{" "}
+                We also focused a lot on{" "}
                 <Link to="/blog/conference-content-accessibility">
                   <strong>accessibility</strong>
                 </Link>{" "}
-                mainly because Romania lacks of it and we need to change that.
+                mainly because Romania still has a long way to go when it comes
+                to it.
               </p>
             </section>
           </section>
