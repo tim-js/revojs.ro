@@ -13,49 +13,53 @@ import "./tickets.scss";
 
 export default () => {
   // const INDEX_START_EARLY = 3;
-  const INDEX_START_REGULAR = 5;
-  const INDEX_START_LATE = 8;
+  // const INDEX_START_REGULAR = 5;
+  // const INDEX_START_LATE = 8;
 
-  const now = new Date();
-  const currentMonth = Math.max(now.getMonth(), INDEX_START_REGULAR);
+  // const now = new Date();
+  // const currentMonth = Math.max(now.getMonth(), INDEX_START_REGULAR);
 
-  const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct"
-  ];
+  // const months = [
+  //   "Jan",
+  //   "Feb",
+  //   "Mar",
+  //   "Apr",
+  //   "May",
+  //   "Jun",
+  //   "Jul",
+  //   "Aug",
+  //   "Sep",
+  //   "Oct"
+  // ];
 
-  let countEarly = 0;
-  let countRegular = 0;
-  let countLate = 0;
+  // let countEarly = 0;
+  // let countRegular = 0;
+  // let countLate = 0;
 
-  months.forEach(function(m, index) {
-    if (index < currentMonth) {
-      return;
-    }
-    if (index < INDEX_START_REGULAR) {
-      countEarly++;
-    } else if (index >= INDEX_START_LATE) {
-      countLate++;
-    } else {
-      countRegular++;
-    }
-  });
+  // months.forEach(function(m, index) {
+  //   if (index < currentMonth) {
+  //     return;
+  //   }
+  //   if (index < INDEX_START_REGULAR) {
+  //     countEarly++;
+  //   } else if (index >= INDEX_START_LATE) {
+  //     countLate++;
+  //   } else {
+  //     countRegular++;
+  //   }
+  // });
 
   return (
     <Layout title="revo.js Tickets">
       <Header type="main" image="tickets-image">
         <h1>Tickets</h1>
         <br />
+        <strong className="tickets-important light-faded mono">
+          Regular Tickets available until{" "}
+          <span className="highlight">31st of August</span>
+        </strong>
         <br />
-        <div className="mono tag-wrapper">
+        {/* <div className="mono tag-wrapper">
           {!!countEarly && (
             <strong style={{ flex: countEarly }} className="tag-early">
               Early Bird
@@ -96,7 +100,7 @@ export default () => {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
 
         <br />
         <PurchaseTicket />
