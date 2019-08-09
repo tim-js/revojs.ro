@@ -60,7 +60,7 @@ const Speakers = ({ data }) => {
             Meet our international crew of change.
           </span>
           <br />
-          <span>14 speakers from 11 countries.</span>
+          <span>{speakers.length} speakers from 11 countries.</span>
         </strong>
       </Header>
 
