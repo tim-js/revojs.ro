@@ -11,6 +11,7 @@ const Speakers = ({ data }) => {
   const { allSpeakersJson, speakerImages } = data;
   const speakers = allSpeakersJson.edges
     .map(e => e.node)
+    .filter(speaker => speaker.talkId)
     .map(speaker => {
       const speakerImage = getImage(speaker.image);
 
@@ -74,6 +75,7 @@ export default props => {
                 image
                 title
                 company
+                talkId
               }
             }
           }
