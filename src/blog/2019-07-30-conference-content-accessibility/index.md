@@ -8,11 +8,11 @@ Conference accessibility refers to the series of actions taken to make an event 
 
 While organizers are the first in line to ensure inclusiveness, since conferences are mostly about the shared content, speakers are also responsible for delivering their talks following some simple **guidelines for accessibility**:
 
-1. [**Provide content warnings**](#provide-content-warnings) for flashing content, audio/video/animations, strong language or disturbing content.
-2. [**Use large fonts**](#use-large-fonts) for all the content on slides, code editors and CLI tools.
-3. [**Use high contrast**](#use-high-contrast) in your slides, code editors and CLI tools.
-4. [**Use magnifying tools**](#use-magnifying-tools) for anything that you cannot control the size of, like operating system menus and buttons.
-5. [**Describe in words all visual content**](#describe-in-words-all-visual-content) to make it available for people that cannot see.
+1. [**Provide content warnings**](#1-provide-content-warnings) for flashing content, audio/video/animations, strong language or disturbing content.
+2. [**Use large fonts**](#2-use-large-fonts) for all the content on slides, code editors and CLI tools.
+3. [**Use high contrast**](#3-use-high-contrast) in your slides, code editors and CLI tools.
+4. [**Use magnifying tools**](#4-use-magnifying-tools) for anything that you cannot control the size of, like operating system menus and buttons.
+5. [**Describe in words all visual content**](#5-describe-in-words-all-visual-content) to make it available for people that cannot see.
 
 ## 1. Provide content warnings
 
