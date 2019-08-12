@@ -13,5 +13,10 @@ export const partners = [
     name: "Auth0",
     image: "partners/Auth0_logo.svg",
     url: "https://auth0.com/"
+  },
+  {
+    name: "DevPlant",
+    image: "partners/DevPlant_logo.svg",
+    url: "https://devplant.ro/"
   }
 ];
