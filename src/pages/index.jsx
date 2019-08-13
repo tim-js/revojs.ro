@@ -46,7 +46,7 @@ export default props => {
             <time className="index-date mono" dateTime="2019-10-03">
               <strong>October.3-4.2019</strong>
             </time>
-            <strong className="index-location mono">Timisoara_RO</strong>
+            <strong className="index-location mono">Timisoara/RO</strong>
           </div>
         </div>
 
