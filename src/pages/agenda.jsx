@@ -112,6 +112,10 @@ const Agenda = ({ data }) => {
           <p className="cta-text">Don't miss out to see these great talks</p>
           <PurchaseTicket label="Grab your conference ticket" white />
         </div>
+
+        <p className="agenda-note">
+          <strong>NOTE:</strong> minor changes to the agenda might occur
+        </p>
       </Section>
     </Layout>
   );
