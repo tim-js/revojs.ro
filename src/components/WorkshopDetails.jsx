@@ -49,10 +49,13 @@ export default props => {
 
         <dl className="workshop-info">
           <dt>
-            <strong>When and Where?</strong>
+            <strong>When?</strong>
+          </dt>
+          <dd>9:00 - 17:00, Wednesday, 2nd of October</dd>
+          <dt>
+            <strong>Where?</strong>
           </dt>
           <dd>
-            9AM to 5PM,{" "}
             <OutboundLink href="https://devplant.ro/" target="_blank">
               DevPlant
             </OutboundLink>
