@@ -31,8 +31,10 @@
   background-position: center top;
   background-repeat: no-repeat;
 
+  box-shadow: 0 20px 30px rgba(255, 255, 255, 1);
+
   @include breakpoint(sm) {
-    box-shadow: 0 50px 30px rgba(255, 255, 255, 1);
+    box-shadow: 0 30px 30px rgba(255, 255, 255, 1);
     background-image: linear-gradient(
       to bottom,
       var(--background-dark) 32px,
@@ -43,6 +45,7 @@
   @include breakpoint(md) {
     height: 64px;
     padding-top: 32px;
+    box-shadow: 0 50px 30px rgba(255, 255, 255, 1);
     background-image: url("/agenda_pixels_left.svg"),
       url("/agenda_pixels_right.svg"),
       linear-gradient(to bottom, var(--background-dark) 64px, white 64px);
