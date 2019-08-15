@@ -57,9 +57,12 @@
 .agenda-nav {
   display: flex;
 
-  max-width: 500px;
   margin: 0 auto;
   // font-size: 2rem;
+
+  @include breakpoint(sm) {
+    max-width: 500px;
+  }
 
   a {
     flex: 1;
