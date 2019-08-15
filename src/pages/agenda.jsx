@@ -253,8 +253,7 @@ function DayHeader({ data }) {
   return (
     <header className="agenda-day-header">
       <h2 className="agenda-day-date">
-        {day},
-        <br /> {date}
+        <span className="agenda-day-weekday">{day},</span> {date}
       </h2>
       <span className="agenda-day-title">{title}</span>
     </header>

@@ -112,14 +112,25 @@
 }
 
 .agenda-day-header {
-  border-top: 1px #eee solid;
-  padding-right: 10rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include breakpoint(md) {
+    border-top: 1px #eee solid;
+    padding-right: 10rem;
+  }
 }
 .agenda-day-title {
-  margin-top: 1em;
   display: block;
   color: var(--text-light);
+  @include breakpoint(md) {
+    margin-top: 1em;
+  }
+}
+.agenda-day-weekday {
+  @include breakpoint(md) {
+    display: block;
+  }
 }
 
 .agenda-slots {
@@ -169,6 +180,9 @@
 .agenda-slot-content {
   @include breakpoint(sm) {
     padding-left: 10rem;
+  }
+  @include breakpoint(sm, max) {
+    padding-top: 0.5em;
   }
 }
 
