@@ -12,7 +12,7 @@ export const sponsors = [
   },
   {
     name: "Busy Machines",
-    image: "sponsors/busy_machines_logo.png",
+    image: "sponsors/busy_machines_logo.svg",
     url: "https://www.busymachines.com/"
   },
   {
@@ -69,5 +69,10 @@ export const sponsors = [
     name: "Cognizant Softvision",
     image: "sponsors/Cognizant_Softvision_logo.svg",
     url: "https://www.cognizantsoftvision.com/"
+  },
+  {
+    name: "Ness",
+    image: "sponsors/ness_logo.svg",
+    url: "https://www.ness.ro/"
   }
 ];
