@@ -9,7 +9,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 // import Note from "@components/Note";
 // import Button from "@components/Button";
-import { PurchaseTicket } from "@components/CTA";
+import { PurchaseTicket, WorkshopTicket } from "@components/CTA";
 
 import { day0, day1, day2 } from "@data/agenda";
 
@@ -90,6 +90,12 @@ const Agenda = ({ data }) => {
         <section id="workshop-day" className="agenda-content">
           <WorkshopDay data={day0} />
         </section>
+        <div style={{ textAlign: "center" }}>
+          <br />
+          <br />
+          <br />
+          <WorkshopTicket label="Grab your workshop ticket" white />
+        </div>
 
         <section id="conference-day1" className="agenda-content">
           <ConferenceDay data={day1} />
@@ -99,14 +105,17 @@ const Agenda = ({ data }) => {
           <ConferenceDay data={day2} />
         </section>
 
-        <br />
-        <br />
-        <br />
-
         <div style={{ textAlign: "center" }}>
+          <br />
+          <br />
+          <br />
           <p className="cta-text">Don't miss out to see these great talks</p>
-          <PurchaseTicket white />
+          <PurchaseTicket label="Grab your conference ticket" white />
         </div>
+
+        <p className="agenda-note">
+          <strong>NOTE:</strong> minor changes to the agenda might occur
+        </p>
       </Section>
     </Layout>
   );
@@ -244,8 +253,7 @@ function DayHeader({ data }) {
   return (
     <header className="agenda-day-header">
       <h2 className="agenda-day-date">
-        {day},
-        <br /> {date}
+        <span className="agenda-day-weekday">{day},</span> {date}
       </h2>
       <span className="agenda-day-title">{title}</span>
     </header>

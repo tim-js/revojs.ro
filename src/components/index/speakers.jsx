@@ -45,17 +45,20 @@ const Speakers = ({ data }) => {
         <strong className="highlight">Stay Tuned</strong>
       </p> */}
 
-      <div style={{ textAlign: "center", marginTop: "5em" }}>
+      <div
+        className="index-speakers-more"
+        style={{ textAlign: "center", marginTop: "5em" }}
+      >
         <Link to="/speakers">
           <Button>Meet all the speakers</Button>
         </Link>
-      </div>
 
-      <div style={{ paddingTop: "96px" }} id="subscribe">
-        <p style={{ textAlign: "center" }}>
-          Subscribe to stay on top the latest changes and revo.news:
-        </p>
-        <Subscribe centered />
+        <div style={{ paddingTop: "96px" }} id="subscribe">
+          <p style={{ textAlign: "center" }}>
+            Subscribe to stay on top the latest changes and revo.news:
+          </p>
+          <Subscribe centered />
+        </div>
       </div>
     </section>
   );
