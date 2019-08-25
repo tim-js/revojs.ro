@@ -37,8 +37,8 @@
   },
   {
     "id": "keynote2",
-    "talk": " Closing keynote",
-    "abstract": "Abstract coming soon",
+    "talk": "DevTools for the decade to come",
+    "abstract": "The ML revolution is here, and will have a profound impact on the way we develop software, but what does all of this ML buzz mean for front-end and web developers? In this talk I’ll share my perspective on the revolution that’s in front of us, and what it will mean for us as developers, and the developer tools for the decade to come. Buckle up!",
     "speakers": [{ "id": "kenneth-auchenberg" }]
   },
   {
