@@ -30,7 +30,7 @@
     "twitter": "bahmutov",
     "title": "VP of Engineering",
     "company": "Cypress.io",
-    "talkId": "e2e"
+    "talkId": "testing"
   },
   {
     "id": "raluca-nicola",
@@ -141,6 +141,28 @@
     "title": "JavaScript Developer",
     "company": "Bitovi",
     "talkId": "pa11y"
+  },
+  {
+    "id": "mathieu-henri",
+    "firstname": "Mathieu",
+    "lastname": "Henri",
+    "bio": "At Microsoft, Mathieu works on the Profile card in Office and Office 365, specializing in cross platform automation. Previously he worked 11 years on the Opera browsers. In his spare time, he makes tiny demos in JavaScript and Pico-8 and runs a Code Club with Elementary school children.",
+    "image": "speakers/mathieu_henri.png",
+    "twitter": "p01",
+    "title": "Senior Software Development Engineer",
+    "company": "Microsoft",
+    "talkId": "e2e"
+  },
+  {
+    "id": "csaba-patkos",
+    "firstname": "Csaba",
+    "lastname": "Patkós",
+    "bio": "I am code craftsman passionate about code design, architecture, and clean code. I amusing new ideas and latest industry trends in my everyday job. My aim is to make code better, easier to understand, and maintainable for years, not just code and ship.",
+    "image": "speakers/csaba_patkos.png",
+    "twitter": "PatkosCsaba",
+    "title": "Technical Team Lead",
+    "company": "Syneto",
+    "talkId": "clean"
   },
   {
     "id": "kwinten-pisman",

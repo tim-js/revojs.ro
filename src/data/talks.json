@@ -12,7 +12,7 @@
     "speakers": [{ "id": "boyan-mihaylov" }]
   },
   {
-    "id": "e2e",
+    "id": "testing",
     "talk": "Wait, before you write your next test...",
     "abstract": "This presentation looks at the variety of ways we can test a typical web application. From unit tests to end-to-end, from functional to visual testing, from happy paths to the edge cases - there are a lot of solutions available, and each new technique gives us additional confidence in our application. This presentation will teach you how to guide test writing using code coverage, how to reach into the application code to test edge cases, and how to decide when to stub a network API request and when to let it go through.",
     "speakers": [{ "id": "gleb-bahmutov" }]
@@ -82,5 +82,17 @@
     "talk": "Hacking the Angular compiler with your own syntax",
     "abstract": "<p>In this duo-talk, Kwinten Pisman and Dominic Elm are going to take us on a deep dive into how Angular transforms components into DOM elements.</p> <p>We will see how we hooked into this process to be able to teach our own template syntax to Angular so we can make our own code more concise and start using some features/APIs we've always wanted.</p> <p>Attendees will walk away with a deep understanding of the Angular compiler and learn an (experimental) way to hack their own syntax into it!</p>",
     "speakers": [{ "id": "kwinten-pisman" }, { "id": "dominic-elm" }]
+  },
+  {
+    "id": "e2e",
+    "talk": "End to end testing a world of web, mobile & desktop apps",
+    "abstract": "<p>Things get complicated when you target multiple platforms and large parts of your code powers components used on Android, iOS, Mac, Win32 and the web from IE11 and up.</p> <p>This is the testing journey of the Profile card serving +100M people in Outlook and Office 365: How we style, test and monitor our components for any hiccups. And boy do they misbehave at times!</p> <p>Starting with one browser and some open source libraries, we improved the status quo and set a framework that scales our end to end testing across browsers and native applications</p>",
+    "speakers": [{ "id": "mathieu-henri" }]
+  },
+  {
+    "id": "clean",
+    "talk": "Clean Architecture with TypeScript",
+    "abstract": "<p>Imagine all those great design and architecture ideas people are talking about lately. Clean Architecture, Clean Code, Automated Testing, etc. But they are all in Java or C# context. What about using them in JS or TypeScript? Well, I was working on a NodeJS/TypeScript project lately, and I found many of the Clean Architecture ideas to apply just fine. Let me show you how.</p>",
+    "speakers": [{ "id": "csaba-patkos" }]
   }
 ]
