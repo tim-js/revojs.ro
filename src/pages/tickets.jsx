@@ -56,7 +56,7 @@ export default () => {
         <br />
         <strong className="tickets-important light-faded mono">
           Regular Tickets available until{" "}
-          <span className="highlight">31st of August</span>
+          <span className="highlight">August 31st</span>
         </strong>
         <br />
         {/* <div className="mono tag-wrapper">
