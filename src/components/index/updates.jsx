@@ -23,10 +23,10 @@ export default () => {
         <li>
           <Link to="/tickets/">
             <strong className="update-title mono">
-              Regular Tickets On Sale
+              Last Chance at Regular Tickets
             </strong>
             <p className="update-content light-faded">
-              The 50 Early Birds flew away. Regular tickets are now available.
+              Hurry up and grab your Regular Ticket until the 31st of August. Change waits for no one.
             </p>
           </Link>
         </li>
