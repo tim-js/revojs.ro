@@ -48,7 +48,7 @@ export const day2 = {
     { time: "10:00", talkId: "auth" },
     { time: "10:45", description: "Coffee Break" },
     { time: "11:15", talkId: "xxss" },
-    { time: "11:45", talkId: "e2e" },
+    { time: "11:45", talkId: "testing" },
     { time: "12:30", description: "Lunch Break" },
     { time: "13:30", talkId: "pa11y" },
     { time: "14:00", talkId: "clean" },
