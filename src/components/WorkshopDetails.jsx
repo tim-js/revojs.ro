@@ -78,7 +78,7 @@ export default props => {
         </dl>
 
         <div className="workshop-purchase-button">
-          <WorkshopTicket label="Book your workshop spot" white />
+          <WorkshopTicket label="Sold Out" white />
         </div>
 
         <section>
@@ -148,7 +148,7 @@ export default props => {
         <br />
         <br />
 
-        <WorkshopTicket label="Book your workshop spot" white />
+        <WorkshopTicket label="Sold Out" white />
         <br />
         <br />
         <p>

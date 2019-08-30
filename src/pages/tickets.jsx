@@ -129,14 +129,14 @@ export default () => {
               </li>
               <li>
                 <strong>Regular Tickets</strong>: until 31st of August{" "}
-                <strong className="highlight">(ON SALE NOW)</strong>
+                <strong className="highlight">(ENDS SOON)</strong>
               </li>
               <li>
                 <strong>Late Bird Tickets</strong>: until 30th of September
               </li>
-              <li>
+              <li className="light-faded">
                 <strong>Workshop Tickets</strong>: until 27th of September{" "}
-                <strong className="highlight">(ON SALE NOW)</strong>
+                <strong>(SOLD OUT)</strong>
               </li>
             </ul>
           </section>

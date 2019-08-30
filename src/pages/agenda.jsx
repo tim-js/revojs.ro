@@ -90,12 +90,6 @@ const Agenda = ({ data }) => {
         <section id="workshop-day" className="agenda-content">
           <WorkshopDay data={day0} />
         </section>
-        <div style={{ textAlign: "center" }}>
-          <br />
-          <br />
-          <br />
-          <WorkshopTicket label="Grab your workshop ticket" white />
-        </div>
 
         <section id="conference-day1" className="agenda-content">
           <ConferenceDay data={day1} />

@@ -13,10 +13,9 @@ export default () => {
       <ul className="updates-list">
         <li>
           <Link to="/workshop/#efficient-end-2-end-testing-with-cypress-io">
-            <strong className="update-title mono">Workshop available</strong>
+            <strong className="update-title mono">Workshop SOLD OUT</strong>
             <p className="update-content light-faded">
-              Join Gleb's workshop on October 2nd and learn Efficient End-to-End
-              Testing with Cypress.io.
+              Gleb’s workshop on Efficient End-to-End Testing with Cypress.io is fully booked. Worry not, conference tickets are still available. 
             </p>
           </Link>
         </li>
