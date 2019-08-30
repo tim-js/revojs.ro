@@ -9,7 +9,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 // import Note from "@components/Note";
 // import Button from "@components/Button";
-import { PurchaseTicket, WorkshopTicket } from "@components/CTA";
+import { PurchaseTicket } from "@components/CTA";
 
 import { day0, day1, day2 } from "@data/agenda";
 
