@@ -8,5 +8,10 @@ export const media = [
     name: "Timisoara.Tech",
     image: "partners/TimisoaraTech_logo@2x.png",
     url: "https://timisoara.tech/"
+  },
+  {
+    name: "techevents.online",
+    image: "partners/TechEvents_logo@2x.png",
+    url: "https://www.techevents.online/"
   }
 ];

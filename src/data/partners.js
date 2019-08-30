@@ -18,5 +18,10 @@ export const partners = [
     name: "DevPlant",
     image: "partners/DevPlant_logo.svg",
     url: "https://devplant.ro/"
+  },
+  {
+    name: "Microsoft",
+    image: "partners/microsoft_logo.svg",
+    url: "https://www.microsoft.com"
   }
 ];
