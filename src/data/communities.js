@@ -25,11 +25,6 @@ export const communities = [
     url: "https://jsleague.ro/"
   },
   {
-    name: "Hackages",
-    image: "communities/hackages_logo@2x.png",
-    url: "https://hackages.io/"
-  },
-  {
     name: "MadridJS",
     image: "communities/madridJS@2x.png",
     url: "https://www.meetup.com/madridjs/"
@@ -53,11 +48,6 @@ export const communities = [
     name: "IasiJS",
     image: "communities/iasiJS_logo.svg",
     url: "https://www.meetup.com/Iasi-JS/"
-  },
-  {
-    name: "React GraphQL Academy",
-    image: "communities/ReactGraphQL-Academy_logo@2x.png",
-    url: "https://reactgraphql.academy/"
   },
   {
     name: "Tabara de Testare",
