@@ -55,8 +55,8 @@ export default () => {
         <h1>Tickets</h1>
         <br />
         <strong className="tickets-important light-faded mono">
-          Regular Tickets available until{" "}
-          <span className="highlight">August 31st</span>
+          Late Bird available until{" "}
+          <span className="highlight">September 30th</span>
         </strong>
         <br />
         {/* <div className="mono tag-wrapper">
@@ -127,12 +127,13 @@ export default () => {
                 <strong>Early Bird Tickets</strong>: until 31st of May{" "}
                 <strong>(SOLD OUT)</strong>
               </li>
-              <li>
+              <li className="light-faded">
                 <strong>Regular Tickets</strong>: until 31st of August{" "}
-                <strong className="highlight">(ENDS SOON)</strong>
+                <strong>(ENDED)</strong>
               </li>
               <li>
-                <strong>Late Bird Tickets</strong>: until 30th of September
+                <strong>Late Bird Tickets</strong>: until 30th of September{" "}
+                <strong className="highlight">(ON SALE)</strong>
               </li>
               <li className="light-faded">
                 <strong>Workshop Tickets</strong>: until 27th of September{" "}

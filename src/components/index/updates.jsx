@@ -22,10 +22,10 @@ export default () => {
         <li>
           <Link to="/tickets/">
             <strong className="update-title mono">
-              Last Chance at Regular Tickets
+              Late Bird Tickets 
             </strong>
             <p className="update-content light-faded">
-              Hurry up and grab your Regular Ticket until the 31st of August. Change waits for no one.
+              You’re not too late. You can still make it to revo.js and catch the JS change. Grab your ticket by Sept 30th.
             </p>
           </Link>
         </li>
