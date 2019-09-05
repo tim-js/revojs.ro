@@ -74,5 +74,10 @@ export const sponsors = [
     name: "Ness",
     image: "sponsors/ness_logo.svg",
     url: "https://www.ness.ro/"
+  },
+  {
+    name: "Endava",
+    image: "sponsors/endava_logo.svg",
+    url: "https://www.endava.com/"
   }
 ];
