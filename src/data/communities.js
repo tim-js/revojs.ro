@@ -63,5 +63,15 @@ export const communities = [
     name: "TechHub Bucharest",
     image: "communities/tech_hub_logo.svg",
     url: "https://bucharest.techhub.com/"
+  },
+  {
+    name: "KTZ",
+    image: "communities/ktz_logo.svg",
+    url: "https://www.facebook.com/ktz.rs"
+  },
+  {
+    name: "Pionir",
+    image: "communities/pionir_logo.svg",
+    url: "https://pionir.zamphyr.com"
   }
 ];
