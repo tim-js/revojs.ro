@@ -4,7 +4,7 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
-import Note from "@components/Note";
+// import Note from "@components/Note";
 
 export default () => {
   return (
@@ -44,7 +44,7 @@ export default () => {
                 <a href="#trip">Saturday Trip</a>
               </li>
               <li>
-                and <a href="#">more</a>.
+                and <a href="#more">more</a>.
               </li>
             </ul>
           </p>
