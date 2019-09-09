@@ -58,7 +58,7 @@ export default () => {
               <h3>Wed, 2nd of October</h3>
               <ul className="bullet">
                 <li>
-                  <strong>19:00 - Speakers’ Dinner</strong> (location TBD)
+                  <strong>20:00 - Speakers’ Dinner</strong> (location TBD)
                 </li>
               </ul>
               <h3>Thu, 3rd of October</h3>
@@ -90,7 +90,7 @@ export default () => {
               <h3>Sat, 5th of October</h3>
               <ul className="bullet">
                 <li>
-                  <strong>14:30 - Saturday Trip</strong> to{" "}
+                  <strong>14:30 - Saturday Trip</strong> to the{" "}
                   <a
                     href="https://goo.gl/maps/6FvMtfjbMFSm1CZ47"
                     target="_blank"
@@ -105,8 +105,8 @@ export default () => {
             <section>
               <h2 id="contact">Contact information</h2>
               <p>
-                <strong>Andrea Sisak</strong> is your contact during the whole
-                conference. If you have any questions or problems, please talk
+                <strong>Andrea Sisak</strong> is your contact during your stay
+                in Timisoara. If you have any questions or problems, please talk
                 to her.
               </p>
               <p>
@@ -154,7 +154,7 @@ export default () => {
                 If you arrive by plane at the{" "}
                 <strong>Traian Vuia Airport</strong> in Timișoara (
                 <strong>TSR</strong>), there will be a person from our team
-                waiting for you.
+                waiting for you there.
               </p>
               <p>
                 Andrea Sisak will coordinate every detail regarding
@@ -170,9 +170,9 @@ export default () => {
               </p>
 
               <p>
-                The hotel address is: <br />
-                Strada Mărășești 3, Timișoara and their phone number is: +40 256
-                498 852.
+                The hotel address is: Strada Mărășești 1-3, Timișoara.
+                <br />
+                Their phone number is: +40 256 498 852.
               </p>
 
               <p>
@@ -186,7 +186,7 @@ export default () => {
               <h2 id="dinner">Speakers’ dinner</h2>
               <p>
                 <strong>Wednesday, 2nd of October</strong>, at{" "}
-                <strong>19:00</strong>, there will be a speakers’ dinner. Andrea
+                <strong>20:00</strong>, there will be a speakers’ dinner. Andrea
                 will reach out to those of you who are attending with further
                 details about the location.
               </p>
@@ -208,9 +208,10 @@ export default () => {
                 ).
               </p>
               <p>
-                The venue address is: <br />
-                Bulevardul Revoluției din 1989 nr. 17, Timișoara 300034, a 15min
-                walk from the hotel.
+                The venue address is: Bulevardul Revoluției din 1989 nr. 17,
+                Timișoara 300034.
+                <br />
+                It's a 15-minute walk from the hotel.
               </p>
               <h3>AV / Technical</h3>
               <p>
@@ -279,12 +280,13 @@ export default () => {
               </p>
               <h3>Live captions</h3>
               <p>
-                There will be live captions for all talks, which will be also
+                There will be live captions for all talks, which will later be
                 used for video captions on the recorded videos.{" "}
               </p>
               <p>
                 In order for this to go as planned, please provide us with as
-                much insights about your presentation, before the conference:
+                much insight as possible about your presentation, before the
+                conference:
               </p>
               <ul>
                 <li>
@@ -356,19 +358,20 @@ export default () => {
               <h2 id="afterparty">After Party</h2>
               <p>
                 We’ll have a networking <strong>After Party</strong> on{" "}
-                <strong>Friday, October 4th</strong>, at{" "}
+                <strong>Friday, the 4th of October</strong>, at{" "}
                 <a
                   href="https://goo.gl/maps/J8tnRqY7F8KQB5618"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   The Charlatan's Pub
-                </a>{" "}
-                which will start at <strong>19:00</strong>.
+                </a>
+                . The party will start at <strong>19:00</strong>.
               </p>
               <p>
-                All participants are invited and they’ll have a second chance to
-                talk to you if they didn’t during the conference.
+                All participants are invited, so they’ll have a second chance to
+                talk to you if they didn’t manage to do it during the
+                conference.
               </p>
               <p>All costs are covered.</p>
             </section>
@@ -389,7 +392,7 @@ export default () => {
               </p>
               <p>
                 We’ll taste some of their mid and top wines, have a meal
-                non-vegetarian/vegetarian and a guided tour of the winery.
+                (non-vegetarian/vegetarian) and a guided tour of the winery.
               </p>
               <p>
                 A bus will pick you up at the hotel, we’ll spend around 3-4
