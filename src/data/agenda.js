@@ -8,9 +8,9 @@ export const day0 = {
       time: "09:00 - 17:00",
       title: "Efficient End-to-End Testing with Cypress.io Workshop",
       description: "Full-day workshop. Pre-registration required.",
-      speakers: [{ id: "gleb-bahmutov" }]
-    }
-  ]
+      speakers: [{ id: "gleb-bahmutov" }],
+    },
+  ],
 };
 
 export const day1 = {
@@ -23,17 +23,17 @@ export const day1 = {
     { time: "09:00", description: "Opening ceremony" },
     { time: "09:30", talkId: "keynote1" },
     { time: "10:00", talkId: "ts" },
-    { time: "10:45", description: "Coffee Break" },
+    { time: "10:30", description: "Coffee Break" },
     { time: "11:15", talkId: "perf" },
     { time: "11:45", talkId: "gis" },
-    { time: "12:30", description: "Lunch Break" },
+    { time: "12:15", description: "Lunch Break" },
     { time: "13:30", talkId: "bots" },
     { time: "14:00", talkId: "e2e" },
-    { time: "14:45", description: "Coffee Break" },
+    { time: "14:30", description: "Coffee Break" },
     { time: "15:15", talkId: "angular" },
     { time: "15:45", talkId: "oss" },
-    { time: "16:30", description: "Networking" }
-  ]
+    { time: "16:15", description: "Networking" },
+  ],
 };
 
 export const day2 = {
@@ -46,16 +46,16 @@ export const day2 = {
     { time: "09:00", description: "Opening words" },
     { time: "09:30", talkId: "wc" },
     { time: "10:00", talkId: "auth" },
-    { time: "10:45", description: "Coffee Break" },
+    { time: "10:30", description: "Coffee Break" },
     { time: "11:15", talkId: "xxss" },
     { time: "11:45", talkId: "testing" },
-    { time: "12:30", description: "Lunch Break" },
+    { time: "12:15", description: "Lunch Break" },
     { time: "13:30", talkId: "pa11y" },
     { time: "14:00", talkId: "clean" },
-    { time: "14:45", description: "Coffee Break" },
+    { time: "14:30", description: "Coffee Break" },
     { time: "15:15", talkId: "wa" },
     { time: "15:45", talkId: "keynote2" },
-    { time: "16:30", description: "Closing words" },
-    { time: "19:00", description: "After party (details will be announced)" }
-  ]
+    { time: "16:15", description: "Closing words" },
+    { time: "19:00", description: "After party (details will be announced)" },
+  ],
 };
