@@ -110,7 +110,7 @@ export default () => {
                 to her.
               </p>
               <p>
-                You can also contact <strong>Luci</strong> or{" "}
+                You can also contact <strong>Lucian</strong> or{" "}
                 <strong>Andrei</strong> at any time during your stay.
               </p>
               <h3>Andrea Sisak</h3>
@@ -118,7 +118,7 @@ export default () => {
               <br />
               <strong>Email</strong>: andrea.sisak@e-spres-oh.com
               <br />
-              <h3>Luci Pacurar</h3>
+              <h3>Lucian Pacurar</h3>
               <strong>Phone</strong>: +40 726 356 446
               <br />
               <strong>Email</strong>: luci.pacurar@gmail.com
@@ -386,13 +386,13 @@ export default () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Recas Winery
+                  Recas Vineyards and Wine Cellars
                 </a>
                 , 30km away from Timisoara.
               </p>
               <p>
                 We’ll taste some of their mid and top wines, have a meal
-                (non-vegetarian/vegetarian) and a guided tour of the winery.
+                (non-vegetarian/vegetarian) and a guided tour of the vineyards and wine cellar.
               </p>
               <p>
                 A bus will pick you up at the hotel, we’ll spend around 3-4
