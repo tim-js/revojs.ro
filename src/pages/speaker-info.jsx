@@ -386,7 +386,7 @@ export default () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Recas Vineyards and Wine Cellars
+                  Recas Vineyards and Wine Cellar
                 </a>
                 , 30km away from Timisoara.
               </p>
