@@ -409,8 +409,9 @@ export default () => {
               <h2 id="timisoara">Around Timișoara</h2>
               <p>
                 We've put together a list of interesting places that you could
-                visit while you're around:
+                visit while you're around. Some restaurants and bars also.
               </p>
+              <h3>Points of interest</h3>
               <ul>
                 <li>
                   <strong>The old city center.</strong> This is the most
@@ -465,10 +466,7 @@ export default () => {
                   large park nearby.
                 </li>
               </ul>
-              <p>
-                And if you want to grab a bite or have a drink, these are some
-                nice places to go to:
-              </p>
+              <h3>Restaurants</h3>
               <ul>
                 <li>
                   <strong>Fabrica de bere.</strong> For traditional Romanian
@@ -492,6 +490,9 @@ export default () => {
                   </a>
                   .
                 </li>
+              </ul>
+              <h3>Bars</h3>
+              <ul>
                 <li>
                   <strong>Taproom.</strong> Local craft beer on tap. What more
                   would you want!{" "}
@@ -501,7 +502,7 @@ export default () => {
                   where you'll stay.
                 </li>
                 <li>
-                  <strong>Scart, a chill place.</strong> Good musin and chill
+                  <strong>Scârț, a chill place.</strong> Good musin and chill
                   vibes. A lot of character and history in the way it's
                   decorated and arranged. A{" "}
                   <a href="https://www.google.com/maps/place/Sc%C3%A2r%C8%9B,+a+Chill+Place/@45.7432188,21.2242973,15z/data=!4m2!3m1!1s0x0:0xfd547ee501d53b10?sa=X&ved=2ahUKEwj8orDx5dzkAhXPcJoKHbnDBeEQ_BIwE3oECA8QCA">
