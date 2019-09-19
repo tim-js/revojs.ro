@@ -44,6 +44,9 @@ export default () => {
                 <a href="#trip">Saturday Trip</a>
               </li>
               <li>
+                <a href="#timisoara">Around Timișoara</a>
+              </li>
+              <li>
                 and <a href="#more">more</a>.
               </li>
             </ul>
@@ -392,13 +395,121 @@ export default () => {
               </p>
               <p>
                 We’ll taste some of their mid and top wines, have a meal
-                (non-vegetarian/vegetarian) and a guided tour of the vineyards and wine cellar.
+                (non-vegetarian/vegetarian) and a guided tour of the vineyards
+                and wine cellar.
               </p>
               <p>
                 A bus will pick you up at the hotel, we’ll spend around 3-4
                 hours there, then the bus will get you back to your hotel.
               </p>
               <p>All costs are covered.</p>
+            </section>
+
+            <section>
+              <h2 id="timisoara">Around Timișoara</h2>
+              <p>
+                We've put together a list of interesting places that you could
+                visit while you're around:
+              </p>
+              <ul>
+                <li>
+                  <strong>The old city center.</strong> This is the most
+                  beautiful part of the city. A lot of buildings with
+                  interesting architecture in art nouveau and baroque style.
+                  Worth to walk around and enjoy the view.
+                </li>
+                <li>
+                  <strong>Guided city tour.</strong> There are a lot of
+                  interesting stories to be told about places in the city. A
+                  guided tour would be the best way to experience this. There
+                  are several companies to chose from, for example,{" "}
+                  <a href="http://www.timisoaracitytours.com/">City Tours</a>.
+                </li>
+                <li>
+                  <strong>Art museum.</strong> Located in the{" "}
+                  <a href="https://www.google.com/maps/place/Art+Museum/@45.7574185,21.2271041,17z/data=!3m1!4b1!4m5!3m4!1s0x47456781d3a39237:0x432c134e9f86fc19!8m2!3d45.7574185!4d21.2292928">
+                    city center
+                  </a>{" "}
+                  this is the most interesting art museum around. Especially the
+                  Corneliu Baba and Romanian Art exhibitions.
+                </li>
+                <li>
+                  <strong>The three synagogues.</strong> With interesting
+                  architecture, they are well worth a visit. In some of them,
+                  you can even go inside.{" "}
+                  <a href="https://www.google.com/maps/place/The+Stronghold+Synagogue/@45.7564716,21.2237862,17z/data=!3m1!4b1!4m5!3m4!1s0x47456780611874ef:0x8c23bc1da1c5ae4!8m2!3d45.7564716!4d21.2259749">
+                    Cetate Synagogue
+                  </a>{" "}
+                  was built around 1863-1865 in Moorish style. Iosefin
+                  Synagogue, also called the Orthodox Temple, is a synagogue{" "}
+                  <a href="https://www.google.com/maps/place/Iosefin+Synagogue/@45.7443144,21.2035568,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d7203b53a77:0xc3e0005ffc50bcb0!8m2!3d45.7443144!4d21.2057455">
+                    located in Iosefin
+                  </a>
+                  . The last one is the Fabric New Synagogue, which is a
+                  Neologue synagogue in the{" "}
+                  <a href="https://www.google.com/maps/place/Fabric+Synagogue/@45.7563148,21.2432967,17z/data=!3m1!4b1!4m5!3m4!1s0x47456763594d4af5:0x9c01ae65a533fd59!8m2!3d45.7563148!4d21.2454854">
+                    Fabric quarter
+                  </a>
+                  .
+                </li>
+                <li>
+                  <strong>Trip to Herneacova or Bazoș.</strong> If you want to
+                  make a trip outside the city,{" "}
+                  <a href="https://www.herneacova.ro/">Herneacova</a> is an
+                  interesting destination. Thre is a restaurant and adventure
+                  parc and also horse riding. For something closer you can check{" "}
+                  <a href="https://www.google.com/maps/place/Parcul+Dendrologic+Bazo%C8%99/@45.7539141,21.4410209,15z/data=!4m5!3m4!1s0x0:0xb5a8081fc501accf!8m2!3d45.754864!4d21.4261803">
+                    Bazoș
+                  </a>{" "}
+                  where you can eat at the restaurant and take a walk in the
+                  large park nearby.
+                </li>
+              </ul>
+              <p>
+                And if you want to grab a bite or have a drink, these are some
+                nice places to go to:
+              </p>
+              <ul>
+                <li>
+                  <strong>Fabrica de bere.</strong> For traditional Romanian
+                  food and local beer. Check{" "}
+                  <a href="https://www.google.com/maps/place/Curtea+Berarilor+La+Fabric%C4%83/@45.7539018,21.2474686,17z/data=!3m1!4b1!4m5!3m4!1s0x47456763d95429f5:0xb99d980b614e1250!8m2!3d45.7539018!4d21.2496574">
+                    here for location.
+                  </a>
+                </li>
+                <li>
+                  <strong>Little Hanoi.</strong> For some great Vietnamese food
+                  check this place out. It has two{" "}
+                  <a href="https://www.google.com/maps/place/Little+Hanoi+Bistro/@45.752259,21.224316,15z/data=!4m2!3m1!1s0x0:0x63b949012ab34ab9?sa=X&ved=2ahUKEwi29azb4tzkAhVL06YKHaLyCwwQ_BIwCnoECA0QCA">
+                    locations close to city center.
+                  </a>
+                </li>
+                <li>
+                  <strong>August Pasta Bar.</strong> Some of the best pasta can
+                  be found here. Also in the{" "}
+                  <a href="https://www.google.com/maps/place/August+-+Pasta+BAR/@45.766092,21.2220572,15z/data=!4m5!3m4!1s0x47456773449ede01:0x1f910fbc01968061!8m2!3d45.7569665!4d21.2289193">
+                    city center
+                  </a>
+                  .
+                </li>
+                <li>
+                  <strong>Taproom.</strong> Local craft beer on tap. What more
+                  would you want!{" "}
+                  <a href="https://www.google.com/maps/place/Bereta+Taproom%26Bottleshop/@45.7581581,21.2263773,21z/data=!4m5!3m4!1s0x47456744083bfd49:0x955e3e70d96261e3!8m2!3d45.7579663!4d21.2261593">
+                    Close to the hotel
+                  </a>{" "}
+                  where you'll stay.
+                </li>
+                <li>
+                  <strong>Scart, a chill place.</strong> Good musin and chill
+                  vibes. A lot of character and history in the way it's
+                  decorated and arranged. A{" "}
+                  <a href="https://www.google.com/maps/place/Sc%C3%A2r%C8%9B,+a+Chill+Place/@45.7432188,21.2242973,15z/data=!4m2!3m1!1s0x0:0xfd547ee501d53b10?sa=X&ved=2ahUKEwj8orDx5dzkAhXPcJoKHbnDBeEQ_BIwE3oECA8QCA">
+                    bit farther away
+                  </a>
+                  , but worth the walk.
+                </li>
+              </ul>
             </section>
 
             <section>
