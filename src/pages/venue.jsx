@@ -16,8 +16,8 @@ export default () => {
         <h1>Venue</h1>
         <br />
         <strong className="venue-important light-faded mono">
-          <span className="highlight">Multifunctional Hall of CJT</span> <br />
-          (Timis County Council)
+          <span className="highlight">Iulius Congress Hall</span> <br />
+          <span>at Iulius Town Timișoara</span> <br />
         </strong>
         <br />
         <br />
@@ -32,17 +32,29 @@ export default () => {
           <section id="venue-details">
             <h2>Location</h2>
             <p>
-              <strong>Venue address</strong>: Bulevardul Revoluției din 1989,
-              nr. 17
+              <strong>Iulius Congress Hall</strong> is in the heart of the
+              modern part of the city.
+            </p>
+            <p>
+              <strong>Venue address</strong>: Str. Aristide Demetriade, nr. 1,
+              et. 1, 300088 Timişoara
             </p>
             <p>
               <OutboundLink
-                href="http://maps.google.com/maps?q=45.7562%2C21.2371+%28Consiliul+Judetean+Timis%2C+Bulevardul+Revolu%C8%9Biei+din+1989+nr.+17%2C+Timi%C8%99oara+300034%29"
+                href="https://goo.gl/maps/oSxL1p7w3Gn6cBMN6"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button white>View location on map</Button>
               </OutboundLink>
+            </p>
+            <br />
+            <p>
+              <i>
+                NOTE: <br />
+                We had to change the venue 2 weeks before the event. <br />
+                We'll provide more details soon, in an official article.
+              </i>
             </p>
           </section>
 
@@ -61,14 +73,8 @@ export default () => {
             <section>
               <h3>By car</h3>
               <p>
-                <strong>
-                  We do NOT recommend coming with the car at the conference.
-                </strong>
-              </p>
-
-              <p>
-                The location is ultra-central and parking there is a nightmare.
-                Thank you for understanding.
+                The venue is inside Iulius Town which includes lots of parking
+                spots.
               </p>
             </section>
 
@@ -93,11 +99,11 @@ export default () => {
                 </OutboundLink>
                 . Trip takes about 25 minutes. The venue is{" "}
                 <OutboundLink
-                  href="https://goo.gl/maps/QdXzv3fhZzZvfYyH9"
+                  href="https://www.google.com/maps/dir/Bastion,+Timi%C8%99oara/Iulius+Town,+Pia%C8%9Ba+Consiliul+Europei,+Timi%C8%99oara/@45.7641197,21.2293231,16.06z/data=!4m14!4m13!1m5!1m1!1s0x4745677f180cafef:0x7ef840611d3e2982!2m2!1d21.23316!2d45.75772!1m5!1m1!1s0x474567c28251367f:0xdad4d0d2dc253876!2m2!1d21.2288707!2d45.7662712!3e2?utm_medium=s2email&shorturl=1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  7 minutes away
+                  15 minutes away
                 </OutboundLink>
                 .
               </p>

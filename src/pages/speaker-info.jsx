@@ -203,13 +203,12 @@ export default () => {
               <h2 id="venue">The venue</h2>
               <p>
                 Revo.js 2019 will take place at the{" "}
-                <strong>Multifunctional Venue of CJT</strong> or Consiliul
-                Județean Timiș (<strong>Timiș County Council</strong>
-                ).
+                <strong>Iulius Congress Hall</strong> in the heart of Iulius
+                Town Timișoara.
               </p>
               <p>
-                The venue address is: Bulevardul Revoluției din 1989 nr. 17,
-                Timișoara 300034.
+                The venue address is: Str. Aristide Demetriade, nr. 1, et. 1,
+                300088 Timişoara.
                 <br />
                 It's a 15-minute walk from the hotel.
               </p>
@@ -392,7 +391,8 @@ export default () => {
               </p>
               <p>
                 We’ll taste some of their mid and top wines, have a meal
-                (non-vegetarian/vegetarian) and a guided tour of the vineyards and wine cellar.
+                (non-vegetarian/vegetarian) and a guided tour of the vineyards
+                and wine cellar.
               </p>
               <p>
                 A bus will pick you up at the hotel, we’ll spend around 3-4
