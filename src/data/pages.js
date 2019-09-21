@@ -1,28 +1,28 @@
 export const main = [
   {
     name: "Speakers",
-    hasSubpages: true
+    hasSubpages: true,
   },
   {
-    name: "Agenda"
+    name: "Agenda",
   },
   // {
   //   name: "Call for Papers",
   //   path: "cfp"
   // },
   {
-    name: "Tickets"
+    name: "Tickets",
   },
   {
     name: "Workshop",
-    path: "workshop"
+    path: "workshop",
   },
   {
-    name: "Venue"
+    name: "Venue",
   },
   {
-    name: "Supporters"
-  }
+    name: "Supporters",
+  },
 ];
 
 export const secondary = [
@@ -31,10 +31,10 @@ export const secondary = [
   //   path: "travel"
   // },
   {
-    name: "About"
+    name: "About",
   },
   {
-    name: "Blog"
+    name: "Blog",
   },
   // {
   //   name: "Manifest"
@@ -44,11 +44,11 @@ export const secondary = [
   // },
   {
     name: "Press Info",
-    path: "press"
+    path: "press",
   },
   {
-    name: "Organizers"
-  }
+    name: "Organizers",
+  },
 ];
 
 export const tertiary = [
@@ -57,10 +57,10 @@ export const tertiary = [
   },
   {
     name: "Code of Conduct",
-    path: "code-of-conduct"
+    path: "code-of-conduct",
   },
   {
     name: "Privacy Policy",
-    path: "privacy"
-  }
+    path: "privacy",
+  },
 ];
