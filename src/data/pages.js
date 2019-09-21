@@ -53,6 +53,9 @@ export const secondary = [
 
 export const tertiary = [
   {
+    name: "Accessibility",
+  },
+  {
     name: "Code of Conduct",
     path: "code-of-conduct"
   },
