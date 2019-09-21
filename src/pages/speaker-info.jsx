@@ -310,7 +310,7 @@ export default () => {
                   <strong>Slides</strong>, even if they are not final;
                 </li>
                 <li>
-                  <strong>Transcript</strong>, even if partial;
+                  <strong>Transcript</strong>, even if partial, or not final;
                 </li>
                 <li>
                   <strong>A list of specialized terms and technologies</strong>{" "}
