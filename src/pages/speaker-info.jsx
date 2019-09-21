@@ -167,22 +167,28 @@ export default () => {
               <h3>The hotel</h3>
               <p>
                 During the conference, you will stay at{" "}
-                <strong>Hotel Timișoara</strong>, situated in the center of the
-                town. It is in walking distance of all the places you might want
-                to visit during your stay.
+                <a
+                  href="https://goo.gl/maps/jSkmaqWhodQ3sF9V8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>Hotel Timișoara</strong>
+                </a>
+                , situated in the center of the town. It is in walking distance
+                of all the places you might want to visit during your stay.
               </p>
-
               <p>
-                The hotel address is: Strada Mărășești 1-3, Timișoara.
+                The hotel <strong>address</strong> is: Strada Mărășești 1-3,
+                Timișoara.
                 <br />
-                Their phone number is: +40 256 498 852.
+                Their <strong>phone number</strong> is: +40 256 498 852.
               </p>
-
               <p>
                 You should know your check-in and check-out dates. If you don't,
                 please contact Andrea. Your room is booked in your name and
-                already paid for. Breakfast and WIFI are included.
+                already paid for.
               </p>
+              <p>Breakfast and WIFI are included.</p>
             </section>
 
             <section>
@@ -205,16 +211,21 @@ export default () => {
             <section>
               <h2 id="venue">The venue</h2>
               <p>
-                Revo.js 2019 will take place at the{" "}
-                <strong>Multifunctional Venue of CJT</strong> or Consiliul
-                Județean Timiș (<strong>Timiș County Council</strong>
-                ).
+                revo.js 2019 will take place at the{" "}
+                <a
+                  href="https://g.page/Iulius_Congress_Hall?share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>Iulius Congress Hall</strong>{" "}
+                </a>
+                situated inside <strong>Iulius Town</strong>.
               </p>
               <p>
-                The venue address is: Bulevardul Revoluției din 1989 nr. 17,
-                Timișoara 300034.
+                The venue address is: Str. Aristide Demetriade nr. 1, Timișoara
+                300088.
                 <br />
-                It's a 15-minute walk from the hotel.
+                It's about 22-minute walk from the hotel.
               </p>
               <h3>AV / Technical</h3>
               <p>
@@ -409,109 +420,266 @@ export default () => {
               <h2 id="timisoara">Around Timișoara</h2>
               <p>
                 We've put together a list of interesting places that you could
-                visit while you're around. Some restaurants and bars also.
+                and should visit during your stay in Timișoara.
               </p>
-              <h3>Points of interest</h3>
+
+              <h3 className="dark">Points of interest</h3>
               <ul>
                 <li>
-                  <strong>The old city center.</strong> This is the most
-                  beautiful part of the city. A lot of buildings with
-                  interesting architecture in art nouveau and baroque style.
-                  Worth to walk around and enjoy the view.
-                </li>
-                <li>
-                  <strong>Guided city tour.</strong> There are a lot of
-                  interesting stories to be told about places in the city. A
-                  guided tour would be the best way to experience this. There
-                  are several companies to chose from, for example,{" "}
-                  <a href="http://www.timisoaracitytours.com/">City Tours</a>.
-                </li>
-                <li>
-                  <strong>Art museum.</strong> Located in the{" "}
-                  <a href="https://www.google.com/maps/place/Art+Museum/@45.7574185,21.2271041,17z/data=!3m1!4b1!4m5!3m4!1s0x47456781d3a39237:0x432c134e9f86fc19!8m2!3d45.7574185!4d21.2292928">
-                    city center
-                  </a>{" "}
-                  this is the most interesting art museum around. Especially the
-                  Corneliu Baba and Romanian Art exhibitions.
-                </li>
-                <li>
-                  <strong>The three synagogues.</strong> With interesting
-                  architecture, they are well worth a visit. In some of them,
-                  you can even go inside.{" "}
-                  <a href="https://www.google.com/maps/place/The+Stronghold+Synagogue/@45.7564716,21.2237862,17z/data=!3m1!4b1!4m5!3m4!1s0x47456780611874ef:0x8c23bc1da1c5ae4!8m2!3d45.7564716!4d21.2259749">
-                    Cetate Synagogue
-                  </a>{" "}
-                  was built around 1863-1865 in Moorish style. Iosefin
-                  Synagogue, also called the Orthodox Temple, is a synagogue{" "}
-                  <a href="https://www.google.com/maps/place/Iosefin+Synagogue/@45.7443144,21.2035568,17z/data=!3m1!4b1!4m5!3m4!1s0x47455d7203b53a77:0xc3e0005ffc50bcb0!8m2!3d45.7443144!4d21.2057455">
-                    located in Iosefin
+                  <strong>The old city center,</strong> also called{" "}
+                  <a
+                    href="https://goo.gl/maps/w7t6s9s4bGThzbVq7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>Union Square</strong>
                   </a>
-                  . The last one is the Fabric New Synagogue, which is a
-                  Neologue synagogue in the{" "}
-                  <a href="https://www.google.com/maps/place/Fabric+Synagogue/@45.7563148,21.2432967,17z/data=!3m1!4b1!4m5!3m4!1s0x47456763594d4af5:0x9c01ae65a533fd59!8m2!3d45.7563148!4d21.2454854">
-                    Fabric quarter
+                  , is the most beautiful part of the city, filled with history
+                  and culture. Worth to walk around and enjoy the art nouveau
+                  and baroque architecture.
+                </li>
+                <li>
+                  <strong>The Historical Neighborhoods</strong> namely{" "}
+                  <a
+                    href="https://goo.gl/maps/bV9jpnkipmm8Urpp7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>Fortress</strong>
+                  </a>
+                  , <strong>Fabric</strong>, <strong>Iosefin</strong> and{" "}
+                  <strong>Elisabetin</strong> are a great way to experience the
+                  history of Timișoara at your own pace.
+                </li>
+                <li>
+                  <strong>Guided city tours</strong> are the best way to quickly
+                  become acquainted with what makes Timișoara special. There are
+                  a lot of stories to be told and several tours to choose from,
+                  for example{" "}
+                  <a
+                    href="http://www.timisoaracitytours.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    City Tours
                   </a>
                   .
                 </li>
                 <li>
-                  <strong>Trip to Herneacova or Bazoș.</strong> If you want to
-                  make a trip outside the city,{" "}
-                  <a href="https://www.herneacova.ro/">Herneacova</a> is an
-                  interesting destination. Thre is a restaurant and adventure
-                  parc and also horse riding. For something closer you can check{" "}
-                  <a href="https://www.google.com/maps/place/Parcul+Dendrologic+Bazo%C8%99/@45.7539141,21.4410209,15z/data=!4m5!3m4!1s0x0:0xb5a8081fc501accf!8m2!3d45.754864!4d21.4261803">
-                    Bazoș
+                  The{" "}
+                  <a
+                    href="https://goo.gl/maps/VbD3eBNQhb4H3MmL6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>Art museum</strong>
                   </a>{" "}
-                  where you can eat at the restaurant and take a walk in the
-                  large park nearby.
+                  is located in the Old Town and offers many temporary and
+                  permanent exhibitions, like Corneliu Baba, Romanian and
+                  European Art exhibitions.
+                </li>
+                <li>
+                  <strong>The three synagogues</strong>, with their specific
+                  architecture, are well worth a visit.{" "}
+                  <a
+                    href="https://goo.gl/maps/iRUx9WFMCAe5CvEGA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    The Stronghold Synagogue
+                  </a>{" "}
+                  was built around 1863-1865 in Moorish style.{" "}
+                  <a
+                    href="https://goo.gl/maps/8JqbuZLrmag5bQi19"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Iosefin Synagogue
+                  </a>
+                  , also called the Orthodox Temple, is located in Iosefin
+                  neighborhood. The last one is the{" "}
+                  <a
+                    href="https://goo.gl/maps/w6Dx178qvggKUnCr8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Fabric New Synagogue
+                  </a>
+                  , which is a Neologue synagogue in the Fabric neighborhood.
+                </li>
+                <li>
+                  <strong>Trip to Herneacova.</strong> If you want to make a
+                  trip outside the city,{" "}
+                  <a
+                    href="https://www.herneacova.ro/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Herneacova
+                  </a>{" "}
+                  is a popular destination. There is a restaurant, an adventure
+                  parc and, if you're up for it, you can also do horse riding.
+                </li>
+                <li>
+                  <strong>Trip to Bazoș.</strong> If you prefer a quiet walk
+                  outside the city,{" "}
+                  <a
+                    href="https://goo.gl/maps/EePt3SQGbab3aqAx8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bazoș Dendrological park
+                  </a>{" "}
+                  is a great destination. There's also a restaurant nearby.
                 </li>
               </ul>
-              <h3>Restaurants</h3>
+
+              <h3 className="dark">Specialty Coffee</h3>
               <ul>
                 <li>
-                  <strong>Fabrica de bere.</strong> For traditional Romanian
-                  food and local beer. Check{" "}
-                  <a href="https://www.google.com/maps/place/Curtea+Berarilor+La+Fabric%C4%83/@45.7539018,21.2474686,17z/data=!3m1!4b1!4m5!3m4!1s0x47456763d95429f5:0xb99d980b614e1250!8m2!3d45.7539018!4d21.2496574">
-                    here for location.
-                  </a>
+                  <a
+                    href="https://goo.gl/maps/dhiHvfYNWLe5KNMV6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>Doppio</strong>
+                  </a>{" "}
+                  offers different coffee almost everyday. It's only a few steps
+                  away from your hotel.
                 </li>
                 <li>
-                  <strong>Little Hanoi.</strong> For some great Vietnamese food
-                  check this place out. It has two{" "}
-                  <a href="https://www.google.com/maps/place/Little+Hanoi+Bistro/@45.752259,21.224316,15z/data=!4m2!3m1!1s0x0:0x63b949012ab34ab9?sa=X&ved=2ahUKEwi29azb4tzkAhVL06YKHaLyCwwQ_BIwCnoECA0QCA">
-                    locations close to city center.
-                  </a>
+                  <a
+                    href="https://goo.gl/maps/DZpjzxfS8fPZwR9L9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>Ovride</strong>
+                  </a>{" "}
+                  offers 2 types of coffee to choose from. Great place for a
+                  quick bite, also.
                 </li>
                 <li>
-                  <strong>August Pasta Bar.</strong> Some of the best pasta can
-                  be found here. Also in the{" "}
-                  <a href="https://www.google.com/maps/place/August+-+Pasta+BAR/@45.766092,21.2220572,15z/data=!4m5!3m4!1s0x47456773449ede01:0x1f910fbc01968061!8m2!3d45.7569665!4d21.2289193">
-                    city center
+                  <a
+                    href="https://g.page/Typica?share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>Typica</strong>
+                  </a>{" "}
+                  is situated in the Union Square.
+                </li>
+              </ul>
+
+              <h3 className="dark">Bars</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://goo.gl/maps/AnGHFdFXLKEP1ptE8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>Taproom</strong>
+                  </a>
+                  . Beer. Craft. Tap. Local. Nothing more, nothing less. By{" "}
+                  <a
+                    href="https://www.facebook.com/BeretaTM/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bereta
                   </a>
                   .
                 </li>
-              </ul>
-              <h3>Bars</h3>
-              <ul>
                 <li>
-                  <strong>Taproom.</strong> Local craft beer on tap. What more
-                  would you want!{" "}
-                  <a href="https://www.google.com/maps/place/Bereta+Taproom%26Bottleshop/@45.7581581,21.2263773,21z/data=!4m5!3m4!1s0x47456744083bfd49:0x955e3e70d96261e3!8m2!3d45.7579663!4d21.2261593">
-                    Close to the hotel
+                  <a
+                    href="https://goo.gl/maps/Fctqk5CaZZJnKURJ6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong>Scârț, a chill place.</strong>
                   </a>{" "}
-                  where you'll stay.
-                </li>
-                <li>
-                  <strong>Scârț, a chill place.</strong> Good musin and chill
-                  vibes. A lot of character and history in the way it's
-                  decorated and arranged. A{" "}
-                  <a href="https://www.google.com/maps/place/Sc%C3%A2r%C8%9B,+a+Chill+Place/@45.7432188,21.2242973,15z/data=!4m2!3m1!1s0x0:0xfd547ee501d53b10?sa=X&ved=2ahUKEwj8orDx5dzkAhXPcJoKHbnDBeEQ_BIwE3oECA8QCA">
-                    bit farther away
+                  Good music, chill vibes, art, theatre and wicked interior
+                  design. Also home of the{" "}
+                  <a
+                    href="https://www.facebook.com/comunistconsumersmuseum/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Communist Consumer Museum
                   </a>
-                  , but worth the walk.
+                  . Definitely worth the visit.
                 </li>
               </ul>
             </section>
+
+            <h3 className="dark">Restaurants</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://goo.gl/maps/bu8NBJTah53rsgU58"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>Curtea Berarilor</strong>
+                </a>{" "}
+                is the way to go for traditional food and beer.
+              </li>
+              <li>
+                <strong>Little Hanoi</strong> is ideal if you want to taste
+                delicious Vietnamese food. They have 2 locations you can choose
+                from,{" "}
+                <a
+                  href="https://goo.gl/maps/eVnWW7QMWQrvhPU79"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Little Hanoi Bistro
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://goo.gl/maps/zcJYnA1u1FbyovDj8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Little Hanoi Restaurant.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://goo.gl/maps/ZUV5Cv5KyedUUFq2A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>August Pasta Bar</strong>
+                </a>{" "}
+                is the goto place for pasta lovers.
+              </li>
+            </ul>
+
+            <h3 className="dark">How to pay?</h3>
+            <p>
+              The official Romanian currency is RON (aka LEI).
+              <br />
+              <a
+                href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=EUR&To=RON"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>1 EUR = 4.7 RON</strong>
+              </a>
+              <br />
+              <a
+                href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=RON"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>1 USD = 4.3 RON</strong>
+              </a>
+            </p>
+            <p>
+              Most bars, restaurants and shops accept card payment (Visa,
+              Mastercard, Maestro, etc).
+            </p>
 
             <section>
               <h2 id="more">Official hashtag</h2>
