@@ -49,7 +49,7 @@ export default () => {
           </section>
 
           <section>
-            <h2>Blind-first approach</h2>
+            <h2>Inclusive presentation delivery</h2>
             <p>
               Last, but not least, we're addressing all{" "}
               <strong>visually impaired</strong> or <strong>dyslexic</strong>{" "}

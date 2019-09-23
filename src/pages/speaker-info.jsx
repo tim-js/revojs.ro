@@ -652,7 +652,7 @@ export default () => {
                 >
                   <strong>August Pasta Bar</strong>
                 </a>{" "}
-                is the goto place for pasta lovers.
+                is the go-to place for pasta lovers.
               </li>
             </ul>
 
