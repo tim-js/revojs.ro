@@ -32,8 +32,8 @@ export default () => {
           <section id="venue-details">
             <h2>Location</h2>
             <p>
-              <strong>Iulius Congress Hall</strong> is in the heart of the
-              modern part of the city.
+              <strong>Iulius Congress Hall</strong> is situated Timisoara’s
+              modern side, inside <strong>Iulius Town</strong>.
             </p>
             <p>
               <strong>Venue address</strong>: Str. Aristide Demetriade, nr. 1,
@@ -52,8 +52,13 @@ export default () => {
             <p>
               <i>
                 NOTE: <br />
-                We had to change the venue 2 weeks before the event. <br />
-                We'll provide more details soon, in an official article.
+                Our{" "}
+                <strong>
+                  Change is the only <span className="highlight">const</span>
+                </strong>{" "}
+                slogan isn’t only true, but profetic. Due to reasons beyond our
+                control, we had to change the venue 2 weeks before the event.
+                More on exactly why and how soon.
               </i>
             </p>
           </section>
@@ -65,45 +70,46 @@ export default () => {
               <h3>By foot</h3>
               <p>
                 If you have accomodation in the central area, the best way to
-                get to the venue is by foot, because the location should be
-                within walking distance.
+                get to the venue is by foot, as the location is within walking
+                distance.
               </p>
             </section>
 
             <section>
               <h3>By car</h3>
               <p>
-                The venue is inside Iulius Town which includes lots of parking
-                spots.
+                Since the venue is hosted by Iulius Town, there are plenty of
+                parking spots in the mall’s parking area.
               </p>
             </section>
 
             <section>
               <h3>From the airport</h3>
               <p>
-                You can take{" "}
+                Take the{" "}
                 <OutboundLink
                   href="https://moovitapp.com/index/en/public_transit-line-E4-Timi%C5%9Foara-3603-857264-687250-0"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  bus E4 (Express 4)
+                  E4 bus (Express 4)
                 </OutboundLink>{" "}
-                from the airport that will drop you at{" "}
+                and get down at{" "}
                 <OutboundLink
                   href="https://goo.gl/maps/qjnWeH7iJqnrnL436"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Bastion bus stop
-                </OutboundLink>
-                . Trip takes about 25 minutes. The venue is{" "}
+                  Bastion Station
+                </OutboundLink>{" "}
+                (the bus trip takes around 25 minutes). From here you can reach
+                the location by foot, in{" "}
                 <OutboundLink
                   href="https://www.google.com/maps/dir/Bastion,+Timi%C8%99oara/Iulius+Town,+Pia%C8%9Ba+Consiliul+Europei,+Timi%C8%99oara/@45.7641197,21.2293231,16.06z/data=!4m14!4m13!1m5!1m1!1s0x4745677f180cafef:0x7ef840611d3e2982!2m2!1d21.23316!2d45.75772!1m5!1m1!1s0x474567c28251367f:0xdad4d0d2dc253876!2m2!1d21.2288707!2d45.7662712!3e2?utm_medium=s2email&shorturl=1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  15 minutes away
+                  just 15 minutes
                 </OutboundLink>
                 .
               </p>
