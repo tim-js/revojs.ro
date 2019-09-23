@@ -219,7 +219,8 @@ export default () => {
                 >
                   <strong>Iulius Congress Hall</strong>{" "}
                 </a>
-                situated inside <strong>Iulius Town</strong>.
+                situated in the heart of Timisoara’s modern side, inside{" "}
+                <strong>Iulius Town</strong>.
               </p>
               <p>
                 The venue address is: Str. Aristide Demetriade nr. 1, Timișoara
