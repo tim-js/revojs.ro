@@ -60,9 +60,8 @@ export default () => {
           <Logos
             list={partners}
             style={{
-              maxWidth: "700px",
               marginLeft: "auto",
-              marginRight: "auto"
+              marginRight: "auto",
             }}
             small
           />
@@ -79,9 +78,9 @@ export default () => {
           <Logos
             list={media}
             style={{
-              maxWidth: "700px",
+              maxWidth: "400px",
               marginLeft: "auto",
-              marginRight: "auto"
+              marginRight: "auto",
             }}
             small
           />
