@@ -25,6 +25,11 @@ export const partners = [
     url: "https://www.microsoft.com",
   },
   {
+    name: "Irian",
+    image: "partners/irian_logo.svg",
+    url: "https://www.irian.eu/",
+  },
+  {
     name: "CRAFTWAND",
     image: "partners/craftwand_logo.svg",
     url: "https://www.craftwand.info/",
