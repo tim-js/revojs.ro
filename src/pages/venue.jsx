@@ -48,14 +48,6 @@ export default () => {
                 <Button white>View location on map</Button>
               </OutboundLink>
             </p>
-            <br />
-            <p>
-              <i>
-                NOTE: <br />
-                We had to change the venue 2 weeks before the event. <br />
-                We'll provide more details soon, in an official article.
-              </i>
-            </p>
           </section>
 
           <section>
