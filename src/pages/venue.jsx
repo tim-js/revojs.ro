@@ -48,19 +48,6 @@ export default () => {
                 <Button white>View location on map</Button>
               </OutboundLink>
             </p>
-            <br />
-            <p>
-              <i>
-                NOTE: <br />
-                Our{" "}
-                <strong>
-                  Change is the only <span className="highlight">const</span>
-                </strong>{" "}
-                slogan isn’t only true, but profetic. Due to reasons beyond our
-                control, we had to change the venue 2 weeks before the event.
-                More on exactly why and how soon.
-              </i>
-            </p>
           </section>
 
           <section>

@@ -21,10 +21,10 @@ export default () => {
 
             <p>
               revo.js is a not-for-profit event taking place between the 3rd and
-              4th of October 2019 at Consiliul Județean Timiș. The conference
-              aims to bring JavaScript enthusiasts two full days of tech-focused
-              talks, community networking and thought-provoking ideas meant to
-              stir up change, the only const there is.
+              4th of October 2019 in Timișoara, Romania. The conference aims to
+              bring JavaScript enthusiasts two full days of tech-focused talks,
+              community networking and thought-provoking ideas meant to stir up
+              change, the only const there is.
             </p>
 
             <ul className="bullet">
