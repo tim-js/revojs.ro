@@ -61,7 +61,14 @@ export default () => {
               <h3>Wed, 2nd of October</h3>
               <ul className="bullet">
                 <li>
-                  <strong>20:00 - Speakers’ Dinner</strong> (location TBD)
+                  <strong>20:00 - Speakers’ Dinner</strong> at{" "}
+                  <a
+                    href="https://goo.gl/maps/Lv6TZwtC7hNkRD6d8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Del Corso Events
+                  </a>
                 </li>
               </ul>
               <h3>Thu, 3rd of October</h3>
@@ -100,7 +107,8 @@ export default () => {
                     rel="noopener noreferrer"
                   >
                     Recas Winery
-                  </a>
+                  </a>{" "}
+                  (pickup from the hotel)
                 </li>
               </ul>
             </section>
@@ -119,12 +127,8 @@ export default () => {
               <h3>Andrea Sisak</h3>
               <strong>Phone</strong>: +40 741 063 012
               <br />
-              <strong>Email</strong>: andrea.sisak@e-spres-oh.com
-              <br />
               <h3>Lucian Pacurar</h3>
               <strong>Phone</strong>: +40 726 356 446
-              <br />
-              <strong>Email</strong>: luci.pacurar@gmail.com
               <br />
               <strong>Twitter</strong>:{" "}
               <a
@@ -137,8 +141,6 @@ export default () => {
               <h3>Andrei Pfeiffer</h3>
               <strong>Phone</strong>: +40 720 340 104
               <br />
-              <strong>Email</strong>: andrei@upsidedown.ro
-              <br />
               <strong>Twitter</strong>:{" "}
               <a
                 href="https://twitter.com/pfeiffer_andrei"
@@ -147,6 +149,20 @@ export default () => {
               >
                 @pfeiffer_andrei
               </a>
+              <br />
+              <br />
+              <p>
+                You can also reach any of us by email at{" "}
+                <a href="mailto:info@revojs.ro">info@revojs.ro</a>, or on our
+                Slack workplace at{" "}
+                <a
+                  href="https://revoconference.slack.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  revoconference.slack.com
+                </a>
+              </p>
             </section>
 
             <section>
@@ -174,11 +190,12 @@ export default () => {
                 >
                   <strong>Hotel Timișoara</strong>
                 </a>
-                , situated in the center of the town. It is in walking distance
-                of all the places you might want to visit during your stay.
+                , situated in the center of the town. It is within walking
+                distance of all the places you might want to visit during your
+                stay.
               </p>
               <p>
-                The hotel <strong>address</strong> is: Strada Mărășești 1-3,
+                The <strong>hotel address</strong> is: Strada Mărășești 1-3,
                 Timișoara.
                 <br />
                 Their <strong>phone number</strong> is: +40 256 498 852.
@@ -195,9 +212,15 @@ export default () => {
               <h2 id="dinner">Speakers’ dinner</h2>
               <p>
                 <strong>Wednesday, 2nd of October</strong>, at{" "}
-                <strong>20:00</strong>, there will be a speakers’ dinner. Andrea
-                will reach out to those of you who are attending with further
-                details about the location.
+                <strong>20:00</strong>, there will be a speakers’ dinner at{" "}
+                <a
+                  href="https://goo.gl/maps/Lv6TZwtC7hNkRD6d8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Del Corso Events
+                </a>
+                , 4 minutes away from your hotel.
               </p>
 
               <p>
@@ -305,13 +328,14 @@ export default () => {
               </p>
               <ul>
                 <li>
-                  <strong>Existing recordings</strong> of your talk;
+                  <strong>Existing recordings</strong> of your talk, or;
                 </li>
                 <li>
-                  <strong>Slides</strong>, even if they are not final;
+                  <strong>Slides</strong>, even if they are not final, or;
                 </li>
                 <li>
-                  <strong>Transcript</strong>, even if partial, or not final;
+                  <strong>Transcript</strong>, even if partial, or not final,
+                  or;
                 </li>
                 <li>
                   <strong>A list of specialized terms and technologies</strong>{" "}
@@ -395,7 +419,7 @@ export default () => {
               <h2 id="trip">Saturday Trip</h2>
               <p>
                 <strong>Saturday</strong>, the <strong>5th of October</strong>,
-                at <strong>15:00</strong>, we’ll go on a trip at the{" "}
+                at <strong>14:30</strong>, we’ll go on a trip at the{" "}
                 <a
                   href="https://goo.gl/maps/6FvMtfjbMFSm1CZ47"
                   target="_blank"
