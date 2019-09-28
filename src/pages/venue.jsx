@@ -9,6 +9,8 @@ import Button from "@components/Button";
 
 import "./venue.scss";
 
+const map = require(`@assets/venue_location@2x.png`);
+
 export default () => {
   return (
     <Layout title="revo.js Venue">
@@ -48,6 +50,15 @@ export default () => {
                 <Button white>View location on map</Button>
               </OutboundLink>
             </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <img
+              src={map}
+              alt="Iulius Congress Hall location map"
+              width="100%"
+            />
           </section>
 
           <section>
