@@ -8,7 +8,7 @@
     "twitter": "martin_hotell",
     "title": "Principal Engineer",
     "company": "Productboard",
-    "talkId": "wc"
+    "talkId": "web-components"
   },
   {
     "id": "boyan-mihaylov",
@@ -19,7 +19,7 @@
     "twitter": "boyanio",
     "title": "Software Architect and Developer",
     "company": "Fadata",
-    "talkId": "wa"
+    "talkId": "web-assembly"
   },
   {
     "id": "gleb-bahmutov",
@@ -41,7 +41,7 @@
     "twitter": "nicolaraluk",
     "title": "Product Engineer",
     "company": "Esri",
-    "talkId": "gis"
+    "talkId": "cartography"
   },
   {
     "id": "sebastian-witalec",
@@ -52,7 +52,7 @@
     "twitter": "sebawita",
     "title": "Senior Developer Advocate",
     "company": "Progress",
-    "talkId": "bots"
+    "talkId": "chat-bots"
   },
   {
     "id": "katie-koschland",
@@ -74,7 +74,7 @@
     "twitter": "auchenberg",
     "title": "Developer Experience",
     "company": "Stripe",
-    "talkId": "keynote2"
+    "talkId": "devtools"
   },
   {
     "id": "benedek-gagyi",
@@ -118,7 +118,7 @@
     "twitter": "alexnmoldovan",
     "title": "Open Source Engineer",
     "company": "teleportHQ",
-    "talkId": "perf"
+    "talkId": "performance"
   },
   {
     "id": "ruben-restrepo",

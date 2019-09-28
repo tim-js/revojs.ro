@@ -1,12 +1,12 @@
 [
   {
-    "id": "wc",
+    "id": "web-components",
     "talk": "The (Real) State of Web Components",
     "abstract": "<p>2018 is gonna be the year of Web Components they said... Was it? The year is 2019 and people are asking, are Web Components everywhere? Probably not. Why?</p><p>This talk will try to answer all these questions you might be asking yourself, by going through a real evaluation of Web Components as the primary tool for authoring web pages and applications.</p>",
     "speakers": [{ "id": "martin-hochel" }]
   },
   {
-    "id": "wa",
+    "id": "web-assembly",
     "talk": "A journey of multithreading using WebAssembly",
     "abstract": "<p>WebAssembly is a new programming language, allowing us to compile C/C++ or other statically typed languages and run them in the browser and Node.js. While languages like C/C++ support multi-threading, JavaScript is single-threaded and this raises the question of how WebAssembly will behave.</p> <p>In this talk we will discuss the design of threads for WebAssembly, the implementation challenges in terms of security and we will see examples of how multithreading can be achieved using Web Workers.</p>",
     "speakers": [{ "id": "boyan-mihaylov" }]
@@ -18,13 +18,13 @@
     "speakers": [{ "id": "gleb-bahmutov" }]
   },
   {
-    "id": "gis",
+    "id": "cartography",
     "talk": "The web developer’s guide to cartography",
     "abstract": "<p>Maps are everywhere! Whether you want to find your hotel, plan your next hike or see the results of a recent election, maps are indispensable.</p> <p>But how do we create such maps? Web mapping APIs have come a long way. They are easy to use and not only allow us to create 2D maps, but more recently also 3D ones. Add some magic geo data and cartographic knowledge and you are on your way to building your first mapping master piece.</p> <p>In this talk we’ll go through the process of creating a web map: starting from an idea, gathering and processing the data, and finishing up with a beautiful web map visualization. No geo-knowledge required! Enthusiasm for maps will be provided in the beginning of the talk.</p>",
     "speakers": [{ "id": "raluca-nicola" }]
   },
   {
-    "id": "bots",
+    "id": "chat-bots",
     "talk": "Adopt an AI-driven chatbot today",
     "abstract": "<p>Have you ever asked yourself any of these questions: What do chatbots eat? Do chatbots have dreams? What are the usual chatbot challenges? If so, this talk is for you. We will answer all of the above questions and many more.</p> <p>You will learn how to build a fully functioning chatbot in less than 10 minutes – without a single IF statement – and train it to understand human language. Then we will top it up with a quick AI training to make it understand human language.</p>",
     "speakers": [{ "id": "sebastian-witalec" }]
@@ -36,7 +36,7 @@
     "speakers": [{ "id": "katie-koschland" }]
   },
   {
-    "id": "keynote2",
+    "id": "devtools",
     "talk": "DevTools for the decade to come",
     "abstract": "The ML revolution is here, and will have a profound impact on the way we develop software, but what does all of this ML buzz mean for front-end and web developers? In this talk I’ll share my perspective on the revolution that’s in front of us, and what it will mean for us as developers, and the developer tools for the decade to come. Buckle up!",
     "speakers": [{ "id": "kenneth-auchenberg" }]
@@ -60,7 +60,7 @@
     "speakers": [{ "id": "titian-cernicova-dragomir" }]
   },
   {
-    "id": "perf",
+    "id": "performance",
     "talk": "Done in 0.0166666666 seconds",
     "abstract": "In order to ensure a smooth, jank-free experience on the web, we need to render a constant stream of 60 frames per second. This means that the browser has 16 milliseconds to execute our code and render the changes on the screen. Let’s find out how the rendering pipeline works and how JavaScript and CSS might affect the rendering performance.",
     "speakers": [{ "id": "alex-moldovan" }]
