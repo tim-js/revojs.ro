@@ -55,15 +55,15 @@
     "talkId": "bots"
   },
   {
-    "id": "laura-carvajal",
-    "firstname": "Laura",
-    "lastname": "Carvajal",
-    "bio": "Laura has been a Software Engineer for 15 years and is currently a Senior Developer at The Financial Times. She has led the accessibility team for FT.com in 2016 and currently works as a full-stack developer for the Internal Products team at The Financial Times.",
-    "image": "speakers/laura_carvajal.png",
-    "twitter": "lc512k",
-    "title": "Principal Engineer",
+    "id": "katie-koschland",
+    "firstname": "Katie",
+    "lastname": "Koschland",
+    "bio": "<p>Katie Koschland is an Engineer and Tech Lead at the Financial Times.</p> <p>She is passionate about web performance and you can find her sharing her thoughts on Twitter at @KKoschland.</p>",
+    "image": "speakers/katie_koschland.jpg",
+    "twitter": "KKoschland",
+    "title": "Engineer",
     "company": "The Financial Times",
-    "talkId": "keynote1"
+    "talkId": "load-testing"
   },
   {
     "id": "kenneth-auchenberg",

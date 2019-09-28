@@ -30,10 +30,10 @@
     "speakers": [{ "id": "sebastian-witalec" }]
   },
   {
-    "id": "keynote1",
-    "talk": "Common Ways We Break Accessibility And How To Avoid Them",
-    "abstract": "<p>A great deal of what makes a website accessible is fairly straightforward to achieve, but only once we know what to look out for! Over 70% of websites are broken for disabled users, including those who rely on assistive tech - such as screen readers and magnifiers - to navigate the web. That’s a good 10%-20% of your user base who can’t access your content or pay for your product, even though they may want to.</p> <p>In this talk we will go over some common front-end (anti)patterns and how they affect accessibility while otherwise going virtually undetected. We will see real user testimonials of how these affect people’s interaction with the web and their daily lives. Lastly, we’ll cover how to get the same results without breaking your site for disabled users, including real-life examples of how we’ve avoided these pitfalls at The Financial Times.</p>",
-    "speakers": [{ "id": "laura-carvajal" }]
+    "id": "load-testing",
+    "talk": "Ready, steady, crash! ",
+    "abstract": "<p>The key to finding the optimal solution to a problem is to threefold: maximise the number of tools in your ‘personal tool box’; know all their capabilities and uses; and to know which tool is best suited to fix the particular problem in front of you.</p> <p>This talk will enable you to grow all three aspects around load testing.</p><p>It will look at what it means to ‘load test’ your application, how to get started with writing your first script and provide you with a case study and an insight as to the tools and techniques that we use here at the FT to help identify such performance issues.</p>",
+    "speakers": [{ "id": "katie-koschland" }]
   },
   {
     "id": "keynote2",

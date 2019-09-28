@@ -38,7 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `,
   ).then(result => {
     if (result.errors) {
       throw result.errors;
@@ -64,8 +64,8 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           id: edge.node.id,
           image: edge.node.image,
-          talkId: edge.node.talkId
-        }
+          talkId: edge.node.talkId,
+        },
       });
     });
 
@@ -76,8 +76,8 @@ exports.createPages = ({ graphql, actions }) => {
         component: slash(talkTemplate),
         context: {
           id: edge.node.id,
-          image: edge.node.image
-        }
+          image: edge.node.image,
+        },
       });
     });
 
@@ -88,8 +88,8 @@ exports.createPages = ({ graphql, actions }) => {
         path: node.frontmatter.path,
         component: blogPostTemplate,
         context: {
-          url: node.frontmatter.path
-        } // additional data can be passed via context
+          url: node.frontmatter.path,
+        }, // additional data can be passed via context
       });
     });
   });

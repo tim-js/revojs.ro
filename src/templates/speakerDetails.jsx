@@ -10,12 +10,12 @@ export default props => {
 
   const speakerData = {
     ...speakersJson,
-    image: file
+    image: file,
   };
 
   const talkData = {
     ...talksJson,
-    speakers: [speakerData]
+    speakers: [speakerData],
   };
 
   return (
