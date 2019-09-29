@@ -2,7 +2,7 @@ export const partners = [
   {
     name: "Bereta",
     image: "partners/bereta_logo.svg",
-    url: "https://beretatm.ro",
+    url: "https://bereta.tm.ro",
   },
   {
     name: "Progress",
