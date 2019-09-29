@@ -56,6 +56,9 @@ export const day2 = {
     { time: "15:15", talkId: "web-assembly" },
     { time: "15:45", talkId: "devtools" },
     { time: "16:15", description: "Closing words" },
-    { time: "19:00", description: "After party (details will be announced)" },
+    {
+      time: "19:00",
+      description: "After party (details will be announced soon)",
+    },
   ],
 };
