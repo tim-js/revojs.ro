@@ -6,7 +6,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Note from "@components/Note";
-import { PurchaseTicket } from "@components/CTA";
+// import { PurchaseTicket } from "@components/CTA";
 // import Subscribe from "@components/Subscribe";
 
 import "./tickets.scss";
@@ -55,8 +55,7 @@ export default () => {
         <h1>Tickets</h1>
         <br />
         <strong className="tickets-important light-faded mono">
-          Late Bird available until{" "}
-          <span className="highlight">September 30th</span>
+          Tickets sale has <span className="highlight">closed!</span>
         </strong>
         <br />
         {/* <div className="mono tag-wrapper">
@@ -103,7 +102,7 @@ export default () => {
         </ul> */}
 
         <br />
-        <PurchaseTicket />
+        {/* <PurchaseTicket /> */}
         {/* <OutboundLink href="#subscribe">
           <Button>Subscribe for Updates</Button>
         </OutboundLink> */}
@@ -131,9 +130,9 @@ export default () => {
                 <strong>Regular Tickets</strong>: until 31st of August{" "}
                 <strong>(ENDED)</strong>
               </li>
-              <li>
+              <li className="light-faded">
                 <strong>Late Bird Tickets</strong>: until 30th of September{" "}
-                <strong className="highlight">(ON SALE)</strong>
+                <strong>(ENDED)</strong>
               </li>
               <li className="light-faded">
                 <strong>Workshop Tickets</strong>: until 27th of September{" "}
@@ -181,7 +180,7 @@ export default () => {
 
           <br />
           <br />
-          <PurchaseTicket white />
+          {/* <PurchaseTicket white /> */}
 
           <section>
             <h2>Bulk Tickets for Companies</h2>
@@ -234,7 +233,7 @@ export default () => {
 
           <br />
           <br />
-          <PurchaseTicket white />
+          {/* <PurchaseTicket white /> */}
         </Content>
       </Section>
     </Layout>

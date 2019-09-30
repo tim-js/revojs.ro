@@ -6,10 +6,10 @@ import IndexUpdates from "@components/index/updates";
 import IndexSpeakers from "@components/index/speakers";
 import IndexSponsors from "@components/index/sponsors";
 import Separator from "@components/Separator";
-// import Button from "@components/Button";
-import { PurchaseTicket } from "@components/CTA";
+import Button from "@components/Button";
+// import { PurchaseTicket } from "@components/CTA";
 
-import { replace } from "gatsby";
+import { replace, Link } from "gatsby";
 import queryString from "query-string";
 
 import logo from "@assets/logo-revojs.svg";
@@ -21,7 +21,7 @@ export default props => {
     if (search.fbclid) {
       const clearedSearch = queryString.stringify({
         ...search,
-        fbclid: undefined
+        fbclid: undefined,
       });
       if (clearedSearch.length) {
         replace(props.location.pathname + "?" + clearedSearch);
@@ -54,7 +54,10 @@ export default props => {
           {/* <a href="#speakers">
             <Button>Meet the Speakers</Button>
           </a> */}
-          <PurchaseTicket />
+          {/* <PurchaseTicket /> */}
+          <Link to="/agenda">
+            <Button>View the Agenda</Button>
+          </Link>
         </div>
 
         {/* <div className="description mono">
