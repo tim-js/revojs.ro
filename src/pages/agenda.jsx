@@ -9,7 +9,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 // import Note from "@components/Note";
 // import Button from "@components/Button";
-import { PurchaseTicket } from "@components/CTA";
+// import { PurchaseTicket } from "@components/CTA";
 
 import { day0, day1, day2 } from "@data/agenda";
 
@@ -99,13 +99,13 @@ const Agenda = ({ data }) => {
           <ConferenceDay data={day2} />
         </section>
 
-        <div style={{ textAlign: "center" }}>
+        {/* <div style={{ textAlign: "center" }}>
           <br />
           <br />
           <br />
           <p className="cta-text">Don't miss out to see these great talks</p>
           <PurchaseTicket label="Grab your conference ticket" white />
-        </div>
+        </div> */}
 
         <p className="agenda-note">
           <strong>NOTE:</strong> minor changes to the agenda might occur
@@ -316,7 +316,7 @@ function mergeSpeakerDetails(speakersIdList, speakers, images) {
     const speakerImage = images.find(e => speakerData.image.includes(e.base));
     return {
       ...speakerData,
-      speakerImage
+      speakerImage,
     };
   });
 }
@@ -326,12 +326,12 @@ function mergeWorkshopDetails(workshops, speakers, images) {
     const speakersDetails = mergeSpeakerDetails(
       workshop.speakers,
       speakers,
-      images
+      images,
     );
 
     return {
       ...workshop,
-      speakers: speakersDetails
+      speakers: speakersDetails,
     };
   });
 }
@@ -348,13 +348,13 @@ function mergeTalkDetails(agenda, talks, speakers, images) {
     const speakersDetails = mergeSpeakerDetails(
       talkDetails.speakers,
       speakers,
-      images
+      images,
     );
 
     return {
       ...slot,
       title: talkDetails.talk,
-      speakers: speakersDetails
+      speakers: speakersDetails,
     };
   });
 }

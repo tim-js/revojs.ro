@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
@@ -8,7 +8,8 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import SpeakersListIndex from "@components/SpeakersListIndex";
 import Separator from "@components/Separator";
-import { PurchaseTicket } from "@components/CTA";
+import Button from "@components/Button";
+// import { PurchaseTicket } from "@components/CTA";
 
 import "./speakers.scss";
 
@@ -34,7 +35,7 @@ const Speakers = ({ data }) => {
         ...speaker,
         talk,
         abstract,
-        speakerImage
+        speakerImage,
       };
     });
 
@@ -46,7 +47,7 @@ const Speakers = ({ data }) => {
 
       return {
         ...speaker,
-        speakerImage
+        speakerImage,
       };
     });
 
@@ -110,9 +111,12 @@ const Speakers = ({ data }) => {
 
       <Section light>
         <Content centered style={{ textAlign: "center" }}>
-          <p>Don't miss your chance to meet these wonderful speakers.</p>
+          {/* <p>Don't miss your chance to meet these wonderful speakers.</p>
           <br />
-          <PurchaseTicket white />
+          <PurchaseTicket white /> */}
+          <Link to="/agenda">
+            <Button white>View the Agenda</Button>
+          </Link>
         </Content>
       </Section>
     </Layout>
