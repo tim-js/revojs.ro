@@ -34,4 +34,9 @@ export const partners = [
     image: "partners/craftwand_logo.svg",
     url: "https://www.craftwand.info/",
   },
+  {
+    name: "VRH Studio",
+    image: "partners/vrh_logo.svg",
+    url: "https://vrh.myportfolio.com/",
+  },
 ];
