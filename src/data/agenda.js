@@ -58,7 +58,7 @@ export const day2 = {
     { time: "16:15", description: "Closing words" },
     {
       time: "19:00",
-      description: "After party (details will be announced soon)",
+      description: "After party at The Charlatan's Pub",
     },
   ],
 };
