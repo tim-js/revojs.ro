@@ -15,7 +15,7 @@ export default () => {
 
       <Section light>
         <Content centered style={{ textAlign: "center" }}>
-          <h2>Please tell about your experience at revo.js</h2>
+          <h2>Please tell us about your experience at revo.js</h2>
           <br />
           <br />
           <a
@@ -23,7 +23,7 @@ export default () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button white>Give us your Feedback</Button>
+            <Button white>Leave us your Feedback</Button>
           </a>
         </Content>
       </Section>
