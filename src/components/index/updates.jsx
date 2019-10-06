@@ -6,7 +6,7 @@ import Section from "@components/Section";
 import "./updates.scss";
 
 export default () => {
-  // return null;
+  return null;
   return (
     <Section centered>
       <h2>Updates</h2>
