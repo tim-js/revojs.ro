@@ -45,6 +45,32 @@
   position: relative;
 }
 
+.navigation-logo-link {
+  position: relative;
+}
+
+.navigation-edition {
+  font-weight: bold;
+  font-size: 10px;
+  @include font(mono);
+  position: absolute;
+  right: -26px;
+  top: 9px;
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+
+  .is-home & {
+    display: none;
+  }
+
+  .is-scrolled & {
+    right: 34px;
+    top: 14px;
+    font-size: 8px;
+    display: block;
+  }
+}
+
 .navigation-logo {
   display: block;
   transition: all 0.3s;

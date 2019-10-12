@@ -4,20 +4,23 @@ import { StaticQuery, graphql, Link } from "gatsby";
 import SpeakersListIndex from "@components/SpeakersListIndex";
 import Subscribe from "@components/Subscribe";
 import Button from "@components/Button";
+import { getEdition } from "@utils";
 
-import "./speakers.scss";
+import "./indexSpeakers.scss";
 
 const Speakers = ({ data }) => {
   const { allSpeakersJson, speakerImages } = data;
+  const edition = getEdition();
   const speakers = allSpeakersJson.edges
     .map(e => e.node)
     .filter(speaker => speaker.talkId)
+    .filter(speaker => speaker.edition === edition)
     .map(speaker => {
       const speakerImage = getImage(speaker.image);
 
       return {
         ...speaker,
-        speakerImage
+        speakerImage,
       };
     });
   const filteredRandomSpeakers = shuffle(speakers).filter((s, i) => i < 3);
@@ -79,6 +82,7 @@ export default props => {
                 title
                 company
                 talkId
+                edition
               }
             }
           }

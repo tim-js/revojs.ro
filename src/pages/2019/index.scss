@@ -1,0 +1,74 @@
+@import "src/styles/mixins";
+
+.index-graphics {
+  @include breakpoint(sm) {
+    background-image: url("/homepage_bg_left.svg"),
+      url("/homepage_bg_right.svg");
+    background-position: -150px top, calc(100% + 150px) top;
+    background-repeat: no-repeat, no-repeat;
+  }
+  @include breakpoint(lg) {
+    background-position: left top, right top;
+  }
+}
+
+.header-index {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.index-logo {
+  margin-bottom: var(--space-10);
+}
+
+.tagline-block {
+  display: block;
+}
+
+.index-tagline {
+  @include breakpoint(sm, max) {
+    font-size: 3.5rem;
+  }
+}
+.date-location {
+  margin-top: var(--space-4);
+}
+.index-date {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 var(--space-1);
+}
+
+.index-location {
+  font-size: 20px;
+  color: var(--primary);
+  display: inline-block;
+  margin: 0 var(--space-1);
+}
+
+.index-cta {
+  margin-top: var(--space-10);
+}
+
+/*
+.description {
+  margin-top: 25vh;
+  line-height: 1.5;
+
+  @include breakpoint(sm, max) {
+    & strong {
+      display: block;
+    }
+  }
+
+  @include breakpoint(sm) {
+    font-size: 24px;
+    & .highlight {
+      display: block;
+    }
+  }
+}
+*/

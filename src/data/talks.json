@@ -3,96 +3,112 @@
     "id": "web-components",
     "talk": "The (Real) State of Web Components",
     "abstract": "<p>2018 is gonna be the year of Web Components they said... Was it? The year is 2019 and people are asking, are Web Components everywhere? Probably not. Why?</p><p>This talk will try to answer all these questions you might be asking yourself, by going through a real evaluation of Web Components as the primary tool for authoring web pages and applications.</p>",
-    "speakers": [{ "id": "martin-hochel" }]
+    "speakers": [{ "id": "martin-hochel" }],
+    "edition": 2019
   },
   {
     "id": "web-assembly",
     "talk": "A journey of multithreading using WebAssembly",
     "abstract": "<p>WebAssembly is a new programming language, allowing us to compile C/C++ or other statically typed languages and run them in the browser and Node.js. While languages like C/C++ support multi-threading, JavaScript is single-threaded and this raises the question of how WebAssembly will behave.</p> <p>In this talk we will discuss the design of threads for WebAssembly, the implementation challenges in terms of security and we will see examples of how multithreading can be achieved using Web Workers.</p>",
-    "speakers": [{ "id": "boyan-mihaylov" }]
+    "speakers": [{ "id": "boyan-mihaylov" }],
+    "edition": 2019
   },
   {
     "id": "testing",
     "talk": "Wait, before you write your next test...",
     "abstract": "This presentation looks at the variety of ways we can test a typical web application. From unit tests to end-to-end, from functional to visual testing, from happy paths to the edge cases - there are a lot of solutions available, and each new technique gives us additional confidence in our application. This presentation will teach you how to guide test writing using code coverage, how to reach into the application code to test edge cases, and how to decide when to stub a network API request and when to let it go through.",
-    "speakers": [{ "id": "gleb-bahmutov" }]
+    "speakers": [{ "id": "gleb-bahmutov" }],
+    "edition": 2019
   },
   {
     "id": "cartography",
     "talk": "The web developer’s guide to cartography",
     "abstract": "<p>Maps are everywhere! Whether you want to find your hotel, plan your next hike or see the results of a recent election, maps are indispensable.</p> <p>But how do we create such maps? Web mapping APIs have come a long way. They are easy to use and not only allow us to create 2D maps, but more recently also 3D ones. Add some magic geo data and cartographic knowledge and you are on your way to building your first mapping master piece.</p> <p>In this talk we’ll go through the process of creating a web map: starting from an idea, gathering and processing the data, and finishing up with a beautiful web map visualization. No geo-knowledge required! Enthusiasm for maps will be provided in the beginning of the talk.</p>",
-    "speakers": [{ "id": "raluca-nicola" }]
+    "speakers": [{ "id": "raluca-nicola" }],
+    "edition": 2019
   },
   {
     "id": "chat-bots",
     "talk": "Adopt an AI-driven chatbot today",
     "abstract": "<p>Have you ever asked yourself any of these questions: What do chatbots eat? Do chatbots have dreams? What are the usual chatbot challenges? If so, this talk is for you. We will answer all of the above questions and many more.</p> <p>You will learn how to build a fully functioning chatbot in less than 10 minutes – without a single IF statement – and train it to understand human language. Then we will top it up with a quick AI training to make it understand human language.</p>",
-    "speakers": [{ "id": "sebastian-witalec" }]
+    "speakers": [{ "id": "sebastian-witalec" }],
+    "edition": 2019
   },
   {
     "id": "load-testing",
     "talk": "Ready, steady, crash! ",
     "abstract": "<p>The key to finding the optimal solution to a problem is to threefold: maximise the number of tools in your ‘personal tool box’; know all their capabilities and uses; and to know which tool is best suited to fix the particular problem in front of you.</p> <p>This talk will enable you to grow all three aspects around load testing.</p><p>It will look at what it means to ‘load test’ your application, how to get started with writing your first script and provide you with a case study and an insight as to the tools and techniques that we use here at the FT to help identify such performance issues.</p>",
-    "speakers": [{ "id": "katie-koschland" }]
+    "speakers": [{ "id": "katie-koschland" }],
+    "edition": 2019
   },
   {
     "id": "devtools",
     "talk": "DevTools for the decade to come",
     "abstract": "The ML revolution is here, and will have a profound impact on the way we develop software, but what does all of this ML buzz mean for front-end and web developers? In this talk I’ll share my perspective on the revolution that’s in front of us, and what it will mean for us as developers, and the developer tools for the decade to come. Buckle up!",
-    "speakers": [{ "id": "kenneth-auchenberg" }]
+    "speakers": [{ "id": "kenneth-auchenberg" }],
+    "edition": 2019
   },
   {
     "id": "xxss",
     "talk": "XXSS: Exotic Cross-Site Scripting Vectors",
     "abstract": "<p>XSS is one of the most well known attacks on the web, perhaps second only to SQL Injection. While the general idea behind it is relatively simple, due to the colorfulness of the web and the quirks of the browsers, it has a surprising depth to it.</p> <p>In this talk we’ll journey deep down the rabbit hole of XSS attacks and take a look at all the weird ways malicious inputs may hurt our users, from the non-JS based injections (CSS, HTML, image) through mXSS, up to blind XSS.</p>",
-    "speakers": [{ "id": "benedek-gagyi" }]
+    "speakers": [{ "id": "benedek-gagyi" }],
+    "edition": 2019
   },
   {
     "id": "oss",
     "talk": "You can do open source!",
     "abstract": "<p>Have you ever felt like open source is too much of a hassle to get into? Ever felt like you do not know enough about programming yet to get into open source? What if I told you that you’re not alone in this thought but that this thought is a misrepresentation of the facts? Join me as we take a deep dive.</p> <p>Both Junior, Intermediate and Senior developers and non-developers very often find themselves mulling over the idea of contributing to open source projects. A lot of the times this is because they might not know how to get started in contributing to open source. They either don’t believe that they are able to contribute or they think that only developers and people who are code gurus can actually contribute to open source. These are all misconceptions and the goal of this talk is to correct those misconceptions as well as give a clear outline about how to go about it for both developers and non-developers.</p>",
-    "speakers": [{ "id": "kenigbolo-meya-stephen" }]
+    "speakers": [{ "id": "kenigbolo-meya-stephen" }],
+    "edition": 2019
   },
   {
     "id": "ts",
     "talk": "Can I really type THAT in TypeScript!?",
     "abstract": "<p>Have you mastered the basics of TypeScript and are now struggling to type your more complicated code? Want to learn how to remove pesky “any” types from your code base? Then this talk is for you!</p> <p>We will take a journey through the world of advanced TypeScript types (unions, intersections, tuples, mapped types and conditional types) and talk about how you can put them to practical use, with real-world examples from stackoverflow.com.<p>",
-    "speakers": [{ "id": "titian-cernicova-dragomir" }]
+    "speakers": [{ "id": "titian-cernicova-dragomir" }],
+    "edition": 2019
   },
   {
     "id": "performance",
     "talk": "Done in 0.0166666666 seconds",
     "abstract": "In order to ensure a smooth, jank-free experience on the web, we need to render a constant stream of 60 frames per second. This means that the browser has 16 milliseconds to execute our code and render the changes on the screen. Let’s find out how the rendering pipeline works and how JavaScript and CSS might affect the rendering performance.",
-    "speakers": [{ "id": "alex-moldovan" }]
+    "speakers": [{ "id": "alex-moldovan" }],
+    "edition": 2019
   },
   {
     "id": "auth",
     "talk": "WebAuthn Rocks! Stop authenticating as if it were the 60s",
     "abstract": "<p>In the last year, WebAuthn advanced to a W3C Candidate Recommendation, making a giant leap toward enabling strong authentication on the Web for consumers. Does this mean the end of passwords, or even more phishing?</p> <p>Let’s learn about the JavaScript credential management API and how to enable authentication via WebAuthn on a website.</p>",
-    "speakers": [{ "id": "ruben-restrepo" }]
+    "speakers": [{ "id": "ruben-restrepo" }],
+    "edition": 2019
   },
   {
     "id": "pa11y",
     "talk": "Become an Accessibility BFF with your new friend Pa11y!",
     "abstract": "<p>Like Blair Waldorf and Serena van der Woodsen, Pa11y is an accessibility tester’s BFF. You already have a million issues on your plate, so how do you find a way to get started on accessibility testing? Pa11y to the rescue! Pa11y is a lightweight JS a11y testing tool with some serious “it” factor.</p> <p>This talk will explain what Pa11y does and does not cover, review examples of both command line and scripted usage, dive into the Pa11y web service and show how to best accessorize a Pa11y setup with your current testing process.</p> <p>Bonus content: how to convince the rest of your team and business why accessibility is totally worth prioritizing and how getting started with low-hanging fruit can vastly glamorize your product. Now you can take on creating a more accessible product like S & B take on the Upper East Side.</p> <p>XOXO Accessibility Girl 💋</p>",
-    "speakers": [{ "id": "jennifer-wadella" }]
+    "speakers": [{ "id": "jennifer-wadella" }],
+    "edition": 2019
   },
   {
     "id": "angular",
     "talk": "Hacking the Angular compiler with your own syntax",
     "abstract": "<p>In this duo-talk, Kwinten Pisman and Dominic Elm are going to take us on a deep dive into how Angular transforms components into DOM elements.</p> <p>We will see how we hooked into this process to be able to teach our own template syntax to Angular so we can make our own code more concise and start using some features/APIs we've always wanted.</p> <p>Attendees will walk away with a deep understanding of the Angular compiler and learn an (experimental) way to hack their own syntax into it!</p>",
-    "speakers": [{ "id": "kwinten-pisman" }, { "id": "dominic-elm" }]
+    "speakers": [{ "id": "kwinten-pisman" }, { "id": "dominic-elm" }],
+    "edition": 2019
   },
   {
     "id": "e2e",
     "talk": "End to end testing a world of web, mobile & desktop apps",
     "abstract": "<p>Things get complicated when you target multiple platforms and large parts of your code powers components used on Android, iOS, Mac, Win32 and the web from IE11 and up.</p> <p>This is the testing journey of the Profile card serving +100M people in Outlook and Office 365: How we style, test and monitor our components for any hiccups. And boy do they misbehave at times!</p> <p>Starting with one browser and some open source libraries, we improved the status quo and set a framework that scales our end to end testing across browsers and native applications</p>",
-    "speakers": [{ "id": "mathieu-henri" }]
+    "speakers": [{ "id": "mathieu-henri" }],
+    "edition": 2019
   },
   {
     "id": "clean-architecture",
     "talk": "Clean Architecture - A Twelve Months Journey to Clarity",
     "abstract": "<p>We believe in change. We believe in proven principles. We believe in choosing the right tool for the job. Come, attend my presentation to get a glimpse at our journey from a monolithic architecture to one driven by Clean Architecture.</p> <p>I will show you how a project changed over the course of a whole year from a monolith written on top of an Express.js structure, and in various plain and messy JavaScript standards, into a modular Clean Architecture driven design and architecture, and with TypeScript.</p> <p>We will talk about modules, adopting TypeScript, extracting microservices from existing code, and of course TDD, unit testing, api testing.</p>",
-    "speakers": [{ "id": "csaba-patkos" }]
+    "speakers": [{ "id": "csaba-patkos" }],
+    "edition": 2019
   }
 ]

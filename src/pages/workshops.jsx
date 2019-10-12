@@ -4,7 +4,7 @@ import { currentEdition } from "@utils";
 
 export default () => {
   useEffect(() => {
-    navigate(`/${currentEdition}/supporters/`);
+    navigate(`/${currentEdition}/workshops/`);
   }, []);
   return null;
 };

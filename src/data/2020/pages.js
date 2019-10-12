@@ -1,27 +1,30 @@
 export const main = [
-  {
-    name: "Speakers",
-    hasSubpages: true,
-  },
-  {
-    name: "Agenda",
-  },
   // {
-  //   name: "Call for Papers",
-  //   path: "cfp"
+  //   name: "Speakers",
+  //   hasSubpages: true,
   // },
+  // {
+  //   name: "Agenda",
+  // },
+  {
+    name: "Call for Papers",
+    path: "cfp",
+  },
   {
     name: "Tickets",
   },
-  {
-    name: "Workshop",
-    path: "workshop",
-  },
+  // {
+  //   name: "Workshop",
+  //   path: "workshop",
+  // },
   {
     name: "Venue",
   },
   {
     name: "Supporters",
+  },
+  {
+    name: "Organizers",
   },
 ];
 
@@ -46,9 +49,10 @@ export const secondary = [
     name: "Press Info",
     path: "press",
   },
-  {
-    name: "Organizers",
-  },
+  // {
+  //   name: "Past Editions",
+  //   path: "past-editions",
+  // },
 ];
 
 export const tertiary = [

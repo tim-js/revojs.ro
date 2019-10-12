@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 import Section from "@components/Section";
 
-import "./updates.scss";
+import "./indexUpdates.scss";
 
 export default () => {
   return null;

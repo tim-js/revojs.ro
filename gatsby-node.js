@@ -15,6 +15,7 @@ exports.createPages = ({ graphql, actions }) => {
               id
               image
               talkId
+              edition
             }
           }
         }
@@ -22,6 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
           edges {
             node {
               id
+              edition
             }
           }
         }
@@ -59,7 +61,9 @@ exports.createPages = ({ graphql, actions }) => {
         // as a template component. The `context` is
         // optional but is often necessary so the template
         // can query data specific to each page.
-        path: `/speakers/${slug(edge.node.id.toLowerCase())}/`,
+        path: `/${edge.node.edition}/speakers/${slug(
+          edge.node.id.toLowerCase(),
+        )}/`,
         component: slash(speakerTemplate),
         context: {
           id: edge.node.id,
@@ -72,7 +76,9 @@ exports.createPages = ({ graphql, actions }) => {
     const talkTemplate = path.resolve(`src/templates/talkDetails.jsx`);
     _.each(result.data.allTalksJson.edges, edge => {
       createPage({
-        path: `/talk/${slug(edge.node.id.toLowerCase())}/`,
+        path: `/${edge.node.edition}/agenda/${slug(
+          edge.node.id.toLowerCase(),
+        )}/`,
         component: slash(talkTemplate),
         context: {
           id: edge.node.id,

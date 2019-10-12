@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
 
+import { replace, Link } from "gatsby";
+import queryString from "query-string";
+
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import IndexUpdates from "@components/index/IndexUpdates";
 import IndexSpeakers from "@components/index/IndexSpeakers";
 import IndexSponsors from "@components/index/IndexSponsors";
 import Separator from "@components/Separator";
-// import Button from "@components/Button";
+import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
-
-import { replace, Link } from "gatsby";
-import queryString from "query-string";
+import { getEdition } from "@utils";
 
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
@@ -55,9 +56,9 @@ export default props => {
             <Button>Meet the Speakers</Button>
           </a> */}
           {/* <PurchaseTicket /> */}
-          {/* <Link to="/agenda">
+          <Link to={`/${getEdition()}/agenda`}>
             <Button>View the Agenda</Button>
-          </Link> */}
+          </Link>
         </div>
 
         {/* <div className="description mono">

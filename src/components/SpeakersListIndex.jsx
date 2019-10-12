@@ -4,8 +4,10 @@ import { Link } from "gatsby";
 import SpeakerIndex from "@components/SpeakerIndex";
 
 import "./speakersListIndex.scss";
+import { getEdition } from "@utils";
 
 export default ({ speakers }) => {
+  const edition = getEdition();
   return (
     <ul className="index-speakers-list">
       {speakers.map((speaker, i) => {
@@ -17,7 +19,7 @@ export default ({ speakers }) => {
         return (
           <li key={speaker.id} className={css}>
             <Link
-              to={`/speakers/${speaker.id}`}
+              to={`/${edition}/speakers/${speaker.id}`}
               className="index-speakers-link"
             >
               <SpeakerIndex data={speaker} />

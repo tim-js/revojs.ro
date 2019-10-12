@@ -5,7 +5,7 @@ import Logos from "@components/Logos";
 
 import { sponsors } from "@data/sponsors";
 
-import "./sponsors.scss";
+import "./indexSponsors.scss";
 
 export default () => {
   return (

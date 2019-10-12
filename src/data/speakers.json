@@ -1,5 +1,18 @@
 [
   {
+    "edition": 2020,
+    "id": "dan-abramov",
+    "firstname": "Dan",
+    "lastname": "Abramov",
+    "bio": "<p>Dan</p>",
+    "image": "speakers/martin_hochel.jpg",
+    "twitter": "",
+    "title": "",
+    "company": "Facebook",
+    "talkId": "react"
+  },
+  {
+    "edition": 2019,
     "id": "martin-hochel",
     "firstname": "Martin",
     "lastname": "Hochel",
@@ -11,6 +24,7 @@
     "talkId": "web-components"
   },
   {
+    "edition": 2019,
     "id": "boyan-mihaylov",
     "firstname": "Boyan",
     "lastname": "Mihaylov",
@@ -22,6 +36,7 @@
     "talkId": "web-assembly"
   },
   {
+    "edition": 2019,
     "id": "gleb-bahmutov",
     "firstname": "Gleb",
     "lastname": "Bahmutov",
@@ -33,6 +48,7 @@
     "talkId": "testing"
   },
   {
+    "edition": 2019,
     "id": "raluca-nicola",
     "firstname": "Raluca",
     "lastname": "Nicola",
@@ -44,6 +60,7 @@
     "talkId": "cartography"
   },
   {
+    "edition": 2019,
     "id": "sebastian-witalec",
     "firstname": "Sebastian",
     "lastname": "Witalec",
@@ -55,6 +72,7 @@
     "talkId": "chat-bots"
   },
   {
+    "edition": 2019,
     "id": "katie-koschland",
     "firstname": "Katie",
     "lastname": "Koschland",
@@ -66,6 +84,7 @@
     "talkId": "load-testing"
   },
   {
+    "edition": 2019,
     "id": "kenneth-auchenberg",
     "firstname": "Kenneth",
     "lastname": "Auchenberg",
@@ -77,6 +96,7 @@
     "talkId": "devtools"
   },
   {
+    "edition": 2019,
     "id": "benedek-gagyi",
     "firstname": "Benedek",
     "lastname": "Gagyi",
@@ -88,6 +108,7 @@
     "talkId": "xxss"
   },
   {
+    "edition": 2019,
     "id": "kenigbolo-meya-stephen",
     "firstname": "Stephen",
     "lastname": "Meya Kenigbolo",
@@ -99,6 +120,7 @@
     "talkId": "oss"
   },
   {
+    "edition": 2019,
     "id": "titian-cernicova-dragomir",
     "firstname": "Tițian",
     "lastname": "Cernicova-Dragomir",
@@ -110,6 +132,7 @@
     "talkId": "ts"
   },
   {
+    "edition": 2019,
     "id": "alex-moldovan",
     "firstname": "Alex",
     "lastname": "Moldovan",
@@ -121,6 +144,7 @@
     "talkId": "performance"
   },
   {
+    "edition": 2019,
     "id": "ruben-restrepo",
     "firstname": "Ruben",
     "lastname": "Restrepo",
@@ -132,6 +156,7 @@
     "talkId": "auth"
   },
   {
+    "edition": 2019,
     "id": "jennifer-wadella",
     "firstname": "Jennifer",
     "lastname": "Wadella",
@@ -143,6 +168,7 @@
     "talkId": "pa11y"
   },
   {
+    "edition": 2019,
     "id": "mathieu-henri",
     "firstname": "Mathieu",
     "lastname": "Henri",
@@ -154,6 +180,7 @@
     "talkId": "e2e"
   },
   {
+    "edition": 2019,
     "id": "csaba-patkos",
     "firstname": "Csaba",
     "lastname": "Patkós",
@@ -165,6 +192,7 @@
     "talkId": "clean-architecture"
   },
   {
+    "edition": 2019,
     "id": "kwinten-pisman",
     "firstname": "Kwinten",
     "lastname": "Pisman",
@@ -176,6 +204,7 @@
     "talkId": "angular"
   },
   {
+    "edition": 2019,
     "id": "dominic-elm",
     "firstname": "Dominic",
     "lastname": "Elm",
@@ -187,6 +216,7 @@
     "talkId": "angular"
   },
   {
+    "edition": 2019,
     "id": "diana-macau",
     "firstname": "Diana",
     "lastname": "Măcău",

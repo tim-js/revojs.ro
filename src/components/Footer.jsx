@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { main, secondary, tertiary } from "@data/pages";
-
 import "./footer.scss";
 
 import facebook from "@assets/facebook.svg";
@@ -11,6 +9,7 @@ import instagram from "@assets/instagram.svg";
 import linkedin from "@assets/linkedin.svg";
 // import medium from "@assets/medium.svg";
 import revojs from "@assets/revo.js.svg";
+import { getPages } from "@utils";
 
 function renderPage(page) {
   const name = page.name;
@@ -21,6 +20,7 @@ function renderPage(page) {
 
 export default props => {
   const separation = !props.noFooterSeparation ? "footer-separation" : "";
+  const { main, secondary, tertiary } = getPages();
 
   return (
     <footer className={`footer ${separation}`}>
