@@ -11,6 +11,10 @@ export function getYearFromUrl(url) {
 export const currentEdition = 2019;
 
 export function getEdition() {
+  if (typeof window === "undefined") {
+    return currentEdition;
+  }
+
   const year = getYearFromUrl(window.location.pathname) || currentEdition;
   return +year;
 }
