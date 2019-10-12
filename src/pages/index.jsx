@@ -9,7 +9,7 @@ import Separator from "@components/Separator";
 // import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 
-import { replace, Link } from "gatsby";
+import { replace } from "gatsby";
 import queryString from "query-string";
 
 import logo from "@assets/logo-revojs.svg";

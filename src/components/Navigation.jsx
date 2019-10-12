@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Hamburger from "@components/layout/Hamburger";
 import logo from "@assets/logo-revojs.svg";
-import { getEdition, currentEdition, getPages } from "@utils";
+import { getEdition, getPages } from "@utils";
 
 import "./navigation.scss";
 
@@ -43,10 +43,10 @@ export default props => {
   const isHome = (props.location && props.location.pathname === "/") || false;
   const edition = getEdition();
 
-  let backToCurrentEdition = null;
-  if (edition != currentEdition) {
-    backToCurrentEdition = <Link to="/">Back to current edition</Link>;
-  }
+  // let backToCurrentEdition = null;
+  // if (edition != currentEdition) {
+  //   backToCurrentEdition = <Link to="/">Back to current edition</Link>;
+  // }
 
   const { main, secondary, tertiary } = getPages();
 

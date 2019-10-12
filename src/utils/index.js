@@ -4,6 +4,7 @@ import * as pages2020 from "@data/2020/pages";
 export function getYearFromUrl(url) {
   return url.split(/[^\d]/).filter(function(n) {
     if (n >= 2019 && n <= 2099) return n;
+    return undefined;
   })[0];
 }
 

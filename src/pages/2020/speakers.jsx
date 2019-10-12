@@ -11,13 +11,13 @@ import Separator from "@components/Separator";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 
-import { getYearFromUrl } from "@utils";
+import { getEdition } from "@utils";
 
 import "./speakers.scss";
 
 const Speakers = props => {
   const { allSpeakersJson, speakerImages, allTalksJson } = props.data;
-  const edition = getYearFromUrl(props.path);
+  const edition = getEdition();
 
   function getTalk(id) {
     return allTalksJson.edges.find(t => t.node.id === id);
@@ -30,7 +30,7 @@ const Speakers = props => {
   const speakers = allSpeakersJson.edges
     .map(e => e.node)
     .filter(speaker => speaker.talkId)
-    .filter(speaker => speaker.edition == edition)
+    .filter(speaker => speaker.edition === edition)
     .map(speaker => {
       const { talk, abstract } = getTalk(speaker.talkId) || {};
       const speakerImage = getImage(speaker.image) || {};
