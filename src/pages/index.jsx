@@ -6,6 +6,7 @@ import IndexUpdates from "@components/index/IndexUpdates";
 import IndexSpeakers from "@components/index/IndexSpeakers";
 import IndexSponsors from "@components/index/IndexSponsors";
 import Separator from "@components/Separator";
+import Subscribe from "@components/Subscribe";
 // import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 
@@ -32,7 +33,11 @@ export default props => {
   });
 
   return (
-    <Layout location={props.location} className="index-graphics">
+    <Layout
+      location={props.location}
+      className="index-graphics"
+      noFooterSeparation
+    >
       <Header className="header-index">
         <div className="index-logo">
           <img src={logo} alt="revo.js" height="70" />
@@ -43,8 +48,8 @@ export default props => {
             Change is <span className="tagline-block">the only const.</span>
           </h1>
           <div className="date-location">
-            <time className="index-date mono" dateTime="2019-10-03">
-              <strong>October.3-4.2019</strong>
+            <time className="index-date mono" dateTime="2019-10-07">
+              <strong>October.7-9.2020</strong>
             </time>
             <strong className="index-location mono">Timisoara/RO</strong>
           </div>
@@ -67,10 +72,18 @@ export default props => {
         </div> */}
       </Header>
 
-      <IndexUpdates />
+      {/* <IndexUpdates /> */}
       <Separator />
-      <IndexSpeakers />
-      <IndexSponsors />
+      {/* <IndexSpeakers /> */}
+
+      <div style={{ paddingTop: "96px" }} id="subscribe">
+        <p style={{ textAlign: "center" }}>
+          Subscribe to stay on top the latest changes and revo.news:
+        </p>
+        <Subscribe centered />
+      </div>
+
+      {/* <IndexSponsors /> */}
     </Layout>
   );
 };

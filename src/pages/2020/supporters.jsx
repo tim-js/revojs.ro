@@ -8,13 +8,11 @@ import Note from "@components/Note";
 
 import Logos from "@components/Logos";
 
-import { sponsors } from "@data/2019/sponsors";
-import { communities } from "@data/2019/communities";
-import { partners } from "@data/2019/partners";
-import { media } from "@data/2019/media-partners";
+import { sponsors, partners, communities } from "@data/2020/supporters";
 
 import "./supporters.scss";
 
+console.log(sponsors, partners, communities);
 export default () => {
   return (
     <Layout title="revo.js Sponsors">
@@ -47,7 +45,12 @@ export default () => {
             <strong>For real-real</strong>.
           </p>
 
-          <Logos list={sponsors} />
+          <Logos
+            list={sponsors}
+            style={{
+              maxWidth: "200px",
+            }}
+          />
         </section>
 
         <section style={{ textAlign: "center" }}>
@@ -60,14 +63,13 @@ export default () => {
           <Logos
             list={partners}
             style={{
-              marginLeft: "auto",
-              marginRight: "auto",
+              maxWidth: "100px",
             }}
             small
           />
         </section>
 
-        <section style={{ textAlign: "center" }}>
+        {/* <section style={{ textAlign: "center" }}>
           <h1 className="sponsors-heading">Media Partners</h1>
           <p>
             They share because they care. <br />
@@ -79,12 +81,10 @@ export default () => {
             list={media}
             style={{
               maxWidth: "400px",
-              marginLeft: "auto",
-              marginRight: "auto",
             }}
             small
           />
-        </section>
+        </section> */}
 
         <section style={{ textAlign: "center" }}>
           <h1 className="sponsors-heading">Communities</h1>
@@ -94,7 +94,13 @@ export default () => {
             They are the primary personas of this event.
           </p>
 
-          <Logos list={communities} small />
+          <Logos
+            list={communities}
+            style={{
+              maxWidth: "100px",
+            }}
+            small
+          />
         </section>
       </Section>
     </Layout>

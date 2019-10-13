@@ -16,7 +16,7 @@ export default function HTML(props) {
         <meta property="og:url" content="https://revojs.ro/" />
         <meta
           property="og:description"
-          content="revo.js is the first JavaScript conference in Timisoara, Romania, taking place between the 3rd and 4th of October. The conference aims to bring JavaScript enthusiasts two full days of tech-focused talks, community networking and thought-provoking ideas meant to inspire change, the only constant there is."
+          content="revo.js is the first JavaScript conference in Timisoara, Romania. revo.js aims to bring JavaScript enthusiasts two full days of tech-focused talks, community networking and thought-provoking ideas meant to inspire change, the only constant there is."
         />
         <meta name="twitter:card" content="summary_large_image" />
 
@@ -26,7 +26,7 @@ export default function HTML(props) {
         />
         <meta
           name="Description"
-          content="revo.js is a two-day JavaScript Conference in Timisoara, Romania"
+          content="revo.js is a two-day, single-track, community-driven, JavaScript Conference in Timisoara, Romania"
         />
 
         <script
@@ -40,7 +40,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '333160550657034'); 
-fbq('track', 'PageView');`
+fbq('track', 'PageView');`,
           }}
         />
         <noscript
@@ -51,7 +51,7 @@ fbq('track', 'PageView');`
             alt=""
             src="https://www.facebook.com/tr?id=333160550657034&amp;ev=PageView
             &amp;noscript=1"
-          />`
+          />`,
           }}
         />
         {props.headComponents}
@@ -78,5 +78,5 @@ HTML.propTypes = {
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
-  postBodyComponents: PropTypes.array
+  postBodyComponents: PropTypes.array,
 };

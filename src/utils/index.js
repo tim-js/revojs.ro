@@ -8,7 +8,7 @@ export function getYearFromUrl(url) {
   })[0];
 }
 
-export const currentEdition = 2019;
+export const currentEdition = 2020;
 
 export function getEdition() {
   if (typeof window === "undefined") {

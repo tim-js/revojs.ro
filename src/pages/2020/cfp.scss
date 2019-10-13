@@ -1,0 +1,19 @@
+@import "src/styles/mixins";
+
+.cfp-image {
+  @include breakpoint(md) {
+    background: url("/illustration_cfp.svg") no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+.cfp-important {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.cfp-cta {
+  margin-top: var(--space-6);
+  display: inline-block;
+}

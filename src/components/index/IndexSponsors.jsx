@@ -3,7 +3,7 @@ import React from "react";
 import Section from "@components/Section";
 import Logos from "@components/Logos";
 
-import { sponsors } from "@data/sponsors";
+import { sponsors } from "@data/2020/supporters";
 
 import "./indexSponsors.scss";
 

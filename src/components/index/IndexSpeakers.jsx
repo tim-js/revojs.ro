@@ -2,7 +2,6 @@ import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
 
 import SpeakersListIndex from "@components/SpeakersListIndex";
-import Subscribe from "@components/Subscribe";
 import Button from "@components/Button";
 import { getEdition } from "@utils";
 
@@ -52,16 +51,9 @@ const Speakers = ({ data }) => {
         className="index-speakers-more"
         style={{ textAlign: "center", marginTop: "5em" }}
       >
-        <Link to="/speakers">
+        <Link to={`/${edition}/speakers`}>
           <Button>Meet all the speakers</Button>
         </Link>
-
-        <div style={{ paddingTop: "96px" }} id="subscribe">
-          <p style={{ textAlign: "center" }}>
-            Subscribe to stay on top the latest changes and revo.news:
-          </p>
-          <Subscribe centered />
-        </div>
       </div>
     </section>
   );

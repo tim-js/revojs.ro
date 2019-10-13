@@ -65,10 +65,10 @@ export default () => {
               We've received <strong>92 proposals</strong>, which is a lot more
               than we've initially expected.
             </p>
-            <p>
+            {/* <p>
               We're currently thoroughly reviewing all proposals and we're
               planning to annouce the selected speakers in Mid-July.
-            </p>
+            </p> */}
           </Note>
 
           {/* <br />

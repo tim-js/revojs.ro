@@ -33,7 +33,11 @@ export default props => {
   });
 
   return (
-    <Layout location={props.location} className="index-graphics">
+    <Layout
+      location={props.location}
+      className="index-graphics"
+      noFooterSeparation
+    >
       <Header className="header-index">
         <div className="index-logo">
           <img src={logo} alt="revo.js" height="70" />
@@ -68,10 +72,10 @@ export default props => {
         </div> */}
       </Header>
 
-      <IndexUpdates />
+      {/* <IndexUpdates /> */}
       <Separator />
       <IndexSpeakers />
-      <IndexSponsors />
+      {/* <IndexSponsors /> */}
     </Layout>
   );
 };

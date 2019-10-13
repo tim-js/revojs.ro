@@ -14,13 +14,13 @@ import banatit from "@assets/Banat_IT_Logo.svg";
 import "./organizers.scss";
 
 const Organizers = ({ data }) => {
-  const { allTeam2019Json, teamImages } = data;
+  const { allTeam2020Json, teamImages } = data;
 
   function getImage(image) {
     return teamImages.edges.find(e => image.includes(e.node.base));
   }
 
-  const team = allTeam2019Json.edges
+  const team = allTeam2020Json.edges
     .map(e => e.node)
     .map(member => {
       const memberImage = getImage(member.image);
@@ -130,7 +130,7 @@ export default props => {
     <StaticQuery
       query={graphql`
         query {
-          allTeam2019Json {
+          allTeam2020Json {
             edges {
               node {
                 name

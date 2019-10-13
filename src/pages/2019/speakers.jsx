@@ -84,7 +84,7 @@ const Speakers = props => {
 
       <Section style={{ paddingTop: 0 }}>
         <Content centered style={{ textAlign: "center" }}>
-          <h2>revo.js 2019 will be hosted by:</h2>
+          <h2>revo.js 2019 was hosted by:</h2>
         </Content>
       </Section>
 
@@ -118,7 +118,7 @@ const Speakers = props => {
           {/* <p>Don't miss your chance to meet these wonderful speakers.</p>
           <br />
           <PurchaseTicket white /> */}
-          <Link to="/agenda">
+          <Link to={`/${edition}/agenda`}>
             <Button white>View the Agenda</Button>
           </Link>
         </Content>

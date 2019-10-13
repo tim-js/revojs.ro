@@ -63,6 +63,7 @@ h3,
 
 h1 {
   font-size: 4rem;
+  line-height: 1.2;
 
   @include breakpoint(sm) {
     font-size: 6rem;

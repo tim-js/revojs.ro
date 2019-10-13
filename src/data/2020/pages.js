@@ -20,9 +20,9 @@ export const main = [
   {
     name: "Venue",
   },
-  {
-    name: "Supporters",
-  },
+  // {
+  //   name: "Supporters",
+  // },
   {
     name: "Organizers",
   },

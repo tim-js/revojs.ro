@@ -1,0 +1,9 @@
+@import "src/styles/mixins";
+
+.workshops-image {
+  @include breakpoint(md) {
+    background: url("/illustration_workshops.svg") no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}

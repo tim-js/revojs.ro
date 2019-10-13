@@ -7,6 +7,8 @@ import { PurchaseTicket } from "@components/CTA";
 
 import "./Talk.scss";
 
+import { getEdition, currentEdition } from "@utils";
+
 function getName(speakers) {
   return speakers.map(speaker => `${speaker.firstname}'s`).join(" and ");
 }
@@ -76,11 +78,23 @@ export default props => {
           </React.Fragment>
         ))}
 
+        {renderCTA(speakers)}
+      </Content>
+    </Section>
+  );
+
+  function renderCTA(speakers) {
+    if (currentEdition !== getEdition()) {
+      return null;
+    }
+
+    return (
+      <>
         <br />
         {talk && <h2>Want to see {getName(speakers)} talk?</h2>}
         <br />
         <PurchaseTicket white style={{ margin: 0 }} />
-      </Content>
-    </Section>
-  );
+      </>
+    );
+  }
 };

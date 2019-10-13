@@ -1,0 +1,19 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.venue-image {
+  @include breakpoint(md) {
+    background: url("/illustration_venue.svg") no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+
+.venue-important {
+  line-height: 1.7;
+  font-size: 16px;
+
+  @include breakpoint(sm) {
+    font-size: 24px;
+  }
+}
