@@ -11,9 +11,9 @@ export const main = [
   //   name: "Call for Papers",
   //   path: "cfp"
   // },
-  {
-    name: "Tickets",
-  },
+  // {
+  //   name: "Tickets",
+  // },
   {
     name: "Workshop",
     path: "workshop",
@@ -26,6 +26,9 @@ export const main = [
   },
   {
     name: "Organizers",
+  },
+  {
+    name: "Media",
   },
 ];
 
@@ -42,9 +45,6 @@ export const secondary = [
   },
   // {
   //   name: "Manifest"
-  // },
-  // {
-  //   name: "Media"
   // },
   {
     name: "Press Info",
