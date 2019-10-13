@@ -52,7 +52,8 @@ export default () => {
             <br />
             <p>
               We expect all participants to follow these rules at the
-              conference, workshop venues and conference-related social events.
+              conference, workshop venues, after-party and other
+              conference-related social events.
             </p>
             <p className="highlight">
               <strong>
