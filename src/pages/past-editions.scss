@@ -1,0 +1,16 @@
+@import "src/styles/fonts";
+
+.past-edition {
+  @include font(mono);
+  font-size: 36px;
+  font-weight: bold;
+
+  img {
+    height: 48px;
+    vertical-align: text-top;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

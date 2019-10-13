@@ -49,10 +49,10 @@ export const secondary = [
     name: "Press Info",
     path: "press",
   },
-  // {
-  //   name: "Past Editions",
-  //   path: "past-editions",
-  // },
+  {
+    name: "Past Editions",
+    path: "past-editions",
+  },
 ];
 
 export const tertiary = [
