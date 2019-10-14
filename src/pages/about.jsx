@@ -28,11 +28,13 @@ export default () => {
             </p>
 
             <ul className="bullet">
-              <li>2 full days</li>
+              <li>1 full day of workshops</li>
+              <li>2 full days of technical focused talks</li>
               <li>single track conference</li>
               <li>community driven, not-for-profit event</li>
               <li>16+ international speakers</li>
               <li>250 participants</li>
+              <li>engaging After Party</li>
             </ul>
           </section>
           <p>

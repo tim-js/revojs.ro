@@ -27,7 +27,7 @@ export default () => {
         <br />
         <strong className="tickets-important light-faded mono">
           Early Bird Tickets will become available <br />
-          on <span className="highlight">{EARLY_START}</span>
+          on the <span className="highlight">{EARLY_START}</span>
         </strong>
         <br />
         <br />
@@ -62,7 +62,7 @@ export default () => {
                 <strong>Late Bird Tickets</strong>: until {LATE_END}{" "}
               </li>
               <li>
-                <strong>Workshop Tickets</strong>: until {LATE_END}{" "}
+                <strong>Workshops Tickets</strong>: until {LATE_END}{" "}
               </li>
             </ul>
           </section>
@@ -83,15 +83,15 @@ export default () => {
 
             <p>
               <strong>Note:</strong> <br />
-              Conference tickets don't include access to the workshop. <br />
+              Conference tickets don't include access to workshops. <br />
               There is a separate ticket that you have to purchase in order to
               attend the workshop.
             </p>
           </section>
 
           <section>
-            <h2>Workshop tickets</h2>
-            <p>Workshop tickets are sold separately and they include:</p>
+            <h2>Workshops tickets</h2>
+            <p>Workshops tickets are sold separately and they include:</p>
             <ul className="bullet">
               <li>lunch and snacks</li>
               <li>coffee and beverages</li>
@@ -130,13 +130,15 @@ export default () => {
 
             <p>
               We also offer{" "}
-              <OutboundLink
+              {/* <OutboundLink
                 target="_blank"
                 href="https://diversitytickets.org/en/events/446"
               >
                 Diversity Support Tickets
-              </OutboundLink>{" "}
-              and Scholarships meant to ignite change among young talents.
+              </OutboundLink>{" "} */}
+              <strong>Diversity Support Tickets</strong> and{" "}
+              <strong>Scholarships</strong> meant to ignite change among young
+              talents.
             </p>
 
             <p>
