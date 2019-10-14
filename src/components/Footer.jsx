@@ -9,18 +9,20 @@ import instagram from "@assets/instagram.svg";
 import linkedin from "@assets/linkedin.svg";
 // import medium from "@assets/medium.svg";
 import revojs from "@assets/revo.js.svg";
-import { getPages } from "@utils";
+import { getPages, getEdition } from "@utils";
 
-function renderPage(page) {
+function renderPage(page, edition, isMainLink) {
   const name = page.name;
   const path = page.path || name.toLowerCase();
+  const uri = isMainLink ? `/${edition}/${path}/` : `/${path}/`;
 
-  return <Link to={`/${path}/`}>{name}</Link>;
+  return <Link to={uri}>{name}</Link>;
 }
 
 export default props => {
   const separation = !props.noFooterSeparation ? "footer-separation" : "";
   const { main, secondary, tertiary } = getPages();
+  const edition = getEdition();
 
   return (
     <footer className={`footer ${separation}`}>
@@ -28,19 +30,23 @@ export default props => {
         <div className="internal-links">
           <ul className="footer-menu">
             {main.map(page => {
-              return <li key={page.name}>{renderPage(page)}</li>;
+              return <li key={page.name}>{renderPage(page, edition, true)}</li>;
             })}
           </ul>
 
           <ul className="footer-menu">
             {secondary.map(page => {
-              return <li key={page.name}>{renderPage(page)}</li>;
+              return (
+                <li key={page.name}>{renderPage(page, edition, false)}</li>
+              );
             })}
           </ul>
 
           <ul className="footer-menu">
             {tertiary.map(page => {
-              return <li key={page.name}>{renderPage(page)}</li>;
+              return (
+                <li key={page.name}>{renderPage(page, edition, false)}</li>
+              );
             })}
           </ul>
         </div>
