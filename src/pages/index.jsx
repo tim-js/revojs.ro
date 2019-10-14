@@ -7,7 +7,7 @@ import IndexSpeakers from "@components/index/IndexSpeakers";
 import IndexSponsors from "@components/index/IndexSponsors";
 import Separator from "@components/Separator";
 import Subscribe from "@components/Subscribe";
-// import Button from "@components/Button";
+import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 
 import { replace } from "gatsby";
@@ -56,6 +56,9 @@ export default props => {
         </div>
 
         <div className="index-cta">
+          <a href="#subscribe">
+            <Button>Subscribe for News</Button>
+          </a>
           {/* <a href="#speakers">
             <Button>Meet the Speakers</Button>
           </a> */}
