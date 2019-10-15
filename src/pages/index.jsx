@@ -79,7 +79,7 @@ export default props => {
       <Separator />
       {/* <IndexSpeakers /> */}
 
-      <div style={{ paddingTop: "96px" }} id="subscribe">
+      <div id="subscribe" className="subscribe">
         <p style={{ textAlign: "center" }}>
           Subscribe to stay on top the latest changes and revo.news:
         </p>
