@@ -1,0 +1,24 @@
+@import "src/styles/mixins";
+
+.media-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10vw;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5vw;
+  }
+}
+
+.media-photo-category {
+  flex: 1;
+
+  figure {
+    margin: 0;
+  }
+  caption {
+    margin-top: 0.5em;
+    display: block;
+  }
+}
