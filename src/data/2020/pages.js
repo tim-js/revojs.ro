@@ -50,8 +50,8 @@ export const secondary = [
     path: "press",
   },
   {
-    name: "Past Editions",
-    path: "past-editions",
+    name: "revo.js 2019",
+    path: "2019",
   },
 ];
 
