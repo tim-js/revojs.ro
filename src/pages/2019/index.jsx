@@ -5,9 +5,9 @@ import queryString from "query-string";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import IndexUpdates from "@components/index/IndexUpdates";
+// import IndexUpdates from "@components/index/IndexUpdates";
 import IndexSpeakers from "@components/index/IndexSpeakers";
-import IndexSponsors from "@components/index/IndexSponsors";
+// import IndexSponsors from "@components/index/IndexSponsors";
 import Separator from "@components/Separator";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";

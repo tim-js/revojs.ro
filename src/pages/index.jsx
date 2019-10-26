@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import IndexUpdates from "@components/index/IndexUpdates";
-import IndexSpeakers from "@components/index/IndexSpeakers";
-import IndexSponsors from "@components/index/IndexSponsors";
+// import IndexUpdates from "@components/index/IndexUpdates";
+// import IndexSpeakers from "@components/index/IndexSpeakers";
+// import IndexSponsors from "@components/index/IndexSponsors";
 import Separator from "@components/Separator";
 import Subscribe from "@components/Subscribe";
 import Button from "@components/Button";

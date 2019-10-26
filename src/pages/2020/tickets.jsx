@@ -12,12 +12,12 @@ import Subscribe from "@components/Subscribe";
 
 import "./tickets.scss";
 
-const EARLY_START = "1st of March";
-const EARLY_END = "31st of March";
-const REGULAR_START = "1st of April";
-const REGULAR_END = "31st of July";
-const LATE_START = "1st of August";
-const LATE_END = "31st of August";
+const EARLY_START = "23rd of March";
+const EARLY_END = "4th of May";
+// const REGULAR_START = "5th of May";
+const REGULAR_END = "24th of August";
+// const LATE_START = "25th of August";
+const LATE_END = "21st of September";
 
 export default () => {
   return (

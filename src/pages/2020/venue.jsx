@@ -3,8 +3,8 @@ import React from "react";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import Content from "@components/Content";
-import Section from "@components/Section";
+// import Content from "@components/Content";
+// import Section from "@components/Section";
 // import Button from "@components/Button";
 
 import "./venue.scss";

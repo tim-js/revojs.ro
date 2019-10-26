@@ -1,59 +1,59 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
+import { StaticQuery, graphql /*, Link*/ } from "gatsby";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import Content from "@components/Content";
-import Section from "@components/Section";
+// import Content from "@components/Content";
+// import Section from "@components/Section";
 // import SpeakersListIndex from "@components/SpeakersListIndex";
 // import Separator from "@components/Separator";
-import Button from "@components/Button";
-import { PurchaseTicket } from "@components/CTA";
+// import Button from "@components/Button";
+// import { PurchaseTicket } from "@components/CTA";
 
-import { getEdition } from "@utils";
+// import { getEdition } from "@utils";
 
 import "./speakers.scss";
 
 const Speakers = props => {
-  const { allSpeakersJson, speakerImages, allTalksJson } = props.data;
-  const edition = getEdition();
+  // const { allSpeakersJson, speakerImages, allTalksJson } = props.data;
+  // const edition = getEdition();
 
-  function getTalk(id) {
-    return allTalksJson.edges.find(t => t.node.id === id);
-  }
+  // function getTalk(id) {
+  //   return allTalksJson.edges.find(t => t.node.id === id);
+  // }
 
-  function getImage(image) {
-    return speakerImages.edges.find(e => image.includes(e.node.base));
-  }
+  // function getImage(image) {
+  //   return speakerImages.edges.find(e => image.includes(e.node.base));
+  // }
 
-  const speakers = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(speaker => speaker.talkId)
-    .filter(speaker => speaker.edition === edition)
-    .map(speaker => {
-      const { talk, abstract } = getTalk(speaker.talkId) || {};
-      const speakerImage = getImage(speaker.image) || {};
+  // const speakers = allSpeakersJson.edges
+  //   .map(e => e.node)
+  //   .filter(speaker => speaker.talkId)
+  //   .filter(speaker => speaker.edition === edition)
+  //   .map(speaker => {
+  //     const { talk, abstract } = getTalk(speaker.talkId) || {};
+  //     const speakerImage = getImage(speaker.image) || {};
 
-      return {
-        ...speaker,
-        talk,
-        abstract,
-        speakerImage,
-      };
-    });
+  //     return {
+  //       ...speaker,
+  //       talk,
+  //       abstract,
+  //       speakerImage,
+  //     };
+  //   });
 
-  const mc = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(speaker => !speaker.talkId)
-    .map(speaker => {
-      const speakerImage = getImage(speaker.image);
+  // const mc = allSpeakersJson.edges
+  //   .map(e => e.node)
+  //   .filter(speaker => !speaker.talkId)
+  //   .map(speaker => {
+  //     const speakerImage = getImage(speaker.image);
 
-      return {
-        ...speaker,
-        speakerImage,
-      };
-    });
+  //     return {
+  //       ...speaker,
+  //       speakerImage,
+  //     };
+  //   });
 
   return (
     <Layout title="revo.js Speakers" noFooterSeparation>

@@ -1,37 +1,37 @@
-import React, { useEffect } from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import React /*, { useEffect }*/ from "react";
+import { StaticQuery, graphql /*, Link*/ } from "gatsby";
+// import Img from "gatsby-image";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 // import Content from "@components/Content";
-import Section from "@components/Section";
+// import Section from "@components/Section";
 // import Note from "@components/Note";
 // import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 
-import { day0, day1, day2 } from "@data/2020/agenda";
-import { getEdition } from "@utils";
+// import { day0, day1, day2 } from "@data/2020/agenda";
+// import { getEdition } from "@utils";
 
 import "./agenda.scss";
 
-const edition = getEdition();
+// const edition = getEdition();
 
 const Agenda = ({ data }) => {
-  const { allTalksJson, allSpeakersJson, speakerImages } = data;
+  // const { allTalksJson, allSpeakersJson, speakerImages } = data;
 
-  const talks = allTalksJson.edges
-    .map(e => e.node)
-    .filter(t => t.edition === edition);
-  const speakers = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(s => s.edition === edition);
-  const images = speakerImages.edges.map(e => e.node);
+  // const talks = allTalksJson.edges
+  //   .map(e => e.node)
+  //   .filter(t => t.edition === edition);
+  // const speakers = allSpeakersJson.edges
+  //   .map(e => e.node)
+  //   .filter(s => s.edition === edition);
+  // const images = speakerImages.edges.map(e => e.node);
 
-  day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
-  day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
-  day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images);
+  // day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
+  // day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
+  // day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images);
 
   /*
   useEffect(() => {
@@ -122,7 +122,7 @@ const Agenda = ({ data }) => {
       </Section> */}
     </Layout>
   );
-
+  /*
   function WorkshopDay({ data }) {
     const { dateIso, workshops } = data;
 
@@ -185,6 +185,7 @@ const Agenda = ({ data }) => {
       // console.log("REMOVE ACTIVE", link.hash);
     }
   }
+  */
 };
 
 export default props => {
@@ -241,6 +242,7 @@ export default props => {
   );
 };
 
+/*
 function Workshop({ data }) {
   return (
     <div className="agenda-slot-content">
@@ -369,3 +371,4 @@ function mergeTalkDetails(agenda, talks, speakers, images) {
     };
   });
 }
+*/

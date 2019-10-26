@@ -44,7 +44,7 @@ export default props => {
   const [showMenu, toggleMenu] = useState(false);
   const isHome = (props.location && props.location.pathname === "/") || false;
   const edition = getEdition();
-  const isPastEdition = edition != currentEdition;
+  const isPastEdition = edition !== currentEdition;
 
   const { main, secondary, tertiary } = getPages();
 
@@ -88,7 +88,7 @@ export default props => {
 };
 
 function Logo({ edition, currentEdition }) {
-  const isPastEdition = edition != currentEdition;
+  const isPastEdition = edition !== currentEdition;
 
   if (isPastEdition) {
     return (
