@@ -23,6 +23,10 @@
     height: var(--menu-height-scrolled);
   }
 
+  &.is-past-edition {
+    background: var(--primary);
+  }
+
   @include breakpoint(lg) {
     padding: 0 3em;
   }
@@ -47,17 +51,28 @@
 
 .navigation-logo-link {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-previous-edition {
+  display: flex;
+  align-items: center;
+}
+.navigation-to-current-edition {
+  transform: rotate(180deg) translateX(20px);
+  height: 40px;
+  width: 40px;
 }
 
 .navigation-edition {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 24px;
   @include font(mono);
-  position: absolute;
-  right: -26px;
-  top: 9px;
-  transform: rotate(-90deg);
+  transform: translateX(0.5em);
   transition: all 0.3s;
+
+  color: white;
 
   .is-home & {
     display: none;
@@ -66,8 +81,9 @@
   .is-scrolled & {
     right: 34px;
     top: 14px;
-    font-size: 8px;
+    font-size: 18px;
     display: block;
+    transform: translateX(-0.25em);
   }
 }
 
@@ -172,10 +188,18 @@
   &.secondary {
     font-weight: 100;
   }
+
+  .is-past-edition:not(.is-active) & {
+    color: white;
+  }
 }
 .main-link:hover {
   color: var(--primary);
   text-decoration: none;
+
+  .is-past-edition:not(.is-active) & {
+    color: var(--background-dark);
+  }
 }
 .main-link.active {
   color: var(--primary);
@@ -185,6 +209,11 @@
   .navigation:not(.is-active) &:not(.secondary) {
     @include breakpoint(md) {
       border-color: var(--primary);
+    }
+  }
+  .navigation.is-past-edition:not(.is-active) &:not(.secondary) {
+    @include breakpoint(md) {
+      border-color: white;
     }
   }
 }

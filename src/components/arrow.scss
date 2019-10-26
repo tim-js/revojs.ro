@@ -1,0 +1,51 @@
+@import "../styles/mixins";
+@import "../styles/fonts";
+
+.arrow-animated {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-indent: -9999em;
+}
+.arrow-animated-inner {
+  position: relative;
+  width: 21px;
+  height: 2px;
+  transition: all 0.2s;
+  transform: translateX(-16px);
+  background: var(--background-dark);
+}
+.arrow-animated-inner::after,
+.arrow-animated-inner::before {
+  transition: all 0.3s;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  top: 0;
+  right: -1px;
+  background: var(--background-dark);
+}
+.arrow-animated-inner--light::after,
+.arrow-animated-inner--light::before,
+.arrow-animated-inner--light {
+  background: white;
+}
+.arrow-animated-inner::before {
+  transform-origin: bottom right;
+  transform: rotate(-45deg);
+  top: -1px;
+}
+.arrow-animated-inner::after {
+  transform-origin: top right;
+  transform: rotate(45deg);
+  top: 1px;
+}
+
+.arrow-animated:hover {
+  .arrow-animated-inner {
+    width: 1px;
+    transform: translateX(-14px);
+  }
+}

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 
 import Hamburger from "@components/layout/Hamburger";
+import Arrow from "@components/Arrow";
 import logo from "@assets/logo-revojs.svg";
-import { getEdition, getPages } from "@utils";
+import symbol from "@assets/logo-revojs-symbol.svg";
+import { getEdition, getPages, currentEdition } from "@utils";
 
 import "./navigation.scss";
 
@@ -42,11 +44,7 @@ export default props => {
   const [showMenu, toggleMenu] = useState(false);
   const isHome = (props.location && props.location.pathname === "/") || false;
   const edition = getEdition();
-
-  // let backToCurrentEdition = null;
-  // if (edition != currentEdition) {
-  //   backToCurrentEdition = <Link to="/">Back to current edition</Link>;
-  // }
+  const isPastEdition = edition != currentEdition;
 
   const { main, secondary, tertiary } = getPages();
 
@@ -57,18 +55,10 @@ export default props => {
           navigation
           ${showMenu ? "is-active" : ""}
           ${isHome ? "is-home" : ""}
+          ${isPastEdition ? "is-past-edition" : ""}
         `}
       >
-        <Link to="/" title="go to homepage" className="navigation-logo-link">
-          <img
-            src={logo}
-            alt="revo.js"
-            height="40"
-            className="navigation-logo"
-          />
-          {/* <span className="navigation-edition">{edition}</span> */}
-        </Link>
-
+        <Logo edition={edition} currentEdition={currentEdition} />
         <nav>
           <Hamburger
             active={showMenu}
@@ -91,9 +81,37 @@ export default props => {
               </ul>
             </li>
           </ul>
-          {/* {backToCurrentEdition} */}
         </nav>
       </div>
     </>
   );
 };
+
+function Logo({ edition, currentEdition }) {
+  const isPastEdition = edition != currentEdition;
+
+  if (isPastEdition) {
+    return (
+      <div className="navigation-previous-edition">
+        <Link to="/" title="go to homepage" className="navigation-logo-link">
+          <Arrow className="navigation-to-current-edition" light={true}>
+            View edition {currentEdition}
+          </Arrow>
+        </Link>
+        <img
+          src={symbol}
+          alt="revo.js"
+          height="40"
+          className="navigation-logo"
+        />
+        <span className="navigation-edition">{edition}</span>
+      </div>
+    );
+  }
+
+  return (
+    <Link to="/" title="go to homepage" className="navigation-logo-link">
+      <img src={logo} alt="revo.js" height="40" className="navigation-logo" />
+    </Link>
+  );
+}

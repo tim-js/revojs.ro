@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+import Arrow from "./Arrow";
+
 import "./subscribe.scss";
 
 const listIds = Object.freeze({
   cfp: "57960db8f5",
-  default: "ec632308b8"
+  default: "ec632308b8",
 });
 
 const Subscribe = props => {
@@ -35,7 +37,9 @@ const Subscribe = props => {
       <input type="hidden" name="u" value="34c79aeaaf8573f6289982fdd" />
       <input type="hidden" name="id" value={listId} />
       <button className="subscribe-button" type="submit">
-        <span className="subscribe-arrow">Subscribe</span>
+        <Arrow className="subscribe-button-arrow" light={props.light}>
+          Subscribe
+        </Arrow>
       </button>
     </form>
   );
@@ -44,11 +48,11 @@ const Subscribe = props => {
 Subscribe.propTypes = {
   list: PropTypes.oneOf(["cfp", "default"]),
   light: PropTypes.bool,
-  centered: PropTypes.bool
+  centered: PropTypes.bool,
 };
 
 Subscribe.defaultProps = {
-  list: "default"
+  list: "default",
 };
 
 export default Subscribe;
