@@ -15,7 +15,7 @@ const Arrow = ({ children, light, className }) => {
 
 Arrow.propTypes = {
   light: PropTypes.bool,
-  children: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default Arrow;

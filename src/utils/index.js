@@ -1,7 +1,11 @@
 import * as pages2019 from "@data/2019/pages";
 import * as pages2020 from "@data/2020/pages";
+import { globalHistory } from "@reach/router";
 
 export function getYearFromUrl(url) {
+  if (!url) {
+    return;
+  }
   return url.split(/[^\d]/).filter(function(n) {
     if (n >= 2019 && n <= 2099) return n;
     return undefined;
@@ -11,11 +15,21 @@ export function getYearFromUrl(url) {
 export const currentEdition = 2020;
 
 export function getEdition() {
-  if (typeof window === "undefined") {
-    return currentEdition;
+  const pathname = globalHistory.location.pathname;
+  const editionFromUrl = getYearFromUrl(pathname);
+  let editionFromStorage;
+
+  if (pathname === "/") {
+    sessionStorage.removeItem("revojs-edition");
+  } else if (editionFromUrl && sessionStorage) {
+    sessionStorage.setItem("revojs-edition", editionFromUrl);
+  } else {
+    editionFromStorage = sessionStorage.getItem("revojs-edition");
   }
 
-  const year = getYearFromUrl(window.location.pathname) || currentEdition;
+  const year =
+    getYearFromUrl(editionFromUrl) || editionFromStorage || currentEdition;
+
   return +year;
 }
 
