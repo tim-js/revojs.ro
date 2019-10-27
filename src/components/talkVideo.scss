@@ -1,0 +1,52 @@
+@import "../styles/mixins";
+@import "../styles/fonts";
+
+.talk-video-link {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+.talk-video-link:hover {
+  text-decoration: none;
+}
+
+.talk-video-image {
+  @include clip-hex(30%);
+
+  .talk-video-link &::before {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 20%;
+    height: 20%;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 50%;
+    z-index: 2;
+    background-image: url("/play-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 58% center;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.3s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .talk-video-link:hover &::before {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.talk-video-speaker {
+  @include font(mono);
+  margin-top: 1em;
+  display: block;
+  color: white;
+  font-size: 1.2em;
+}
+
+.talk-video-title {
+  @include font(mono);
+  font-weight: bold;
+}

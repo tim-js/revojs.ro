@@ -1,0 +1,38 @@
+@import "../styles/mixins";
+
+.card-speaker-firstname,
+.card-speaker-lastname {
+  @include breakpoint(sm) {
+    display: block;
+  }
+}
+.card-speaker-title {
+  display: block;
+  line-height: 1.2;
+  color: var(--primary);
+  transition: color 0.3s;
+
+  @include breakpoint(sm) {
+    padding: 0 20% 0 10%;
+  }
+}
+.card-speaker-company {
+  display: block;
+  transition: color 0.3s;
+  color: var(--text-light);
+
+  @include breakpoint(sm) {
+    padding: 0 20% 0 10%;
+  }
+}
+
+.card-speaker:hover {
+  @include breakpoint(sm) {
+    .card-speaker-title {
+      color: white;
+    }
+    .card-speaker-company {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}

@@ -1,6 +1,6 @@
 @import "../styles/mixins";
 
-.index-speaker {
+.card {
   position: relative;
   width: 100%;
 
@@ -11,9 +11,9 @@
   }
 }
 
-.index-speaker-info,
-.index-speaker-info-inner,
-.index-speaker-img {
+.card-info,
+.card-info-inner,
+.card-img {
   transition-property: all;
   transition-duration: 0.3s;
   transition-delay: 0.1s;
@@ -21,21 +21,26 @@
   overflow: hidden;
 }
 
-.index-speaker-img {
+.card-img {
   @include clip-hex(30%);
   margin: 0;
 }
-.index-speaker-img-inner {
+.card-img-inner {
   display: block;
   transition-duration: 0.3s;
   transition-delay: 0.1s;
 }
 
-.index-speaker-info {
+.card-info {
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
+
+  .card--white & {
+    color: var(--primary);
+  }
 
   @include breakpoint(sm) {
     @include clip-hex(30%);
@@ -44,7 +49,7 @@
   }
 }
 
-.index-speaker-info-inner {
+.card-info-inner {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -59,13 +64,18 @@
     &:last-child {
       padding-bottom: 10%;
     }
+
+    .card--white & {
+      background-color: white;
+    }
   }
 }
 
-.index-speaker-name {
+.card-heading {
   display: block;
   margin: 0;
   padding-top: var(--space-1);
+  transition: color 0.3s;
 
   @include breakpoint(sm, max) {
     margin-top: var(--space-2);
@@ -84,57 +94,31 @@
     padding-bottom: var(--space-2);
   }
 }
-.index-speaker-firstname,
-.index-speaker-lastname {
-  @include breakpoint(sm) {
-    display: block;
-  }
-}
-.index-speaker-title {
-  display: block;
-  line-height: 1.2;
-  color: var(--primary);
-  transition: color 0.3s;
 
-  @include breakpoint(sm) {
-    padding: 0 20% 0 10%;
-  }
-}
-.index-speaker-company {
-  display: block;
-  transition: color 0.3s;
-  color: var(--text-light);
-
-  @include breakpoint(sm) {
-    // padding: 0 15% 15% 15%;
-    padding: 0 20% 0 10%;
-  }
-}
-
-.index-speaker:hover .index-speaker-img {
+.card:hover .card-img {
   @include breakpoint(sm) {
     transform: translateY(-5%) translateX(5%);
   }
 }
-.index-speaker:hover .index-speaker-img-inner {
+.card:hover .card-img-inner {
   transform: scale(1.1);
+  text-decoration: none;
 }
-.index-speaker:hover .index-speaker-info {
+.card:hover .card-info {
   @include breakpoint(sm) {
     @include clip-hex(20%);
     transform: translateY(-25%) translateX(-5%);
   }
 }
-.index-speaker:hover .index-speaker-info-inner {
+.card:hover .card-info-inner {
   @include breakpoint(sm) {
     @include clip-hex(20%);
     background: var(--primary);
+  }
+}
 
-    .index-speaker-title {
-      color: white;
-    }
-    .index-speaker-company {
-      color: rgba(255, 255, 255, 0.6);
-    }
+.card--white:hover .card-heading {
+  @include breakpoint(sm) {
+    color: white;
   }
 }

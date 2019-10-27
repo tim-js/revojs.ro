@@ -1,24 +1,54 @@
 @import "src/styles/mixins";
 
 .media-photos {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 10vw;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.media-photos-list {
+  margin-top: calc(2 * var(--spacing-content));
 
-  @include breakpoint(sm) {
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5vw;
+  @include breakpoint(sm, max) {
+    margin-top: 10rem;
   }
 }
 
-.media-photo-category {
-  flex: 1;
+.media-videos {
+  text-align: center;
+}
 
-  figure {
-    margin: 0;
+.media-heading {
+  font-size: 2.5em;
+  padding-left: var(--spacing-content);
+  padding-right: var(--spacing-content);
+
+  @include breakpoint(sm) {
+    font-size: 4em;
   }
-  caption {
-    margin-top: 0.5em;
-    display: block;
+}
+
+.media-videos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-gap: var(--spacing-content);
+
+  grid-template-columns: 1fr;
+
+  @include breakpoint(sm, max) {
+    grid-row-gap: 10rem;
+    margin-top: 10rem;
+  }
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include breakpoint(md) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

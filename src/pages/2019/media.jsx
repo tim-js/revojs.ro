@@ -1,92 +1,116 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import Content from "@components/Content";
+// import Content from "@components/Content";
 import Section from "@components/Section";
+import CardPhotos from "@components/CardPhotos";
+import TalkVideo from "@components/TalkVideo";
 // import Button from "@components/Button";
 
 import "./media.scss";
 
+import { day1, day2 } from "@data/2019/agenda";
+
 const Media = ({ data }) => {
-  console.log(data);
+  const { allTalksJson, allSpeakersJson, recordingsImages } = data;
+
+  const talks = allTalksJson.edges.map(e => e.node);
+  const speakers = allSpeakersJson.edges.map(e => e.node);
+  const images = recordingsImages.edges.map(e => e.node);
+
+  const recordings = mergeTalkRecordings(
+    [...day1.talks, ...day2.talks],
+    talks,
+    speakers,
+    images,
+  );
+
   return (
-    <Layout title="revo.js Media">
+    <Layout title="revo.js Media" noFooterSeparation>
       <Header centered type="secondary">
         <h1>Media</h1>
       </Header>
 
-      <Section light>
-        <Content centered>
-          <section>
-            <h2>After Movie</h2>
-            <p>
-              The after movie in currently in post production and will be
-              published soon.
-            </p>
-          </section>
-          <section>
-            <h2>Photos</h2>
+      <Section light className="media-photos">
+        <section>
+          <h2 className="media-heading">Photos</h2>
 
-            <div className="media-photos">
-              <OutboundLink
+          <ul className="media-photos-list index-speakers-list">
+            <li>
+              <CardPhotos
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=520124138546934"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="media-photo-category"
-              >
-                <figure>
+                img={
                   <Img
                     fluid={data.imgWorkshop.childImageSharp.fluid}
                     alt="Black and white photo from revo.js 2019 workshop with Gleb Bahmutov"
                   />
-                  <caption>Workshop photos</caption>
-                </figure>
-              </OutboundLink>
+                }
+                heading={
+                  <span>
+                    Workshop <br />
+                    photos
+                  </span>
+                }
+              />
+            </li>
 
-              <OutboundLink
+            <li>
+              <CardPhotos
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=519964821896199"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="media-photo-category"
-              >
-                <figure>
+                img={
                   <Img
                     fluid={data.imgConference.childImageSharp.fluid}
                     alt="Black and white photo from revo.js 2019 conference, showing the conference venue with all the participants"
                   />
-                  <caption>Conference photos</caption>
-                </figure>
-              </OutboundLink>
+                }
+                heading={
+                  <span>
+                    Conference <br />
+                    photos
+                  </span>
+                }
+              />
+            </li>
 
-              <OutboundLink
+            <li className="last-odd">
+              <CardPhotos
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=520281835197831"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="media-photo-category"
-              >
-                <figure>
+                img={
                   <Img
                     fluid={data.imgAfterParty.childImageSharp.fluid}
                     alt="Black and white photo from revo.js 2019 After Party, showing participants sitting at the table and talking"
                   />
-                  <caption>After Party photos</caption>
-                </figure>
-              </OutboundLink>
-            </div>
-          </section>
+                }
+                heading={
+                  <span>
+                    After Party <br />
+                    photos
+                  </span>
+                }
+              />
+            </li>
+          </ul>
+        </section>
+      </Section>
 
-          <section>
-            <h2>Video Recordings</h2>
-            <p>
-              The video recordings of the talks are currently in post production
-              editing and will be published very soon.
-            </p>
-          </section>
-        </Content>
+      <Section className="media-videos">
+        <section>
+          <h2 className="media-heading">Video Recordings</h2>
+
+          <ul className="media-videos-list">
+            {recordings.map(video => {
+              return (
+                <li key={video.title}>
+                  <TalkVideo video={video} />
+                </li>
+              );
+            })}
+          </ul>
+        </section>
       </Section>
     </Layout>
   );
@@ -97,7 +121,6 @@ export default () => {
     query {
       imgWorkshop: file(relativePath: { eq: "photos/img-workshop-2019.png" }) {
         childImageSharp {
-          # Specify the image processing specifications right in the query.
           fluid {
             ...GatsbyImageSharpFluid
           }
@@ -107,7 +130,6 @@ export default () => {
         relativePath: { eq: "photos/img-conference-2019.png" }
       ) {
         childImageSharp {
-          # Specify the image processing specifications right in the query.
           fluid {
             ...GatsbyImageSharpFluid
           }
@@ -117,9 +139,43 @@ export default () => {
         relativePath: { eq: "photos/img-afterparty-2019.png" }
       ) {
         childImageSharp {
-          # Specify the image processing specifications right in the query.
           fluid {
             ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      allTalksJson {
+        edges {
+          node {
+            id
+            talk
+            edition
+            recordingUrl
+            recordingImage
+            speakers {
+              id
+            }
+          }
+        }
+      }
+      allSpeakersJson {
+        edges {
+          node {
+            id
+            firstname
+            lastname
+          }
+        }
+      }
+      recordingsImages: allFile(filter: { relativePath: { glob: "talks/*" } }) {
+        edges {
+          node {
+            base
+            image: childImageSharp {
+              fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
@@ -127,3 +183,43 @@ export default () => {
   `);
   return <Media data={data} />;
 };
+
+function mergeTalkRecordings(agenda, talks, speakers, images) {
+  const recordings = [];
+
+  agenda.forEach(slot => {
+    const { talkId } = slot;
+
+    if (!talkId) {
+      return;
+    }
+
+    const talkDetails = talks.find(talk => talk.id === talkId);
+    const talkImage = images.find(img =>
+      talkDetails.recordingImage.includes(img.base),
+    );
+    const speakersDetails = mergeSpeakerDetails(
+      talkDetails.speakers,
+      speakers,
+      images,
+    );
+
+    recordings.push({
+      title: talkDetails.talk,
+      url: talkDetails.recordingUrl,
+      speakers: speakersDetails,
+      talkImage,
+    });
+  });
+
+  return recordings;
+}
+
+function mergeSpeakerDetails(speakersIdList, speakers, images) {
+  return speakersIdList.map(speaker => {
+    const speakerData = speakers.find(s => s.id === speaker.id);
+    return {
+      ...speakerData,
+    };
+  });
+}

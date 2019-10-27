@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import SpeakerIndex from "@components/SpeakerIndex";
+import CardSpeaker from "@components/CardSpeaker";
 
 import "./speakersListIndex.scss";
 import { getEdition } from "@utils";
@@ -22,7 +22,7 @@ export default ({ speakers }) => {
               to={`/${edition}/speakers/${speaker.id}`}
               className="index-speakers-link"
             >
-              <SpeakerIndex data={speaker} />
+              <CardSpeaker data={speaker} />
             </Link>
           </li>
         );
