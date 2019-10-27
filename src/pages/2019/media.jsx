@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -9,7 +9,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import CardPhotos from "@components/CardPhotos";
 import TalkVideo from "@components/TalkVideo";
-// import Button from "@components/Button";
+import Button from "@components/Button";
 
 import "./media.scss";
 
@@ -110,6 +110,14 @@ const Media = ({ data }) => {
               );
             })}
           </ul>
+
+          <OutboundLink
+            href="https://www.youtube.com/playlist?list=PL701JjUqw62nHoRho4RJ3KJSLCRG08r1Z"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button>View entire playlist</Button>
+          </OutboundLink>
         </section>
       </Section>
     </Layout>
