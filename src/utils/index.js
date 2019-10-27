@@ -19,12 +19,14 @@ export function getEdition() {
   const editionFromUrl = getYearFromUrl(pathname);
   let editionFromStorage;
 
-  if (pathname === "/") {
-    sessionStorage.removeItem("revojs-edition");
-  } else if (editionFromUrl && sessionStorage) {
-    sessionStorage.setItem("revojs-edition", editionFromUrl);
-  } else {
-    editionFromStorage = sessionStorage.getItem("revojs-edition");
+  if (typeof sessionStorage !== "undefined") {
+    if (pathname === "/") {
+      sessionStorage.removeItem("revojs-edition");
+    } else if (editionFromUrl) {
+      sessionStorage.setItem("revojs-edition", editionFromUrl);
+    } else {
+      editionFromStorage = sessionStorage.getItem("revojs-edition");
+    }
   }
 
   const year =
