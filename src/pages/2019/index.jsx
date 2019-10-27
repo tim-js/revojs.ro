@@ -60,8 +60,11 @@ export default props => {
             <Button>Meet the Speakers</Button>
           </a> */}
           {/* <PurchaseTicket /> */}
-          <Link to={`/${getEdition()}/agenda`}>
+          {/* <Link to={`/${getEdition()}/agenda`}>
             <Button>View the Agenda</Button>
+          </Link> */}
+          <Link to={`/${getEdition()}/media`}>
+            <Button>View 2019 Media Page</Button>
           </Link>
         </div>
 

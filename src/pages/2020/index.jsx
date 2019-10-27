@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 
-import { replace, Link } from "gatsby";
-import queryString from "query-string";
-
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 // import IndexUpdates from "@components/index/IndexUpdates";
-import IndexSpeakers from "@components/index/IndexSpeakers";
+// import IndexSpeakers from "@components/index/IndexSpeakers";
 // import IndexSponsors from "@components/index/IndexSponsors";
 import Separator from "@components/Separator";
+import Subscribe from "@components/Subscribe";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
-import { getEdition } from "@utils";
+
+import { replace } from "gatsby";
+import queryString from "query-string";
 
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
@@ -48,24 +48,24 @@ export default props => {
             Change is <span className="tagline-block">the only const.</span>
           </h1>
           <div className="date-location">
-            <time className="index-date mono" dateTime="2019-10-03">
-              <strong>October.3-4.2019</strong>
+            <time className="index-date mono" dateTime="2019-10-07">
+              <strong>October.7-9.2020</strong>
             </time>
             <strong className="index-location mono">Timisoara/RO</strong>
           </div>
         </div>
 
         <div className="index-cta">
+          <a href="#subscribe">
+            <Button>Subscribe for News</Button>
+          </a>
           {/* <a href="#speakers">
             <Button>Meet the Speakers</Button>
           </a> */}
           {/* <PurchaseTicket /> */}
-          {/* <Link to={`/${getEdition()}/agenda`}>
+          {/* <Link to="/agenda">
             <Button>View the Agenda</Button>
           </Link> */}
-          <Link to={`/${getEdition()}/media`}>
-            <Button>View 2019 Media Page</Button>
-          </Link>
         </div>
 
         {/* <div className="description mono">
@@ -77,7 +77,15 @@ export default props => {
 
       {/* <IndexUpdates /> */}
       <Separator />
-      <IndexSpeakers />
+      {/* <IndexSpeakers /> */}
+
+      <div id="subscribe" className="subscribe">
+        <p style={{ textAlign: "center" }}>
+          Subscribe to stay on top the latest changes and revo.news:
+        </p>
+        <Subscribe centered />
+      </div>
+
       {/* <IndexSponsors /> */}
     </Layout>
   );
