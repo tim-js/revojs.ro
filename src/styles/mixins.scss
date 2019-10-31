@@ -41,3 +41,24 @@ $breakpoint-lg: 1200px;
 @mixin no-clip() {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
 }
+
+@mixin separationLightDark() {
+  background-image: url("/pixel_separation_team.svg"),
+    linear-gradient(to bottom, white 128px, var(--background-dark) 128px);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: calc(256px + var(--spacing-content));
+}
+
+@mixin play() {
+  content: "";
+  display: block;
+  background-color: white;
+  border-radius: 50%;
+  background-image: url("/play-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 58% center;
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

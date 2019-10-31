@@ -31,11 +31,17 @@ const Media = ({ data }) => {
 
   return (
     <Layout title="revo.js Media" noFooterSeparation>
-      <Header centered type="secondary">
+      <Header centered type="secondary" className="media-header">
         <h1>Media</h1>
+
+        <span className="after-movie">
+          2019 After Movie is coming soon...
+          <br />
+          Stay tuned!
+        </span>
       </Header>
 
-      <Section light className="media-photos">
+      <Section light className="media media-photos">
         <section>
           <h2 className="media-heading">Photos</h2>
 
