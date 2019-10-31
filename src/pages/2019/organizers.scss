@@ -13,6 +13,7 @@
 
 .organizers-team {
   text-align: center;
+  @include separationLightDark();
 }
 
 .team-list {
