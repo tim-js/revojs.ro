@@ -223,11 +223,11 @@ export default () => {
               </li>
               <li>
                 <a
-                  href="https://cloud.google.com/security/gdpr/"
+                  href="https://admin.typeform.com/to/dwk6gt/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Google Forms
+                  TypeForm
                 </a>
               </li>
               <li>
