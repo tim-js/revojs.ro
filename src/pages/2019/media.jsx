@@ -82,7 +82,7 @@ const Media = ({ data }) => {
               />
             </li>
 
-            <li className="last-odd">
+            <li>
               <CardPhotos
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=520281835197831"
                 img={
@@ -94,6 +94,25 @@ const Media = ({ data }) => {
                 heading={
                   <span>
                     After Party <br />
+                    photos
+                  </span>
+                }
+              />
+            </li>
+
+            <li>
+              <CardPhotos
+                href="https://vrhub.ro/wp-content/uploads/vr360/vr.revo.js/"
+                img={
+                  <Img
+                    fluid={data.img360.childImageSharp.fluid}
+                    alt="revo.360 degrees"
+                  />
+                }
+                heading={
+                  <span>
+                    360&deg; panoramic
+                    <br />
                     photos
                   </span>
                 }
@@ -152,6 +171,13 @@ export default () => {
       imgAfterParty: file(
         relativePath: { eq: "photos/img-afterparty-2019.png" }
       ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      img360: file(relativePath: { eq: "360_image.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
