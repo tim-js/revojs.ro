@@ -22,7 +22,6 @@ Except Africa and Antarctica, we've received proposals from all continents of th
 
 <figure>
   <img src="1-revo.js-cfp-distribution-by-continent.png" alt="revo.js CFP proposals distribution by continent"/>
-  <figcaption>revo.js CFP proposals distribution by continent</figcaption>
 </figure>
 
 ### Distribution by European countries:
@@ -36,7 +35,6 @@ Except Africa and Antarctica, we've received proposals from all continents of th
 
 <figure>
   <img src="2-revo.js-cfp-distribution-by-european-countries.png" alt="revo.js CFP proposals distribution by European countries"/>
-  <figcaption>revo.js CFP proposals distribution by European countries</figcaption>
 </figure>
 
 ## Topics
@@ -66,7 +64,6 @@ revo.js is dedicated to the entire JavaScript ecosystem, not focused on a specif
 
 <figure>
   <img src="3-revo.js-cfp-distribution-by-proposal-topic.png" alt="revo.js CFP proposal distribution by topic"/>
-  <figcaption>revo.js CFP proposal distribution by topic</figcaption>
 </figure>
 
 We also got proposals that couldn't be included in any of the above topics, namely:
@@ -84,7 +81,6 @@ Another metric that played a minor role during our selection process was the exp
 
 <figure>
   <img src="4-revo.js-cfp-distribution-by-experience-level.png" alt="revo.js CFP proposal distribution by experience level"/>
-  <figcaption>revo.js CFP proposal distribution by experience level</figcaption>
 </figure>
 
 This distribution was exactly what we were looking for, because we wanted to have some Beginner and Expert level talks, but address the majority of presentations to intermediate developers, who make the most of our target.
@@ -95,7 +91,6 @@ Not a very relevant metric, but an interesting one was to see when do speakers s
 
 <figure>
   <img src="5-revo.js-cfp-distribution-by-submission-date.png" alt="revo.js CFP proposal distribution by submission date"/>
-  <figcaption>revo.js CFP proposal distribution by submission date</figcaption>
 </figure>
 
 But looking at the chart, even though the last week got a lot of submissions, the distribution was a lot more uniform than we expected.
@@ -106,7 +101,6 @@ Last but not least, we've asked the speakers where did they hear about revo.js C
 
 <figure>
   <img src="6-revo.js-cfp-distribution-by-acquisition.png" alt="revo.js CFP proposal distribution by acquisition"/>
-  <figcaption>revo.js CFP proposal distribution by acquisition</figcaption>
 </figure>
 
 What amazed us was that word-of-mouth played an important role and 12% of the speakers submitted their proposals because of a friend’s recommendation. Huge props to those speakers and their friends.
