@@ -12,7 +12,6 @@ import { sponsors, partners, communities } from "@data/2020/supporters";
 
 import "./supporters.scss";
 
-console.log(sponsors, partners, communities);
 export default () => {
   return (
     <Layout title="revo.js Sponsors">
@@ -48,7 +47,7 @@ export default () => {
           <Logos
             list={sponsors}
             style={{
-              maxWidth: "200px",
+              maxWidth: "200px"
             }}
           />
         </section>
@@ -63,7 +62,7 @@ export default () => {
           <Logos
             list={partners}
             style={{
-              maxWidth: "100px",
+              maxWidth: "100px"
             }}
             small
           />
@@ -97,7 +96,7 @@ export default () => {
           <Logos
             list={communities}
             style={{
-              maxWidth: "100px",
+              maxWidth: "100px"
             }}
             small
           />
