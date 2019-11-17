@@ -27,6 +27,14 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        allInvitationsJson {
+          edges {
+            node {
+              id
+              image
+            }
+          }
+        }
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           limit: 1000
@@ -40,7 +48,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `,
+    `
   ).then(result => {
     if (result.errors) {
       throw result.errors;
@@ -62,14 +70,14 @@ exports.createPages = ({ graphql, actions }) => {
         // optional but is often necessary so the template
         // can query data specific to each page.
         path: `/${edge.node.edition}/speakers/${slug(
-          edge.node.id.toLowerCase(),
+          edge.node.id.toLowerCase()
         )}/`,
         component: slash(speakerTemplate),
         context: {
           id: edge.node.id,
           image: edge.node.image,
-          talkId: edge.node.talkId,
-        },
+          talkId: edge.node.talkId
+        }
       });
     });
 
@@ -77,13 +85,25 @@ exports.createPages = ({ graphql, actions }) => {
     _.each(result.data.allTalksJson.edges, edge => {
       createPage({
         path: `/${edge.node.edition}/agenda/${slug(
-          edge.node.id.toLowerCase(),
+          edge.node.id.toLowerCase()
         )}/`,
         component: slash(talkTemplate),
         context: {
           id: edge.node.id,
-          image: edge.node.image,
-        },
+          image: edge.node.image
+        }
+      });
+    });
+
+    const invitationTemplate = path.resolve(`src/templates/invitedSpeaker.jsx`);
+    _.each(result.data.allInvitationsJson.edges, edge => {
+      createPage({
+        path: `/invitation/${slug(edge.node.id.toLowerCase())}/`,
+        component: slash(invitationTemplate),
+        context: {
+          id: edge.node.id,
+          image: edge.node.image
+        }
       });
     });
 
@@ -94,8 +114,8 @@ exports.createPages = ({ graphql, actions }) => {
         path: node.frontmatter.path,
         component: blogPostTemplate,
         context: {
-          url: node.frontmatter.path,
-        }, // additional data can be passed via context
+          url: node.frontmatter.path
+        } // additional data can be passed via context
       });
     });
   });

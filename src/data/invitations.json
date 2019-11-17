@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dan_abramov",
+    "firstname": "Dan",
+    "lastname": "Abramov",
+    "image": "invitations/dan-abramov.jpg",
+    "twitter": "dan_abramov",
+    "title": "Human Tools builder",
+    "company": "Facebook"
+  },
+  {
+    "id": "lea_verou",
+    "firstname": "Lea",
+    "lastname": "Verou",
+    "image": "invitations/lea-verou.jpg",
+    "twitter": "LeaVerou",
+    "title": "Researcher",
+    "company": "MIT"
+  }
+]
