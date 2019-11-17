@@ -44,6 +44,7 @@ export default props => {
 
           <h2>revo.js 2019 After Movie</h2>
           <iframe
+            title="revo.js 2019 After Movie"
             width="100%"
             height="400"
             src="https://www.youtube.com/embed/KY9ZVsGnTes"
