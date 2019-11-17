@@ -5,37 +5,14 @@ import Section from "@components/Section";
 import Content from "@components/Content";
 import { PurchaseTicket } from "@components/CTA";
 
+import SpeakerInfo from "./SpeakerInfo";
+
 import "./Talk.scss";
 
 import { getEdition, currentEdition } from "@utils";
 
 function getName(speakers) {
   return speakers.map(speaker => `${speaker.firstname}'s`).join(" and ");
-}
-
-function Speaker(props) {
-  const { firstname, lastname, title, company, twitter } = props.speaker;
-  const companyText = company ? ` at ${company}` : "";
-
-  return (
-    <>
-      <h1 className="speaker-name">
-        {firstname} {lastname}
-      </h1>
-      <span className="speaker-title">
-        {title} {companyText}
-      </span>
-      <br />
-      <a
-        className="speaker-twitter"
-        href={`https://twitter.com/${twitter}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {twitter}
-      </a>
-    </>
-  );
 }
 
 export default props => {
@@ -60,7 +37,7 @@ export default props => {
         </figure>
 
         {speakers.map(speaker => (
-          <Speaker key={speaker.id} speaker={speaker} />
+          <SpeakerInfo key={speaker.id} speaker={speaker} />
         ))}
 
         {talk && (
