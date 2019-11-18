@@ -16,5 +16,104 @@
     "twitter": "LeaVerou",
     "title": "Researcher",
     "company": "MIT"
+  },
+  {
+    "id": "douglas_crockford",
+    "firstname": "Douglas",
+    "lastname": "Crockford",
+    "image": "invitations/douglas-crockford.jpg",
+    "twitter": "",
+    "title": "Author, Founder, Chief Honcho",
+    "company": "Virgule-Solidus"
+  },
+  {
+    "id": "evan_you",
+    "firstname": "Evan",
+    "lastname": "You",
+    "image": "invitations/evan-you.jpg",
+    "twitter": "youyuxi",
+    "title": "Creator or VueJS",
+    "company": ""
+  },
+  {
+    "id": "anders_heijlsberg",
+    "firstname": "Anders",
+    "lastname": "Heijlsberg",
+    "image": "invitations/anders-heijlsberg.jpg",
+    "twitter": "ahejlsberg",
+    "title": "Technical Fellow",
+    "company": "Microsoft"
+  },
+  {
+    "id": "asim_hussain",
+    "firstname": "Asim",
+    "lastname": "Hussain",
+    "image": "invitations/asim-hussain.jpg",
+    "twitter": "jawache",
+    "title": "EMEA Lead for Cloud Developer Advocacy",
+    "company": "Microsoft"
+  },
+  {
+    "id": "leonie_watson",
+    "firstname": "Léonie",
+    "lastname": "Watson",
+    "image": "invitations/leonie-watson.jpg",
+    "twitter": "LeonieWatson",
+    "title": "Accessibility engineer, W3C Web Platform WG co-chair",
+    "company": ""
+  },
+  {
+    "id": "brian_terlson",
+    "firstname": "Brian",
+    "lastname": "Terlson",
+    "image": "invitations/brian-terlson.jpg",
+    "twitter": "bterlson",
+    "title": " ECMA TC39 co-chair, Principal Architect",
+    "company": "Microsoft"
+  },
+  {
+    "id": "shai_reznik",
+    "firstname": "Shai",
+    "lastname": "Reznik",
+    "image": "invitations/shai-reznik.jpg",
+    "twitter": "shai_reznik",
+    "title": "Founder and Teacher",
+    "company": "HiRez.io"
+  },
+  {
+    "id": "myles_borins",
+    "firstname": "Myles",
+    "lastname": "Borins",
+    "image": "invitations/myles-borins.jpg",
+    "twitter": "MylesBorins",
+    "title": "Node.js TSC",
+    "company": "Google"
+  },
+  {
+    "id": "suz_hinton",
+    "firstname": "Suz",
+    "lastname": "Hinton",
+    "image": "invitations/suz-hinton.jpg",
+    "twitter": "noopkat",
+    "title": "Senior Software Engineer",
+    "company": "Stripe"
+  },
+  {
+    "id": "christoph_nakazawa",
+    "firstname": "Christoph",
+    "lastname": "Nakazawa",
+    "image": "invitations/christoph-nakazawa.jpg",
+    "twitter": "cpojer",
+    "title": "Engineering Manager",
+    "company": "Facebook"
+  },
+  {
+    "id": "angie_jones",
+    "firstname": "Angie",
+    "lastname": "Jones",
+    "image": "invitations/angie-jones.jpg",
+    "twitter": "techgirl1908",
+    "title": "Automation Architect, Senior Developer Advocate",
+    "company": "Applitools"
   }
 ]

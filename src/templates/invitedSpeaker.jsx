@@ -40,7 +40,29 @@ export default props => {
           <SpeakerInfo speaker={speaker} />
 
           <h2>Dear {speaker.firstname},</h2>
-          <p>We are officially inviting you to be a speaker at revo.js 2020</p>
+          <p>It would be a great honor to have you as a speaker on stage at revo.js 2020.</p>
+          <p>The close knit community surrounding revo.js surprised everyone in 2019 with its passion and implication. We want to offer nothing but the best for them on our second edition, and that leads us to you.</p>
+          <p>You probably hear this a lot, but we really mean it: Your knowledge, passion and willingness to teach others truly inspire us. </p>
+          <p>Looking forward to hearing from you,<br />The revo.js team</p>
+
+          <h2>More about revo.js</h2>
+          <ul>
+            <li>Two-day, single track, technology focused JavaScript conference</li>
+            <li>Happening on <strong>October 8th - 9th</strong>, in Timișoara, Romania</li>
+            <li>Community driven, not-for-profit event</li>
+            <li>18+ speakers (half invited, half selected through CFP)</li>
+            <li>300 attendees</li>
+          </ul>
+            
+          <h2>What we're offering</h2>
+          <ul>  
+            <li>Full cover of travel expenses</li>
+            <li>Full cover of accommodation expenses in a 4* hotel for 4 nights (October 7-11)</li>
+            <li>Free access to the conference and all related happenings</li>
+            <li>Speakers' meet & greet dinner one day before the event</li>
+            <li>Saturday field trip with the core revo.js team, after the event</li>
+          </ul>
+          
 
           <h2>revo.js 2019 After Movie</h2>
           <iframe

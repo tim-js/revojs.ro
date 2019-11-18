@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npx gatsby build",
+    "clean": "npx gatsby clean",
     "develop": "npx gatsby develop",
     "start": "npm run develop",
     "serve": "npx gatsby serve",

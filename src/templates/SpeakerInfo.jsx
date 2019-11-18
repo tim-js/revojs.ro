@@ -15,14 +15,16 @@ export default function Speaker(props) {
         {title} {companyText}
       </span>
       <br />
-      <a
-        className="speaker-twitter"
-        href={`https://twitter.com/${twitter}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {twitter}
-      </a>
+      {twitter && (
+        <a
+          className="speaker-twitter"
+          href={`https://twitter.com/${twitter}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {twitter}
+        </a>
+      )}
     </>
   );
 }
