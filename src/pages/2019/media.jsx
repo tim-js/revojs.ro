@@ -26,7 +26,7 @@ const Media = ({ data }) => {
     [...day1.talks, ...day2.talks],
     talks,
     speakers,
-    images,
+    images
   );
 
   return (
@@ -34,11 +34,14 @@ const Media = ({ data }) => {
       <Header centered type="secondary" className="media-header">
         <h1>Media</h1>
 
-        <span className="after-movie">
-          2019 After Movie is coming soon...
-          <br />
-          Stay tuned!
-        </span>
+        <OutboundLink
+          className="after-movie"
+          href="https://www.youtube.com/watch?v=KY9ZVsGnTes&amp;list=PL701JjUqw62nHoRho4RJ3KJSLCRG08r1Z&amp;index=19&amp;t=0s"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>2019 After Movie</h2>
+        </OutboundLink>
       </Header>
 
       <Section light className="media media-photos">
@@ -236,19 +239,19 @@ function mergeTalkRecordings(agenda, talks, speakers, images) {
 
     const talkDetails = talks.find(talk => talk.id === talkId);
     const talkImage = images.find(img =>
-      talkDetails.recordingImage.includes(img.base),
+      talkDetails.recordingImage.includes(img.base)
     );
     const speakersDetails = mergeSpeakerDetails(
       talkDetails.speakers,
       speakers,
-      images,
+      images
     );
 
     recordings.push({
       title: talkDetails.talk,
       url: talkDetails.recordingUrl,
       speakers: speakersDetails,
-      talkImage,
+      talkImage
     });
   });
 
@@ -259,7 +262,7 @@ function mergeSpeakerDetails(speakersIdList, speakers, images) {
   return speakersIdList.map(speaker => {
     const speakerData = speakers.find(s => s.id === speaker.id);
     return {
-      ...speakerData,
+      ...speakerData
     };
   });
 }

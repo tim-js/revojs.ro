@@ -7,10 +7,10 @@
 }
 
 .after-movie {
-  display: block;
-  margin-top: 2em;
-  @include font(mono);
-  font-weight: bold;
+  // display: block;
+  // margin-top: 2em;
+  // @include font(mono);
+  // font-weight: bold;
 
   &:hover {
     text-decoration: none;
@@ -33,16 +33,16 @@
   z-index: -1;
 }
 
-// .after-movie::after {
-//   @include play();
-//   width: 100px;
-//   height: 100px;
-//   margin: 0 auto;
-//   z-index: 2;
-//   opacity: 1;
-//   transform: scale(1);
-//   margin-top: 1em;
-// }
+.after-movie::after {
+  @include play();
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  z-index: 2;
+  opacity: 1;
+  transform: scale(1);
+  margin-top: 1em;
+}
 
 .media-photos {
   padding-left: 0;
