@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Img from "gatsby-image";
 
@@ -10,8 +10,12 @@ import Content from "@components/Content";
 
 import SpeakerInfo from "./SpeakerInfo";
 
+import { getEdition } from "@utils";
+
+
 export default props => {
   const { invitationsJson, file } = props.data;
+  const edition = getEdition();
 
   const speaker = {
     ...invitationsJson,
@@ -69,7 +73,22 @@ export default props => {
           </ul>
           
 
-          <h2>revo.js 2019 After Movie</h2>
+          <h2>Good vibes from revo.js 2019</h2>
+
+          <p>
+            2019 was our very first edition and it turned out even greater than we expected! You can see for yourself 
+            in our <strong><Link to={`/${edition}/media/`} className="index-speakers-link"> pictures </Link></strong> and 
+            in the after movie below!
+          </p>
+          <p>
+            We couldn't have done it without <strong><Link to={`/${edition}/speakers/`} className="index-speakers-link"> 
+            all the 2019 speakers </Link></strong> who, besides delivering great content, turned out to be amazing humans. 
+          </p>
+          <p>
+            We’d love for you to join this growing circle of revo.friends!
+          </p>
+
+
           <iframe
             title="revo.js 2019 After Movie"
             width="100%"
