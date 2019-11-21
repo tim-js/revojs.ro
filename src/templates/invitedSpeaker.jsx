@@ -45,8 +45,10 @@ export default props => {
 
           <h2>Dear {speaker.firstname},</h2>
           <p>
-            It would be a great honor to have you as a speaker on stage at
-            revo.js 2020.
+            <strong>
+              It would be a great honor to have you as a speaker on stage at
+              revo.js 2020.
+            </strong>
           </p>
           <p>
             The close knit community surrounding revo.js surprised everyone in
@@ -54,50 +56,57 @@ export default props => {
             the best for them on our second edition, and that leads us to you.
           </p>
           <p>
-            You probably hear this a lot, but we really mean it: Your knowledge,
+            You probably hear this a lot, but we really mean it: your knowledge,
             passion and willingness to teach others truly inspire us.{" "}
           </p>
           <p>
             Looking forward to hearing from you,
             <br />
-            The revo.js team
+            The entire revo.js team
           </p>
+          <br />
 
           <a href="mailto:info@revojs.ro?subject=[revo.speaker invite]">
             <Button white>Say "YES" to revo.js!</Button>
           </a>
 
           <h2>More about revo.js</h2>
-          <ul>
+          <ul className="bullet">
             <li>
               <strong>Two-day, single track</strong>, technology focused
-              JavaScript conference
+              JavaScript conference;
             </li>
             <li>
               Happening on <strong>October 8th - 9th 2020</strong>, in
-              Timișoara, Romania
+              Timișoara, Romania;
             </li>
             <li>
-              Community driven, <strong>not-for-profit event</strong>
+              Community driven, <strong>not-for-profit event</strong>;
             </li>
             <li>
-              <strong>16+ speakers</strong> (half invited, half selected through
-              CFP)
+              <strong>16+ speakers</strong>, half invited, half selected through
+              CFP;
             </li>
-            <li>260+ attendees</li>
+            <li>260+ attendees.</li>
           </ul>
 
           <h2>What we're offering</h2>
-          <ul>
-            <li>Full cover of travel expenses</li>
+          <ul className="bullet">
             <li>
-              Full cover of accommodation expenses in a 4* hotel for 4 nights
-              (October 7-11)
+              Full cover of <strong>travel expenses</strong>;
             </li>
-            <li>Free access to the conference and all related happenings</li>
-            <li>Speakers' meet & greet dinner one day before the event</li>
             <li>
-              Saturday field trip with the core revo.js team, after the event
+              Full cover of <strong>accommodation expenses</strong> in a 4*
+              hotel for 4 nights (October 7-11);
+            </li>
+            <li>Free access to the conference and all related events;</li>
+            <li>
+              <strong>Speakers' meet &amp; greet dinner</strong>, one day before
+              the event;
+            </li>
+            <li>
+              <strong>Saturday field trip</strong> with the core revo.js team,
+              after the event.
             </li>
           </ul>
 
@@ -128,6 +137,8 @@ export default props => {
             humans.
           </p>
           <p>We’d love for you to join this growing circle of revo.friends!</p>
+          <br />
+          <br />
 
           <iframe
             title="revo.js 2019 After Movie"
@@ -138,12 +149,13 @@ export default props => {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
           ></iframe>
+          <br />
+          <br />
+          <br />
 
-          <p>
-            <a href="mailto:info@revojs.ro?subject=[revo.speaker invite]">
-              <Button white>Let us know what you think</Button>
-            </a>
-          </p>
+          <a href="mailto:info@revojs.ro?subject=[revo.speaker invite]">
+            <Button white>Let us know what you think</Button>
+          </a>
         </Content>
       </Section>
     </Layout>
