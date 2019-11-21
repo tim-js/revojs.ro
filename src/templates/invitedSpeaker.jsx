@@ -77,7 +77,7 @@ export default props => {
               JavaScript conference;
             </li>
             <li>
-              Happening on <strong>October 8th - 9th 2020</strong>, in
+              Taking place on <strong>8th-9th of October 2020</strong>, in
               Timișoara, Romania;
             </li>
             <li>
