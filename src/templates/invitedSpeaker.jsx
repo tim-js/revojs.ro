@@ -66,7 +66,9 @@ export default props => {
           </p>
           <br />
 
-          <a href="mailto:info@revojs.ro?subject=[revo.speaker invite]">
+          <a
+            href={`mailto:info@revojs.ro?subject=revo.speaker ${speaker.firstname} ${speaker.lastname}`}
+          >
             <Button white>Say "YES" to revo.js!</Button>
           </a>
 
@@ -153,7 +155,9 @@ export default props => {
           <br />
           <br />
 
-          <a href="mailto:info@revojs.ro?subject=[revo.speaker invite]">
+          <a
+            href={`mailto:info@revojs.ro?subject=revo.speaker ${speaker.firstname} ${speaker.lastname}`}
+          >
             <Button white>Let us know what you think</Button>
           </a>
         </Content>
