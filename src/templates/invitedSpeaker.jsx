@@ -45,34 +45,22 @@ export default props => {
 
           <h2>Dear {speaker.firstname},</h2>
           <p>
+            We said it once, but we’ll say it again:{" "}
             <strong>
-              It would be a great honor to have you as a speaker on stage at
-              revo.js 2020.
+              we’d be honored to have you on stage at revo.js 2020
             </strong>
+            .
           </p>
           <p>
-            The close knit community surrounding revo.js surprised everyone in
-            2019 with its passion and implication. We want to offer nothing but
-            the best for them on our second edition, and that leads us to you.
+            Your presence as a speaker would help us raise the bar for what’s
+            already a successful JavaScript conference.
           </p>
           <p>
-            You probably hear this a lot, but we really mean it: your knowledge,
-            passion and willingness to teach others truly inspire us.{" "}
+            In hope you’ll say <strong>"yes"</strong> to our invitation, here
+            are all the key details.
           </p>
-          <p>
-            Looking forward to hearing from you,
-            <br />
-            The entire revo.js team
-          </p>
-          <br />
 
-          <a
-            href={`mailto:info@revojs.ro?subject=revo.speaker ${speaker.firstname} ${speaker.lastname}`}
-          >
-            <Button white>Say "YES" to revo.js!</Button>
-          </a>
-
-          <h2>More about revo.js</h2>
+          <h2>About the conference</h2>
           <ul className="bullet">
             <li>
               <strong>Two-day, single track</strong>, technology focused
@@ -111,34 +99,42 @@ export default props => {
               after the event.
             </li>
           </ul>
+          <a
+            href={`mailto:info@revojs.ro?subject=revo.speaker ${speaker.firstname} ${speaker.lastname}`}
+          >
+            <Button white>Become a revo.speaker</Button>
+          </a>
 
-          <h2>Good vibes from revo.js 2019</h2>
-
+          <h2>Last edition’s vibes</h2>
           <p>
-            2019 was our very first edition and it turned out even greater than
-            we expected! You can see for yourself in our{" "}
-            <strong>
-              <Link to={`/${edition}/media/`} className="index-speakers-link">
-                {" "}
-                pictures{" "}
-              </Link>
-            </strong>{" "}
-            and in the after movie below!
-          </p>
-          <p>
-            We couldn't have done it without{" "}
+            The first edition of revo.js was beyond our wildest dreams. We
+            couldn’t have done it without our{" "}
             <strong>
               <Link
                 to={`/${edition}/speakers/`}
                 className="index-speakers-link"
               >
-                all the 2019 speakers{" "}
+                amazing crew of speakers{" "}
               </Link>
             </strong>{" "}
-            who, besides delivering great content, turned out to be amazing
-            humans.
+            who were not only gifted presenters, but also great people and
+            without our community supporters.{" "}
           </p>
-          <p>We’d love for you to join this growing circle of revo.friends!</p>
+
+          <p>
+            Don’t take our word for it, see for yourself. Our{" "}
+            <strong>
+              <Link to={`/${edition}/media/`} className="index-speakers-link">
+                {" "}
+                media page{" "}
+              </Link>
+            </strong>{" "}
+            speaks tons in pictures and the after-movie below is an excellent
+            start to understand the revo.vibe.
+          </p>
+
+          <p>We’d love you to join this growing circle of revo.friends!</p>
+
           <br />
           <br />
 
@@ -158,7 +154,7 @@ export default props => {
           <a
             href={`mailto:info@revojs.ro?subject=revo.speaker ${speaker.firstname} ${speaker.lastname}`}
           >
-            <Button white>Let us know what you think</Button>
+            <Button white>Join revo.js 2020</Button>
           </a>
         </Content>
       </Section>
