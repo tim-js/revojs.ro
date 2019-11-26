@@ -67,11 +67,11 @@ export default props => {
               JavaScript conference;
             </li>
             <li>
-              Taking place on <strong>8th-9th of October 2020</strong>, in
-              Timișoara, Romania;
+              Community driven, <strong>not-for-profit event</strong>;
             </li>
             <li>
-              Community driven, <strong>not-for-profit event</strong>;
+              Taking place on <strong>8th-9th October 2020</strong>, in
+              Timișoara, Romania;
             </li>
             <li>
               <strong>16+ speakers</strong>, half invited, half selected through
@@ -87,7 +87,7 @@ export default props => {
             </li>
             <li>
               Full cover of <strong>accommodation expenses</strong> in a 4*
-              hotel for 4 nights (October 7-11);
+              hotel for the whole stay;
             </li>
             <li>Free access to the conference and all related events;</li>
             <li>
@@ -116,9 +116,8 @@ export default props => {
               >
                 amazing crew of speakers{" "}
               </Link>
-            </strong>{" "}
-            who were not only gifted presenters, but also great people and
-            without our community supporters.{" "}
+            </strong>
+            , who were not only gifted presenters, but also great people.
           </p>
 
           <p>
@@ -130,7 +129,7 @@ export default props => {
               </Link>
             </strong>{" "}
             speaks tons in pictures and the after-movie below is an excellent
-            start to understand the revo.vibe.
+            start to understand the vibe.
           </p>
 
           <p>We’d love you to join this growing circle of revo.friends!</p>
