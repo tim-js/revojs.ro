@@ -34,7 +34,7 @@ The initial estimated budget was 60.000 EUR, but we managed to **gather 73.000 E
 - **26.500 EUR** from tickets;
 - Some costs were also covered by our partners.
 
-The money we raised from donations offered in exchange for branded swag will be **fully donated** to the [IRIS high-school](https://www.facebook.com/Liceul-Teoretic-Special-Iris-Timi%C5%9Foara-2221221011535265/) for visually impaired children. Initially, we were planning on giving away 50% of the total donated amount, but we finally decided to donate all **850 EUR**.
+We also raised money through donations, offered in exchange for branded swag. That money will be **fully donated** to the [IRIS high-school](https://www.facebook.com/Liceul-Teoretic-Special-Iris-Timi%C5%9Foara-2221221011535265/) for visually impaired children. Initially, we were planning on giving away 50% of the total donated amount, but we finally decided to donate all **850 EUR**.
 
 ## What about the extra money?
 
