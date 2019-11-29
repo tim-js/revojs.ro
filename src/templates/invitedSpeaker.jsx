@@ -41,9 +41,9 @@ export default props => {
               />
             </div>
           </figure>
-          <SpeakerInfo speaker={speaker} />
+          {/* <SpeakerInfo speaker={speaker} /> */}
 
-          <h2>Dear {speaker.firstname},</h2>
+          <h1>Dear {speaker.firstname},</h1>
           <p>
             We said it once, but we’ll say it again:{" "}
             <strong>
