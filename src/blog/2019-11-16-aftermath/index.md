@@ -14,6 +14,8 @@ To make it all happen, we started organizing revo.js one year in advance and we 
 
 Now we need to take a break and reflect in order to restart.
 
+<img src="revo.js-2019-aftermath.jpg" alt="revo.js core team reflected in a mirror and looking in a crystal ball"/>
+
 ## Costs breakdown
 
 Since revo.js was highly influenced by [JSHeroes](https://jsheroes.io/), we want to follow their example in creating an [Annual Transparency Report](https://medium.com/cluj-javascripters/jsheroes-2018-transparency-report-part-2-follow-up-eadce2a986bf) and share with you a high-level financial overview.
@@ -28,24 +30,25 @@ Since revo.js was highly influenced by [JSHeroes](https://jsheroes.io/), we want
 - **3.000 EUR** for prints: badges, sponsors’ panels, posters and branding elements;
 - **2.500 EUR** for other things: diversity support, online tools, etc.
 
-The initial estimated budget was 60.000 EUR, but we managed to **gather 73.850 EUR**, which was beyond our wildest dreams:
+The initial estimated budget was 60.000 EUR, but we managed to **gather 73.000 EUR**, which was beyond our wildest dreams:
 
 - **46.500 EUR** from sponsorships;
 - **26.500 EUR** from tickets;
-- **850 EUR** from donations for our revo.swag;
 - Some costs were also covered by our partners.
+
+We also raised money through donations, offered in exchange for branded swag. That money will be **fully donated** to the [IRIS high-school](https://www.facebook.com/Liceul-Teoretic-Special-Iris-Timi%C5%9Foara-2221221011535265/) for visually impaired children. Initially, we were planning on giving away 50% of the total donated amount, but we finally decided to donate all **850 EUR**.
 
 ## What about the extra money?
 
-The first edition of revo.js made a **profit of 17.850 EUR**, which exceeded our initial expectations. Since revo.js is a not-for-profit event, the extra money will go into **growing the local JavaScript community**.
+The first edition of revo.js made a **profit of 17.000 EUR**, which exceeded our initial expectations. Since revo.js is a not-for-profit event, we will use the extra money to grow the local JavaScript community and give back to the global community as well.
 
-### revo.swag donations
+### JavaScript initiatives donations
 
-The money we raised from donations offered in exchange for branded swag will be **fully donated** to the [IRIS high-school](https://www.facebook.com/Liceul-Teoretic-Special-Iris-Timi%C5%9Foara-2221221011535265/) for visually impaired children. Initially, we were planning on giving away 50% of the total donated amount, but we finally decided to donate the entire sum.
+We are planning to donate a part of the total profit to various JS community causes, such as open-source or underrepresented tech initiatives.
 
-### JS causes donations
+### Grow the local JS community
 
-We are planning to donate a part of the total profit to various JS community causes, such as open-source and underrepresented or local tech initiatives.
+We plan to use part of the profit to bring speakers outside Timisoara to our tim.js meetup and also to organize various hands-on JavaScript workshops.
 
 ### Make revo.js better
 
