@@ -78,9 +78,11 @@ revo.js was born as a community-driven event and we are very happy that we manag
 
 We were pleasantly surprised by the high number of participants and speakers that attended the [after-party](https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=520281835197831). Those who didn’t interact that much during the conference had a second chance to do so at the after-party, where everything changed for the better.
 
-### Recruitment free sponsors’ giveaways
+### Not focused on recruitment
 
-revo.js was designed to be a **recruitment-free event** and we wanted this to be obvious. Our participants noticed this and appreciated it through very positive feedback.
+revo.js was not designed to be a recruitment-focused event and we wanted to make it visible. Our participants highly appreciated the approach and even felt more inclined to network and create authentic connections in the community.
+
+Shifting the focus from recruitment to meaningful engagements benefited participants and sponsors alike. In fact, by stepping away from traditional booths and recruitment materials, our sponsors managed to incite participants with exciting activities and ignite natural conversations.
 
 ## What’s next?
 
