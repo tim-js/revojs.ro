@@ -40,15 +40,15 @@ We also raised money from the donations made by participants in exchange for bra
 
 ## What about the extra money?
 
-The first edition of revo.js made a **profit of 17.000 EUR**, which exceeded our initial expectations. Since revo.js is a not-for-profit event, we will use the extra money to grow the local JavaScript community and give back to the global community as well.
+The first edition of revo.js made a **profit of 17.000 EUR**, which exceeded our initial expectations. Since revo.js is a not-for-profit event, we will use the extra money to grow the local JavaScript community as well as to give back to the global community.
 
-### JavaScript initiatives donations
+### Support different JavaScript initiatives
 
 We are planning to donate a part of the total profit to various JS community causes, such as open-source or underrepresented tech initiatives.
 
 ### Grow the local JS community
 
-We plan to use part of the profit to bring speakers outside Timisoara to our tim.js meetup and also to organize various hands-on JavaScript workshops.
+We plan on using a part of our earnings to bring speakers outside Timisoara to our tim.js meetup and also to organize various hands-on JavaScript workshops.
 
 ### Make revo.js better
 
