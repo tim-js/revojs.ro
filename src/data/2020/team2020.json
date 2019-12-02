@@ -2,7 +2,7 @@
   {
     "name": "Amalia Sisak",
     "image": "01_V1@2x.png",
-    "title": "Location"
+    "title": "Venue"
   },
   {
     "name": "Andrea Sisak",
@@ -13,6 +13,11 @@
     "name": "Simina Sîrbu",
     "image": "03_V1@2x.png",
     "title": "Design"
+  },
+  {
+    "name": "Adrian Fâciu",
+    "image": "12_V1@2x.png",
+    "title": "Workshops"
   },
   {
     "name": "Andreea Nicu",
@@ -35,14 +40,14 @@
     "title": "Speakers"
   },
   {
-    "name": "Cassian Lup",
-    "image": "08_V1@2x.png",
-    "title": "Speakers"
-  },
-  {
     "name": "Lucian Păcurar",
     "image": "09_V1@2x.png",
     "title": "Speakers"
+  },
+  {
+    "name": "Anca Dubei",
+    "image": "Anca_V1@2x.png",
+    "title": "Tickets"
   },
   {
     "name": "Andrei Pfeiffer",
@@ -50,14 +55,19 @@
     "title": "Coordinator"
   },
   {
+    "name": "Dana Ciuma",
+    "image": "Dana_V1@2x.png",
+    "title": "Communities"
+  },
+  {
     "name": "Ovidiu Bîte",
     "image": "11_V1@2x.png",
     "title": "Support"
   },
   {
-    "name": "Adrian Fâciu",
-    "image": "12_V1@2x.png",
-    "title": "Support"
+    "name": "Iulia Tamazlicariu",
+    "image": "Iulia_V1@2x.png",
+    "title": "Accessibility"
   },
   {
     "name": "Ion Moșincat",

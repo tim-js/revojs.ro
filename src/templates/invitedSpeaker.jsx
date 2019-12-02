@@ -8,7 +8,7 @@ import Layout from "@components/Layout";
 import Section from "@components/Section";
 import Content from "@components/Content";
 
-import SpeakerInfo from "./SpeakerInfo";
+// import SpeakerInfo from "./SpeakerInfo";
 
 import { getEdition } from "@utils";
 

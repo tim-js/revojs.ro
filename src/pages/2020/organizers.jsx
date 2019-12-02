@@ -27,7 +27,7 @@ const Organizers = ({ data }) => {
 
       return {
         ...member,
-        memberImage,
+        memberImage
       };
     });
 
@@ -96,31 +96,29 @@ const Organizers = ({ data }) => {
         </Content>
       </Section>
 
-      <div className="footer-separation">
-        <Section>
-          <section className="organizers-team">
-            <h2>Core Team</h2>
-            <p>
-              This event takes place only because the following humans got
-              involved:
-            </p>
-            <ul className="team-list">
-              {team.map(member => (
-                <li className="team-member" key={member.name}>
-                  <Img
-                    fluid={member.memberImage.node.image.fluid}
-                    alt={`${member.name} black and white photo`}
-                  />
-                  <strong className="team-member-name">
-                    {member.name}
-                    <span className="team-member-title">{member.title}</span>
-                  </strong>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </Section>
-      </div>
+      <Section className="organizers-team">
+        <section>
+          <h2>Core Team</h2>
+          <p>
+            This event takes place only because the following humans got
+            involved:
+          </p>
+          <ul className="team-list">
+            {team.map(member => (
+              <li className="team-member" key={member.name}>
+                <Img
+                  fluid={member.memberImage.node.image.fluid}
+                  alt={`${member.name} black and white photo`}
+                />
+                <strong className="team-member-name">
+                  {member.name}
+                  <span className="team-member-title">{member.title}</span>
+                </strong>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Section>
     </Layout>
   );
 };
