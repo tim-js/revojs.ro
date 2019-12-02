@@ -6,7 +6,7 @@ title: "revo.js 2019 Aftermath"
 
 Between the **2nd and 4th of October 2019**, the first edition of [revo.js](https://revojs.ro/2019), a single-track, not-for-profit, community-driven JavaScript conference, took place in Timișoara.
 
-The event gathered more than **200 participants** and **17 speakers** from 12 countries, during two conference days. To spice things up, we also held **a full-day workshop** which, to our delight, was fully booked.
+The event gathered more than **200 participants** and **17 speakers** from 12 countries, during two conference days. To spice things up, we also held **a full-day workshop** which was fully booked.
 
 ---
 
@@ -30,13 +30,13 @@ Since revo.js was highly influenced by [JSHeroes](https://jsheroes.io/), we want
 - **3.000 EUR** for prints: badges, sponsors’ panels, posters and branding elements;
 - **2.500 EUR** for other things: diversity support, online tools, etc.
 
-The initial estimated budget was 60.000 EUR, but we managed to **gather 73.000 EUR**, which was beyond our wildest dreams:
+The initial estimated budget was 60.000 EUR, but we managed to **gather 73.000 EUR**, which was far more than we anticipated:
 
 - **46.500 EUR** from sponsorships;
 - **26.500 EUR** from tickets;
 - Some costs were also covered by our partners.
 
-We also raised money through donations, offered in exchange for branded swag. That money will be **fully donated** to the [IRIS high-school](https://www.facebook.com/Liceul-Teoretic-Special-Iris-Timi%C5%9Foara-2221221011535265/) for visually impaired children. Initially, we were planning on giving away 50% of the total donated amount, but we finally decided to donate all **850 EUR**.
+We also raised money from the donations made by participants in exchange for branded swag. These funds will be entirely donated to the [IRIS high-school](https://www.facebook.com/Liceul-Teoretic-Special-Iris-Timi%C5%9Foara-2221221011535265/) for visually impaired children. Even though the initial plan was to give away only 50% of the total donated amount, we finally decided to **donate all 850 EUR**.
 
 ## What about the extra money?
 
