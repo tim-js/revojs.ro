@@ -14,7 +14,14 @@ To make it all happen, we started organizing revo.js one year in advance and we 
 
 Now we need to take a break and reflect in order to restart.
 
-<img src="revo.js-2019-aftermath.jpg" alt="revo.js core team reflected in a mirror and looking in a crystal ball"/>
+<figure>
+  <img src="revo.js-2019-aftermath.jpg" alt="revo.js core team reflected in a mirror and looking in a crystal ball"/>
+  <figcaption>Illustration by 
+    <a href="https://danungureanu.com/" target="_blank" rel="noopener noreferrer">
+      Dan Ungureanu
+    </a>
+  </figcaption>
+</figure
 
 ## Costs breakdown
 
