@@ -257,7 +257,7 @@ export default () => {
             <p>
               Feel free to contact us regarding any information you cannot find
               on this page or if you have any questions about how we handle your
-              data at{" "}
+              data, at{" "}
               <a href="mailto:info@revojs.ro?subject=[privacy]">
                 info@revojs.ro
               </a>

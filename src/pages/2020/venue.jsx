@@ -21,7 +21,7 @@ export default () => {
           {/* <span className="highlight">Iulius Congress Hall</span> <br />
           <span>at Iulius Town Timișoara</span> <br /> */}
           <span>
-            Will be annouced soon. <br />
+            Will be announced soon. <br />
             Stay tuned...
           </span>
         </strong>

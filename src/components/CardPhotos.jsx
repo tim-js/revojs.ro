@@ -5,7 +5,7 @@ import Card from "./Card";
 
 import "./cardPhotos.scss";
 
-export default ({ href, img, heading }) => {
+export default ({ href, img, heading, ...props }) => {
   return (
     <OutboundLink
       href={href}
@@ -13,7 +13,7 @@ export default ({ href, img, heading }) => {
       rel="noopener noreferrer"
       className="card-photos-link"
     >
-      <Card white className="" img={img} heading={heading}></Card>
+      <Card img={img} heading={heading} {...props}></Card>
     </OutboundLink>
   );
 };

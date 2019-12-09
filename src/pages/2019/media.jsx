@@ -51,6 +51,7 @@ const Media = ({ data }) => {
           <ul className="media-photos-list index-speakers-list">
             <li>
               <CardPhotos
+                white
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=520124138546934"
                 img={
                   <Img
@@ -69,6 +70,7 @@ const Media = ({ data }) => {
 
             <li>
               <CardPhotos
+                white
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=519964821896199"
                 img={
                   <Img
@@ -87,6 +89,7 @@ const Media = ({ data }) => {
 
             <li>
               <CardPhotos
+                white
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=520281835197831"
                 img={
                   <Img
@@ -105,6 +108,7 @@ const Media = ({ data }) => {
 
             <li>
               <CardPhotos
+                white
                 href="https://vrhub.ro/wp-content/uploads/vr360/vr.revo.js/"
                 img={
                   <Img

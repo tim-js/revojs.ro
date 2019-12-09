@@ -9,7 +9,6 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 
 import timjs from "@assets/tim.js-logo.svg";
-import banatit from "@assets/Banat_IT_Logo.svg";
 
 import "./organizers.scss";
 
@@ -40,58 +39,36 @@ const Organizers = ({ data }) => {
       <Section light>
         <Content centered>
           <section>
-            <h2>Main Organizers</h2>
-
-            <div className="organizers">
-              <section>
-                <h3>
-                  <OutboundLink
-                    href="https://timjs.ro"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={timjs} alt="tim.js" height="30" />
-                  </OutboundLink>
-                </h3>
-                <p>
-                  Founded in 2013,{" "}
-                  <OutboundLink
-                    href="https://timjs.ro"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    tim.js
-                  </OutboundLink>{" "}
-                  is the local JavaScript Community in Timisoara, committed to
-                  encourage, inspire and share JavaScript knowledge among its
-                  members.
-                </p>
-              </section>
-              <section>
-                <h3>
-                  <OutboundLink
-                    href="https://banatit.ro"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={banatit} alt="Banat IT" height="30" />
-                  </OutboundLink>
-                </h3>
-                <p>
-                  Dedicated to all stakeholders in the local IT industry:
-                  universities, talent, researchers, IT employees, recruiters,
-                  and affiliated supporting services,{" "}
-                  <OutboundLink
-                    href="https://banatit.ro"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Banat IT
-                  </OutboundLink>{" "}
-                  is an NGO created by a passionate group of professionals.
-                </p>
-              </section>
-            </div>
+            <h3>
+              <OutboundLink
+                href="https://timjs.ro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={timjs} alt="tim.js" height="60" />
+              </OutboundLink>
+            </h3>
+            <p>
+              Founded in 2013,{" "}
+              <OutboundLink
+                href="https://timjs.ro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                tim.js
+              </OutboundLink>{" "}
+              is the local JavaScript Community in Timișoara, Romania.
+            </p>
+            <p>
+              It's main purpose is to bring JavaScript enthusiasts together and
+              facilitate knowledge sharing between its members through meetups,
+              workshops and conferences such revo.js.
+            </p>
+            <p>
+              We welcome everybody interested in any part of the JavaScript
+              ecosystem, weather you're a beginner that just started learning,
+              or an expert with decades of experience.
+            </p>
           </section>
         </Content>
       </Section>

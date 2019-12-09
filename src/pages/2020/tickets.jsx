@@ -26,8 +26,8 @@ export default () => {
         <h1>Tickets</h1>
         <br />
         <strong className="tickets-important light-faded mono">
-          Early Bird Tickets will become available <br />
-          on the <span className="highlight">{EARLY_START}</span>
+          Early Bird Tickets will wake up <br />
+          on the <span className="highlight">{EARLY_START}.</span>
         </strong>
         <br />
         <br />

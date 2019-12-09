@@ -72,3 +72,42 @@
   }
 }
 */
+
+.index-after-movie {
+  text-align: center;
+
+  @include breakpoint(sm) {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+.index-after-movie-heading {
+  margin-top: 0;
+  padding-top: 0;
+  @include breakpoint(sm) {
+    padding-bottom: 10rem;
+  }
+}
+
+.card-photo-bg {
+  width: 100%;
+  padding-bottom: 100%;
+  display: block;
+  background: url("/img-after-movie-2019.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+.card-photo-bg-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-heading-after-movie {
+  margin: 0;
+
+  @include breakpoint(sm) {
+    padding: 3rem;
+  }
+}

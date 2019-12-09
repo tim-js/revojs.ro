@@ -1,16 +1,21 @@
 import React, { useEffect } from "react";
 
 import { replace, Link } from "gatsby";
+import Img from "gatsby-image";
 import queryString from "query-string";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
+import Section from "@components/Section";
 // import IndexUpdates from "@components/index/IndexUpdates";
-import IndexSpeakers from "@components/index/IndexSpeakers";
+// import IndexSpeakers from "@components/index/IndexSpeakers";
 // import IndexSponsors from "@components/index/IndexSponsors";
 import Separator from "@components/Separator";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
+import Subscribe from "@components/Subscribe";
+import CardPhotos from "@components/CardPhotos";
 import { getEdition } from "@utils";
 
 import logo from "@assets/logo-revojs.svg";
@@ -22,7 +27,7 @@ export default props => {
     if (search.fbclid) {
       const clearedSearch = queryString.stringify({
         ...search,
-        fbclid: undefined,
+        fbclid: undefined
       });
       if (clearedSearch.length) {
         replace(props.location.pathname + "?" + clearedSearch);
@@ -48,8 +53,8 @@ export default props => {
             Change is <span className="tagline-block">the only const.</span>
           </h1>
           <div className="date-location">
-            <time className="index-date mono" dateTime="2019-10-03">
-              <strong>October.3-4.2019</strong>
+            <time className="index-date mono" dateTime="2020-10-08">
+              <strong>October.8-9.2020</strong>
             </time>
             <strong className="index-location mono">Timisoara/RO</strong>
           </div>
@@ -63,22 +68,63 @@ export default props => {
           {/* <Link to={`/${getEdition()}/agenda`}>
             <Button>View the Agenda</Button>
           </Link> */}
-          <Link to={`/${getEdition()}/media`}>
-            <Button>View 2019 Media Page</Button>
-          </Link>
+          <a href="#subscribe-form">
+            <Button>Subscribe for News</Button>
+          </a>
         </div>
-
-        {/* <div className="description mono">
-          <strong>Technology focused.</strong>
-          <strong>Community driven.</strong>
-          <strong className="highlight">JavaScript conference.</strong>
-        </div> */}
       </Header>
 
       {/* <IndexUpdates /> */}
       <Separator />
-      <IndexSpeakers />
+      {/* <IndexSpeakers /> */}
       {/* <IndexSponsors /> */}
+
+      <Section className="index-after-movie">
+        <h2 className="index-after-movie-heading">
+          revo.js 2019 <br />
+          has been awesome
+        </h2>
+
+        <OutboundLink
+          href="https://www.youtube.com/watch?v=KY9ZVsGnTes&amp;list=PL701JjUqw62nHoRho4RJ3KJSLCRG08r1Z&amp;index=19&amp;t=0s"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-photos-link"
+        >
+          <section className={`card`}>
+            <figure className="card-img">
+              <div className="card-img-inner">
+                <span className="card-photo-bg">
+                  <span className="card-photo-bg-content" />
+                </span>
+              </div>
+            </figure>
+            <div className="card-info">
+              <div className="card-info-inner">
+                <h2 className="card-heading-after-movie">
+                  Watch Our
+                  <br />
+                  2019 After Movie
+                </h2>
+              </div>
+            </div>
+          </section>
+        </OutboundLink>
+
+        <br />
+        <br />
+
+        <Link to={`/${getEdition()}/media`}>
+          <Button>View 2019 Media Page</Button>
+        </Link>
+      </Section>
+
+      <Section id="subscribe-form" centered>
+        {/* <h2>Stay up to date!</h2> */}
+        <p>Subscribe to stay on top the latest changes and revo.news:</p>
+        <br />
+        <Subscribe centered />
+      </Section>
     </Layout>
   );
 };
