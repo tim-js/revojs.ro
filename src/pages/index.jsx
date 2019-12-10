@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 import { replace, Link } from "gatsby";
-import Img from "gatsby-image";
 import queryString from "query-string";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
@@ -15,7 +14,6 @@ import Separator from "@components/Separator";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
-import CardPhotos from "@components/CardPhotos";
 import { getEdition } from "@utils";
 
 import logo from "@assets/logo-revojs.svg";

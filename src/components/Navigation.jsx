@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 
 import Hamburger from "@components/layout/Hamburger";
-import Arrow from "@components/Arrow";
 import logo from "@assets/logo-revojs.svg";
 import symbol from "@assets/logo-revojs-symbol.svg";
 import { getEdition, getPages, currentEdition } from "@utils";
