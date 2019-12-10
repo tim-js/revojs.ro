@@ -54,15 +54,18 @@
   display: flex;
   align-items: center;
 }
+.navigation-to-current-edition {
+  line-height: 0;
+  margin-right: 1.5em;
+}
 
 .navigation-previous-edition {
   display: flex;
   align-items: center;
-}
-.navigation-to-current-edition {
-  transform: rotate(180deg) translateX(20px);
-  height: 40px;
-  width: 40px;
+
+  .is-active & {
+    visibility: hidden;
+  }
 }
 
 .navigation-edition {

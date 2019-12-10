@@ -3,25 +3,26 @@ import PropTypes from "prop-types";
 
 import "./hamburger.scss";
 
-const Hamburger = ({ active, ...props }) => {
-  const _active = active ? "active" : "";
+const Hamburger = ({ active, className, as, label, ...props }) => {
+  let css = `hamburger ${className || ""} ${active ? "active" : ""}`;
+
+  const Element = as || "button";
 
   return (
-    <button
-      aria-label="Toggle menu"
-      className={`hamburger ${_active}`}
-      {...props}
-    >
-      <span className={`hamburger-box`}>
+    <Element aria-label={label} className={css} {...props}>
+      <span className="hamburger-box">
         <span className="hamburger-inner" />
       </span>
-    </button>
+    </Element>
   );
 };
 
 Hamburger.propTypes = {
+  as: PropTypes.element,
+  label: PropTypes.string,
   active: PropTypes.bool,
-  onClick: PropTypes.func.isRequired
+  className: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 export default Hamburger;

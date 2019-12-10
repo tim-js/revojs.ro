@@ -61,6 +61,7 @@ export default props => {
         <Logo edition={edition} currentEdition={currentEdition} />
         <nav>
           <Hamburger
+            label="Toggle menu"
             active={showMenu}
             id="toggle-primary-navigation"
             onClick={() => toggleMenu(!showMenu)}
@@ -93,10 +94,16 @@ function Logo({ edition, currentEdition }) {
   if (isPastEdition) {
     return (
       <div className="navigation-previous-edition">
-        <Link to="/" title="go to homepage" className="navigation-logo-link">
-          <Arrow className="navigation-to-current-edition" light={true}>
+        <Link to="/" title={`Go to ${currentEdition} edition`}>
+          <Hamburger
+            as="div"
+            active={true}
+            className="white navigation-to-current-edition"
+          />
+
+          {/* <Arrow className="navigation-to-current-edition" light={true}>
             View edition {currentEdition}
-          </Arrow>
+          </Arrow> */}
         </Link>
         <img
           src={symbol}

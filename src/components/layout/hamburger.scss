@@ -57,15 +57,18 @@
   .active & {
     bottom: 0;
     transition: bottom 75ms ease,
-      transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+      transform 200ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
     transform: rotate(-90deg);
+  }
+  .hamburger.active:hover & {
+    transform: rotate(90deg);
   }
   .hamburger:not(.active):hover & {
     transform: translateY(3px);
   }
 }
 
-.hamburger.active {
+.hamburger.active:not(.white) {
   .hamburger-inner::after,
   .hamburger-inner::before,
   .hamburger-inner {
