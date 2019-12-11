@@ -27,7 +27,7 @@
 
   &:focus {
     outline: 0;
-    border-color: var(--primary);
+    border-color: var(--primary) !important;
   }
 
   .subscribe-form--light & {

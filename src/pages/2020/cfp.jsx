@@ -8,7 +8,7 @@ import Content from "@components/Content";
 import Button from "@components/Button";
 import Note from "@components/Note";
 // import { SubmitCFP } from "@components/CTA";
-// import Subscribe from "@components/Subscribe";
+import Subscribe from "@components/Subscribe";
 
 import "./cfp.scss";
 
@@ -76,11 +76,11 @@ export default () => {
           <br />
           <SubmitCFP white /> */}
 
-          {/* <section>
+          <section>
             <h2>Stay up to date!</h2>
             <p>Subscribe to find out when Call for Papers starts:</p>
             <Subscribe light list="cfp" />
-          </section> */}
+          </section>
 
           <section id="topics">
             <h2>Topics</h2>
