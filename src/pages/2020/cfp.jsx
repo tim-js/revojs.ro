@@ -90,14 +90,14 @@ export default () => {
             </p>
 
             <ul className="bullet">
-              <li>Hot topics</li>
-              <li>Crazy ideas</li>
-              <li>Language fundamentals</li>
-              <li>Tips and tricks for daily use</li>
-              <li>Tools for a better developer experience</li>
-              <li>Mobile, Desktop, Embedded or Hardware JS</li>
+              <li>Hot topics;</li>
+              <li>Crazy ideas;</li>
+              <li>Language fundamentals;</li>
+              <li>Tips and tricks for daily use;</li>
+              <li>Tools for a better developer experience;</li>
+              <li>Mobile, Desktop and IoT;</li>
               {/* <li>The human side of software development</li> */}
-              <li>Any JS topic that makes your heart beat faster</li>
+              <li>Any JS topic that makes your heart beat faster.</li>
             </ul>
           </section>
 
@@ -171,7 +171,7 @@ export default () => {
               daunting. But count on us! We’re happy to help and guide you all
               the way with:
             </p>
-            <ul>
+            <ul className="bullet">
               <li>Brainstorming ideas</li>
               <li>Proposal submission</li>
               <li>Slides or live code preparation</li>
@@ -210,14 +210,14 @@ export default () => {
                 someone along for support;
               </li>
               <li>
-                Give you free entrance at all the talks and happenings during
+                Provide you free entrance at all the talks and happenings during
                 the conference;
               </li>
               <li>
                 Take you on a trip outside Timisoara on Saturday; we’ll tag
                 along;
               </li>
-              <li>Take you out at a speakers’ dinner;</li>
+              <li>Take you out at a speakers’ dinner before the conference;</li>
               <li>Get you involved in other activities around the event;</li>
             </ul>
 
