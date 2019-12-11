@@ -167,8 +167,8 @@ export default () => {
             <h2>Workshop tickets</h2>
             <p>Workshop tickets are sold separately and they include:</p>
             <ul className="bullet">
-              <li>lunch and snacks</li>
-              <li>coffee and beverages</li>
+              <li>Lunch and snacks</li>
+              <li>Coffee and beverages</li>
             </ul>
             <p>
               <strong>Note:</strong> <br />

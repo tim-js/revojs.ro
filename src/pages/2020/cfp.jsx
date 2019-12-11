@@ -122,6 +122,10 @@ export default () => {
               rigorously. We strongly suggest that you time your presentation
               accordingly in advance.
             </p>
+            <p>
+              We will not have Q&A sessions after the talks, but we are planning on
+              creating several contexts to encourage the speaker-attendee interaction during breaks.
+            </p>
 
             <h3>Attention to details</h3>
             <p>
