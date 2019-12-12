@@ -122,9 +122,12 @@ export default () => {
               rigorously. We strongly suggest that you time your presentation
               accordingly in advance.
             </p>
+
+            <h3>Q&amp;A</h3>
             <p>
-              We will not have Q&A sessions after the talks, but we are planning on
-              creating several contexts to encourage the speaker-attendee interaction during breaks.
+              We will skip Q&amp;A sessions after the talks. However we're
+              planning on creating several contexts to facilitate the
+              speaker-attendee interaction during the breaks.
             </p>
 
             <h3>Attention to details</h3>
@@ -193,7 +196,7 @@ export default () => {
                 <strong>info@revojs.ro</strong>
               </a>
               <br />
-              <i>(just please don’t use this email to submit your proposal).</i>
+              <i>(Please don’t use this email to submit your proposal).</i>
             </p>
           </section>
 
