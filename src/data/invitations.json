@@ -115,5 +115,95 @@
     "twitter": "techgirl1908",
     "title": "Automation Architect, Senior Developer Advocate",
     "company": "Applitools"
+  },
+  {
+    "id": "nicole_sullivan_qwtbwq",
+    "firstname": "Nicole",
+    "lastname": "Sullivan",
+    "image": "invitations/nicole-sullivan.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "benedikt_meurer_tudzxw",
+    "firstname": "Benedikt",
+    "lastname": "Meurer",
+    "image": "invitations/benedikt-meurer.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "kent_c_dodds_fzoqko",
+    "firstname": "Kent",
+    "lastname": "C. Dodds",
+    "image": "invitations/kent-c-dodds.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "kara_erickson_pnjnit",
+    "firstname": "Kara",
+    "lastname": "Erickson",
+    "image": "invitations/kara-erickson.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "eduardo_san_martin_morote_xxucxn",
+    "firstname": "Eduardo",
+    "lastname": "San Martin Morote",
+    "image": "invitations/eduardo-san-martin-morote.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "orta_therox_unemhd",
+    "firstname": "Orta",
+    "lastname": "Therox",
+    "image": "invitations/orta-therox.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "isabella_silveira_de_souza_unemhv",
+    "firstname": "Isa",
+    "lastname": "Silveira",
+    "image": "invitations/isabella-silveira-de-souza.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "charlie_gerard_pbfkeh",
+    "firstname": "Charlie",
+    "lastname": "Gerard",
+    "image": "invitations/charlie-gerard.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "mike_grabowsky_btaxyc",
+    "firstname": "Mike",
+    "lastname": "Grabowsky",
+    "image": "invitations/mike-grabowsky.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "trent_willis_nxyshw",
+    "firstname": "Trent",
+    "lastname": "Willis",
+    "image": "invitations/trent-willis.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
   }
 ]
