@@ -30,7 +30,13 @@
 
 .index-tagline {
   @include breakpoint(sm, max) {
-    font-size: 3.5rem;
+    font-size: 5rem;
+  }
+  @include breakpoint(sm) {
+    font-size: 12rem;
+  }
+  @include breakpoint(md) {
+    font-size: 14rem;
   }
 }
 .date-location {

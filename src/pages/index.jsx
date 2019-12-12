@@ -48,8 +48,11 @@ export default props => {
 
         <div className="index-header-content">
           <h1 className="index-tagline">
-            Change is <span className="tagline-block">the only const.</span>
+            <span className="highlight">revo</span>lve.
           </h1>
+          {/* <h1 className="index-tagline">
+            Change is <span className="tagline-block">the only const.</span>
+          </h1> */}
           <div className="date-location">
             <time className="index-date mono" dateTime="2020-10-08">
               <strong>October.8-9.2020</strong>
