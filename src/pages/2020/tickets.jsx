@@ -53,16 +53,20 @@ export default () => {
             <ul className="bullet">
               <li>
                 <strong>Early Bird Tickets</strong>: until {EARLY_END}{" "}
+                <span className="light-faded">22:00 UTC</span>{" "}
                 <strong className="highlight">(COMING SOON)</strong>
               </li>
               <li>
                 <strong>Regular Tickets</strong>: until {REGULAR_END}{" "}
+                <span className="light-faded">22:00 UTC</span>{" "}
               </li>
               <li>
                 <strong>Late Bird Tickets</strong>: until {LATE_END}{" "}
+                <span className="light-faded">22:00 UTC</span>{" "}
               </li>
               <li>
                 <strong>Workshops Tickets</strong>: until {LATE_END}{" "}
+                <span className="light-faded">22:00 UTC</span>{" "}
               </li>
             </ul>
           </section>
@@ -84,8 +88,10 @@ export default () => {
             <p>
               <strong>Note:</strong> <br />
               Conference tickets don't include access to workshops. <br />
-              There is a separate ticket that you have to purchase in order to
-              attend the workshop.
+              <span className="light-faded">
+                There is a separate ticket that you have to purchase in order to
+                attend the workshop.
+              </span>
             </p>
           </section>
 
@@ -99,8 +105,10 @@ export default () => {
             <p>
               <strong>Note:</strong> <br />
               Workshop tickets don't offer access to the conference. <br />
-              You have to also purchase a conference ticket if you want to
-              attend both events.
+              <span className="light-faded">
+                You have to also purchase a conference ticket if you want to
+                attend both events.
+              </span>
             </p>
           </section>
 
