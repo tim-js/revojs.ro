@@ -26,8 +26,8 @@ export default () => {
         <h1>Tickets</h1>
         <br />
         <strong className="tickets-important light-faded mono">
-          Early Bird Tickets will wake up <br />
-          on the <span className="highlight">{EARLY_START}.</span>
+          Early Bird Tickets will <br />
+          wake up on the <span className="highlight">{EARLY_START}.</span>
         </strong>
         <br />
         <br />
@@ -39,12 +39,12 @@ export default () => {
 
       <Section light>
         <Content centered>
-          <Note>
+          {/* <Note>
             <p>
-              Grab your ticket for change and get ready for insightful talks,
+              Grab your ticket and get ready for insightful talks,
               exciting networking and a good time all-around.
             </p>
-          </Note>
+          </Note> */}
 
           <section>
             <h2>Rollout plan</h2>
