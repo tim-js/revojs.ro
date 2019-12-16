@@ -14,6 +14,7 @@ import Separator from "@components/Separator";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
+import AddToCalendar from "@components/calendar/AddToCalendar";
 import { getEdition } from "@utils";
 
 import logo from "@assets/logo-revojs.svg";
@@ -53,12 +54,21 @@ export default props => {
           {/* <h1 className="index-tagline">
             Change is <span className="tagline-block">the only const.</span>
           </h1> */}
-          <div className="date-location">
-            <time className="index-date mono" dateTime="2020-10-08">
-              <strong>October.8-9.2020</strong>
-            </time>
-            <strong className="index-location mono">Timisoara/RO</strong>
-          </div>
+          <AddToCalendar
+            title="revo.js 2020"
+            details="revolve."
+            location="Timisoara/RO"
+            startDate={new Date("2020-10-08 08:00")}
+            endDate={new Date("2020-10-09 17:00")}
+            isFullDay={true}
+          >
+            <div className="date-location">
+              <time className="index-date mono" dateTime="2020-10-08">
+                <strong>October.8-9.2020</strong>
+              </time>
+              <strong className="index-location mono">Timisoara/RO</strong>
+            </div>
+          </AddToCalendar>
         </div>
 
         <div className="index-cta">
