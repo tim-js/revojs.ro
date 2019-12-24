@@ -22,7 +22,7 @@ export default props => {
     if (search.fbclid) {
       const clearedSearch = queryString.stringify({
         ...search,
-        fbclid: undefined,
+        fbclid: undefined
       });
       if (clearedSearch.length) {
         replace(props.location.pathname + "?" + clearedSearch);
@@ -44,7 +44,7 @@ export default props => {
         </div>
 
         <div className="index-header-content">
-          <h1 className="index-tagline">
+          <h1 className="index-tagline-2019">
             Change is <span className="tagline-block">the only const.</span>
           </h1>
           <div className="date-location">
