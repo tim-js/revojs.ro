@@ -6,8 +6,8 @@ export function getYearFromUrl(url) {
   if (!url) {
     return;
   }
-  return url.split(/[^\d]/).filter(function(n) {
-    if (n >= 2019 && n <= 2099) return n;
+  return url.split("/").filter(function(n) {
+    if (+n >= 2019 && +n <= 2099) return n;
     return undefined;
   })[0];
 }
