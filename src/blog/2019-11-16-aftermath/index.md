@@ -21,7 +21,7 @@ Now we need to take a break and reflect in order to restart.
       Dan Ungureanu
     </a>
   </figcaption>
-</figure
+</figure>
 
 ## Costs breakdown
 
