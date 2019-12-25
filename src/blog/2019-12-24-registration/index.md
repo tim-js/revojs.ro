@@ -6,7 +6,7 @@ title: "Queueless registration"
 
 On the 3rd of October 2019, at 7:00AM, a bunch of excited people in orange t-shirts were taking care of the finishing touches before kicking off [revo.js](https://revojs.ro/2019), the very first JavaScript conference in Timisoara.
 
-With just one hour left, the registration area was all prepped-up. The badges were strategically laid out for quick grabs and crew members had their their phones fully charged for using our very own registration app.
+With just one hour left, the registration area was all prepped-up. The badges were strategically laid out for quick grabs and crew members had their phones fully charged for using our very own registration app.
 
 We wanted the revo.js experience to have a great start, and that meant we needed a flawless registration process.
 
@@ -16,7 +16,7 @@ Keep reading if you want to know how we did it.
 
 ## Registration approaches
 
-The countless experiences we had as conference participants helped us to identify 3 different ways of handling the registration process, each with its own pros and cons:
+The countless experiences we had as conference participants helped us to identify 3 different ways of handling the registration process, each with its own pros and cons.
 
 ### 1. Printing all badges in advance
 
@@ -58,13 +58,13 @@ The countless experiences we had as conference participants helped us to identif
 
 After thoroughly considering all the pros and cons, we ended up going for the first option. We decided to print all the badges in advance because we felt our participants and speakers deserve the best quality badges.
 
-However, since it’s always wise to have a back-up plan, we also prepared blank badges for unexpected cases.
+But we had to figure out a way to make the process as fast as possible and avoid long queues.
 
 ## Rethinking badge identification
 
-Searching badges by name can take quite some time, sometimes even a few minutes.
+Searching badges by name can take quite some time, even a few minutes.
 
-Badges are usually **grouped by the first letter of the first name**. However, sometimes it’s not trivial to determine which one is the first name because:
+Badges are usually **grouped by the first letter of the first name**. However, it’s not always trivial to determine which one is the first name because:
 
 - Participants could mix their first and last name when they purchase the ticket;
 - Some participants have 3 or even 4 names.
@@ -75,7 +75,9 @@ It’s not hard to figure out that if each ticket would have a unique incrementa
 
 We used [ti.to](https://ti.to/) as the ticketing platform and it worked great during the ticket sale. They even have a [mobile app](https://ti.to/docs/checkins#use-the-ios-or-android-app) to scan the ticket QR code and check-in attendees at the event.
 
-Unfortunately, it only returns the attendee’s full name and a unique non-incremental identifier, like **DFGH**, which isn’t of much help when you’re looking to identify abadge. We came to the conclusion that we needed an alternative to achieve what we wanted.
+Unfortunately, it only returns the attendee’s full name and a unique non-incremental identifier, like **DFGH**, which isn’t of much help when you’re looking to identify a badge. We came to the conclusion that we needed an alternative to achieve what we wanted.
+
+---
 
 Since half of our organizing team was made of developers, we figured: why not create one ourselves? So we did.
 
@@ -83,7 +85,7 @@ We created a [custom registration app](https://github.com/tim-js/tito-registrati
 
 ## A new ti.to registration app
 
-As we mentioned before, the ti.to check-in app did not display a unique, incremental identifier. However, when you export the attendees lists in CSV format, such a number gets generated. Fortunately, ti.to also exposes an [Admin API](https://ti.to/docs/api/admin/#tickets-get-a-ticket) you can query to retrieve it.
+As we mentioned before, the ti.to check-in app did not display a unique, incremental identifier. However, when you export the attendees lists in CSV format, such a number actually gets generated. Fortunately, ti.to also exposes an [Admin API](https://ti.to/docs/api/admin/#tickets-get-a-ticket) you can query to retrieve it.
 
 <figure>
   <img src="export-attendees-list.png" alt="how to export attendees list from ti.to: go to event page, attendees, export then select export as CSV"/>
@@ -102,6 +104,8 @@ The ti.to app also has a check-in feature that lets you know at any point who re
   <figcaption>Retrieving the unique number ID</figcaption>
 </figure>
 
+---
+
 ### How does it work?
 
 - You **scan the ti.to generated QR code** from the participant’s phone;
@@ -119,9 +123,7 @@ We had a team of 4 people at the registration desk, and there were no queues at 
 
 ## You can use it too!
 
-As we’ve said, we have open sourced the app, published it and made it super easy to use, so other event organizers can benefit from it.
-
-Here’s what you need to to:
+As we’ve said, we have open sourced the app, published it and made it super easy to use, so other event organizers can benefit from it. Here’s what you need to to:
 
 ### Before the event:
 
