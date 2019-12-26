@@ -6,9 +6,9 @@ title: "Queueless registration"
 
 On the 3rd of October 2019, at 7:00AM, a bunch of excited people in orange t-shirts were taking care of the finishing touches before kicking off [revo.js](https://revojs.ro/2019), the very first JavaScript conference in Timisoara.
 
-With just one hour left, the registration area was all prepped-up. The badges were strategically laid out for quick grabs and crew members had their phones fully charged for using our very own registration app.
+<!-- With just one hour left, the registration area was all prepped-up. The badges were strategically laid out for quick grabs and crew members had their phones fully charged for using our very own registration app. -->
 
-We wanted the revo.js experience to have a great start, and that meant we needed a flawless registration process.
+We wanted the revo.js experience to have a great start, and that meant we needed a **flawless registration process**.
 
 Keep reading if you want to know how we did it.
 
@@ -156,4 +156,4 @@ For attendees without the QR code, you can **easily search the exported CSV file
 
 ## Tell us what you think
 
-If you’re an event organizer and use ti.to as the ticketing platform, you might want to try our registration process. If you have any questions or ideas on how to improve it even further, please reach out at info@revojs.ro.
+If you’re an event organizer and use ti.to as the ticketing platform, you might want to try our registration process. If you have any questions or ideas on how to improve it even further, please reach out at [info@revojs.ro](mailto:info@revojs.ro).
