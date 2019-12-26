@@ -34,7 +34,7 @@ The countless experiences we had as conference participants helped us to identif
 
 **Pros:**
 
-- Save precious time and eliminate the hassle ofsearching for a specific badge.
+- Save precious time and eliminate the hassle of searching for a specific badge.
 - Last minute re-assigns are not an issue, because you always print the latest attendee information.
 
 **Cons:**
