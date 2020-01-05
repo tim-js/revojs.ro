@@ -112,7 +112,7 @@ export default props => {
         <br />
         <br />
 
-        <Link to={`/${getEdition()}/media`}>
+        <Link to={`/2019/media`}>
           <Button>View 2019 Media Page</Button>
         </Link>
       </Section>
