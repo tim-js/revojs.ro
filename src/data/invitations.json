@@ -205,5 +205,95 @@
     "twitter": "",
     "title": "",
     "company": ""
+  },
+  {
+    "id": "kenneth_rohde_christiansen_delazm",
+    "firstname": "kenneth",
+    "lastname": "Rohde Christiansen",
+    "image": "invitations/kenneth-rohde-christiansen.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "jake_archibald_kuyhay",
+    "firstname": "Jake",
+    "lastname": "Archibald",
+    "image": "invitations/jake-archibald.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "ben_lesh_jvonji",
+    "firstname": "Ben",
+    "lastname": "Lesh",
+    "image": "invitations/ben-lesh.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "andre_staltz_biuwmi",
+    "firstname": "André",
+    "lastname": "Staltz",
+    "image": "invitations/andre-staltz.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "martin_splitt_ddhehz",
+    "firstname": "Martin",
+    "lastname": "Splitt",
+    "image": "invitations/martin-splitt.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "brian_vaughn_ogfrvz",
+    "firstname": "Brian",
+    "lastname": "Vaughn",
+    "image": "invitations/brian-vaughn.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "minko_gechev_dbjqph",
+    "firstname": "Minko",
+    "lastname": "Gechev",
+    "image": "invitations/minko-gechev.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "franziska_hinkelmann_ynnwyl",
+    "firstname": "Franziska",
+    "lastname": "Hinkelmann",
+    "image": "invitations/franziska-hinkelmann.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "elisabeth_engel_oriokt",
+    "firstname": "Elisabeth",
+    "lastname": "Engel",
+    "image": "invitations/elisabeth-engel.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "stanimira_vlaeva_knthiu",
+    "firstname": "Stanimira",
+    "lastname": "Vlaeva",
+    "image": "invitations/stanimira-vlaeva.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
   }
 ]
