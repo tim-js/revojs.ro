@@ -110,12 +110,13 @@ export default props => {
             The first edition of revo.js was beyond our wildest dreams. We
             couldn’t have done it without our{" "}
             <strong>
-              <Link
-                to={`/${lastEdition}/speakers/`}
+              <a
+                href={`/${lastEdition}/speakers/`}
                 className="index-speakers-link"
+                target="_blank"
               >
-                amazing crew of speakers{" "}
-              </Link>
+                amazing crew of speakers
+              </a>
             </strong>
             , who were not only gifted presenters, but also great people.
           </p>
@@ -123,13 +124,13 @@ export default props => {
           <p>
             Don’t take our word for it, see for yourself. Our{" "}
             <strong>
-              <Link
-                to={`/${lastEdition}/media/`}
+              <a
+                href={`/${lastEdition}/media/`}
                 className="index-speakers-link"
+                target="_blank"
               >
-                {" "}
-                media page{" "}
-              </Link>
+                media page
+              </a>
             </strong>{" "}
             speaks tons in pictures and the after-movie below is an excellent
             start to understand the vibe.
