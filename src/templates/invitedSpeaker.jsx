@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Img from "gatsby-image";
 
@@ -114,6 +114,7 @@ export default props => {
                 href={`/${lastEdition}/speakers/`}
                 className="index-speakers-link"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 amazing crew of speakers
               </a>
@@ -128,6 +129,7 @@ export default props => {
                 href={`/${lastEdition}/media/`}
                 className="index-speakers-link"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 media page
               </a>
