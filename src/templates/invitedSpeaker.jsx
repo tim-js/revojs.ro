@@ -86,8 +86,7 @@ export default props => {
               Full cover of <strong>travel expenses</strong>;
             </li>
             <li>
-              Full cover of <strong>accommodation expenses</strong> in a 4*
-              hotel for the whole stay;
+              Full cover of <strong>accommodation expenses</strong> for the whole stay;
             </li>
             <li>Free access to the conference and all related events;</li>
             <li>

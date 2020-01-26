@@ -313,5 +313,77 @@
     "twitter": "",
     "title": "",
     "company": ""
+  },
+  {
+    "id": "brian_clark_fsbfhd",
+    "firstname": "Brian",
+    "lastname": "Clark",
+    "image": "invitations/brian-clark.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "daniel-ehrenberg_mrtxit",
+    "firstname": "Daniel",
+    "lastname": "Ehrenberg",
+    "image": "invitations/daniel-ehrenberg.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "emma_bostian_wqclnt",
+    "firstname": "Emma",
+    "lastname": "Bostian",
+    "image": "invitations/emma-bostian.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "michael_jackson_smacza",
+    "firstname": "Michael",
+    "lastname": "Jackson",
+    "image": "invitations/michael-jackson.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "peter_marshall_mvikmm",
+    "firstname": "Peter",
+    "lastname": "Marshall",
+    "image": "invitations/peter-marshall.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "sara_soueidan_uhmlna",
+    "firstname": "Sara",
+    "lastname": "Soueidan",
+    "image": "invitations/sara-soueidan.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "shmuela_jacobs_bxmqfk",
+    "firstname": "Shmuela",
+    "lastname": "Jacobs",
+    "image": "invitations/shmuela-jacobs.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "srushtika_neelakantam_hddyau",
+    "firstname": "Srushtika",
+    "lastname": "Neelakantam",
+    "image": "invitations/srushtika-neelakantam.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
   }
 ]
