@@ -17,13 +17,12 @@ export default () => {
         <Content centered>
           <Note>
             <p>
-              All attendees, speakers, sponsors and volunteers at our conference
-              are required to agree with the following code of conduct.
+              We are committed to providing a friendly, safe and welcoming
+              environment for everybody.
             </p>
             <p>
-              Organisers will enforce this code throughout the event. We expect
-              cooperation from all participants to help ensure a safe
-              environment for everybody.
+              That's why all attendees, speakers, sponsors and volunteers at
+              revo.js are required to agree with the following code of conduct.
             </p>
           </Note>
 
@@ -34,10 +33,12 @@ export default () => {
               related, but not limited to any of the following:
             </p>
             <ul className="bullet">
-              <li>gender, gender identity or expression;</li>
-              <li>sexual orientation, race, ethnicity, religion;</li>
+              <li>gender, gender identity;</li>
+              <li>sexual orientation;</li>
+              <li>race, religion (or lack thereof);</li>
+              <li>ethnicity, socioeconomic status;</li>
               <li>age, disability, physical appearance, body size;</li>
-              <li>technology choices;</li>
+              <li>technology choices, level of experience;</li>
               <li>
                 deliberate intimidation, stalking, following, harassing
                 photography or recording;
@@ -74,9 +75,9 @@ export default () => {
 
             <p>
               Sponsors are also subject to the anti-harassment policy. In
-              particular, sponsors should not use sexualised images, activities,
-              or other material. Booth staff (including volunteers) should not
-              use sexualised clothing/uniforms/costumes, or otherwise create a
+              particular, sponsors should not use sexualised images or
+              activities. Booth staff (including volunteers) should not use
+              sexualised clothing/uniforms/costumes, or otherwise create a
               sexualised environment.
             </p>
           </section>
@@ -87,7 +88,8 @@ export default () => {
               <strong>
                 If you are being harassed, notice that someone else is being
                 harassed, or have any other concerns, please contact a member of
-                conference staff immediately.
+                conference staff immediately or at{" "}
+                <a href="mailto:coc@revojs.ro">coc@revojs.ro</a>.
               </strong>
             </p>
 
@@ -104,7 +106,9 @@ export default () => {
             </p>
 
             <p>
-              <strong className="highlight">We value your attendance.</strong>
+              <strong className="highlight">
+                We really value your attendance.
+              </strong>
             </p>
           </section>
         </Content>
