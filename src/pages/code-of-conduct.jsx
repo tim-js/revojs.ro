@@ -69,7 +69,7 @@ export default () => {
             <p>
               If a participant engages in any harassing behavior, the conference
               organisers reserve the right to take any action deemed
-              appropriate, including expelling the offender from the conference
+              appropriate, including expelling the offender from the conference{" "}
               <strong className="highlight">with no refund</strong> and refusing
               future admission to conference-related events.
             </p>
