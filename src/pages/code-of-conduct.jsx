@@ -46,7 +46,7 @@ export default () => {
               <li>sustained disruption of talks or other events;</li>
               <li>sexual images in public spaces;</li>
               <li>
-                inappropriate physical contact and unwelcome sexual attention.
+                inappropriate physical contact or unwelcome sexual attention.
               </li>
             </ul>
 
