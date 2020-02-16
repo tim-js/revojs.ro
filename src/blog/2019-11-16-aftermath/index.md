@@ -27,11 +27,11 @@ Now we need to take a break and reflect in order to restart.
 
 Since revo.js was highly influenced by [JSHeroes](https://jsheroes.io/), we want to follow their example in creating an [Annual Transparency Report](https://medium.com/cluj-javascripters/jsheroes-2018-transparency-report-part-2-follow-up-eadce2a986bf) and share with you a high-level financial overview.
 
-**Our total costs for revo.js 2019 were 56.000 EUR**:
+**Our total costs for revo.js 2019 were 57.500 EUR**:
 
 - **14.500 EUR** for the venue, food and beverages;
 - **16.000 EUR** for the speakers’ travel and accommodation;
-- **13.000 EUR** for services’ fees: design, live captions, ticketing platform and other related services;
+- **14.500 EUR** for services’ fees: design, live captions, ticketing platform, taxes and accouting;
 - **4.000 EUR** for audio/video/photo services, technical staff and equipment;
 - **3.000 EUR** for revo.swag: t-shirts and key-chains;
 - **3.000 EUR** for prints: badges, sponsors’ panels, posters and branding elements;
@@ -47,7 +47,7 @@ We also raised money from the donations made by participants in exchange for bra
 
 ## What about the extra money?
 
-The first edition of revo.js made a **profit of 17.000 EUR**, which exceeded our initial expectations. Since revo.js is a not-for-profit event, we will use the extra money to grow the local JavaScript community as well as to give back to the global community.
+The first edition of revo.js made a **profit of 15.500 EUR**, which exceeded our initial expectations. Since revo.js is a not-for-profit event, we will use the extra money to grow the local JavaScript community as well as to give back to the global community.
 
 ### Support JavaScript initiatives
 

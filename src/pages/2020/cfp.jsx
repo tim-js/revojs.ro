@@ -12,8 +12,8 @@ import Subscribe from "@components/Subscribe";
 
 import "./cfp.scss";
 
-const CFP_OPEN = "1st of March";
-// const CFP_CLOSE = "1st of May";
+const CFP_OPEN = "1st of April";
+// const CFP_CLOSE = "1st of June";
 
 export default () => {
   return (

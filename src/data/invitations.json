@@ -306,6 +306,15 @@
     "company": ""
   },
   {
+    "id": "jordan_harband_ebacbc",
+    "firstname": "Jordan",
+    "lastname": "Harband",
+    "image": "invitations/jordan-harband.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
     "id": "brian_clark_fsbfhd",
     "firstname": "Brian",
     "lastname": "Clark",
@@ -373,6 +382,15 @@
     "firstname": "Srushtika",
     "lastname": "Neelakantam",
     "image": "invitations/srushtika-neelakantam.jpg",
+    "twitter": "",
+    "title": "",
+    "company": ""
+  },
+  {
+    "id": "jay_phelps_xmlsyd",
+    "firstname": "Jay",
+    "lastname": "Phelps",
+    "image": "invitations/jay-phelps.jpeg",
     "twitter": "",
     "title": "",
     "company": ""

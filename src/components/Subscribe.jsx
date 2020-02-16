@@ -6,8 +6,8 @@ import Arrow from "./Arrow";
 import "./subscribe.scss";
 
 const listIds = Object.freeze({
-  cfp: "57960db8f5",
-  default: "ec632308b8",
+  cfp: "505f3f9eb9",
+  default: "ec632308b8"
 });
 
 const Subscribe = props => {
@@ -48,11 +48,11 @@ const Subscribe = props => {
 Subscribe.propTypes = {
   list: PropTypes.oneOf(["cfp", "default"]),
   light: PropTypes.bool,
-  centered: PropTypes.bool,
+  centered: PropTypes.bool
 };
 
 Subscribe.defaultProps = {
-  list: "default",
+  list: "default"
 };
 
 export default Subscribe;

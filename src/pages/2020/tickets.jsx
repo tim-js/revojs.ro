@@ -5,7 +5,7 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
-import Note from "@components/Note";
+// import Note from "@components/Note";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";

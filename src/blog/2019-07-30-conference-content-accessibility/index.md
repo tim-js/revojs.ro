@@ -88,7 +88,7 @@ Also to keep in mind:
 - **Don't display large chunks of code** (maximum 5-6 lines per screen);
 - **Always check if the smallest text is visible from the back of the room.** Depending on the size of the room and the screen, you might need to adjust the font size.
 
-Always remember that nobody will ever tell you that the font is too big.
+> Always remember that nobody will ever tell you that the font is too big. However, the opposite will take place.
 
 ## 3. Use high contrast
 
@@ -96,7 +96,12 @@ Some LED screens might have very bright colors, while an old projector might hav
 
 We suggest you stick as much as you can with **black and white**, unless you are aware of the different levels of [color blindness](https://en.wikipedia.org/wiki/Color_blindness) and you plan your presentation accordingly.
 
-Always use **dark colors on light backgrounds** or **light colors on dark backgrounds**. Try to avoid colored text on colored backgrounds.
+Always use **dark colors on light backgrounds** or **light colors on dark backgrounds**. Try to avoid colored text on colored backgrounds. You can use [**contrastchecker.com**](https://contrastchecker.com/) to verify that you have a good contrast for your text content.
+
+For everything else than text, you cacn use either:
+
+- [**Colorblind Web Page Filter**](https://www.toptal.com/designers/colorfilter) to check an online resource;
+- [**Color Blindness Simulator**](https://www.color-blindness.com/coblis-color-blindness-simulator/) to check an image from your computer.
 
 **NOTE**: code editors and CLI tools should also display high contrast color themes if you use them during your presentation.
 
@@ -105,7 +110,7 @@ Always use **dark colors on light backgrounds** or **light colors on dark backgr
 You may show content that cannot be zoomed in, such as:
 
 - operating system menus;
-- code editors or browser buttons, etc.
+- code editors menus or browser built-in buttons, etc.
 
 For content that you cannot control in terms of size, you should use the **accessibility magnifying tools**, available on [**Mac**](https://mcmw.abilitynet.org.uk/macos-mojave-magnifying-screen) and [**Windows**](https://support.microsoft.com/en-us/help/11542/windows-use-magnifier-to-make-things-easier-to-see), to magnify the area that you want to present.
 

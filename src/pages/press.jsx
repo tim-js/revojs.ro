@@ -63,11 +63,9 @@ export default () => {
           <section className="visual-guide">
             <h2>Visual Guidelines</h2>
             <p>
-              We’re only at the first edition of revo.js, but we plan to have a
-              long and prosperous conference life. To make that happen, please
-              help us maintain a consistent visual identity so that every
-              JavaScript enthusiast can recognize us in a jiffy. Here are our
-              visual guidelines:
+              To maintain a consistent visual identity so that every JavaScript
+              enthusiast can recognize us in a jiffy, here are our visual
+              guidelines:
             </p>
             <h3>The Logo and Symbol</h3>
             <p>

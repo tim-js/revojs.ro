@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Img from "gatsby-image";
 
@@ -10,11 +10,11 @@ import Content from "@components/Content";
 
 // import SpeakerInfo from "./SpeakerInfo";
 
-import { getEdition } from "@utils";
+import { currentEdition } from "@utils";
 
 export default props => {
   const { invitationsJson, file } = props.data;
-  const edition = getEdition();
+  const lastEdition = currentEdition - 1;
 
   const speaker = {
     ...invitationsJson,
@@ -109,12 +109,14 @@ export default props => {
             The first edition of revo.js was beyond our wildest dreams. We
             couldn’t have done it without our{" "}
             <strong>
-              <Link
-                to={`/${edition}/speakers/`}
+              <a
+                href={`/${lastEdition}/speakers/`}
                 className="index-speakers-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                amazing crew of speakers{" "}
-              </Link>
+                amazing crew of speakers
+              </a>
             </strong>
             , who were not only gifted presenters, but also great people.
           </p>
@@ -122,10 +124,14 @@ export default props => {
           <p>
             Don’t take our word for it, see for yourself. Our{" "}
             <strong>
-              <Link to={`/${edition}/media/`} className="index-speakers-link">
-                {" "}
-                media page{" "}
-              </Link>
+              <a
+                href={`/${lastEdition}/media/`}
+                className="index-speakers-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                media page
+              </a>
             </strong>{" "}
             speaks tons in pictures and the after-movie below is an excellent
             start to understand the vibe.

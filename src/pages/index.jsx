@@ -14,7 +14,7 @@ import Separator from "@components/Separator";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
-import { getEdition } from "@utils";
+// import { getEdition } from "@utils";
 
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
