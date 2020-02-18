@@ -90,14 +90,15 @@ export default () => {
             </p>
 
             <ul className="bullet">
-              <li>Hot topics;</li>
-              <li>Crazy ideas;</li>
+              <li>Crazy ideas &amp; out-of-the-box approaches;</li>
+              <li>Re-thinking best practices;</li>
               <li>Language fundamentals;</li>
+              <li>Hot topics;</li>
               <li>Tips and tricks for daily use;</li>
-              <li>Tools for a better developer experience;</li>
+              <li>Tools &amp; solutions for a better developer experience;</li>
               <li>Mobile, Desktop and IoT;</li>
               {/* <li>The human side of software development</li> */}
-              <li>Any JS topic that makes your heart beat faster.</li>
+              <li>Any other topic that makes your heart beat faster.</li>
             </ul>
           </section>
 
@@ -118,16 +119,8 @@ export default () => {
               longer presentations, if applicable.
             </p>
             <p>
-              Since we’ll be on a tight schedule, we’ll enforce the time limits
-              rigorously. We strongly suggest that you time your presentation
-              accordingly in advance.
-            </p>
-
-            <h3>Q&amp;A</h3>
-            <p>
-              We will skip Q&amp;A sessions after the talks. However we're
-              planning on creating several contexts to facilitate the
-              speaker-attendee interaction during the breaks.
+              Since we’ll be on a tight schedule, we strongly suggest that you
+              time your presentation accordingly in advance.
             </p>
 
             <h3>Attention to details</h3>
@@ -140,8 +133,13 @@ export default () => {
             <h3>Abstract</h3>
             <p>
               Keep it short and simple. If you need more than two paragraphs to
-              explain your talk, you’re not there yet. Change it up. Narrow your
-              description or narrow the subjects you want to cover.
+              explain your talk, you’re not there yet. Narrow your description
+              or narrow the subjects you want to cover.
+            </p>
+            <p>
+              Ask yourself "What should the attendees walk agay with after the
+              talk?". Uncovering the takeaways will help you discover what your
+              talk is really about.
             </p>
 
             <h3>Delivery</h3>
@@ -151,22 +149,23 @@ export default () => {
               local meetup, or in your living room).
             </p>
             <p>
-              This is not mandatory, but it will win you extra-extra points
-              during the selection phase.
+              <i>
+                This is not mandatory, but it will win you extra-extra points
+                during the selection phase.
+              </i>
             </p>
 
             <h3>Originality</h3>
             <p>
               We generally discourage "second-hand" talks as we are looking for
-              crisp and fresh content.
+              <strong>crisp and fresh content</strong>.
             </p>
             <p>
               However, if you have a talk that is top-notch, or is focused on a
               live experience, we would definitely want it on stage. In case you
               really-really want to present a talk for the second time, we
-              encourage you to give it a twist (
-              <strong className="mono">change</strong> is the key word) and make
-              it feel `like brand new`.
+              encourage you to give it a twist and make it `feel like brand
+              new`.
             </p>
           </section>
 
@@ -201,7 +200,7 @@ export default () => {
           </section>
 
           <section>
-            <h2>Perks for selected talks</h2>
+            <h2>What we offer?</h2>
 
             <p>If your proposal gets picked, here’s what we’ll do:</p>
 
@@ -217,15 +216,14 @@ export default () => {
                 someone along for support;
               </li>
               <li>
-                Provide you free entrance at all the talks and happenings during
-                the conference;
+                Provide you free entrance at all the talks and related events
+                during the conference;
               </li>
               <li>
-                Take you on a trip outside Timisoara on Saturday; we’ll tag
-                along;
+                Take you on a trip outside Timisoara on Saturday with the
+                organizers;
               </li>
               <li>Take you out at a speakers’ dinner before the conference;</li>
-              <li>Get you involved in other activities around the event;</li>
             </ul>
 
             <h3>Does your company have your back?</h3>
