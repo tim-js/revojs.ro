@@ -70,7 +70,7 @@ export default props => {
         <br />
         {talk && <h2>Want to see {getName(speakers)} talk?</h2>}
         <br />
-        <PurchaseTicket white style={{ margin: 0 }} />
+        {/* <PurchaseTicket white style={{ margin: 0 }} /> */}
       </>
     );
   }

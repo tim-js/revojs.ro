@@ -1,15 +1,51 @@
 [
   {
     "edition": 2020,
-    "id": "dan-abramov",
-    "firstname": "Dan",
-    "lastname": "Abramov",
-    "bio": "<p>Dan</p>",
+    "id": "leonie-watson",
+    "firstname": "Léonie",
+    "lastname": "Watson",
+    "bio": "<p>tba</p>",
     "image": "speakers/martin_hochel.jpg",
     "twitter": "",
-    "title": "",
-    "company": "Facebook",
-    "talkId": "react"
+    "title": "tba",
+    "company": "tba",
+    "talkId": "keynote1"
+  },
+  {
+    "edition": 2020,
+    "id": "trent-willis",
+    "firstname": "Trent",
+    "lastname": "Willis",
+    "bio": "<p>tba</p>",
+    "image": "speakers/martin_hochel.jpg",
+    "twitter": "",
+    "title": "tba",
+    "company": "tba",
+    "talkId": "service-workers"
+  },
+  {
+    "edition": 2020,
+    "id": "eduardo-san-martin-morote",
+    "firstname": "Eduardo",
+    "lastname": "San Martin Morote",
+    "bio": "<p>tba</p>",
+    "image": "speakers/martin_hochel.jpg",
+    "twitter": "",
+    "title": "tba",
+    "company": "tba",
+    "talkId": "router"
+  },
+  {
+    "edition": 2020,
+    "id": "martin-splitt",
+    "firstname": "Martin",
+    "lastname": "Splitt",
+    "bio": "<p>tba</p>",
+    "image": "speakers/martin_hochel.jpg",
+    "twitter": "",
+    "title": "tba",
+    "company": "tba",
+    "talkId": "seo"
   },
   {
     "edition": 2019,

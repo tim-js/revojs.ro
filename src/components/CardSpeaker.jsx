@@ -13,6 +13,7 @@ function displayCompany(name) {
 export default props => {
   return (
     <Card
+      color={props.color}
       className="card-speaker"
       img={<Img fluid={props.data.speakerImage.node.image.fluid} alt="" />}
       heading={

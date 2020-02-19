@@ -39,27 +39,29 @@
   text-align: left;
 
   .card--white & {
-    color: var(--primary);
+    color: var(--color);
   }
 
   @include breakpoint(sm) {
     @include clip-hex(30%);
     transform: translateY(-30%);
-    background-color: var(--primary);
+    background-color: var(--color);
   }
 }
 
 .card-info-inner {
+  --border: 4px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
   @include breakpoint(sm) {
     @include clip-hex(30%);
-    margin: 3px;
+    margin: var(--border);
     background-color: var(--background-dark);
-    width: calc(100% - 2 * 3px);
-    height: calc(100% - 2 * 3px);
+    width: calc(100% - 2 * var(--border));
+    height: calc(100% - 2 * var(--border));
 
     &:last-child {
       padding-bottom: 10%;
@@ -113,7 +115,7 @@
 .card:hover .card-info-inner {
   @include breakpoint(sm) {
     @include clip-hex(20%);
-    background: var(--primary);
+    background: var(--color);
   }
 }
 
