@@ -1,10 +1,17 @@
 :root {
-  --lightgrey: #dadce1;
-  --primary: #f45919;
   --background-dark: #15161a;
-
+  --lightgrey: #dadce1;
   --text-dark: #30343a;
   --text-light: #979da7;
+
+  --primary: #f45919;
+
+  /* 2020 edition */
+  --accent: #7549eb;
+  --accent80: #8e4cc1;
+  --accent60: #a84f97;
+  --accent40: #c1536d;
+  --accent20: #db5643;
 
   --spacing-content: 7vw;
   --width-content: 750px;

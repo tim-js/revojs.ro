@@ -9,6 +9,8 @@ import Button from "@components/Button";
 import Note from "@components/Note";
 // import { SubmitCFP } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
+import Title2020 from "@components/Title2020";
+import Text from "@components/Text";
 
 import "./cfp.scss";
 
@@ -18,27 +20,29 @@ const CFP_OPEN = "1st of April";
 export default () => {
   return (
     <Layout title="revo.js Call for Papers">
-      <Header type="main" image="cfp-image">
-        <h1>Call For Papers</h1>
-        <br />
-        <strong className="cfp-important light-faded mono">
+      <Header type="main" centered>
+        <Title2020 size={8}>Call For Papers</Title2020>
+
+        <div className="subtitle2020">
           Prepare your proposals! <br />
-          CFP opens on the <span className="highlight">{CFP_OPEN}.</span>
+          CFP opens on the{" "}
+          <Text bold color="white">
+            {CFP_OPEN}.
+          </Text>
           {/* <span className="highlight">{CFP_CLOSE}.</span>
           <br />
           <span>
             You can submit more than one proposal.
           </span> */}
           {/* <span className="highlight">CFP has closed on the 17th of June.</span> */}
-        </strong>
+        </div>
         <br />
         <br />
 
-        {/* <SubmitCFP /> */}
-
-        <a href="#topics" className="cfp-cta">
+        <a href="#topics">
           <Button>View our Topics</Button>
         </a>
+        {/* <SubmitCFP /> */}
       </Header>
 
       <Section light>

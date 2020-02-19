@@ -54,11 +54,20 @@ h3,
 .highlight {
   color: var(--primary);
 }
+.accent {
+  color: var(--accent);
+}
 .light-faded {
   color: var(--text-light);
 }
 .dark {
   color: var(--background-dark);
+}
+.white {
+  color: #ffffff;
+}
+.bold {
+  font-weight: bold;
 }
 .centered-block {
   margin: 0 auto;
@@ -126,4 +135,16 @@ ul.bullet > li {
 
 button:focus {
   outline: 0;
+}
+
+.subtitle2020 {
+  font-size: 1.4rem;
+  color: var(--text-light);
+  display: block;
+  padding-top: 2em;
+  @include font(mono);
+
+  @include breakpoint(md) {
+    font-size: 2rem;
+  }
 }
