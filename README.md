@@ -9,7 +9,7 @@ Available at [revojs.ro](https://revojs.ro). Built with [Gatsby](https://www.gat
 npm i
 
 // build for development
-npm run develop
+npm start
 
 // build for production
 npm run build
