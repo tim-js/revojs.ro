@@ -17,7 +17,7 @@ const Card = ({
     <section
       className={`card ${_theme} ${className}`}
       // set a css color variable that's used inside the component
-      style={{ ["--color"]: `var(--${color})` }}
+      style={{ "--color": `var(--${color})` }}
     >
       <figure className="card-img">
         <div className="card-img-inner">{img}</div>

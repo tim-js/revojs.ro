@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
+import { StaticQuery, graphql /*, Link */ } from "gatsby";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
@@ -8,8 +8,8 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import SpeakersListIndex from "@components/SpeakersListIndex";
 import Separator from "@components/Separator";
-import Button from "@components/Button";
-import { PurchaseTicket } from "@components/CTA";
+// import Button from "@components/Button";
+// import { PurchaseTicket } from "@components/CTA";
 
 import { getEdition } from "@utils";
 

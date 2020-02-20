@@ -3,7 +3,7 @@ import Img from "gatsby-image";
 
 import Section from "@components/Section";
 import Content from "@components/Content";
-import { PurchaseTicket } from "@components/CTA";
+// import { PurchaseTicket } from "@components/CTA";
 
 import SpeakerInfo from "./SpeakerInfo";
 
