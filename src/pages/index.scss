@@ -21,35 +21,24 @@
 }
 
 .index-logo {
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-4);
 }
 
 .tagline-block {
   display: block;
 }
 
-.index-tagline-2020 {
-  @include breakpoint(sm, max) {
-    font-size: 5rem;
-  }
-  @include breakpoint(sm) {
-    font-size: 12rem;
-  }
-  @include breakpoint(md) {
-    font-size: 14rem;
-  }
-}
 .date-location {
   margin-top: var(--space-4);
 }
 .index-date {
-  font-size: 20px;
+  font-size: 24px;
   display: inline-block;
   margin: 0 var(--space-1);
 }
 
 .index-location {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--primary);
   display: inline-block;
   margin: 0 var(--space-1);
