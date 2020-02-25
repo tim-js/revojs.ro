@@ -9,6 +9,8 @@ import Content from "@components/Content";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
+import Title2020 from "@components/Title2020";
+import Text from "@components/Text";
 
 import "./tickets.scss";
 
@@ -22,21 +24,28 @@ const LATE_END = "21st of September";
 export default () => {
   return (
     <Layout title="revo.js Tickets">
-      <Header type="main" image="tickets-image">
-        <h1>Tickets</h1>
-        <br />
-        <strong className="tickets-important light-faded mono">
+      <Header type="main" centered>
+        <Title2020 size={8}>Tickets</Title2020>
+
+        <div className="subtitle2020">
           Early Bird Tickets will <br />
-          wake up on the <span className="highlight">{EARLY_START}.</span>
-        </strong>
+          wake up on the{" "}
+          <Text bold color="white">
+            {EARLY_START}.
+          </Text>
+        </div>
         <br />
         <br />
-        {/* <PurchaseTicket /> */}
+
         <OutboundLink href="#subscribe">
           <Button>Subscribe for Updates</Button>
         </OutboundLink>
-      </Header>
 
+        {/* <a href="#subscribe">
+          <Button>Subscribe for Updates</Button>
+        </a> */}
+      </Header>
+      
       <Section light>
         <Content centered>
           {/* <Note>

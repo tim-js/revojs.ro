@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -39,9 +40,14 @@ export default () => {
         <br />
         <br />
 
-        <a href="#topics">
+        <OutboundLink href="#topics">
           <Button>View our Topics</Button>
-        </a>
+        </OutboundLink>
+
+        {/* <a href="#topics">
+          <Button>View our Topics</Button>
+        </a> */}
+
         {/* <SubmitCFP /> */}
       </Header>
 

@@ -7,6 +7,7 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
+import Title2020 from "@components/Title2020";
 
 import timjs from "@assets/tim.js-logo.svg";
 
@@ -32,8 +33,8 @@ const Organizers = ({ data }) => {
 
   return (
     <Layout title="revo.js Organizers" noFooterSeparation>
-      <Header centered type="secondary">
-        <h1>Organizers</h1>
+      <Header type="main" centered>
+        <Title2020 size={8}>Organizers</Title2020>
       </Header>
 
       <Section light>
