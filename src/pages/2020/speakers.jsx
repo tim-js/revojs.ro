@@ -59,16 +59,14 @@ const Speakers = props => {
   return (
     <Layout title="revo.js Speakers" noFooterSeparation>
       <Header type="main" centered>
-        <Title2020 size={8}>Speakers</Title2020>
-        
+        <Title2020>Speakers</Title2020>
+
         <div className="subtitle2020">
           Meet part of our international crew of change. <br />
           More speakers will be annouced soon. <br />
-          Stay tuned...<br />
+          Stay tuned...
+          <br />
         </div>
-        <br />
-        <br />
-
       </Header>
 
       <SpeakersListIndex speakers={speakers} edition={edition} />
