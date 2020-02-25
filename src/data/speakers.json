@@ -9,7 +9,7 @@
     "twitter": "https://twitter.com/LeonieWatson",
     "title": "Director",
     "company": "TetraLogical",
-    "talkId": "keynote1"
+    "talkId": ""
   },
   {
     "edition": 2020,
@@ -21,7 +21,7 @@
     "twitter": "https://twitter.com/trentmwillis",
     "title": "Senior UI Engineer",
     "company": "Netflix",
-    "talkId": "service-workers"
+    "talkId": ""
   },
   {
     "edition": 2020,
@@ -33,7 +33,7 @@
     "twitter": "https://twitter.com/posva",
     "title": "Frontend Nerd",
     "company": "",
-    "talkId": "router"
+    "talkId": ""
   },
   {
     "edition": 2020,
@@ -45,7 +45,7 @@
     "twitter": "https://twitter.com/g33konaut",
     "title": "Developer Advocate",
     "company": "Google",
-    "talkId": "seo"
+    "talkId": ""
   },
   {
     "edition": 2020,
@@ -57,7 +57,7 @@
     "twitter": "https://twitter.com/Srushtika",
     "title": "Developer Advocate",
     "company": "Ably",
-    "talkId": "talk5"
+    "talkId": ""
   },
   {
     "edition": 2020,
@@ -69,7 +69,7 @@
     "twitter": "https://twitter.com/_lizzelo_",
     "title": "UX Lead & Innovation Advocate",
     "company": "interfacewerk",
-    "talkId": "talk6"
+    "talkId": ""
   },
   {
     "edition": 2020,
@@ -81,7 +81,7 @@
     "twitter": "https://twitter.com/kennethrohde",
     "title": "Senior Web Platform Architect",
     "company": "Intel",
-    "talkId": "talk7"
+    "talkId": ""
   },
   {
     "edition": 2020,
@@ -93,7 +93,7 @@
     "twitter": "https://twitter.com/_jayphelps",
     "title": "Ex-Engineer at Netflix",
     "company": "",
-    "talkId": "talk8"
+    "talkId": ""
   },
   {
     "edition": 2020,
@@ -105,7 +105,7 @@
     "twitter": "https://twitter.com/BenLesh",
     "title": "RxJS Development Lead, Senior Software Engineer",
     "company": "Citadel Securities",
-    "talkId": "talk9"
+    "talkId": ""
   },
   {
     "edition": 2019,
