@@ -3,6 +3,7 @@ import React from "react";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
+import Title2020 from "@components/Title2020";
 // import Content from "@components/Content";
 // import Section from "@components/Section";
 // import Button from "@components/Button";
@@ -14,23 +15,15 @@ import "./venue.scss";
 export default () => {
   return (
     <Layout title="revo.js Venue" noFooterSeparation>
-      <Header type="main" image="venue-image">
-        <h1>Venue</h1>
-        <br />
-        <strong className="venue-important light-faded mono">
-          {/* <span className="highlight">Iulius Congress Hall</span> <br />
-          <span>at Iulius Town Timișoara</span> <br /> */}
-          <span>
-            Will be announced soon. <br />
-            Stay tuned...
-          </span>
-        </strong>
-        {/* <br />
+      <Header type="main" centered>
+        <Title2020 size={8}>Venue</Title2020>
+
+        <div className="subtitle2020">
+          Will be announced soon. <br />
+          Stay tuned...
+        </div>
         <br />
         <br />
-        <a href={`#venue-details`}>
-          <Button>More details</Button>
-        </a> */}
       </Header>
 
       {/* <Section light>

@@ -12,6 +12,7 @@ import Separator from "@components/Separator";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import { getEdition } from "@utils";
+// import { sponsors } from "@data/2019/sponsors";
 
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
@@ -78,7 +79,7 @@ export default props => {
       {/* <IndexUpdates /> */}
       <Separator />
       <IndexSpeakers />
-      {/* <IndexSponsors /> */}
+      {/* <IndexSponsors sponsors={sponsors} /> */}
     </Layout>
   );
 };

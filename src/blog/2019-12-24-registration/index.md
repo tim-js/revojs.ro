@@ -131,7 +131,7 @@ As we’ve said, we have open sourced the app, published it and made it super ea
 
 - **Print their corresponding number ID on the badge**, along with their name; <img Simi>
 - **Have the badges sorted by number**, preferably in batches of 10-20;
-- **Install the app** on your mobile device, available for [Android](https://play.google.com/store/apps/details?id=com.revojs.registration) and iOS (soon);
+- **Install the app** on your mobile device, available for [Android](https://play.google.com/store/apps/details?id=com.revojs.registration) and [iOS](https://apps.apple.com/us/app/ti-to-registration/id1483743059);
 - Add your ti.to credentials: **Api Key** generated at [id.tito.io](https://id.tito.io/api-access-tokens) and your **Team Slug** from your event url;
 - **Create check-in lists** in ti.to, which will be automatically imported in the app.
 
@@ -156,4 +156,8 @@ For attendees without the QR code, you can **easily search the exported CSV file
 
 ## Tell us what you think
 
-If you’re an event organizer and use ti.to as the ticketing platform, you might want to try our registration process. If you have any questions or ideas on how to improve it even further, please reach out at [info@revojs.ro](mailto:info@revojs.ro).
+If you’re an event organizer and use ti.to as the ticketing platform, you might want to try our registration process.
+
+But even if you use a different ticketing solution, you can still apply the same approach for finding the participants' badges.
+
+If you have any questions or ideas on how to improve it even further, please reach out at [info@revojs.ro](mailto:info@revojs.ro)

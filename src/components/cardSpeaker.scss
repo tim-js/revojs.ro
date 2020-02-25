@@ -9,7 +9,7 @@
 .card-speaker-title {
   display: block;
   line-height: 1.2;
-  color: var(--primary);
+  color: var(--text-light);
   transition: color 0.3s;
 
   @include breakpoint(sm) {
