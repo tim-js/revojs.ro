@@ -12,14 +12,14 @@ const Speakers = ({ data }) => {
   const edition = getEdition();
   const speakers = allSpeakersJson.edges
     .map(e => e.node)
-    .filter(speaker => speaker.talkId)
+    // .filter(speaker => speaker.talkId)
     .filter(speaker => speaker.edition === edition)
     .map(speaker => {
       const speakerImage = getImage(speaker.image);
 
       return {
         ...speaker,
-        speakerImage,
+        speakerImage
       };
     });
   const filteredRandomSpeakers = shuffle(speakers).filter((s, i) => i < 3);

@@ -22,7 +22,7 @@ export default props => {
     if (search.fbclid) {
       const clearedSearch = queryString.stringify({
         ...search,
-        fbclid: undefined,
+        fbclid: undefined
       });
       if (clearedSearch.length) {
         replace(props.location.pathname + "?" + clearedSearch);
