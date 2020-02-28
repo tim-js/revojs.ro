@@ -38,7 +38,7 @@ export default props => {
 
   return (
     <Layout location={props.location}>
-      <Header className="header-index">
+      <Header className="header-index2020">
         <div className="index-logo">
           <img src={logo} alt="revo.js" height="80" />
         </div>
@@ -64,6 +64,7 @@ export default props => {
             <Button>Subscribe for News</Button>
           </a>
         </div>
+        <div className="home-graphics"></div>
       </Header>
 
       <IndexUpdates />
