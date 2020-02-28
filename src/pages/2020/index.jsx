@@ -10,7 +10,7 @@ import Section from "@components/Section";
 import IndexUpdates from "@components/index/IndexUpdates";
 import IndexSpeakers from "@components/index/IndexSpeakers";
 import IndexSponsors from "@components/index/IndexSponsors";
-import Separator from "@components/Separator";
+import Separator2020 from "@components/Separator2020";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
@@ -67,7 +67,7 @@ export default props => {
       </Header>
 
       <IndexUpdates />
-      <Separator />
+      <Separator2020 />
       <IndexSpeakers />
 
       <Section id="subscribe-form" centered>

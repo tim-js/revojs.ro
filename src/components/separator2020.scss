@@ -1,0 +1,11 @@
+@import "../styles/mixins";
+
+.separator2020 {
+  margin: 10rem var(--spacing-content);
+  background-image: url("/2020/arrows.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  height: 69px;
+}
