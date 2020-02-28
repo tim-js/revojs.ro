@@ -21,29 +21,24 @@
 }
 
 .index-logo {
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-4);
 }
 
 .tagline-block {
   display: block;
 }
 
-.index-tagline {
-  @include breakpoint(sm, max) {
-    font-size: 3.5rem;
-  }
-}
 .date-location {
   margin-top: var(--space-4);
 }
 .index-date {
-  font-size: 20px;
+  font-size: 24px;
   display: inline-block;
   margin: 0 var(--space-1);
 }
 
 .index-location {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--primary);
   display: inline-block;
   margin: 0 var(--space-1);
@@ -73,6 +68,41 @@
 }
 */
 
-.subscribe {
-  margin: var(--space-10) var(--spacing-content);
+.index-after-movie {
+  text-align: center;
+
+  @include breakpoint(sm) {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+.index-after-movie-heading {
+  margin-top: 0;
+  padding-top: 0;
+  @include breakpoint(sm) {
+    padding-bottom: 10rem;
+  }
+}
+
+.card-photo-bg {
+  width: 100%;
+  padding-bottom: 100%;
+  display: block;
+  background: url("/img-after-movie-2019.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+.card-photo-bg-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-heading-after-movie {
+  margin: 0;
+
+  @include breakpoint(sm) {
+    padding: 3rem;
+  }
 }

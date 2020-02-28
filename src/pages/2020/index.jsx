@@ -1,17 +1,21 @@
 import React, { useEffect } from "react";
 
+import { replace, Link } from "gatsby";
+import queryString from "query-string";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
+
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-// import IndexUpdates from "@components/index/IndexUpdates";
-// import IndexSpeakers from "@components/index/IndexSpeakers";
-// import IndexSponsors from "@components/index/IndexSponsors";
+import Section from "@components/Section";
+import IndexUpdates from "@components/index/IndexUpdates";
+import IndexSpeakers from "@components/index/IndexSpeakers";
+import IndexSponsors from "@components/index/IndexSponsors";
 import Separator from "@components/Separator";
-import Subscribe from "@components/Subscribe";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
-
-import { replace } from "gatsby";
-import queryString from "query-string";
+import Subscribe from "@components/Subscribe";
+// import { getEdition } from "@utils";
+import { sponsors } from "@data/2020/supporters";
 
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
@@ -33,60 +37,47 @@ export default props => {
   });
 
   return (
-    <Layout
-      location={props.location}
-      className="index-graphics"
-      noFooterSeparation
-    >
+    <Layout location={props.location}>
       <Header className="header-index">
         <div className="index-logo">
-          <img src={logo} alt="revo.js" height="70" />
+          <img src={logo} alt="revo.js" height="80" />
         </div>
 
         <div className="index-header-content">
-          <h1 className="index-tagline">
-            Change is <span className="tagline-block">the only const.</span>
-          </h1>
           <div className="date-location">
-            <time className="index-date mono" dateTime="2019-10-07">
-              <strong>October.7-9.2020</strong>
+            <time className="index-date mono" dateTime="2020-10-08">
+              <strong>October.8-9.2020</strong>
             </time>
             <strong className="index-location mono">Timisoara/RO</strong>
           </div>
         </div>
 
         <div className="index-cta">
-          <a href="#subscribe">
-            <Button>Subscribe for News</Button>
-          </a>
           {/* <a href="#speakers">
             <Button>Meet the Speakers</Button>
           </a> */}
           {/* <PurchaseTicket /> */}
-          {/* <Link to="/agenda">
+          {/* <Link to={`/${getEdition()}/agenda`}>
             <Button>View the Agenda</Button>
           </Link> */}
+          <a href="#subscribe-form">
+            <Button>Subscribe for News</Button>
+          </a>
         </div>
-
-        {/* <div className="description mono">
-          <strong>Technology focused.</strong>
-          <strong>Community driven.</strong>
-          <strong className="highlight">JavaScript conference.</strong>
-        </div> */}
       </Header>
 
-      {/* <IndexUpdates /> */}
+      <IndexUpdates />
       <Separator />
-      {/* <IndexSpeakers /> */}
+      <IndexSpeakers />
 
-      <div id="subscribe" className="subscribe">
-        <p style={{ textAlign: "center" }}>
-          Subscribe to stay on top the latest changes and revo.news:
-        </p>
+      <Section id="subscribe-form" centered>
+        {/* <h2>Stay up to date!</h2> */}
+        <p>Subscribe to stay on top the latest changes and revo.news:</p>
+        <br />
         <Subscribe centered />
-      </div>
+      </Section>
 
-      {/* <IndexSponsors /> */}
+      <IndexSponsors sponsors={sponsors} />
     </Layout>
   );
 };
