@@ -34,6 +34,9 @@ const Logos = ({ list = [], small, ...props }) => {
               rel="noopener noreferrer"
             >
               <img src={image} alt={logo.name} width="100%" />
+              {logo?.title?.length > 0 && (
+                <span className="logo-title">{logo.title}</span>
+              )}
             </OutboundLink>
           </li>
         );

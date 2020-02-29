@@ -92,20 +92,31 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 6px;
+    height: 10px;
     background-color: var(--primary);
     display: block;
-    transform: translateY(6px);
+    transform: translateY(11px);
     transition: transform 0.3s;
   }
 
   &:hover {
-    img {
+    img,
+    .logo-title {
+      transform: translateY(-10px);
       // filter: grayscale(0%);
-      transform: translateY(-6px);
     }
     &::after {
       transform: translateY(0);
     }
   }
+}
+
+.logo-title {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  text-align: center;
+  color: var(--text-light);
+  transition: transform 0.3s;
 }
