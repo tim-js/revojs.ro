@@ -7,7 +7,7 @@ import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 import SpeakersListIndex from "@components/SpeakersListIndex";
-import Separator from "@components/Separator";
+import Separator2020 from "@components/Separator2020";
 import Title2020 from "@components/Title2020";
 // import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
@@ -71,7 +71,7 @@ const Speakers = props => {
 
       <SpeakersListIndex speakers={speakers} edition={edition} />
 
-      <Separator />
+      <Separator2020 />
 
       <Section style={{ paddingTop: 0 }}>
         <Content centered style={{ textAlign: "center" }}>

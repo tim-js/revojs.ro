@@ -61,7 +61,7 @@ export default () => {
             list={partners}
             style={{
               marginLeft: "auto",
-              marginRight: "auto",
+              marginRight: "auto"
             }}
             small
           />
@@ -80,7 +80,7 @@ export default () => {
             style={{
               maxWidth: "400px",
               marginLeft: "auto",
-              marginRight: "auto",
+              marginRight: "auto"
             }}
             small
           />
