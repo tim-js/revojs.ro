@@ -39,7 +39,7 @@
   background-position: center top;
   background-size: contain;
 
-  height: 50vw;
+  height: calc(50vw - 2 * var(--spacing-content));
 
   @include breakpoint(md) {
     margin: 0 var(--spacing-content);
