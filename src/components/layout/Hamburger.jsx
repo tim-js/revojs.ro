@@ -18,7 +18,7 @@ const Hamburger = ({ active, className, as, label, ...props }) => {
 };
 
 Hamburger.propTypes = {
-  as: PropTypes.element,
+  as: PropTypes.node,
   label: PropTypes.string,
   active: PropTypes.bool,
   className: PropTypes.string,
