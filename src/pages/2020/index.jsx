@@ -84,7 +84,7 @@ export default props => {
 
       <Section id="subscribe-form" centered>
         {/* <h2>Stay up to date!</h2> */}
-        <p>Subscribe to stay on top the latest changes and revo.news:</p>
+        <p>Subscribe to stay on top the latest updates and revo.news:</p>
         <br />
         <Subscribe centered />
       </Section>
