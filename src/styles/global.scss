@@ -51,6 +51,7 @@ h3,
   @include font(number);
 }
 
+// @todo rename to primary
 .highlight {
   color: var(--primary);
 }
@@ -107,6 +108,10 @@ h3 {
   color: var(--primary);
   margin-top: var(--space-6);
   margin-bottom: var(--space-2);
+
+  .edition-2020 & {
+    color: var(--accent);
+  }
 }
 
 p {
