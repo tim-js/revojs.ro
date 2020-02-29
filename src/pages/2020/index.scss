@@ -40,4 +40,8 @@
   background-size: contain;
 
   height: 50vw;
+
+  @include breakpoint(md) {
+    margin: 0 var(--spacing-content);
+  }
 }
