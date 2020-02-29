@@ -41,7 +41,7 @@ function renderPage(page, edition, isMainLink) {
 
 export default props => {
   const [showMenu, toggleMenu] = useState(false);
-  const isHome = (props.location && props.location.pathname === "/") || false;
+  const isHome = isHomepage(props.location);
   const edition = getEdition();
   const isPastEdition = edition !== currentEdition;
 
@@ -120,4 +120,15 @@ function Logo({ edition, currentEdition }) {
       <img src={logo} alt="revo.js" height="40" className="navigation-logo" />
     </Link>
   );
+}
+
+function isHomepage(location) {
+  if (
+    location &&
+    (location.pathname === "/" || location.pathname === `/${currentEdition}/`)
+  ) {
+    return true;
+  }
+
+  return false;
 }
