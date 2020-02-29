@@ -2,11 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
-import { getEdition } from "@utils";
 import "./logos.scss";
 
 const Logos = ({ list = [], small, ...props }) => {
-  let classes = `logos-list logos-${getEdition()}`;
+  let classes = `logos-list`;
 
   if (small) {
     classes += " logos-list--small";

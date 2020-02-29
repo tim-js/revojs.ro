@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Navigation from "@components/Navigation";
 import Footer from "@components/Footer";
+import { getEdition } from "@utils";
 
 export default ({
   location,
@@ -13,7 +14,7 @@ export default ({
 }) => {
   const _title = title || "revo.js conference";
   return (
-    <>
+    <div className={`edition-${getEdition()}`}>
       <HelmetProvider>
         <Helmet>
           <title>{_title}</title>
@@ -31,6 +32,6 @@ export default ({
       </main>
 
       <Footer noFooterSeparation={noFooterSeparation} />
-    </>
+    </div>
   );
 };

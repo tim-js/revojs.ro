@@ -22,7 +22,7 @@
   width: auto;
 
   grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-  &.logos-2020 {
+  .edition-2020 & {
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   }
 
