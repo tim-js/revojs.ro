@@ -31,6 +31,9 @@
   }
   @include breakpoint(lg) {
     grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+    .edition-2020 & {
+      grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+    }
   }
 
   &.logos-list--small {
