@@ -81,6 +81,10 @@ const Speakers = props => {
       </Section>
 
       <SpeakersListIndex speakers={mc} edition={edition} />
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* <Section light>
         <Content centered style={{ textAlign: "center" }}>
