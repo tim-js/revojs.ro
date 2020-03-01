@@ -2,17 +2,17 @@
 @import "../styles/fonts";
 
 .title2020 {
-  --offset1: 50%;
-  --offset2: 68%;
+  --offset1: 55%;
+  --offset2: 65%;
   --height: calc(1em * 1.1);
-  --spacing: -3px;
+  --spacing: 1px;
 
   @include font(mono);
   font-weight: bold;
   position: relative;
   white-space: nowrap;
   line-height: 1;
-  height: var(--height);
+  // height: var(--height);
   color: var(--primary);
   margin-bottom: calc(var(--height));
   text-align: center;
