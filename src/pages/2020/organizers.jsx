@@ -67,7 +67,7 @@ const Organizers = ({ data }) => {
             </p>
             <p>
               We welcome everybody interested in any part of the JavaScript
-              ecosystem, weather you're a beginner that just started learning,
+              ecosystem, whether you're a beginner that just started learning,
               or an expert with decades of experience.
             </p>
           </section>

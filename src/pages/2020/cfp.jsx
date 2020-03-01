@@ -15,8 +15,8 @@ import Text from "@components/Text";
 
 import "./cfp.scss";
 
-const CFP_OPEN = "1st of April";
-// const CFP_CLOSE = "1st of June";
+const CFP_OPEN = "April 1st";
+// const CFP_CLOSE = "June 1st";
 
 export default () => {
   return (
@@ -25,11 +25,13 @@ export default () => {
         <Title2020 size={8}>Call For Papers</Title2020>
 
         <div className="subtitle2020">
-          Prepare your proposals! <br />
-          CFP opens on the{" "}
+          Share a talk, spread change, revolve!
+          <br />
+          CFP opens on{" "}
           <Text bold color="white">
-            {CFP_OPEN}.
-          </Text>
+            {CFP_OPEN}
+          </Text>{" "}
+          (no joke)
           {/* <span className="highlight">{CFP_CLOSE}.</span>
           <br />
           <span>
@@ -61,8 +63,8 @@ export default () => {
             </p>
             <p>Stay tuned to share it!</p>
             <p>
-              The <strong>Call for Papers opens</strong> on the{" "}
-              <strong className="highlight">{CFP_OPEN}</strong>.
+              The <strong>Call for Papers opens</strong> on{" "}
+              <strong className="accent">{CFP_OPEN}</strong>.
             </p>
 
             {/* <p>
@@ -188,10 +190,10 @@ export default () => {
               the way with:
             </p>
             <ul className="bullet">
-              <li>Brainstorming ideas</li>
-              <li>Proposal submission</li>
-              <li>Slides or live code preparation</li>
-              <li>Talk delivery on stage</li>
+              <li>Brainstorming ideas;</li>
+              <li>Proposal submission;</li>
+              <li>Slides or live code preparation;</li>
+              <li>Talk delivery on stage.</li>
             </ul>
 
             <p>
@@ -205,7 +207,9 @@ export default () => {
                 <strong>info@revojs.ro</strong>
               </a>
               <br />
-              <i>(Please don’t use this email to submit your proposal).</i>
+              <i className="accent">
+                (Please don’t use this email to submit your proposal).
+              </i>
             </p>
           </section>
 
@@ -215,25 +219,30 @@ export default () => {
             <p>If your proposal gets picked, here’s what we’ll do:</p>
 
             <ul className="bullet">
-              <li>Cover all your travel expenses;</li>
               <li>
-                Offer 4 nights accommodation close to the conference venue (if
-                you’d like to stay longer, we can help you arrange things, just
-                let us know);
+                Cover all your <strong>travel expenses</strong>;
+              </li>
+              <li>
+                Offer <strong>4 nights accommodation</strong> close to the
+                conference venue (if you’d like to stay longer, we can help you
+                arrange things, just let us know);
               </li>
               <li>
                 Upgrade your room to a double one in case you want to bring
                 someone along for support;
               </li>
               <li>
-                Provide you free entrance at all the talks and related events
-                during the conference;
+                Provide you <strong>free entrance</strong> at all the talks and
+                related events during the conference;
               </li>
               <li>
-                Take you on a trip outside Timisoara on Saturday with the
-                organizers;
+                Take you on a <strong>trip outside Timisoara</strong> on
+                Saturday with the organizers;
               </li>
-              <li>Take you out at a speakers’ dinner before the conference;</li>
+              <li>
+                Take you out at a <strong>speakers’ dinner</strong> before the
+                conference.
+              </li>
             </ul>
 
             <h3>Does your company have your back?</h3>
