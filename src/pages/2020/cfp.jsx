@@ -22,7 +22,7 @@ export default () => {
   return (
     <Layout title="revo.js Call for Papers">
       <Header type="main" centered>
-        <Title2020 size={8}>Call For Papers</Title2020>
+        <Title2020 size={9}>call for papers</Title2020>
 
         <div className="subtitle2020">
           Share a talk, spread change, revolve!

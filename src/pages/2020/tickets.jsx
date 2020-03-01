@@ -26,7 +26,7 @@ export default () => {
   return (
     <Layout title="revo.js Tickets">
       <Header type="main" centered>
-        <Title2020 size={8}>Tickets</Title2020>
+        <Title2020>tickets</Title2020>
 
         <div className="subtitle2020">
           Early Bird Tickets will <br />

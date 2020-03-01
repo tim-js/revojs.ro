@@ -1,7 +1,7 @@
 import React from "react";
 import "./Title2020.scss";
 
-export default ({ children, size = 12 }) => {
+export default ({ children, size = 11 }) => {
   return (
     <h1
       className="title2020"

@@ -16,7 +16,7 @@ export default () => {
   return (
     <Layout title="revo.js Venue" noFooterSeparation>
       <Header type="main" centered>
-        <Title2020 size={8}>Venue</Title2020>
+        <Title2020>venue</Title2020>
 
         <div className="subtitle2020">
           Where will change revolve this year?

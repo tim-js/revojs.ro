@@ -34,7 +34,7 @@ const Organizers = ({ data }) => {
   return (
     <Layout title="revo.js Organizers" noFooterSeparation>
       <Header type="main" centered>
-        <Title2020 size={8}>Organizers</Title2020>
+        <Title2020>organizers</Title2020>
       </Header>
 
       <Section light>
