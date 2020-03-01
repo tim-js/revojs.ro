@@ -35,7 +35,7 @@ export default () => {
         </Text>
         <Title2020>papers</Title2020>
 
-        <div className="subtitle2020">
+        <p className="subtitle2020">
           Share a talk, spread change, revolve!
           <br />
           CFP opens on{" "}
@@ -49,7 +49,7 @@ export default () => {
             You can submit more than one proposal.
           </span> */}
           {/* <span className="highlight">CFP has closed on the 17th of June.</span> */}
-        </div>
+        </p>
         <br />
         <br />
 

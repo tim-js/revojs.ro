@@ -28,13 +28,13 @@ export default () => {
       <Header type="main" centered>
         <Title2020>tickets</Title2020>
 
-        <div className="subtitle2020">
+        <p className="subtitle2020">
           Early Bird Tickets will <br />
           wake up on the{" "}
           <Text bold color="white">
             {EARLY_START}.
           </Text>
-        </div>
+        </p>
         <br />
         <br />
 

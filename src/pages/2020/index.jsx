@@ -61,7 +61,7 @@ export default props => {
             <Button>View the Agenda</Button>
           </Link> */}
           <a href="#subscribe-form">
-            <Button>Subscribe for News</Button>
+            <Button>Subscribe for Updates</Button>
           </a>
         </div>
         <div className="home-graphics"></div>
