@@ -68,6 +68,7 @@ export default props => {
             edges {
               node {
                 id
+                slug
                 firstname
                 lastname
                 image
