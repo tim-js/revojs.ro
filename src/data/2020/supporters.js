@@ -8,14 +8,34 @@ export const communities = [
     name: "ngParty",
     image: "communities/ngparty_no-spray_logo.svg",
     url: "https://twitter.com/ngPartyCz"
+  },
+  {
+    name: "JSgirls",
+    image: "communities/JSgirls_logo.svg",
+    url: "https://jsgirls.ro/"
+  },
+  {
+    name: "ngBucharest",
+    image: "communities/ngBucharest_logo@2x.png",
+    url: "https://www.meetup.com/AngularJS-Bucharest/"
   }
 ];
 
-export const partners = [
+export const friends = [
   {
     name: "Bereta",
     image: "partners/bereta_logo.svg",
     url: "https://bereta.tm.ro"
+  },
+  {
+    name: "DevPlant",
+    image: "partners/DevPlant_logo.svg",
+    url: "https://devplant.ro/"
+  },
+  {
+    name: "JSLeague",
+    image: "communities/JSLeague_logo.svg",
+    url: "https://jsleague.ro/"
   }
 ];
 

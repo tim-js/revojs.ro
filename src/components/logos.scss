@@ -17,41 +17,32 @@
   margin: 0 auto;
   margin-top: var(--spacing-content);
   display: grid;
-  border-top: 1px var(--lightgrey) solid;
-  border-left: 1px var(--lightgrey) solid;
-  width: auto;
+  gap: 1px 1px;
 
-  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-  .edition-2020 & {
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-  }
-
-  @include breakpoint(sm) {
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-  }
-  @include breakpoint(lg) {
-    grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
-    .edition-2020 & {
-      grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  .edition-2019 & {
+    @include breakpoint(sm, max) {
+      grid-template-columns: repeat(3, 1fr);
     }
+  }
+
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   &.logos-list--small {
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(90px, auto));
 
-    @include breakpoint(sm) {
-      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-    }
-    @include breakpoint(lg) {
-      grid-template-columns: repeat(auto-fit, minmax(12%, 1fr));
+    @include breakpoint(md) {
+      grid-template-columns: repeat(auto-fit, minmax(120px, auto));
     }
   }
 }
 .logos-list > li {
   padding-bottom: 100%;
   position: relative;
-  border-right: 1px var(--lightgrey) solid;
-  border-bottom: 1px var(--lightgrey) solid;
+  box-shadow: 0 0 0px 1px var(--lightgrey);
 
   &.is-premium {
     grid-column-start: 1;
@@ -92,17 +83,17 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 10px;
+    height: 6px;
     background-color: var(--primary);
     display: block;
-    transform: translateY(11px);
+    transform: translateY(7px);
     transition: transform 0.3s;
   }
 
   &:hover {
     img,
     .logo-title {
-      transform: translateY(-10px);
+      transform: translateY(-6px);
       // filter: grayscale(0%);
     }
     &::after {
