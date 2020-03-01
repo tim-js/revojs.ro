@@ -113,10 +113,16 @@
 
 .logo-title {
   position: absolute;
-  bottom: 1em;
+  bottom: 0.75em;
   left: 1em;
   right: 1em;
   text-align: center;
   color: var(--text-light);
   transition: transform 0.3s;
+  font-size: 0.5em;
+
+  @include breakpoint(sm) {
+    font-size: 1em;
+    bottom: 1em;
+  }
 }
