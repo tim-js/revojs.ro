@@ -12,6 +12,11 @@
   background-position: left top;
   background-repeat: no-repeat, no-repeat;
   padding-top: calc(192px + 32px);
+  
+  .edition-2020 & {
+    background-image: url("/2020/pixel_separation_footer.svg"),
+      linear-gradient(to bottom, white 128px, var(--background-dark) 128px);
+  }
 }
 
 .footer nav {

@@ -12,6 +12,11 @@
   background-repeat: no-repeat, no-repeat;
 
   padding-top: calc(256px + var(--spacing-content));
+
+  .edition-2020 & {
+    background-image: url("/2020/pixel_separation_pages.svg"),
+      linear-gradient(to bottom, var(--background-dark) 128px, white 128px);
+  }
 }
 .section--centered {
   text-align: center;
