@@ -1,5 +1,6 @@
 import React from "react";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { Link } from "gatsby";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -45,7 +46,7 @@ export default () => {
           <Button>Subscribe for Updates</Button>
         </a> */}
       </Header>
-      
+
       <Section light>
         <Content centered>
           {/* <Note>
@@ -85,16 +86,24 @@ export default () => {
 
             <ul className="bullet">
               <li>
-                Full conference access on the 8th and 9th of October (Thursday +
-                Friday)
+                <strong>Full conference access</strong> on the 8th and 9th of
+                October (Thursday + Friday);
               </li>
-              <li>Coffee, water and beverages</li>
-              <li>Lunch, including vegetarian and vegan options</li>
-              <li>Snacks during coffee breaks</li>
-              <li>After party access (Friday evening)</li>
+              <li>
+                <strong>Coffee, water and beverages</strong>;
+              </li>
+              <li>
+                <strong>Lunch</strong>, including vegetarian and vegan options;
+              </li>
+              <li>
+                <strong>Snacks</strong> during coffee breaks;
+              </li>
+              <li>
+                <strong>After party</strong> access (Friday evening).
+              </li>
             </ul>
 
-            <p>
+            <p className="accent">
               <strong>Note:</strong> <br />
               Conference tickets don't include access to workshops. <br />
               <span className="light-faded">
@@ -108,10 +117,17 @@ export default () => {
             <h2>Workshops tickets</h2>
             <p>Workshops tickets are sold separately and they include:</p>
             <ul className="bullet">
-              <li>Lunch and snacks</li>
-              <li>Coffee and beverages</li>
+              <li>
+                <strong>Coffee and beverages</strong>;
+              </li>
+              <li>
+                <strong>Snacks</strong> during coffee breaks;
+              </li>
+              <li>
+                <strong>Lunch</strong> (applicable only to full-day workshops).
+              </li>
             </ul>
-            <p>
+            <p className="accent">
               <strong>Note:</strong> <br />
               Workshop tickets don't offer access to the conference. <br />
               <span className="light-faded">
@@ -142,31 +158,26 @@ export default () => {
             <p>We’ll be prompt to answer!</p>
           </section>
 
-          <section>
-            <h2>Diversity Support Tickets</h2>
+          <section id="diversity-scholarship">
+            <h2>Diversity Scholarship Tickets</h2>
 
             <p>
-              We also offer{" "}
-              {/* <OutboundLink
-                target="_blank"
-                href="https://diversitytickets.org/en/events/446"
-              >
-                Diversity Support Tickets
-              </OutboundLink>{" "} */}
-              <strong>Diversity Support Tickets</strong> and{" "}
-              <strong>Scholarships</strong> meant to ignite change among young
-              talents.
+              We want to help{" "}
+              <strong>
+                underrepresented, underprivileged or marginalized tech
+                professionals
+              </strong>{" "}
+              by offering free tickets. Our Diversity Scholarship is available,
+              but not limited to minorities, members of the LGBTQIA+ community,
+              people with disabilities (hearing, visual or physical), students
+              or individuals facing economic difficulties.
             </p>
 
-            <p>
-              Purchase a ticket for yourself and help another JS enthusiast
-              (chosen by the conference’s organizers) attend the event.
-            </p>
+            <br />
 
-            <p>
-              Kudos in advance for your awesomeness and generosity! Together we
-              can make tech events accessible to all.
-            </p>
+            <Link to="/2020/scholarships/">
+              <Button white>Diversity Scholarships</Button>
+            </Link>
           </section>
 
           <div style={{ paddingTop: "96px" }} id="subscribe">
