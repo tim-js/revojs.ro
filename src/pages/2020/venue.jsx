@@ -19,8 +19,9 @@ export default () => {
         <Title2020 size={8}>Venue</Title2020>
 
         <div className="subtitle2020">
-          Will be announced soon. <br />
-          Stay tuned...
+          Where will change revolve this year?
+          <br />
+          Stick around to find out...
         </div>
         <br />
         <br />
