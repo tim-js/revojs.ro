@@ -27,7 +27,7 @@ export default ({ speakers }) => {
         return (
           <li key={speaker.id} className={css}>
             <Link
-              to={`/${edition}/speakers/${speaker.id}`}
+              to={`/${edition}/speakers/${speaker.slug}`}
               className="index-speakers-link"
             >
               <CardSpeaker data={speaker} color={color} />

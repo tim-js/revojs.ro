@@ -39,19 +39,20 @@ const Speakers = props => {
         ...speaker,
         talk,
         abstract,
-        speakerImage,
+        speakerImage
       };
     });
 
   const mc = allSpeakersJson.edges
     .map(e => e.node)
     .filter(speaker => !speaker.talkId)
+    .filter(speaker => speaker.edition === edition)
     .map(speaker => {
       const speakerImage = getImage(speaker.image);
 
       return {
         ...speaker,
-        speakerImage,
+        speakerImage
       };
     });
 
@@ -136,6 +137,7 @@ export default props => {
             edges {
               node {
                 id
+                slug
                 firstname
                 lastname
                 image

@@ -13,6 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
           edges {
             node {
               id
+              slug
               image
               talkId
               edition
@@ -70,7 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
         // optional but is often necessary so the template
         // can query data specific to each page.
         path: `/${edge.node.edition}/speakers/${slug(
-          edge.node.id.toLowerCase()
+          edge.node.slug.toLowerCase()
         )}/`,
         component: slash(speakerTemplate),
         context: {
