@@ -46,25 +46,7 @@ export default () => {
 
           <Logos
             list={sponsors}
-            style={{
-              maxWidth: "200px"
-            }}
-          />
-        </section>
-
-        <section style={{ textAlign: "center" }}>
-          <h1 className="sponsors-heading">Partners</h1>
-          <p>
-            A big thank you to all our partners. <br />
-            They brought the "spice and everything nice".
-          </p>
-
-          <Logos
-            list={partners}
-            style={{
-              maxWidth: "100px"
-            }}
-            small
+            
           />
         </section>
 
@@ -101,6 +83,23 @@ export default () => {
             small
           />
         </section>
+
+        <section style={{ textAlign: "center" }}>
+          <h1 className="sponsors-heading">Friends</h1>
+          <p>
+            A big thank you to all our friends. <br />
+            They brought the "spice and everything nice".
+          </p>
+
+          <Logos
+            list={partners}
+            style={{
+              maxWidth: "100px"
+            }}
+            small
+          />
+        </section>
+
       </Section>
     </Layout>
   );

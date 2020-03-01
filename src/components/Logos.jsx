@@ -21,7 +21,7 @@ const Logos = ({ list = [], small, ...props }) => {
         if (!!logo.premium) {
           logoClasses += " is-premium";
         }
-        if (!!logo.wide) {
+        if (!!logo.title) {
           logoClasses += " is-wide";
         }
 

@@ -3,6 +3,11 @@ export const communities = [
     name: "JSHeroes",
     image: "communities/jsheroes_logo.svg",
     url: "https://jsheroes.io"
+  },
+  {
+    name: "ngParty",
+    image: "communities/ngparty_no-spray_logo.svg",
+    url: "https://twitter.com/ngPartyCz"
   }
 ];
 

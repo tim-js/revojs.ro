@@ -36,17 +36,6 @@ export default props => {
     }
   });
 
-  const mappedSponsors = sponsors.map(sponsor => {
-    const { name, image, url, title } = sponsor;
-    return {
-      name,
-      image,
-      url,
-      title,
-      wide: !!title
-    };
-  });
-
   return (
     <Layout location={props.location}>
       <Header className="header-index2020">
@@ -89,7 +78,7 @@ export default props => {
         <Subscribe centered />
       </Section>
 
-      <IndexSponsors sponsors={mappedSponsors} />
+      <IndexSponsors sponsors={sponsors} />
     </Layout>
   );
 };
