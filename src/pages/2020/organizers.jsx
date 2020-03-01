@@ -35,20 +35,24 @@ const Organizers = ({ data }) => {
     <Layout title="revo.js Organizers" noFooterSeparation>
       <Header type="main" centered>
         <Title2020>organizers</Title2020>
+        <div className="subtitle2020">
+          Revolutions start small, but not individually
+        </div>
       </Header>
 
       <Section light>
         <Content centered>
           <section>
-            <h3>
+            <h3 style={{ textAlign: "center" }}>
               <OutboundLink
                 href="https://timjs.ro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={timjs} alt="tim.js" height="60" />
+                <img src={timjs} alt="tim.js" height="100" />
               </OutboundLink>
             </h3>
+            <br />
             <p>
               Founded in 2013,{" "}
               <OutboundLink
@@ -76,11 +80,15 @@ const Organizers = ({ data }) => {
 
       <Section className="organizers-team">
         <section>
-          <h2>Core Team</h2>
+          <h2>
+            <span style={{ fontSize: "3em" }}>Core Team</span>
+          </h2>
           <p>
             This event takes place only because the following humans got
             involved:
           </p>
+          <br />
+          <br />
           <ul className="team-list">
             {team.map(member => (
               <li className="team-member" key={member.name}>

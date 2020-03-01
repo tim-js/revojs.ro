@@ -20,7 +20,12 @@
 
 .header-content {
   flex: 1;
-  align-self: start;
+  align-self: center;
+
+  // main titles for 2020 should be top aligned
+  .edition-2020 .header--main & {
+    align-self: flex-start;
+  }
 }
 
 .header-image {

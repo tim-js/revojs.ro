@@ -9,12 +9,13 @@
 
   @include font(mono);
   font-weight: bold;
+  font-size: 12vw;
   position: relative;
   white-space: nowrap;
   line-height: 1;
   // height: var(--height);
   color: var(--primary);
-  margin-bottom: calc(var(--height));
+  margin-bottom: calc(var(--height) + 2vh);
   text-align: center;
 
   &::after,
@@ -48,5 +49,9 @@
       0% var(--offset2)
     );
     top: calc(var(--height) + var(--offset1) - var(--offset2));
+  }
+
+  @include breakpoint(md) {
+    font-size: 10vw;
   }
 }

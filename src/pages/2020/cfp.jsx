@@ -22,7 +22,18 @@ export default () => {
   return (
     <Layout title="revo.js Call for Papers">
       <Header type="main" centered>
-        <Title2020 size={9}>call for papers</Title2020>
+        <Text color="primary" mono bold>
+          <span
+            style={{
+              fontSize: "4vw",
+              marginBottom: "-0.75em",
+              display: "block"
+            }}
+          >
+            call for
+          </span>
+        </Text>
+        <Title2020>papers</Title2020>
 
         <div className="subtitle2020">
           Share a talk, spread change, revolve!
