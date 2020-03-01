@@ -15,8 +15,8 @@ export default () => {
           <Link to="/2020/tickets/" className="updates-link">
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              Discover what types of tickets you can purchase and stay tuned!
-              Early Bird starts at end of March.
+              Discover what type of ticket suits you best and grab it! Early
+              Bird starts at end of March.
             </p>
           </Link>
         </li>
