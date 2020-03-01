@@ -27,7 +27,7 @@ const Organizers = ({ data }) => {
 
       return {
         ...member,
-        memberImage,
+        memberImage
       };
     });
 
@@ -99,7 +99,7 @@ const Organizers = ({ data }) => {
       <Section className="organizers-team">
         <section>
           <h1>Core Team</h1>
-          <p>
+          <p className="light-faded">
             This event takes place only because the following humans got
             involved:
           </p>
@@ -116,6 +116,28 @@ const Organizers = ({ data }) => {
                 </strong>
               </li>
             ))}
+          </ul>
+        </section>
+
+        <br />
+        <br />
+        <br />
+
+        <section>
+          <h1>Special Thanks</h1>
+          <p className="light-faded">
+            Last, but surely not least, let's give a huge hug to the extended
+            crew that helped during the event:
+          </p>
+          <br />
+          <br />
+          <ul className="crew-list">
+            <li>Milena Vlad</li>
+            <li>Daniela Ciuma</li>
+            <li>Mădălina Mohorîta</li>
+            <li>Marius Cristea</li>
+            <li>Bogdan Cubleșan</li>
+            <li>Denis Troncotă</li>
           </ul>
         </section>
       </Section>

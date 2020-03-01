@@ -97,3 +97,25 @@
     font-size: 2rem;
   }
 }
+
+.crew-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @include breakpoint(md) {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  li {
+    display: inline;
+    font-weight: bold;
+    @include font(mono);
+    font-size: 1.2em;
+
+    &:not(:first-child)::before {
+      content: ", ";
+    }
+  }
+}

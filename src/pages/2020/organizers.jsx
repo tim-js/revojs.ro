@@ -65,9 +65,10 @@ const Organizers = ({ data }) => {
               is the local JavaScript Community in Timișoara, Romania.
             </p>
             <p>
-              It's main purpose is to bring JavaScript enthusiasts together and
-              facilitate knowledge sharing between its members through meetups,
-              workshops and conferences such revo.js.
+              It's main purpose is to{" "}
+              <strong>bring JavaScript enthusiasts together</strong> and{" "}
+              <strong>facilitate knowledge sharing</strong> between its members
+              through meetups, workshops and conferences such revo.js.
             </p>
             <p>
               We welcome everybody interested in any part of the JavaScript
@@ -83,7 +84,7 @@ const Organizers = ({ data }) => {
           <h2>
             <span style={{ fontSize: "3em" }}>Core Team</span>
           </h2>
-          <p>
+          <p className="light-faded">
             This event takes place only because the following humans got
             involved:
           </p>
@@ -104,6 +105,27 @@ const Organizers = ({ data }) => {
             ))}
           </ul>
         </section>
+
+        {/* <br />
+
+        <section>
+          <h2>
+            <span style={{ fontSize: "2em" }}>Special Thanks</span>
+          </h2>
+          <p className="light-faded">
+            Last, but surely not least, let's give a huge hug to the extended
+            crew that helped during the event:
+          </p>
+          <br />
+          <br />
+          <ul className="crew-list">
+            <li>Milena Vlad</li>
+            <li>Mădălina Mohorîta</li>
+            <li>Bogdan Cubleșan</li>
+            <li>Marius Cristea</li>
+            <li>Denis Troncotă</li>
+          </ul>
+        </section> */}
       </Section>
     </Layout>
   );
