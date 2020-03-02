@@ -1,6 +1,6 @@
 @import "../styles/mixins";
 
-.content-speaker {
+.section.content-speaker {
   position: relative;
 
   @include breakpoint(sm, max) {
