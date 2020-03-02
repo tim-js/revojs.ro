@@ -72,7 +72,9 @@ export default props => {
       <IndexSpeakers />
 
       <Section id="subscribe-form" centered>
-        {/* <h2>Stay up to date!</h2> */}
+        <br />
+        <h1>Stay up to date!</h1>
+        <br />
         <p>News, updates and latest happenings? Stay in the revo.loop</p>
         <br />
         <Subscribe centered />
