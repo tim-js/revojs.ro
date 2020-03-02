@@ -64,6 +64,11 @@ export const sponsors = [
     url: "https://dreamproduction.com/en/"
   },
   {
+    name: "Busy Machines",
+    image: "sponsors/busy_machines_logo.svg",
+    url: "https://www.busymachines.com/"
+  },
+  {
     name: "Syneto",
     image: "sponsors/syneto_logo.svg",
     url: "https://syneto.eu/"
