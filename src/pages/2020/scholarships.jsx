@@ -20,7 +20,7 @@ const END = "April 23rd";
 export default () => {
   return (
     <Layout title="revo.js Tickets">
-      <Header centered type="main">
+      <Header centered type="secondary">
         <h1>Diversity Scholarships</h1>
 
         <div className="subtitle2020">
