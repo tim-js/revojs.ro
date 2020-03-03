@@ -35,8 +35,8 @@ const Speakers = ({ data }) => {
   }
 
   return (
-    <section id="speakers" className="index-speakers-content">
-      <h1 className="index-speakers-title">Speakers</h1>
+    <section id="speakers">
+      <h2 className="index-title index-speakers-title">Speakers</h2>
 
       <SpeakersListIndex speakers={filteredRandomSpeakers} />
 

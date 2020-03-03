@@ -5,15 +5,11 @@
 }
 
 .index-logo {
-  margin-bottom: var(--space-4);
-}
-
-.tagline-block {
-  display: block;
+  // margin-bottom: var(--space-4);
 }
 
 .date-location {
-  margin-top: var(--space-4);
+  margin-top: 0;
 }
 .index-date {
   font-size: 24px;
@@ -29,8 +25,16 @@
 }
 
 .index-cta {
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 20vh;
+}
+
+.index-title {
+  font-size: 4rem;
+
+  @include breakpoint(md) {
+    font-size: 6rem;
+  }
 }
 
 .home-graphics {

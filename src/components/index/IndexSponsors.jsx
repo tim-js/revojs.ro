@@ -8,7 +8,7 @@ import "./indexSponsors.scss";
 export default ({ sponsors }) => {
   return (
     <Section light centered className="index-sponsors">
-      <h1>Sponsors</h1>
+      <h2 className="index-title">Sponsors</h2>
       <p>
         revo.js would have remained just a great idea without the help of these
         awesome sponsors. <br />
