@@ -17,7 +17,6 @@
   margin: 0 auto;
   margin-top: var(--spacing-content);
   display: grid;
-  gap: 1px 1px;
 
   grid-template-columns: repeat(4, 1fr);
   .edition-2019 & {
@@ -42,7 +41,8 @@
 .logos-list > li {
   padding-bottom: 100%;
   position: relative;
-  box-shadow: 0 0 0px 1px var(--lightgrey);
+  border: 1px var(--lightgrey) solid;
+  margin: -1px 0 0 -1px;
 
   &.is-premium {
     grid-column-start: 1;
