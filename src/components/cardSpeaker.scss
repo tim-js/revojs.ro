@@ -2,6 +2,7 @@
 
 .card-speaker-firstname,
 .card-speaker-lastname {
+  line-height: 1.2;
   @include breakpoint(sm) {
     display: block;
   }
@@ -13,13 +14,17 @@
   transition: color 0.3s;
 
   @include breakpoint(sm) {
+    font-size: 90%;
     padding: 0 20% 0 10%;
+  }
+  @include breakpoint(lg) {
+    font-size: 100%;
   }
 }
 .card-speaker-company {
   display: block;
   transition: color 0.3s;
-  color: var(--text-light);
+  // color: var(--text-light);
 
   @include breakpoint(sm) {
     padding: 0 20% 0 10%;

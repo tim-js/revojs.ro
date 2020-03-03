@@ -72,6 +72,8 @@ const Speakers = props => {
 
       <SpeakersListIndex speakers={speakers} edition={edition} />
 
+      <br />
+      <br />
       <Separator2020 />
 
       <Section style={{ paddingTop: 0 }}>
