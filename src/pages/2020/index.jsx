@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 
-import { replace, Link } from "gatsby";
+import { replace /*, Link*/ } from "gatsby";
 import queryString from "query-string";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";

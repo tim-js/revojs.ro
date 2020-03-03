@@ -2,9 +2,7 @@ import React from "react";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import Content from "@components/Content";
 import Section from "@components/Section";
-import Note from "@components/Note";
 import Text from "@components/Text";
 import Title2020 from "@components/Title2020";
 

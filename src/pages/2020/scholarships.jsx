@@ -9,13 +9,12 @@ import Content from "@components/Content";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
-import Title2020 from "@components/Title2020";
 import Text from "@components/Text";
 
 import "./tickets.scss";
 
 const START = "March 23rd";
-const END = "April 23rd";
+// const END = "April 23rd";
 
 export default () => {
   return (
