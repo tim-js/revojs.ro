@@ -95,8 +95,8 @@ export default () => {
             </p>
 
             <p>
-              Our conference staff can be easily identified as they'll be
-              wearing branded clothing and/or badges. They will be happy to help
+              Our conference staff can be easily identified as they are wearing
+              branded clothing and/or badges. They are happy to help
               participants contact the venue security or the local law
               enforcement, provide escorts, or otherwise assist and support
               those experiencing harassment to feel safe for the duration of the

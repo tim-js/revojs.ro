@@ -65,14 +65,14 @@ const Organizers = ({ data }) => {
               is the local JavaScript Community in Timișoara, Romania.
             </p>
             <p>
-              It's main purpose is to{" "}
+              Its main purpose is to{" "}
               <strong>bring JavaScript enthusiasts together</strong> and{" "}
               <strong>facilitate knowledge sharing</strong> between its members
-              through meetups, workshops and conferences such revo.js.
+              through meetups, workshops and conferences, such revo.js.
             </p>
             <p>
               We welcome everybody interested in any part of the JavaScript
-              ecosystem, whether you're a beginner that just started learning,
+              ecosystem, whether they're a beginner who just started learning,
               or an expert with decades of experience.
             </p>
           </section>

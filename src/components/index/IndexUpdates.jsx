@@ -16,7 +16,7 @@ export default () => {
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
               Discover what type of ticket suits you best and grab it! Early
-              Bird starts at end of March.
+              Bird starts at the end of March.
             </p>
           </Link>
         </li>

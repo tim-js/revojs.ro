@@ -17,7 +17,7 @@ export default () => {
         <Content centered>
           <Note>
             <p>
-              The primary purpose of this website is to provide you all the
+              The primary purpose of this website is to provide you with all the
               information you might need to attend revo.js conference. The
               following provides an overview of how we protect your privacy
               during your visit.
@@ -32,40 +32,34 @@ export default () => {
             </p>
             <ul className="bullet">
               <li>
-                <strong>directly</strong>, through various forms like
-                newsletter, ticket purchase form, call for papers, etc. This
-                data includes common-sense information used solely to enable us
-                to organize revo.js;
+                <strong>directly</strong>, through various forms, used for
+                newsletter subscription, ticket purchase, call for papers
+                submission, etc. This data includes common-sense information
+                used solely to enable us to organize revo.js;
               </li>
               <li>
                 <strong>indirectly</strong>, through web technologies used
-                within our website, like cookies, which will be detailed below;
+                within our website, like cookies, which will be detailed below.
               </li>
             </ul>
           </section>
 
           <section>
             <h2>How do we use this data?</h2>
-            <p>
-              There are various reasons we collect personal data, which also
-              describes what we do with it:
-            </p>
+            <p>There are various reasons why we collect personal data:</p>
             <ul>
               <li>
                 To provide you with the services you signed up for, or
                 requested;
               </li>
               <li>
-                For security purposes, to ensure that our site is safe and
+                For security purposes, to ensure that our website is safe and
                 secure;
               </li>
               <li>
-                To send emails regarding event updates or important information
-                when we have your permission;
+                To send emails regarding event updates or important information,
+                if we have your permission;
               </li>
-              {/* <li>
-                To personalize our services i.e. remember your previous session
-              </li> */}
               <li>
                 To optimize Facebook ads based on collected anonymized data, and
                 build targeted audiences;
@@ -76,7 +70,7 @@ export default () => {
               </li>
               <li>
                 To better understand our visitors’ experience in order to
-                improve it;
+                improve it.
               </li>
             </ul>
           </section>

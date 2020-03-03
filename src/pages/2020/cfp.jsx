@@ -130,9 +130,10 @@ export default () => {
 
             <h3>Language</h3>
             <p>
-              <strong>English. Inglese. Engelsk. Angleško. Angolul.</strong>{" "}
-              (but we’d love for you to teach us some words in your language
-              too).
+              <strong>English. Inglese. Engelsk. Angleško. Angolul.</strong>
+              <br />
+              But we’d love for you to teach us some words in your native
+              languag too.
             </p>
 
             <h3>Duration</h3>
@@ -160,7 +161,7 @@ export default () => {
               or narrow the subjects you want to cover.
             </p>
             <p>
-              Ask yourself "What should the attendees walk agay with after the
+              Ask yourself "What should the attendees walk away with after the
               talk?". Uncovering the takeaways will help you discover what your
               talk is really about.
             </p>
@@ -180,15 +181,14 @@ export default () => {
 
             <h3>Originality</h3>
             <p>
-              We generally discourage "second-hand" talks as we are looking for
+              We generally discourage "second-hand" talks as we are looking for{" "}
               <strong>crisp and fresh content</strong>.
             </p>
             <p>
-              However, if you have a talk that is top-notch, or is focused on a
-              live experience, we would definitely want it on stage. In case you
-              really-really want to present a talk for the second time, we
-              encourage you to give it a twist and make it `feel like brand
-              new`.
+              However, if you have a great talk that required a lot of
+              preparation, or is focused on a live experience, we would
+              definitely want it on stage. We encourage you to give it a twist,
+              adapt it for our audience and make it `feel like brand new`.
             </p>
           </section>
 
@@ -225,7 +225,7 @@ export default () => {
           </section>
 
           <section>
-            <h2>What we offer?</h2>
+            <h2>What do we offer?</h2>
 
             <p>If your proposal gets picked, here’s what we’ll do:</p>
 
@@ -243,25 +243,25 @@ export default () => {
                 someone along for support;
               </li>
               <li>
-                Provide you <strong>free entrance</strong> at all the talks and
-                related events during the conference;
+                Provide you with <strong>free entrance</strong> at all the talks
+                and related events during the conference;
               </li>
               <li>
                 Take you on a <strong>trip outside Timisoara</strong> on
-                Saturday with the organizers;
+                Saturday, with the organizers;
               </li>
               <li>
-                Take you out at a <strong>speakers’ dinner</strong> before the
-                conference.
+                Take you out at a <strong>speakers’ dinner</strong> Wednesday
+                evening.
               </li>
             </ul>
 
             <h3>Does your company have your back?</h3>
             <p>
-              If your employer wants to cover your travel expenses and
-              accommodation, we’d be happy to list them as partners. The money
-              saved will be invested into the general running of the conference
-              and scholarships for attendees from underrepresented groups.
+              If your employer wants to cover your travel and/or accommodation
+              expenses, we’d be happy to list them as partners. The money saved
+              will be invested into the general running of the conference and
+              scholarships for attendees from underrepresented groups.
             </p>
           </section>
 
@@ -269,27 +269,28 @@ export default () => {
             <h2>Video recordings</h2>
 
             <p>
-              We plan to record all talks and publish them online for free,
-              along with a recording of the slide deck, live demo, and any
-              on-presenter-screen activity. We do this for the benefit of the
-              larger JS community and those who can’t make it to the conference.
+              We would like to record all talks and publish them online for
+              free, along with a recording of the slide deck, live demo, and any
+              on-presenter-screen activity. We want to do this for the benefit
+              of the larger JS community and those who can’t make it to the
+              conference.
             </p>
 
             <p>
-              We hope you agree with us, but if you are uncomfortable with this
-              in any way, let us know and we will work things out. Note that
-              we'll disable comments on our published videos by default.
-            </p>
-
-            <p>
-              Finally, since you retain full ownership of your slides and
-              recording,{" "}
+              Since you retain full ownership of your slides and recording, we’d
+              like to ask you to{" "}
               <strong>
-                we’d like to ask you to make your materials and recordings
-                available under a Creative Commons (we default to non-commercial
-                reuse) or other open source license
-              </strong>
-              .
+                make your materials and recordings available under a Creative
+                Commons
+              </strong>{" "}
+              or other open source license, in order for us to be able to share
+              them.
+            </p>
+
+            <p>
+              If you are uncomfortable with this in any way, let us know and we
+              will work things out. Note that we’ll disable comments on our
+              published videos by default.
             </p>
           </section>
 
