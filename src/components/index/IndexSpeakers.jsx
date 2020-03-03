@@ -12,7 +12,7 @@ const Speakers = ({ data }) => {
   const edition = getEdition();
   const speakers = allSpeakersJson.edges
     .map(e => e.node)
-    // .filter(speaker => speaker.talkId)
+    .filter(speaker => speaker.talkId)
     .filter(speaker => speaker.edition === edition)
     .map(speaker => {
       const speakerImage = getImage(speaker.image);
