@@ -48,7 +48,7 @@ export const sponsors = [
   },
   {
     name: "123FormBuilder",
-    image: "sponsors/2020/123.png",
+    image: "sponsors/2020/123-form-builder_logo.svg",
     url: "https://www.123formbuilder.com/",
     title: "Gaming Partner"
   },
