@@ -139,7 +139,7 @@
 
   @include breakpoint(md, min) {
     display: flex;
-    margin-right: 2em;
+    margin-right: calc(25px + var(--space-2));
 
     .is-active & {
       display: block;
