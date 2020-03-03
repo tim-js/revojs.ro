@@ -43,7 +43,7 @@ const Organizers = ({ data }) => {
       <Section light>
         <Content centered>
           <section>
-            <h3 style={{ textAlign: "center" }}>
+            <h2 style={{ textAlign: "center" }}>
               <OutboundLink
                 href="https://timjs.ro"
                 target="_blank"
@@ -51,7 +51,7 @@ const Organizers = ({ data }) => {
               >
                 <img src={timjs} alt="tim.js" height="100" />
               </OutboundLink>
-            </h3>
+            </h2>
             <br />
             <p>
               Founded in 2013,{" "}
@@ -79,10 +79,10 @@ const Organizers = ({ data }) => {
         </Content>
       </Section>
 
-      <Section className="organizers-team">
+      <Section centered dark>
         <section>
           <h2>
-            <span style={{ fontSize: "3em" }}>Core Team</span>
+            <span style={{ fontSize: "2em" }}>Core Team</span>
           </h2>
           <p className="light-faded">
             This event takes place only because the following humans got

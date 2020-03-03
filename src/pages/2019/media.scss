@@ -57,15 +57,11 @@
   }
 }
 
-.media-videos {
-  text-align: center;
-  @include separationLightDark();
-}
-
 .media-heading {
   font-size: 2.5em;
   padding-left: var(--spacing-content);
   padding-right: var(--spacing-content);
+  padding-top: 0;
 
   @include breakpoint(sm) {
     font-size: 4em;

@@ -129,7 +129,7 @@ const Media = ({ data }) => {
         </section>
       </Section>
 
-      <Section className="media-videos">
+      <Section centered dark>
         <section>
           <h2 className="media-heading">Video Recordings</h2>
 

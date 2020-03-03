@@ -96,7 +96,7 @@ const Organizers = ({ data }) => {
         </Content>
       </Section>
 
-      <Section className="organizers-team">
+      <Section centered dark>
         <section>
           <h1>Core Team</h1>
           <p className="light-faded">

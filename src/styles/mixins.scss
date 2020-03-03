@@ -42,14 +42,6 @@ $breakpoint-lg: 1200px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
 }
 
-@mixin separationLightDark() {
-  background-image: url("/pixel_separation_team.svg"),
-    linear-gradient(to bottom, white 128px, var(--background-dark) 128px);
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding-top: calc(256px + var(--spacing-content));
-}
-
 @mixin play() {
   content: "";
   display: block;

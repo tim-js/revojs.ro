@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import "./section.scss";
 
-const Section = ({ children, light, centered, className, ...props }) => {
-  const _theme = light ? "section--light" : "";
+const Section = ({ children, light, dark, centered, className, ...props }) => {
+  const _theme = light ? "section--light" : dark ? "section--dark" : "";
   const _centered = centered ? "section--centered" : "";
   const _className = className || "";
 
@@ -17,6 +17,7 @@ const Section = ({ children, light, centered, className, ...props }) => {
 
 Section.propTypes = {
   light: PropTypes.bool,
+  dark: PropTypes.bool,
   centered: PropTypes.bool
 };
 
