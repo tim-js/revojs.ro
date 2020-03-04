@@ -1,31 +1,27 @@
 @import "src/styles/mixins";
-
-.header-index2020 {
-  text-align: center;
-}
+@import "src/styles/fonts";
 
 .index-logo {
   margin-top: 2rem;
 }
 
 .date-location {
-  margin-top: 0;
+  margin-top: 1em;
+  line-height: 1;
 }
 .index-date {
-  font-size: 24px;
   display: inline-block;
   margin: 0 var(--space-1);
 }
 
 .index-location {
-  font-size: 24px;
   color: var(--primary);
   display: inline-block;
   margin: 0 var(--space-1);
 }
 
 .index-cta {
-  margin-top: 5vh;
+  margin-top: 10vh;
   margin-bottom: 20vh;
 }
 
@@ -37,15 +33,13 @@
   }
 }
 
-.home-graphics {
-  background-image: url("/2020/homepage_illustration.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+.index-tagline-2020 {
+  font-size: 15vw;
+  font-weight: bold;
+  line-height: 1;
+  @include font(mono);
 
-  height: calc(50vw - 2 * var(--spacing-content));
-
-  @include breakpoint(md) {
-    margin: 0 var(--spacing-content);
+  @include breakpoint(lg) {
+    font-size: 10vw;
   }
 }

@@ -37,11 +37,15 @@ export default props => {
   });
 
   return (
-    <Layout location={props.location}>
-      <Header className="header-index2020">
+    <Layout location={props.location} className="index-graphics">
+      <Header className="header-index">
         <h1 className="index-logo">
           <img src={logo} alt="revo.js" height="80" />
         </h1>
+
+        <div className="index-tagline-2020">
+          <span className="highlight">revo</span>lve
+        </div>
 
         <div className="index-header-content">
           <div className="date-location">
