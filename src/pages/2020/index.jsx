@@ -43,7 +43,29 @@ export default props => {
           <img src={logo} alt="revo.js" height="70" />
         </h1>
 
-        <div className="index-tagline-2020">revolve</div>
+        <div className="index-tagline-2020">
+          <div>
+            <span className="flip flip1">r</span>
+          </div>
+          <div>
+            <span className="flip flip2">e</span>
+          </div>
+          <div>
+            <span className="flip flip3">v</span>
+          </div>
+          <div>
+            <span className="flip flip4">o</span>
+          </div>
+          <div>
+            <span className="flip flip5">l</span>
+          </div>
+          <div>
+            <span className="flip flip6">v</span>
+          </div>
+          <div>
+            <span className="flip flip7">e</span>
+          </div>
+        </div>
 
         <div className="index-header-content">
           <div className="date-location">
