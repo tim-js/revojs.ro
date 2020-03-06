@@ -10,12 +10,12 @@ export default props => {
 
   const speakerData = {
     ...speakersJson,
-    image: file,
+    image: file
   };
 
   const talkData = {
     ...talksJson,
-    speakers: [speakerData],
+    speakers: [speakerData]
   };
 
   return (
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
     file(relativePath: { eq: $image }) {
       base
       image: childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
+        fluid(maxWidth: 400, maxHeight: 400, grayscale: false) {
           ...GatsbyImageSharpFluid
         }
       }
