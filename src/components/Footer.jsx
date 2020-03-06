@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import "./footer.scss";
 
@@ -97,10 +98,23 @@ export default props => {
         </div>
       </nav>
 
-      <p className="copyright">
-        &copy; <img className="revojs-text" src={revojs} alt="revo.js" /> 2019.
-        All rights reserved.
-      </p>
+      <div className="copyright">
+        <p>
+          &copy; <img className="revojs-text" src={revojs} alt="revo.js" />{" "}
+          2019. All rights reserved.
+        </p>
+        <p>
+          Organized by{" "}
+          <OutboundLink
+            href="https://timjs.ro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="timjs-text"
+          >
+            <strong>tim.js</strong>
+          </OutboundLink>
+        </p>
+      </div>
     </footer>
   );
 };

@@ -12,7 +12,7 @@
   background-position: left top;
   background-repeat: no-repeat, no-repeat;
   padding-top: calc(192px + 32px);
-  
+
   .edition-2020 & {
     background-image: url("/2020/pixel_separation_footer.svg"),
       linear-gradient(to bottom, white 96px, var(--background-dark) 96px);
@@ -96,9 +96,24 @@
 .copyright {
   font-size: 1.2rem;
   margin-top: 5em;
+
+  @include breakpoint(sm) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    margin: 0.25em 0;
+  }
 }
 
 .revojs-text {
   height: 13px;
   vertical-align: text-top;
+}
+
+.timjs-text:link,
+.timjs-text:visited {
+  @include font(mono);
+  color: #eac104;
 }

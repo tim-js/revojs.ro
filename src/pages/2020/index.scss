@@ -1,12 +1,22 @@
 @import "src/styles/mixins";
 @import "src/styles/fonts";
 
+.index-graphics {
+  .edition-2020 & {
+    @include breakpoint(sm) {
+      background-image: url("/homepage_bg_left.svg"),
+        url("/2020/homepage_bg_right.svg");
+    }
+  }
+}
+
 .index-logo {
+  margin: 0;
   margin-top: 2rem;
 }
 
 .date-location {
-  margin-top: 1em;
+  margin-top: 2em;
   line-height: 1;
 }
 .index-date {
@@ -21,22 +31,14 @@
 }
 
 .index-cta {
-  margin-top: 10vh;
-  margin-bottom: 20vh;
-}
-
-.index-title {
-  font-size: 4rem;
-
-  @include breakpoint(md) {
-    font-size: 6rem;
-  }
+  margin-top: 10rem;
 }
 
 .index-tagline-2020 {
   font-size: 15vw;
   font-weight: bold;
   line-height: 1;
+  margin-top: 4rem;
   @include font(mono);
 
   @include breakpoint(lg) {

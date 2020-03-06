@@ -11,7 +11,10 @@ export default function HTML(props) {
 
         <meta property="og:title" content="revo.js" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://revojs.ro/revojs-2020.png" />
+        <meta
+          property="og:image"
+          content="https://revojs.ro/revojs-2020-revolve.png"
+        />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:url" content="https://revojs.ro/" />
         <meta

@@ -40,12 +40,10 @@ export default props => {
     <Layout location={props.location} className="index-graphics">
       <Header className="header-index">
         <h1 className="index-logo">
-          <img src={logo} alt="revo.js" height="80" />
+          <img src={logo} alt="revo.js" height="70" />
         </h1>
 
-        <div className="index-tagline-2020">
-          <span className="highlight">revo</span>lve
-        </div>
+        <div className="index-tagline-2020">revolve</div>
 
         <div className="index-header-content">
           <div className="date-location">
@@ -77,7 +75,7 @@ export default props => {
 
       <Section id="subscribe-form" centered>
         <br />
-        <h2 className="index-title">Stay up to date!</h2>
+        <h2 className="big">Stay up to date!</h2>
         <p className="light-faded">
           News, updates and latest happenings? Stay in the revo.loop
         </p>

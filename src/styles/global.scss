@@ -104,6 +104,13 @@ h2 {
     margin-top: var(--space-10);
     margin-bottom: var(--space-4);
   }
+
+  &.big {
+    font-size: 4rem;
+    @include breakpoint(md) {
+      font-size: 6rem;
+    }
+  }
 }
 
 h3 {
