@@ -100,7 +100,7 @@ function Logo({ edition, currentEdition }) {
             className="white navigation-to-current-edition"
           />
 
-          {/* <Arrow className="navigation-to-current-edition" light={true}>
+          {/* <Arrow className="navigation-to-current-edition" color="white">
             View edition {currentEdition}
           </Arrow> */}
         </Link>
