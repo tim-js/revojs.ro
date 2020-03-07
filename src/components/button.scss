@@ -9,7 +9,7 @@
   background-color: var(--primary);
   @include font(mono);
   padding: 0 var(--space-4);
-  color: var(--background-dark);
+  color: var(--dark);
   font-weight: bold;
   display: inline-block;
 
@@ -37,6 +37,6 @@
   color: white;
 
   &:hover {
-    color: var(--background-dark);
+    color: var(--dark);
   }
 }

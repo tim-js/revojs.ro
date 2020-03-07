@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>arrow</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-Desktop" transform="translate(-470.000000, -1007.000000)" fill="#FFFFFF">
-            <g id="Group-15" transform="translate(188.000000, 899.000000)">
-                <g id="news-01" transform="translate(0.000000, 108.000000)">
-                    <path d="M298.541983,6.80561217 L293.497065,1.67230343 L295.140275,-5.68434189e-14 L303,8.00002866 L295.140275,16 L293.497065,14.3276966 L298.543165,9.1931843 L282,9.1931843 L282,6.80561217 L298.541983,6.80561217 Z" id="arrow"></path>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow" transform="translate(-470.000000, -1007.000000)" fill="#FFFFFF">
+            <g transform="translate(188.000000, 899.000000)">
+                <g transform="translate(0.000000, 108.000000)">
+                    <path d="M298.541983,6.80561217 L293.497065,1.67230343 L295.140275,-5.68434189e-14 L303,8.00002866 L295.140275,16 L293.497065,14.3276966 L298.543165,9.1931843 L282,9.1931843 L282,6.80561217 L298.541983,6.80561217 Z"></path>
                 </g>
             </g>
         </g>

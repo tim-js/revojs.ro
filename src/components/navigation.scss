@@ -18,7 +18,7 @@
   .is-scrolled & {
     justify-content: space-between;
     box-shadow: 0 6px 10px 0 rgba(21, 22, 26, 0.3);
-    background: var(--background-dark);
+    background: var(--dark);
     border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
     height: var(--menu-height-scrolled);
   }
@@ -39,7 +39,7 @@
 
   &.is-active {
     height: 100vh;
-    background: var(--background-dark);
+    background: var(--dark);
     justify-content: space-between !important;
     align-items: flex-start;
   }
@@ -201,7 +201,7 @@
   text-decoration: none;
 
   .is-past-edition:not(.is-active) & {
-    color: var(--background-dark);
+    color: var(--dark);
   }
 }
 .main-link.active {
