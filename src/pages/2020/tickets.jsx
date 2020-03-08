@@ -146,8 +146,8 @@ export default () => {
             <p>Change happens when like-minded people get together.</p>
 
             <p>
-              So if you want to purchase revo.js tickets for an entire crew of
-              change, please contact us directly by{" "}
+              So if you want to purchase revo.js tickets for your entire crew,
+              please contact us directly by{" "}
               <a href="mailto:info@revojs.ro?subject=[tickets bulk]">
                 sending an e-mail
               </a>{" "}

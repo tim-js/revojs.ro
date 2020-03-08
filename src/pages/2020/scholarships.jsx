@@ -98,13 +98,18 @@ export default () => {
               </li>
             </ul>
 
-            <p>
-              All application information will be kept confidential and not
-              shared with any 3rd party.
-            </p>
+            <section>
+              <h3>Your data is safe!</h3>
+              <p className="accent">
+                All application information will be kept{" "}
+                <strong>100% confidential</strong> and will{" "}
+                <strong>not be shared</strong> with any 3rd party.
+              </p>
+            </section>
           </section>
 
-          <div style={{ paddingTop: "96px" }} id="subscribe">
+          <div id="subscribe">
+            <h2>Don't miss it!</h2>
             <p>
               Subscribe to find out when Diversiy Scholarship Applications
               become available:
