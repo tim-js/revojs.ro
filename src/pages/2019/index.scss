@@ -1,78 +1,77 @@
 @import "src/styles/mixins";
 
-.index-graphics {
-  @include breakpoint(sm) {
-    background-image: url("/homepage_bg_left.svg"),
-      url("/homepage_bg_right.svg");
-    background-position: -150px top, calc(100% + 150px) top;
-    background-repeat: no-repeat, no-repeat;
-  }
-  @include breakpoint(lg) {
-    background-position: left top, right top;
-  }
-}
+.edition-2019 {
+  .header-index {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
-.header-index {
-  align-items: center;
-  justify-content: flex-start;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-  @include breakpoint(sm, max) {
-    min-height: calc(100vh - var(--spacing-content) - var(--menu-height));
-  }
-}
-
-.index-logo {
-  margin-bottom: var(--space-10);
-}
-
-.tagline-block {
-  display: block;
-}
-
-.index-tagline-2019 {
-  @include breakpoint(sm, max) {
-    font-size: 3.5rem;
-  }
-}
-.date-location {
-  margin-top: var(--space-4);
-}
-.index-date {
-  font-size: 20px;
-  display: inline-block;
-  margin: 0 var(--space-1);
-}
-
-.index-location {
-  font-size: 20px;
-  color: var(--primary);
-  display: inline-block;
-  margin: 0 var(--space-1);
-}
-
-.index-cta {
-  margin-top: var(--space-10);
-}
-
-/*
-.description {
-  margin-top: 25vh;
-  line-height: 1.5;
-
-  @include breakpoint(sm, max) {
-    & strong {
-      display: block;
+    @include breakpoint(sm, max) {
+      min-height: calc(100vh - var(--spacing-content) - var(--menu-height));
+      padding-top: var(--menu-height);
+    }
+    @include breakpoint(sm) {
+      justify-content: flex-start;
     }
   }
 
-  @include breakpoint(sm) {
-    font-size: 24px;
-    & .highlight {
-      display: block;
+  .header-content {
+    @include breakpoint(sm, max) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: none;
     }
   }
+
+  .index-graphics {
+    @include breakpoint(sm) {
+      background-image: url("/homepage_bg_left.svg"),
+        url("/homepage_bg_right.svg");
+      background-position: -150px top, calc(100% + 150px) top;
+      background-repeat: no-repeat, no-repeat;
+    }
+    @include breakpoint(lg) {
+      background-position: left top, right top;
+    }
+  }
+
+  .index-logo {
+    margin: 10vh 0;
+    @include breakpoint(sm) {
+      margin: 8vh 0;
+    }
+  }
+
+  .index-tagline {
+    @include breakpoint(sm, max) {
+      font-size: 3.5rem;
+    }
+    margin-bottom: 2vh;
+  }
+  .tagline-block {
+    display: block;
+  }
+
+  .date-location {
+    margin-top: 2vh;
+    line-height: 1;
+    font-size: 20px;
+  }
+  .index-date {
+    display: inline-block;
+    margin: 0 var(--space-1);
+  }
+  .index-location {
+    color: var(--primary);
+    display: inline-block;
+    margin: 0 var(--space-1);
+  }
+
+  .index-cta {
+    margin: 10vh 0;
+  }
 }
-*/

@@ -44,16 +44,15 @@ export default props => {
           <img src={logo} alt="revo.js" height="70" />
         </div>
 
-        <div className="index-header-content">
-          <h1 className="index-tagline-2019">
-            Change is <span className="tagline-block">the only const.</span>
-          </h1>
-          <div className="date-location">
-            <time className="index-date mono" dateTime="2019-10-03">
-              <strong>October.3-4.2019</strong>
-            </time>
-            <strong className="index-location mono">Timisoara/RO</strong>
-          </div>
+        <h1 className="index-tagline">
+          Change is <span className="tagline-block">the only const.</span>
+        </h1>
+
+        <div className="date-location">
+          <time className="index-date mono" dateTime="2019-10-03">
+            <strong>October.3-4.2019</strong>
+          </time>
+          <strong className="index-location mono">Timisoara/RO</strong>
         </div>
 
         <div className="index-cta">
@@ -80,6 +79,9 @@ export default props => {
       <Separator />
       <IndexSpeakers />
       {/* <IndexSponsors sponsors={sponsors} /> */}
+      <br />
+      <br />
+      <br />
     </Layout>
   );
 };

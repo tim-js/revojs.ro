@@ -43,7 +43,7 @@ export default props => {
           <img src={logo} alt="revo.js" height="70" />
         </h1>
 
-        <div className="index-tagline-2020">
+        <div className="index-tagline">
           <div>
             <span className="flip flip1">r</span>
           </div>
@@ -67,13 +67,11 @@ export default props => {
           </div>
         </div>
 
-        <div className="index-header-content">
-          <div className="date-location">
-            <time className="index-date mono" dateTime="2020-10-08">
-              <strong>October.8-9.2020</strong>
-            </time>
-            <strong className="index-location mono">Timisoara/RO</strong>
-          </div>
+        <div className="date-location">
+          <time className="index-date mono" dateTime="2020-10-08">
+            <strong>October.8-9.2020</strong>
+          </time>
+          <strong className="index-location mono">Timisoara/RO</strong>
         </div>
 
         <div className="index-cta">
