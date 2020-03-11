@@ -59,7 +59,7 @@
   @include breakpoint(sm) {
     @include clip-hex(30%);
     margin: var(--border);
-    background-color: var(--background-dark);
+    background-color: var(--dark);
     width: calc(100% - 2 * var(--border));
     height: calc(100% - 2 * var(--border));
 

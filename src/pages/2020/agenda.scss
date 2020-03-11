@@ -35,11 +35,7 @@
 
   @include breakpoint(sm) {
     box-shadow: 0 30px 30px rgba(255, 255, 255, 1);
-    background-image: linear-gradient(
-      to bottom,
-      var(--background-dark) 32px,
-      white 32px
-    );
+    background-image: linear-gradient(to bottom, var(--dark) 32px, white 32px);
   }
 
   @include breakpoint(md) {
@@ -48,7 +44,7 @@
     box-shadow: 0 50px 30px rgba(255, 255, 255, 1);
     background-image: url("/agenda_pixels_left.svg"),
       url("/agenda_pixels_right.svg"),
-      linear-gradient(to bottom, var(--background-dark) 64px, white 64px);
+      linear-gradient(to bottom, var(--dark) 64px, white 64px);
     background-position: 32px top, calc(100% - 32px) top, center top;
     background-repeat: no-repeat, no-repeat, no-repeat;
   }

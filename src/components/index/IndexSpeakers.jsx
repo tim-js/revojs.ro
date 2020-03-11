@@ -36,7 +36,7 @@ const Speakers = ({ data }) => {
 
   return (
     <section id="speakers">
-      <h2 className="index-title index-speakers-title">Speakers</h2>
+      <h2 className="big index-speakers-title">Speakers</h2>
 
       <SpeakersListIndex speakers={filteredRandomSpeakers} />
 
@@ -86,7 +86,7 @@ export default props => {
               node {
                 base
                 image: childImageSharp {
-                  fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
+                  fluid(maxWidth: 400, maxHeight: 400, grayscale: false) {
                     ...GatsbyImageSharpFluid
                   }
                 }

@@ -17,10 +17,12 @@ export default () => {
     <Layout title="revo.js Sponsors">
       <Header centered type="main">
         <Title2020>supporters</Title2020>
+
         <p className="subtitle2020">
           Change comes one step at a time, <br />
           and a conference is built one supporter at a time.
         </p>
+
         <p className="subtitle2020">
           <Text bold color="white">
             This is a shoutout to everybody who helped make revo.js 2020 a
@@ -31,7 +33,7 @@ export default () => {
 
       <Section light centered>
         <section style={{ textAlign: "center" }}>
-          <h1 className="sponsors-heading">Sponsors</h1>
+          <h2 className="big">Sponsors</h2>
           <p>
             We are very grateful and proud of our awesome sponsors. <br />
             We couldn’t have done it without them.{" "}
@@ -42,7 +44,7 @@ export default () => {
         </section>
 
         <section style={{ textAlign: "center" }}>
-          <h1 className="sponsors-heading">Communities</h1>
+          <h2 className="big">Communities</h2>
           <p>
             High five, up high to all the amazing JavaScript communities that
             have our back. <br />
@@ -53,7 +55,7 @@ export default () => {
         </section>
 
         <section style={{ textAlign: "center" }}>
-          <h1 className="sponsors-heading">Our Friends</h1>
+          <h2 className="big">Our Friends</h2>
           <p>
             A big thank you to all our friends. <br />
             They brought the "spice and everything nice".
@@ -61,6 +63,10 @@ export default () => {
 
           <Logos list={friends} small />
         </section>
+        <br />
+        <br />
+        <br />
+        <br />
       </Section>
     </Layout>
   );

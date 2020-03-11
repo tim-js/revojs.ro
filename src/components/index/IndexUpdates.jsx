@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Section from "@components/Section";
+import Arrow from "@components/Arrow";
 
 import "./indexUpdates.scss";
 
 export default () => {
   return (
     <Section centered>
-      <h2 className="index-title">Updates</h2>
+      <h2 className="big first">Updates</h2>
 
       <ul className="updates-list">
         <li>
@@ -18,6 +19,9 @@ export default () => {
               Discover what type of ticket suits you best and grab it! Early
               Bird starts at the end of March.
             </p>
+            <div className="arrow">
+              <Arrow color="accent" />
+            </div>
           </Link>
         </li>
         <li>
@@ -27,6 +31,9 @@ export default () => {
               CFP opens on April 1st. No foolin' around, we promise. We'd love
               to see your proposal.
             </p>
+            <div className="arrow">
+              <Arrow color="accent" />
+            </div>
           </Link>
         </li>
         {/* 

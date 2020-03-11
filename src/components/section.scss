@@ -8,7 +8,7 @@
   color: var(--text-dark);
 
   background-image: url("/pixel_separation_pages.svg"),
-    linear-gradient(to bottom, var(--background-dark) 128px, white 128px);
+    linear-gradient(to bottom, var(--dark) 128px, white 128px);
   background-position: center top;
   background-repeat: no-repeat, no-repeat;
 
@@ -16,7 +16,7 @@
 
   .edition-2020 & {
     background-image: url("/2020/pixel_separation_pages.svg"),
-      linear-gradient(to bottom, var(--background-dark) 128px, white 128px);
+      linear-gradient(to bottom, var(--dark) 128px, white 128px);
   }
 }
 
@@ -24,14 +24,14 @@
   // color: var(--text-dark);
 
   background-image: url("/pixel_separation_team.svg"),
-    linear-gradient(to bottom, white 128px, var(--background-dark) 128px);
+    linear-gradient(to bottom, white 128px, var(--dark) 128px);
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: calc(256px + var(--spacing-content)) !important;
 
   .edition-2020 & {
     background-image: url("/2020/pixel_separation_team.svg"),
-      linear-gradient(to bottom, white 128px, var(--background-dark) 128px);
+      linear-gradient(to bottom, white 128px, var(--dark) 128px);
   }
 }
 

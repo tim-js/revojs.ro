@@ -37,7 +37,10 @@ const Subscribe = props => {
       <input type="hidden" name="u" value="34c79aeaaf8573f6289982fdd" />
       <input type="hidden" name="id" value={listId} />
       <button className="subscribe-button" type="submit">
-        <Arrow className="subscribe-button-arrow" light={props.light}>
+        <Arrow
+          className="subscribe-button-arrow"
+          color={props.light ? "white" : "dark"}
+        >
           Subscribe
         </Arrow>
       </button>

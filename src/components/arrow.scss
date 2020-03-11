@@ -13,7 +13,7 @@
   height: 2px;
   transition: all 0.2s;
   transform: translateX(-16px);
-  background: var(--background-dark);
+  background: var(--color);
 }
 .arrow-animated-inner::after,
 .arrow-animated-inner::before {
@@ -25,12 +25,7 @@
   height: 2px;
   top: 0;
   right: -1px;
-  background: var(--background-dark);
-}
-.arrow-animated-inner--light::after,
-.arrow-animated-inner--light::before,
-.arrow-animated-inner--light {
-  background: white;
+  background: var(--color);
 }
 .arrow-animated-inner::before {
   transform-origin: bottom right;

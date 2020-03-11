@@ -16,9 +16,12 @@ export default () => {
       <Section light>
         <Content centered>
           <div style={{ textAlign: "center" }}>
-            <p>No idea if this page was here before, but apparently it doesn't exist anymore.</p>
+            <p>
+              No idea if this page was here before, but apparently it doesn't
+              exist anymore.
+            </p>
             <Link to="/">
-              <Button white>Got to Homepage</Button>
+              <Button white>Go to Homepage</Button>
             </Link>
             <br />
             <br />

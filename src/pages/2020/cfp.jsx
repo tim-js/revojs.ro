@@ -115,11 +115,11 @@ export default () => {
             <ul className="bullet">
               <li>Crazy ideas &amp; out-of-the-box approaches;</li>
               <li>Re-thinking best practices;</li>
-              <li>Language fundamentals;</li>
-              <li>Hot topics;</li>
+              {/* <li>Language fundamentals;</li> */}
+              {/* <li>Hot topics;</li> */}
               <li>Tips and tricks for daily use;</li>
               <li>Tools &amp; solutions for a better developer experience;</li>
-              <li>Mobile, Desktop and IoT;</li>
+              {/* <li>Mobile, Desktop and IoT;</li> */}
               {/* <li>The human side of software development</li> */}
               <li>Any other topic that makes your heart beat faster.</li>
             </ul>
@@ -133,7 +133,7 @@ export default () => {
               <strong>English. Inglese. Engelsk. Angleško. Angolul.</strong>
               <br />
               But we’d love for you to teach us some words in your native
-              languag too.
+              language too.
             </p>
 
             <h3>Duration</h3>
@@ -161,9 +161,12 @@ export default () => {
               or narrow the subjects you want to cover.
             </p>
             <p>
-              Ask yourself "What should the attendees walk away with after the
-              talk?". Uncovering the takeaways will help you discover what your
-              talk is really about.
+              Ask yourself "
+              <strong>
+                What should the attendees walk away with after the talk?
+              </strong>
+              ". Uncovering the takeaways will help you discover what your talk
+              is really about.
             </p>
 
             <h3>Delivery</h3>
@@ -201,7 +204,7 @@ export default () => {
               the way with:
             </p>
             <ul className="bullet">
-              <li>Brainstorming ideas;</li>
+              {/* <li>Brainstorming ideas;</li> */}
               <li>Proposal submission;</li>
               <li>Slides or live code preparation;</li>
               <li>Talk delivery on stage.</li>
@@ -211,12 +214,10 @@ export default () => {
               <strong>We’re here to help you nail the revo.js talk!</strong>
               <br />
               Don’t be shy, get in touch:{" "}
-              <a
-                href="mailto:info@revojs.ro?subject=[help cfp]"
-                className="mono"
-              >
-                <strong>info@revojs.ro</strong>
+              <a href="mailto:info@revojs.ro?subject=[help cfp]">
+                <span>info@revojs.ro</span>
               </a>
+              <br />
               <br />
               <i className="accent">
                 (Please don’t use this email to submit your proposal).
@@ -252,7 +253,7 @@ export default () => {
               </li>
               <li>
                 Take you out at a <strong>speakers’ dinner</strong> Wednesday
-                evening.
+                evening, before the conference.
               </li>
             </ul>
 
@@ -260,8 +261,11 @@ export default () => {
             <p>
               If your employer wants to cover your travel and/or accommodation
               expenses, we’d be happy to list them as partners. The money saved
-              will be invested into the general running of the conference and
-              scholarships for attendees from underrepresented groups.
+              will be invested into the general running of the conference and{" "}
+              <Link to="/2020/scholarships">
+                <strong>scholarships</strong>
+              </Link>{" "}
+              for attendees from underrepresented groups.
             </p>
           </section>
 
@@ -269,11 +273,18 @@ export default () => {
             <h2>Video recordings</h2>
 
             <p>
-              We would like to record all talks and publish them online for
-              free, along with a recording of the slide deck, live demo, and any
-              on-presenter-screen activity. We want to do this for the benefit
-              of the larger JS community and those who can’t make it to the
-              conference.
+              We would like to record all talks and{" "}
+              <OutboundLink
+                href="https://www.youtube.com/playlist?list=PL701JjUqw62nHoRho4RJ3KJSLCRG08r1Z"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                publish them online
+              </OutboundLink>{" "}
+              for free, along with a recording of the slide deck, live demo, and
+              any on-presenter-screen activity. We want to do this for the
+              benefit of the larger JS community and those who can’t make it to
+              the conference.
             </p>
 
             <p>

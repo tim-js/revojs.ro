@@ -7,7 +7,7 @@ html {
   -webkit-font-smoothing: antialiased;
   backface-visibility: hidden;
 
-  background-color: var(--background-dark);
+  background-color: var(--dark);
   color: #ffffff;
 }
 
@@ -62,7 +62,7 @@ h3,
   color: var(--text-light);
 }
 .dark {
-  color: var(--background-dark);
+  color: var(--dark);
 }
 .white {
   color: #ffffff;
@@ -103,6 +103,13 @@ h2 {
     font-size: 4rem;
     margin-top: var(--space-10);
     margin-bottom: var(--space-4);
+  }
+
+  &.big {
+    font-size: 4rem;
+    @include breakpoint(md) {
+      font-size: 6rem;
+    }
   }
 }
 

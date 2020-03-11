@@ -40,20 +40,38 @@ export default props => {
     <Layout location={props.location} className="index-graphics">
       <Header className="header-index">
         <h1 className="index-logo">
-          <img src={logo} alt="revo.js" height="80" />
+          <img src={logo} alt="revo.js" height="70" />
         </h1>
 
-        <div className="index-tagline-2020">
-          <span className="highlight">revo</span>lve
+        <div className="index-tagline">
+          <div>
+            <span className="flip flip1">r</span>
+          </div>
+          <div>
+            <span className="flip flip2">e</span>
+          </div>
+          <div>
+            <span className="flip flip3">v</span>
+          </div>
+          <div>
+            <span className="flip flip4">o</span>
+          </div>
+          <div>
+            <span className="flip flip5">l</span>
+          </div>
+          <div>
+            <span className="flip flip6">v</span>
+          </div>
+          <div>
+            <span className="flip flip7">e</span>
+          </div>
         </div>
 
-        <div className="index-header-content">
-          <div className="date-location">
-            <time className="index-date mono" dateTime="2020-10-08">
-              <strong>October.8-9.2020</strong>
-            </time>
-            <strong className="index-location mono">Timisoara/RO</strong>
-          </div>
+        <div className="date-location">
+          <time className="index-date mono" dateTime="2020-10-08">
+            <strong>October.8-9.2020</strong>
+          </time>
+          <strong className="index-location mono">Timisoara/RO</strong>
         </div>
 
         <div className="index-cta">
@@ -77,7 +95,7 @@ export default props => {
 
       <Section id="subscribe-form" centered>
         <br />
-        <h2 className="index-title">Stay up to date!</h2>
+        <h2 className="big">Stay up to date!</h2>
         <p className="light-faded">
           News, updates and latest happenings? Stay in the revo.loop
         </p>

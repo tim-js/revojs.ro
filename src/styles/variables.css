@@ -1,5 +1,6 @@
 :root {
-  --background-dark: #15161a;
+  --dark: #15161a;
+  --white: #ffffff;
   --lightgrey: #dadce1;
   --text-dark: #30343a;
   --text-light: #979da7;
@@ -7,6 +8,7 @@
   --primary: #f45919;
 
   /* 2020 edition */
+  --accent100: #806eff;
   --accent: #7549eb;
   --accent80: #8e4cc1;
   --accent60: #a84f97;
@@ -25,6 +27,6 @@
   --space-10: calc(var(--space-1) * 10); /* 80 */
   --space-16: calc(var(--space-1) * 16); /* 128 */
 
-  --menu-height: 120px;
+  --menu-height: 100px;
   --menu-height-scrolled: 60px;
 }

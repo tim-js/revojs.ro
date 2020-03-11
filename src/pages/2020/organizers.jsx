@@ -81,9 +81,7 @@ const Organizers = ({ data }) => {
 
       <Section centered dark>
         <section>
-          <h2>
-            <span style={{ fontSize: "2em" }}>Core Team</span>
-          </h2>
+          <h2 className="big">Core Team</h2>
           <p className="light-faded">
             This event takes place only because the following humans got
             involved:

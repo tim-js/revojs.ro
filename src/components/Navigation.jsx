@@ -100,17 +100,25 @@ function Logo({ edition, currentEdition }) {
             className="white navigation-to-current-edition"
           />
 
-          {/* <Arrow className="navigation-to-current-edition" light={true}>
+          {/* <Arrow className="navigation-to-current-edition" color="white">
             View edition {currentEdition}
           </Arrow> */}
         </Link>
-        <img
-          src={symbol}
-          alt="revo.js"
-          height="40"
-          className="navigation-logo"
-        />
-        <span className="navigation-edition">{edition}</span>
+        <div className="navigation-to-edition-homepage-wrapper">
+          <Link
+            to={`/${edition}`}
+            title={`Go to ${edition} edition`}
+            className="navigation-to-edition-homepage"
+          >
+            <img
+              src={symbol}
+              alt="revo.js"
+              height="40"
+              className="navigation-logo"
+            />
+            <span className="navigation-edition">{edition}</span>
+          </Link>
+        </div>
       </div>
     );
   }

@@ -41,18 +41,25 @@
     animation-fill-mode: both;
   }
 
-  &::after {
-    content: "";
-    background-image: url("/arrow.svg");
-    background-repeat: no-repeat;
-    width: 21px;
-    height: 16px;
-    display: block;
+  .arrow {
     position: absolute;
-    right: 0;
-    top: -31px;
-    transition: all 0.3s;
+    right: -16px;
+    top: -25px;
+    pointer-events: none;
   }
+
+  // &::after {
+  //   content: "";
+  //   background-image: url("/arrow.svg");
+  //   background-repeat: no-repeat;
+  //   width: 21px;
+  //   height: 16px;
+  //   display: block;
+  //   position: absolute;
+  //   right: 0;
+  //   top: -31px;
+  //   transition: all 0.3s;
+  // }
 
   &:hover {
     text-decoration: none;
@@ -63,12 +70,12 @@
       animation-fill-mode: both;
     }
 
-    &::after {
-      right: -10px;
-    }
+    // &::after {
+    //   right: -10px;
+    // }
 
     .update-title {
-      transform: translateY(-3em);
+      transform: translateY(-3.25em);
       color: var(--primary);
     }
     .update-content {

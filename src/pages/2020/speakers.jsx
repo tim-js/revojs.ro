@@ -141,7 +141,7 @@ export default props => {
               node {
                 base
                 image: childImageSharp {
-                  fluid(maxWidth: 600, maxHeight: 600, grayscale: true) {
+                  fluid(maxWidth: 600, maxHeight: 600, grayscale: false) {
                     ...GatsbyImageSharpFluid
                   }
                 }
