@@ -179,6 +179,26 @@ export default () => {
             </Link>
           </section>
 
+          <section id="refund">
+            <h2>Refund Policy</h2>
+
+            <p>
+              Purchased tickets are not refundable, with the following
+              exceptions:
+            </p>
+            <ul>
+              <li>
+                <strong>If the event gets cancelled</strong> due to unfortunate
+                circumtances, you will get full refund;
+              </li>
+              <li>
+                <strong>If the event gets re-scheduled</strong>, you will have
+                the option to get full refund or participate to the re-scheduled
+                event;
+              </li>
+            </ul>
+          </section>
+
           <div style={{ paddingTop: "96px" }} id="subscribe">
             <p>
               Subscribe to find out when Early Bird tickets become available:
