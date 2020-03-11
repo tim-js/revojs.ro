@@ -77,5 +77,10 @@ export const sponsors = [
     name: "Plentymarkets",
     image: "sponsors/plentymarkets_logo.svg",
     url: "https://www.plentymarkets.co.uk/"
+  },
+  {
+    name: "Cobalt Sign",
+    image: "sponsors/cobalt-sign_logo.svg",
+    url: "https://www.cobaltsign.com/"
   }
 ];
