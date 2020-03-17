@@ -82,5 +82,10 @@ export const sponsors = [
     name: "Cobalt Sign",
     image: "sponsors/cobalt-sign_logo.svg",
     url: "https://www.cobaltsign.com/"
+  },
+  {
+    name: "Interact",
+    image: "sponsors/interact_logo.svg",
+    url: "https://www.inter-act.ro/"
   }
 ];
