@@ -136,8 +136,8 @@ export default () => {
             </p>
           </section>
 
-          <br />
-          <br />
+          {/* <br />
+          <br /> */}
           {/* <PurchaseTicket white /> */}
 
           <section>
@@ -157,7 +157,7 @@ export default () => {
             <p>We’ll be prompt to answer!</p>
           </section>
 
-          <section id="diversity-scholarship">
+          <section id="scholarships">
             <h2>Diversity Scholarship Tickets</h2>
 
             <p>
@@ -188,23 +188,26 @@ export default () => {
             </p>
             <ul>
               <li>
-                <strong>If the event gets cancelled</strong> due to unfortunate
-                circumtances, you will get full refund;
+                <strong>In case the event gets cancelled</strong> due to
+                unforeseeable circumstances, you will get a full refund;
+                <br />
+                <br />
               </li>
               <li>
-                <strong>If the event gets re-scheduled</strong>, you will have
-                the option to get full refund or participate to the re-scheduled
-                event;
+                <strong>In case the event needs to be rescheduled</strong>, you
+                will have the option to either get a full refund or use your
+                ticket to participate at the rescheduled event.
               </li>
             </ul>
           </section>
 
-          <div style={{ paddingTop: "96px" }} id="subscribe">
+          <section id="subscribe">
+            <h2>Stay up to date</h2>
             <p>
               Subscribe to find out when Early Bird tickets become available:
             </p>
             <Subscribe light />
-          </div>
+          </section>
 
           <br />
           <br />
