@@ -13,20 +13,23 @@ import Text from "@components/Text";
 
 import "./tickets.scss";
 
-const START = "March 23rd";
-// const END = "April 23rd";
+const START = "May 1st";
+// const END = "May 31st";
 
 export default () => {
   return (
     <Layout title="revo.js Tickets">
       <Header centered type="secondary">
+        <br />
+        <br />
+        <br />
         <h1>Diversity Scholarships</h1>
 
         <div className="subtitle2020">
           Diversity Scholarship Applications <br />
-          will start on{" "}
+          will start on <del>March 23rd</del>{" "}
           <Text bold color="white">
-            {START}
+            <ins>{START}</ins>
           </Text>
         </div>
         <br />

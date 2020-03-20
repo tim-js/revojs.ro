@@ -29,10 +29,9 @@ export default () => {
         <Title2020>tickets</Title2020>
 
         <p className="subtitle2020">
-          Early Bird Tickets will wake up on{" "}
-          <span style={{ textDecoration: "line-through" }}>March 23rd</span>{" "}
+          Early Bird Tickets will wake up on <del>March 23rd</del>{" "}
           <Text bold color="white">
-            {EARLY_START}.
+            <ins>{EARLY_START}</ins>.
           </Text>
         </p>
         <br />
