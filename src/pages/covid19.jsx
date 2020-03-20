@@ -20,12 +20,12 @@ export default () => {
           <Note>
             <p>
               We are constantly monitoring the evolution of the COVID-19
-              pandemic in Romania and worldwide. We’re also constantly in
+              pandemic in Romania and worldwide. We are also constantly in
               contact with other conference organizers.
             </p>
             <p>
               Undoubtedly, the coronavirus spread will have rippling effects on
-              lots of events, but we hope the pandemic will be contained soon.
+              a lot of events, but we hope the pandemic will be contained soon.
             </p>
           </Note>
 
@@ -33,8 +33,13 @@ export default () => {
             <h2>Our plan</h2>
             <h3>As of today, March 23rd 2020</h3>
             <p>
-              <Text bold>We plan to continue preparations</Text> and hold
-              revo.js at the original scheduled date, on 8-9 October, 2020.
+              <Text bold>
+                The preparations for revo.js will continue according to our
+                initial plan.
+              </Text>
+              <br />
+              The conference will take place at the originally scheduled date,
+              on 8-9 October 2020.
             </p>
 
             <ul className="bullet">
@@ -48,44 +53,43 @@ export default () => {
                 <Link to={`/2020/tickets`}>
                   <strong>Early Bird tickets will be slightly postponed</strong>
                 </Link>{" "}
-                till the beginning of May.
+                until the beginning of May.
               </li>
             </ul>
 
             <p>
               Even though October seems far enough to be considered a safe
-              month, we must also be cautious and think of all possible
-              scenarios. In case the current crisis won’t be resolved until
-              mid-summer we might have to cancel revo.js 2020 and move it to
-              2021.
+              month, we must be cautious and think of all possible scenarios. In
+              case the current crisis won’t be resolved until mid-summer, we
+              might have to cancel revo.js 2020 and prepare for next year's
+              edition.
             </p>
 
             <p>
               <Text bold>IMPORTANT:</Text> In case we'll have to cancel this
-              year's event, you’ll receive a refund for your ticket or you’ll be
-              able to use it at the new scheduled date of the event.
+              year's event, you’ll either receive a full refund for your ticket
+              or you’ll be able to use that ticket next year.
             </p>
           </section>
 
           <section>
-            <h2>How you can plan</h2>
+            <h2>Plan accordingly</h2>
             <p>
-              We advise you to think ahead and act accordingly. Since flights
-              are currently seriously restricted and affected, we encourage you
-              to:
+              We advise you to take precautionary measures when it comes to
+              travel and accommodation:
             </p>
             <ul className="bullet">
               <li>
-                buy your travel ticket to Timisoara with just a month or a month
-                and a half in advance;
+                book your travel ticket to Timisoara no sooner than a month or a
+                month and a half in advance;
               </li>
               <li>
-                buy tickets that can be rescheduled or refunded in case the
-                crisis escalates;
+                buy travel tickets that can be refunded or that allow you to
+                reschedule your trip, in case the crisis escalates;
               </li>
               <li>
-                ensure your hotel bookings can also be rescheduled or have
-                flexible dates.
+                make sure your hotel booking can also be refunded should you
+                need to cancel it.
               </li>
             </ul>
           </section>
@@ -93,9 +97,9 @@ export default () => {
           <section>
             <h2>We’re in this together</h2>
             <p>
-              Hold on with us. We’ll keep you updated every step of the way with
-              any decisions we make. You, our speakers, our sponsors and our
-              volunteers are on high priority.
+              We’ll keep you updated every step of the way with any decisions we
+              make. You, our speakers and our sponsors are a top priority for
+              us.
             </p>
           </section>
         </Content>
