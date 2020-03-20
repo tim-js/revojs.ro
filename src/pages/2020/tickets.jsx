@@ -15,12 +15,12 @@ import Text from "@components/Text";
 
 import "./tickets.scss";
 
-const EARLY_START = "March 23rd";
-const EARLY_END = "May 4th";
-// const REGULAR_START = "May 5th";
-const REGULAR_END = "August 24th";
-// const LATE_START = "August 25th";
-const LATE_END = "September 21st";
+const EARLY_START = "May 1st";
+const EARLY_END = "May 31st";
+const REGULAR_START = "June 1st";
+const REGULAR_END = "Aug. 24th";
+const LATE_START = "Aug. 25th";
+const LATE_END = "Sep. 21st";
 
 export default () => {
   return (
@@ -30,6 +30,7 @@ export default () => {
 
         <p className="subtitle2020">
           Early Bird Tickets will wake up on{" "}
+          <span style={{ textDecoration: "line-through" }}>March 23rd</span>{" "}
           <Text bold color="white">
             {EARLY_START}.
           </Text>
