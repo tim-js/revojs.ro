@@ -55,6 +55,14 @@ export default () => {
                 </Link>{" "}
                 until the beginning of May.
               </li>
+              <li>
+                <Link to={`/2020/scholarships`}>
+                  <strong>
+                    Diversity Scholarship applications will be postponed
+                  </strong>
+                </Link>{" "}
+                as well, until the beginning of May.
+              </li>
             </ul>
 
             <p>
