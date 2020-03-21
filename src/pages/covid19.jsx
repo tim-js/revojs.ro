@@ -68,7 +68,7 @@ export default () => {
             <p>
               <Text bold>IMPORTANT:</Text> In case we'll have to cancel this
               year's event, you’ll either receive a full refund for your ticket
-              or you’ll be able to use that ticket next year.
+              or you’ll be able to use your ticket for next year's edition.
             </p>
           </section>
 
@@ -80,16 +80,16 @@ export default () => {
             </p>
             <ul className="bullet">
               <li>
-                book your travel ticket to Timisoara no sooner than a month or a
-                month and a half in advance;
+                book your travel ticket to Timisoara no sooner than a month or
+                two in advance;
               </li>
               <li>
                 buy travel tickets that can be refunded or that allow you to
                 reschedule your trip, in case the crisis escalates;
               </li>
               <li>
-                make sure your hotel booking can also be refunded should you
-                need to cancel it.
+                make sure your accommodation booking can also be refunded should
+                you need to cancel it.
               </li>
             </ul>
           </section>
