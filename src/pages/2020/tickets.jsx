@@ -59,24 +59,37 @@ export default () => {
             <h2>Rollout plan</h2>
 
             <p>Tickets will be available according to the following plan:</p>
-            <ul className="bullet">
-              <li>
-                <strong>Early Bird Tickets</strong>: until {EARLY_END}{" "}
-                <span className="light-faded">22:00 UTC</span>{" "}
-                <strong className="highlight">(COMING SOON)</strong>
+            <ul className="tickets-rollout-2020">
+              <li className="tickets-rollout-2020--early">
+                <span className="ticket-price">&euro;130</span>
+                <div className="ticket-content">
+                  <strong className="ticket-name">Early Bird Tickets</strong>
+                  {EARLY_START} - {EARLY_END}{" "}
+                </div>
+                <strong className="ticket-note">COMING SOON</strong>
               </li>
-              <li>
-                <strong>Regular Tickets</strong>: until {REGULAR_END}{" "}
-                <span className="light-faded">22:00 UTC</span>{" "}
+
+              <li className="tickets-rollout-2020--regular">
+                <span className="ticket-price">&euro;170</span>
+                <div className="ticket-content">
+                  <strong className="ticket-name">Regular Tickets</strong>
+                  {REGULAR_START} - {REGULAR_END}{" "}
+                </div>
+                <strong className="ticket-note"></strong>
               </li>
-              <li>
-                <strong>Late Bird Tickets</strong>: until {LATE_END}{" "}
-                <span className="light-faded">22:00 UTC</span>{" "}
+
+              <li className="tickets-rollout-2020--late">
+                <span className="ticket-price">&euro;210</span>
+                <div className="ticket-content">
+                  <strong className="ticket-name">Late Bird Tickets</strong>
+                  {LATE_START} - {LATE_END}{" "}
+                </div>
+                <strong className="ticket-note"></strong>
               </li>
-              <li>
+              {/* <li>
                 <strong>Workshops Tickets</strong>: until {LATE_END}{" "}
-                <span className="light-faded">22:00 UTC</span>{" "}
-              </li>
+                <span className="light-faded">13:00 UTC</span>{" "}
+              </li> */}
             </ul>
           </section>
 
@@ -114,7 +127,11 @@ export default () => {
 
           <section>
             <h2>Workshops tickets</h2>
-            <p>Workshops tickets are sold separately and they include:</p>
+            <p className="accent">
+              Details about the workshops will be available soon. Stay tuned!
+            </p>
+
+            {/* <p>Workshops tickets are sold separately and they include:</p>
             <ul className="bullet">
               <li>
                 <strong>Coffee and beverages</strong>;
@@ -133,7 +150,7 @@ export default () => {
                 You have to also purchase a conference ticket if you want to
                 attend both events.
               </span>
-            </p>
+            </p> */}
           </section>
 
           {/* <br />
