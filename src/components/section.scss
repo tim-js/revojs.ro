@@ -2,6 +2,14 @@
 
 .section {
   padding: var(--spacing-content);
+
+  a:link,
+  a:visited {
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .section--light {
