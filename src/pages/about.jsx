@@ -328,14 +328,27 @@ export default () => {
                 whether it's:
               </p>
               <ul>
-                <li>a fundamental language feature; </li>
-                <li>a new standard API; </li>
-                <li>how a particular concept works; </li>
-                <li>a new library that you've worked on;</li>
-                <li>valuable tips &amp; tricks;</li>
-                <li>actionable pieces of advice;</li>
                 <li>
-                  something we can apply to our projects the very next day.
+                  a <strong>fundamental</strong> language feature;{" "}
+                </li>
+                <li>
+                  a <strong>new standard</strong> API;{" "}
+                </li>
+                <li>
+                  how a particular <strong>concept works</strong>;{" "}
+                </li>
+                <li>
+                  a <strong>new library</strong> that you've worked on;
+                </li>
+                <li>
+                  valuable <strong>tips &amp; tricks</strong>;
+                </li>
+                <li>
+                  <strong>actionable</strong> pieces of advice;
+                </li>
+                <li>
+                  something we can apply to our projects the{" "}
+                  <strong>very next day</strong>.
                 </li>
               </ul>
             </section>
@@ -348,14 +361,17 @@ export default () => {
               </p>
               <ul>
                 <li>
-                  getting a new perspective or a mind shift that we never
-                  considered before;
+                  getting a <strong>new perspective or a mind shift</strong>{" "}
+                  that we never considered before;
                 </li>
                 <li>
-                  finding out about out-of-the-box applications using everyday
-                  tools;
+                  finding out about <strong>out-of-the-box applications</strong>{" "}
+                  using everyday tools;
                 </li>
-                <li>witnessing creative usage of web technologies.</li>
+                <li>
+                  witnessing <strong>creative usage</strong> of web
+                  technologies.
+                </li>
               </ul>
             </section>
             <section>
@@ -374,11 +390,21 @@ export default () => {
               stage vary from:
             </p>
             <ul>
-              <li>people with vast experience in certain areas;</li>
-              <li>developers passionate about specific topics; </li>
-              <li>open source maintainers; </li>
-              <li>advocates for various technologies and tools;</li>{" "}
-              <li>technical speakers with a sense of humor.</li>
+              <li>
+                people with <strong>vast experience</strong> in certain areas;
+              </li>
+              <li>
+                developers <strong>passionate</strong> about specific topics;{" "}
+              </li>
+              <li>
+                open source <strong>maintainers</strong>;{" "}
+              </li>
+              <li>
+                <strong>advocates</strong> for various technologies and tools;
+              </li>{" "}
+              <li>
+                technical speakers with a <strong>sense of humor</strong>.
+              </li>
             </ul>
 
             <hr />
@@ -394,7 +420,7 @@ export default () => {
               and even speakers who have recorded themselves at home in order to
               show us their delivery skills.
             </p>
-            <p>We looked for speakers that are:</p>
+            <p>We are looking for speakers that are:</p>
             <ul>
               <li>comfortable in front of a crowd;</li>
               <li>coherent;</li>
@@ -477,11 +503,10 @@ export default () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  the 1989 Romanian Revolution started
+                  the 1989 Romanian Revolution
                 </a>{" "}
                 started. It's something that we're proud of and makes us
-                identify ourselves with the concept of{" "}
-                <strong>changing something bad into something good</strong>.
+                identify ourselves with <strong>change</strong>.
               </p>
             </section>
 
