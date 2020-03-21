@@ -9,7 +9,7 @@
   display: grid;
   grid-gap: var(--space-8);
   grid-template-columns: minmax(1fr, 300px);
-  // max-width: 800px;
+  max-width: 1000px;
 
   @include breakpoint(sm) {
     // grid-gap: var(--spacing-content);

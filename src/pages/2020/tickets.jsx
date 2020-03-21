@@ -63,6 +63,7 @@ export default () => {
               However, please keep in mind that minor changes might occur due to
               events beyond our control:
             </p>
+
             <ul className="tickets-rollout-2020">
               <li className="tickets-rollout-2020--early">
                 <span className="ticket-price">&euro;130</span>
