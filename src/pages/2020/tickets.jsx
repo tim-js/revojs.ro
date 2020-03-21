@@ -58,13 +58,18 @@ export default () => {
           <section>
             <h2>Rollout plan</h2>
 
-            <p>Tickets will be available according to the following plan:</p>
+            <p>
+              Tickets will be available according to the following plan.
+              However, please keep in mind that minor changes might occur due to
+              events beyond our control:
+            </p>
             <ul className="tickets-rollout-2020">
               <li className="tickets-rollout-2020--early">
                 <span className="ticket-price">&euro;130</span>
                 <div className="ticket-content">
                   <strong className="ticket-name">Early Bird Tickets</strong>
                   {EARLY_START} - {EARLY_END}{" "}
+                  <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
                 <strong className="ticket-note">COMING SOON</strong>
               </li>
@@ -74,6 +79,7 @@ export default () => {
                 <div className="ticket-content">
                   <strong className="ticket-name">Regular Tickets</strong>
                   {REGULAR_START} - {REGULAR_END}{" "}
+                  <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
                 <strong className="ticket-note"></strong>
               </li>
@@ -83,6 +89,7 @@ export default () => {
                 <div className="ticket-content">
                   <strong className="ticket-name">Late Bird Tickets</strong>
                   {LATE_START} - {LATE_END}{" "}
+                  <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
                 <strong className="ticket-note"></strong>
               </li>
