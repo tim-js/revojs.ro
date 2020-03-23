@@ -15,12 +15,12 @@ import Text from "@components/Text";
 
 import "./tickets.scss";
 
-const EARLY_START = "March 23rd";
-const EARLY_END = "May 4th";
-// const REGULAR_START = "May 5th";
-const REGULAR_END = "August 24th";
-// const LATE_START = "August 25th";
-const LATE_END = "September 21st";
+const EARLY_START = "May 1st";
+const EARLY_END = "May 31st";
+const REGULAR_START = "June 1st";
+const REGULAR_END = "Aug. 24th";
+const LATE_START = "Aug. 25th";
+const LATE_END = "Sep. 21st";
 
 export default () => {
   return (
@@ -29,9 +29,9 @@ export default () => {
         <Title2020>tickets</Title2020>
 
         <p className="subtitle2020">
-          Early Bird Tickets will wake up on{" "}
+          Early Bird Tickets will wake up on <del>March 23rd</del>{" "}
           <Text bold color="white">
-            {EARLY_START}.
+            <ins>{EARLY_START}</ins>.
           </Text>
         </p>
         <br />
@@ -58,25 +58,46 @@ export default () => {
           <section>
             <h2>Rollout plan</h2>
 
-            <p>Tickets will be available according to the following plan:</p>
-            <ul className="bullet">
-              <li>
-                <strong>Early Bird Tickets</strong>: until {EARLY_END}{" "}
-                <span className="light-faded">22:00 UTC</span>{" "}
-                <strong className="highlight">(COMING SOON)</strong>
+            <p>
+              Tickets will be available according to the following plan.
+              However, please keep in mind that minor changes might occur due to
+              events beyond our control:
+            </p>
+
+            <ul className="tickets-rollout-2020">
+              <li className="tickets-rollout-2020--early">
+                <span className="ticket-price">&euro;130</span>
+                <div className="ticket-content">
+                  <strong className="ticket-name">Early Bird Tickets</strong>
+                  {EARLY_START} - {EARLY_END}{" "}
+                  <span className="light-faded">(21:00 UTC)</span>{" "}
+                </div>
+                <strong className="ticket-note">COMING SOON</strong>
               </li>
-              <li>
-                <strong>Regular Tickets</strong>: until {REGULAR_END}{" "}
-                <span className="light-faded">22:00 UTC</span>{" "}
+
+              <li className="tickets-rollout-2020--regular">
+                <span className="ticket-price">&euro;170</span>
+                <div className="ticket-content">
+                  <strong className="ticket-name">Regular Tickets</strong>
+                  {REGULAR_START} - {REGULAR_END}{" "}
+                  <span className="light-faded">(21:00 UTC)</span>{" "}
+                </div>
+                <strong className="ticket-note"></strong>
               </li>
-              <li>
-                <strong>Late Bird Tickets</strong>: until {LATE_END}{" "}
-                <span className="light-faded">22:00 UTC</span>{" "}
+
+              <li className="tickets-rollout-2020--late">
+                <span className="ticket-price">&euro;210</span>
+                <div className="ticket-content">
+                  <strong className="ticket-name">Late Bird Tickets</strong>
+                  {LATE_START} - {LATE_END}{" "}
+                  <span className="light-faded">(21:00 UTC)</span>{" "}
+                </div>
+                <strong className="ticket-note"></strong>
               </li>
-              <li>
+              {/* <li>
                 <strong>Workshops Tickets</strong>: until {LATE_END}{" "}
-                <span className="light-faded">22:00 UTC</span>{" "}
-              </li>
+                <span className="light-faded">13:00 UTC</span>{" "}
+              </li> */}
             </ul>
           </section>
 
@@ -114,7 +135,11 @@ export default () => {
 
           <section>
             <h2>Workshops tickets</h2>
-            <p>Workshops tickets are sold separately and they include:</p>
+            <p className="accent">
+              Details about the workshops will be available soon. Stay tuned!
+            </p>
+
+            {/* <p>Workshops tickets are sold separately and they include:</p>
             <ul className="bullet">
               <li>
                 <strong>Coffee and beverages</strong>;
@@ -133,11 +158,11 @@ export default () => {
                 You have to also purchase a conference ticket if you want to
                 attend both events.
               </span>
-            </p>
+            </p> */}
           </section>
 
-          <br />
-          <br />
+          {/* <br />
+          <br /> */}
           {/* <PurchaseTicket white /> */}
 
           <section>
@@ -157,7 +182,7 @@ export default () => {
             <p>We’ll be prompt to answer!</p>
           </section>
 
-          <section id="diversity-scholarship">
+          <section id="scholarships">
             <h2>Diversity Scholarship Tickets</h2>
 
             <p>
@@ -179,12 +204,35 @@ export default () => {
             </Link>
           </section>
 
-          <div style={{ paddingTop: "96px" }} id="subscribe">
+          <section id="refund">
+            <h2>Refund Policy</h2>
+
+            <p>
+              Purchased tickets are not refundable, with the following
+              exceptions:
+            </p>
+            <ul>
+              <li>
+                <strong>In case the event gets cancelled</strong> due to
+                unforeseeable circumstances, you will get a full refund;
+                <br />
+                <br />
+              </li>
+              <li>
+                <strong>In case the event needs to be rescheduled</strong>, you
+                will have the option to either get a full refund or use your
+                ticket to participate at the rescheduled event.
+              </li>
+            </ul>
+          </section>
+
+          <section id="subscribe">
+            <h2>Stay up to date</h2>
             <p>
               Subscribe to find out when Early Bird tickets become available:
             </p>
             <Subscribe light />
-          </div>
+          </section>
 
           <br />
           <br />

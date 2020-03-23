@@ -26,7 +26,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex: none;
+      // flex: 1;
     }
   }
 
@@ -67,7 +67,7 @@
 
     div {
       position: relative;
-      width: 0.75em;
+      width: 0.65em;
       height: 1em;
       display: inline-block;
     }

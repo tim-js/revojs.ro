@@ -5,9 +5,7 @@
   position: relative;
   display: block;
   text-align: left;
-}
-.talk-video-link:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .talk-video-image {

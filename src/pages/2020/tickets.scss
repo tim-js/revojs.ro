@@ -1,111 +1,89 @@
 @import "src/styles/mixins";
 @import "src/styles/fonts";
 
-.tickets-image {
-  @include breakpoint(md) {
-    background: url("/illustration_tickets.svg") no-repeat;
-    background-size: contain;
-    background-position: center center;
-  }
-}
-
-.tickets-important {
-  font-size: 20px;
-}
-
-.tickets-cta {
-  display: inline-block;
-}
-
-.tickets-timeline {
-  --size: 15px;
-  --thickness: 3px;
-  --gap: 0px;
-}
-
-.tag-wrapper {
-  display: flex;
-  white-space: nowrap;
-  font-size: 14px;
-
-  @include breakpoint(sm) {
-    font-size: inherit;
-  }
-}
-.tag-early {
-  justify-self: flex-start;
-  color: white;
-}
-.tag-regular {
-  // justify-self: center;
-  justify-self: flex-start;
-  // text-align: center;
-  color: var(--primary);
-}
-.tag-late {
-  justify-self: flex-end;
-  color: #c61212;
-  // text-align: right;
-}
-
-.tickets-timeline {
-  display: flex;
+.tickets-rollout-2020 {
   list-style-type: none;
-  counter-reset: step;
+  margin-top: 2em;
   padding: 0;
-  margin: 1.5em 0 4em 0;
-  font-size: 12px;
-  color: var(--text-light);
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em 0;
+    flex: 1;
+    font-size: 16px;
+
+    @include breakpoint(sm) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .ticket-price {
+    background-color: var(--color);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 60px;
+    width: 120px;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin-right: 1.5em;
+
+    @include font(mono);
+    @include clip-hex(15px);
+  }
+  .ticket-content {
+    flex: 1;
+    order: 3;
+    margin-top: 1em;
+
+    @include breakpoint(sm) {
+      order: initial;
+      margin-top: 0;
+    }
+  }
+
+  .ticket-name {
+    @include font(mono);
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .ticket-note {
+    @include font(mono);
+    font-size: 24px;
+    align-self: flex-start;
+    line-height: 1;
+    color: var(--color);
+    width: calc(100% - 120px - 2em);
+    margin-top: 10px;
+
+    @include breakpoint(sm) {
+      text-align: right;
+      width: auto;
+      font-size: 36px;
+      margin-top: 0;
+    }
+  }
 }
 
-.tickets-timeline li {
-  flex: 1;
-  text-align: center;
-  position: relative;
+.tickets-rollout-2020--early {
+  --color: var(--accent);
 }
+.tickets-rollout-2020--regular {
+  --color: var(--accent60);
+}
+.tickets-rollout-2020--late {
+  --color: var(--primary);
+}
+.tickets-rollout-2020--inactive {
+  --color: var(--text-light);
 
-.tickets-timeline li::first-letter {
-  color: blue;
-}
-
-.tickets-timeline li:before {
-  margin: 0 auto 1rem auto;
-  counter-increment: step;
-  content: "";
-  width: calc(var(--size) - 2 * var(--thickness));
-  height: calc(var(--size) - 2 * var(--thickness));
-  display: block;
-  border-radius: 50%;
-  border-width: var(--thickness);
-  border-style: solid;
-}
-
-.tickets-timeline li:not(:last-child)::after {
-  content: "";
-  display: block;
-  height: var(--thickness);
-  width: calc(100% - var(--size) - var(--gap) * 2);
-  position: absolute;
-  top: calc((var(--size) - var(--thickness)) / 2);
-  right: calc(-50% + var(--size) / 2 + var(--gap));
-  z-index: -1;
-}
-
-.early::before {
-  border-color: white;
-}
-.early::after {
-  background: white;
-}
-.regular::before {
-  border-color: var(--primary);
-}
-.regular::after {
-  background: var(--primary);
-}
-.late::before {
-  border-color: #c61212;
-}
-.late::after {
-  background: #c61212;
+  .ticket-content {
+    text-decoration: line-through;
+    color: var(--color);
+  }
 }
