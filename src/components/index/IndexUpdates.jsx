@@ -27,11 +27,11 @@ export default () => {
           </Link>
         </li>
         <li>
-          <Link to="/2020/tickets/" className="updates-link">
-            <strong className="update-title mono">Tickets</strong>
+          <Link to="/2020/cfp/" className="updates-link">
+            <strong className="update-title mono">Call for Papers</strong>
             <p className="update-content light-faded">
-              The launch of Early Bird tickets is slightly postponed to May 1st.
-              Stay tuned.
+              Share a talk, spread change, revolve! CFP is opened until June
+              30th.
             </p>
             <div className="arrow">
               <Arrow color="accent" />
@@ -39,11 +39,11 @@ export default () => {
           </Link>
         </li>
         <li>
-          <Link to="/2020/cfp/" className="updates-link">
-            <strong className="update-title mono">Call for Papers</strong>
+          <Link to="/2020/tickets/" className="updates-link">
+            <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              CFP continues as planned and opens on April 1st. We’re not fooling
-              around.
+              The launch of Early Bird tickets is slightly postponed to May 1st.
+              Stay tuned.
             </p>
             <div className="arrow">
               <Arrow color="accent" />

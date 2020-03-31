@@ -8,7 +8,7 @@ import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
 import Note from "@components/Note";
-// import { SubmitCFP } from "@components/CTA";
+import { SubmitCFP } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
 import Title2020 from "@components/Title2020";
 import Text from "@components/Text";
@@ -16,7 +16,7 @@ import Text from "@components/Text";
 import "./cfp.scss";
 
 const CFP_OPEN = "April 1st";
-// const CFP_CLOSE = "June 1st";
+const CFP_CLOSE = "June 30th";
 
 export default () => {
   return (
@@ -38,11 +38,10 @@ export default () => {
         <p className="subtitle2020">
           Share a talk, spread change, revolve!
           <br />
-          CFP opens on{" "}
+          CFP closes on{" "}
           <Text bold color="white">
-            {CFP_OPEN}
-          </Text>{" "}
-          (no joke)
+            {CFP_CLOSE}
+          </Text>
           {/* <span className="highlight">{CFP_CLOSE}.</span>
           <br />
           <span>
@@ -53,20 +52,17 @@ export default () => {
         <br />
         <br />
 
-        <OutboundLink href="#topics">
-          <Button>View our Topics</Button>
-        </OutboundLink>
-
         {/* <a href="#topics">
           <Button>View our Topics</Button>
         </a> */}
 
-        {/* <SubmitCFP /> */}
+        <SubmitCFP />
       </Header>
 
       <Section light>
         <Content centered>
           <Note>
+            {/* 
             <p>
               Do you have a technical presentation that can change minds,
               perspectives, work approaches, or why not, even the mood of JS
@@ -77,13 +73,20 @@ export default () => {
               The <strong>Call for Papers opens</strong> on{" "}
               <strong className="accent">{CFP_OPEN}</strong>.
             </p>
+             */}
 
-            {/* <p>
+            <p>
               This is a call out to all members of the JavaScript community who
               have a memorable talk that can stir up change. Submit your talk
-              proposals until the <strong>17th of June</strong> and hopefully
+              proposals until the <strong>{CFP_CLOSE}</strong> and hopefully
               we’ll meet in October in Timisoara.
-            </p> */}
+            </p>
+
+            <br />
+
+            <p>
+              The selected talks will be announced at the beginning of August
+            </p>
 
             {/* <p>
               We've received <strong>92 proposals</strong>, which is a lot more
@@ -95,15 +98,16 @@ export default () => {
             </p> */}
           </Note>
 
-          {/* <br />
           <br />
-          <SubmitCFP white /> */}
+          <SubmitCFP white />
 
+          {/* 
           <section>
             <h2>Stay up to date!</h2>
             <p>Subscribe to find out when Call for Papers starts:</p>
             <Subscribe light list="cfp" />
           </section>
+          */}
 
           <section id="topics">
             <h2>Topics</h2>
@@ -326,7 +330,7 @@ export default () => {
           <br />
           <br />
 
-          {/* <SubmitCFP white /> */}
+          <SubmitCFP white />
         </Content>
       </Section>
     </Layout>
