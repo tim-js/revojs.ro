@@ -6,16 +6,16 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
-import Button from "@components/Button";
+// import Button from "@components/Button";
 import Note from "@components/Note";
 import { SubmitCFP } from "@components/CTA";
-import Subscribe from "@components/Subscribe";
+// import Subscribe from "@components/Subscribe";
 import Title2020 from "@components/Title2020";
 import Text from "@components/Text";
 
 import "./cfp.scss";
 
-const CFP_OPEN = "April 1st";
+// const CFP_OPEN = "April 1st";
 const CFP_CLOSE = "June 30th";
 
 export default () => {
@@ -85,7 +85,7 @@ export default () => {
             <br />
 
             <p>
-              The selected talks will be announced at the beginning of August
+              The selected talks will be announced at the beginning of August.
             </p>
 
             {/* <p>
