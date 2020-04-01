@@ -26,6 +26,7 @@ export default () => {
             </div>
           </Link>
         </li>
+
         <li>
           <Link to="/2020/cfp/" className="updates-link">
             <strong className="update-title mono">Call for Papers</strong>
@@ -38,6 +39,7 @@ export default () => {
             </div>
           </Link>
         </li>
+
         <li>
           <Link to="/2020/tickets/" className="updates-link">
             <strong className="update-title mono">Tickets</strong>
