@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { replace /*, Link*/ } from "gatsby";
+import { replace, Link } from "gatsby";
 import queryString from "query-string";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
@@ -14,7 +14,7 @@ import Separator2020 from "@components/Separator2020";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
-// import { getEdition } from "@utils";
+import { getEdition } from "@utils";
 import { sponsors } from "@data/2020/supporters";
 
 import logo from "@assets/logo-revojs.svg";
@@ -82,9 +82,12 @@ export default props => {
           {/* <Link to={`/${getEdition()}/agenda`}>
             <Button>View the Agenda</Button>
           </Link> */}
-          <a href="#subscribe-form">
+          {/* <a href="#subscribe-form">
             <Button>Subscribe for Updates</Button>
-          </a>
+          </a> */}
+          <Link to={`/${getEdition()}/cfp`}>
+            <Button>CFP is now open</Button>
+          </Link>
         </div>
         <div className="home-graphics"></div>
       </Header>
