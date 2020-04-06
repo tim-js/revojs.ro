@@ -14,8 +14,22 @@ const DateLink = (props) => {
     setVisible(false);
   };
 
+  const keyPressHandler = (event) => {
+    event.preventDefault();
+    if (event.key === " " || event.key === "Enter") {
+      clickHandler();
+    }
+  };
+
   const output = [
-    <span className="date-link" onClick={clickHandler} key="link">
+    <span
+      className="date-link"
+      role="button"
+      tabIndex="0"
+      onKeyPress={keyPressHandler}
+      onClick={clickHandler}
+      key="link"
+    >
       {props.children}
       <span className="tooltip">
         Add to Calendar
