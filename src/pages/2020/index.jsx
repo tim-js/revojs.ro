@@ -19,14 +19,15 @@ import { sponsors } from "@data/2020/supporters";
 
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
+import DateLink from "@components/DateLink";
 
-export default props => {
+export default (props) => {
   useEffect(() => {
     const search = queryString.parse(props.location.search);
     if (search.fbclid) {
       const clearedSearch = queryString.stringify({
         ...search,
-        fbclid: undefined
+        fbclid: undefined,
       });
       if (clearedSearch.length) {
         replace(props.location.pathname + "?" + clearedSearch);
@@ -69,7 +70,16 @@ export default props => {
 
         <div className="date-location">
           <time className="index-date mono" dateTime="2020-10-08">
-            <strong>October.8-9.2020</strong>
+            <DateLink
+              title="revo.js 2020"
+              details="revolve."
+              location="Timisoara/RO"
+              startDate={new Date("2020-10-08 08:00")}
+              endDate={new Date("2020-10-09 17:00")}
+              isFullDay={true}
+            >
+              <strong>October.8-9.2020</strong>
+            </DateLink>
           </time>
           <strong className="index-location mono">Timisoara/RO</strong>
         </div>
