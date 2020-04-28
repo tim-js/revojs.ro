@@ -1,5 +1,6 @@
 import React from "react";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { Link } from "gatsby";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -13,7 +14,7 @@ import Text from "@components/Text";
 
 import "./tickets.scss";
 
-const START = "May 1st";
+// const START = "May 1st";
 // const END = "May 31st";
 
 export default () => {
@@ -26,18 +27,22 @@ export default () => {
         <h1>Diversity Scholarships</h1>
 
         <div className="subtitle2020">
-          Diversity Scholarship Applications <br />
-          will start on <del>March 23rd</del>{" "}
+          Unfortunately, revo.js 2020 is cancelled due to the current pandemic.
+          <br />
           <Text bold color="white">
-            <ins>{START}</ins>
+            We’ll revolve in 2021.
           </Text>
         </div>
         <br />
         <br />
 
-        <OutboundLink href="#subscribe">
+        <Link to={`/covid19`}>
+          <Button>Learn more</Button>
+        </Link>
+
+        {/* <OutboundLink href="#subscribe">
           <Button>Subscribe for Updates</Button>
-        </OutboundLink>
+        </OutboundLink> */}
 
         {/* <a href="#subscribe">
           <Button>Subscribe for Updates</Button>

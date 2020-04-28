@@ -7,19 +7,19 @@ import queryString from "query-string";
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
-import IndexUpdates from "@components/index/IndexUpdates";
+// import IndexUpdates from "@components/index/IndexUpdates";
 import IndexSpeakers from "@components/index/IndexSpeakers";
 import IndexSponsors from "@components/index/IndexSponsors";
 import Separator2020 from "@components/Separator2020";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
-import { getEdition } from "@utils";
+// import DateLink from "@components/DateLink";
+// import { getEdition } from "@utils";
 import { sponsors } from "@data/2020/supporters";
 
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
-import DateLink from "@components/DateLink";
 
 export default (props) => {
   useEffect(() => {
@@ -69,7 +69,7 @@ export default (props) => {
         </div>
 
         <div className="date-location">
-          <time className="index-date mono" dateTime="2020-10-08">
+          {/* <time className="index-date mono" dateTime="2020-10-08">
             <DateLink
               title="revo.js 2020"
               details="revolve."
@@ -80,8 +80,10 @@ export default (props) => {
             >
               <strong>October.8-9.2020</strong>
             </DateLink>
-          </time>
-          <strong className="index-location mono">Timisoara/RO</strong>
+          </time> */}
+          <strong className="mono highlight">2020 edition is cancelled.</strong>
+          <br />
+          <strong className="mono">We’ll revolve in 2021!</strong>
         </div>
 
         <div className="index-cta">
@@ -95,14 +97,14 @@ export default (props) => {
           {/* <a href="#subscribe-form">
             <Button>Subscribe for Updates</Button>
           </a> */}
-          <Link to={`/${getEdition()}/cfp`}>
-            <Button>CFP is now open</Button>
+          <Link to={`/covid19`}>
+            <Button>Learn more</Button>
           </Link>
         </div>
         <div className="home-graphics"></div>
       </Header>
 
-      <IndexUpdates />
+      {/* <IndexUpdates /> */}
       <Separator2020 />
       <IndexSpeakers />
 

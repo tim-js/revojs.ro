@@ -4,8 +4,8 @@ import { StaticQuery, graphql /*, Link */ } from "gatsby";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import Content from "@components/Content";
-import Section from "@components/Section";
+// import Content from "@components/Content";
+// import Section from "@components/Section";
 import SpeakersListIndex from "@components/SpeakersListIndex";
 import Separator2020 from "@components/Separator2020";
 import Title2020 from "@components/Title2020";
@@ -16,23 +16,23 @@ import { getEdition } from "@utils";
 
 import "./speakers.scss";
 
-const Speakers = props => {
+const Speakers = (props) => {
   const { allSpeakersJson, speakerImages, allTalksJson } = props.data;
   const edition = getEdition();
 
   function getTalk(id) {
-    return allTalksJson.edges.find(t => t.node.id === id);
+    return allTalksJson.edges.find((t) => t.node.id === id);
   }
 
   function getImage(image) {
-    return speakerImages.edges.find(e => image.includes(e.node.base));
+    return speakerImages.edges.find((e) => image.includes(e.node.base));
   }
 
   const speakers = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(speaker => speaker.talkId)
-    .filter(speaker => speaker.edition === edition)
-    .map(speaker => {
+    .map((e) => e.node)
+    .filter((speaker) => speaker.talkId)
+    .filter((speaker) => speaker.edition === edition)
+    .map((speaker) => {
       const { talk, abstract } = getTalk(speaker.talkId) || {};
       const speakerImage = getImage(speaker.image) || {};
 
@@ -40,22 +40,22 @@ const Speakers = props => {
         ...speaker,
         talk,
         abstract,
-        speakerImage
+        speakerImage,
       };
     });
 
-  const mc = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(speaker => !speaker.talkId)
-    .filter(speaker => speaker.edition === edition)
-    .map(speaker => {
-      const speakerImage = getImage(speaker.image);
+  // const mc = allSpeakersJson.edges
+  //   .map(e => e.node)
+  //   .filter(speaker => !speaker.talkId)
+  //   .filter(speaker => speaker.edition === edition)
+  //   .map(speaker => {
+  //     const speakerImage = getImage(speaker.image);
 
-      return {
-        ...speaker,
-        speakerImage
-      };
-    });
+  //     return {
+  //       ...speaker,
+  //       speakerImage
+  //     };
+  //   });
 
   return (
     <Layout title="revo.js Speakers" noFooterSeparation>
@@ -76,7 +76,7 @@ const Speakers = props => {
       <br />
       <Separator2020 />
 
-      <Section style={{ paddingTop: 0 }}>
+      {/* <Section style={{ paddingTop: 0 }}>
         <Content centered style={{ textAlign: "center" }}>
           <h2>revo.js 2020 will be hosted by:</h2>
         </Content>
@@ -86,7 +86,7 @@ const Speakers = props => {
       <br />
       <br />
       <br />
-      <br />
+      <br /> */}
 
       {/* <Section light>
         <Content centered style={{ textAlign: "center" }}>
@@ -102,7 +102,7 @@ const Speakers = props => {
   );
 };
 
-export default props => {
+export default (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -150,7 +150,7 @@ export default props => {
           }
         }
       `}
-      render={data => <Speakers data={data} {...props} />}
+      render={(data) => <Speakers data={data} {...props} />}
     />
   );
 };

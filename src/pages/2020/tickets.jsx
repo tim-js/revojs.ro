@@ -1,5 +1,5 @@
 import React from "react";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { Link } from "gatsby";
 
 import Layout from "@components/Layout";
@@ -15,12 +15,12 @@ import Text from "@components/Text";
 
 import "./tickets.scss";
 
-const EARLY_START = "May 1st";
-const EARLY_END = "May 31st";
-const REGULAR_START = "June 1st";
-const REGULAR_END = "Aug. 24th";
-const LATE_START = "Aug. 25th";
-const LATE_END = "Sep. 21st";
+// const EARLY_START = "May 1st";
+// const EARLY_END = "May 31st";
+// const REGULAR_START = "June 1st";
+// const REGULAR_END = "Aug. 24th";
+// const LATE_START = "Aug. 25th";
+// const LATE_END = "Sep. 21st";
 
 export default () => {
   return (
@@ -29,17 +29,22 @@ export default () => {
         <Title2020>tickets</Title2020>
 
         <p className="subtitle2020">
-          Early Bird Tickets will wake up on <del>March 23rd</del>{" "}
+          We’re taking a step back from 2020. Thank you for your support.
+          <br />
           <Text bold color="white">
-            <ins>{EARLY_START}</ins>.
+            Let’s revolve in 2021.
           </Text>
         </p>
         <br />
         <br />
 
-        <OutboundLink href="#subscribe">
+        <Link to={`/covid19`}>
+          <Button>Learn more</Button>
+        </Link>
+
+        {/* <OutboundLink href="#subscribe">
           <Button>Subscribe for Updates</Button>
-        </OutboundLink>
+        </OutboundLink> */}
 
         {/* <a href="#subscribe">
           <Button>Subscribe for Updates</Button>
@@ -55,7 +60,7 @@ export default () => {
             </p>
           </Note> */}
 
-          <section>
+          {/* <section>
             <h2>Rollout plan</h2>
 
             <p>
@@ -94,12 +99,12 @@ export default () => {
                 </div>
                 <strong className="ticket-note"></strong>
               </li>
-              {/* <li>
+              <li>
                 <strong>Workshops Tickets</strong>: until {LATE_END}{" "}
                 <span className="light-faded">13:00 UTC</span>{" "}
-              </li> */}
+              </li>
             </ul>
-          </section>
+          </section> */}
 
           <section>
             <h2>All conference tickets include</h2>
