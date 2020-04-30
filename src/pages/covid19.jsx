@@ -56,7 +56,7 @@ export default () => {
                 <p>
                   We’re flexible and adaptable, but the current degree of
                   uncertainty regarding{" "}
-                  <strong>travelling and social gatherings measures</strong>,
+                  <strong>travelling and social gatherings measures</strong>{" "}
                   makes it impossible for us to predict whether or not things
                   will pick up. We are reasonably sure we would have had to
                   cancel at a much later date.

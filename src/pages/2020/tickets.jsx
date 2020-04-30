@@ -128,23 +128,23 @@ export default () => {
               </li>
             </ul>
 
-            <p className="accent">
+            {/* <p className="accent">
               <strong>Note:</strong> <br />
               Conference tickets don't include access to workshops. <br />
               <span className="light-faded">
                 There is a separate ticket that you have to purchase in order to
                 attend the workshop.
               </span>
-            </p>
+            </p> */}
           </section>
 
-          <section>
+          {/* <section>
             <h2>Workshops tickets</h2>
             <p className="accent">
               Details about the workshops will be available soon. Stay tuned!
             </p>
 
-            {/* <p>Workshops tickets are sold separately and they include:</p>
+            <p>Workshops tickets are sold separately and they include:</p>
             <ul className="bullet">
               <li>
                 <strong>Coffee and beverages</strong>;
@@ -163,8 +163,8 @@ export default () => {
                 You have to also purchase a conference ticket if you want to
                 attend both events.
               </span>
-            </p> */}
-          </section>
+            </p>
+          </section> */}
 
           {/* <br />
           <br /> */}
