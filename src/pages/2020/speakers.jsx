@@ -10,6 +10,7 @@ import SpeakersListIndex from "@components/SpeakersListIndex";
 import Separator2020 from "@components/Separator2020";
 import Title2020 from "@components/Title2020";
 // import Button from "@components/Button";
+import Text from "@components/Text";
 // import { PurchaseTicket } from "@components/CTA";
 
 import { getEdition } from "@utils";
@@ -63,10 +64,12 @@ const Speakers = (props) => {
         <Title2020>speakers</Title2020>
 
         <div className="subtitle2020">
-          Meet part of our international crew of change. <br />
-          More speakers will be annouced soon. <br />
-          Stay tuned...
+          2020 line-up. Although the edition is off due to the pandemics, we’ll
+          keep in touch.
           <br />
+          <Text bold color="white">
+            Big thank you!
+          </Text>
         </div>
       </Header>
 

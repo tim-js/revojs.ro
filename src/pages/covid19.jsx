@@ -19,95 +19,88 @@ export default () => {
         <Content centered>
           <Note>
             <p>
-              We are constantly monitoring the evolution of the COVID-19
-              pandemic in Romania and worldwide. We are also constantly in
-              contact with other conference organizers.
+              In the midst of the current COVID-19 pandemic, we were all faced
+              with several tough decisions.
             </p>
             <p>
-              Undoubtedly, the coronavirus spread will have rippling effects on
-              a lot of events, but we hope the pandemic will be contained soon.
+              Unfortunately, after carefully monitoring the situation and
+              considering all possible scenarios, we had to make the toughest
+              decision event organizers can make.
             </p>
           </Note>
 
           <section>
-            <h2>Our plan</h2>
-            <h3>As of today, March 23rd 2020</h3>
+            <h2> revo.js 2020 is cancelled</h2>
             <p>
-              <Text bold>
-                The preparations for revo.js will continue according to our
-                initial plan.
+              Undoubtedly, we didn’t take this decision with an easy heart. On
+              the contrary. Our hearts were telling us to continue preparations
+              as planned.
+            </p>
+            <p>
+              Still, our reasoning reinforced our belief that cancelling is the
+              wisest and most correct thing we can do at this given moment,
+              based on the data we have available. Here is why:
+            </p>
+
+            <ul>
+              <li>
+                <h3>Safety comes first</h3>
+                <p>
+                  Currently, there’s no way to guarantee we’ll be able to offer
+                  a 100% safe environment in October, even if we’ll be legally
+                  allowed to organize the event by then.
+                </p>
+              </li>
+              <li>
+                <h3>Too many unknowns</h3>
+                <p>
+                  We’re flexible and adaptable, but the current degree of
+                  uncertainty regarding{" "}
+                  <strong>travelling and social gatherings measures</strong>,
+                  makes it impossible for us to predict whether or not things
+                  will pick up. We are reasonably sure we would have had to
+                  cancel at a much later date.
+                </p>
+              </li>
+              <li>
+                <h3>Won’t compromise quality</h3>
+                <p>
+                  Even if by October we would be legally allowed to hold the
+                  event, we’re certain that we would have been forced to make
+                  compromises with regards to quality and to the overall
+                  experience. The current economic and social context would have
+                  definitely taken its toll on our conference and would have
+                  chipped away from revo.js’ atmosphere.
+                </p>
+              </li>
+            </ul>
+
+            <h2>What's next?</h2>
+            <p>
+              <strong>We plan to revolve in 2021</strong> with our second
+              edition and make it up to everybody for this gap year. Once we
+              have more certainty as to when this pandemic will subside, we’ll
+              get back to you with fresh news.
+            </p>
+
+            <p>
+              Until then, we want to{" "}
+              <Text color="accent" bold>
+                thank everybody who was involved
               </Text>
-              <br />
-              The conference will take place at the originally scheduled date,
-              on 8-9 October 2020.
+              , one way or another, in the organizing of this 2020 edition. Our
+              lineup of{" "}
+              <strong>speakers, sponsors, supporters and CFP applicants</strong>{" "}
+              were more than ready to push to the finish line. We tip our hats
+              to all of you, our revo.crew.
             </p>
 
-            <ul className="bullet">
-              <li>
-                <Link to={`/2020/cfp`}>
-                  <strong>Call for Papers continues as planned</strong>
-                </Link>{" "}
-                and will start on April 1st;
-              </li>
-              <li>
-                <Link to={`/2020/tickets`}>
-                  <strong>Early Bird tickets will be slightly postponed</strong>
-                </Link>{" "}
-                until the beginning of May.
-              </li>
-              <li>
-                <Link to={`/2020/scholarships`}>
-                  <strong>
-                    Diversity Scholarship applications will be postponed
-                  </strong>
-                </Link>{" "}
-                as well, until the beginning of May.
-              </li>
-            </ul>
+            <br />
 
             <p>
-              Even though October seems far enough to be considered a safe
-              month, we must be cautious and think of all possible scenarios. In
-              case the current crisis won’t be resolved until mid-summer, we
-              might have to cancel revo.js 2020 and prepare for next year's
-              edition.
-            </p>
-
-            <p>
-              <Text bold>IMPORTANT:</Text> In case we'll have to cancel this
-              year's event, you’ll either receive a full refund for your ticket
-              or you’ll be able to use your ticket for next year's edition.
-            </p>
-          </section>
-
-          <section>
-            <h2>Plan accordingly</h2>
-            <p>
-              We advise you to take precautionary measures when it comes to
-              travel and accommodation:
-            </p>
-            <ul className="bullet">
-              <li>
-                book your travel ticket to Timisoara no sooner than a month or
-                two in advance;
-              </li>
-              <li>
-                buy travel tickets that can be refunded or that allow you to
-                reschedule your trip, in case the crisis escalates;
-              </li>
-              <li>
-                make sure your accommodation booking can also be refunded should
-                you need to cancel it.
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>We’re in this together</h2>
-            <p>
-              We’ll keep you updated every step of the way with any decisions we
-              make. You, our speakers and our sponsors are a top priority for
-              us.
+              <Text color="accent" bold>
+                Stay healthy, stay safe.
+              </Text>
             </p>
           </section>
         </Content>
