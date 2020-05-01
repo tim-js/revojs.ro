@@ -335,7 +335,7 @@ export default () => {
           <br />
           <br />
 
-          <SubmitCFP white />
+          {/* <SubmitCFP white /> */}
         </Content>
       </Section>
     </Layout>
