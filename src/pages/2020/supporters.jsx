@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
-import Text from "@components/Text";
+// import Text from "@components/Text";
 import Title2020 from "@components/Title2020";
 
 import Logos from "@components/Logos";
@@ -23,12 +23,12 @@ export default () => {
           and a conference is built one supporter at a time.
         </p>
 
-        <p className="subtitle2020">
+        {/* <p className="subtitle2020">
           <Text bold color="white">
             This is a shoutout to everybody who helped make revo.js 2020 a
             reality.
           </Text>
-        </p>
+        </p> */}
       </Header>
 
       <Section light centered>

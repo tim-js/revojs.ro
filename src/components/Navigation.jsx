@@ -39,7 +39,7 @@ function renderPage(page, edition, isMainLink) {
   );
 }
 
-export default props => {
+export default (props) => {
   const [showMenu, toggleMenu] = useState(false);
   const isHome = isHomepage(props.location);
   const edition = getEdition();
@@ -67,13 +67,13 @@ export default props => {
           />
 
           <ul className="primary-navigation">
-            {main.map(page => {
+            {main.map((page) => {
               return <li key={page.name}>{renderPage(page, edition, true)}</li>;
             })}
 
             <li>
               <ul className={`secondary-navigation`}>
-                {[...secondary, ...tertiary].map(page => {
+                {[...secondary, ...tertiary].map((page) => {
                   return (
                     <li key={page.name}>{renderPage(page, edition, false)}</li>
                   );

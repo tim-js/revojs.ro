@@ -11,27 +11,27 @@ const Speakers = ({ data }) => {
   const { allSpeakersJson, speakerImages } = data;
   const edition = getEdition();
   const speakers = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(speaker => speaker.talkId)
-    .filter(speaker => speaker.edition === edition)
-    .map(speaker => {
+    .map((e) => e.node)
+    .filter((speaker) => speaker.talkId)
+    .filter((speaker) => speaker.edition === edition)
+    .map((speaker) => {
       const speakerImage = getImage(speaker.image);
 
       return {
         ...speaker,
-        speakerImage
+        speakerImage,
       };
     });
   const filteredRandomSpeakers = shuffle(speakers).filter((s, i) => i < 3);
 
   function shuffle(array) {
-    return array.sort(function() {
+    return array.sort(function () {
       return 0.5 - Math.random();
     });
   }
 
   function getImage(image) {
-    return speakerImages.edges.find(e => image.includes(e.node.base));
+    return speakerImages.edges.find((e) => image.includes(e.node.base));
   }
 
   return (
@@ -52,14 +52,14 @@ const Speakers = ({ data }) => {
         style={{ textAlign: "center", marginTop: "5em" }}
       >
         <Link to={`/${edition}/speakers`}>
-          <Button>Meet all the speakers</Button>
+          <Button>Meet the speakers</Button>
         </Link>
       </div>
     </section>
   );
 };
 
-export default props => {
+export default (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -95,7 +95,7 @@ export default props => {
           }
         }
       `}
-      render={data => <Speakers data={data} {...props} />}
+      render={(data) => <Speakers data={data} {...props} />}
     />
   );
 };

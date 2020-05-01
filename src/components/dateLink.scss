@@ -1,0 +1,48 @@
+.date-link {
+  display: inline-block;
+  position: relative;
+  &:hover {
+    color: var(--primary);
+    cursor: pointer;
+    .tooltip {
+      display: block;
+    }
+  }
+  .tooltip {
+    background-color: var(--dark);
+    border: 1px solid #383E43;
+    color: var(--lightgrey);
+    cursor: default;
+    display: none;
+    font-family: "WorkSans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-left: -81px;
+    padding: 12px 16px;
+    position: absolute;
+    top: -56px;
+    left: 50%;
+    text-align: center;
+
+    .arrow {
+      border-color: transparent;
+      border-style: solid;
+      content: "";
+      border-width: 7px 7px 0;
+      border-top-color: #383E43;
+      margin-left: -4px;
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      &::before {
+        border-color: transparent;
+        border-style: solid;
+        content: "";
+        border-width: 7px 7px 0;
+        border-top-color: var(--dark);
+        position: absolute;
+        top: -8px;
+        left: -7px;
+      }
+    }
+  }
+}

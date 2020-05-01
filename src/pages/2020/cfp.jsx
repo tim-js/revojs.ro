@@ -6,9 +6,9 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
-// import Button from "@components/Button";
-import Note from "@components/Note";
-import { SubmitCFP } from "@components/CTA";
+import Button from "@components/Button";
+// import Note from "@components/Note";
+// import { SubmitCFP } from "@components/CTA";
 // import Subscribe from "@components/Subscribe";
 import Title2020 from "@components/Title2020";
 import Text from "@components/Text";
@@ -16,7 +16,7 @@ import Text from "@components/Text";
 import "./cfp.scss";
 
 // const CFP_OPEN = "April 1st";
-const CFP_CLOSE = "June 30th";
+// const CFP_CLOSE = "June 30th";
 
 export default () => {
   return (
@@ -27,7 +27,7 @@ export default () => {
             style={{
               fontSize: "4vw",
               marginBottom: "-0.75em",
-              display: "block"
+              display: "block",
             }}
           >
             call for
@@ -36,11 +36,12 @@ export default () => {
         <Title2020>papers</Title2020>
 
         <p className="subtitle2020">
-          Share a talk, spread change, revolve!
+          A big thank you to all applicants.
           <br />
-          CFP closes on{" "}
+          Unfortunately, due to the current pandemic revo.js 2020 is cancelled.
+          <br />
           <Text bold color="white">
-            {CFP_CLOSE}
+            We’ll revolve in 2021.
           </Text>
           {/* <span className="highlight">{CFP_CLOSE}.</span>
           <br />
@@ -56,13 +57,17 @@ export default () => {
           <Button>View our Topics</Button>
         </a> */}
 
-        <SubmitCFP />
+        <Link to={`/covid19`}>
+          <Button>Learn more</Button>
+        </Link>
+
+        {/* <SubmitCFP /> */}
       </Header>
 
       <Section light>
         <Content centered>
-          <Note>
-            {/* 
+          {/* <Note> */}
+          {/* 
             <p>
               Do you have a technical presentation that can change minds,
               perspectives, work approaches, or why not, even the mood of JS
@@ -75,7 +80,7 @@ export default () => {
             </p>
              */}
 
-            <p>
+          {/* <p>
               This is a call out to all members of the JavaScript community who
               have a memorable talk that can stir up change. Submit your talk
               proposals until the <strong>{CFP_CLOSE}</strong> and hopefully
@@ -86,9 +91,9 @@ export default () => {
 
             <p>
               The selected talks will be announced at the beginning of August.
-            </p>
+            </p> */}
 
-            {/* <p>
+          {/* <p>
               We've received <strong>92 proposals</strong>, which is a lot more
               than we've initially expected.
             </p>
@@ -96,10 +101,10 @@ export default () => {
               We're currently thoroughly reviewing all proposals and we're
               planning to annouce the selected speakers in Mid-July.
             </p> */}
-          </Note>
+          {/* </Note> */}
 
-          <br />
-          <SubmitCFP white />
+          {/* <br /> */}
+          {/* <SubmitCFP white /> */}
 
           {/* 
           <section>
