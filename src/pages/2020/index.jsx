@@ -97,6 +97,7 @@ export default (props) => {
           {/* <a href="#subscribe-form">
             <Button>Subscribe for Updates</Button>
           </a> */}
+
           <Link to={`/covid19`}>
             <Button>Learn more</Button>
           </Link>
