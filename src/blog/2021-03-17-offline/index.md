@@ -37,4 +37,4 @@ We'd like to give our appreciations to everybody and anybody that supports us in
 - all **our friends** for their helping hands, their advice and their constructive criticism;
 - everybody involved in the **organizing team**, because it takes a village to raise a child.
 
-See you soon...
+<strong class="accent">See you soon...</strong>
