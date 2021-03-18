@@ -30,11 +30,9 @@ We'd like to express our appreciation for those who support us morally, practica
 
 - our **invited speakers**, and all the **speakers who applied to our Call for Papers**, because without you the stage would be empty;
 - our **sponsors** and **partners**, because without you we wouldn't be able to rise to the desired quality level;
-- our **attendees**, because without you, the speakers would feel like radios, addressing to an empty room;
+- our **attendees**, because without you the speakers would feel like radios, addressing to an empty room;
 - the **JavaScript communities** for spreading the word, because without you we’d have reached only the ears of Timisoara’s locals;
 - all **our friends** for their helping hand, their advice, and their constructive criticism;
 - everybody in the **organizing team**, because it takes a village to raise a child.
 
-To those mentioned above and to those we hope will <strong>join us</strong> in the coming years, <strong>thank you</strong>.
-
-<strong class="accent">See you soon...</strong>
+To those mentioned above and to those we hope will <strong>join us</strong> in the coming years, <strong>thank you</strong>, and <strong class="accent">see you all soon...</strong>.
