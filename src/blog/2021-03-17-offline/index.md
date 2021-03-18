@@ -12,7 +12,7 @@ In this post, we’d like to give you more details regarding the reasons behind 
 
 ## Why not host it online?
 
-The main reason [we organized revo.js](/about/#why-are-we-organizing-this-conference) in the first place was to **bring speakers close to the audience**. Honestly, the world doesn't need one more JavaScript conference, there are plenty of them. However, **Timisoara/RO needs its own JavaScript conference** and that's the reason revo.js came to be. So, if we cannot fulfill our primary motivation, there's no actual reason for revo.js to take place.
+The reason [we organized revo.js](/about/#why-are-we-organizing-this-conference) in the first place was to **bring speakers close to the audience**. Honestly, the world doesn't need one more JavaScript conference, there are plenty of them. However, **Timisoara/RO needs its own JavaScript conference** and that's the reason revo.js came to be. So, if we cannot fulfill our primary motivation, there's no actual reason for revo.js to take place.
 
 Online events are great for connecting attendees around the world, but an online revo.js doesn't bring any additional value, neither to the local community, nor to the global one.
 
