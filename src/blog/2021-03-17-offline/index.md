@@ -6,7 +6,7 @@ title: "revo.js stays offline"
 
 Dear community members, JavaScript enthusiasts, conferences attendees, and revo.js supporters.
 
-It's true. For the time being, **revo.js will remain an offline event**. The Covid-19 pandemic is forcing us to postpone any in-person activity, which means that revo.js will be on-hold until offline events will be legally allowed again, and safe to host.
+It's true. For the time being, **revo.js will remain an offline event**. The Covid-19 pandemic is forcing us to postpone any in-person activity, which means that revo.js will be on-hold until offline events will be legally allowed again and safe to host.
 
 In this post, we’d like to give you more details regarding the reasons behind this decision.
 
@@ -30,7 +30,7 @@ We'd like to express our appreciation for those who support us morally, practica
 
 - our **invited speakers**, and all the **speakers who applied to our Call for Papers**, because without you the stage would be empty;
 - our **sponsors** and **partners**, because without you we wouldn't be able to rise to the desired quality level;
-- our **attendees**, because without you the speakers would feel like radios, addressing to an empty room;
+- our **attendees**, because you're the main reason why revo.js takes place;
 - the **JavaScript communities** for spreading the word, because without you we’d have reached only the ears of Timisoara’s locals;
 - all **our friends** for their helping hand, their advice, and their constructive criticism;
 - everybody in the **organizing team**, because it takes a village to raise a child.
