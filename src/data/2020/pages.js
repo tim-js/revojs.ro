@@ -6,10 +6,13 @@ export const main = [
   // {
   //   name: "Agenda",
   // },
-  {
-    name: "Call for Papers",
-    path: "cfp",
-  },
+  // {
+  //   name: "Call for Papers",
+  //   path: "cfp",
+  // },
+  // {
+  //   name: "Tickets",
+  // },
   // {
   //   name: "Tickets",
   // },
