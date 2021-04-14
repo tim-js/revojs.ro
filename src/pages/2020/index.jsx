@@ -41,10 +41,15 @@ export default (props) => {
     <Layout location={props.location} className="index-graphics">
       <Header className="header-index">
         <h1 className="index-logo">
-          <img src={logo} alt="revo.js" height="70" />
+          <img
+            src={logo}
+            alt="revo.js"
+            height="100"
+            style={{ maxWidth: "80%" }}
+          />
         </h1>
 
-        <div className="index-tagline">
+        {/* <div className="index-tagline">
           <div>
             <span className="flip flip1">r</span>
           </div>
@@ -66,7 +71,7 @@ export default (props) => {
           <div>
             <span className="flip flip7">e</span>
           </div>
-        </div>
+        </div> */}
 
         <div className="date-location">
           {/* <time className="index-date mono" dateTime="2020-10-08">
@@ -81,9 +86,16 @@ export default (props) => {
               <strong>October.8-9.2020</strong>
             </DateLink>
           </time> */}
-          <strong className="mono highlight">2020 edition is cancelled.</strong>
           <br />
-          <strong className="mono">We’ll revolve in 2021!</strong>
+          <strong className="mono highlight" style={{ fontSize: "1.5em" }}>
+            On a Pandemic Break
+          </strong>
+          <br />
+          <br />
+          <strong className="mono">
+            We’re staying offline and hoping to see you in 2022.
+          </strong>
+          <br />
         </div>
 
         <div className="index-cta">
@@ -97,8 +109,8 @@ export default (props) => {
           {/* <a href="#subscribe-form">
             <Button>Subscribe for Updates</Button>
           </a> */}
-          <Link to={`/covid19`}>
-            <Button>Learn more</Button>
+          <Link to={`/blog/revojs-stays-offline`}>
+            <Button>Learn Why</Button>
           </Link>
         </div>
         <div className="home-graphics"></div>
