@@ -43,7 +43,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '333160550657034'); 
-fbq('track', 'PageView');`
+fbq('track', 'PageView');`,
           }}
         />
         <noscript
@@ -54,7 +54,7 @@ fbq('track', 'PageView');`
             alt=""
             src="https://www.facebook.com/tr?id=333160550657034&amp;ev=PageView
             &amp;noscript=1"
-          />`
+          />`,
           }}
         />
         {props.headComponents}
@@ -81,5 +81,5 @@ HTML.propTypes = {
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
-  postBodyComponents: PropTypes.array
+  postBodyComponents: PropTypes.array,
 };
