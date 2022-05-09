@@ -35,7 +35,7 @@ export default () => {
         </Text>
         <Title2020>papers</Title2020>
 
-        <p className="subtitle2020">
+        <p className="subtitle2023">
           A big thank you to all applicants.
           <br />
           Unfortunately, due to the current pandemic revo.js 2020 is cancelled.

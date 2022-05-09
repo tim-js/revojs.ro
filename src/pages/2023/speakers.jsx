@@ -63,21 +63,21 @@ const Speakers = (props) => {
       <Header type="main" centered>
         <Title2020>speakers</Title2020>
 
-        <div className="subtitle2020">
+        {/* <div className="subtitle2023">
           2020 line-up. Although the edition is off due to the pandemics, we’ll
           keep in touch.
           <br />
           <Text bold color="white">
             Big thank you!
           </Text>
-        </div>
+        </div> */}
       </Header>
 
-      <SpeakersListIndex speakers={speakers} edition={edition} />
+      {/* <SpeakersListIndex speakers={speakers} edition={edition} /> */}
 
       <br />
       <br />
-      <Separator2020 />
+      {/* <Separator2020 /> */}
 
       {/* <Section style={{ paddingTop: 0 }}>
         <Content centered style={{ textAlign: "center" }}>

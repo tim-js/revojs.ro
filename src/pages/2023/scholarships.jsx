@@ -26,7 +26,7 @@ export default () => {
         <br />
         <h1>Diversity Scholarships</h1>
 
-        <div className="subtitle2020">
+        <div className="subtitle2023">
           Unfortunately, revo.js 2020 is cancelled due to the current pandemic.
           <br />
           <Text bold color="white">

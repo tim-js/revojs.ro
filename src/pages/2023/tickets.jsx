@@ -28,7 +28,7 @@ export default () => {
       <Header type="main" centered>
         <Title2020>tickets</Title2020>
 
-        <p className="subtitle2020">
+        <p className="subtitle2023">
           We’re taking a step back from 2020. Thank you for your support.
           <br />
           <Text bold color="white">

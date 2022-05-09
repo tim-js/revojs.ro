@@ -14,13 +14,13 @@ import timjs from "@assets/tim.js-logo.svg";
 import "./organizers.scss";
 
 const Organizers = ({ data }) => {
-  const { allTeam2020Json, teamImages } = data;
+  const { allTeam2023Json, teamImages } = data;
 
   function getImage(image) {
     return teamImages.edges.find(e => image.includes(e.node.base));
   }
 
-  const team = allTeam2020Json.edges
+  const team = allTeam2023Json.edges
     .map(e => e.node)
     .map(member => {
       const memberImage = getImage(member.image);
@@ -35,7 +35,7 @@ const Organizers = ({ data }) => {
     <Layout title="revo.js Organizers" noFooterSeparation>
       <Header type="main" centered>
         <Title2020>organizers</Title2020>
-        <div className="subtitle2020">
+        <div className="subtitle2023">
           Revolutions start small, but not individually
         </div>
       </Header>
@@ -134,7 +134,7 @@ export default props => {
     <StaticQuery
       query={graphql`
         query {
-          allTeam2020Json {
+          allTeam2023Json {
             edges {
               node {
                 name

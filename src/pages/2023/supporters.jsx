@@ -8,7 +8,7 @@ import Title2020 from "@components/Title2020";
 
 import Logos from "@components/Logos";
 
-import { sponsors, friends, communities } from "@data/2020/supporters";
+import { sponsors, friends, communities } from "@data/2023/supporters";
 
 import "./supporters.scss";
 
@@ -18,12 +18,12 @@ export default () => {
       <Header centered type="main">
         <Title2020>supporters</Title2020>
 
-        <p className="subtitle2020">
+        <p className="subtitle2023">
           Change comes one step at a time, <br />
           and a conference is built one supporter at a time.
         </p>
 
-        {/* <p className="subtitle2020">
+        {/* <p className="subtitle2023">
           <Text bold color="white">
             This is a shoutout to everybody who helped make revo.js 2020 a
             reality.

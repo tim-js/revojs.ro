@@ -16,7 +16,7 @@ import Button from "@components/Button";
 import Subscribe from "@components/Subscribe";
 // import DateLink from "@components/DateLink";
 // import { getEdition } from "@utils";
-import { sponsors } from "@data/2020/supporters";
+import { sponsors } from "@data/2023/supporters";
 
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
@@ -88,12 +88,12 @@ export default (props) => {
           </time> */}
           <br />
           <strong className="mono highlight" style={{ fontSize: "1.5em" }}>
-            On a Pandemic Break
+            On maternal leave for the moment
           </strong>
           <br />
           <br />
           <strong className="mono">
-            We’re staying offline and hoping to see you in 2022.
+            ... but preparing for 2023
           </strong>
           <br />
         </div>
@@ -109,16 +109,16 @@ export default (props) => {
           {/* <a href="#subscribe-form">
             <Button>Subscribe for Updates</Button>
           </a> */}
-          <Link to={`/blog/revojs-stays-offline`}>
+          {/* <Link to={`/blog/revojs-stays-offline`}>
             <Button>Learn Why</Button>
-          </Link>
+          </Link> */}
         </div>
         <div className="home-graphics"></div>
       </Header>
 
       {/* <IndexUpdates /> */}
-      <Separator2020 />
-      <IndexSpeakers />
+      {/* <Separator2020 /> */}
+      {/* <IndexSpeakers /> */}
 
       <Section id="subscribe-form" centered>
         <br />

@@ -19,7 +19,7 @@ export default ({ speakers }) => {
         }
 
         let color = "primary";
-        if (edition === 2020) {
+        if (edition === 2023) {
           i % 3 === 1 && (color = "accent60");
           i % 3 === 2 && (color = "accent");
         }

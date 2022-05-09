@@ -18,7 +18,7 @@ export default () => {
       <Header type="main" centered>
         <Title2020>venue</Title2020>
 
-        <div className="subtitle2020">
+        <div className="subtitle2023">
           Where will change revolve this year?
           <br />
           Stick around to find out...

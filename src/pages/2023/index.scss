@@ -3,7 +3,7 @@
 
 @import "src/styles/mixins";
 
-.edition-2020 {
+.edition-2023 {
   .header-index {
     align-items: center;
     display: flex;
@@ -45,7 +45,7 @@
   .index-logo {
     margin: 10vh 0;
     @include breakpoint(sm) {
-      margin: 6vh 0;
+      // margin: 6vh 0;
     }
   }
 

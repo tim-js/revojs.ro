@@ -42,19 +42,19 @@ export const friends = [
 export const sponsors = [
   {
     name: "e-spres-oh",
-    image: "sponsors/2020/e-spres-oh_logo.svg",
+    image: "sponsors/2023/e-spres-oh_logo.svg",
     url: "https://e-spres-oh.com",
     title: "Diversity Partner"
   },
   {
     name: "123FormBuilder",
-    image: "sponsors/2020/123-form-builder_logo.svg",
+    image: "sponsors/2023/123-form-builder_logo.svg",
     url: "https://www.123formbuilder.com/",
     title: "Gaming Partner"
   },
   {
     name: "Visma",
-    image: "sponsors/2020/visma_logo.svg",
+    image: "sponsors/2023/visma_logo.svg",
     url: "https://www.visma.ro/",
     title: "After Party Partner"
   },

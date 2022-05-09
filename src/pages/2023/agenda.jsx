@@ -11,7 +11,7 @@ import Header from "@components/layout/Header";
 // import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 
-// import { day0, day1, day2 } from "@data/2020/agenda";
+// import { day0, day1, day2 } from "@data/2023/agenda";
 // import { getEdition } from "@utils";
 
 import "./agenda.scss";

@@ -1,8 +1,8 @@
 export const main = [
-  {
-    name: "Speakers",
-    hasSubpages: true,
-  },
+  // {
+  //   name: "Speakers",
+  //   hasSubpages: true,
+  // },
   // {
   //   name: "Agenda",
   // },

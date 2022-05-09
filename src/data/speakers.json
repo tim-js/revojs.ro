@@ -1,6 +1,6 @@
 [
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "leonie-watson",
     "slug": "leonie-watson",
     "firstname": "Léonie",
@@ -13,7 +13,7 @@
     "talkId": "talk1"
   },
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "trent-willis",
     "slug": "trent-willis",
     "firstname": "Trent",
@@ -26,7 +26,7 @@
     "talkId": "talk2"
   },
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "eduardo-san-martin-morote",
     "slug": "eduardo-san-martin-morote",
     "firstname": "Eduardo",
@@ -39,7 +39,7 @@
     "talkId": "talk3"
   },
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "martin-splitt",
     "slug": "martin-splitt",
     "firstname": "Martin",
@@ -52,7 +52,7 @@
     "talkId": "talk4"
   },
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "srushtika-neelakantam",
     "slug": "srushtika-neelakantam",
     "firstname": "Srushtika",
@@ -65,7 +65,7 @@
     "talkId": "talk5"
   },
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "elisabeth-engel",
     "slug": "elisabeth-engel",
     "firstname": "Elisabeth",
@@ -78,7 +78,7 @@
     "talkId": "talk6"
   },
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "kenneth-rohde-christiansen",
     "slug": "kenneth-rohde-christiansen",
     "firstname": "Kenneth Rohde",
@@ -91,7 +91,7 @@
     "talkId": "talk7"
   },
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "jay-phelps",
     "slug": "jay-phelps",
     "firstname": "Jay",
@@ -104,7 +104,7 @@
     "talkId": "talk8"
   },
   {
-    "edition": 2020,
+    "edition": 2023,
     "id": "ben-lesh",
     "slug": "ben-lesh",
     "firstname": "Ben",
@@ -117,8 +117,8 @@
     "talkId": "talk9"
   },
   {
-    "edition": 2020,
-    "id": "diana-macau2020",
+    "edition": 2023,
+    "id": "diana-macau2023",
     "slug": "diana-macau",
     "firstname": "Diana",
     "lastname": "Măcău",

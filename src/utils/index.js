@@ -1,5 +1,5 @@
 import * as pages2019 from "@data/2019/pages";
-import * as pages2020 from "@data/2020/pages";
+import * as pages2023 from "@data/2023/pages";
 import { globalHistory } from "@reach/router";
 
 export function getYearFromUrl(url) {
@@ -12,7 +12,7 @@ export function getYearFromUrl(url) {
   })[0];
 }
 
-export const currentEdition = 2020;
+export const currentEdition = 2023;
 
 export function getEdition() {
   const pathname = globalHistory.location.pathname;
@@ -41,6 +41,6 @@ export function getPages() {
     case 2019:
       return pages2019;
     default:
-      return pages2020;
+      return pages2023;
   }
 }
