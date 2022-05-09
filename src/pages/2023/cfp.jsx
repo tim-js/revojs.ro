@@ -38,10 +38,10 @@ export default () => {
         <p className="subtitle2023">
           A big thank you to all applicants.
           <br />
-          Unfortunately, due to the current pandemic revo.js 2020 is cancelled.
+          Unfortunately, due to the current pandemic revo.js is cancelled.
           <br />
           <Text bold color="white">
-            We’ll revolve in 2021.
+            We’ll revolve in 2023.
           </Text>
           {/* <span className="highlight">{CFP_CLOSE}.</span>
           <br />

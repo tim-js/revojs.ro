@@ -77,7 +77,7 @@ export default () => {
 
             <h2>What's next?</h2>
             <p>
-              <strong>We plan to revolve in 2021</strong> with our second
+              <strong>We plan to revolve in <del>2021</del> 2023</strong> with our second
               edition and make it up to everybody for this gap year. Once we
               have more certainty as to when this pandemic will subside, we’ll
               get back to you with fresh news.

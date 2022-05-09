@@ -11,12 +11,12 @@ export default function HTML(props) {
 
         <meta property="og:title" content="revo.js" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://revojs.ro/revojs-2021.png" />
+        <meta property="og:image" content="https://revojs.ro/revojs-2022.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:url" content="https://revojs.ro/" />
         <meta
           property="og:description"
-          content="revo.js is the first JavaScript conference in Timisoara, Romania. revo.js aims to bring JavaScript enthusiasts two full days of tech-focused talks, community networking and thought-provoking ideas meant to inspire change, the only constant there is."
+          content="revo.js is the first JavaScript conference in Timisoara, Romania. revo.js aims to bring JavaScript enthusiasts two full days of tech-focused talks, community networking, and thought-provoking ideas meant to inspire change, the only constant there is."
         />
         <meta name="twitter:card" content="summary_large_image" />
 

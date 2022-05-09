@@ -88,12 +88,12 @@ export default (props) => {
           </time> */}
           <br />
           <strong className="mono highlight" style={{ fontSize: "1.5em" }}>
-            On maternal leave for the moment
+            Preparing for 2023
           </strong>
           <br />
           <br />
           <strong className="mono">
-            ... but preparing for 2023
+            Third time’s a charm. Determined to turn plans into reality.
           </strong>
           <br />
         </div>
