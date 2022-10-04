@@ -33,7 +33,7 @@
   .index-graphics {
     @include breakpoint(sm) {
       background-image: url("/homepage_bg_left.svg"),
-        url("/2020/homepage_bg_right.svg");
+        url("/2023/homepage_bg_right.svg");
       background-position: -150px top, calc(100% + 150px) top;
       background-repeat: no-repeat, no-repeat;
     }
