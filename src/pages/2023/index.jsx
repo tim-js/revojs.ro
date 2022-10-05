@@ -87,13 +87,13 @@ export default (props) => {
             </DateLink>
           </time> */}
           <br />
-          <strong className="mono highlight" style={{ fontSize: "1.5em" }}>
-            Preparing for 2023
+          <strong className="mono highlight" style={{ fontSize: "min(4em, 8vw)" }}>
+            We're revo.lving
           </strong>
           <br />
           <br />
-          <strong className="mono">
-            Third time’s a charm. Determined to turn plans into reality.
+          <strong className="mono" style={{ fontSize: "min(2em, 5vw)" }}>
+            5-6 Oct. 2023
           </strong>
           <br />
         </div>
