@@ -44,7 +44,7 @@ export const sponsors = [
     name: "e-spres-oh",
     image: "sponsors/2023/e-spres-oh_logo.svg",
     url: "https://e-spres-oh.com",
-    // title: "Diversity Partner"
+    title: "Gaming Experience Sponsor"
   },
   // {
   //   name: "123FormBuilder",
@@ -56,7 +56,7 @@ export const sponsors = [
     name: "Visma",
     image: "sponsors/2023/visma_logo.svg",
     url: "https://www.visma.ro/",
-    // title: "After Party Partner"
+    title: "After-Party Partner"
   },
   {
     name: "Dream Production",
