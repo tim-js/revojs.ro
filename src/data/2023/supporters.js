@@ -83,6 +83,11 @@ export const sponsors = [
     image: "sponsors/cobalt-sign_logo.svg",
     url: "https://www.cobaltsign.com/"
   },
+  {
+    name: "Doctari Group",
+    image: "sponsors/2023/doctari-group_logo.svg",
+    url: "https://www.doctari.ro/"
+  },
   // {
   //   name: "Interact",
   //   image: "sponsors/interact_logo.svg",
