@@ -88,6 +88,11 @@ export const sponsors = [
     image: "sponsors/2023/doctari-group_logo.svg",
     url: "https://www.doctari.ro/"
   },
+  {
+    name: "Bioclinica",
+    image: "sponsors/2023/bioclinica_logo.svg",
+    url: "https://bioclinica.ro/"
+  },
   // {
   //   name: "Interact",
   //   image: "sponsors/interact_logo.svg",
