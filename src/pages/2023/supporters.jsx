@@ -36,7 +36,7 @@ export default () => {
           <h2 className="big">Sponsors</h2>
           <p>
             We are very grateful and proud of our awesome sponsors. <br />
-            We couldn’t have done it without them.{" "}
+            We couldn’t do it without them.{" "}
             <strong>For real-real</strong>.
           </p>
 

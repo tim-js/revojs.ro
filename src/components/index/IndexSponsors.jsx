@@ -10,9 +10,8 @@ export default ({ sponsors }) => {
     <Section light centered className="index-sponsors">
       <h2 className="big">Sponsors</h2>
       <p>
-        revo.js would have remained just a great idea without the help of these
-        awesome sponsors. <br />
-        We don’t just say this. It’s a fact.
+        revo.js 2023 would still be at an idea-stage without these awesome sponsors. <br />
+        We don’t just say this. Their support is crucial to making things happen.
       </p>
 
       <Logos list={sponsors} />
