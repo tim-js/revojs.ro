@@ -75,10 +75,10 @@
   text-decoration: none;
 }
 
-.social-media {
+.footer-media-links {
   margin-bottom: 1em;
 }
-.social-media a {
+.footer-media-links a {
   transition: all 0.3s;
   display: inline-block;
 
@@ -86,7 +86,7 @@
     margin-right: 1em;
   }
 }
-.social-media a:hover {
+.footer-media-links a:hover {
   transform: scale(1.2);
 }
 .footer-email {

@@ -52,7 +52,7 @@ export default props => {
         </div>
 
         <div className="external-links">
-          <div className="social-media">
+          <div className="footer-media-links">
             <a
               href="https://twitter.com/revojsro"
               target="_blank"
