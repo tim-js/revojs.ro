@@ -44,13 +44,25 @@ export const sponsors = [
     name: "e-spres-oh",
     image: "sponsors/2023/e-spres-oh_logo.svg",
     url: "https://e-spres-oh.com",
-    title: "Gaming Experience Sponsor"
+    title: "Gaming Experience"
+  },
+  {
+    name: "Victory Square Partners",
+    image: "sponsors/2023/vsp_logo.svg",
+    url: "https://victorysquarepartners.com/",
+    title: "Coding Experience"
   },
   // {
-  //   name: "123FormBuilder",
-  //   image: "sponsors/2023/123-form-builder_logo.svg",
-  //   url: "https://www.123formbuilder.com/",
-  //   title: "Gaming Partner"
+  //   name: "Cognizant Softvision",
+  //   image: "sponsors/2023/cognizant_logo.svg",
+  //   url: "https://www.cognizantsoftvision.com/",
+  //   title: "Social Experience"
+  // },
+  // {
+  //   name: "Haufe Group",
+  //   image: "sponsors/2023/haufe_logo.svg",
+  //   url: "https://www.haufegroup.com/",
+  //   title: "Wellness Experience"
   // },
   {
     name: "Visma",
@@ -60,38 +72,28 @@ export const sponsors = [
   },
   {
     name: "Dream Production",
-    image: "sponsors/dream_production_logo.svg",
+    image: "sponsors/2023/dream_production_logo.svg",
     url: "https://dreamproduction.com/en/"
   },
-  // {
-  //   name: "Busy Machines",
-  //   image: "sponsors/busy_machines_logo.svg",
-  //   url: "https://www.busymachines.com/"
-  // },
   // {
   //   name: "Syneto",
   //   image: "sponsors/syneto_logo.svg",
   //   url: "https://syneto.eu/"
   // },
-  // {
-  //   name: "Plentymarkets",
-  //   image: "sponsors/plentymarkets_logo.svg",
-  //   url: "https://www.plentymarkets.co.uk/"
-  // },
+  {
+    name: "Bioclinica",
+    image: "sponsors/2023/bioclinica_logo.svg",
+    url: "https://bioclinica.ro/"
+  },
   {
     name: "Cobalt Sign",
-    image: "sponsors/cobalt-sign_logo.svg",
+    image: "sponsors/2023/cobalt-sign_logo.svg",
     url: "https://www.cobaltsign.com/"
   },
   {
     name: "Doctari Group",
     image: "sponsors/2023/doctari-group_logo.svg",
     url: "https://www.doctari.ro/"
-  },
-  {
-    name: "Bioclinica",
-    image: "sponsors/2023/bioclinica_logo.svg",
-    url: "https://bioclinica.ro/"
   },
   // {
   //   name: "Interact",
