@@ -41,6 +41,12 @@ export const friends = [
 
 export const sponsors = [
   {
+    name: "Visma",
+    image: "sponsors/2023/visma_logo.svg",
+    url: "https://www.visma.ro/",
+    title: "After-Party Partner"
+  },
+  {
     name: "e-spres-oh",
     image: "sponsors/2023/e-spres-oh_logo.svg",
     url: "https://e-spres-oh.com",
@@ -52,24 +58,18 @@ export const sponsors = [
     url: "https://victorysquarepartners.com/",
     title: "Coding Experience"
   },
-  // {
-  //   name: "Cognizant Softvision",
-  //   image: "sponsors/2023/cognizant_logo.svg",
-  //   url: "https://www.cognizantsoftvision.com/",
-  //   title: "Social Experience"
-  // },
+  {
+    name: "Cognizant Softvision",
+    image: "sponsors/2023/cognizant_logo.svg",
+    url: "https://www.cognizantsoftvision.com/",
+    title: "Social Experience"
+  },
   // {
   //   name: "Haufe Group",
   //   image: "sponsors/2023/haufe_logo.svg",
   //   url: "https://www.haufegroup.com/",
   //   title: "Wellness Experience"
   // },
-  {
-    name: "Visma",
-    image: "sponsors/2023/visma_logo.svg",
-    url: "https://www.visma.ro/",
-    title: "After-Party Partner"
-  },
   {
     name: "Dream Production",
     image: "sponsors/2023/dream_production_logo.svg",
