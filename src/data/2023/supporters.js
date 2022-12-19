@@ -86,6 +86,11 @@ export const sponsors = [
     url: "https://bioclinica.ro/"
   },
   {
+    name: "Bosch",
+    image: "sponsors/2023/bosch_logo.svg",
+    url: "https://www.bosch.ro/"
+  },
+  {
     name: "Cobalt Sign",
     image: "sponsors/2023/cobalt-sign_logo.svg",
     url: "https://www.cobaltsign.com/"
