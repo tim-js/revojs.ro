@@ -91,6 +91,11 @@ export const sponsors = [
     url: "https://www.bosch.ro/"
   },
   {
+    name: "UnifiedPost",
+    image: "sponsors/2023/unifiedpost_logo.svg",
+    url: "http://www.unifiedpost.com"
+  },
+  {
     name: "Cobalt Sign",
     image: "sponsors/2023/cobalt-sign_logo.svg",
     url: "https://www.cobaltsign.com/"
