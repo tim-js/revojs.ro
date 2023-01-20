@@ -105,9 +105,9 @@ export const sponsors = [
     image: "sponsors/2023/doctari-group_logo.svg",
     url: "https://www.doctari.ro/"
   },
-  // {
-  //   name: "Interact",
-  //   image: "sponsors/interact_logo.svg",
-  //   url: "https://www.inter-act.ro/"
-  // }
+  {
+    name: "Interact",
+    image: "sponsors/2023/interact_logo.svg",
+    url: "https://www.inter-act.ro/"
+  }
 ];
