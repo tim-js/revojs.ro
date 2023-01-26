@@ -75,11 +75,6 @@ export const sponsors = [
     image: "sponsors/2023/dream_production_logo.svg",
     url: "https://dreamproduction.com/en/"
   },
-  // {
-  //   name: "Syneto",
-  //   image: "sponsors/syneto_logo.svg",
-  //   url: "https://syneto.eu/"
-  // },
   {
     name: "Bioclinica",
     image: "sponsors/2023/bioclinica_logo.svg",
@@ -109,5 +104,10 @@ export const sponsors = [
     name: "Interact",
     image: "sponsors/2023/interact_logo.svg",
     url: "https://www.inter-act.ro/"
-  }
+  },
+  {
+    name: "Syneto",
+    image: "sponsors/2023/syneto_logo.svg",
+    url: "https://syneto.eu/"
+  },
 ];
