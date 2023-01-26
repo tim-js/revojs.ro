@@ -103,7 +103,7 @@ export const sponsors = [
   {
     name: "Interact",
     image: "sponsors/2023/interact_logo.svg",
-    url: "https://www.inter-act.ro/"
+    url: "https://interact.ro/"
   },
   {
     name: "Syneto",
