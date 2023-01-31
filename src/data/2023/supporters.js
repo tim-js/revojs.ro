@@ -71,6 +71,12 @@ export const sponsors = [
   //   title: "Wellness Experience"
   // },
   {
+    name: "Haufe Group",
+    image: "sponsors/2023/haufe_logo.svg",
+    url: "https://www.haufegroup.com/",
+    title: "Wellness Experience"
+  },
+  {
     name: "Dream Production",
     image: "sponsors/2023/dream_production_logo.svg",
     url: "https://dreamproduction.com/en/"
@@ -109,5 +115,10 @@ export const sponsors = [
     name: "Syneto",
     image: "sponsors/2023/syneto_logo.svg",
     url: "https://syneto.eu/"
+  },
+  {
+    name: "WeVideo",
+    image: "sponsors/2023/wevideo_logo.svg",
+    url: "https://www.wevideo.com/"
   },
 ];
