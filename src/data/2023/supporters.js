@@ -97,6 +97,11 @@ export const sponsors = [
     url: "http://www.unifiedpost.com"
   },
   {
+    name: "Quarticle",
+    image: "sponsors/2023/quarticle_logo.svg",
+    url: "https://www.quarticle.ro/"
+  },
+  {
     name: "Cobalt Sign",
     image: "sponsors/2023/cobalt-sign_logo.svg",
     url: "https://www.cobaltsign.com/"
