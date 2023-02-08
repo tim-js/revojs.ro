@@ -126,4 +126,9 @@ export const sponsors = [
     image: "sponsors/2023/wevideo_logo.svg",
     url: "https://www.wevideo.com/"
   },
+  {
+    name: "OPSWAT",
+    image: "sponsors/2023/opswat_logo.svg",
+    url: "https://www.opswat.com/"
+  },
 ];
