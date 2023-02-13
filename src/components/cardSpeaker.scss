@@ -1,11 +1,18 @@
 @import "../styles/mixins";
 
-.card-speaker-firstname,
-.card-speaker-lastname {
+.card-speaker-name {
   line-height: 1.2;
+  color: var(--color);
+  transition: color 0.3s;
+
   @include breakpoint(sm) {
     display: block;
   }
+
+  .card-speaker:hover & {
+    color: white;
+  }
+  
 }
 .card-speaker-title {
   display: block;

@@ -15,11 +15,11 @@ export default props => {
     <Card
       color={props.color}
       className="card-speaker"
-      img={<Img fluid={props.data.speakerImage.node.image.fluid} alt="" />}
+      img={<Img fluid={props.data.speakerImage.node.image.fluid} alt={`${props.data.firstname} ${props.data.lastname} photo`} />}
       heading={
         <>
-          <span className="card-speaker-firstname">{props.data.firstname}</span>{" "}
-          <span className="card-speaker-lastname">{props.data.lastname}</span>
+          <span className="card-speaker-name">{props.data.firstname}</span>{" "}
+          <span className="card-speaker-name">{props.data.lastname}</span>
         </>
       }
     >
