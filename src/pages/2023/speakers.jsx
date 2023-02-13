@@ -73,7 +73,7 @@ const Speakers = (props) => {
         </div> */}
       </Header>
 
-      {/* <SpeakersListIndex speakers={speakers} edition={edition} /> */}
+      <SpeakersListIndex speakers={speakers} edition={edition} />
 
       <br />
       <br />
