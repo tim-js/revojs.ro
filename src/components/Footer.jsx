@@ -19,7 +19,7 @@ function renderPage(page, edition, isMainLink) {
   return <Link to={uri}>{name}</Link>;
 }
 
-export default props => {
+export default (props) => {
   const separation = !props.noFooterSeparation ? "footer-separation" : "";
   const { main, secondary, tertiary } = getPages();
   const edition = getEdition();
@@ -29,13 +29,13 @@ export default props => {
       <nav>
         <div className="internal-links">
           <ul className="footer-menu">
-            {main.map(page => {
+            {main.map((page) => {
               return <li key={page.name}>{renderPage(page, edition, true)}</li>;
             })}
           </ul>
 
           <ul className="footer-menu">
-            {secondary.map(page => {
+            {secondary.map((page) => {
               return (
                 <li key={page.name}>{renderPage(page, edition, false)}</li>
               );
@@ -43,7 +43,7 @@ export default props => {
           </ul>
 
           <ul className="footer-menu">
-            {tertiary.map(page => {
+            {tertiary.map((page) => {
               return (
                 <li key={page.name}>{renderPage(page, edition, false)}</li>
               );
@@ -100,7 +100,7 @@ export default props => {
       <div className="copyright">
         <p>
           &copy; <img className="revojs-text" src={revojs} alt="revo.js" />{" "}
-          2019. All rights reserved.
+          {new Date().getFullYear()}. All rights reserved.
         </p>
         <p>
           Organized by{" "}
