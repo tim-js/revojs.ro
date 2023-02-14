@@ -40,12 +40,18 @@
   font-weight: bold;
   font-display: swap;
 }
+@font-face {
+  font-family: "RevojsMono";
+  src: url("/fonts/RevojsMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
 
 @mixin font($type) {
   @if $type == number {
     font-family: "SometypeMono", "Courier New", Courier, monospace;
   } @else if $type == mono {
-    font-family: "RobotoMono", "Courier New", Courier, monospace;
+    font-family: "RevojsMono", "Courier New", Courier, monospace;
   } @else {
     font-family: "WorkSans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
