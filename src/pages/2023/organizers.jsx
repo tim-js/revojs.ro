@@ -17,24 +17,24 @@ const Organizers = ({ data }) => {
   const { allTeam2023Json, teamImages } = data;
 
   function getImage(image) {
-    return teamImages.edges.find(e => image.includes(e.node.base));
+    return teamImages.edges.find((e) => image.includes(e.node.base));
   }
 
   const team = allTeam2023Json.edges
-    .map(e => e.node)
-    .map(member => {
+    .map((e) => e.node)
+    .map((member) => {
       const memberImage = getImage(member.image);
 
       return {
         ...member,
-        memberImage
+        memberImage,
       };
     });
 
   return (
     <Layout title="revo.js Organizers" noFooterSeparation>
-      <Header type="main" centered>
-        <Title2020>organizers</Title2020>
+      <Header type="main" centered className="organisers-image">
+        <h1>Organizers</h1>
         <div className="subtitle2023">
           Revolutions start small, but not individually
         </div>
@@ -89,7 +89,7 @@ const Organizers = ({ data }) => {
           <br />
           <br />
           <ul className="team-list">
-            {team.map(member => (
+            {team.map((member) => (
               <li className="team-member" key={member.name}>
                 <Img
                   fluid={member.memberImage.node.image.fluid}
@@ -129,7 +129,7 @@ const Organizers = ({ data }) => {
   );
 };
 
-export default props => {
+export default (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -157,7 +157,7 @@ export default props => {
           }
         }
       `}
-      render={data => <Organizers data={data} {...props} />}
+      render={(data) => <Organizers data={data} {...props} />}
     />
   );
 };

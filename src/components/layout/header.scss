@@ -21,11 +21,6 @@
 .header-content {
   flex: 1;
   align-self: center;
-
-  // main titles for 2023 should be top aligned
-  .edition-2023 .header--main & {
-    align-self: flex-start;
-  }
 }
 
 .header-image {
