@@ -162,14 +162,26 @@ ins {
   @include font(revo);
 }
 
+.title2023 {
+  --width: 6em;
+
+  height: var(--width);
+  line-height: var(--width);
+
+  @include font(revo);
+
+  @include breakpoint(md) {
+    font-size: 12rem;
+  }
+}
+
 .subtitle2023 {
   font-size: 1.4rem;
   color: #ffffff;
   display: block;
-  padding-top: 2em;
   @include font(revo);
 
   @include breakpoint(md) {
-    font-size: 2rem;
+    font-size: 3.6rem;
   }
 }

@@ -16,7 +16,7 @@ export default () => {
   return (
     <Layout title="revo.js Sponsors">
       <Header centered type="main">
-        <Title2020>supporters</Title2020>
+        <h1 className="title2023 supporters-image">Supporters</h1>
 
         <p className="subtitle2023">
           Change comes one step at a time, <br />
@@ -33,11 +33,10 @@ export default () => {
 
       <Section light centered>
         <section style={{ textAlign: "center" }}>
-          <h2 className="big">Sponsors</h2>
+          <h2 className="big revo-font">Sponsors</h2>
           <p>
             We are very grateful and proud of our awesome sponsors. <br />
-            We couldn’t do it without them.{" "}
-            <strong>For real-real</strong>.
+            We couldn’t do it without them. <strong>For real-real</strong>.
           </p>
 
           <Logos list={sponsors} />

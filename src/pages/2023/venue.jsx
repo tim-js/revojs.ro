@@ -3,13 +3,12 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import Title2020 from "@components/Title2020";
 import Content from "@components/Content";
 import Section from "@components/Section";
 import Button from "@components/Button";
 import Note from "@components/Note";
 
-import "./venue.scss";
+import * as styles from "./venue.module.scss";
 
 const map = require(`@assets/venue_location@2x.png`);
 
@@ -17,15 +16,11 @@ export default () => {
   return (
     <Layout title="revo.js Venue" noFooterSeparation>
       <Header type="main" centered>
-        <Title2020>venue</Title2020>
-
-        {/* <div className="subtitle2023">
-          Where will change revolve this year?
-          <br />
-          Stick around to find out...
+        <h1 className={`title2023 ${styles.venueImage}`}>Venue</h1>
+        <div className="subtitle2023">
+          Timișoara Convention Center <br />
+          is located in the heart of the city's center
         </div>
-        <br />
-        <br /> */}
       </Header>
 
       <Section light>
@@ -33,10 +28,12 @@ export default () => {
           <section id="venue-details">
             <h2>Location</h2>
             <p>
-              <strong>Timișoara Convention Center</strong> is located in the heart of the city's center.
+              <strong>Timișoara Convention Center</strong> is located in the
+              heart of the city's center.
             </p>
             <p>
-              <strong>Venue address</strong>: Strada Mărășești 1-3, Timișoara 300086
+              <strong>Venue address</strong>: Strada Mărășești 1-3, Timișoara
+              300086
             </p>
             <p>
               <OutboundLink

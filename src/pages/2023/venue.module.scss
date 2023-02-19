@@ -1,0 +1,8 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.venueImage {
+  background: url("/2023/h-venue.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}

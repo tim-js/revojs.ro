@@ -1,0 +1,7 @@
+@import "src/styles/mixins";
+
+.speakersImage {
+  background: url("/2023/h-speakers.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}

@@ -15,7 +15,7 @@ import Text from "@components/Text";
 
 import { getEdition } from "@utils";
 
-import "./speakers.scss";
+import * as styles from "./speakers.module.scss";
 
 const Speakers = (props) => {
   const { allSpeakersJson, speakerImages, allTalksJson } = props.data;
@@ -61,7 +61,7 @@ const Speakers = (props) => {
   return (
     <Layout title="revo.js Speakers" noFooterSeparation>
       <Header type="main" centered>
-        <Title2020>speakers</Title2020>
+        <h1 className={`title2023 ${styles.speakersImage}`}>Speakers</h1>
 
         {/* <div className="subtitle2023">
           2020 line-up. Although the edition is off due to the pandemics, we’ll

@@ -98,9 +98,7 @@
 }
 
 .organisers-image {
-  @include breakpoint(md) {
-    background: url("/2023/h-organisers.png") no-repeat;
-    background-size: contain;
-    background-position: center center;
-  }
+  background: url("/2023/h-organisers.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
