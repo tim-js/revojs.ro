@@ -87,12 +87,15 @@ export default (props) => {
             </DateLink>
           </time> */}
           <br />
-          <strong className="mono highlight" style={{ fontSize: "min(4em, 8vw)" }}>
+          <strong
+            className="revo-font highlight"
+            style={{ fontSize: "min(4em, 8vw)" }}
+          >
             We're revo.lving
           </strong>
           <br />
           <br />
-          <strong className="mono" style={{ fontSize: "min(2em, 5vw)" }}>
+          <strong className="revo-font" style={{ fontSize: "min(2em, 5vw)" }}>
             5-6 Oct. 2023
           </strong>
           <br />
@@ -122,7 +125,7 @@ export default (props) => {
 
       <Section id="subscribe-form" centered>
         <br />
-        <h2 className="big">Stay up to date!</h2>
+        <h2 className="big revo-font">Stay up to date!</h2>
         <p className="light-faded">
           News, updates and latest happenings? Stay in the revo.loop
         </p>

@@ -158,12 +158,16 @@ ins {
   text-decoration: none;
 }
 
+.revo-font {
+  @include font(revo);
+}
+
 .subtitle2023 {
   font-size: 1.4rem;
   color: #ffffff;
   display: block;
   padding-top: 2em;
-  @include font(mono);
+  @include font(revo);
 
   @include breakpoint(md) {
     font-size: 2rem;

@@ -34,7 +34,7 @@ const Organizers = ({ data }) => {
   return (
     <Layout title="revo.js Organizers" noFooterSeparation>
       <Header type="main" centered className="organisers-image">
-        <h1>Organizers</h1>
+        <h1 className="revo-font">Organizers</h1>
         <div className="subtitle2023">
           Revolutions start small, but not individually
         </div>
