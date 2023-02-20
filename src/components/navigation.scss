@@ -32,12 +32,6 @@
     padding: 0 3em;
   }
 
-  @include breakpoint(md) {
-    body:not(.is-scrolled) &.is-home {
-      justify-content: center;
-    }
-  }
-
   &.is-active {
     height: 100vh;
     background: var(--dark);
