@@ -7,7 +7,7 @@ import queryString from "query-string";
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
-// import IndexUpdates from "@components/index/IndexUpdates";
+import IndexUpdates from "@components/index/IndexUpdates";
 import IndexSpeakers from "@components/index/IndexSpeakers";
 import IndexSponsors from "@components/index/IndexSponsors";
 import Separator2020 from "@components/Separator2020";
@@ -73,8 +73,8 @@ export default (props) => {
         <div className="home-graphics"></div>
       </Header>
 
-      {/* <IndexUpdates /> */}
-      {/* <Separator2020 /> */}
+      <IndexUpdates />
+      <Separator2020 />
       <IndexSpeakers />
 
       <Section id="subscribe-form" centered>

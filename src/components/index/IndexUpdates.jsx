@@ -9,46 +9,43 @@ import "./indexUpdates.scss";
 export default () => {
   return (
     <Section centered>
-      <h2 className="big first">Updates</h2>
+      <h2 className="big first">Latest Updates</h2>
 
       <br />
 
       <ul className="updates-list">
         <li>
-          <Link to="/covid19/" className="updates-link">
-            <strong className="update-title mono">COVID-19 Updates</strong>
+          <Link to="/2023/speakers/" className="updates-link">
+            <strong className="update-title mono">Speakers</strong>
             <p className="update-content light-faded">
-              Follow the latest revo.news on how the current pandemic influences
-              our schedule.
+              The first invited speakers are published.
             </p>
             <div className="arrow">
-              <Arrow color="accent" />
+              <Arrow color="primary" />
             </div>
           </Link>
         </li>
 
         <li>
-          <Link to="/2020/cfp/" className="updates-link">
+          <Link to="/2023/cfp/" className="updates-link">
             <strong className="update-title mono">Call for Papers</strong>
             <p className="update-content light-faded">
-              Share a talk, spread change, revolve! CFP is opened until June
-              30th.
+              CFP will open this Spring. Subscribe for updates.
             </p>
             <div className="arrow">
-              <Arrow color="accent" />
+              <Arrow color="primary" />
             </div>
           </Link>
         </li>
 
         <li>
-          <Link to="/2020/tickets/" className="updates-link">
+          <Link to="/2023/tickets/" className="updates-link">
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              The launch of Early Bird tickets is slightly postponed to May 1st.
-              Stay tuned.
+              Subscribe to get notified when tickets go on sale.
             </p>
             <div className="arrow">
-              <Arrow color="accent" />
+              <Arrow color="primary" />
             </div>
           </Link>
         </li>

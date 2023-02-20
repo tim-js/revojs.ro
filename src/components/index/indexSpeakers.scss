@@ -4,6 +4,11 @@
   padding-bottom: var(--spacing-content);
   padding-top: var(--spacing-content);
   text-align: center;
+  font-size: 3.5em;
+  
+  @include breakpoint(sm) {
+    font-size: 6em;
+  }
 }
 
 .index-speakers-more {
