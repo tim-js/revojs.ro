@@ -20,6 +20,16 @@
     }
   }
 
+  .re-prefix {
+    color: var(--primary);
+  }
+
+  .index-title {
+    @include breakpoint(md) {
+      font-size: 12rem;
+    }
+  }
+
   .header-content {
     @include breakpoint(sm, max) {
       display: flex;
@@ -31,15 +41,9 @@
   }
 
   .index-graphics {
-    @include breakpoint(sm) {
-      background-image: url("/homepage_bg_left.svg"),
-        url("/2023/homepage_bg_right.svg");
-      background-position: -150px top, calc(100% + 150px) top;
-      background-repeat: no-repeat, no-repeat;
-    }
-    @include breakpoint(lg) {
-      background-position: left top, right top;
-    }
+    background: url("/2023/h-main.png") no-repeat;
+    background-size: contain;
+    background-position: center center;
   }
 
   .index-logo {

@@ -109,11 +109,6 @@
   display: block;
   transition: all 0.3s;
 
-  .is-home & {
-    display: none;
-    transform: translateY(-100px);
-  }
-
   .is-scrolled & {
     transform: scale(0.6) translateY(0);
     transform-origin: center left;

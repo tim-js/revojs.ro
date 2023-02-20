@@ -38,41 +38,20 @@ export default (props) => {
   });
 
   return (
-    <Layout location={props.location} className="index-graphics">
-      <Header className="header-index">
-        <h1 className="index-logo">
-          <img
-            src={logo}
-            alt="revo.js"
-            height="100"
-            style={{ maxWidth: "80%" }}
-          />
-        </h1>
-
+    <Layout location={props.location}>
+      <Header type="main" image="index-graphics">
         <div className="date-location">
-          {/* <time className="index-date mono" dateTime="2020-10-08">
-            <DateLink
-              title="revo.js 2020"
-              details="revolve."
-              location="Timisoara/RO"
-              startDate={new Date("2020-10-08 08:00")}
-              endDate={new Date("2020-10-09 17:00")}
-              isFullDay={true}
-            >
-              <strong>October.8-9.2020</strong>
-            </DateLink>
-          </time> */}
           <br />
-          <strong
-            className="revo-font highlight"
-            style={{ fontSize: "min(4em, 8vw)" }}
-          >
-            We're revo.lving
-          </strong>
+          <h1 className="index-title revo-font">
+            <span className="re-prefix">re</span>think <br />
+            <span className="re-prefix">re</span>visit <br />
+            <span className="re-prefix">re</span>volve <br />
+          </h1>
           <br />
           <br />
-          <strong className="revo-font" style={{ fontSize: "min(2em, 5vw)" }}>
-            5-6 Oct. 2023
+          <strong className="subtitle2023">
+            5-6 October 2023 <br />
+            Timișoara
           </strong>
           <br />
         </div>
