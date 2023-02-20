@@ -1,16 +1,17 @@
 import React from "react";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Title2020 from "@components/Title2020";
-// import Content from "@components/Content";
-// import Section from "@components/Section";
-// import Button from "@components/Button";
+import Content from "@components/Content";
+import Section from "@components/Section";
+import Button from "@components/Button";
+import Note from "@components/Note";
 
 import "./venue.scss";
 
-// const map = require(`@assets/venue_location@2x.png`);
+const map = require(`@assets/venue_location@2x.png`);
 
 export default () => {
   return (
@@ -18,47 +19,45 @@ export default () => {
       <Header type="main" centered>
         <Title2020>venue</Title2020>
 
-        <div className="subtitle2023">
+        {/* <div className="subtitle2023">
           Where will change revolve this year?
           <br />
           Stick around to find out...
         </div>
         <br />
-        <br />
+        <br /> */}
       </Header>
 
-      {/* <Section light>
+      <Section light>
         <Content centered>
           <section id="venue-details">
             <h2>Location</h2>
             <p>
-              <strong>Iulius Congress Hall</strong> is situated Timisoara’s
-              modern side, inside <strong>Iulius Town</strong>.
+              <strong>Timișoara Convention Center</strong> is located in the heart of the city's center.
             </p>
             <p>
-              <strong>Venue address</strong>: Str. Aristide Demetriade, nr. 1,
-              et. 1, 300088 Timişoara
+              <strong>Venue address</strong>: Strada Mărășești 1-3, Timișoara 300086
             </p>
             <p>
               <OutboundLink
-                href="https://goo.gl/maps/oSxL1p7w3Gn6cBMN6"
+                href="https://goo.gl/maps/Htx5Diy42UMDwUU29"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button white>View location on map</Button>
               </OutboundLink>
             </p>
+
             <br />
             <br />
             <br />
-            <br />
-            <img
-              src={map}
-              alt="Iulius Congress Hall location map"
-              width="100%"
-            />
+
+            <Note>
+              <p>More details coming soon...</p>
+            </Note>
           </section>
 
+          {/*
           <section>
             <h2>Getting there</h2>
 
@@ -124,8 +123,9 @@ export default () => {
               <p>Uber and Bolt are also available in Timisoara.</p>
             </section>
           </section>
+          */}
         </Content>
-      </Section> */}
+      </Section>
     </Layout>
   );
 };

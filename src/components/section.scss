@@ -21,10 +21,11 @@
   background-repeat: no-repeat, no-repeat;
 
   padding-top: calc(256px + var(--spacing-content));
-
+  
   .edition-2023 & {
     background-image: url("/2023/sep-top-black-bottom-white.png"),
-      linear-gradient(to bottom, var(--dark) 128px, white 128px);
+      linear-gradient(to bottom, var(--dark) 100px, white 101px);
+    padding-top: calc(201px + var(--spacing-content));
   }
 }
 
@@ -36,10 +37,11 @@
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: calc(256px + var(--spacing-content)) !important;
-
+  
   .edition-2023 & {
     background-image: url("/2023/sep-top-white-bottom-black.png"),
-      linear-gradient(to bottom, white 128px, var(--dark) 128px);
+      linear-gradient(to bottom, white 100px, var(--dark) 101px);
+    padding-top: calc(201px + var(--spacing-content)) !important;
   }
 }
 

@@ -29,26 +29,18 @@ export default () => {
         <Title2020>tickets</Title2020>
 
         <p className="subtitle2023">
-          We’re taking a step back from 2020. Thank you for your support.
-          <br />
-          <Text bold color="white">
-            Let’s revolve in 2021.
-          </Text>
+          Tickets will go on sale in Spring 2023
         </p>
         <br />
         <br />
-
-        <Link to={`/covid19`}>
-          <Button>Learn more</Button>
-        </Link>
 
         {/* <OutboundLink href="#subscribe">
           <Button>Subscribe for Updates</Button>
         </OutboundLink> */}
 
-        {/* <a href="#subscribe">
+        <a href="#subscribe">
           <Button>Subscribe for Updates</Button>
-        </a> */}
+        </a>
       </Header>
 
       <Section light>
@@ -111,7 +103,7 @@ export default () => {
 
             <ul className="bullet">
               <li>
-                <strong>Full conference access</strong> on the 8th and 9th of
+                <strong>Full conference access</strong> on the 5th and 6th of
                 October (Thursday + Friday);
               </li>
               <li>
@@ -219,22 +211,24 @@ export default () => {
             <ul>
               <li>
                 <strong>In case the event gets cancelled</strong> due to
-                unforeseeable circumstances, you will get a full refund;
+                unforeseeable circumstances, you will get a 90% refund <i>(taxes cannot be refunded)</i>;
                 <br />
                 <br />
               </li>
               <li>
                 <strong>In case the event needs to be rescheduled</strong>, you
-                will have the option to either get a full refund or use your
+                will have the option to either get a refund or use your
                 ticket to participate at the rescheduled event.
               </li>
             </ul>
           </section>
 
           <section id="subscribe">
+            <br />
+            <br />
             <h2>Stay up to date</h2>
             <p>
-              Subscribe to find out when Early Bird tickets become available:
+              Subscribe to find out when Tickets go on sale:
             </p>
             <Subscribe light />
           </section>
