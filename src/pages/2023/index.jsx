@@ -49,30 +49,6 @@ export default (props) => {
           />
         </h1>
 
-        {/* <div className="index-tagline">
-          <div>
-            <span className="flip flip1">r</span>
-          </div>
-          <div>
-            <span className="flip flip2">e</span>
-          </div>
-          <div>
-            <span className="flip flip3">v</span>
-          </div>
-          <div>
-            <span className="flip flip4">o</span>
-          </div>
-          <div>
-            <span className="flip flip5">l</span>
-          </div>
-          <div>
-            <span className="flip flip6">v</span>
-          </div>
-          <div>
-            <span className="flip flip7">e</span>
-          </div>
-        </div> */}
-
         <div className="date-location">
           {/* <time className="index-date mono" dateTime="2020-10-08">
             <DateLink

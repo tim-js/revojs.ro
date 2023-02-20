@@ -51,7 +51,7 @@ const Speakers = ({ data }) => {
         className="index-speakers-more"
         style={{ textAlign: "center", marginTop: "5em" }}
       >
-        <Link to={`/${edition}/speakers`}>
+        <Link to={`/${edition}/speakers/`}>
           <Button>Meet the speakers</Button>
         </Link>
       </div>
