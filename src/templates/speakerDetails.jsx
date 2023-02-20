@@ -40,6 +40,7 @@ export const pageQuery = graphql`
       firstname
       lastname
       twitter
+      web
       title
       company
       bio

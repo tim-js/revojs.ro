@@ -1,17 +1,14 @@
 export const main = [
-  // {
-  //   name: "Speakers",
-  //   hasSubpages: true,
-  // },
+  {
+    name: "Speakers",
+    hasSubpages: true,
+  },
   // {
   //   name: "Agenda",
   // },
   // {
   //   name: "Call for Papers",
   //   path: "cfp",
-  // },
-  // {
-  //   name: "Tickets",
   // },
   // {
   //   name: "Tickets",

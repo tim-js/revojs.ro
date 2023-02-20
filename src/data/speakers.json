@@ -5,12 +5,13 @@
     "slug": "leonie-watson",
     "firstname": "Léonie",
     "lastname": "Watson",
-    "bio": "<p>Léonie is Director of TetraLogical; a member of the W3C Advisory Board; co-Chair of the W3C Web Applications Working Group; and a member of the Accelerated Mobile Pages (AMP) Advisory Committee.</p><p>Amongst other things, Léonie is co-organiser of the Inclusive Design 24 (#id24) conference; co-author of the Inclusive Design Principles; and mentor to young people interested in the fields of accessibility and inclusive design. She is also a Microsoft Most Valued Professional (MVP).</p><p>Léonie is often found at conferences, talking about web standards, accessibility mechanics, and pushing the boundaries of inclusive design (with existing technologies like SVG, HTML, ARIA, and JavaScript, as well as new technologies like AI and WebVR). She has also written about these things for Smashing magazine, SitePoint.com, and Net magazine, as well as on her own site Tink.UK.</p><p>In her spare time, Léonie likes reading, cooking, drinking tequila, and dancing (although not necessarily in that order)!</p>",
+    "bio": "<p>Léonie is Director of <a href='https://tetralogical.com'>TetraLogical</a>; a member of the <a href='https://www.w3.org/governance/board/'>W3C Board of Directors</a>; and co-Chair of the W3C Web Applications Working Group.</p><p>Amongst other things, Léonie is co-organiser of the <a href='https://inclusivedesign24.org'>Inclusive Design 24 (#id24)</a> conference; co-author of the <a href='https://inclusivedesignprinciples.org'>Inclusive Design Principles</a>; and mentor to young people interested in the fields of accessibility and inclusive design. She is also a Microsoft Most Valued Professional (MVP).</p><p>Léonie is often found at conferences, talking about web standards, accessibility mechanics, and pushing the boundaries of inclusive design (with existing technologies like SVG, HTML, ARIA, and JavaScript, as well as new technologies like AI and WebVR). She has also written about some of these things for Smashing magazine, SitePoint.com, and Net magazine, as well as on her own site <a href='https://tink.uk'>tink.uk</a>.</p><p>In her spare time, Léonie likes reading, cooking, drinking tequila, and dancing (although not necessarily in that order)!</p>",
     "image": "speakers/matt_bw.png",
     "twitter": "LeonieWatson",
+    "web": "https://tink.uk",
     "title": "Director",
     "company": "TetraLogical",
-    "talkId": "talk1"
+    "talkId": "talk2023-leonie"
   },
   {
     "edition": 2023,
@@ -18,12 +19,13 @@
     "slug": "trent-willis",
     "firstname": "Trent",
     "lastname": "Willis",
-    "bio": "Trent Willis is a Senior UI Engineer at Netflix, where he builds tools and applications to give other engineers insight into their products. He previously worked at LinkedIn and Grooveshark where he helped build products that reached millions of daily users. Additionally, Trent is a regular conference speaker, project lead for the open source QUnit JavaScript testing framework, and a self-professed music junkie.",
+    "bio": "<p>A Florida-based web developer, Trent Willis, has over a decade of experience building complex web applications and is passionate about sharing that experience with others.</p> <p>Currently a Staff Software Engineer on Netflix’s Observability team, he has contributed to many Open Source projects during his career and has spoken at dozens of conferences on topics related to JavaScript, web development, and team culture.</p>",
     "image": "speakers/matt_bw.png",
     "twitter": "trentmwillis",
-    "title": "Senior UI Engineer",
+    "web": "https://trentwillis.com",
+    "title": "Staff Software Engineer",
     "company": "Netflix",
-    "talkId": "talk2"
+    "talkId": "talk2023-trent"
   },
   {
     "edition": 2023,
@@ -31,12 +33,12 @@
     "slug": "martin-splitt",
     "firstname": "Martin",
     "lastname": "Splitt",
-    "bio": "Martin is a developer advocate on the Search Relations team at Google Switzerland. He helps web developers, SEO experts and businesses to build successful web applications and web sites, making the most out of search engines.",
+    "bio": "Martin does things with computers and then tells other people about the things that worked and the ones that didn't, so they can go and make new, exciting mistakes themselves.",
     "image": "speakers/martin_bw.png",
     "twitter": "g33konaut",
-    "title": "Developer Advocate",
+    "title": "Developer Relations Engineer",
     "company": "Google",
-    "talkId": "talk4"
+    "talkId": "talk2023-martin"
   },
   {
     "edition": 2023,
@@ -44,12 +46,12 @@
     "slug": "kenneth-rohde-christiansen",
     "firstname": "Kenneth Rohde",
     "lastname": "Christiansen",
-    "bio": "Kenneth Rohde Christiansen is a Danish software engineer and architect, specialized in mobile and web technology. Working at Intel out of Copenhagen, Kenneth helps define Intel’s strategy and plans regarding the Web Platform, as well as puts it into action. Before joining Intel, Kenneth was employed by Nokia (Denmark and Brazil) where he worked on the Nokia N9 web browser, Qt, WebKit, as well as many other mobile projects. Kenneth is an elected member of the W3C Technical Architect Group (TAG).",
+    "bio": "<p>Kenneth Rohde Christiansen is principal engineer in the Intel Web Platform Engineering team. In his role, Kenneth leads multiple efforts making sure that the web platform works in Intel’s favor, by becoming a real application development platform, driving Windows and Chrome OS usage, while working best on Intel and exposing the full potential of our hardware capabilities to developers.</p> <p>Since joining Intel in 2011, Kenneth has shaped our approach to working with external browser vendors and the web community, leading to many success stories in landing Intel specific features and optimization in Chromium based browsers such as Google Chrome and Microsoft Edge. Some of these features and inventions have been industry shaping, such as Progressive Web Apps, which is becoming one of the main ways to create desktop applications.</p> <p>He is a multi-term elected member of the W3C (World Wide Web Consortium) Technical Architecture Group, growing Intel’s influence inside the most important standardization group of the web platform. Apart from that he is also a Microsoft Most Values Professional in Developer Tooling and Google Developer Experts in Web Technology.</p> <p>Kenneth holds a MSc degree in Software Engineering from the University of Groningen, the Netherlands and a BSc degree in Software Engineering and Math from the University of Copenhagen.</p>",
     "image": "speakers/martin_bw.png",
     "twitter": "kennethrohde",
-    "title": "Senior Web Platform Architect",
+    "title": "Principal Engineer and Web Platform Architect",
     "company": "Intel",
-    "talkId": "talk7"
+    "talkId": ""
   },
   {
     "edition": 2023,
@@ -57,12 +59,12 @@
     "slug": "jay-phelps",
     "firstname": "Jay",
     "lastname": "Phelps",
-    "bio": "Jay is a Reactive Programming nut, compiler/language design enthusiast, and previously an engineer at Netflix. He has contributed to numerous open source projects and volunteered as part of the W3C WebAssembly Community Group. He was previously on the core team of RxJS, and is the author of git-blame-someone-else.",
+    "bio": "Reactive Programming and compiler enthusiast. Jay works on the Shared Client Foundations team at Netflix. He's an <a href='https://rxjs.dev/team?group=Alumn'>RxJS core team alum</a> and creator of <a href='https://github.com/jayphelps/git-blame-someone-else'>git-blame-someone-else</a>.",
     "image": "speakers/martin_bw.png",
     "twitter": "_jayphelps",
-    "title": "Ex-Engineer at Netflix",
-    "company": "",
-    "talkId": "talk8"
+    "title": "Software Engineer",
+    "company": "Netflix",
+    "talkId": "talk2023-jay"
   },
   {
     "edition": 2023,
@@ -71,11 +73,50 @@
     "firstname": "Ben",
     "lastname": "Lesh",
     "bio": "<p>Ben Lesh is the technical lead for RxJS, a reactive programming library for JavaScript. He's currently working at Citadel Securities, and has worked on the Angular Team at Google and also at Netflix in the past.</p><p>Ben is a father of 3 children, and enjoys art such as drawing and painting.</p>",
-    "image": "speakers/matt_bw.png",
+    "image": "speakers/martin_bw.png",
     "twitter": "BenLesh",
     "title": "Development Lead",
     "company": "RxJS",
-    "talkId": "talk9"
+    "talkId": ""
+  },
+  {
+    "edition": 2023,
+    "id": "matt-pocock",
+    "slug": "matt-pocock",
+    "firstname": "Matt",
+    "lastname": "Pocock",
+    "bio": "<p>Matt is an independent full-stack engineer and developer advocate working on a comprehensive TypeScript course called <a href='https://totaltypescript.com'>Total TypeScript</a>.</p>",
+    "image": "speakers/matt_bw.png",
+    "twitter": "mattpocockuk",
+    "title": "TypeScript Educator",
+    "company": "",
+    "talkId": "talk2023-matt"
+  },
+  {
+    "edition": 2023,
+    "id": "anna-migas",
+    "slug": "anna-migas",
+    "firstname": "Anna",
+    "lastname": "Migas",
+    "bio": "<p>Anna works as a Lead UI Developer at Field Intelligence helping to bring healthcare the fastest emerging markets in the world. She is always trying to find ways to make people fall in love with coding and has a long history of organizing coding workshops for WebMuses and Rails Girls. In her spare time she is practicing Pilates, playing Hearthstone and traveling.</p>",
+    "image": "speakers/matt_bw.png",
+    "twitter": "szynszyliszys",
+    "title": "Lead UI Developer",
+    "company": "Field Intelligence",
+    "talkId": "talk2023-anna"
+  },
+  {
+    "edition": 2023,
+    "id": "rachel-andrew",
+    "slug": "rachel-andrew",
+    "firstname": "Rachel",
+    "lastname": "Andrew",
+    "bio": "",
+    "image": "speakers/matt_bw.png",
+    "twitter": "rachelandrew",
+    "title": "Content Lead for Chrome DevRel",
+    "company": "Google",
+    "talkId": ""
   },
   {
     "edition": 2023,

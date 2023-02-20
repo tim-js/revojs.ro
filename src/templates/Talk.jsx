@@ -52,6 +52,7 @@ export default props => {
           <React.Fragment key={speaker.id}>
             <h2>About {speaker.firstname}</h2>
             <div dangerouslySetInnerHTML={{ __html: speaker.bio }} />
+            {!!speaker.web && <p><a href={speaker.web} rel="noopener noreferrer">{speaker.web}</a></p>}
           </React.Fragment>
         ))}
 
