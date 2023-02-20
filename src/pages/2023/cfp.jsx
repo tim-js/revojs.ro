@@ -7,9 +7,9 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
-// import Note from "@components/Note";
+import Note from "@components/Note";
 // import { SubmitCFP } from "@components/CTA";
-// import Subscribe from "@components/Subscribe";
+import Subscribe from "@components/Subscribe";
 import Title2020 from "@components/Title2020";
 import Text from "@components/Text";
 
@@ -36,13 +36,7 @@ export default () => {
         <Title2020>papers</Title2020>
 
         <p className="subtitle2023">
-          A big thank you to all applicants.
-          <br />
-          Unfortunately, due to the current pandemic revo.js is cancelled.
-          <br />
-          <Text bold color="white">
-            We’ll revolve in 2023.
-          </Text>
+          Call for Papers hasn't started yet.
           {/* <span className="highlight">{CFP_CLOSE}.</span>
           <br />
           <span>
@@ -50,35 +44,31 @@ export default () => {
           </span> */}
           {/* <span className="highlight">CFP has closed on the 17th of June.</span> */}
         </p>
-        <br />
-        <br />
 
-        {/* <a href="#topics">
-          <Button>View our Topics</Button>
-        </a> */}
+        <a href="#subscribe-cfp">
+          <Button>Subscribe for updates</Button>
+        </a>
 
-        <Link to={`/covid19`}>
+        {/* <Link to={`/covid19`}>
           <Button>Learn more</Button>
-        </Link>
+        </Link> */}
 
         {/* <SubmitCFP /> */}
       </Header>
 
       <Section light>
         <Content centered>
-          {/* <Note> */}
-          {/* 
+          <Note>
+          
             <p>
               Do you have a technical presentation that can change minds,
               perspectives, work approaches, or why not, even the mood of JS
               programmers?
             </p>
-            <p>Stay tuned to share it!</p>
-            <p>
-              The <strong>Call for Papers opens</strong> on{" "}
-              <strong className="accent">{CFP_OPEN}</strong>.
+            <p>Stay tuned to share it! The <strong>Call for Papers opens in Spring 2023</strong>.
+              {/* on <strong className="accent">{CFP_OPEN}</strong>. */}
             </p>
-             */}
+            
 
           {/* <p>
               This is a call out to all members of the JavaScript community who
@@ -101,19 +91,21 @@ export default () => {
               We're currently thoroughly reviewing all proposals and we're
               planning to annouce the selected speakers in Mid-July.
             </p> */}
-          {/* </Note> */}
+          </Note>
 
           {/* <br /> */}
           {/* <SubmitCFP white /> */}
 
-          {/* 
-          <section>
+          
+          <section id="subscribe-cfp">
+            <br />
+            <br />
             <h2>Stay up to date!</h2>
             <p>Subscribe to find out when Call for Papers starts:</p>
             <Subscribe light list="cfp" />
           </section>
-          */}
 
+          {/*
           <section id="topics">
             <h2>Topics</h2>
             <p>
@@ -124,12 +116,8 @@ export default () => {
             <ul className="bullet">
               <li>Crazy ideas &amp; out-of-the-box approaches;</li>
               <li>Re-thinking best practices;</li>
-              {/* <li>Language fundamentals;</li> */}
-              {/* <li>Hot topics;</li> */}
               <li>Tips and tricks for daily use;</li>
               <li>Tools &amp; solutions for a better developer experience;</li>
-              {/* <li>Mobile, Desktop and IoT;</li> */}
-              {/* <li>The human side of software development</li> */}
               <li>Any other topic that makes your heart beat faster.</li>
             </ul>
           </section>
@@ -213,7 +201,6 @@ export default () => {
               the way with:
             </p>
             <ul className="bullet">
-              {/* <li>Brainstorming ideas;</li> */}
               <li>Proposal submission;</li>
               <li>Slides or live code preparation;</li>
               <li>Talk delivery on stage.</li>
@@ -334,6 +321,7 @@ export default () => {
 
           <br />
           <br />
+          */}
 
           {/* <SubmitCFP white /> */}
         </Content>
