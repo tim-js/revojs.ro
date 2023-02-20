@@ -41,7 +41,6 @@ export default (props) => {
     <Layout location={props.location}>
       <Header type="main" image="index-graphics">
         <div className="date-location">
-          <br />
           <h1 className="index-title revo-font">
             <span className="re-prefix">re</span>think <br />
             <span className="re-prefix">re</span>visit <br />
@@ -49,7 +48,7 @@ export default (props) => {
           </h1>
           <br />
           <br />
-          <strong className="subtitle2023">
+          <strong className="index-location subtitle2023">
             5-6 October 2023 <br />
             Timișoara
           </strong>

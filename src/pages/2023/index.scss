@@ -25,6 +25,7 @@
   }
 
   .index-title {
+    line-height: 0.9;
     @include breakpoint(md) {
       font-size: 12rem;
     }
@@ -54,7 +55,8 @@
   }
 
   .date-location {
-    margin-top: 2vh;
+    margin-top: 20vh;
+    margin-left: var(--space-1);
     line-height: 1;
     font-size: 20px;
   }
@@ -63,9 +65,8 @@
     margin: 0 var(--space-1);
   }
   .index-location {
-    color: var(--primary);
     display: inline-block;
-    margin: 0 var(--space-1);
+    margin: var(--space-1);
   }
 
   .index-cta {
