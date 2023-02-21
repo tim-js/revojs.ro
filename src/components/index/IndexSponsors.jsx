@@ -1,7 +1,7 @@
 import React from "react";
 
 import Section from "@components/Section";
-import Logos from "@components/Logos";
+import LogosWrapped from "@components/LogosWrapped";
 
 import "./indexSponsors.scss";
 
@@ -16,7 +16,22 @@ export default ({ sponsors }) => {
         happen.
       </p>
 
-      <Logos list={sponsors} />
+      <br />
+      <br />
+
+      <LogosWrapped list={sponsors.premium} size="large" />
+
+      <br />
+      <br />
+      <br />
+
+      <LogosWrapped list={sponsors.standard} size="normal" />
+
+      <br />
+      <br />
+
+      <LogosWrapped list={sponsors.starter} size="small" />
+
     </Section>
   );
 };

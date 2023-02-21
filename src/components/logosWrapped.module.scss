@@ -1,0 +1,71 @@
+@import "../styles/mixins";
+
+.logos_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos_list__small img {
+  height: 60px;
+  @include breakpoint(md) {
+    height: 80px;
+  }
+}
+.logos_list__normal img {
+  height: 80px;
+  @include breakpoint(md) {
+    height: 100px;
+  }
+}
+.logos_list__large img {
+  width: 100%;
+  @include breakpoint(sm) {
+    height: 180px;
+  }
+  @include breakpoint(md) {
+    height: 200px;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+
+  padding: 0.5em 1em;
+  position: relative;
+
+  img {
+    transition: transform 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover {
+    img,
+    .logo_title {
+      transform: translateY(-6px);
+    }
+  }
+}
+
+.logo_title {
+  position: absolute;
+  bottom: 0.5em;
+  left: 1em;
+  right: 1em;
+  text-align: center;
+  color: var(--text-light);
+  transition: transform 0.3s;
+
+  @include breakpoint(sm) {
+    font-size: 1em;
+    bottom: 2em;
+  }
+}

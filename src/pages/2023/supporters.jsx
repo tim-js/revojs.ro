@@ -7,6 +7,7 @@ import Section from "@components/Section";
 import Title2020 from "@components/Title2020";
 
 import Logos from "@components/Logos";
+import LogosWrapped from "@components/LogosWrapped";
 
 import { sponsors, friends, communities } from "@data/2023/supporters";
 
@@ -36,16 +37,27 @@ export default () => {
           <h2 className="big revo-font">Sponsors</h2>
           <p>
             We are very grateful and proud of our awesome sponsors. <br />
-            We couldn’t do it without them. <strong>For real-real</strong>.
+            We couldn’t do it without them. <strong>For real.</strong>
           </p>
 
-          <Logos list={sponsors} />
+          <LogosWrapped list={sponsors.premium} size="large" />
+
+          <br />
+          <br />
+          <br />
+
+          <LogosWrapped list={sponsors.standard} size="normal" />
+
+          <br />
+          <br />
+
+          <LogosWrapped list={sponsors.starter} size="small" />
         </section>
 
         <section style={{ textAlign: "center" }}>
           <h2 className="big">Communities</h2>
           <p>
-            High five, up high to all the amazing JavaScript communities that
+            High five to all the amazing communities that
             have our back. <br />
             They are the primary personas of this event.
           </p>
@@ -56,8 +68,8 @@ export default () => {
         <section style={{ textAlign: "center" }}>
           <h2 className="big">Our Friends</h2>
           <p>
-            A big thank you to all our friends. <br />
-            They brought the "spice and everything nice".
+            A huge <em>thank you</em> to all our friends. <br />
+            They brought the <em>"spice and everything nice"</em>.
           </p>
 
           <Logos list={friends} small />
