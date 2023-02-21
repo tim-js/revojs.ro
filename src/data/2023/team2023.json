@@ -25,6 +25,11 @@
     "title": "Communication / Sponsors"
   },
   {
+    "name": "Ion Moșincat",
+    "image": "v2_ion_bw.png",
+    "title": "Backstage"
+  },
+  {
     "name": "Anca Spătariu",
     "image": "v2_anca_bw.png",
     "title": "Speakers"
@@ -35,14 +40,9 @@
     "title": "Speakers"
   },
   {
-    "name": "Andrei Pfeiffer",
-    "image": "v2_andrei_bw.png",
-    "title": "Coordinator"
-  },
-  {
-    "name": "Dana Ciuma",
-    "image": "v2_dana_bw.png",
-    "title": "Communities"
+    "name": "Lia Pfeiffer",
+    "image": "v2_lia_bw.png",
+    "title": "Venue Design"
   },
   {
     "name": "Ovidiu Bîte",
@@ -50,13 +50,13 @@
     "title": "Tickets"
   },
   {
-    "name": "Lia Pfeiffer",
-    "image": "v2_lia_bw.png",
-    "title": "Venue Design"
+    "name": "Dana Ciuma",
+    "image": "v2_dana_bw.png",
+    "title": "Communities"
   },
   {
-    "name": "Ion Moșincat",
-    "image": "v2_ion_bw.png",
-    "title": "Backstage"
+    "name": "Andrei Pfeiffer",
+    "image": "v2_andrei_bw.png",
+    "title": "Coordinator"
   }
 ]
