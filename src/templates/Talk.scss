@@ -20,15 +20,17 @@
     background-position: calc(var(--spacing-content) - 280px) top, center top;
     padding-top: calc(267px + var(--spacing-content));
 
-    .edition-2020 & {
-      background-image: url("/2023/pixel_separation_speaker_detail.svg"),
-        linear-gradient(to bottom, var(--dark) 171px, white 96px);
+    .edition-2023 & {
+      background-image: url("/2023/sep-top-black-bottom-white.png"), linear-gradient(to bottom, var(--dark) 171px, white 96px);
     }
   }
 
   @include breakpoint(md) {
-    background-position: calc((100vw - var(--width-content)) / 2 - 280px) top,
-      center top;
+    background-position: calc((100vw - var(--width-content)) / 2 - 280px) top, center top;
+
+    .edition-2023 & {
+      background-position: center 50px, center top;
+    }
   }
 }
 
