@@ -1,67 +1,62 @@
 [
   {
     "name": "Amalia Sisak",
-    "image": "01_V1@2x.png",
+    "image": "v2_amalia_bw.png",
     "title": "Venue"
   },
   {
     "name": "Andrea Sisak",
-    "image": "02_V1@2x.png",
+    "image": "v2_andrea_bw.png",
     "title": "Hospitality"
   },
   {
     "name": "Adrian Fâciu",
-    "image": "12_V1@2x.png",
+    "image": "v2_adrian_bw.png",
     "title": "Workshops"
   },
   {
     "name": "Horia Radu",
-    "image": "05_V1@2x.png",
+    "image": "v2_horia_bw.png",
     "title": "Afterparty"
   },
   {
     "name": "Ilona Iftode",
-    "image": "06_V1@2x.png",
-    "title": "Communication"
+    "image": "v2_ilona_bw.png",
+    "title": "Communication / Sponsors"
   },
   {
     "name": "Anca Spătariu",
-    "image": "07_V1@2x.png",
+    "image": "v2_anca_bw.png",
     "title": "Speakers"
   },
   {
     "name": "Lucian Păcurar",
-    "image": "09_V1@2x.png",
-    "title": "Support"
+    "image": "v2_lucian_bw.png",
+    "title": "Speakers"
   },
   {
     "name": "Andrei Pfeiffer",
-    "image": "10_V1@2x.png",
+    "image": "v2_andrei_bw.png",
     "title": "Coordinator"
   },
   {
     "name": "Dana Ciuma",
-    "image": "Dana_V1@2x.png",
+    "image": "v2_dana_bw.png",
     "title": "Communities"
   },
   {
     "name": "Ovidiu Bîte",
-    "image": "11_V1@2x.png",
-    "title": "Support"
+    "image": "v2_ovidiu_bw.png",
+    "title": "Tickets"
   },
   {
     "name": "Lia Pfeiffer",
-    "image": "Lia_V1@2x.png",
+    "image": "v2_lia_bw.png",
     "title": "Venue Design"
   },
   {
-    "name": "Iulia Tamazlicariu",
-    "image": "Iulia_V1@2x.png",
-    "title": "Diversity"
-  },
-  {
     "name": "Ion Moșincat",
-    "image": "13_V1@2x.png",
+    "image": "v2_ion_bw.png",
     "title": "Backstage"
   }
 ]

@@ -7,11 +7,11 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
-import Title2020 from "@components/Title2020";
+import Note from "@components/Note";
 
 import timjs from "@assets/tim.js-logo.svg";
 
-import "./organizers.scss";
+import styles from "./organizers.module.scss";
 
 const Organizers = ({ data }) => {
   const { allTeam2023Json, teamImages } = data;
@@ -34,7 +34,7 @@ const Organizers = ({ data }) => {
   return (
     <Layout title="revo.js Organizers" noFooterSeparation>
       <Header type="main" centered>
-        <h1 className="title2023 organisers-image">Organizers</h1>
+        <h1 className={`title2023 ${styles.organisers_image}`}>Organizers</h1>
         <div className="subtitle2023">
           Revolutions start small,
           <br />
@@ -44,6 +44,12 @@ const Organizers = ({ data }) => {
 
       <Section light>
         <Content centered>
+          <Note>
+            <p>
+              revo.js is a community-driven conference, organized by <strong>tim.js</strong> through its NGO, <strong>Asociatia TIM.JS</strong>.
+            </p>
+          </Note>
+
           <section>
             <h2 style={{ textAlign: "center" }}>
               <OutboundLink
@@ -90,16 +96,16 @@ const Organizers = ({ data }) => {
           </p>
           <br />
           <br />
-          <ul className="team-list">
+          <ul className={styles.team_list}>
             {team.map((member) => (
-              <li className="team-member" key={member.name}>
+              <li className={styles.team_member} key={member.name}>
                 <Img
                   fluid={member.memberImage.node.image.fluid}
                   alt={`${member.name} black and white photo`}
                 />
-                <strong className="team-member-name">
+                <strong className={styles.team_member_name}>
                   {member.name}
-                  <span className="team-member-title">{member.title}</span>
+                  <span className={styles.team_member_title}>{member.title}</span>
                 </strong>
               </li>
             ))}
@@ -150,7 +156,7 @@ export default (props) => {
               node {
                 base
                 image: childImageSharp {
-                  fluid(maxWidth: 240, maxHeight: 240, grayscale: true) {
+                  fluid(maxWidth: 240, maxHeight: 240) {
                     ...GatsbyImageSharpFluid
                   }
                 }

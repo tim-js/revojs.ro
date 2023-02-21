@@ -1,0 +1,65 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.team_list {
+  list-style-type: none;
+  padding: 5rem 0;
+  margin: 0;
+  display: grid;
+  row-gap: 4rem;
+  column-gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(auto-fit, minmax(16%, 1fr));
+  }
+}
+
+.team_member {
+  position: relative;
+
+  &:hover .team_member_title,
+  &:hover .team_member_name {
+    color: var(--primary)
+  }
+}
+
+.team_member_name {
+  @include font(mono);
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 0.5em;
+  display: block;
+
+  @include breakpoint(sm) {
+    font-size: 2rem;
+  }
+  @include breakpoint(md) {
+    font-size: 1.8rem;
+  }
+}
+
+.team_member_title {
+  display: block;
+  color: var(--lightgrey);
+  line-height: 1.2;
+  font-size: 1rem;
+  font-weight: normal;
+
+  @include breakpoint(sm) {
+    font-size: 1.5rem;
+  }
+  @include breakpoint(md) {
+    font-size: 1.2rem;
+  }
+}
+
+.organisers_image {
+  background: url("/2023/h-organisers.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
