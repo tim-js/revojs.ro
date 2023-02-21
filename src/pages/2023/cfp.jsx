@@ -94,12 +94,25 @@ export default () => {
               We're currently thoroughly reviewing all proposals and we're
               planning to annouce the selected speakers in Mid-July.
             </p> */}
+
+            <br />
+            <br />
+            <br />
+
+            <p style={{ fontSize: "1.5em" }}>revo.js 2023 main theme is <br /><strong className="mono"><span className="highlight">re</span>think. <span className="highlight">re</span>visit. <span className="highlight">re</span>volve.</strong></p>
+            <ul className="bullet">
+              <li>Looking with a critical eye at the current de-facto solutions and analyse alternative approaches.</li>
+              <li>Revisiting classical or old-fashioned practices that are still applicable today.</li>
+              <li>Returning to simplicity after experimenting with overly-complex solutions.</li>
+              <li><strong>Critically asking if (and when) today's complexity is a necessity or a commodity.</strong></li>
+            </ul>
           </Note>
+
+          <p><strong className="accent">NOTE:</strong> Not every talk is mandatory to touch upon the main theme. The primary focus of the talks are quality and useful content wrapped in a good delivery. However, proposals that also fit the theme will likely get extra points during the CFP selection.</p>
 
           {/* <br /> */}
           {/* <SubmitCFP white /> */}
 
-          
           <section id="subscribe-cfp">
             <br />
             <br />
