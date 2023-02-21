@@ -18,8 +18,7 @@ export default () => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.venueImage}`}>Venue</h1>
         <div className="subtitle2023">
-          Timișoara Convention Center <br />
-          is located in the heart of the city's center
+          revo.js will revolve at <br />Timișoara Convention Center
         </div>
       </Header>
 

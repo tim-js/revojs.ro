@@ -35,8 +35,11 @@ export default () => {
         </Text>
         <Title2020>papers</Title2020>
 
+        <br />
+        <br />
+
         <p className="subtitle2023">
-          Call for Papers hasn't started yet.
+          Call for Papers will open in April
           {/* <span className="highlight">{CFP_CLOSE}.</span>
           <br />
           <span>
@@ -65,7 +68,7 @@ export default () => {
               perspectives, work approaches, or why not, even the mood of JS
               programmers?
             </p>
-            <p>Stay tuned to share it! The <strong>Call for Papers opens in Spring 2023</strong>.
+            <p>Stay tuned to share it! The <strong>Call for Papers starts in April 2023</strong>.
               {/* on <strong className="accent">{CFP_OPEN}</strong>. */}
             </p>
             
