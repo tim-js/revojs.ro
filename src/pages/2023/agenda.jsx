@@ -14,7 +14,7 @@ import Header from "@components/layout/Header";
 // import { day0, day1, day2 } from "@data/2023/agenda";
 // import { getEdition } from "@utils";
 
-import "./agenda.scss";
+import styles from "./agenda.module.scss";
 
 // const edition = getEdition();
 
@@ -66,19 +66,11 @@ const Agenda = ({ data }) => {
 
   return (
     <Layout title="revo.js Agenda" noFooterSeparation>
-      <Header type="main" image="agenda-image">
-        <h1>Agenda</h1>
-        <br />
-        <strong className="speakers-important light-faded mono">
-          {/* <span className="highlight">
-            Change can’t be scheduled but it can kindle from our revo.agenda.
-          </span>
-          <br />
-          <span>Learn more and plan accordingly.</span> */}
-          <span>
-            Will be annouced later. <br /> Stay tuned...
-          </span>
-        </strong>
+      <Header type="main" centered>
+        <h1 className={`title2023 ${styles.agenda_image}`}>Agenda</h1>
+        <p className="subtitle2023">
+          Will be annouced later. <br /> Stay tuned...
+        </p>
       </Header>
 
       {/* <div className="agenda-nav-wrapper">
@@ -188,7 +180,7 @@ const Agenda = ({ data }) => {
   */
 };
 
-export default props => {
+export default (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -237,7 +229,7 @@ export default props => {
           }
         }
       `}
-      render={data => <Agenda data={data} {...props} />}
+      render={(data) => <Agenda data={data} {...props} />}
     />
   );
 };
