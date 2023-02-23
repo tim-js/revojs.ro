@@ -187,7 +187,7 @@ export default () => {
 
             <br />
 
-            <Link to="/2020/scholarships/">
+            <Link to="/2023/scholarships/">
               <Button white>Diversity Scholarships</Button>
             </Link>
           </section>
