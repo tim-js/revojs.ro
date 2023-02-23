@@ -14,11 +14,12 @@ const map = require(`@assets/venue_location@2x.png`);
 
 export default () => {
   return (
-    <Layout title="revo.js Venue" noFooterSeparation>
+    <Layout title="revo.js Venue">
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.venueImage}`}>Venue</h1>
         <div className="subtitle2023">
-          revo.js will revolve at <br />Timișoara Convention Center
+          revo.js will revolve at <br />
+          Timișoara Convention Center
         </div>
       </Header>
 
