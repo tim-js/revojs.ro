@@ -7,7 +7,7 @@ import Header from "@components/layout/Header";
 // import Content from "@components/Content";
 // import Section from "@components/Section";
 import SpeakersListIndex from "@components/SpeakersListIndex";
-import Separator2020 from "@components/Separator2020";
+import Separator2023 from "@components/Separator2023";
 import Title2020 from "@components/Title2020";
 // import Button from "@components/Button";
 import Text from "@components/Text";
@@ -77,7 +77,7 @@ const Speakers = (props) => {
 
       <br />
       <br />
-      {/* <Separator2020 /> */}
+      {/* <Separator2023 /> */}
 
       {/* <Section style={{ paddingTop: 0 }}>
         <Content centered style={{ textAlign: "center" }}>
