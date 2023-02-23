@@ -166,7 +166,11 @@ ins {
   --width: 6em;
 
   height: var(--width);
-  line-height: var(--width);
+  font-size: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include font(revo);
 
@@ -176,7 +180,7 @@ ins {
 }
 
 .subtitle2023 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #ffffff;
   display: block;
   font-weight: bold;
