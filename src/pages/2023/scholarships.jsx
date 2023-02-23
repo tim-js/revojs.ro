@@ -26,20 +26,6 @@ export default () => {
         <br />
         <h1>Diversity Scholarships</h1>
 
-        <div className="subtitle2023">
-          Unfortunately, revo.js 2020 is cancelled due to the current pandemic.
-          <br />
-          <Text bold color="white">
-            We’ll revolve in 2021.
-          </Text>
-        </div>
-        <br />
-        <br />
-
-        <Link to={`/covid19`}>
-          <Button>Learn more</Button>
-        </Link>
-
         {/* <OutboundLink href="#subscribe">
           <Button>Subscribe for Updates</Button>
         </OutboundLink> */}
@@ -83,10 +69,6 @@ export default () => {
 
             <h2>How does it work?</h2>
             <ul className="bullet">
-              <li>
-                <strong>We have set aside a starting fund of 3000 EUR</strong>{" "}
-                for offering a limited number of diversity tickets;
-              </li>
               <li>
                 <strong>We'll offer free conference tickets</strong> to the
                 selected scholarship applicants;{" "}
