@@ -9,34 +9,23 @@ import Button from "@components/Button";
 // import Section from "@components/Section";
 import WorkshopDetails from "@components/WorkshopDetails";
 
-import "./workshops.scss";
+import styles from "./workshops.module.scss";
 
 const Workshops = ({ data }) => {
   const { allWorkshopsJson, speakerImages } = data;
-  const workshops = allWorkshopsJson.edges.map(e => e.node);
+  const workshops = allWorkshopsJson.edges.map((e) => e.node);
 
   return (
     <Layout title="revo.js Workshop">
-      <Header type="main" image="workshops-image">
-        <h1>Workshop</h1>
-        <br />
-        <strong className="cfp-important light-faded mono">
-          a full day of "testing, testing..."
-        </strong>
-        <br />
-        <strong className="cfp-important highlight mono">
-          2nd of October, at DevPlant
-        </strong>
-        <br />
-        <br />
-        <br />
-        <a href={`#${workshops[0].id}`}>
-          <Button>Learn more</Button>
-        </a>
+      <Header type="main" centered>
+        <h1 className={`title2023 ${styles.workshops_image}`}>Workshops</h1>
+        <p className="subtitle2023">
+          Will be annouced later. <br /> Stay tuned...
+        </p>
       </Header>
 
       {workshops.map((workshop, index) => {
-        const speakerImageFluid = speakerImages.edges.find(e =>
+        const speakerImageFluid = speakerImages.edges.find((e) =>
           workshop.image.includes(e.node.base)
         );
 
@@ -52,7 +41,7 @@ const Workshops = ({ data }) => {
   );
 };
 
-export default props => {
+export default (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -88,7 +77,7 @@ export default props => {
           }
         }
       `}
-      render={data => <Workshops data={data} {...props} />}
+      render={(data) => <Workshops data={data} {...props} />}
     />
   );
 };
