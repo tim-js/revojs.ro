@@ -72,9 +72,9 @@ export default (props) => {
         </div>
       </Header>
 
-      {/* <IndexUpdates />
+      <IndexUpdates />
       <Separator2020 />
-      <IndexSpeakers /> */}
+      <IndexSpeakers />
 
       <Section id="subscribe-form" centered>
         <br />
