@@ -61,7 +61,7 @@ export default () => {
             They are the primary personas of this event.
           </p>
 
-          <Logos list={communities} small />
+          <LogosWrapped list={communities} size="normal" />
         </section>
 
         <section style={{ textAlign: "center" }}>
@@ -71,7 +71,7 @@ export default () => {
             They brought the <em>"spice and everything nice"</em>.
           </p>
 
-          <Logos list={friends} small />
+          <LogosWrapped list={friends} size="normal" />
         </section>
         <br />
         <br />
