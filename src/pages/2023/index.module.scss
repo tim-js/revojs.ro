@@ -1,0 +1,52 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+@import "src/styles/mixins";
+
+.title {
+  line-height: 0.9;
+  font-size: 15vw;
+
+  @include breakpoint(sm) {
+    font-size: 7vw;
+  }
+}
+
+.index_header {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 10vh;
+  
+  @include breakpoint(sm) {
+    margin-top: auto;
+    align-items: center;
+    gap: 1vw;
+    padding-left: 5vw;
+    grid-template-columns: auto 1fr;
+  }
+
+  &::after {
+    @include breakpoint(sm) {
+      content: "";
+      // height: 100%;
+      min-height: 40vw;
+      display: block;
+      background: url("/2023/h-main.png") no-repeat;
+      background-size: contain;
+      background-position: left center;
+      aspect-ratio: 1/1;
+    }
+  }
+}
+
+.location {
+  padding: 1vw;
+  line-height: 1.2;
+  font-size: clamp(12px, 5vw, 20px);
+  display: block;
+
+  @include breakpoint(sm) {
+    font-size: 1.5vw;
+  }
+}

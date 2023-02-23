@@ -19,7 +19,7 @@ import Subscribe from "@components/Subscribe";
 import { sponsors } from "@data/2023/supporters";
 
 import logo from "@assets/logo-revojs.svg";
-import "./index.scss";
+import styles from "./index.module.scss";
 
 export default (props) => {
   useEffect(() => {
@@ -39,20 +39,20 @@ export default (props) => {
 
   return (
     <Layout location={props.location}>
-      <Header type="main" image="index-graphics">
-        <div className="date-location">
-          <h1 className="index-title revo-font">
-            <span className="re-prefix">re</span>think <br />
-            <span className="re-prefix">re</span>visit <br />
-            <span className="re-prefix">re</span>volve <br />
-          </h1>
-          <br />
-          <br />
-          <strong className="index-location subtitle2023">
-            5-6 October 2023 <br />
-            Timișoara
-          </strong>
-          <br />
+      <Header type="main">
+        <div className={styles.index_header}>
+          <div className={styles.date_location}>
+            <h1 className={`revo-font ${styles.title}`}>
+              <span className="highlight">re</span>think <br />
+              <span className="highlight">re</span>visit <br />
+              <span className="highlight">re</span>volve <br />
+            </h1>
+
+            <strong className={`mono ${styles.location}`}>
+              5-6 October 2023 <br />
+              Timișoara/RO
+            </strong>
+          </div>
         </div>
 
         <div className="index-cta">
@@ -70,7 +70,6 @@ export default (props) => {
             <Button>Learn Why</Button>
           </Link> */}
         </div>
-        <div className="home-graphics"></div>
       </Header>
 
       <IndexUpdates />
