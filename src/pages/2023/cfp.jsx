@@ -13,7 +13,7 @@ import Subscribe from "@components/Subscribe";
 import Title2020 from "@components/Title2020";
 import Text from "@components/Text";
 
-import "./cfp.scss";
+import styles from "./cfp.module.scss";
 
 // const CFP_OPEN = "April 1st";
 // const CFP_CLOSE = "June 30th";
@@ -22,58 +22,28 @@ export default () => {
   return (
     <Layout title="revo.js Call for Papers">
       <Header type="main" centered>
-        <Text color="primary" mono bold>
-          <span
-            style={{
-              fontSize: "4vw",
-              marginBottom: "-0.75em",
-              display: "block",
-            }}
-          >
-            call for
-          </span>
-        </Text>
-        <Title2020>papers</Title2020>
-
-        <br />
-        <br />
-
-        <p className="subtitle2023">
-          Call for Papers will open in April
-          {/* <span className="highlight">{CFP_CLOSE}.</span>
-          <br />
-          <span>
-            You can submit more than one proposal.
-          </span> */}
-          {/* <span className="highlight">CFP has closed on the 17th of June.</span> */}
-        </p>
-
-        <a href="#subscribe-cfp">
+        <h1 className={`title2023 ${styles.cfp_image}`}>Papers</h1>
+        <div className="subtitle2023">Call for Papers will open in April</div>
+        <a href="#subscribe-cfp" className={styles.cta}>
           <Button>Subscribe for updates</Button>
         </a>
-
-        {/* <Link to={`/covid19`}>
-          <Button>Learn more</Button>
-        </Link> */}
-
-        {/* <SubmitCFP /> */}
       </Header>
 
       <Section light>
         <Content centered>
           <Note>
-          
             <p>
               Do you have a technical presentation that can change minds,
               perspectives, work approaches, or why not, even the mood of JS
               programmers?
             </p>
-            <p>Stay tuned to share it! The <strong>Call for Papers starts in April 2023</strong>.
+            <p>
+              Stay tuned to share it! The{" "}
+              <strong>Call for Papers starts in April 2023</strong>.
               {/* on <strong className="accent">{CFP_OPEN}</strong>. */}
             </p>
-            
 
-          {/* <p>
+            {/* <p>
               This is a call out to all members of the JavaScript community who
               have a memorable talk that can stir up change. Submit your talk
               proposals until the <strong>{CFP_CLOSE}</strong> and hopefully
@@ -86,7 +56,7 @@ export default () => {
               The selected talks will be announced at the beginning of August.
             </p> */}
 
-          {/* <p>
+            {/* <p>
               We've received <strong>92 proposals</strong>, which is a lot more
               than we've initially expected.
             </p>
@@ -99,16 +69,43 @@ export default () => {
             <br />
             <br />
 
-            <p style={{ fontSize: "1.5em" }}>revo.js 2023 main theme is <br /><strong className="mono"><span className="highlight">re</span>think. <span className="highlight">re</span>visit. <span className="highlight">re</span>volve.</strong></p>
+            <p style={{ fontSize: "1.5em" }}>
+              revo.js 2023 main theme is <br />
+              <strong className="mono">
+                <span className="highlight">re</span>think.{" "}
+                <span className="highlight">re</span>visit.{" "}
+                <span className="highlight">re</span>volve.
+              </strong>
+            </p>
             <ul className="bullet">
-              <li>Looking with a critical eye at the current de-facto solutions and analyse alternative approaches.</li>
-              <li>Revisiting classical or old-fashioned practices that are still applicable today.</li>
-              <li>Returning to simplicity after experimenting with overly-complex solutions.</li>
-              <li><strong>Critically asking if (and when) today's complexity is a necessity or a commodity.</strong></li>
+              <li>
+                Looking with a critical eye at the current de-facto solutions
+                and analyse alternative approaches.
+              </li>
+              <li>
+                Revisiting classical or old-fashioned practices that are still
+                applicable today.
+              </li>
+              <li>
+                Returning to simplicity after experimenting with overly-complex
+                solutions.
+              </li>
+              <li>
+                <strong>
+                  Critically asking if (and when) today's complexity is a
+                  necessity or a commodity.
+                </strong>
+              </li>
             </ul>
           </Note>
 
-          <p><strong className="accent">NOTE:</strong> Not every talk is mandatory to touch upon the main theme. The primary focus of the talks are quality and useful content wrapped in a good delivery. However, proposals that also fit the theme will likely get extra points during the CFP selection.</p>
+          <p>
+            <strong className="accent">NOTE:</strong> Not every talk is
+            mandatory to touch upon the main theme. The primary focus of the
+            talks are quality and useful content wrapped in a good delivery.
+            However, proposals that also fit the theme will likely get extra
+            points during the CFP selection.
+          </p>
 
           {/* <br /> */}
           {/* <SubmitCFP white /> */}

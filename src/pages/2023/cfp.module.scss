@@ -1,0 +1,12 @@
+@import "src/styles/mixins";
+
+.cfp_image {
+  background: url("/2023/h-call-for-papers.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.cta {
+  display: block;
+  margin-top: 8em;
+}
