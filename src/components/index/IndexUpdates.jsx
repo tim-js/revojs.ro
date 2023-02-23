@@ -9,7 +9,7 @@ import "./indexUpdates.scss";
 export default () => {
   return (
     <Section centered>
-      <h2 className="big first">Latest Updates</h2>
+      <h2 className="big first revo-font">Latest Updates</h2>
 
       <br />
 
