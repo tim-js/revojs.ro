@@ -156,7 +156,7 @@ export default (props) => {
               node {
                 base
                 image: childImageSharp {
-                  fluid(maxWidth: 240, maxHeight: 240) {
+                  fluid(maxWidth: 240, maxHeight: 240, quality: 90) {
                     ...GatsbyImageSharpFluid
                   }
                 }
