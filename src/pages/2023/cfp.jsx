@@ -22,7 +22,7 @@ export default () => {
   return (
     <Layout title="revo.js Call for Papers">
       <Header type="main" centered>
-        <h1 className={`title2023 ${styles.cfp_image}`}>Papers</h1>
+        <h1 className={`title2023 ${styles.cfp_image}`}>Call for Papers</h1>
         <div className="subtitle2023">Call for Papers will open in April</div>
         <a href="#subscribe-cfp" className={styles.cta}>
           <Button>Subscribe for updates</Button>
