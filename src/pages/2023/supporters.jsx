@@ -11,13 +11,13 @@ import LogosWrapped from "@components/LogosWrapped";
 
 import { sponsors, friends, communities } from "@data/2023/supporters";
 
-import "./supporters.scss";
+import styles from "./supporters.module.scss";
 
 export default () => {
   return (
     <Layout title="revo.js Sponsors">
       <Header centered type="main">
-        <h1 className="title2023 supporters-image">Supporters</h1>
+        <h1 className={`title2023 ${styles.supporters_image}`}>Supporters</h1>
 
         <p className="subtitle2023">
           Change comes one step at a time, <br />
@@ -57,8 +57,7 @@ export default () => {
         <section style={{ textAlign: "center" }}>
           <h2 className="big">Communities</h2>
           <p>
-            High five to all the amazing communities that
-            have our back. <br />
+            High five to all the amazing communities that have our back. <br />
             They are the primary personas of this event.
           </p>
 
