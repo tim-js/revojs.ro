@@ -10,10 +10,9 @@ import Content from "@components/Content";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
-import Title2020 from "@components/Title2020";
 import Text from "@components/Text";
 
-import "./tickets.scss";
+import styles from "./tickets.module.scss";
 
 // const EARLY_START = "May 1st";
 // const EARLY_END = "May 31st";
@@ -26,19 +25,11 @@ export default () => {
   return (
     <Layout title="revo.js Tickets">
       <Header type="main" centered>
-        <Title2020>tickets</Title2020>
-
-        <p className="subtitle2023">
+        <h1 className={`title2023 ${styles.tickets_image}`}>Tickets</h1>
+        <div className="subtitle2023">
           Tickets will go on sale in Spring 2023
-        </p>
-        <br />
-        <br />
-
-        {/* <OutboundLink href="#subscribe">
-          <Button>Subscribe for Updates</Button>
-        </OutboundLink> */}
-
-        <a href="#subscribe">
+        </div>
+        <a href="#subscribe" className={styles.cta}>
           <Button>Subscribe for Updates</Button>
         </a>
       </Header>
@@ -211,14 +202,15 @@ export default () => {
             <ul>
               <li>
                 <strong>In case the event gets cancelled</strong> due to
-                unforeseeable circumstances, you will get a 90% refund <i>(taxes cannot be refunded)</i>;
+                unforeseeable circumstances, you will get a 90% refund{" "}
+                <i>(taxes cannot be refunded)</i>;
                 <br />
                 <br />
               </li>
               <li>
                 <strong>In case the event needs to be rescheduled</strong>, you
-                will have the option to either get a refund or use your
-                ticket to participate at the rescheduled event.
+                will have the option to either get a refund or use your ticket
+                to participate at the rescheduled event.
               </li>
             </ul>
           </section>
@@ -227,9 +219,7 @@ export default () => {
             <br />
             <br />
             <h2>Stay up to date</h2>
-            <p>
-              Subscribe to find out when Tickets go on sale:
-            </p>
+            <p>Subscribe to find out when Tickets go on sale:</p>
             <Subscribe light />
           </section>
 

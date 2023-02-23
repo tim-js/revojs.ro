@@ -12,7 +12,7 @@ import Button from "@components/Button";
 import Subscribe from "@components/Subscribe";
 import Text from "@components/Text";
 
-import "./tickets.scss";
+// import "./tickets.scss";
 
 // const START = "May 1st";
 // const END = "May 31st";
