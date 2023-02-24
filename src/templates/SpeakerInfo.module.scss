@@ -1,0 +1,24 @@
+@import "../styles/mixins";
+
+.speaker_name {
+  @include breakpoint(sm, max) {
+    font-size: 3rem;
+  }
+}
+
+.social {
+  height: 22px;
+  padding-left: 30px;
+  line-height: 22px;
+  display: inline-block;
+  margin-bottom: 4rem;
+  margin-top: 2em;
+}
+
+.twitter {
+  background: url("/twitter_speaker.svg") no-repeat left center;
+}
+
+.mastodon {
+  background: url("/mastodon_speaker.svg") no-repeat left center;
+}
