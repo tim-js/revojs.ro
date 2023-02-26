@@ -78,9 +78,9 @@ export default (props) => {
 
       <Section id="subscribe-form" centered>
         <br />
-        <h2 className="big revo-font">Stay up to date!</h2>
+        <h2 className="big revo-font">Stay in the revo.loop</h2>
         <p className="light-faded">
-          News, updates and latest happenings? Stay in the revo.loop
+          Subscribe to get info about tickets, our call for papers, speakers and more.
         </p>
         <br />
         <br />

@@ -18,7 +18,7 @@ export default () => {
           <Link to="/2023/speakers/" className="updates-link">
             <strong className="update-title mono">Speakers</strong>
             <p className="update-content light-faded">
-              The first invited speakers are published.
+              Our line-up is revolving! Meet the first invited speakers.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
@@ -30,7 +30,7 @@ export default () => {
           <Link to="/2023/cfp/" className="updates-link">
             <strong className="update-title mono">Call for Papers</strong>
             <p className="update-content light-faded">
-              CFP will open this Spring. Subscribe for updates.
+              CFP will open in spring. Learn more about this year’s theme.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
@@ -42,7 +42,7 @@ export default () => {
           <Link to="/2023/tickets/" className="updates-link">
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              Subscribe to get notified when tickets go on sale.
+              Tickets go on sale late-spring. See what to expect.
             </p>
             <div className="arrow">
               <Arrow color="primary" />

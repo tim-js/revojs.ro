@@ -70,41 +70,33 @@ export default () => {
             <br />
 
             <p style={{ fontSize: "1.5em" }}>
-              revo.js 2023 main theme is <br />
+              revo.js’ main theme in 2023 is <br />
               <strong className="mono">
                 <span className="highlight">re</span>think.{" "}
                 <span className="highlight">re</span>visit.{" "}
                 <span className="highlight">re</span>volve.
               </strong>
             </p>
+
+            <br />
+
+            <p>That means we’re encouraging presentations that:</p>
+
             <ul className="bullet">
               <li>
-                Looking with a critical eye at the current de-facto solutions
-                and analyse alternative approaches.
+                <strong>Examine the current de-facto solutions with a critical eye</strong> and analyse alternative approaches.
               </li>
               <li>
-                Revisiting classical or old-fashioned practices that are still
-                applicable today.
+              <strong>Revisit classical or old-fashioned practices</strong> that are still applicable today.
               </li>
               <li>
-                Returning to simplicity after experimenting with overly-complex
-                solutions.
-              </li>
-              <li>
-                <strong>
-                  Critically asking if (and when) today's complexity is a
-                  necessity or a commodity.
-                </strong>
+                Scrutinise whether (and when) <strong>today’s complexity is a necessity or a commodity</strong>.
               </li>
             </ul>
           </Note>
 
           <p>
-            <strong className="accent">NOTE:</strong> Not every talk is
-            mandatory to touch upon the main theme. The primary focus of the
-            talks are quality and useful content wrapped in a good delivery.
-            However, proposals that also fit the theme will likely get extra
-            points during the CFP selection.
+            <strong className="accent">NOTE:</strong> Not every talk is mandatory to touch upon the central theme. Your talk's primary focus should be to deliver quality, relevant content in an engaging manner. However, proposals that fit the theme will get extra points during the CFP selection.
           </p>
 
           {/* <br /> */}
