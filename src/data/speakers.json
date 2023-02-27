@@ -47,11 +47,11 @@
     "firstname": "Kenneth Rohde",
     "lastname": "Christiansen",
     "bio": "<p>Kenneth Rohde Christiansen is principal engineer in the Intel Web Platform Engineering team. In his role, Kenneth leads multiple efforts making sure that the web platform works in Intel’s favor, by becoming a real application development platform, driving Windows and Chrome OS usage, while working best on Intel and exposing the full potential of our hardware capabilities to developers.</p> <p>Since joining Intel in 2011, Kenneth has shaped our approach to working with external browser vendors and the web community, leading to many success stories in landing Intel specific features and optimization in Chromium based browsers such as Google Chrome and Microsoft Edge. Some of these features and inventions have been industry shaping, such as Progressive Web Apps, which is becoming one of the main ways to create desktop applications.</p> <p>He is a multi-term elected member of the W3C (World Wide Web Consortium) Technical Architecture Group, growing Intel’s influence inside the most important standardization group of the web platform. Apart from that he is also a Microsoft Most Values Professional in Developer Tooling and Google Developer Experts in Web Technology.</p> <p>Kenneth holds a MSc degree in Software Engineering from the University of Groningen, the Netherlands and a BSc degree in Software Engineering and Math from the University of Copenhagen.</p>",
-    "image": "speakers/martin_bw.png",
+    "image": "speakers/kenneth_bw.jpeg",
     "twitter": "kennethrohde",
     "title": "Principal Engineer and Web Platform Architect",
     "company": "Intel",
-    "talkId": ""
+    "talkId": "talk2023-kenneth"
   },
   {
     "edition": 2023,
@@ -112,12 +112,12 @@
     "firstname": "Rachel",
     "lastname": "Andrew",
     "bio": "<p>Rachel Andrew lives in Bristol, England. She is a member of the CSS Working Group, where she edits the Multicol and Page Floats specifications. She works for Google as a technical writer and content lead for Chrome Web DevRel, working on <a href='https://web.dev' target='_blank' rel='noopener'>web.dev</a> and the <a href='https://developer.chrome.com/' target='_blank' rel='noopener'>Chrome Developers site</a>.</p> <p>Rachel has been working on the web since 1996 and writing about the web for almost as long. She is the author or co-author of 22 books including <a href='https://abookapart.com/products/the-new-css-layout' target='_blank' rel='noopener'>The New CSS Layout</a>, and a regular contributor to a number of publications both on and offline. Rachel is a frequent speaker at web development and design events.</p> <p>Rachel is a keen distance runner and likes to encourage people to come for a run when attending conferences, with varying degrees of success. She is a student pilot and aviation geek, and recently graduated with a Masters in International Journalism. You can find her on Twitter as <a href='https://twitter.com/rachelandrew' target='_blank' rel='noopener'>@rachelandrew</a> or her blog at <a href='http://rachelandrew.co.uk' target='_blank' rel='noopener'>rachelandrew.co.uk</a></p>",
-    "image": "speakers/matt_bw.png",
+    "image": "speakers/rachel_bw.jpeg",
     "twitter": "",
     "mastodon": "https://front-end.social/@rachelandrew",
     "title": "Content Lead for Chrome Web Developer Relations",
     "company": "Google",
-    "talkId": ""
+    "talkId": "talk2023-rachel"
   },
   {
     "edition": 2023,
