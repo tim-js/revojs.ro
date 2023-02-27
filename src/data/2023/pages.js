@@ -17,9 +17,9 @@ export const main = [
   //   name: "Workshop",
   //   path: "workshop",
   // },
-  {
-    name: "Venue"
-  },
+  // {
+  //   name: "Venue"
+  // },
   {
     name: "Supporters",
   },
