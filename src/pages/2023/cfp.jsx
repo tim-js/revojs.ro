@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { Link } from "gatsby";
+// import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -10,8 +10,7 @@ import Button from "@components/Button";
 import Note from "@components/Note";
 // import { SubmitCFP } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
-import Title2020 from "@components/Title2020";
-import Text from "@components/Text";
+// import Text from "@components/Text";
 
 import styles from "./cfp.module.scss";
 

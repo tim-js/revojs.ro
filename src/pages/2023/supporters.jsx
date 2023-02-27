@@ -4,9 +4,7 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
 // import Text from "@components/Text";
-import Title2020 from "@components/Title2020";
 
-import Logos from "@components/Logos";
 import LogosWrapped from "@components/LogosWrapped";
 
 import { sponsors, friends, communities } from "@data/2023/supporters";

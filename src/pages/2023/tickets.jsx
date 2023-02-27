@@ -10,7 +10,7 @@ import Content from "@components/Content";
 import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
-import Text from "@components/Text";
+// import Text from "@components/Text";
 
 import styles from "./tickets.module.scss";
 
