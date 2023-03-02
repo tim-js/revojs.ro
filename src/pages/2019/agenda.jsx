@@ -21,9 +21,9 @@ const edition = getEdition();
 const Agenda = ({ data }) => {
   const { allTalksJson, allSpeakersJson, speakerImages } = data;
 
-  const talks = allTalksJson.edges.map(e => e.node);
-  const speakers = allSpeakersJson.edges.map(e => e.node);
-  const images = speakerImages.edges.map(e => e.node);
+  const talks = allTalksJson.edges.map((e) => e.node);
+  const speakers = allSpeakersJson.edges.map((e) => e.node);
+  const images = speakerImages.edges.map((e) => e.node);
 
   day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
   day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
@@ -35,7 +35,7 @@ const Agenda = ({ data }) => {
     function onScroll() {
       const scrolled = window.scrollY;
 
-      mainNavLinks.forEach(link => {
+      mainNavLinks.forEach((link) => {
         const section = document.querySelector(link.hash);
 
         if (
@@ -118,7 +118,7 @@ const Agenda = ({ data }) => {
       <>
         <DayHeader data={data} />
         <ul className="agenda-slots">
-          {workshops.map(workshop => (
+          {workshops.map((workshop) => (
             <li key={workshop.time} className="agenda-slot talk">
               <time
                 dateTime={`${dateIso}T${workshop.time}:00`}
@@ -141,7 +141,7 @@ const Agenda = ({ data }) => {
       <>
         <DayHeader data={data} />
         <ul className="agenda-slots">
-          {talks.map(talk => (
+          {talks.map((talk) => (
             <li
               key={talk.time}
               className={`agenda-slot ${talk.talkId ? "talk" : "break"}`}
@@ -175,7 +175,7 @@ const Agenda = ({ data }) => {
   }
 };
 
-export default props => {
+export default (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -183,11 +183,11 @@ export default props => {
           allTalksJson {
             edges {
               node {
-                id
+                talkId
                 talk
                 abstract
                 speakers {
-                  id
+                  speakerId
                 }
               }
             }
@@ -195,7 +195,7 @@ export default props => {
           allSpeakersJson {
             edges {
               node {
-                id
+                speakerId
                 firstname
                 lastname
                 image
@@ -222,7 +222,7 @@ export default props => {
           }
         }
       `}
-      render={data => <Agenda data={data} {...props} />}
+      render={(data) => <Agenda data={data} {...props} />}
     />
   );
 };
@@ -254,7 +254,7 @@ function DayHeader({ data }) {
 function SpeakersDetails({ list }) {
   return (
     <figure className="agenda-speakers">
-      {list.map(speaker => (
+      {list.map((speaker) => (
         <div key={speaker.lastname}>
           <Img
             fluid={speaker.speakerImage.image.fluid}
@@ -267,9 +267,9 @@ function SpeakersDetails({ list }) {
       <span>
         {list.map((speaker, i) => {
           return (
-            <React.Fragment key={speaker.id}>
+            <React.Fragment key={speaker.speakerId}>
               {i > 0 && " & "}
-              <Link to={`/${edition}/speakers/${speaker.id}`}>
+              <Link to={`/${edition}/speakers/${speaker.speakerId}`}>
                 {`${speaker.firstname} ${speaker.lastname}`}
               </Link>
             </React.Fragment>
@@ -308,9 +308,9 @@ function Slot({ slot }) {
 }
 
 function mergeSpeakerDetails(speakersIdList, speakers, images) {
-  return speakersIdList.map(speaker => {
-    const speakerData = speakers.find(s => s.id === speaker.id);
-    const speakerImage = images.find(e => speakerData.image.includes(e.base));
+  return speakersIdList.map((speaker) => {
+    const speakerData = speakers.find((s) => s.speakerId === speaker.speakerId);
+    const speakerImage = images.find((e) => speakerData.image.includes(e.base));
     return {
       ...speakerData,
       speakerImage,
@@ -319,11 +319,11 @@ function mergeSpeakerDetails(speakersIdList, speakers, images) {
 }
 
 function mergeWorkshopDetails(workshops, speakers, images) {
-  return workshops.map(workshop => {
+  return workshops.map((workshop) => {
     const speakersDetails = mergeSpeakerDetails(
       workshop.speakers,
       speakers,
-      images,
+      images
     );
 
     return {
@@ -334,18 +334,18 @@ function mergeWorkshopDetails(workshops, speakers, images) {
 }
 
 function mergeTalkDetails(agenda, talks, speakers, images) {
-  return agenda.map(slot => {
+  return agenda.map((slot) => {
     const { talkId } = slot;
 
     if (!talkId) {
       return slot;
     }
 
-    const talkDetails = talks.find(talk => talk.id === talkId);
+    const talkDetails = talks.find((talk) => talk.talkId === talkId);
     const speakersDetails = mergeSpeakerDetails(
       talkDetails.speakers,
       speakers,
-      images,
+      images
     );
 
     return {

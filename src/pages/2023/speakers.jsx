@@ -22,7 +22,7 @@ const Speakers = (props) => {
   const edition = getEdition();
 
   function getTalk(id) {
-    return allTalksJson.edges.find((t) => t.node.id === id);
+    return allTalksJson.edges.find((t) => t.node.talkId === id);
   }
 
   function getImage(image) {
@@ -118,7 +118,7 @@ export default (props) => {
           allSpeakersJson {
             edges {
               node {
-                id
+                speakerId
                 slug
                 firstname
                 lastname
@@ -133,11 +133,11 @@ export default (props) => {
           allTalksJson {
             edges {
               node {
-                id
+                talkId
                 talk
                 abstract
                 speakers {
-                  id
+                  speakerId
                 }
               }
             }

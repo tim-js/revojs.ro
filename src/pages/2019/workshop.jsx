@@ -13,7 +13,7 @@ import "./workshops.scss";
 
 const Workshops = ({ data }) => {
   const { allWorkshopsJson, speakerImages } = data;
-  const workshops = allWorkshopsJson.edges.map(e => e.node);
+  const workshops = allWorkshopsJson.edges.map((e) => e.node);
 
   return (
     <Layout title="revo.js Workshop">
@@ -30,19 +30,19 @@ const Workshops = ({ data }) => {
         <br />
         <br />
         <br />
-        <a href={`#${workshops[0].id}`}>
+        <a href={`#${workshops[0].workshopId}`}>
           <Button>Learn more</Button>
         </a>
       </Header>
 
       {workshops.map((workshop, index) => {
-        const speakerImageFluid = speakerImages.edges.find(e =>
+        const speakerImageFluid = speakerImages.edges.find((e) =>
           workshop.image.includes(e.node.base)
         );
 
         return (
           <WorkshopDetails
-            key={workshop.id}
+            key={workshop.workshopId}
             data={workshop}
             image={speakerImageFluid}
           />
@@ -52,7 +52,7 @@ const Workshops = ({ data }) => {
   );
 };
 
-export default props => {
+export default (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -60,7 +60,7 @@ export default props => {
           allWorkshopsJson {
             edges {
               node {
-                id
+                workshopId
                 firstname
                 lastname
                 bio
@@ -88,7 +88,7 @@ export default props => {
           }
         }
       `}
-      render={data => <Workshops data={data} {...props} />}
+      render={(data) => <Workshops data={data} {...props} />}
     />
   );
 };

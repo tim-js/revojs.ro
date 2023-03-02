@@ -188,12 +188,12 @@ export default (props) => {
           allTalksJson {
             edges {
               node {
-                id
+                talkId
                 talk
                 abstract
                 edition
                 speakers {
-                  id
+                  speakerId
                 }
               }
             }
@@ -201,7 +201,7 @@ export default (props) => {
           allSpeakersJson {
             edges {
               node {
-                id
+                speakerId
                 firstname
                 lastname
                 image
@@ -275,9 +275,9 @@ function SpeakersDetails({ list }) {
       <span>
         {list.map((speaker, i) => {
           return (
-            <React.Fragment key={speaker.id}>
+            <React.Fragment key={speaker.jsonId}>
               {i > 0 && " & "}
-              <Link to={`/${edition}/speakers/${speaker.id}`}>
+              <Link to={`/${edition}/speakers/${speaker.jsonId}`}>
                 {`${speaker.firstname} ${speaker.lastname}`}
               </Link>
             </React.Fragment>
@@ -317,7 +317,7 @@ function Slot({ slot }) {
 
 function mergeSpeakerDetails(speakersIdList, speakers, images) {
   return speakersIdList.map(speaker => {
-    const speakerData = speakers.find(s => s.id === speaker.id);
+    const speakerData = speakers.find(s => s.jsonId === speaker.jsonId);
     const speakerImage = images.find(e => speakerData.image.includes(e.base));
     return {
       ...speakerData,
@@ -349,7 +349,7 @@ function mergeTalkDetails(agenda, talks, speakers, images) {
       return slot;
     }
 
-    const talkDetails = talks.find(talk => talk.id === talkId);
+    const talkDetails = talks.find(talk => talk.jsonId === talkId);
     const speakersDetails = mergeSpeakerDetails(
       talkDetails.speakers,
       speakers,

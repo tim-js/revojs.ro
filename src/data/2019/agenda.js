@@ -8,7 +8,7 @@ export const day0 = {
       time: "09:00 - 17:00",
       title: "Efficient End-to-End Testing with Cypress.io Workshop",
       description: "Full-day workshop. Pre-registration required.",
-      speakers: [{ id: "gleb-bahmutov" }],
+      speakers: [{ speakerId: "gleb-bahmutov" }],
     },
   ],
 };

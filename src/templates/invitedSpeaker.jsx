@@ -12,13 +12,13 @@ import Content from "@components/Content";
 
 import { currentEdition } from "@utils";
 
-export default props => {
+export default (props) => {
   const { invitationsJson, file } = props.data;
   const lastEdition = currentEdition - 1;
 
   const speaker = {
     ...invitationsJson,
-    image: file
+    image: file,
   };
 
   return (
@@ -34,7 +34,7 @@ export default props => {
       <Section light className={`content-speaker`}>
         <Content centered>
           <figure className="speaker-image-wrapper">
-            <div className="speaker-image" key={speaker.id}>
+            <div className="speaker-image" key={speaker.speakerId}>
               <Img
                 fluid={speaker.image.image.fluid}
                 alt={`${speaker.firstname} ${speaker.lastname} photo`}
@@ -86,7 +86,8 @@ export default props => {
               Full cover of <strong>travel expenses</strong>;
             </li>
             <li>
-              Full cover of <strong>accommodation expenses</strong> for the whole stay;
+              Full cover of <strong>accommodation expenses</strong> for the
+              whole stay;
             </li>
             <li>Free access to the conference and all related events;</li>
             <li>
@@ -167,9 +168,9 @@ export default props => {
 };
 
 export const pageQuery = graphql`
-  query($id: String!, $image: String!) {
-    invitationsJson(id: { eq: $id }) {
-      id
+  query ($id: String!, $image: String!) {
+    invitationsJson(inviteId: { eq: $id }) {
+      inviteId
       firstname
       lastname
       twitter

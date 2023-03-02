@@ -1,7 +1,7 @@
 [
   {
     "edition": 2023,
-    "id": "leonie-watson",
+    "speakerId": "leonie-watson",
     "slug": "leonie-watson",
     "firstname": "Léonie",
     "lastname": "Watson",
@@ -15,7 +15,7 @@
   },
   {
     "edition": 2023,
-    "id": "trent-willis",
+    "speakerId": "trent-willis",
     "slug": "trent-willis",
     "firstname": "Trent",
     "lastname": "Willis",
@@ -29,7 +29,7 @@
   },
   {
     "edition": 2023,
-    "id": "martin-splitt",
+    "speakerId": "martin-splitt",
     "slug": "martin-splitt",
     "firstname": "Martin",
     "lastname": "Splitt",
@@ -42,7 +42,7 @@
   },
   {
     "edition": 2023,
-    "id": "kenneth-rohde-christiansen",
+    "speakerId": "kenneth-rohde-christiansen",
     "slug": "kenneth-rohde-christiansen",
     "firstname": "Kenneth Rohde",
     "lastname": "Christiansen",
@@ -55,7 +55,7 @@
   },
   {
     "edition": 2023,
-    "id": "jay-phelps",
+    "speakerId": "jay-phelps",
     "slug": "jay-phelps",
     "firstname": "Jay",
     "lastname": "Phelps",
@@ -68,7 +68,7 @@
   },
   {
     "edition": 2023,
-    "id": "anna-migas",
+    "speakerId": "anna-migas",
     "slug": "anna-migas",
     "firstname": "Anna",
     "lastname": "Migas",
@@ -81,7 +81,7 @@
   },
   {
     "edition": 2023,
-    "id": "ben-lesh",
+    "speakerId": "ben-lesh",
     "slug": "ben-lesh",
     "firstname": "Ben",
     "lastname": "Lesh",
@@ -94,7 +94,7 @@
   },
   {
     "edition": 2023,
-    "id": "matt-pocock",
+    "speakerId": "matt-pocock",
     "slug": "matt-pocock",
     "firstname": "Matt",
     "lastname": "Pocock",
@@ -107,7 +107,7 @@
   },
   {
     "edition": 2023,
-    "id": "rachel-andrew",
+    "speakerId": "rachel-andrew",
     "slug": "rachel-andrew",
     "firstname": "Rachel",
     "lastname": "Andrew",
@@ -121,7 +121,7 @@
   },
   {
     "edition": 2023,
-    "id": "diana-macau2023",
+    "speakerId": "diana-macau2023",
     "slug": "diana-macau",
     "firstname": "Diana",
     "lastname": "Măcău",
@@ -134,7 +134,7 @@
   },
   {
     "edition": 2019,
-    "id": "martin-hochel",
+    "speakerId": "martin-hochel",
     "slug": "martin-hochel",
     "firstname": "Martin",
     "lastname": "Hochel",
@@ -147,7 +147,7 @@
   },
   {
     "edition": 2019,
-    "id": "boyan-mihaylov",
+    "speakerId": "boyan-mihaylov",
     "slug": "boyan-mihaylov",
     "firstname": "Boyan",
     "lastname": "Mihaylov",
@@ -160,7 +160,7 @@
   },
   {
     "edition": 2019,
-    "id": "gleb-bahmutov",
+    "speakerId": "gleb-bahmutov",
     "slug": "gleb-bahmutov",
     "firstname": "Gleb",
     "lastname": "Bahmutov",
@@ -173,7 +173,7 @@
   },
   {
     "edition": 2019,
-    "id": "raluca-nicola",
+    "speakerId": "raluca-nicola",
     "slug": "raluca-nicola",
     "firstname": "Raluca",
     "lastname": "Nicola",
@@ -186,7 +186,7 @@
   },
   {
     "edition": 2019,
-    "id": "sebastian-witalec",
+    "speakerId": "sebastian-witalec",
     "slug": "sebastian-witalec",
     "firstname": "Sebastian",
     "lastname": "Witalec",
@@ -199,7 +199,7 @@
   },
   {
     "edition": 2019,
-    "id": "katie-koschland",
+    "speakerId": "katie-koschland",
     "slug": "katie-koschland",
     "firstname": "Katie",
     "lastname": "Koschland",
@@ -212,7 +212,7 @@
   },
   {
     "edition": 2019,
-    "id": "kenneth-auchenberg",
+    "speakerId": "kenneth-auchenberg",
     "slug": "kenneth-auchenberg",
     "firstname": "Kenneth",
     "lastname": "Auchenberg",
@@ -225,7 +225,7 @@
   },
   {
     "edition": 2019,
-    "id": "benedek-gagyi",
+    "speakerId": "benedek-gagyi",
     "slug": "benedek-gagyi",
     "firstname": "Benedek",
     "lastname": "Gagyi",
@@ -238,7 +238,7 @@
   },
   {
     "edition": 2019,
-    "id": "kenigbolo-meya-stephen",
+    "speakerId": "kenigbolo-meya-stephen",
     "slug": "kenigbolo-meya-stephen",
     "firstname": "Stephen",
     "lastname": "Meya Kenigbolo",
@@ -251,7 +251,7 @@
   },
   {
     "edition": 2019,
-    "id": "titian-cernicova-dragomir",
+    "speakerId": "titian-cernicova-dragomir",
     "slug": "titian-cernicova-dragomir",
     "firstname": "Tițian",
     "lastname": "Cernicova-Dragomir",
@@ -264,7 +264,7 @@
   },
   {
     "edition": 2019,
-    "id": "alex-moldovan",
+    "speakerId": "alex-moldovan",
     "slug": "alex-moldovan",
     "firstname": "Alex",
     "lastname": "Moldovan",
@@ -277,7 +277,7 @@
   },
   {
     "edition": 2019,
-    "id": "ruben-restrepo",
+    "speakerId": "ruben-restrepo",
     "slug": "ruben-restrepo",
     "firstname": "Ruben",
     "lastname": "Restrepo",
@@ -290,7 +290,7 @@
   },
   {
     "edition": 2019,
-    "id": "jennifer-wadella",
+    "speakerId": "jennifer-wadella",
     "slug": "jennifer-wadella",
     "firstname": "Jennifer",
     "lastname": "Wadella",
@@ -303,7 +303,7 @@
   },
   {
     "edition": 2019,
-    "id": "mathieu-henri",
+    "speakerId": "mathieu-henri",
     "slug": "mathieu-henri",
     "firstname": "Mathieu",
     "lastname": "Henri",
@@ -316,7 +316,7 @@
   },
   {
     "edition": 2019,
-    "id": "csaba-patkos",
+    "speakerId": "csaba-patkos",
     "slug": "csaba-patkos",
     "firstname": "Csaba",
     "lastname": "Patkós",
@@ -329,7 +329,7 @@
   },
   {
     "edition": 2019,
-    "id": "kwinten-pisman",
+    "speakerId": "kwinten-pisman",
     "slug": "kwinten-pisman",
     "firstname": "Kwinten",
     "lastname": "Pisman",
@@ -342,7 +342,7 @@
   },
   {
     "edition": 2019,
-    "id": "dominic-elm",
+    "speakerId": "dominic-elm",
     "slug": "dominic-elm",
     "firstname": "Dominic",
     "lastname": "Elm",
@@ -355,7 +355,7 @@
   },
   {
     "edition": 2019,
-    "id": "diana-macau2019",
+    "speakerId": "diana-macau2019",
     "slug": "diana-macau",
     "firstname": "Diana",
     "lastname": "Măcău",

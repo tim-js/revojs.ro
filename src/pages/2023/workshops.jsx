@@ -31,7 +31,7 @@ const Workshops = ({ data }) => {
 
         return (
           <WorkshopDetails
-            key={workshop.id}
+            key={workshop.workshopId}
             data={workshop}
             image={speakerImageFluid}
           />
@@ -49,7 +49,7 @@ export default (props) => {
           allWorkshopsJson {
             edges {
               node {
-                id
+                workshopId
                 firstname
                 lastname
                 bio

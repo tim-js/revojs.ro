@@ -15,23 +15,23 @@ import { getEdition } from "@utils";
 
 import "./speakers.scss";
 
-const Speakers = props => {
+const Speakers = (props) => {
   const { allSpeakersJson, speakerImages, allTalksJson } = props.data;
   const edition = getEdition();
 
   function getTalk(id) {
-    return allTalksJson.edges.find(t => t.node.id === id);
+    return allTalksJson.edges.find((t) => t.node.talkId === id);
   }
 
   function getImage(image) {
-    return speakerImages.edges.find(e => image.includes(e.node.base));
+    return speakerImages.edges.find((e) => image.includes(e.node.base));
   }
 
   const speakers = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(speaker => speaker.talkId)
-    .filter(speaker => speaker.edition === edition)
-    .map(speaker => {
+    .map((e) => e.node)
+    .filter((speaker) => speaker.talkId)
+    .filter((speaker) => speaker.edition === edition)
+    .map((speaker) => {
       const { talk, abstract } = getTalk(speaker.talkId) || {};
       const speakerImage = getImage(speaker.image) || {};
 
@@ -39,20 +39,20 @@ const Speakers = props => {
         ...speaker,
         talk,
         abstract,
-        speakerImage
+        speakerImage,
       };
     });
 
   const mc = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(speaker => !speaker.talkId)
-    .filter(speaker => speaker.edition === edition)
-    .map(speaker => {
+    .map((e) => e.node)
+    .filter((speaker) => !speaker.talkId)
+    .filter((speaker) => speaker.edition === edition)
+    .map((speaker) => {
       const speakerImage = getImage(speaker.image);
 
       return {
         ...speaker,
-        speakerImage
+        speakerImage,
       };
     });
 
@@ -128,7 +128,7 @@ const Speakers = props => {
   );
 };
 
-export default props => {
+export default (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -136,7 +136,7 @@ export default props => {
           allSpeakersJson {
             edges {
               node {
-                id
+                speakerId
                 slug
                 firstname
                 lastname
@@ -151,11 +151,11 @@ export default props => {
           allTalksJson {
             edges {
               node {
-                id
+                talkId
                 talk
                 abstract
                 speakers {
-                  id
+                  speakerId
                 }
               }
             }
@@ -176,7 +176,7 @@ export default props => {
           }
         }
       `}
-      render={data => <Speakers data={data} {...props} />}
+      render={(data) => <Speakers data={data} {...props} />}
     />
   );
 };

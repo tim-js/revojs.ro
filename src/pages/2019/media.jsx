@@ -18,9 +18,9 @@ import { day1, day2 } from "@data/2019/agenda";
 const Media = ({ data }) => {
   const { allTalksJson, allSpeakersJson, recordingsImages } = data;
 
-  const talks = allTalksJson.edges.map(e => e.node);
-  const speakers = allSpeakersJson.edges.map(e => e.node);
-  const images = recordingsImages.edges.map(e => e.node);
+  const talks = allTalksJson.edges.map((e) => e.node);
+  const speakers = allSpeakersJson.edges.map((e) => e.node);
+  const images = recordingsImages.edges.map((e) => e.node);
 
   const recordings = mergeTalkRecordings(
     [...day1.talks, ...day2.talks],
@@ -134,7 +134,7 @@ const Media = ({ data }) => {
           <h2 className="media-heading">Video Recordings</h2>
 
           <ul className="media-videos-list">
-            {recordings.map(video => {
+            {recordings.map((video) => {
               return (
                 <li key={video.title}>
                   <TalkVideo video={video} />
@@ -194,13 +194,13 @@ export default () => {
       allTalksJson {
         edges {
           node {
-            id
+            talkId
             talk
             edition
             recordingUrl
             recordingImage
             speakers {
-              id
+              speakerId
             }
           }
         }
@@ -208,7 +208,7 @@ export default () => {
       allSpeakersJson {
         edges {
           node {
-            id
+            speakerId
             firstname
             lastname
           }
@@ -234,15 +234,15 @@ export default () => {
 function mergeTalkRecordings(agenda, talks, speakers, images) {
   const recordings = [];
 
-  agenda.forEach(slot => {
+  agenda.forEach((slot) => {
     const { talkId } = slot;
 
     if (!talkId) {
       return;
     }
 
-    const talkDetails = talks.find(talk => talk.id === talkId);
-    const talkImage = images.find(img =>
+    const talkDetails = talks.find((talk) => talk.talkId === talkId);
+    const talkImage = images.find((img) =>
       talkDetails.recordingImage.includes(img.base)
     );
     const speakersDetails = mergeSpeakerDetails(
@@ -255,7 +255,7 @@ function mergeTalkRecordings(agenda, talks, speakers, images) {
       title: talkDetails.talk,
       url: talkDetails.recordingUrl,
       speakers: speakersDetails,
-      talkImage
+      talkImage,
     });
   });
 
@@ -263,10 +263,10 @@ function mergeTalkRecordings(agenda, talks, speakers, images) {
 }
 
 function mergeSpeakerDetails(speakersIdList, speakers, images) {
-  return speakersIdList.map(speaker => {
-    const speakerData = speakers.find(s => s.id === speaker.id);
+  return speakersIdList.map((speaker) => {
+    const speakerData = speakers.find((s) => s.speakerId === speaker.speakerId);
     return {
-      ...speakerData
+      ...speakerData,
     };
   });
 }

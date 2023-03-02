@@ -12,10 +12,10 @@ import "./Talk.scss";
 import { getEdition, currentEdition } from "@utils";
 
 function getName(speakers) {
-  return speakers.map(speaker => `${speaker.firstname}'s`).join(" and ");
+  return speakers.map((speaker) => `${speaker.firstname}'s`).join(" and ");
 }
 
-export default props => {
+export default (props) => {
   const { talk, abstract, speakers } = props.talk;
 
   const multiple = speakers.length > 1 ? " multiple" : "";
@@ -24,9 +24,9 @@ export default props => {
     <Section light className={`content-speaker ${multiple}`}>
       <Content centered>
         <figure className="speaker-image-wrapper">
-          {speakers.map(speaker => {
+          {speakers.map((speaker) => {
             return (
-              <div className="speaker-image" key={speaker.id}>
+              <div className="speaker-image" key={speaker.speakerId}>
                 <Img
                   fluid={speaker.image.image.fluid}
                   alt={`${speaker.firstname} ${speaker.lastname} photo`}
@@ -36,8 +36,8 @@ export default props => {
           })}
         </figure>
 
-        {speakers.map(speaker => (
-          <SpeakerInfo key={speaker.id} speaker={speaker} />
+        {speakers.map((speaker) => (
+          <SpeakerInfo key={speaker.speakerId} speaker={speaker} />
         ))}
 
         {talk && (
@@ -48,11 +48,17 @@ export default props => {
           </>
         )}
 
-        {speakers.map(speaker => (
-          <React.Fragment key={speaker.id}>
+        {speakers.map((speaker) => (
+          <React.Fragment key={speaker.speakerId}>
             <h2>About {speaker.firstname}</h2>
             <div dangerouslySetInnerHTML={{ __html: speaker.bio }} />
-            {!!speaker.web && <p><a href={speaker.web} rel="noopener noreferrer">{speaker.web}</a></p>}
+            {!!speaker.web && (
+              <p>
+                <a href={speaker.web} rel="noopener noreferrer">
+                  {speaker.web}
+                </a>
+              </p>
+            )}
           </React.Fragment>
         ))}
 

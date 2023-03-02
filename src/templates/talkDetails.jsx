@@ -5,18 +5,18 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Layout from "@components/Layout";
 import Talk from "./Talk";
 
-export default props => {
+export default (props) => {
   const {
     talksJson: { talk, abstract, speakers },
     allSpeakersJson,
-    speakerImages
+    speakerImages,
   } = props.data;
 
-  const speakersData = speakers.map(speaker => {
+  const speakersData = speakers.map((speaker) => {
     const speakerDetails = allSpeakersJson.edges.find(
-      e => e.node.id === speaker.id
+      (e) => e.node.speakerId === speaker.speakerId
     ).node;
-    const image = speakerImages.edges.find(e =>
+    const image = speakerImages.edges.find((e) =>
       speakerDetails.image.includes(e.node.base)
     );
     return { ...speakerDetails, image: image.node };
@@ -25,7 +25,7 @@ export default props => {
   const talkData = {
     talk,
     abstract,
-    speakers: speakersData
+    speakers: speakersData,
   };
 
   return (
@@ -42,19 +42,19 @@ export default props => {
 };
 
 export const pageQuery = graphql`
-  query($id: String!) {
-    talksJson(id: { eq: $id }) {
-      id
+  query ($id: String!) {
+    talksJson(talkId: { eq: $id }) {
+      talkId
       talk
       abstract
       speakers {
-        id
+        speakerId
       }
     }
     allSpeakersJson {
       edges {
         node {
-          id
+          speakerId
           firstname
           lastname
           image

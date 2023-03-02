@@ -25,7 +25,7 @@ export default ({ speakers }) => {
         }
 
         return (
-          <li key={speaker.id} className={css}>
+          <li key={speaker.speakerId} className={css}>
             <Link
               to={`/${edition}/speakers/${speaker.slug}`}
               className="index-speakers-link"

@@ -12,7 +12,7 @@ exports.createPages = ({ graphql, actions }) => {
         allSpeakersJson(limit: 1000) {
           edges {
             node {
-              id
+              speakerId
               slug
               image
               talkId
@@ -23,7 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
         allTalksJson(limit: 1000) {
           edges {
             node {
-              id
+              talkId
               edition
             }
           }
@@ -31,7 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
         allInvitationsJson {
           edges {
             node {
-              id
+              inviteId
               image
             }
           }
@@ -72,7 +72,7 @@ exports.createPages = ({ graphql, actions }) => {
         )}/`,
         component: slash(speakerTemplate),
         context: {
-          id: edge.node.id,
+          id: edge.node.speakerId,
           image: edge.node.image,
           talkId: edge.node.talkId,
         },
@@ -83,11 +83,11 @@ exports.createPages = ({ graphql, actions }) => {
     _.each(result.data.allTalksJson.edges, (edge) => {
       createPage({
         path: `/${edge.node.edition}/agenda/${slug(
-          edge.node.id.toLowerCase()
+          edge.node.talkId.toLowerCase()
         )}/`,
         component: slash(talkTemplate),
         context: {
-          id: edge.node.id,
+          id: edge.node.talkId,
           image: edge.node.image,
         },
       });
@@ -96,10 +96,10 @@ exports.createPages = ({ graphql, actions }) => {
     const invitationTemplate = path.resolve(`src/templates/invitedSpeaker.jsx`);
     _.each(result.data.allInvitationsJson.edges, (edge) => {
       createPage({
-        path: `/invitation/${slug(edge.node.id.toLowerCase())}/`,
+        path: `/invitation/${slug(edge.node.inviteId.toLowerCase())}/`,
         component: slash(invitationTemplate),
         context: {
-          id: edge.node.id,
+          id: edge.node.inviteId,
           image: edge.node.image,
         },
       });

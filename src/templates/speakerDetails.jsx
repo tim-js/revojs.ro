@@ -5,17 +5,17 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Layout from "@components/Layout";
 import Talk from "./Talk";
 
-export default props => {
+export default (props) => {
   const { speakersJson, talksJson, file } = props.data;
 
   const speakerData = {
     ...speakersJson,
-    image: file
+    image: file,
   };
 
   const talkData = {
     ...talksJson,
-    speakers: [speakerData]
+    speakers: [speakerData],
   };
 
   return (
@@ -34,9 +34,9 @@ export default props => {
 };
 
 export const pageQuery = graphql`
-  query($id: String!, $image: String!, $talkId: String!) {
-    speakersJson(id: { eq: $id }) {
-      id
+  query ($id: String!, $image: String!, $talkId: String!) {
+    speakersJson(speakerId: { eq: $id }) {
+      speakerId
       firstname
       lastname
       twitter
@@ -48,8 +48,8 @@ export const pageQuery = graphql`
       image
     }
 
-    talksJson(id: { eq: $talkId }) {
-      id
+    talksJson(talkId: { eq: $talkId }) {
+      talkId
       talk
       abstract
     }
