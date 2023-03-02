@@ -14,7 +14,7 @@ import Header from "@components/layout/Header";
 // import { day0, day1, day2 } from "@data/2023/agenda";
 // import { getEdition } from "@utils";
 
-import styles from "./agenda.module.scss";
+import * as styles from "./agenda.module.scss";
 
 // const edition = getEdition();
 

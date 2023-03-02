@@ -12,7 +12,7 @@ import Button from "@components/Button";
 import Subscribe from "@components/Subscribe";
 import Text from "@components/Text";
 
-import styles from "./tickets.module.scss";
+import * as styles from "./tickets.module.scss";
 
 // const EARLY_START = "May 1st";
 // const EARLY_END = "May 31st";

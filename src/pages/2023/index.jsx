@@ -19,7 +19,7 @@ import Subscribe from "@components/Subscribe";
 import { sponsors } from "@data/2023/supporters";
 
 import logo from "@assets/logo-revojs.svg";
-import styles from "./index.module.scss";
+import * as styles from "./index.module.scss";
 
 export default (props) => {
   useEffect(() => {
@@ -80,7 +80,8 @@ export default (props) => {
         <br />
         <h2 className="big revo-font">Stay in the revo.loop</h2>
         <p className="light-faded">
-          Subscribe to get info about tickets, our call for papers, speakers and more.
+          Subscribe to get info about tickets, our call for papers, speakers and
+          more.
         </p>
         <br />
         <br />

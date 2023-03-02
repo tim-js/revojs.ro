@@ -11,7 +11,7 @@ import Note from "@components/Note";
 
 import timjs from "@assets/tim.js-logo.svg";
 
-import styles from "./organizers.module.scss";
+import * as styles from "./organizers.module.scss";
 
 const Organizers = ({ data }) => {
   const { allTeam2023Json, teamImages } = data;
@@ -46,7 +46,9 @@ const Organizers = ({ data }) => {
         <Content centered>
           <Note>
             <p>
-              revo.js is a community-driven conference, organized by <strong>tim.js</strong> through its NGO, <strong>Asociatia TIM.JS</strong>.
+              revo.js is a community-driven conference, organized by{" "}
+              <strong>tim.js</strong> through its NGO,{" "}
+              <strong>Asociatia TIM.JS</strong>.
             </p>
           </Note>
 
@@ -105,7 +107,9 @@ const Organizers = ({ data }) => {
                 />
                 <strong className={styles.team_member_name}>
                   {member.name}
-                  <span className={styles.team_member_title}>{member.title}</span>
+                  <span className={styles.team_member_title}>
+                    {member.title}
+                  </span>
                 </strong>
               </li>
             ))}

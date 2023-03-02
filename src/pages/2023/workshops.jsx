@@ -9,7 +9,7 @@ import Button from "@components/Button";
 // import Section from "@components/Section";
 import WorkshopDetails from "@components/WorkshopDetails";
 
-import styles from "./workshops.module.scss";
+import * as styles from "./workshops.module.scss";
 
 const Workshops = ({ data }) => {
   const { allWorkshopsJson, speakerImages } = data;

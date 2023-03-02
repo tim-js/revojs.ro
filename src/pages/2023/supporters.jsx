@@ -11,7 +11,7 @@ import LogosWrapped from "@components/LogosWrapped";
 
 import { sponsors, friends, communities } from "@data/2023/supporters";
 
-import styles from "./supporters.module.scss";
+import * as styles from "./supporters.module.scss";
 
 export default () => {
   return (

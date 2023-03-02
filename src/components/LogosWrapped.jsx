@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
-import styles from "./logosWrapped.module.scss";
+import * as styles from "./logosWrapped.module.scss";
 
 const LogosWrapped = ({ list = [], size = "normal", ...props }) => {
   let _size = styles.logos_list__normal;
@@ -17,7 +17,7 @@ const LogosWrapped = ({ list = [], size = "normal", ...props }) => {
 
   return (
     <ul className={`${styles.logos_list} ${_size}`} {...props}>
-      {list.map(logo => {
+      {list.map((logo) => {
         const image = require(`@assets/${logo.image}`);
 
         return (
@@ -42,7 +42,7 @@ const LogosWrapped = ({ list = [], size = "normal", ...props }) => {
 
 LogosWrapped.propTypes = {
   list: PropTypes.arrayOf(PropTypes.object),
-  size: PropTypes.oneOf(["normal", "large", "small"])
+  size: PropTypes.oneOf(["normal", "large", "small"]),
 };
 
 export default LogosWrapped;

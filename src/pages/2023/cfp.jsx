@@ -13,7 +13,7 @@ import Subscribe from "@components/Subscribe";
 import Title2020 from "@components/Title2020";
 import Text from "@components/Text";
 
-import styles from "./cfp.module.scss";
+import * as styles from "./cfp.module.scss";
 
 // const CFP_OPEN = "April 1st";
 // const CFP_CLOSE = "June 30th";
@@ -84,19 +84,31 @@ export default () => {
 
             <ul className="bullet">
               <li>
-                <strong>Examine the current de-facto solutions with a critical eye</strong> and analyse alternative approaches.
+                <strong>
+                  Examine the current de-facto solutions with a critical eye
+                </strong>{" "}
+                and analyse alternative approaches.
               </li>
               <li>
-              <strong>Revisit classical or old-fashioned practices</strong> that are still applicable today.
+                <strong>Revisit classical or old-fashioned practices</strong>{" "}
+                that are still applicable today.
               </li>
               <li>
-                Scrutinise whether (and when) <strong>today’s complexity is a necessity or a commodity</strong>.
+                Scrutinise whether (and when){" "}
+                <strong>
+                  today’s complexity is a necessity or a commodity
+                </strong>
+                .
               </li>
             </ul>
           </Note>
 
           <p>
-            <strong className="accent">NOTE:</strong> Not every talk is mandatory to touch upon the central theme. Your talk's primary focus should be to deliver quality, relevant content in an engaging manner. However, proposals that fit the theme will get extra points during the CFP selection.
+            <strong className="accent">NOTE:</strong> Not every talk is
+            mandatory to touch upon the central theme. Your talk's primary focus
+            should be to deliver quality, relevant content in an engaging
+            manner. However, proposals that fit the theme will get extra points
+            during the CFP selection.
           </p>
 
           {/* <br /> */}

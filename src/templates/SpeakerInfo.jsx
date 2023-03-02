@@ -1,9 +1,16 @@
 import React from "react";
 
-import styles from "./SpeakerInfo.module.scss";
+import * as styles from "./SpeakerInfo.module.scss";
 
 export default function Speaker(props) {
-  const { firstname, lastname, title, company, twitter, mastodon } = props.speaker;
+  const {
+    firstname,
+    lastname,
+    title,
+    company,
+    twitter,
+    mastodon,
+  } = props.speaker;
   const companyText = company ? ` at ${company}` : "";
 
   return (
@@ -27,7 +34,7 @@ export default function Speaker(props) {
       )}
       {mastodon && (
         <a
-        className={`${styles.social} ${styles.mastodon}`}
+          className={`${styles.social} ${styles.mastodon}`}
           href={mastodon}
           target="_blank"
           rel="noopener noreferrer"
