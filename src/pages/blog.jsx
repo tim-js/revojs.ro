@@ -20,7 +20,7 @@ export default function Blog({ data }) {
       <Section light>
         <Content centered>
           {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
+            .filter((post) => post.node.frontmatter.title.length > 0)
             .map(({ node: post }) => {
               return (
                 <article key={post.id} className="blog-post">
@@ -46,7 +46,7 @@ export default function Blog({ data }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           excerpt(pruneLength: 250)

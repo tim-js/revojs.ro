@@ -36,10 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          limit: 1000
-        ) {
+        allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 1000) {
           edges {
             node {
               frontmatter {
@@ -50,7 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `
-  ).then(result => {
+  ).then((result) => {
     if (result.errors) {
       throw result.errors;
     }
@@ -61,7 +58,7 @@ exports.createPages = ({ graphql, actions }) => {
     // Instagram post. Since the scrapped Instagram data
     // already includes an ID field, we just use that for
     // each page's path.
-    _.each(result.data.allSpeakersJson.edges, edge => {
+    _.each(result.data.allSpeakersJson.edges, (edge) => {
       // Gatsby uses Redux to manage its internal state.
       // Plugins and sites can use functions like "createPage"
       // to interact with Gatsby.
@@ -77,13 +74,13 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           id: edge.node.id,
           image: edge.node.image,
-          talkId: edge.node.talkId
-        }
+          talkId: edge.node.talkId,
+        },
       });
     });
 
     const talkTemplate = path.resolve(`src/templates/talkDetails.jsx`);
-    _.each(result.data.allTalksJson.edges, edge => {
+    _.each(result.data.allTalksJson.edges, (edge) => {
       createPage({
         path: `/${edge.node.edition}/agenda/${slug(
           edge.node.id.toLowerCase()
@@ -91,20 +88,20 @@ exports.createPages = ({ graphql, actions }) => {
         component: slash(talkTemplate),
         context: {
           id: edge.node.id,
-          image: edge.node.image
-        }
+          image: edge.node.image,
+        },
       });
     });
 
     const invitationTemplate = path.resolve(`src/templates/invitedSpeaker.jsx`);
-    _.each(result.data.allInvitationsJson.edges, edge => {
+    _.each(result.data.allInvitationsJson.edges, (edge) => {
       createPage({
         path: `/invitation/${slug(edge.node.id.toLowerCase())}/`,
         component: slash(invitationTemplate),
         context: {
           id: edge.node.id,
-          image: edge.node.image
-        }
+          image: edge.node.image,
+        },
       });
     });
 
@@ -115,8 +112,8 @@ exports.createPages = ({ graphql, actions }) => {
         path: node.frontmatter.path,
         component: blogPostTemplate,
         context: {
-          url: node.frontmatter.path
-        } // additional data can be passed via context
+          url: node.frontmatter.path,
+        }, // additional data can be passed via context
       });
     });
   });
