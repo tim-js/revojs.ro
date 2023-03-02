@@ -94,6 +94,5 @@ module.exports = {
         extensions: ["jsx", "scss", "js"],
       },
     },
-    `gatsby-plugin-portal`,
   ],
 };
