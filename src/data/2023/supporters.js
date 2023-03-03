@@ -5,19 +5,14 @@ export const communities = [
     url: "https://jsheroes.io"
   },
   {
-    name: "ngParty",
-    image: "communities/ngparty_no-spray_logo.svg",
-    url: "https://twitter.com/ngPartyCz"
-  },
-  {
     name: "JSgirls",
     image: "communities/JSgirls_logo.svg",
     url: "https://jsgirls.ro/"
   },
   {
-    name: "ngBucharest",
-    image: "communities/ngBucharest_logo@2x.png",
-    url: "https://www.meetup.com/AngularJS-Bucharest/"
+    name: "Frontend Hub",
+    image: "communities/frontend_hub_logo.svg",
+    url: "https://www.facebook.com/frontendhub/"
   }
 ];
 
