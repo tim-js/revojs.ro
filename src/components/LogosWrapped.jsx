@@ -18,7 +18,7 @@ const LogosWrapped = ({ list = [], size = "normal", ...props }) => {
   return (
     <ul className={`${styles.logos_list} ${_size}`} {...props}>
       {list.map((logo) => {
-        const image = require(`@assets/${logo.image}`);
+        const image = require(`@assets/${logo.image}`).default;
 
         return (
           <li key={logo.name}>

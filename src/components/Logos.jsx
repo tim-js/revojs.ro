@@ -13,8 +13,8 @@ const Logos = ({ list = [], small, ...props }) => {
 
   return (
     <ul className={classes} {...props}>
-      {list.map(logo => {
-        const image = require(`@assets/${logo.image}`);
+      {list.map((logo) => {
+        const image = require(`@assets/${logo.image}`).default;
 
         let logoClasses = "";
 
@@ -48,7 +48,7 @@ const Logos = ({ list = [], small, ...props }) => {
 Logos.propTypes = {
   list: PropTypes.arrayOf(PropTypes.object),
   small: PropTypes.bool,
-  wide: PropTypes.bool
+  wide: PropTypes.bool,
 };
 
 export default Logos;

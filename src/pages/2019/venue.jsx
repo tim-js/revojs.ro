@@ -9,7 +9,7 @@ import Button from "@components/Button";
 
 import "./venue.scss";
 
-const map = require(`@assets/venue_location@2x.png`);
+const map = require(`@assets/venue_location@2x.png`).default;
 
 export default () => {
   return (
