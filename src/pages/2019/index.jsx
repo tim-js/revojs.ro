@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { replace, Link } from "gatsby";
+import { navigate, Link } from "gatsby";
 import queryString from "query-string";
 
 import Layout from "@components/Layout";
@@ -17,18 +17,18 @@ import { getEdition } from "@utils";
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
 
-export default props => {
+export default (props) => {
   useEffect(() => {
     const search = queryString.parse(props.location.search);
     if (search.fbclid) {
       const clearedSearch = queryString.stringify({
         ...search,
-        fbclid: undefined
+        fbclid: undefined,
       });
       if (clearedSearch.length) {
-        replace(props.location.pathname + "?" + clearedSearch);
+        navigate(props.location.pathname + "?" + clearedSearch);
       } else {
-        replace(props.location.pathname);
+        navigate(props.location.pathname);
       }
     }
   });

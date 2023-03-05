@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { replace, Link } from "gatsby";
+import { navigate } from "gatsby";
 import queryString from "query-string";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
@@ -30,9 +30,9 @@ export default (props) => {
         fbclid: undefined,
       });
       if (clearedSearch.length) {
-        replace(props.location.pathname + "?" + clearedSearch);
+        navigate(props.location.pathname + "?" + clearedSearch);
       } else {
-        replace(props.location.pathname);
+        navigate(props.location.pathname);
       }
     }
   });
