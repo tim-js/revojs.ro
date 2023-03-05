@@ -3,14 +3,8 @@ import React from "react";
 import * as styles from "./SpeakerInfo.module.scss";
 
 export default function Speaker(props) {
-  const {
-    firstname,
-    lastname,
-    title,
-    company,
-    twitter,
-    mastodon,
-  } = props.speaker;
+  const { firstname, lastname, title, company, twitter, mastodon } =
+    props.speaker;
   const companyText = company ? ` at ${company}` : "";
 
   return (
@@ -18,7 +12,7 @@ export default function Speaker(props) {
       <h1 className={styles.speaker_name}>
         {firstname} {lastname}
       </h1>
-      <span className={styles.speaker_title}>
+      <span>
         {title} {companyText}
       </span>
       <br />

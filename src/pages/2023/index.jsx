@@ -41,7 +41,7 @@ export default (props) => {
     <Layout location={props.location}>
       <Header type="main">
         <div className={styles.index_header}>
-          <div className={styles.date_location}>
+          <div>
             <h1 className={`revo-font ${styles.title}`}>
               <span className="highlight">re</span>think <br />
               <span className="highlight">re</span>visit <br />
