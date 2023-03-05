@@ -52,7 +52,7 @@ module.exports = {
               withWebp: true,
               showCaptions: false,
               // markdownCaptions: true,
-              tracedSVG: true,
+              // tracedSVG: true,
             },
           },
           {
