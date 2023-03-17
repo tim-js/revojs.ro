@@ -13,6 +13,11 @@ export const communities = [
     name: "Frontend Hub",
     image: "communities/frontend_hub_logo.svg",
     url: "https://www.facebook.com/frontendhub/"
+  },
+  {
+    name: "Oradea Tech Hub",
+    image: "communities/oth_logo.svg",
+    url: "https://www.oradeatechhub.ro/"
   }
 ];
 
