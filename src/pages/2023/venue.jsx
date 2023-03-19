@@ -10,7 +10,7 @@ import Note from "@components/Note";
 
 import * as styles from "./venue.module.scss";
 
-// const map = require(`@assets/venue_location@2x.png`).default;
+// import map from "@assets/venue_location@2x.png";
 
 const Venue = () => {
   return (
