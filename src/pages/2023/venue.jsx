@@ -13,6 +13,7 @@ import * as styles from "./venue.module.scss";
 // const map = require(`@assets/venue_location@2x.png`).default;
 
 const Venue = () => {
+export default () => {
   return (
     <Layout title="revo.js Venue">
       <Header type="main" centered>

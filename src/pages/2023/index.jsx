@@ -11,15 +11,15 @@ import IndexUpdates from "@components/index/IndexUpdates";
 import IndexSpeakers from "@components/index/IndexSpeakers";
 import IndexSponsors from "@components/index/IndexSponsors";
 import Separator2023 from "@components/Separator2023";
-import Button from "@components/Button";
+// import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
 // import DateLink from "@components/DateLink";
 // import { getEdition } from "@utils";
 import { sponsors } from "@data/2023/supporters";
 
-import logo from "@assets/logo-revojs.svg";
 import * as styles from "./index.module.scss";
+// import logo from "@assets/logo-revojs.svg";
 
 export default (props) => {
   useEffect(() => {

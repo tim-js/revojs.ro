@@ -4,8 +4,8 @@ import { useStaticQuery, graphql /*, Link */ } from "gatsby";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-// import Content from "@components/Content";
-// import Section from "@components/Section";
+import Content from "@components/Content";
+import Section from "@components/Section";
 import SpeakersListIndex from "@components/SpeakersListIndex";
 import Separator2023 from "@components/Separator2023";
 // import Title2020 from "@components/Title2020";
@@ -45,18 +45,20 @@ const Speakers = (props) => {
       };
     });
 
-  // const mc = allSpeakersJson.edges
-  //   .map(e => e.node)
-  //   .filter(speaker => !speaker.talkId)
-  //   .filter(speaker => speaker.edition === edition)
-  //   .map(speaker => {
-  //     const speakerImage = getImage(speaker.image);
+  const mcs = allSpeakersJson.edges
+    .map((e) => e.node)
+    .filter((speaker) => speaker.edition === edition)
+    .filter((speaker) => !speaker.talkId)
+    .map((speaker) => {
+      const speakerImage = getImage(speaker.image);
 
-  //     return {
-  //       ...speaker,
-  //       speakerImage
-  //     };
-  //   });
+      return {
+        ...speaker,
+        speakerImage,
+      };
+    });
+
+  const mc = [mcs.pop()];
 
   return (
     <Layout title="revo.js Speakers" noFooterSeparation>
@@ -84,9 +86,9 @@ const Speakers = (props) => {
 
       <Separator2023 />
 
-      {/* <Section style={{ paddingTop: 0 }}>
+      <Section style={{ paddingTop: 0 }}>
         <Content centered style={{ textAlign: "center" }}>
-          <h2>revo.js 2020 will be hosted by:</h2>
+          <h2>revo.js 2023 will be hosted by:</h2>
         </Content>
       </Section>
 
@@ -94,7 +96,7 @@ const Speakers = (props) => {
       <br />
       <br />
       <br />
-      <br /> */}
+      <br />
 
       {/* <Section light>
         <Content centered style={{ textAlign: "center" }}>
