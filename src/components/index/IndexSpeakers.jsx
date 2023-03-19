@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 import SpeakersListIndex from "@components/SpeakersListIndex";
 import Button from "@components/Button";
@@ -60,42 +60,37 @@ const Speakers = ({ data }) => {
 };
 
 export default (props) => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query {
-          allSpeakersJson {
-            edges {
-              node {
-                id
-                slug
-                firstname
-                lastname
-                image
-                title
-                company
-                talkId
-                edition
-              }
-            }
+  const data = useStaticQuery(graphql`
+    query {
+      allSpeakersJson {
+        edges {
+          node {
+            id
+            slug
+            firstname
+            lastname
+            image
+            title
+            company
+            talkId
+            edition
           }
-          speakerImages: allFile(
-            filter: { relativePath: { glob: "speakers/*" } }
-          ) {
-            edges {
-              node {
-                base
-                image: childImageSharp {
-                  fluid(maxWidth: 400, maxHeight: 400, grayscale: false) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+        }
+      }
+      speakerImages: allFile(filter: { relativePath: { glob: "speakers/*" } }) {
+        edges {
+          node {
+            base
+            image: childImageSharp {
+              fluid(maxWidth: 400, maxHeight: 400, grayscale: false) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
         }
-      `}
-      render={(data) => <Speakers data={data} {...props} />}
-    />
-  );
+      }
+    }
+  `);
+
+  return <Speakers data={data} {...props} />;
 };

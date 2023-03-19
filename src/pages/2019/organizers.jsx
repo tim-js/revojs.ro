@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Img from "gatsby-image";
 
@@ -17,17 +17,17 @@ const Organizers = ({ data }) => {
   const { allTeam2019Json, teamImages } = data;
 
   function getImage(image) {
-    return teamImages.edges.find(e => image.includes(e.node.base));
+    return teamImages.edges.find((e) => image.includes(e.node.base));
   }
 
   const team = allTeam2019Json.edges
-    .map(e => e.node)
-    .map(member => {
+    .map((e) => e.node)
+    .map((member) => {
       const memberImage = getImage(member.image);
 
       return {
         ...member,
-        memberImage
+        memberImage,
       };
     });
 
@@ -104,7 +104,7 @@ const Organizers = ({ data }) => {
             involved:
           </p>
           <ul className="team-list">
-            {team.map(member => (
+            {team.map((member) => (
               <li className="team-member" key={member.name}>
                 <Img
                   fluid={member.memberImage.node.image.fluid}
@@ -145,35 +145,31 @@ const Organizers = ({ data }) => {
   );
 };
 
-export default props => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query {
-          allTeam2019Json {
-            edges {
-              node {
-                name
-                image
-                title
-              }
-            }
+export default (props) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allTeam2019Json {
+        edges {
+          node {
+            name
+            image
+            title
           }
-          teamImages: allFile(filter: { relativePath: { glob: "team/*" } }) {
-            edges {
-              node {
-                base
-                image: childImageSharp {
-                  fluid(maxWidth: 240, maxHeight: 240, grayscale: true) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+        }
+      }
+      teamImages: allFile(filter: { relativePath: { glob: "team/*" } }) {
+        edges {
+          node {
+            base
+            image: childImageSharp {
+              fluid(maxWidth: 240, maxHeight: 240, grayscale: true) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
         }
-      `}
-      render={data => <Organizers data={data} {...props} />}
-    />
-  );
+      }
+    }
+  `);
+  return <Organizers data={data} {...props} />;
 };

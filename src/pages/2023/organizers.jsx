@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Img from "gatsby-image";
 
@@ -142,34 +142,32 @@ const Organizers = ({ data }) => {
 };
 
 export default (props) => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query {
-          allTeam2023Json {
-            edges {
-              node {
-                name
-                image
-                title
-              }
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allTeam2023Json {
+          edges {
+            node {
+              name
+              image
+              title
             }
           }
-          teamImages: allFile(filter: { relativePath: { glob: "team/*" } }) {
-            edges {
-              node {
-                base
-                image: childImageSharp {
-                  fluid(maxWidth: 240, maxHeight: 240, quality: 90) {
-                    ...GatsbyImageSharpFluid
-                  }
+        }
+        teamImages: allFile(filter: { relativePath: { glob: "team/*" } }) {
+          edges {
+            node {
+              base
+              image: childImageSharp {
+                fluid(maxWidth: 240, maxHeight: 240, quality: 90) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
           }
         }
-      `}
-      render={(data) => <Organizers data={data} {...props} />}
-    />
+      }
+    `
   );
+  return <Organizers data={data} {...props} />;
 };

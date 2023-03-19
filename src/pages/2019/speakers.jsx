@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
@@ -129,54 +129,48 @@ const Speakers = (props) => {
 };
 
 export default (props) => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query {
-          allSpeakersJson {
-            edges {
-              node {
-                speakerId
-                slug
-                firstname
-                lastname
-                image
-                title
-                company
-                talkId
-                edition
-              }
+  const data = useStaticQuery(graphql`
+    query {
+      allSpeakersJson {
+        edges {
+          node {
+            speakerId
+            slug
+            firstname
+            lastname
+            image
+            title
+            company
+            talkId
+            edition
+          }
+        }
+      }
+      allTalksJson {
+        edges {
+          node {
+            talkId
+            talk
+            abstract
+            speakers {
+              speakerId
             }
           }
-          allTalksJson {
-            edges {
-              node {
-                talkId
-                talk
-                abstract
-                speakers {
-                  speakerId
-                }
-              }
-            }
-          }
-          speakerImages: allFile(
-            filter: { relativePath: { glob: "speakers/*" } }
-          ) {
-            edges {
-              node {
-                base
-                image: childImageSharp {
-                  fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+        }
+      }
+      speakerImages: allFile(filter: { relativePath: { glob: "speakers/*" } }) {
+        edges {
+          node {
+            base
+            image: childImageSharp {
+              fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
         }
-      `}
-      render={(data) => <Speakers data={data} {...props} />}
-    />
-  );
+      }
+    }
+  `);
+  return <Speakers data={data} {...props} />;
 };

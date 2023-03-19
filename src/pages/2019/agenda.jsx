@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
@@ -176,55 +176,49 @@ const Agenda = ({ data }) => {
 };
 
 export default (props) => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query {
-          allTalksJson {
-            edges {
-              node {
-                talkId
-                talk
-                abstract
-                speakers {
-                  speakerId
-                }
-              }
+  const data = useStaticQuery(graphql`
+    query {
+      allTalksJson {
+        edges {
+          node {
+            talkId
+            talk
+            abstract
+            speakers {
+              speakerId
             }
           }
-          allSpeakersJson {
-            edges {
-              node {
-                speakerId
-                firstname
-                lastname
-                image
-                title
-                company
-                twitter
-                bio
-              }
-            }
+        }
+      }
+      allSpeakersJson {
+        edges {
+          node {
+            speakerId
+            firstname
+            lastname
+            image
+            title
+            company
+            twitter
+            bio
           }
-          speakerImages: allFile(
-            filter: { relativePath: { glob: "speakers/*" } }
-          ) {
-            edges {
-              node {
-                base
-                image: childImageSharp {
-                  fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+        }
+      }
+      speakerImages: allFile(filter: { relativePath: { glob: "speakers/*" } }) {
+        edges {
+          node {
+            base
+            image: childImageSharp {
+              fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
         }
-      `}
-      render={(data) => <Agenda data={data} {...props} />}
-    />
-  );
+      }
+    }
+  `);
+  return <Agenda data={data} {...props} />;
 };
 
 function Workshop({ data }) {
