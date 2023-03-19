@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
@@ -52,43 +52,39 @@ const Workshops = ({ data }) => {
   );
 };
 
-export default (props) => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query {
-          allWorkshopsJson {
-            edges {
-              node {
-                workshopId
-                firstname
-                lastname
-                bio
-                image
-                title
-                company
-                twitter
-                workshop
-              }
-            }
+const WorkshopsPage = (props) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allWorkshopsJson {
+        edges {
+          node {
+            workshopId
+            firstname
+            lastname
+            bio
+            image
+            title
+            company
+            twitter
+            workshop
           }
-          speakerImages: allFile(
-            filter: { relativePath: { glob: "speakers/*" } }
-          ) {
-            edges {
-              node {
-                base
-                image: childImageSharp {
-                  fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+        }
+      }
+      speakerImages: allFile(filter: { relativePath: { glob: "speakers/*" } }) {
+        edges {
+          node {
+            base
+            image: childImageSharp {
+              fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
         }
-      `}
-      render={(data) => <Workshops data={data} {...props} />}
-    />
-  );
+      }
+    }
+  `);
+  return <Workshops data={data} {...props} />;
 };
+
+export default WorkshopsPage;
