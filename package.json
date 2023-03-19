@@ -37,11 +37,11 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^1.3.0",
-    "slug": "^8.2.2"
+    "slug": "^8.2.2",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   },
   "devDependencies": {
-    "gatsby-cli": "^5.7.0",
-    "webpack-filter-warnings-plugin": "^1.2.1"
+    "gatsby-cli": "^5.7.0"
   },
   "repository": {
     "type": "git",
