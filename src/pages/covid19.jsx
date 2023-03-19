@@ -8,7 +8,7 @@ import Section from "@components/Section";
 import Note from "@components/Note";
 import Text from "@components/Text";
 
-export default () => {
+const CovidPage = () => {
   return (
     <Layout title="revo.js COVID-19 Updates">
       <Header centered type="secondary">
@@ -77,10 +77,12 @@ export default () => {
 
             <h2>What's next?</h2>
             <p>
-              <strong>We plan to revolve in <del>2021</del> 2023</strong> with our second
-              edition and make it up to everybody for this gap year. Once we
-              have more certainty as to when this pandemic will subside, we’ll
-              get back to you with fresh news.
+              <strong>
+                We plan to revolve in <del>2021</del> 2023
+              </strong>{" "}
+              with our second edition and make it up to everybody for this gap
+              year. Once we have more certainty as to when this pandemic will
+              subside, we’ll get back to you with fresh news.
             </p>
 
             <p>
@@ -108,3 +110,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default CovidPage;

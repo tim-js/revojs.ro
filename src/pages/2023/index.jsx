@@ -21,7 +21,7 @@ import { sponsors } from "@data/2023/supporters";
 import * as styles from "./index.module.scss";
 // import logo from "@assets/logo-revojs.svg";
 
-export default (props) => {
+const Index = (props) => {
   useEffect(() => {
     const search = queryString.parse(props.location.search);
     if (search.fbclid) {
@@ -93,3 +93,5 @@ export default (props) => {
     </Layout>
   );
 };
+
+export default Index;

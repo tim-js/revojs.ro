@@ -7,7 +7,7 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import Note from "@components/Note";
 
-export default () => {
+const Travel = () => {
   return (
     <Layout title="revo.js Travel info">
       <Header centered type="secondary">
@@ -35,3 +35,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Travel;

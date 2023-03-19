@@ -15,7 +15,7 @@ import { media } from "@data/2019/media-partners";
 
 import "./supporters.scss";
 
-export default () => {
+const Supporters = () => {
   return (
     <Layout title="revo.js Sponsors">
       <Header centered type="secondary">
@@ -61,7 +61,7 @@ export default () => {
             list={partners}
             style={{
               marginLeft: "auto",
-              marginRight: "auto"
+              marginRight: "auto",
             }}
             small
           />
@@ -80,7 +80,7 @@ export default () => {
             style={{
               maxWidth: "400px",
               marginLeft: "auto",
-              marginRight: "auto"
+              marginRight: "auto",
             }}
             small
           />
@@ -100,3 +100,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Supporters;

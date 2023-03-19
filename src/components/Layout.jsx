@@ -5,7 +5,7 @@ import Navigation from "@components/Navigation";
 import Footer from "@components/Footer";
 import { getEdition } from "@utils";
 
-export default ({
+const Layout = ({
   location,
   children,
   title,
@@ -35,3 +35,5 @@ export default ({
     </div>
   );
 };
+
+export default Layout;

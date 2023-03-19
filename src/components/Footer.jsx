@@ -19,7 +19,7 @@ function renderPage(page, edition, isMainLink) {
   return <Link to={uri}>{name}</Link>;
 }
 
-export default (props) => {
+const Footer = (props) => {
   const separation = !props.noFooterSeparation ? "footer-separation" : "";
   const { main, secondary, tertiary } = getPages();
   const edition = getEdition();
@@ -117,3 +117,5 @@ export default (props) => {
     </footer>
   );
 };
+
+export default Footer;

@@ -11,7 +11,7 @@ import Note from "@components/Note";
 
 import "./tickets.scss";
 
-export default () => {
+const Tickets = () => {
   // const INDEX_START_EARLY = 3;
   // const INDEX_START_REGULAR = 5;
   // const INDEX_START_LATE = 8;
@@ -239,3 +239,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Tickets;

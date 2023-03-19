@@ -7,7 +7,7 @@ import Content from "@components/Content";
 import Button from "@components/Button";
 import Section from "@components/Section";
 
-export default () => {
+const NotFoundPage = () => {
   return (
     <Layout>
       <Header centered type="secondary">
@@ -32,3 +32,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default NotFoundPage;

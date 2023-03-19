@@ -11,7 +11,7 @@ import "./venue.scss";
 
 import map from "@assets/venue_location@2x.png";
 
-export default () => {
+const Venue = () => {
   return (
     <Layout title="revo.js Venue">
       <Header type="main" image="venue-image">
@@ -131,3 +131,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Venue;

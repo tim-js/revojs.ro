@@ -17,7 +17,7 @@ import * as styles from "./cfp.module.scss";
 // const CFP_OPEN = "April 1st";
 // const CFP_CLOSE = "June 30th";
 
-export default () => {
+const CfpPage = () => {
   return (
     <Layout title="revo.js Call for Papers">
       <Header type="main" centered>
@@ -345,3 +345,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default CfpPage;

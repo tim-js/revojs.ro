@@ -11,7 +11,7 @@ import { sponsors, friends, communities } from "@data/2023/supporters";
 
 import * as styles from "./supporters.module.scss";
 
-export default () => {
+const Supporters = () => {
   return (
     <Layout title="revo.js Sponsors">
       <Header centered type="main">
@@ -79,3 +79,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Supporters;

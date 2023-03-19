@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import { navigate } from "gatsby";
 import { currentEdition } from "@utils";
 
-export default () => {
+const Supporters = () => {
   useEffect(() => {
     navigate(`/${currentEdition}/supporters/`);
   }, []);
   return null;
 };
+
+export default Supporters;

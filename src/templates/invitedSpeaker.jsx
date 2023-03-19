@@ -12,7 +12,7 @@ import Content from "@components/Content";
 
 import { currentEdition } from "@utils";
 
-export default (props) => {
+const InvitedSpeaker = (props) => {
   const { invitationsJson, file } = props.data;
   const lastEdition = currentEdition - 1;
 
@@ -166,6 +166,8 @@ export default (props) => {
     </Layout>
   );
 };
+
+export default InvitedSpeaker;
 
 export const pageQuery = graphql`
   query ($id: String!, $image: String!) {

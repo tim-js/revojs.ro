@@ -6,7 +6,7 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 // import Note from "@components/Note";
 
-export default () => {
+const SpeakerInfo = () => {
   return (
     <Layout title="revo.js Speaker Info">
       <Header centered type="secondary">
@@ -722,3 +722,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default SpeakerInfo;

@@ -6,7 +6,7 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import Button from "@components/Button";
 
-export default () => {
+const Feedback = () => {
   return (
     <Layout title="revo.js Feedback">
       <Header centered type="secondary">
@@ -30,3 +30,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Feedback;

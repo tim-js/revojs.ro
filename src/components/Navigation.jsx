@@ -39,7 +39,7 @@ function renderPage(page, edition, isMainLink) {
   );
 }
 
-export default (props) => {
+const Navigation = (props) => {
   const [showMenu, toggleMenu] = useState(false);
   const isHome = isHomepage(props.location);
   const edition = getEdition();
@@ -140,3 +140,5 @@ function isHomepage(location) {
 
   return false;
 }
+
+export default Navigation;

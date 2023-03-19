@@ -6,7 +6,7 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import Note from "@components/Note";
 
-export default () => {
+const CodeOfConduct = () => {
   return (
     <Layout title="revo.js Code of Conduct">
       <Header centered type="secondary">
@@ -121,3 +121,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default CodeOfConduct;

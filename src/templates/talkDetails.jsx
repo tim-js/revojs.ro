@@ -5,7 +5,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Layout from "@components/Layout";
 import Talk from "./Talk";
 
-export default (props) => {
+const TalkDetails = (props) => {
   const {
     talksJson: { talk, abstract, speakers },
     allSpeakersJson,
@@ -40,6 +40,8 @@ export default (props) => {
     </Layout>
   );
 };
+
+export default TalkDetails;
 
 export const pageQuery = graphql`
   query ($id: String!) {

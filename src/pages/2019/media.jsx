@@ -156,7 +156,7 @@ const Media = ({ data }) => {
   );
 };
 
-export default () => {
+const MediaPage = () => {
   const data = useStaticQuery(graphql`
     {
       imgWorkshop: file(relativePath: { eq: "photos/img-workshop-2019.png" }) {
@@ -225,6 +225,8 @@ export default () => {
   `);
   return <Media data={data} />;
 };
+
+export default MediaPage;
 
 function mergeTalkRecordings(agenda, talks, speakers, images) {
   const recordings = [];

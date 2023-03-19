@@ -15,7 +15,7 @@ function getName(speakers) {
   return speakers.map((speaker) => `${speaker.firstname}'s`).join(" and ");
 }
 
-export default (props) => {
+const TalkPage = (props) => {
   const { talk, abstract, speakers } = props.talk;
 
   const multiple = speakers.length > 1 ? " multiple" : "";
@@ -29,7 +29,8 @@ export default (props) => {
               <div className="speaker-image" key={speaker.speakerId}>
                 <GatsbyImage
                   image={speaker.image.childImageSharp.gatsbyImageData}
-                  alt={`${speaker.firstname} ${speaker.lastname} photo`} />
+                  alt={`${speaker.firstname} ${speaker.lastname} photo`}
+                />
               </div>
             );
           })}
@@ -81,3 +82,5 @@ export default (props) => {
     );
   }
 };
+
+export default TalkPage;

@@ -14,7 +14,7 @@ import "./cfp.scss";
 // const CFP_OPEN = "17th of April";
 // const CFP_CLOSE = "17th of June";
 
-export default () => {
+const CfpPage = () => {
   return (
     <Layout title="revo.js Call for Papers">
       <Header type="main" image="cfp-image">
@@ -285,3 +285,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default CfpPage;

@@ -10,14 +10,17 @@ function displayCompany(name) {
   return <span className="card-speaker-company">at {name}</span>;
 }
 
-export default props => {
+const CardSpeaker = (props) => {
   return (
     <Card
       color={props.color}
       className="card-speaker"
-      img={<GatsbyImage
-        image={props.data.speakerImage.node.childImageSharp.gatsbyImageData}
-        alt={`${props.data.firstname} ${props.data.lastname} photo`} />}
+      img={
+        <GatsbyImage
+          image={props.data.speakerImage.node.childImageSharp.gatsbyImageData}
+          alt={`${props.data.firstname} ${props.data.lastname} photo`}
+        />
+      }
       heading={
         <>
           <span className="card-speaker-name">{props.data.firstname}</span>{" "}
@@ -30,3 +33,5 @@ export default props => {
     </Card>
   );
 };
+
+export default CardSpeaker;

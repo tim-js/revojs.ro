@@ -7,19 +7,11 @@ import Section from "@components/Section";
 import { WorkshopTicket } from "@components/CTA";
 import "./workshopDetails.scss";
 
-const Company = name => (name ? `at ${name}` : null);
+const Company = (name) => (name ? `at ${name}` : null);
 
-export default props => {
-  const {
-    id,
-    workshop,
-    firstname,
-    lastname,
-    title,
-    company,
-    twitter,
-    bio
-  } = props.data;
+const WorkshopDetails = (props) => {
+  const { id, workshop, firstname, lastname, title, company, twitter, bio } =
+    props.data;
   return (
     <Section light>
       <Content centered style={{ maxWidth: "830px" }}>
@@ -29,7 +21,10 @@ export default props => {
 
         <header className="workshop-header">
           <figure className="workshop-speaker-img">
-            <GatsbyImage image={props.image.node.childImageSharp.gatsbyImageData} alt="" />
+            <GatsbyImage
+              image={props.image.node.childImageSharp.gatsbyImageData}
+              alt=""
+            />
           </figure>
           <div className="speaker-info">
             <h2 className="speaker-name">
@@ -161,3 +156,5 @@ export default props => {
     </Section>
   );
 };
+
+export default WorkshopDetails;

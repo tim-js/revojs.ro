@@ -7,7 +7,7 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import Note from "@components/Note";
 
-export default () => {
+const Accessibility = () => {
   return (
     <Layout title="revo.js Accessibility">
       <Header centered type="secondary">
@@ -65,3 +65,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Accessibility;

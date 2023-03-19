@@ -7,7 +7,7 @@ import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 
-export default () => {
+const AboutPage = () => {
   return (
     <Layout title="About revo.js">
       <Header centered type="secondary">
@@ -549,3 +549,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default AboutPage;

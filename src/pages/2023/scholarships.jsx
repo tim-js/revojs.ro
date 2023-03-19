@@ -17,7 +17,7 @@ import Subscribe from "@components/Subscribe";
 // const START = "May 1st";
 // const END = "May 31st";
 
-export default () => {
+const Scholarships = () => {
   return (
     <Layout title="revo.js Tickets">
       <Header centered type="secondary">
@@ -115,3 +115,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Scholarships;

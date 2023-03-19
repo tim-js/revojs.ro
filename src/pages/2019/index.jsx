@@ -17,7 +17,7 @@ import { getEdition } from "@utils";
 import logo from "@assets/logo-revojs.svg";
 import "./index.scss";
 
-export default (props) => {
+const Index = (props) => {
   useEffect(() => {
     const search = queryString.parse(props.location.search);
     if (search.fbclid) {
@@ -85,3 +85,5 @@ export default (props) => {
     </Layout>
   );
 };
+
+export default Index;

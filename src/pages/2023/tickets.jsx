@@ -21,7 +21,7 @@ import * as styles from "./tickets.module.scss";
 // const LATE_START = "Aug. 25th";
 // const LATE_END = "Sep. 21st";
 
-export default () => {
+const Tickets = () => {
   return (
     <Layout title="revo.js Tickets">
       <Header type="main" centered>
@@ -231,3 +231,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Tickets;

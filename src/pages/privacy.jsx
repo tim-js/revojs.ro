@@ -6,7 +6,7 @@ import Content from "@components/Content";
 import Section from "@components/Section";
 import Note from "@components/Note";
 
-export default () => {
+const Privacy = () => {
   return (
     <Layout title="revo.js Privacy Policy">
       <Header centered type="secondary">
@@ -263,3 +263,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Privacy;

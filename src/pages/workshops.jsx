@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import { navigate } from "gatsby";
 import { currentEdition } from "@utils";
 
-export default () => {
+const Workshops = () => {
   useEffect(() => {
     navigate(`/${currentEdition}/workshops/`);
   }, []);
   return null;
 };
+
+export default Workshops;

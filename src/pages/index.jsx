@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import { navigate } from "gatsby";
 import { currentEdition } from "@utils";
 
-export default () => {
+const Index = () => {
   useEffect(() => {
     navigate(`/${currentEdition}/`, { replace: true });
   }, []);
   return null;
 };
+
+export default Index;

@@ -22,7 +22,7 @@ import logoMonochromeWhiteBg from "@assets/press/10.logo_monochrome_white-bg.svg
 
 import "./press.scss";
 
-export default () => {
+const Press = () => {
   return (
     <Layout title="revo.js Press Info">
       <Header centered type="secondary">
@@ -148,3 +148,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Press;
