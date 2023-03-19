@@ -10,9 +10,9 @@ import Note from "@components/Note";
 
 import * as styles from "./venue.module.scss";
 
-const map = require(`@assets/venue_location@2x.png`).default;
+// const map = require(`@assets/venue_location@2x.png`).default;
 
-export default () => {
+const Venue = () => {
   return (
     <Layout title="revo.js Venue">
       <Header type="main" centered>
@@ -126,3 +126,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Venue;

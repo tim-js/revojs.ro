@@ -141,7 +141,7 @@ const Organizers = ({ data }) => {
   );
 };
 
-export default (props) => {
+const OrganizersPage = (props) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -171,3 +171,5 @@ export default (props) => {
   );
   return <Organizers data={data} {...props} />;
 };
+
+export default OrganizersPage;

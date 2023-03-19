@@ -5,7 +5,7 @@ import LogosWrapped from "@components/LogosWrapped";
 
 import "./indexSponsors.scss";
 
-export default ({ sponsors }) => {
+const Sponsors = ({ sponsors }) => {
   return (
     <Section light centered className="index-sponsors">
       <h2 className="big revo-font">Sponsors</h2>
@@ -31,7 +31,8 @@ export default ({ sponsors }) => {
       <br />
 
       <LogosWrapped list={sponsors.starter} size="small" />
-
     </Section>
   );
 };
+
+export default Sponsors;

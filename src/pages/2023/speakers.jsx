@@ -8,9 +8,9 @@ import Header from "@components/layout/Header";
 // import Section from "@components/Section";
 import SpeakersListIndex from "@components/SpeakersListIndex";
 import Separator2023 from "@components/Separator2023";
-import Title2020 from "@components/Title2020";
+// import Title2020 from "@components/Title2020";
 // import Button from "@components/Button";
-import Text from "@components/Text";
+// import Text from "@components/Text";
 // import { PurchaseTicket } from "@components/CTA";
 
 import { getEdition } from "@utils";
@@ -110,7 +110,7 @@ const Speakers = (props) => {
   );
 };
 
-export default (props) => {
+const SpeakersPage = (props) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -160,3 +160,5 @@ export default (props) => {
   );
   return <Speakers data={data} {...props} />;
 };
+
+export default SpeakersPage;

@@ -128,7 +128,7 @@ const Speakers = (props) => {
   );
 };
 
-export default (props) => {
+const SpeakersPage = (props) => {
   const data = useStaticQuery(graphql`
     query {
       allSpeakersJson {
@@ -174,3 +174,5 @@ export default (props) => {
   `);
   return <Speakers data={data} {...props} />;
 };
+
+export default SpeakersPage;

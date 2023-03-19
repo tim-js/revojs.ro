@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import Button from "@components/Button";
+// import Button from "@components/Button";
 // import Content from "@components/Content";
 // import Section from "@components/Section";
 import WorkshopDetails from "@components/WorkshopDetails";
@@ -41,7 +41,7 @@ const Workshops = ({ data }) => {
   );
 };
 
-export default (props) => {
+const WorkshopsPage = (props) => {
   const data = useStaticQuery(graphql`
     query {
       allWorkshopsJson {
@@ -75,3 +75,5 @@ export default (props) => {
   `);
   return <Workshops data={data} {...props} />;
 };
+
+export default WorkshopsPage;

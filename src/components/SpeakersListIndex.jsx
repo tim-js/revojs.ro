@@ -6,7 +6,7 @@ import CardSpeaker from "@components/CardSpeaker";
 import "./speakersListIndex.scss";
 import { getEdition } from "@utils";
 
-export default ({ speakers }) => {
+const SpeakersListIndex = ({ speakers }) => {
   const edition = getEdition();
 
   return (
@@ -38,3 +38,5 @@ export default ({ speakers }) => {
     </ul>
   );
 };
+
+export default SpeakersListIndex;

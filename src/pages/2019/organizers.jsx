@@ -145,7 +145,7 @@ const Organizers = ({ data }) => {
   );
 };
 
-export default (props) => {
+const OrganizersPage = (props) => {
   const data = useStaticQuery(graphql`
     query {
       allTeam2019Json {
@@ -173,3 +173,5 @@ export default (props) => {
   `);
   return <Organizers data={data} {...props} />;
 };
+
+export default OrganizersPage;

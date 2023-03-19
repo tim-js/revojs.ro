@@ -6,7 +6,7 @@ import Arrow from "@components/Arrow";
 
 import "./indexUpdates.scss";
 
-export default () => {
+const IndexUpdates = () => {
   return (
     <Section centered>
       <h2 className="big first revo-font">Latest Updates</h2>
@@ -49,39 +49,9 @@ export default () => {
             </div>
           </Link>
         </li>
-        {/* 
-        <li>
-          <strong className="update-title mono">Social revo.updates</strong>
-          <p className="update-content light-faded">
-            Follow the latest updates and happenings at revo.js on our{" "}
-            <a
-              href="https://twitter.com/revojsro"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </a>
-            ,{" "}
-            <a
-              href="https://www.facebook.com/revojsro"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Facebook
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://www.instagram.com/revo.js/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>{" "}
-            accounts.
-          </p>
-        </li>
-        */}
       </ul>
     </Section>
   );
 };
+
+export default IndexUpdates;

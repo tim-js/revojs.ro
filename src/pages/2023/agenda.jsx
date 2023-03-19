@@ -180,7 +180,7 @@ const Agenda = ({ data }) => {
   */
 };
 
-export default (props) => {
+const AgendaPage = (props) => {
   const data = useStaticQuery(graphql`
     query {
       allTalksJson {
@@ -227,6 +227,8 @@ export default (props) => {
   `);
   return <Agenda data={data} {...props} />;
 };
+
+export default AgendaPage;
 
 /*
 function Workshop({ data }) {
