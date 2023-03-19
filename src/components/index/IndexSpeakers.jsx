@@ -66,6 +66,7 @@ export default (props) => {
         edges {
           node {
             id
+            speakerId
             slug
             firstname
             lastname
