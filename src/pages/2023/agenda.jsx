@@ -182,7 +182,7 @@ const Agenda = ({ data }) => {
 
 const AgendaPage = (props) => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       allTalksJson {
         edges {
           node {
@@ -215,10 +215,13 @@ const AgendaPage = (props) => {
         edges {
           node {
             base
-            image: childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
-                ...GatsbyImageSharpFluid
-              }
+            childImageSharp {
+              gatsbyImageData(
+                width: 400
+                height: 400
+                transformOptions: { grayscale: true }
+                layout: CONSTRAINED
+              )
             }
           }
         }

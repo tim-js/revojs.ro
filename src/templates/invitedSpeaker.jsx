@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Button from "@components/Button";
 import Layout from "@components/Layout";
@@ -35,8 +35,8 @@ export default (props) => {
         <Content centered>
           <figure className="speaker-image-wrapper">
             <div className="speaker-image" key={speaker.speakerId}>
-              <Img
-                fluid={speaker.image.image.fluid}
+              <GatsbyImage
+                image={speaker.image.childImageSharp.gatsbyImageData}
                 alt={`${speaker.firstname} ${speaker.lastname} photo`}
               />
             </div>
@@ -178,13 +178,15 @@ export const pageQuery = graphql`
       company
       image
     }
-
     file(relativePath: { eq: $image }) {
       base
-      image: childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
-          ...GatsbyImageSharpFluid
-        }
+      childImageSharp {
+        gatsbyImageData(
+          width: 400
+          height: 400
+          transformOptions: { grayscale: true }
+          layout: CONSTRAINED
+        )
       }
     }
   }

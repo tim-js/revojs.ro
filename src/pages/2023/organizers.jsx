@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -101,8 +101,10 @@ const Organizers = ({ data }) => {
           <ul className={styles.team_list}>
             {team.map((member) => (
               <li className={styles.team_member} key={member.name}>
-                <Img
-                  fluid={member.memberImage.node.image.fluid}
+                <GatsbyImage
+                  image={
+                    member.memberImage.node.childImageSharp.gatsbyImageData
+                  }
                   alt={`${member.name} black and white photo`}
                 />
                 <strong className={styles.team_member_name}>
@@ -144,7 +146,7 @@ const Organizers = ({ data }) => {
 const OrganizersPage = (props) => {
   const data = useStaticQuery(
     graphql`
-      query {
+      {
         allTeam2023Json {
           edges {
             node {
@@ -158,10 +160,13 @@ const OrganizersPage = (props) => {
           edges {
             node {
               base
-              image: childImageSharp {
-                fluid(maxWidth: 240, maxHeight: 240, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
+              childImageSharp {
+                gatsbyImageData(
+                  width: 240
+                  height: 240
+                  quality: 90
+                  layout: CONSTRAINED
+                )
               }
             }
           }

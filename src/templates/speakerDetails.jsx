@@ -47,19 +47,20 @@ export const pageQuery = graphql`
       bio
       image
     }
-
     talksJson(talkId: { eq: $talkId }) {
       talkId
       talk
       abstract
     }
-
     file(relativePath: { eq: $image }) {
       base
-      image: childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 400, grayscale: false) {
-          ...GatsbyImageSharpFluid
-        }
+      childImageSharp {
+        gatsbyImageData(
+          width: 400
+          height: 400
+          transformOptions: { grayscale: false }
+          layout: CONSTRAINED
+        )
       }
     }
   }

@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import "./speaker.scss";
 
@@ -15,7 +15,7 @@ export default props => {
     <section className={classes}>
       <figure className="speaker-img">
         <div className="speaker-img-inner">
-          <Img fluid={props.image.node.image.fluid} alt="" />
+          <GatsbyImage image={props.image.node.childImageSharp.gatsbyImageData} alt="" />
         </div>
       </figure>
       <div className="speaker-info">

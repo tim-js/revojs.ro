@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Content from "@components/Content";
@@ -29,7 +29,7 @@ export default props => {
 
         <header className="workshop-header">
           <figure className="workshop-speaker-img">
-            <Img fluid={props.image.node.image.fluid} alt="" />
+            <GatsbyImage image={props.image.node.childImageSharp.gatsbyImageData} alt="" />
           </figure>
           <div className="speaker-info">
             <h2 className="speaker-name">

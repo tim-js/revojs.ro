@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
@@ -54,8 +54,8 @@ const Media = ({ data }) => {
                 white
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=520124138546934"
                 img={
-                  <Img
-                    fluid={data.imgWorkshop.childImageSharp.fluid}
+                  <GatsbyImage
+                    image={data.imgWorkshop.childImageSharp.gatsbyImageData}
                     alt="Black and white photo from revo.js 2019 workshop with Gleb Bahmutov"
                   />
                 }
@@ -73,8 +73,8 @@ const Media = ({ data }) => {
                 white
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=519964821896199"
                 img={
-                  <Img
-                    fluid={data.imgConference.childImageSharp.fluid}
+                  <GatsbyImage
+                    image={data.imgConference.childImageSharp.gatsbyImageData}
                     alt="Black and white photo from revo.js 2019 conference, showing the conference venue with all the participants"
                   />
                 }
@@ -92,8 +92,8 @@ const Media = ({ data }) => {
                 white
                 href="https://www.facebook.com/pg/revojsro/photos/?tab=album&album_id=520281835197831"
                 img={
-                  <Img
-                    fluid={data.imgAfterParty.childImageSharp.fluid}
+                  <GatsbyImage
+                    image={data.imgAfterParty.childImageSharp.gatsbyImageData}
                     alt="Black and white photo from revo.js 2019 After Party, showing participants sitting at the table and talking"
                   />
                 }
@@ -111,8 +111,8 @@ const Media = ({ data }) => {
                 white
                 href="https://vrhub.ro/wp-content/uploads/vr360/vr.revo.js/"
                 img={
-                  <Img
-                    fluid={data.img360.childImageSharp.fluid}
+                  <GatsbyImage
+                    image={data.img360.childImageSharp.gatsbyImageData}
                     alt="revo.360 degrees"
                   />
                 }
@@ -158,37 +158,29 @@ const Media = ({ data }) => {
 
 export default () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       imgWorkshop: file(relativePath: { eq: "photos/img-workshop-2019.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       imgConference: file(
         relativePath: { eq: "photos/img-conference-2019.png" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       imgAfterParty: file(
         relativePath: { eq: "photos/img-afterparty-2019.png" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       img360: file(relativePath: { eq: "360_image.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       allTalksJson {
@@ -218,10 +210,13 @@ export default () => {
         edges {
           node {
             base
-            image: childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
-                ...GatsbyImageSharpFluid
-              }
+            childImageSharp {
+              gatsbyImageData(
+                width: 400
+                height: 400
+                transformOptions: { grayscale: true }
+                layout: CONSTRAINED
+              )
             }
           }
         }

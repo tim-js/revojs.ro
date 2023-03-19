@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Card from "./Card";
 
@@ -15,7 +15,9 @@ export default props => {
     <Card
       color={props.color}
       className="card-speaker"
-      img={<Img fluid={props.data.speakerImage.node.image.fluid} alt={`${props.data.firstname} ${props.data.lastname} photo`} />}
+      img={<GatsbyImage
+        image={props.data.speakerImage.node.childImageSharp.gatsbyImageData}
+        alt={`${props.data.firstname} ${props.data.lastname} photo`} />}
       heading={
         <>
           <span className="card-speaker-name">{props.data.firstname}</span>{" "}

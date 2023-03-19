@@ -69,10 +69,13 @@ export const pageQuery = graphql`
       edges {
         node {
           base
-          image: childImageSharp {
-            fluid(maxWidth: 400, maxHeight: 400, grayscale: false) {
-              ...GatsbyImageSharpFluid
-            }
+          childImageSharp {
+            gatsbyImageData(
+              width: 400
+              height: 400
+              transformOptions: { grayscale: false }
+              layout: CONSTRAINED
+            )
           }
         }
       }

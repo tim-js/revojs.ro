@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 // import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
@@ -177,7 +177,7 @@ const Agenda = ({ data }) => {
 
 export default (props) => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       allTalksJson {
         edges {
           node {
@@ -208,10 +208,13 @@ export default (props) => {
         edges {
           node {
             base
-            image: childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
-                ...GatsbyImageSharpFluid
-              }
+            childImageSharp {
+              gatsbyImageData(
+                width: 400
+                height: 400
+                transformOptions: { grayscale: true }
+                layout: CONSTRAINED
+              )
             }
           }
         }
@@ -250,8 +253,8 @@ function SpeakersDetails({ list }) {
     <figure className="agenda-speakers">
       {list.map((speaker) => (
         <div key={speaker.lastname}>
-          <Img
-            fluid={speaker.speakerImage.image.fluid}
+          <GatsbyImage
+            image={speaker.speakerImage.childImageSharp.gatsbyImageData}
             alt={`${speaker.firstname} ${speaker.firstname} photo`}
             className="talk-speaker-image"
           />

@@ -54,7 +54,7 @@ const Speakers = ({ data }) => {
 
 const IndexSpeakers = (props) => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       allSpeakersJson {
         edges {
           node {
@@ -75,10 +75,13 @@ const IndexSpeakers = (props) => {
         edges {
           node {
             base
-            image: childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400, grayscale: false) {
-                ...GatsbyImageSharpFluid
-              }
+            childImageSharp {
+              gatsbyImageData(
+                width: 400
+                height: 400
+                transformOptions: { grayscale: false }
+                layout: CONSTRAINED
+              )
             }
           }
         }

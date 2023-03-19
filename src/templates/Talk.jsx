@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Section from "@components/Section";
 import Content from "@components/Content";
@@ -27,10 +27,9 @@ export default (props) => {
           {speakers.map((speaker) => {
             return (
               <div className="speaker-image" key={speaker.speakerId}>
-                <Img
-                  fluid={speaker.image.image.fluid}
-                  alt={`${speaker.firstname} ${speaker.lastname} photo`}
-                />
+                <GatsbyImage
+                  image={speaker.image.childImageSharp.gatsbyImageData}
+                  alt={`${speaker.firstname} ${speaker.lastname} photo`} />
               </div>
             );
           })}

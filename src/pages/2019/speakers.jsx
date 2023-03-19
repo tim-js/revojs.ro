@@ -130,7 +130,7 @@ const Speakers = (props) => {
 
 const SpeakersPage = (props) => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       allSpeakersJson {
         edges {
           node {
@@ -162,10 +162,13 @@ const SpeakersPage = (props) => {
         edges {
           node {
             base
-            image: childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400, grayscale: true) {
-                ...GatsbyImageSharpFluid
-              }
+            childImageSharp {
+              gatsbyImageData(
+                width: 400
+                height: 400
+                transformOptions: { grayscale: true }
+                layout: CONSTRAINED
+              )
             }
           }
         }
