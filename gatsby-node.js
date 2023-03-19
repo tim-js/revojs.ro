@@ -3,6 +3,20 @@ const path = require(`path`);
 const slug = require(`slug`);
 const slash = require(`slash`);
 
+const FilterWarningsPlugin = require("webpack-filter-warnings-plugin");
+
+// Remove this plugin to see all the mini css warnings about conflicting order
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    plugins: [
+      new FilterWarningsPlugin({
+        exclude:
+          /mini-css-extract-plugin[^]*Conflicting order. Following module has been added:/,
+      }),
+    ],
+  });
+};
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 

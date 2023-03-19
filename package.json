@@ -39,7 +39,8 @@
     "slug": "^8.2.2"
   },
   "devDependencies": {
-    "gatsby-cli": "^5.7.0"
+    "gatsby-cli": "^5.7.0",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   },
   "repository": {
     "type": "git",
