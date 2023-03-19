@@ -67,6 +67,7 @@ fbq('track', 'PageView');`,
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+        <div id="portal"></div>
       </body>
     </html>
   );
