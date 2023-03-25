@@ -14,15 +14,15 @@ import Subscribe from "@components/Subscribe";
 
 import * as styles from "./cfp.module.scss";
 
-// const CFP_OPEN = "April 1st";
-// const CFP_CLOSE = "June 30th";
+const CFP_OPEN = "April 3rd";
+const CFP_CLOSE = "June 4th";
 
 const CfpPage = () => {
   return (
     <Layout title="revo.js Call for Papers">
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.cfp_image}`}>Call for Papers</h1>
-        <div className="subtitle2023">Call for Papers will open in April</div>
+        <div className="subtitle2023">Call for Papers will open {CFP_OPEN}</div>
         <a href="#subscribe-cfp" className={styles.cta}>
           <Button>Subscribe for updates</Button>
         </a>
@@ -37,9 +37,8 @@ const CfpPage = () => {
               programmers?
             </p>
             <p>
-              Stay tuned to share it! The{" "}
-              <strong>Call for Papers starts in April 2023</strong>.
-              {/* on <strong className="accent">{CFP_OPEN}</strong>. */}
+              Stay tuned to share it!{" "}
+              <strong>The Call for Papers starts on <span className="accent">{CFP_OPEN} 2023</span></strong>.
             </p>
 
             {/* <p>
