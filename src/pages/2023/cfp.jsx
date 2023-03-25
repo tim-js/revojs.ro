@@ -1,6 +1,6 @@
 import React from "react";
-// import { Link } from "gatsby";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -8,7 +8,7 @@ import Section from "@components/Section";
 import Content from "@components/Content";
 import Button from "@components/Button";
 import Note from "@components/Note";
-// import { SubmitCFP } from "@components/CTA";
+import { SubmitCFP } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
 // import Text from "@components/Text";
 
@@ -22,16 +22,21 @@ const CfpPage = () => {
     <Layout title="revo.js Call for Papers">
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.cfp_image}`}>Call for Papers</h1>
-        <div className="subtitle2023">Call for Papers will open {CFP_OPEN}</div>
-        <a href="#subscribe-cfp" className={styles.cta}>
+        <div className="subtitle2023">The Call for Papers is open until {CFP_CLOSE}</div>
+
+        <div className={styles.cta}>
+          <SubmitCFP />
+        </div>
+
+        {/* <a href="#subscribe-cfp" className={styles.cta}>
           <Button>Subscribe for updates</Button>
-        </a>
+        </a> */}
       </Header>
 
       <Section light>
         <Content centered>
           <Note>
-            <p>
+            {/* <p>
               Do you have a technical presentation that can change minds,
               perspectives, work approaches, or why not, even the mood of JS
               programmers?
@@ -39,12 +44,12 @@ const CfpPage = () => {
             <p>
               Stay tuned to share it!{" "}
               <strong>The Call for Papers starts on <span className="accent">{CFP_OPEN} 2023</span></strong>.
-            </p>
+            </p> */}
 
-            {/* <p>
+            <p>
               This is a call out to all members of the JavaScript community who
               have a memorable talk that can stir up change. Submit your talk
-              proposals until the <strong>{CFP_CLOSE}</strong> and hopefully
+              proposals until <strong>{CFP_CLOSE}</strong> and hopefully
               we’ll meet in October in Timisoara.
             </p>
 
@@ -52,7 +57,7 @@ const CfpPage = () => {
 
             <p>
               The selected talks will be announced at the beginning of August.
-            </p> */}
+            </p>
 
             {/* <p>
               We've received <strong>92 proposals</strong>, which is a lot more
@@ -109,18 +114,18 @@ const CfpPage = () => {
             during the CFP selection.
           </p>
 
-          {/* <br /> */}
-          {/* <SubmitCFP white /> */}
+          <br />
+          <SubmitCFP white />
 
-          <section id="subscribe-cfp">
+          {/* <section id="subscribe-cfp">
             <br />
             <br />
             <h2>Stay up to date!</h2>
             <p>Subscribe to find out when Call for Papers starts:</p>
             <Subscribe light list="cfp" />
-          </section>
+          </section> */}
 
-          {/*
+          
           <section id="topics">
             <h2>Topics</h2>
             <p>
@@ -151,10 +156,7 @@ const CfpPage = () => {
             <h3>Duration</h3>
             <p>
               The standard duration for all talks is <strong>30 minutes</strong>
-              . For a more dynamic routine, we’ll also throw in a few shorter or
-              longer presentations, if applicable.
-            </p>
-            <p>
+              .
               Since we’ll be on a tight schedule, we strongly suggest that you
               time your presentation accordingly in advance.
             </p>
@@ -336,9 +338,9 @@ const CfpPage = () => {
 
           <br />
           <br />
-          */}
+         
 
-          {/* <SubmitCFP white /> */}
+          <SubmitCFP white />
         </Content>
       </Section>
     </Layout>
