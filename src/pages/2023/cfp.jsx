@@ -261,12 +261,12 @@ const CfpPage = () => {
                 and related events during the conference;
               </li>
               <li>
-                Take you on a <strong>trip outside Timisoara</strong> on
-                Saturday, with the organizers;
+                Invite you out to a <strong>speakers’ dinner</strong> Wednesday
+                evening, before the conference.
               </li>
               <li>
-                Take you out at a <strong>speakers’ dinner</strong> Wednesday
-                evening, before the conference.
+                Take you on a <strong>trip outside Timisoara</strong> on
+                Saturday, with the organizing team;
               </li>
             </ul>
 
