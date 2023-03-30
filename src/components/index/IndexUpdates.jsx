@@ -15,22 +15,10 @@ const IndexUpdates = () => {
 
       <ul className="updates-list">
         <li>
-          <Link to="/2023/speakers/" className="updates-link">
-            <strong className="update-title mono">Speakers</strong>
-            <p className="update-content light-faded">
-              Our line-up is revolving! Meet the first invited speakers.
-            </p>
-            <div className="arrow">
-              <Arrow color="primary" />
-            </div>
-          </Link>
-        </li>
-
-        <li>
           <Link to="/2023/cfp/" className="updates-link">
-            <strong className="update-title mono">Call for Papers</strong>
+            <strong className="update-title mono">CFP is now open</strong>
             <p className="update-content light-faded">
-              CFP will open in spring. Learn more about this year’s theme.
+              Submit your proposals for revo.js 2023 until June 4th.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
@@ -43,6 +31,18 @@ const IndexUpdates = () => {
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
               Tickets go on sale late-spring. See what to expect.
+            </p>
+            <div className="arrow">
+              <Arrow color="primary" />
+            </div>
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/2023/speakers/" className="updates-link">
+            <strong className="update-title mono">Speakers</strong>
+            <p className="update-content light-faded">
+              Our line-up is revolving! Meet the first invited speakers.
             </p>
             <div className="arrow">
               <Arrow color="primary" />

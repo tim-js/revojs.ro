@@ -14,12 +14,12 @@ import Subscribe from "@components/Subscribe";
 
 import * as styles from "./tickets.module.scss";
 
-// const EARLY_START = "May 1st";
-// const EARLY_END = "May 31st";
-// const REGULAR_START = "June 1st";
-// const REGULAR_END = "Aug. 24th";
-// const LATE_START = "Aug. 25th";
-// const LATE_END = "Sep. 21st";
+// const EARLY_START = "April 19th";
+// const EARLY_END = "May 14th";
+// const REGULAR_START = "May 15th";
+// const REGULAR_END = "Aug. 31st";
+// const LATE_START = "Sep. 1st";
+// const LATE_END = "Sep. 25st";
 
 const Tickets = () => {
   return (

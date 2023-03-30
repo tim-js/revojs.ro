@@ -28,7 +28,7 @@ export const WorkshopTicket = ({ label = "Book your spot", ...props }) => {
 
 export const SubmitCFP = props => {
   return (
-    <OutboundLink href="https://revojs.typeform.com/to/br1zaJ" target="_blank">
+    <OutboundLink href="https://revojs.typeform.com/to/D7EYCkuO" target="_blank">
       <Button {...props}>Submit your Proposal</Button>
     </OutboundLink>
   );
