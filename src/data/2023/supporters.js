@@ -137,5 +137,10 @@ export const sponsors = {
       image: "sponsors/2023/opswat_logo.svg",
       url: "https://www.opswat.com/"
     },
+    {
+      name: "Webamboos",
+      image: "sponsors/2023/webamboos_logo.svg",
+      url: "https://webamboos.com/"
+    },
   ],
 };
