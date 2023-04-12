@@ -6,7 +6,7 @@ export const PurchaseTicket = ({ label = "Grab Your Ticket", ...props }) => {
   return (
     <OutboundLink
       className="tickets-cta"
-      href="https://ti.to/revojs/revojs2020"
+      href="https://ti.to/timjscommunity/revojs2023"
       target="_blank"
     >
       <Button {...props}>{label}</Button>
