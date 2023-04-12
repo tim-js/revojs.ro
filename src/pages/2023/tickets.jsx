@@ -6,20 +6,20 @@ import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 import Section from "@components/Section";
 import Content from "@components/Content";
-// import Note from "@components/Note";
+import Note from "@components/Note";
 import Button from "@components/Button";
-// import { PurchaseTicket } from "@components/CTA";
+import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
 // import Text from "@components/Text";
 
 import * as styles from "./tickets.module.scss";
 
-// const EARLY_START = "April 19th";
-// const EARLY_END = "May 14th";
-// const REGULAR_START = "May 15th";
-// const REGULAR_END = "Aug. 31st";
-// const LATE_START = "Sep. 1st";
-// const LATE_END = "Sep. 25st";
+const EARLY_START = "April 19th";
+const EARLY_END = "May 14th";
+const REGULAR_START = "May 15th";
+const REGULAR_END = "Aug. 31st";
+const LATE_START = "Sep. 1st";
+const LATE_END = "Sep. 25st";
 
 const Tickets = () => {
   return (
@@ -27,23 +27,28 @@ const Tickets = () => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.tickets_image}`}>Tickets</h1>
         <div className="subtitle2023">
-          Tickets will go on sale in Spring 2023
+          Limited Early Bird tickets are On Sale!
         </div>
-        <a href="#subscribe" className={styles.cta}>
+
+        <div className={styles.cta}>
+          <PurchaseTicket />
+        </div>
+
+        {/* <a href="#subscribe" className={styles.cta}>
           <Button>Subscribe for Updates</Button>
-        </a>
+        </a> */}
       </Header>
 
       <Section light>
         <Content centered>
-          {/* <Note>
+          <Note>
             <p>
               Grab your ticket and get ready for insightful talks,
               exciting networking and a good time all-around.
             </p>
-          </Note> */}
+          </Note>
 
-          {/* <section>
+          <section>
             <h2>Rollout plan</h2>
 
             <p>
@@ -52,42 +57,52 @@ const Tickets = () => {
               events beyond our control:
             </p>
 
-            <ul className="tickets-rollout-2020">
-              <li className="tickets-rollout-2020--early">
-                <span className="ticket-price">&euro;130</span>
-                <div className="ticket-content">
-                  <strong className="ticket-name">Early Bird Tickets</strong>
+            <ul className={styles.tickets_rollout}>
+              <li className={styles.tickets_rollout__early}>
+                <span className={styles.ticket_price}>&euro;160</span>
+                <div className={styles.ticket_content}>
+                  <strong className={styles.ticket_name}>Early Bird Tickets</strong>
                   {EARLY_START} - {EARLY_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
-                <strong className="ticket-note">COMING SOON</strong>
+                <strong className={styles.ticket_note}>ON SALE</strong>
               </li>
 
-              <li className="tickets-rollout-2020--regular">
-                <span className="ticket-price">&euro;170</span>
-                <div className="ticket-content">
-                  <strong className="ticket-name">Regular Tickets</strong>
+              <li className={styles.tickets_rollout__regular}>
+                <span className={styles.ticket_price}>&euro;210</span>
+                <div className={styles.ticket_content}>
+                  <strong className={styles.ticket_name}>Regular Tickets</strong>
                   {REGULAR_START} - {REGULAR_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
-                <strong className="ticket-note"></strong>
+                <strong className={styles.ticket_note}></strong>
               </li>
 
-              <li className="tickets-rollout-2020--late">
-                <span className="ticket-price">&euro;210</span>
-                <div className="ticket-content">
-                  <strong className="ticket-name">Late Bird Tickets</strong>
+              <li className={styles.tickets_rollout__late}>
+                <span className={styles.ticket_price}>&euro;260</span>
+                <div className={styles.ticket_content}>
+                  <strong className={styles.ticket_name}>Late Bird Tickets</strong>
                   {LATE_START} - {LATE_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
-                <strong className="ticket-note"></strong>
+                <strong className={styles.ticket_note}></strong>
               </li>
-              <li>
-                <strong>Workshops Tickets</strong>: until {LATE_END}{" "}
-                <span className="light-faded">13:00 UTC</span>{" "}
+
+              <li className={styles.tickets_rollout__workshop} style={{marginTop: "2em"}}>
+                <span className={styles.ticket_price}>TBA</span>
+                <div className={styles.ticket_content}>
+                  <strong className={styles.ticket_name}>Workshops Tickets</strong>
+                  On sale until {LATE_END}{" "}
+                  <span className="light-faded">(21:00 UTC)</span>{" "}
+                  <br />
+                  <Link to="/2023/workshops/" title="Workshops page">
+                    View details
+                  </Link>
+                </div>
+                <strong className={styles.ticket_note}></strong>
               </li>
             </ul>
-          </section> */}
+          </section>
 
           <section>
             <h2>All conference tickets include</h2>
@@ -111,14 +126,14 @@ const Tickets = () => {
               </li>
             </ul>
 
-            {/* <p className="accent">
-              <strong>Note:</strong> <br />
-              Conference tickets don't include access to workshops. <br />
+            <p className="accent">
+              <strong>NOTE:</strong> <br />
+              <strong>Conference tickets don't include access to workshops.</strong> <br />
               <span className="light-faded">
-                There is a separate ticket that you have to purchase in order to
-                attend the workshop.
+                There are separate tickets that you have to purchase to
+                attend workshops.
               </span>
-            </p> */}
+            </p>
           </section>
 
           {/* <section>
@@ -149,9 +164,9 @@ const Tickets = () => {
             </p>
           </section> */}
 
-          {/* <br />
-          <br /> */}
-          {/* <PurchaseTicket white /> */}
+          <br />
+          <br />
+          <PurchaseTicket white />
 
           <section>
             <h2>Bulk Tickets for Companies</h2>
@@ -170,7 +185,7 @@ const Tickets = () => {
             <p>We’ll be prompt to answer!</p>
           </section>
 
-          <section id="scholarships">
+          {/* <section id="scholarships">
             <h2>Diversity Scholarship Tickets</h2>
 
             <p>
@@ -180,8 +195,8 @@ const Tickets = () => {
                 professionals
               </strong>{" "}
               by offering free tickets. Our Diversity Scholarship is available,
-              but not limited to minorities, members of the LGBTQIA+ community,
-              people with disabilities (hearing, visual or physical), students
+              but not limited to minorities, people with disabilities (hearing, visual or physical), 
+              members of the LGBTQIA+ community, students,
               or individuals facing economic difficulties.
             </p>
 
@@ -190,7 +205,7 @@ const Tickets = () => {
             <Link to="/2023/scholarships/">
               <Button white>Diversity Scholarships</Button>
             </Link>
-          </section>
+          </section> */}
 
           <section id="refund">
             <h2>Refund Policy</h2>
@@ -215,17 +230,17 @@ const Tickets = () => {
             </ul>
           </section>
 
-          <section id="subscribe">
+          {/* <section id="subscribe">
             <br />
             <br />
             <h2>Stay up to date</h2>
             <p>Subscribe to find out when Tickets go on sale:</p>
             <Subscribe light />
-          </section>
+          </section> */}
 
           <br />
           <br />
-          {/* <PurchaseTicket white /> */}
+          <PurchaseTicket white />
         </Content>
       </Section>
     </Layout>
