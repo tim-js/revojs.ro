@@ -8,6 +8,7 @@
     "bio": "<p>Léonie is Director of <a href='https://tetralogical.com'>TetraLogical</a>; a member of the <a href='https://www.w3.org/governance/board/'>W3C Board of Directors</a>; and co-Chair of the W3C Web Applications Working Group.</p><p>Amongst other things, Léonie is co-organiser of the <a href='https://inclusivedesign24.org'>Inclusive Design 24 (#id24)</a> conference; co-author of the <a href='https://inclusivedesignprinciples.org'>Inclusive Design Principles</a>; and mentor to young people interested in the fields of accessibility and inclusive design. She is also a Microsoft Most Valued Professional (MVP).</p><p>Léonie is often found at conferences, talking about web standards, accessibility mechanics, and pushing the boundaries of inclusive design (with existing technologies like SVG, HTML, ARIA, and JavaScript, as well as new technologies like AI and WebVR). She has also written about some of these things for Smashing magazine, SitePoint.com, and Net magazine, as well as on her own site <a href='https://tink.uk'>tink.uk</a>.</p><p>In her spare time, Léonie likes reading, cooking, drinking tequila, and dancing (although not necessarily in that order)!</p>",
     "image": "speakers/leonie_bw.jpeg",
     "twitter": "LeonieWatson",
+    "mastodon": "",
     "web": "https://tink.uk",
     "title": "Director",
     "company": "TetraLogical",
@@ -22,6 +23,7 @@
     "bio": "<p>A Florida-based web developer, Trent Willis, has over a decade of experience building complex web applications and is passionate about sharing that experience with others.</p> <p>Currently a Staff Software Engineer on Netflix’s Observability team, he has contributed to many Open Source projects during his career and has spoken at dozens of conferences on topics related to JavaScript, web development, and team culture.</p>",
     "image": "speakers/trent_bw.jpeg",
     "twitter": "trentmwillis",
+    "mastodon": "",
     "web": "https://trentwillis.com",
     "title": "Staff Software Engineer",
     "company": "Netflix",
@@ -36,6 +38,7 @@
     "bio": "Martin does things with computers and then tells other people about the things that worked and the ones that didn't, so they can go and make new, exciting mistakes themselves.",
     "image": "speakers/martin_bw.png",
     "twitter": "g33konaut",
+    "mastodon": "",
     "title": "Developer Relations Engineer",
     "company": "Google",
     "talkId": "talk2023-martin"
@@ -49,6 +52,7 @@
     "bio": "<p>Kenneth Rohde Christiansen is the principal engineer on Intel's Web Platform Engineering team. In his role, Kenneth leads multiple efforts to ensure the web platform works in Intel’s favour. To achieve this, Kenneth strives to build toward a complete application development platform, driving Windows and Chrome OS usage while exposing the full potential of its hardware capabilities to developers.</p> <p>Since joining Intel in 2011, Kenneth has shaped Intel's approach to working with external browser vendors and the web community. As a result, Intel landed specific features and optimization options in Chromium based browsers such as Google Chrome and Microsoft Edge. Some of these features and inventions have been industry-shaping, as it's the case with Progressive Web Apps, which are becoming one of the main ways to create desktop applications.</p> <p>Kenneth is a multi-term <strong>elected member of the W3C</strong> (World Wide Web Consortium) Technical Architecture Group, growing Intel’s influence inside the essential standardisation group of web platforms. In addition, he is also a Microsoft Most Values Professional in Developer Tooling and a Google Developer Expert in Web Technology.</p>",
     "image": "speakers/kenneth_bw.jpeg",
     "twitter": "kennethrohde",
+    "mastodon": "",
     "title": "Principal Engineer and Web Platform Architect",
     "company": "Intel",
     "talkId": "talk2023-kenneth"
@@ -62,6 +66,7 @@
     "bio": "Reactive Programming and compiler enthusiast. Jay works on the Shared Client Foundations team at Netflix. He's an <a href='https://rxjs.dev/team?group=Alumn'>RxJS core team alum</a> and creator of <a href='https://github.com/jayphelps/git-blame-someone-else'>git-blame-someone-else</a>.",
     "image": "speakers/jay_bw.jpg",
     "twitter": "_jayphelps",
+    "mastodon": "",
     "title": "Software Engineer",
     "company": "Netflix",
     "talkId": "talk2023-jay"
@@ -75,6 +80,7 @@
     "bio": "<p>Anna works as a Lead UI Developer at Field Intelligence helping to bring healthcare the fastest emerging markets in the world. She is always trying to find ways to make people fall in love with coding and has a long history of organizing coding workshops for WebMuses and Rails Girls. In her spare time she is practicing Pilates, playing Hearthstone and traveling.</p>",
     "image": "speakers/anna_bw.jpg",
     "twitter": "szynszyliszys",
+    "mastodon": "",
     "title": "Lead UI Developer",
     "company": "Field Intelligence",
     "talkId": "talk2023-anna"
@@ -88,6 +94,7 @@
     "bio": "<p>Ben Lesh is best known for his involvement as the technical lead for RxJS, a popular reactive programming library for JavaScript. He has worked on the Angular Team at Google and also at Netflix in the past.</p><p>Ben is a father of 3 children, and enjoys art such as drawing and painting.</p>",
     "image": "speakers/ben_bw.jpeg",
     "twitter": "BenLesh",
+    "mastodon": "",
     "title": "Development Lead",
     "company": "RxJS",
     "talkId": "talk2023-ben"
@@ -101,6 +108,7 @@
     "bio": "<p>Matt is an independent full-stack engineer and developer advocate working on a comprehensive TypeScript course called <a href='https://totaltypescript.com'>Total TypeScript</a>.</p>",
     "image": "speakers/matt_bw.png",
     "twitter": "mattpocockuk",
+    "mastodon": "",
     "title": "TypeScript Educator",
     "company": "",
     "talkId": "talk2023-matt"
@@ -128,6 +136,7 @@
     "bio": "<p>Diana is an IT Recruiter by day and full-time nerd by night. In her free time, she also gets involved in organizing and hosting various events in the local IT community.</p> <p>With more than 10 years of experience in HR and IT Recruitment, strengthened by a background in Organizational & Occupational Health Psychology, Diana believes in the compatibility between what a person is looking for in their next job as well as what a company is searching for in their next employee.</p>",
     "image": "speakers/diana_bw.jpeg",
     "twitter": "DianaMacau",
+    "mastodon": "",
     "title": "MC and Host",
     "company": "",
     "talkId": ""

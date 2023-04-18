@@ -13,10 +13,9 @@ export const main = [
   {
     name: "Tickets",
   },
-  // {
-  //   name: "Workshop",
-  //   path: "workshop",
-  // },
+  {
+    name: "Workshops",
+  },
   // {
   //   name: "Venue"
   // },

@@ -30,7 +30,7 @@ const IndexUpdates = () => {
           <Link to="/2023/tickets/" className="updates-link">
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              Tickets go on sale late-spring. See what to expect.
+              <strong>Early Bird tickets</strong> are now on sale! Hurry up, only 50 tickets available!
             </p>
             <div className="arrow">
               <Arrow color="primary" />

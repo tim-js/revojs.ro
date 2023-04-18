@@ -4,10 +4,12 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-// import Button from "@components/Button";
-// import Content from "@components/Content";
-// import Section from "@components/Section";
-import WorkshopDetails from "@components/WorkshopDetails";
+import Button from "@components/Button";
+import Content from "@components/Content";
+import Note from "@components/Note";
+import Section from "@components/Section";
+import Subscribe from "@components/Subscribe";
+// import WorkshopDetails from "@components/WorkshopDetails";
 
 import * as styles from "./workshops.module.scss";
 
@@ -20,11 +22,42 @@ const Workshops = ({ data }) => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.workshops_image}`}>Workshops</h1>
         <p className="subtitle2023">
-          Will be annouced later. <br /> Stay tuned...
+          Workshops will be announced soon. <br /> Stay tuned...
         </p>
+
+        <br />
+        <br />
+
+        <a href="#subscribe">
+          <Button>Subscribe for Updates</Button>
+        </a>
+
       </Header>
 
-      {workshops.map((workshop, index) => {
+      <Section light>
+        <Content centered>
+
+          <Note>
+            <p>
+              All workshops will take place on the <strong>4th of October</strong>, before the conference.
+            </p>
+            <p>
+              Workshops are not included in the conference ticket.<br />They require separate purchase.
+            </p>
+          </Note>
+
+          <section id="subscribe">
+            <br />
+            <h2>Stay up to date</h2>
+            <p>Subscribe to find out when Tickets go on sale:</p>
+            <Subscribe light />
+          </section>
+
+        </Content>
+      </Section>
+
+
+      {/* {workshops.map((workshop, index) => {
         const speakerImageFluid = speakerImages.edges.find((e) =>
           workshop.image.includes(e.node.base)
         );
@@ -36,7 +69,7 @@ const Workshops = ({ data }) => {
             image={speakerImageFluid}
           />
         );
-      })}
+      })} */}
     </Layout>
   );
 };

@@ -2,13 +2,11 @@ import React from "react";
 import Button from "./Button";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
+export const TICKETS_URL = "https://ti.to/timjscommunity/revojs2023";
+
 export const PurchaseTicket = ({ label = "Grab Your Ticket", ...props }) => {
   return (
-    <OutboundLink
-      className="tickets-cta"
-      href="https://ti.to/revojs/revojs2020"
-      target="_blank"
-    >
+    <OutboundLink className="tickets-cta" href={TICKETS_URL} target="_blank">
       <Button {...props}>{label}</Button>
     </OutboundLink>
   );
