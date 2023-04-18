@@ -1,5 +1,5 @@
 import React from "react";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { Link } from "gatsby";
 
 import Layout from "@components/Layout";
@@ -8,7 +8,7 @@ import Section from "@components/Section";
 import Content from "@components/Content";
 import Note from "@components/Note";
 import Button from "@components/Button";
-import { PurchaseTicket } from "@components/CTA";
+import { PurchaseTicket, TICKETS_URL } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
 // import Text from "@components/Text";
 
@@ -66,7 +66,11 @@ const Tickets = () => {
                   {EARLY_START} - {EARLY_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
-                <strong className={styles.ticket_note}>ON SALE</strong>
+                <strong className={styles.ticket_note}>
+                  <OutboundLink className={styles.ticket_cta} href={TICKETS_URL} target="_blank">
+                      ON SALE
+                  </OutboundLink>
+                </strong>
               </li>
 
               <li className={styles.tickets_rollout__regular}>
@@ -114,7 +118,7 @@ const Tickets = () => {
                 October (Thursday + Friday);
               </li>
               <li>
-                <strong>Coffee, water and beverages</strong>;
+                <strong>Coffee, water and tea</strong>;
               </li>
               <li>
                 <strong>Lunch</strong>, including vegetarian and vegan options;
@@ -131,8 +135,7 @@ const Tickets = () => {
               <strong>NOTE:</strong> <br />
               <strong>Conference tickets don't include access to workshops.</strong> <br />
               <span className="light-faded">
-                There are separate tickets that you have to purchase to
-                attend workshops.
+                To attend our workshops, you’ll have to purchase separate tickets. More details will appear on this page soon.
               </span>
             </p>
           </section>
