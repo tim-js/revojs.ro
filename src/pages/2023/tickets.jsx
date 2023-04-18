@@ -52,7 +52,7 @@ const Tickets = () => {
             <h2>Rollout plan</h2>
 
             <p>
-              Tickets will be available according to the following plan.
+              Tickets will be available according to the timeline described below.
               However, please keep in mind that minor changes might occur due to
               events beyond our control:
             </p>
@@ -61,7 +61,8 @@ const Tickets = () => {
               <li className={styles.tickets_rollout__early}>
                 <span className={styles.ticket_price}>&euro;160</span>
                 <div className={styles.ticket_content}>
-                  <strong className={styles.ticket_name}>Early Bird Tickets</strong>
+                  <strong className={styles.ticket_name}>Early Bird</strong>
+                  <span className="accent">50 tickets available</span><br />
                   {EARLY_START} - {EARLY_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
@@ -71,7 +72,7 @@ const Tickets = () => {
               <li className={styles.tickets_rollout__regular}>
                 <span className={styles.ticket_price}>&euro;210</span>
                 <div className={styles.ticket_content}>
-                  <strong className={styles.ticket_name}>Regular Tickets</strong>
+                  <strong className={styles.ticket_name}>Regular</strong>
                   {REGULAR_START} - {REGULAR_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
@@ -81,7 +82,7 @@ const Tickets = () => {
               <li className={styles.tickets_rollout__late}>
                 <span className={styles.ticket_price}>&euro;260</span>
                 <div className={styles.ticket_content}>
-                  <strong className={styles.ticket_name}>Late Bird Tickets</strong>
+                  <strong className={styles.ticket_name}>Late Bird</strong>
                   {LATE_START} - {LATE_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
@@ -91,7 +92,7 @@ const Tickets = () => {
               <li className={styles.tickets_rollout__workshop} style={{marginTop: "2em"}}>
                 <span className={styles.ticket_price}>TBA</span>
                 <div className={styles.ticket_content}>
-                  <strong className={styles.ticket_name}>Workshops Tickets</strong>
+                  <strong className={styles.ticket_name}>Workshops</strong>
                   On sale until {LATE_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                   <br />
