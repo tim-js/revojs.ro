@@ -119,9 +119,9 @@ const Tickets = () => {
               <li>
                 <strong>Lunch</strong>, including vegetarian and vegan options;
               </li>
-              <li>
+              {/* <li>
                 <strong>Snacks</strong> during coffee breaks;
-              </li>
+              </li> */}
               <li>
                 <strong>After party</strong> access (Friday evening).
               </li>
