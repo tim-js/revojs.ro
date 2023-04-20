@@ -62,7 +62,7 @@ const Tickets = () => {
                 <span className={styles.ticket_price}>&euro;160</span>
                 <div className={styles.ticket_content}>
                   <strong className={styles.ticket_name}>Early Bird</strong>
-                  <span className="accent">50 tickets available</span><br />
+                  <span className="accent">Limited tickets available</span><br />
                   {EARLY_START} - {EARLY_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
