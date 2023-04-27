@@ -24,15 +24,17 @@ import * as styles from "./index.module.scss";
 const Index = (props) => {
   useEffect(() => {
     const search = queryString.parse(props.location.search);
+    const hash = props.location.hash;
+
     if (search.fbclid) {
       const clearedSearch = queryString.stringify({
         ...search,
         fbclid: undefined,
       });
       if (clearedSearch.length) {
-        navigate(props.location.pathname + "?" + clearedSearch);
+        navigate(props.location.pathname + "?" + clearedSearch + hash);
       } else {
-        navigate(props.location.pathname);
+        navigate(props.location.pathname + hash);
       }
     }
   });
