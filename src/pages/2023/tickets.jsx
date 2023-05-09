@@ -27,7 +27,7 @@ const Tickets = () => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.tickets_image}`}>Tickets</h1>
         <div className="subtitle2023">
-          Limited Early Bird tickets are On Sale!
+          Regular tickets now on sale. Get yours. Revolve.
         </div>
 
         <div className={styles.cta}>
@@ -58,19 +58,15 @@ const Tickets = () => {
             </p>
 
             <ul className={styles.tickets_rollout}>
-              <li className={styles.tickets_rollout__early}>
+              <li className={styles.tickets_rollout__inactive}>
                 <span className={styles.ticket_price}>&euro;160</span>
                 <div className={styles.ticket_content}>
                   <strong className={styles.ticket_name}>Early Bird</strong>
-                  <span className="accent">Limited tickets available</span><br />
+                  {/* <span className="accent">Limited tickets available</span><br /> */}
                   {EARLY_START} - {EARLY_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
-                <strong className={styles.ticket_note}>
-                  <OutboundLink className={styles.ticket_cta} href={TICKETS_URL} target="_blank">
-                      ON SALE
-                  </OutboundLink>
-                </strong>
+                <strong className={styles.ticket_note}>SOLD OUT</strong>
               </li>
 
               <li className={styles.tickets_rollout__regular}>
@@ -80,7 +76,11 @@ const Tickets = () => {
                   {REGULAR_START} - {REGULAR_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
-                <strong className={styles.ticket_note}></strong>
+                <strong className={styles.ticket_note}>
+                  <OutboundLink className={styles.ticket_cta} href={TICKETS_URL} target="_blank">
+                      ON SALE
+                  </OutboundLink>
+                </strong>
               </li>
 
               <li className={styles.tickets_rollout__late}>
