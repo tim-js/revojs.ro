@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 import * as styles from "./logosWrapped.module.scss";
 

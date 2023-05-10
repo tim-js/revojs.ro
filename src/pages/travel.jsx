@@ -1,5 +1,5 @@
 import React from "react";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";

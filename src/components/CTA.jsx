@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 export const TICKETS_URL = "https://ti.to/timjscommunity/revojs2023";
 

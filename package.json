@@ -17,7 +17,7 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-catch-links": "^5.7.0",
-    "gatsby-plugin-google-analytics": "^5.7.0",
+    "gatsby-plugin-google-gtag": "^5.9.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-offline": "^6.7.0",

@@ -1,7 +1,7 @@
 import React /*, { useEffect }*/ from "react";
 import { useStaticQuery, graphql /*, Link*/ } from "gatsby";
 // import Img from "gatsby-image";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";

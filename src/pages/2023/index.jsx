@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import { navigate } from "gatsby";
 import queryString from "query-string";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
+// import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
