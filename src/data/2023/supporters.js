@@ -104,6 +104,11 @@ export const sponsors = {
       image: "sponsors/2023/metro_logo.svg",
       url: "https://metro.digital/"
     },
+    {
+      name: "ACI Worldwide",
+      image: "sponsors/2023/aci_logo.svg",
+      url: "https://www.aciworldwide.com/"
+    },
   ],
 
   starter: [
