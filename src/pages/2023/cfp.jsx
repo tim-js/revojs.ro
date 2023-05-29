@@ -15,7 +15,7 @@ import Subscribe from "@components/Subscribe";
 import * as styles from "./cfp.module.scss";
 
 const CFP_OPEN = "April 3rd";
-const CFP_CLOSE = "June 4th";
+const CFP_CLOSE = "June 4th (23:59 EEST)";
 
 const CfpPage = () => {
   return (
