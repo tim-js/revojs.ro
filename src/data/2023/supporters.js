@@ -90,11 +90,6 @@ export const sponsors = {
       url: "https://www.bosch.ro/"
     },
     {
-      name: "UnifiedPost",
-      image: "sponsors/2023/unifiedpost_logo.svg",
-      url: "http://www.unifiedpost.com"
-    },
-    {
       name: "Quarticle",
       image: "sponsors/2023/quarticle_logo.svg",
       url: "https://www.quarticle.ro/"
@@ -136,6 +131,11 @@ export const sponsors = {
       name: "WeVideo",
       image: "sponsors/2023/wevideo_logo.svg",
       url: "https://www.wevideo.com/"
+    },
+    {
+      name: "UnifiedPost",
+      image: "sponsors/2023/unifiedpost_logo.svg",
+      url: "http://www.unifiedpost.com"
     },
     {
       name: "OPSWAT",
