@@ -147,7 +147,7 @@ const CfpPage = () => {
 
             <h3>Language</h3>
             <p>
-              <strong>English. Inglese. Engelsk. Angleško. Angolul.</strong>
+              <strong>English. Inglese. Engelsk. Angleško. Angol.</strong>
               <br />
               But we’d love for you to teach us some words in your native
               language too.
