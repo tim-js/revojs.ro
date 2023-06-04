@@ -22,11 +22,14 @@ const CfpPage = () => {
     <Layout title="revo.js Call for Papers">
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.cfp_image}`}>Call for Papers</h1>
-        <div className="subtitle2023">The Call for Papers is open until {CFP_CLOSE}</div>
-
-        <div className={styles.cta}>
-          <SubmitCFP />
+        <div className="subtitle2023">
+          The Call for Papers closed on {CFP_CLOSE}. <br /><br />
+          <span className="highlight">The selected talks will be announced at the beginning of August.</span>
         </div>
+
+        {/* <div className={styles.cta}>
+          <SubmitCFP />
+        </div> */}
 
         {/* <a href="#subscribe-cfp" className={styles.cta}>
           <Button>Subscribe for updates</Button>
@@ -46,18 +49,18 @@ const CfpPage = () => {
               <strong>The Call for Papers starts on <span className="accent">{CFP_OPEN} 2023</span></strong>.
             </p> */}
 
-            <p>
+            {/* <p>
               This is a call out to all members of the JavaScript community who
               have a memorable talk that can stir up change. Submit your talk
               proposals until <strong>{CFP_CLOSE}</strong> and hopefully
               we’ll meet in October in Timisoara.
             </p>
 
-            <br />
+            <br /> */}
 
-            <p>
+            {/* <p>
               The selected talks will be announced at the beginning of August.
-            </p>
+            </p> */}
 
             {/* <p>
               We've received <strong>92 proposals</strong>, which is a lot more
@@ -67,10 +70,6 @@ const CfpPage = () => {
               We're currently thoroughly reviewing all proposals and we're
               planning to annouce the selected speakers in Mid-July.
             </p> */}
-
-            <br />
-            <br />
-            <br />
 
             <p style={{ fontSize: "1.5em" }}>
               revo.js’ main theme in 2023 is <br />
@@ -106,7 +105,7 @@ const CfpPage = () => {
             </ul>
           </Note>
 
-          <p>
+          {/* <p>
             <strong className="accent">NOTE:</strong> Not every talk is
             mandatory to touch upon the central theme. Your talk's primary focus
             should be to deliver quality, relevant content in an engaging
@@ -115,7 +114,7 @@ const CfpPage = () => {
           </p>
 
           <br />
-          <SubmitCFP white />
+          <SubmitCFP white /> */}
 
           {/* <section id="subscribe-cfp">
             <br />
@@ -340,7 +339,7 @@ const CfpPage = () => {
           <br />
          
 
-          <SubmitCFP white />
+          {/* <SubmitCFP white /> */}
         </Content>
       </Section>
     </Layout>
