@@ -16,9 +16,9 @@ const IndexUpdates = () => {
       <ul className="updates-list">
         <li>
           <Link to="/2023/cfp/" className="updates-link">
-            <strong className="update-title mono">CFP is now open</strong>
+            <strong className="update-title mono">CFP is now closed</strong>
             <p className="update-content light-faded">
-              Submit your proposals for revo.js 2023 until June 4th.
+              The selected talks will be announced at the beginning of August.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
