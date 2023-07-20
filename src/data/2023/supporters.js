@@ -36,6 +36,11 @@ export const friends = [
     name: "JSLeague",
     image: "communities/JSLeague_logo.svg",
     url: "https://jsleague.ro/"
+  },
+  {
+    name: "Zeama de Developer",
+    image: "partners/zdd_podcast_logo.svg",
+    url: "https://podcast.sensidev.net/"
   }
 ];
 
