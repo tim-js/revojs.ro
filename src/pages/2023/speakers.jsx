@@ -67,9 +67,9 @@ const Speakers = (props) => {
 
         <br />
 
-        <div className="subtitle2023">
+        {/* <div className="subtitle2023">
           More speakers to be announced soon. Keep an eye on this page.
-        </div>
+        </div> */}
       </Header>
 
       <br />
