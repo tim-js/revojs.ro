@@ -11,8 +11,9 @@ import IndexUpdates from "@components/index/IndexUpdates";
 import IndexSpeakers from "@components/index/IndexSpeakers";
 import IndexSponsors from "@components/index/IndexSponsors";
 import Separator2023 from "@components/Separator2023";
+import { RevoSymbol } from "@components/RevoSymbol";
 // import Button from "@components/Button";
-// import { PurchaseTicket } from "@components/CTA";
+import { PurchaseTicket } from "@components/CTA";
 import Subscribe from "@components/Subscribe";
 // import DateLink from "@components/DateLink";
 // import { getEdition } from "@utils";
@@ -54,14 +55,22 @@ const Index = (props) => {
               5-6 October 2023 <br />
               Timișoara/RO
             </strong>
-          </div>
-        </div>
 
-        <div className="index-cta">
+        <div className={styles.cta}>
+          <PurchaseTicket />
+
+          <div className={`mono ${styles.tagline}`}>
+            <div className={`${styles.revo_symbol}`}><RevoSymbol color="grey" /></div>
+            <div>
+              <strong>Technology focused.</strong>
+              <strong>Community driven.</strong>
+              <strong>JavaScript conference.</strong>
+            </div>
+          </div>
+
           {/* <a href="#speakers">
             <Button>Meet the Speakers</Button>
           </a> */}
-          {/* <PurchaseTicket /> */}
           {/* <Link to={`/${getEdition()}/agenda`}>
             <Button>View the Agenda</Button>
           </Link> */}
@@ -72,10 +81,13 @@ const Index = (props) => {
             <Button>Learn Why</Button>
           </Link> */}
         </div>
+          </div>
+        </div>
       </Header>
 
-      <IndexUpdates />
+
       <Separator2023 />
+      <IndexUpdates />
       <IndexSpeakers />
 
       <Section id="subscribe-form" centered>
