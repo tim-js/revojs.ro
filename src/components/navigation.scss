@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5em;
+  padding: 0 var(--spacing-content);
   position: fixed;
   top: 0;
   right: 0;
@@ -26,6 +26,10 @@
 
   &.is-past-edition {
     background: var(--primary);
+  }
+
+  @include breakpoint(sm) {
+    padding: 0 1.5em;
   }
 
   @include breakpoint(lg) {

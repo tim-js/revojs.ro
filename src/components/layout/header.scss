@@ -4,7 +4,7 @@
   flex: 1;
   padding: var(--spacing-content);
   padding-top: calc(var(--menu-height) + var(--space-4));
-
+  
   @include breakpoint(md) {
     min-height: calc(100vh - 2 * var(--spacing-content));
   }

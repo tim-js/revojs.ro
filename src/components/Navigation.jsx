@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Hamburger from "@components/layout/Hamburger";
 import logo from "@assets/logo-revojs.svg";
-import symbol from "@assets/logo-revojs-symbol.svg";
+import { RevoSymbol } from "@components/RevoSymbol";
 import { getEdition, getPages, currentEdition } from "@utils";
 
 import "./navigation.scss";
@@ -110,12 +110,9 @@ function Logo({ edition, currentEdition }) {
             title={`Go to ${edition} edition`}
             className="navigation-to-edition-homepage"
           >
-            <img
-              src={symbol}
-              alt="revo.js"
-              height="40"
-              className="navigation-logo"
-            />
+            <div className="navigation-logo" style={{ width: "40px" }}>
+              <RevoSymbol color="white" />
+            </div>
             <span className="navigation-edition">{edition}</span>
           </Link>
         </div>
