@@ -30,7 +30,8 @@ const IndexUpdates = () => {
           <Link to="/2023/tickets/" className="updates-link">
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              <strong>Regular tickets</strong> are now on sale! Get yours and see you in October.
+              <strong>Regular tickets</strong> are now on sale! Get yours and
+              see you in October.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
@@ -42,7 +43,8 @@ const IndexUpdates = () => {
           <Link to="/2023/speakers/" className="updates-link">
             <strong className="update-title mono">Speakers</strong>
             <p className="update-content light-faded">
-              Our line-up is revolving! Meet the first invited speakers.
+              Our lineup is complete. <br /> CFP-selected speakers now
+              announced!
             </p>
             <div className="arrow">
               <Arrow color="primary" />
