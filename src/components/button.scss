@@ -6,6 +6,7 @@
 .button:visited {
   height: 54px;
   line-height: 54px;
+  white-space: nowrap;
   background-color: var(--primary);
   @include font(mono);
   padding: 0 var(--space-4);
