@@ -76,6 +76,12 @@ export const sponsors = {
       url: "https://www.haufegroup.com/",
       title: "Wellness Experience"
     },
+    {
+      name: "Smilecloud Biometrics",
+      image: "sponsors/2023/smilecloud_logo.svg",
+      url: "https://smilecloud.com/",
+      title: "Recording Partner"
+    },
   ],
 
   standard: [
