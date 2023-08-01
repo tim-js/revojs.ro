@@ -18,7 +18,7 @@ const IndexUpdates = () => {
           <Link to="/2023/cfp/" className="updates-link">
             <strong className="update-title mono">CFP is now closed</strong>
             <p className="update-content light-faded">
-              The selected talks will be announced at the beginning of August.
+              Selected talks and speakers now announced. Check them out.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
@@ -43,8 +43,7 @@ const IndexUpdates = () => {
           <Link to="/2023/speakers/" className="updates-link">
             <strong className="update-title mono">Speakers</strong>
             <p className="update-content light-faded">
-              Our lineup is complete. <br /> CFP-selected speakers now
-              announced!
+              Our lineup is complete. Meet our 2023 speakers.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
