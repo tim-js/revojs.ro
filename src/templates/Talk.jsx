@@ -3,7 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import Section from "@components/Section";
 import Content from "@components/Content";
-// import { PurchaseTicket } from "@components/CTA";
+import { PurchaseTicket } from "@components/CTA";
 
 import SpeakerInfo from "./SpeakerInfo";
 
@@ -77,7 +77,7 @@ const TalkPage = (props) => {
         <br />
         {talk && <h2>Want to see {getName(speakers)} talk?</h2>}
         <br />
-        {/* <PurchaseTicket white style={{ margin: 0 }} /> */}
+        <PurchaseTicket white style={{ margin: 0 }} />
       </>
     );
   }

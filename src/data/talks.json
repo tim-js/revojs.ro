@@ -145,5 +145,149 @@
     "edition": 2019,
     "recordingUrl": "https://www.youtube.com/watch?v=hATkIlJNqi8&list=PL701JjUqw62nHoRho4RJ3KJSLCRG08r1Z",
     "recordingImage": "talks/2019_14.png"
+  },
+  {
+    "talkId": "talk2023-ben",
+    "talk": "Tug Of War - Pushing and Pulling In JavaScript",
+    "abstract": "<p>In this talk we'll explore what 'push' and 'pull' mean as concepts in programming, where you see this in JavaScript, and why it's important. We'll be looking at the differences and similarities in different asynchronous and synchronous interfaces, and talking about some of the pros and cons of each. In this talk I hope to help everyone unlock a new understanding of what's happening in their applications at a lower level, and hopefully start seeing all of their code through the lens of 'push vs pull'.</p>",
+    "speakers": [{ "speakerId": "ben-lesh" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "talk2023-jay",
+    "talk": "Talk to be announced",
+    "abstract": "",
+    "speakers": [{ "speakerId": "jay-phelps" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "talk2023-kenneth",
+    "talk": "Talk to be announced",
+    "abstract": "",
+    "speakers": [{ "speakerId": "kenneth-rohde-christiansen" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "talk2023-trent",
+    "talk": "Testing Your Testing Strategy",
+    "abstract": "<p>'End-to-end tests are more valuable than unit tests.' 'You should always use Test-Driven Development.' 'Testing helps you release faster.' Testing is often spoken of in sharp truths like these, but the reality for most developers is often a lot more fuzzy. Do these recommendations actually make sense for you?</p><p>In this talk, we’ll take a step back and discuss how you can develop a testing strategy that fits your specific team and project. We’ll question some popular assumptions, talk about criteria to evaluate testing approaches, and give you ideas to make your development workflow more efficient without losing confidence in your software.</p>",
+    "speakers": [{ "speakerId": "trent-willis" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "talk2023-leonie",
+    "talk": "Bag of spanners",
+    "abstract": "<p>In the UK we say that something is a 'bag of spanners' when it seems to work, but when you look inside it turns out to be badly implemented.</p><p>Implementing  accessible code can sometimes feel like a bag of spanners - something thrown together in ways that will probably give you (or someone using your product) trouble.</p><p>It doesn't have to be like this though.</p><p>With an understanding of how accessibility mechanics work in the browser, knowledge of how to provide or polyfill accessibility semantics, and a little bit of effort, you can turn your bag of spanners into a useful set of tools.</p>",
+    "speakers": [{ "speakerId": "leonie-watson" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "talk2023-anna",
+    "talk": "Demystifying web performance tooling",
+    "abstract": "<p>Web performance has been one of the most talked about web development topics in the recent years. Yet if you try to start your journey with the speed optimisations, you might find yourself in a pickle. With the tooling, you might feel overwhelmed—it looks complex and hard to comprehend. With the metrics: at first glance all of them seem similar, not to mention that they change over time and you cannot figure out which of them to take into account.</p><p>In this talk I we will take a look at the most useful web performance tooling. There will be no more secrets around the topic and you will be able to dive into the web speed optimisations with confidence. We will also briefly mention metrics and services to monitor your improvements over time.</p>",
+    "speakers": [{ "speakerId": "anna-migas" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "talk2023-rachel",
+    "talk": "New CSS features you can use today",
+    "abstract": "New CSS features are landing on the web platform at a rate we've never seen before, but is it too early to start to use the latest shiny thing everyone is talking about? In this talk Rachel Andrew will share some of the new features that you can feel confident to use today, and those that are just around the corner. You'll also learn how browsers are working together to make it easier to understand what's available and working well cross-browser.",
+    "speakers": [{ "speakerId": "rachel-andrew" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "talk2023-martin",
+    "talk": "Talk to be announced",
+    "abstract": "",
+    "speakers": [{ "speakerId": "martin-splitt" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "talk2023-matt",
+    "talk": "Talk to be announced",
+    "abstract": "",
+    "speakers": [{ "speakerId": "matt-pocock" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "rendering-patterns",
+    "talk": "Understanding Rendering Patterns",
+    "abstract": "React has exploded in popularity thanks to the performance and unrivaled developer experience the virtual DOM and reconciliation could offer. But as our apps grew, we started pushing the boundaries of managing client state in a performant way. Let's see how to achieve fine-grained reactivity and what resumability brings to the table.",
+    "speakers": [{ "speakerId": "atila-fassina" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "node-testing-2023",
+    "talk": "Node.js in 2023 - What's new in the Node.js native test runner",
+    "abstract": "<p>Node.js has been evolving fast. Jest? Mocha? What about using only Node.js without installing any additional libraries?</p><p>Node.js has been receiving a lot of updates to empower you to test, mock and automate repetitive tasks.</p><p>You'll learn by real scenarios the best Node.js test runner can offer and how you can start using it right away</p><p>This talk will cover the following topics:<ul><li>Overview of the Node.js test runner</li><li>How to mock, stub and Spy functions</li><li>How the Node.js' watch mode is working alongside the test runner</li></ul></p>",
+    "speakers": [{ "speakerId": "erick-wendel" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "ethical-choice",
+    "talk": "The Ethical Choice",
+    "abstract": "<p>As technology is eating the world and humanity’s dependence on software is growing every day, there is a strong need for ethics to be brought up in product design and engineering.</p><p>No one starts with the intention of building software that is harming others, but unethical actions (or inactions) over time can lead to bad or harmful experiences. The past decade showed us the dangers of ethical fading, when product decisions were made without considering their effects on the world. Think about social media, the attention economy it exploited and its impact when deployed to the scale of the web.</p><p>As developers and designers, we often feel irrelevant in the grand scheme of things. But what if we have more power than we think? And what if the power comes with a level of responsibility we have towards the user or the customers we serve?</p>",
+    "speakers": [{ "speakerId": "alex-moldovan2023" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "generative-art",
+    "talk": "Breaking down Javascript complexities with generative art",
+    "abstract": "Are you struggling to wrap your head around complex JavaScript concepts? Have you ever considered using generative art to visualize and simplify these concepts? In this talk, we will explore how generative art can be used to break down complex concepts in JavaScript. You will learn about various tools and libraries for creating generative art, and we will demonstrate live-coding examples to make it all come to life. Join us to discover a creative and engaging approach to understanding JavaScript complexities.",
+    "speakers": [{ "speakerId": "ritvi-mishra" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "type-safe-css",
+    "talk": "Type-Safe Style Systems: The Future of CSS",
+    "abstract": "<p>Most CSS developers today write visual styles in terms of what you literally see: exact color values, size numbers, and so on. But what if you could write styles as a function of how they fit into your design system? And what if you could get type safety in specifying and using those values, including in responsive props?</p><p>This talk will dive into some of the key features and flaws in many design system builders today such as Chakra UI and Tailwind. We'll establish what the best next steps for design systems should be with type-safe TypeScript APIs and performance both for prebuilt pages and at runtime.</p>",
+    "speakers": [{ "speakerId": "josh-goldberg" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "security-by-design",
+    "talk": "Security by(e) Design?",
+    "abstract": "Application security and UX seem like two very distant fields, but they have a surprisingly large influence over one another. Through this talk we’ll rethink the intricate relationship between these two fields, highlighting how UX designers can unintentionally compromise security and the challenges security engineers face in maintaining a smooth UX. Moreover, we will explore the invaluable insights developers can glean from these challenges, making them better developers and empowering them to serve as bridges between these distinct worlds. Join us as we navigate this convergence of disciplines and unveil practical strategies to harmonise application security and UX, paving the way for enhanced digital experiences.",
+    "speakers": [{ "speakerId": "benedek-gagyi" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
+    "talkId": "ciprian-api",
+    "talk": "Requiem for APIs - The evolution of web development",
+    "abstract": "<p>Finding ways to optimize your web apps is always a complex juggling exercise between user experience and developer convenience. However, for the ones brave enough to embrace the bleeding edge in web development, things are about to get simpler, but not necessarily less sophisticated.</p><p>We will revisit some patterns from the good old days of web development and see how we can blend those with the current technologies, trying to cut the middleman and optimize both the user experience and developer convenience. What is old is new again</p>",
+    "speakers": [{ "speakerId": "ciprian-caba" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
   }
 ]
