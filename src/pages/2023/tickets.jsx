@@ -43,18 +43,17 @@ const Tickets = () => {
         <Content centered>
           <Note>
             <p>
-              Grab your ticket and get ready for insightful talks,
-              exciting networking and a good time all-around.
+              Grab your ticket and get ready for insightful talks, exciting
+              networking and a good time all-around.
             </p>
           </Note>
-
           <section>
             <h2>Rollout plan</h2>
 
             <p>
-              Tickets will be available according to the timeline described below.
-              However, please keep in mind that minor changes might occur due to
-              events beyond our control:
+              Tickets will be available according to the timeline described
+              below. However, please keep in mind that minor changes might occur
+              due to events beyond our control:
             </p>
 
             <ul className={styles.tickets_rollout}>
@@ -77,8 +76,12 @@ const Tickets = () => {
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
                 <strong className={styles.ticket_note}>
-                  <OutboundLink className={styles.ticket_cta} href={TICKETS_URL} target="_blank">
-                      ON SALE
+                  <OutboundLink
+                    className={styles.ticket_cta}
+                    href={TICKETS_URL}
+                    target="_blank"
+                  >
+                    ON SALE
                   </OutboundLink>
                 </strong>
               </li>
@@ -93,13 +96,15 @@ const Tickets = () => {
                 <strong className={styles.ticket_note}></strong>
               </li>
 
-              <li className={styles.tickets_rollout__workshop} style={{marginTop: "2em"}}>
+              <li
+                className={styles.tickets_rollout__workshop}
+                style={{ marginTop: "2em" }}
+              >
                 <span className={styles.ticket_price}>TBA</span>
                 <div className={styles.ticket_content}>
                   <strong className={styles.ticket_name}>Workshops</strong>
                   On sale until {LATE_END}{" "}
-                  <span className="light-faded">(21:00 UTC)</span>{" "}
-                  <br />
+                  <span className="light-faded">(21:00 UTC)</span> <br />
                   <Link to="/2023/workshops/" title="Workshops page">
                     View details
                   </Link>
@@ -108,7 +113,6 @@ const Tickets = () => {
               </li>
             </ul>
           </section>
-
           <section>
             <h2>All conference tickets include</h2>
 
@@ -133,13 +137,16 @@ const Tickets = () => {
 
             <p className="accent">
               <strong>NOTE:</strong> <br />
-              <strong>Conference tickets don't include access to workshops.</strong> <br />
+              <strong>
+                Conference tickets don't include access to workshops.
+              </strong>{" "}
+              <br />
               <span className="light-faded">
-                To attend our workshops, you’ll have to purchase separate tickets. More details will appear on this page soon.
+                To attend our workshops, you’ll have to purchase separate
+                tickets. More details will appear on this page soon.
               </span>
             </p>
           </section>
-
           {/* <section>
             <h2>Workshops tickets</h2>
             <p className="accent">
@@ -167,11 +174,9 @@ const Tickets = () => {
               </span>
             </p>
           </section> */}
-
           <br />
           <br />
           <PurchaseTicket white />
-
           <section>
             <h2>Bulk Tickets for Companies</h2>
 
@@ -187,6 +192,15 @@ const Tickets = () => {
             </p>
 
             <p>We’ll be prompt to answer!</p>
+          </section>
+          <section>
+            <h2>Ticket Reassignment</h2>
+
+            <p>
+              Life happens, and change is the only const. If anything comes up
+              and you can no longer attend the conference, you can reassign your
+              ticket to somebody else, free of charge.
+            </p>
           </section>
 
           {/* <section id="scholarships">
@@ -210,7 +224,6 @@ const Tickets = () => {
               <Button white>Diversity Scholarships</Button>
             </Link>
           </section> */}
-
           <section id="refund">
             <h2>Refund Policy</h2>
 
@@ -233,7 +246,6 @@ const Tickets = () => {
               </li>
             </ul>
           </section>
-
           {/* <section id="subscribe">
             <br />
             <br />
@@ -241,7 +253,6 @@ const Tickets = () => {
             <p>Subscribe to find out when Tickets go on sale:</p>
             <Subscribe light />
           </section> */}
-
           <br />
           <br />
           <PurchaseTicket white />
