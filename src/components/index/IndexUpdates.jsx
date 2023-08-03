@@ -15,10 +15,10 @@ const IndexUpdates = () => {
 
       <ul className="updates-list">
         <li>
-          <Link to="/2023/cfp/" className="updates-link">
-            <strong className="update-title mono">CFP is now closed</strong>
+          <Link to="/2023/speakers/" className="updates-link">
+            <strong className="update-title mono">Speakers</strong>
             <p className="update-content light-faded">
-              Selected talks and speakers now announced. Check them out.
+              Our lineup is complete. Meet our 2023 speakers.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
@@ -40,10 +40,10 @@ const IndexUpdates = () => {
         </li>
 
         <li>
-          <Link to="/2023/speakers/" className="updates-link">
-            <strong className="update-title mono">Speakers</strong>
+          <Link to="/2023/workshops/" className="updates-link">
+            <strong className="update-title mono">Workshop</strong>
             <p className="update-content light-faded">
-              Our lineup is complete. Meet our 2023 speakers.
+              More details coming soon. Stay tuned for your chance to join.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
