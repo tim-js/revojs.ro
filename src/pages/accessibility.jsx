@@ -54,7 +54,7 @@ const Accessibility = () => {
               Last, but not least, we're addressing all{" "}
               <strong>visually impaired</strong> or <strong>dyslexic</strong>{" "}
               participants, by encouraging all speakers to{" "}
-              <Link to="blog/conference-content-accessibility#5-describe-in-words-all-visual-content">
+              <Link to="/blog/conference-content-accessibility#5-describe-in-words-all-visual-content">
                 describe in words all the visual content
               </Link>{" "}
               of their presentation.
