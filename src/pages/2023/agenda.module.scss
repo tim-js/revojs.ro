@@ -17,29 +17,30 @@
   box-shadow: none;
 
   background-color: var(--dark);
-  padding-bottom: 5px;
+  padding: 0.25em 0;
 
   @include breakpoint(md) {
     background-image: url("/2023/sep-top-black-bottom-white.png");
     min-height: 150px;
-    padding: 0;
+    padding-bottom: 0;
   }
 
 }
 
 .nav {
   display: flex;
-
   margin: 0 auto;
-
+  
   @include breakpoint(sm) {
-    max-width: 500px;
+    max-width: 550px;
+    gap: 3em;
   }
 
   a {
     flex: 1;
     text-align: center;
     height: 42px;
+    position: relative;
 
     @include breakpoint(sm) {
       height: 64px;
@@ -49,7 +50,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: 5px transparent solid;
 
     strong {
       display: block;
@@ -62,8 +62,29 @@
 
     &.active {
       color: white;
-      border-top: 5px white solid;
     }
+
+    &.active::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 6px;
+      height: 6px;
+      background-color: white;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-left: 50%;
+      bottom: 0;
+      transform: translateY(-4px) translateX(-50%);
+      
+      @include breakpoint(sm) {
+        width: 10px;
+        height: 10px;
+        bottom: -5px;
+        transform: translateY(10px) translateX(-50%);
+      }
+    }
+
   }
 }
 
