@@ -1,48 +1,48 @@
-import React /*, { useEffect }*/ from "react";
-import { useStaticQuery, graphql /*, Link*/ } from "gatsby";
-// import Img from "gatsby-image";
+import React, { useEffect } from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import Img from "gatsby-image";
 // import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
 // import Content from "@components/Content";
-// import Section from "@components/Section";
+import Section from "@components/Section";
 // import Note from "@components/Note";
 // import Button from "@components/Button";
-// import { PurchaseTicket } from "@components/CTA";
+import { PurchaseTicket } from "@components/CTA";
 
-// import { day0, day1, day2 } from "@data/2023/agenda";
-// import { getEdition } from "@utils";
+import { day0, day1, day2 } from "@data/2023/agenda";
+import { getEdition } from "@utils";
 
 import * as styles from "./agenda.module.scss";
 
-// const edition = getEdition();
+const edition = getEdition();
+const ACTIVE_CLASS = styles.active;
 
 const Agenda = ({ data }) => {
-  // const { allTalksJson, allSpeakersJson, speakerImages } = data;
+  const { allTalksJson, allSpeakersJson, speakerImages } = data;
 
-  // const talks = allTalksJson.edges
-  //   .map(e => e.node)
-  //   .filter(t => t.edition === edition);
-  // const speakers = allSpeakersJson.edges
-  //   .map(e => e.node)
-  //   .filter(s => s.edition === edition);
-  // const images = speakerImages.edges.map(e => e.node);
+  const talks = allTalksJson.edges
+    .map(e => e.node)
+    .filter(t => t.edition === edition);
+  const speakers = allSpeakersJson.edges
+    .map(e => e.node)
+    .filter(s => s.edition === edition);
+  const images = speakerImages.edges.map(e => e.node);
 
-  // day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
-  // day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
-  // day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images);
+  day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
+  day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
+  day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images);
 
-  /*
   useEffect(() => {
-    const mainNavLinks = document.querySelectorAll(".agenda-nav a");
-
+    const mainNavLinks = document.querySelectorAll(`.${styles.nav} a`);
+    
     function onScroll() {
       const scrolled = window.scrollY;
-
+      
       mainNavLinks.forEach(link => {
         const section = document.querySelector(link.hash);
-
+        
         if (
           section.offsetTop - 200 <= scrolled &&
           section.offsetTop + section.offsetHeight > scrolled + 200
@@ -53,50 +53,51 @@ const Agenda = ({ data }) => {
         }
       });
     }
-
+    
     onScroll();
     window.addEventListener("scroll", onScroll);
-    // console.log("add effect");
+
     return () => {
       window.removeEventListener("scroll", onScroll);
-      // console.log("remove effect");
     };
   }, []);
-  */
 
   return (
-    <Layout title="revo.js Agenda" noFooterSeparation>
+    <Layout title="revo.js Agenda">
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.agenda_image}`}>Agenda</h1>
         <p className="subtitle2023">
-          Will be annouced later. <br /> Stay tuned...
+          Will be announced later in August. Stay tuned...
         </p>
       </Header>
 
-      {/* <div className="agenda-nav-wrapper">
-        <nav className="agenda-nav">
+      <div className={`${styles.nav_wrapper}`}>
+        <nav className={styles.nav}>
           <a href="#workshop-day">
-            <strong className="mono">Oct 7nd</strong>
+            <span className={styles.nav_title}>{day0.title}</span>
+            <strong className="mono">Oct 4th</strong>
           </a>
           <a href="#conference-day1">
-            <strong className="mono">Oct 8rd</strong>
+            <span className={styles.nav_title}>{day1.title}</span>
+            <strong className="mono">Oct 5th</strong>
           </a>
           <a href="#conference-day2">
-            <strong className="mono">Oct 9th</strong>
+            <span className={styles.nav_title}>{day2.title}</span>
+            <strong className="mono">Oct 6th</strong>
           </a>
         </nav>
-      </div> */}
+      </div>
 
-      {/* <Section light className="agenda-section">
-        <section id="workshop-day" className="agenda-content">
+      <div className={styles.content_wrapper}>
+        <section id="workshop-day" className={styles.content}>
           <WorkshopDay data={day0} />
         </section>
 
-        <section id="conference-day1" className="agenda-content">
+        <section id="conference-day1" className={styles.content}>
           <ConferenceDay data={day1} />
         </section>
 
-        <section id="conference-day2" className="agenda-content">
+        <section id="conference-day2" className={styles.content}>
           <ConferenceDay data={day2} />
         </section>
 
@@ -104,29 +105,30 @@ const Agenda = ({ data }) => {
           <br />
           <br />
           <br />
-          <p className="cta-text">Don't miss out to see these great talks</p>
+          <p  className={styles.cta}>Don't miss out to see these great talks</p>
           <PurchaseTicket label="Grab your conference ticket" white />
         </div>
 
-        <p className="agenda-note">
+        <p className={styles.note}>
           <strong>NOTE:</strong> minor changes to the agenda might occur
         </p>
-      </Section> */}
+      </div>
     </Layout>
   );
-  /*
+
   function WorkshopDay({ data }) {
     const { dateIso, workshops } = data;
 
     return (
       <>
         <DayHeader data={data} />
-        <ul className="agenda-slots">
+
+        <ul className={styles.slots}>
           {workshops.map(workshop => (
-            <li key={workshop.time} className="agenda-slot talk">
+            <li key={workshop.time} className={`${styles.slot} ${styles.talk}`}>
               <time
                 dateTime={`${dateIso}T${workshop.time}:00`}
-                className="slot-time"
+                className={styles.slot_time}
               >
                 {workshop.time}
               </time>
@@ -144,15 +146,16 @@ const Agenda = ({ data }) => {
     return (
       <>
         <DayHeader data={data} />
-        <ul className="agenda-slots">
+
+        <ul className={styles.slots}>
           {talks.map(talk => (
             <li
               key={talk.time}
-              className={`agenda-slot ${talk.talkId ? "talk" : "break"}`}
+              className={`${styles.slot} ${talk.talkId ? styles.talk : styles.coffee}`}
             >
               <time
                 dateTime={`${dateIso}T${talk.time}:00`}
-                className="slot-time"
+                className={styles.slot_time}
               >
                 {talk.time}
               </time>
@@ -165,19 +168,16 @@ const Agenda = ({ data }) => {
   }
 
   function setActive(link) {
-    if (!link.classList.contains("active")) {
-      link.classList.add("active");
-      // console.log("SET ACTIVE", link.hash);
+    if (!link.classList.contains(ACTIVE_CLASS)) {
+      link.classList.add(ACTIVE_CLASS);
     }
   }
 
   function removeActive(link) {
-    if (link.classList.contains("active")) {
-      link.classList.remove("active");
-      // console.log("REMOVE ACTIVE", link.hash);
+    if (link.classList.contains(ACTIVE_CLASS)) {
+      link.classList.remove(ACTIVE_CLASS);
     }
   }
-  */
 };
 
 const AgendaPage = (props) => {
@@ -233,12 +233,11 @@ const AgendaPage = (props) => {
 
 export default AgendaPage;
 
-/*
 function Workshop({ data }) {
   return (
-    <div className="agenda-slot-content">
+    <div className={styles.slot_content}>
       <Link to={`/${edition}/workshop/`}>
-        <h3>{data.title}</h3>
+        <h3 className={styles.slot_title}>{data.title}</h3>
       </Link>
       <span>{data.description}</span>
       <SpeakersDetails list={data.speakers} />
@@ -249,24 +248,24 @@ function Workshop({ data }) {
 function DayHeader({ data }) {
   const { day, date, title } = data;
   return (
-    <header className="agenda-day-header">
-      <h2 className="agenda-day-date">
-        <span className="agenda-day-weekday">{day},</span> {date}
+    <header className={styles.day_header}>
+      <h2 className={styles.day_title}>
+        <span className={styles.day_weekday}>{day},</span> {date}
       </h2>
-      <span className="agenda-day-title">{title}</span>
+      <span className={styles.day_title}>{title}</span>
     </header>
   );
 }
 
 function SpeakersDetails({ list }) {
   return (
-    <figure className="agenda-speakers">
+    <figure className={styles.speakers}>
       {list.map(speaker => (
         <div key={speaker.lastname}>
           <Img
             fluid={speaker.speakerImage.image.fluid}
             alt={`${speaker.firstname} ${speaker.firstname} photo`}
-            className="talk-speaker-image"
+            className={styles.speaker_image}
           />
         </div>
       ))}
@@ -291,9 +290,9 @@ function Slot({ slot }) {
   if (slot.talkId) {
     return (
       <>
-        <div className="agenda-slot-content">
+        <div className={styles.slot_content}>
           <Link to={`/${edition}/agenda/${slot.talkId}`}>
-            <h3>{slot.title}</h3>
+            <h3 className={styles.slot_title}>{slot.title}</h3>
           </Link>
           <SpeakersDetails list={slot.speakers} />
         </div>
@@ -301,13 +300,13 @@ function Slot({ slot }) {
     );
   } else if (slot.description) {
     return (
-      <div className="agenda-slot-content">
-        <h3>{slot.description}</h3>
+      <div className={styles.slot_content}>
+        <h3 className={styles.slot_title}>{slot.description}</h3>
       </div>
     );
   } else if (slot.placeholder) {
     return (
-      <div className="agenda-slot-content" style={{ alignSelf: "center" }}>
+      <div className={styles.slot_content} style={{ alignSelf: "center" }}>
         <span>{slot.placeholder}</span>
       </div>
     );
@@ -362,4 +361,3 @@ function mergeTalkDetails(agenda, talks, speakers, images) {
     };
   });
 }
-*/
