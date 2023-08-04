@@ -23,8 +23,7 @@ const CfpPage = () => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.cfp_image}`}>Call for Papers</h1>
         <div className="subtitle2023">
-          The Call for Papers closed on {CFP_CLOSE}. <br /><br />
-          <span className="highlight">The selected talks will be announced at the beginning of August.</span>
+          The Call for Papers closed on {CFP_CLOSE}
         </div>
 
         {/* <div className={styles.cta}>
