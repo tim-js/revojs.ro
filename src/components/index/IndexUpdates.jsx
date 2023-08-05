@@ -40,7 +40,7 @@ const IndexUpdates = () => {
         </li>
 
         <li>
-          <Link to="/2023/workshops/" className="updates-link">
+          <Link to="/2023/workshop/" className="updates-link">
             <strong className="update-title mono">Workshop</strong>
             <p className="update-content light-faded">
               More details coming soon. Stay tuned for your chance to join.

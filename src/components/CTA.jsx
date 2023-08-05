@@ -12,21 +12,24 @@ export const PurchaseTicket = ({ label = "Grab Your Ticket", ...props }) => {
   );
 };
 
-export const WorkshopTicket = ({ label = "Book your spot", ...props }) => {
+export const WorkshopTicket = ({
+  label = "Book your spot",
+  href = "https://ti.to/revojs/revojs2019/with/uhjrtmhvpo0",
+  ...props
+}) => {
   return (
-    <OutboundLink
-      className="tickets-cta"
-      href="https://ti.to/revojs/revojs2019/with/uhjrtmhvpo0"
-      target="_blank"
-    >
+    <OutboundLink className="tickets-cta" href={href} target="_blank">
       <Button {...props}>{label}</Button>
     </OutboundLink>
   );
 };
 
-export const SubmitCFP = props => {
+export const SubmitCFP = (props) => {
   return (
-    <OutboundLink href="https://revojs.typeform.com/to/D7EYCkuO" target="_blank">
+    <OutboundLink
+      href="https://revojs.typeform.com/to/D7EYCkuO"
+      target="_blank"
+    >
       <Button {...props}>Submit your Proposal</Button>
     </OutboundLink>
   );

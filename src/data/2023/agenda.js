@@ -1,7 +1,7 @@
 export const day0 = {
   day: "Wednesday",
-  date: "7 Oct 2020",
-  dateIso: "2020-10-07",
+  date: "4 Oct 2023",
+  dateIso: "2020-10-04",
   title: "Workshop Day",
   workshops: [
     {
@@ -9,7 +9,7 @@ export const day0 = {
       title: "To be announced",
       description: "Full-day workshop. Pre-registration required.",
       speakers: [],
-      // speakers: [{ id: "gleb-bahmutov" }],
+      // speakers: [{ id: "ben-lesh" }],
     },
   ],
 };

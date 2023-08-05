@@ -1,6 +1,5 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-// import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
@@ -9,40 +8,48 @@ import Content from "@components/Content";
 import Note from "@components/Note";
 import Section from "@components/Section";
 import Subscribe from "@components/Subscribe";
-// import WorkshopDetails from "@components/WorkshopDetails";
+import WorkshopDetails2023 from "@components/WorkshopDetails2023";
 
-import * as styles from "./workshops.module.scss";
+import * as styles from "./workshop.module.scss";
+
+import { getEdition } from "@utils";
 
 const Workshops = ({ data }) => {
   const { allWorkshopsJson, speakerImages } = data;
-  const workshops = allWorkshopsJson.edges.map((e) => e.node);
+  const edition = getEdition();
+  const workshops = allWorkshopsJson.edges
+    .map((e) => e.node)
+    .filter((workshop) => workshop.edition === edition);
 
   return (
     <Layout title="revo.js Workshop">
       <Header type="main" centered>
-        <h1 className={`title2023 ${styles.workshops_image}`}>Workshops</h1>
-        <p className="subtitle2023">
-          Workshops will be announced soon. <br /> Stay tuned...
-        </p>
-
+        <h1 className={`title2023 ${styles.workshops_image}`}>Workshop</h1>
+        <br />
+        <div class="subtitle2023">Reactive programming with RxJS</div>
+        <br />
+        <strong className="cfp-important highlight mono">
+          4th of October, at Hotel Timisoara
+        </strong>
         <br />
         <br />
-
-        <a href="#subscribe">
-          <Button>Subscribe for Updates</Button>
+        <br />
+        <a href={`#${workshops[0].workshopId}`}>
+          <Button>Learn more</Button>
         </a>
-
       </Header>
 
-      <Section light>
+      {/* <Section light>
         <Content centered>
-
           <Note>
             <p>
-              All workshops will take place on the <strong>4th of October</strong>, before the conference.
+              All workshops will take place on the{" "}
+              <strong>4th of October</strong>, before the conference.
             </p>
             <p>
-              Workshops are not included in the conference ticket.<br />They require separate purchase.
+              Workshops are not included in the conference ticket.
+              <br />
+              They require separate purchase.
             </p>
           </Note>
 
@@ -52,24 +59,22 @@ const Workshops = ({ data }) => {
             <p>Subscribe to find out when Tickets go on sale:</p>
             <Subscribe light />
           </section>
-
         </Content>
-      </Section>
+      </Section> */}
 
-
-      {/* {workshops.map((workshop, index) => {
+      {workshops.map((workshop, index) => {
         const speakerImageFluid = speakerImages.edges.find((e) =>
           workshop.image.includes(e.node.base)
         );
 
         return (
-          <WorkshopDetails
+          <WorkshopDetails2023
             key={workshop.workshopId}
             data={workshop}
             image={speakerImageFluid}
           />
         );
-      })} */}
+      })}
     </Layout>
   );
 };
@@ -89,6 +94,7 @@ const WorkshopsPage = (props) => {
             company
             twitter
             workshop
+            edition
           }
         }
       }

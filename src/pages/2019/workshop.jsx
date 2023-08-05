@@ -8,12 +8,16 @@ import Button from "@components/Button";
 // import Content from "@components/Content";
 // import Section from "@components/Section";
 import WorkshopDetails from "@components/WorkshopDetails";
+import { getEdition } from "@utils";
 
 import "./workshops.scss";
 
 const Workshops = ({ data }) => {
   const { allWorkshopsJson, speakerImages } = data;
-  const workshops = allWorkshopsJson.edges.map((e) => e.node);
+  const edition = getEdition();
+  const workshops = allWorkshopsJson.edges
+    .map((e) => e.node)
+    .filter((workshop) => workshop.edition === edition);
 
   return (
     <Layout title="revo.js Workshop">
@@ -67,6 +71,7 @@ const WorkshopsPage = (props) => {
             company
             twitter
             workshop
+            edition
           }
         }
       }

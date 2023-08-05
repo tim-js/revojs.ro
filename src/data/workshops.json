@@ -9,6 +9,20 @@
     "title": "VP of Engineering",
     "company": "Cypress.io",
     "workshop": "Efficient End-to-End Testing with Cypress.io",
-    "description": "-"
+    "description": "-",
+    "edition": 2019
+  },
+  {
+    "workshopId": "reactive-programming-workshop",
+    "firstname": "Ben",
+    "lastname": "Lesh",
+    "bio": "<p>Ben Lesh is best known for his involvement as the technical lead for RxJS, a popular reactive programming library for JavaScript. He has worked on the Angular Team at Google and also at Netflix in the past.</p><p>Ben is a father of 3 children, and enjoys art such as drawing and painting.</p>",
+    "image": "speakers/ben_bw.jpeg",
+    "twitter": "BenLesh",
+    "title": "Development Lead",
+    "company": "RxJS",
+    "workshop": "Reactive programming with RxJS",
+    "description": "-",
+    "edition": 2023
   }
 ]
