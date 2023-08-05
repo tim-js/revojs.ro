@@ -58,6 +58,7 @@
 
     span {
       font-size: 80%;
+      line-height: 1.1;
     }
 
     &.active {
@@ -80,7 +81,6 @@
       @include breakpoint(sm) {
         width: 10px;
         height: 10px;
-        bottom: -5px;
         transform: translateY(10px) translateX(-50%);
       }
     }
