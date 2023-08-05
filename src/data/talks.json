@@ -220,8 +220,8 @@
   },
   {
     "talkId": "talk2023-matt",
-    "talk": "Talk to be announced",
-    "abstract": "",
+    "talk": "There Is No Such Thing As A 'Generic'",
+    "abstract": "<p>When you think of the hardest thing about TypeScript, the word 'generics' comes to mind. Generics feel mystical, impossible to grok - but powerful. Generics are at the heart of TypeScript's most powerful abstractions, from Zod to tRPC to your frontend framework.</p> <p>The truth is that there's no such thing as a 'generic' in TypeScript. There are type arguments, and type parameters. There are generic types. Generic functions. Generic classes. And once you realise that, their power unlocks itself.</p>",
     "speakers": [{ "speakerId": "matt-pocock" }],
     "edition": 2023,
     "recordingUrl": "",
