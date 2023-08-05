@@ -12,19 +12,21 @@
   top: var(--menu-height-scrolled);
   z-index: 1;
 
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
   box-shadow: none;
 
   background-color: var(--dark);
-  padding: 0.25em 0;
+  // padding: 0.25em 0;
+
+  background-image: url("/2023/sep-top-black-bottom-white.png");
+  background-size: contain;
+  min-height: 60px;
 
   @include breakpoint(md) {
-    background-image: url("/2023/sep-top-black-bottom-white.png");
-    min-height: 150px;
+    min-height: 120px;
     padding-bottom: 0;
   }
-
 }
 
 .nav {
@@ -79,9 +81,9 @@
       transform: translateY(-4px) translateX(-50%);
       
       @include breakpoint(sm) {
-        width: 10px;
-        height: 10px;
-        transform: translateY(10px) translateX(-50%);
+        width: 8px;
+        height: 8px;
+        transform: translateX(-50%);
       }
     }
 
