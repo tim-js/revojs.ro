@@ -28,12 +28,12 @@ const AboutPage = () => {
             </p>
 
             <ul className="bullet">
-              <li>1 full day of workshops</li>
               <li>2 full days of technical focused talks</li>
+              <li>1 full day of workshop(s)</li>
               <li>single track conference</li>
               <li>community driven, not-for-profit event</li>
               <li>16+ international speakers</li>
-              <li>250 participants</li>
+              <li>250+ participants</li>
               <li>engaging After Party</li>
             </ul>
           </section>
@@ -119,7 +119,7 @@ const AboutPage = () => {
                 more and more members kept asking for such an event.
               </li>
               <li>
-                We were <strong>inspired by</strong> by the{" "}
+                We were <strong>inspired</strong> by the{" "}
                 <a
                   href="https://jsheroes.io/"
                   target="_blank"
@@ -281,11 +281,11 @@ const AboutPage = () => {
             </ul>
             <h3>Let's talk money</h3>
             <p>
-              Our initial estimated budget was 60K EUR. We expected to raise 40K
-              from sponsors and 20K from selling tickets.
+              Our plan is to raise about 60% of the estimated budget
+              from sponsors and the rest 40% from selling tickets.
             </p>
             <p>
-              In case we will make a profit out of the event, we will redirect
+              In case we would make a profit out of the event, we will redirect
               it in causes that will benefit the entire community. Some examples
               are:
             </p>
