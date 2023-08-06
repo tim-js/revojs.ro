@@ -14,7 +14,7 @@ module.exports = {
         name: "revo.js conference",
         short_name: "revo.js",
         start_url: "/",
-        background_color: "#f45919",
+        background_color: "#15161A",
         theme_color: "#f45919",
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
