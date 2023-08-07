@@ -147,7 +147,7 @@
     "recordingImage": "talks/2019_14.png"
   },
   {
-    "talkId": "talk2023-ben",
+    "talkId": "tug-of-war",
     "talk": "Tug Of War - Pushing and Pulling In JavaScript",
     "abstract": "<p>In this talk we'll explore what 'push' and 'pull' mean as concepts in programming, where you see this in JavaScript, and why it's important. We'll be looking at the differences and similarities in different asynchronous and synchronous interfaces, and talking about some of the pros and cons of each. In this talk I hope to help everyone unlock a new understanding of what's happening in their applications at a lower level, and hopefully start seeing all of their code through the lens of 'push vs pull'.</p>",
     "speakers": [{ "speakerId": "ben-lesh" }],
@@ -156,9 +156,9 @@
     "recordingImage": ""
   },
   {
-    "talkId": "talk2023-jay",
-    "talk": "Talk to be announced",
-    "abstract": "",
+    "talkId": "async-debugging",
+    "talk": "Have You Heard The Joke About Async Debugging? I Promise It Is Good.",
+    "abstract": "<p>Asynchronous code is hard to write, debug, and maintain. Most applications also contain unrecognized race conditions, missed resource cleanup, and other bugs. In this talk, Jay will talk through some of the most common examples of async bugs, and how to identify, debug, fix them, and avoid them in the future, regardless of which UI framework you prefer.</p>",
     "speakers": [{ "speakerId": "jay-phelps" }],
     "edition": 2023,
     "recordingUrl": "",
@@ -174,7 +174,7 @@
     "recordingImage": ""
   },
   {
-    "talkId": "talk2023-trent",
+    "talkId": "testing-strategy",
     "talk": "Testing Your Testing Strategy",
     "abstract": "<p>'End-to-end tests are more valuable than unit tests.' 'You should always use Test-Driven Development.' 'Testing helps you release faster.' Testing is often spoken of in sharp truths like these, but the reality for most developers is often a lot more fuzzy. Do these recommendations actually make sense for you?</p><p>In this talk, we’ll take a step back and discuss how you can develop a testing strategy that fits your specific team and project. We’ll question some popular assumptions, talk about criteria to evaluate testing approaches, and give you ideas to make your development workflow more efficient without losing confidence in your software.</p>",
     "speakers": [{ "speakerId": "trent-willis" }],
@@ -183,7 +183,7 @@
     "recordingImage": ""
   },
   {
-    "talkId": "talk2023-leonie",
+    "talkId": "bag-of-spanners",
     "talk": "Bag of spanners",
     "abstract": "<p>In the UK we say that something is a 'bag of spanners' when it seems to work, but when you look inside it turns out to be badly implemented.</p><p>Implementing  accessible code can sometimes feel like a bag of spanners - something thrown together in ways that will probably give you (or someone using your product) trouble.</p><p>It doesn't have to be like this though.</p><p>With an understanding of how accessibility mechanics work in the browser, knowledge of how to provide or polyfill accessibility semantics, and a little bit of effort, you can turn your bag of spanners into a useful set of tools.</p>",
     "speakers": [{ "speakerId": "leonie-watson" }],
@@ -192,7 +192,7 @@
     "recordingImage": ""
   },
   {
-    "talkId": "talk2023-anna",
+    "talkId": "performance-tooling",
     "talk": "Demystifying web performance tooling",
     "abstract": "<p>Web performance has been one of the most talked about web development topics in the recent years. Yet if you try to start your journey with the speed optimisations, you might find yourself in a pickle. With the tooling, you might feel overwhelmed—it looks complex and hard to comprehend. With the metrics: at first glance all of them seem similar, not to mention that they change over time and you cannot figure out which of them to take into account.</p><p>In this talk I we will take a look at the most useful web performance tooling. There will be no more secrets around the topic and you will be able to dive into the web speed optimisations with confidence. We will also briefly mention metrics and services to monitor your improvements over time.</p>",
     "speakers": [{ "speakerId": "anna-migas" }],
@@ -201,7 +201,7 @@
     "recordingImage": ""
   },
   {
-    "talkId": "talk2023-rachel",
+    "talkId": "css-features-2023",
     "talk": "New CSS features you can use today",
     "abstract": "New CSS features are landing on the web platform at a rate we've never seen before, but is it too early to start to use the latest shiny thing everyone is talking about? In this talk Rachel Andrew will share some of the new features that you can feel confident to use today, and those that are just around the corner. You'll also learn how browsers are working together to make it easier to understand what's available and working well cross-browser.",
     "speakers": [{ "speakerId": "rachel-andrew" }],
@@ -219,7 +219,7 @@
     "recordingImage": ""
   },
   {
-    "talkId": "talk2023-matt",
+    "talkId": "no-generic",
     "talk": "There Is No Such Thing As A 'Generic'",
     "abstract": "<p>When you think of the hardest thing about TypeScript, the word 'generics' comes to mind. Generics feel mystical, impossible to grok - but powerful. Generics are at the heart of TypeScript's most powerful abstractions, from Zod to tRPC to your frontend framework.</p> <p>The truth is that there's no such thing as a 'generic' in TypeScript. There are type arguments, and type parameters. There are generic types. Generic functions. Generic classes. And once you realise that, their power unlocks itself.</p>",
     "speakers": [{ "speakerId": "matt-pocock" }],
@@ -282,7 +282,7 @@
     "recordingImage": ""
   },
   {
-    "talkId": "ciprian-api",
+    "talkId": "apis-requiem",
     "talk": "Requiem for APIs - The evolution of web development",
     "abstract": "<p>Finding ways to optimize your web apps is always a complex juggling exercise between user experience and developer convenience. However, for the ones brave enough to embrace the bleeding edge in web development, things are about to get simpler, but not necessarily less sophisticated.</p><p>We will revisit some patterns from the good old days of web development and see how we can blend those with the current technologies, trying to cut the middleman and optimize both the user experience and developer convenience. What is old is new again</p>",
     "speakers": [{ "speakerId": "ciprian-caba" }],

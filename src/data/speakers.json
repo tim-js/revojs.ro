@@ -12,7 +12,7 @@
     "web": "https://tink.uk",
     "title": "Director",
     "company": "TetraLogical",
-    "talkId": "talk2023-leonie"
+    "talkId": "bag-of-spanners"
   },
   {
     "edition": 2023,
@@ -27,7 +27,7 @@
     "web": "https://trentwillis.com",
     "title": "Staff Software Engineer",
     "company": "Netflix",
-    "talkId": "talk2023-trent"
+    "talkId": "testing-strategy"
   },
   {
     "edition": 2023,
@@ -69,7 +69,7 @@
     "mastodon": "",
     "title": "Software Engineer",
     "company": "Netflix",
-    "talkId": "talk2023-jay"
+    "talkId": "async-debugging"
   },
   {
     "edition": 2023,
@@ -83,7 +83,7 @@
     "mastodon": "",
     "title": "Lead UI Developer",
     "company": "Field Intelligence",
-    "talkId": "talk2023-anna"
+    "talkId": "performance-tooling"
   },
   {
     "edition": 2023,
@@ -97,7 +97,7 @@
     "mastodon": "",
     "title": "Development Lead",
     "company": "RxJS",
-    "talkId": "talk2023-ben"
+    "talkId": "tug-of-war"
   },
   {
     "edition": 2023,
@@ -111,7 +111,7 @@
     "mastodon": "",
     "title": "TypeScript Educator",
     "company": "",
-    "talkId": "talk2023-matt"
+    "talkId": "no-generic"
   },
   {
     "edition": 2023,
@@ -125,7 +125,7 @@
     "mastodon": "https://front-end.social/@rachelandrew",
     "title": "Content Lead for Chrome Web Developer Relations",
     "company": "Google",
-    "talkId": "talk2023-rachel"
+    "talkId": "css-features-2023"
   },
   {
     "edition": 2023,
