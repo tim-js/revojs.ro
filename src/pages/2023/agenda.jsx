@@ -62,9 +62,9 @@ const Agenda = ({ data }) => {
     <Layout title="revo.js Agenda">
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.agenda_image}`}>Agenda</h1>
-        <p className="subtitle2023">
+        {/* <p className="subtitle2023">
           Will be announced later in August. Stay tuned...
-        </p>
+        </p> */}
       </Header>
 
       <div className={`${styles.nav_wrapper}`}>
