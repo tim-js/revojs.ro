@@ -165,9 +165,9 @@
     "recordingImage": ""
   },
   {
-    "talkId": "talk2023-kenneth",
-    "talk": "Talk to be announced",
-    "abstract": "",
+    "talkId": "web-beyond-today",
+    "talk": "Beyond the web of today",
+    "abstract": "<p>At Intel we work on the forefront of innovation as our hardware roadmaps are defined years ahead of release. This means that we need to make sure that the web platform takes advantage of new hardware capabilities as they are released or shortly after. This ranges from enabling new form factors to taking advantage of hardware accelerators.</p> <p>In this talk we will discuss some of the new innovations that Intel is bringing to the web, such as WebNN, which enables access to fast neural network and machine learning capabilities; WebGPU and Compute Pressure, a new API enabling better user experience and bringing adaptive compute capabilities to the client, just like adaptive streaming has improved streaming use-cases by adapting to live network conditions.</p>",
     "speakers": [{ "speakerId": "kenneth-rohde-christiansen" }],
     "edition": 2023,
     "recordingUrl": "",

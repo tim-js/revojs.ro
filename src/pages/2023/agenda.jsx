@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 // import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 import Layout from "@components/Layout";
@@ -22,13 +22,9 @@ const ACTIVE_CLASS = styles.active;
 const Agenda = ({ data }) => {
   const { allTalksJson, allSpeakersJson, speakerImages } = data;
 
-  const talks = allTalksJson.edges
-    .map(e => e.node)
-    .filter(t => t.edition === edition);
-  const speakers = allSpeakersJson.edges
-    .map(e => e.node)
-    .filter(s => s.edition === edition);
-  const images = speakerImages.edges.map(e => e.node);
+  const talks = allTalksJson.edges.map((e) => e.node);
+  const speakers = allSpeakersJson.edges.map((e) => e.node);
+  const images = speakerImages.edges.map((e) => e.node);
 
   day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
   day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
@@ -189,7 +185,6 @@ const AgendaPage = (props) => {
             talkId
             talk
             abstract
-            edition
             speakers {
               speakerId
             }
@@ -207,7 +202,6 @@ const AgendaPage = (props) => {
             company
             twitter
             bio
-            edition
           }
         }
       }
@@ -219,7 +213,6 @@ const AgendaPage = (props) => {
               gatsbyImageData(
                 width: 400
                 height: 400
-                transformOptions: { grayscale: true }
                 layout: CONSTRAINED
               )
             }
@@ -236,11 +229,20 @@ export default AgendaPage;
 function Workshop({ data }) {
   return (
     <div className={styles.slot_content}>
-      <Link to={`/${edition}/workshop/`}>
-        <h3 className={styles.slot_title}>{data.title}</h3>
-      </Link>
-      <span>{data.description}</span>
-      <SpeakersDetails list={data.speakers} />
+      <div>
+        <Link to={`/${edition}/workshop/`}>
+          <h3 className={styles.slot_title}>{data.title}</h3>
+        </Link>
+        <div>{data.description}</div>
+
+        <figure className={styles.speakers}>
+          {data.speakers.map(speaker => <SpeakerPhoto speaker={speaker} />)}
+
+          <div>
+            {data.speakers.map((speaker, i) => <SpeakerInfo speaker={speaker} multiple={i > 0} />)}
+          </div>
+        </figure>
+      </div>
     </div>
   );
 }
@@ -257,66 +259,64 @@ function DayHeader({ data }) {
   );
 }
 
-function SpeakersDetails({ list }) {
+function SpeakerPhoto({ speaker }) {
   return (
-    <figure className={styles.speakers}>
-      {list.map(speaker => (
-        <div key={speaker.lastname}>
-          <Img
-            fluid={speaker.speakerImage.image.fluid}
-            alt={`${speaker.firstname} ${speaker.firstname} photo`}
-            className={styles.speaker_image}
-          />
-        </div>
-      ))}
+    <div key={speaker.lastname}>
+      <GatsbyImage
+        image={speaker.speakerImage.childImageSharp.gatsbyImageData}
+        alt={`${speaker.firstname} ${speaker.firstname} photo`}
+        className={styles.speaker_image}
+      />
+    </div>
+  );
+}
 
-      <span>
-        {list.map((speaker, i) => {
-          return (
-            <React.Fragment key={speaker.jsonId}>
-              {i > 0 && " & "}
-              <Link to={`/${edition}/speakers/${speaker.jsonId}`}>
-                {`${speaker.firstname} ${speaker.lastname}`}
-              </Link>
-            </React.Fragment>
-          );
-        })}
-      </span>
-    </figure>
+function SpeakerInfo({ speaker, multiple = false }) {
+  return (
+    <React.Fragment key={speaker.speakerId}>
+      {multiple > 0 && " & "}
+      <Link to={`/${edition}/speakers/${speaker.speakerId}`}>
+        {`${speaker.firstname} ${speaker.lastname}`}
+      </Link>
+    </React.Fragment>
   );
 }
 
 function Slot({ slot }) {
   if (slot.talkId) {
+    // we have only 1 speaker / talk
+    const speaker = slot.speakers[0];
+
     return (
-      <>
+      <Link to={`/${edition}/speakers/${speaker.speakerId}`}>
         <div className={styles.slot_content}>
-          <Link to={`/${edition}/agenda/${slot.talkId}`}>
-            <h3 className={styles.slot_title}>{slot.title}</h3>
-          </Link>
-          <SpeakersDetails list={slot.speakers} />
+          <SpeakerPhoto speaker={speaker} />
+          <div>
+            <strong className={styles.slot_title}>{slot.title}</strong>
+            {`${speaker.firstname} ${speaker.lastname}`}
+          </div>
         </div>
-      </>
+      </Link>
     );
   } else if (slot.description) {
     return (
-      <div className={styles.slot_content}>
-        <h3 className={styles.slot_title}>{slot.description}</h3>
-      </div>
+      // <div className={styles.slot_content}>
+        <span className={styles.slot_title}>{slot.description}</span>
+      // </div>
     );
   } else if (slot.placeholder) {
     return (
-      <div className={styles.slot_content} style={{ alignSelf: "center" }}>
+      // <div className={styles.slot_content} style={{ alignSelf: "center" }}>
         <span>{slot.placeholder}</span>
-      </div>
+      // </div>
     );
   }
 }
 
 function mergeSpeakerDetails(speakersIdList, speakers, images) {
-  return speakersIdList.map(speaker => {
-    const speakerData = speakers.find(s => s.jsonId === speaker.jsonId);
-    const speakerImage = images.find(e => speakerData.image.includes(e.base));
+  return speakersIdList.map((speaker) => {
+    const speakerData = speakers.find((s) => s.speakerId === speaker.speakerId);
+    const speakerImage = images.find((e) => speakerData.image.includes(e.base));
     return {
       ...speakerData,
       speakerImage,
@@ -325,11 +325,11 @@ function mergeSpeakerDetails(speakersIdList, speakers, images) {
 }
 
 function mergeWorkshopDetails(workshops, speakers, images) {
-  return workshops.map(workshop => {
+  return workshops.map((workshop) => {
     const speakersDetails = mergeSpeakerDetails(
       workshop.speakers,
       speakers,
-      images,
+      images
     );
 
     return {
@@ -340,18 +340,19 @@ function mergeWorkshopDetails(workshops, speakers, images) {
 }
 
 function mergeTalkDetails(agenda, talks, speakers, images) {
-  return agenda.map(slot => {
+  return agenda.map((slot) => {
     const { talkId } = slot;
 
     if (!talkId) {
       return slot;
     }
 
-    const talkDetails = talks.find(talk => talk.jsonId === talkId);
+    const talkDetails = talks.find((talk) => talk.talkId === talkId);
+
     const speakersDetails = mergeSpeakerDetails(
       talkDetails.speakers,
       speakers,
-      images,
+      images
     );
 
     return {
