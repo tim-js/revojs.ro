@@ -1,7 +1,7 @@
 export const day0 = {
   day: "Wednesday",
-  date: "7 Oct 2020",
-  dateIso: "2020-10-07",
+  date: "4 Oct 2023",
+  dateIso: "2023-10-04",
   title: "Workshop Day",
   workshops: [
     {
@@ -16,8 +16,8 @@ export const day0 = {
 
 export const day1 = {
   day: "Thursday",
-  date: "8 Oct 2020",
-  dateIso: "2019-10-08",
+  date: "5 Oct 2023",
+  dateIso: "2023-10-05",
   title: "Conference Day 1",
   talks: [
     { time: "08:00", description: "Registration & Coffee" },
@@ -43,8 +43,8 @@ export const day1 = {
 
 export const day2 = {
   day: "Friday",
-  date: "9 Oct 2020",
-  dateIso: "2019-10-09",
+  date: "6 Oct 2023",
+  dateIso: "2023-10-06",
   title: "Conference Day 2",
   talks: [
     { time: "08:30", description: "Registration & Coffee" },
