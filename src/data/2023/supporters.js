@@ -18,6 +18,16 @@ export const communities = [
     name: "Oradea Tech Hub",
     image: "communities/oth_logo.svg",
     url: "https://www.oradeatechhub.ro/"
+  },
+  {
+    name: "Frontend Meetup Budapest",
+    image: "communities/frontend_bp_logo.svg",
+    url: "https://www.meetup.com/frontend-meetup-budapest/"
+  },
+  {
+    name: "JSConf Budapest",
+    image: "communities/jsconf_bp_logo.svg",
+    url: "https://jsconfbp.com/"
   }
 ];
 
@@ -27,11 +37,11 @@ export const friends = [
     image: "partners/bereta_logo.svg",
     url: "https://bereta.tm.ro"
   },
-  {
-    name: "DevPlant",
-    image: "partners/DevPlant_logo.svg",
-    url: "https://devplant.ro/"
-  },
+  // {
+  //   name: "DevPlant",
+  //   image: "partners/DevPlant_logo.svg",
+  //   url: "https://devplant.ro/"
+  // },
   {
     name: "JSLeague",
     image: "communities/JSLeague_logo.svg",
