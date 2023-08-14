@@ -61,15 +61,15 @@ const Press = () => {
           </section>
 
           <section className="visual-guide">
-            <h2>Visual Guidelines</h2>
+            <h2 id="logo">Logo and Symbol</h2>
             <p>
               To maintain a consistent visual identity so that every JavaScript
               enthusiast can recognize us in a jiffy, here are our visual
-              guidelines:
+              guidelines.
             </p>
-            <h3>The Logo and Symbol</h3>
+            <br />
             <p>
-              The logo is a very important expression of our brand identity. It
+              <strong>The logo</strong> is a very important expression of our brand identity. It
               should not be distorted or redrawn when used in communications.
               Please follow our guidance when using it, as it is vital that it
               is applied consistently.
@@ -78,7 +78,7 @@ const Press = () => {
               <img src={logo} alt="revo.js logo" />
             </figure>
             <p>
-              The symbol should be used alone when the logo is too small to
+              <strong>The symbol</strong> should be used alone when the logo is too small to
               achieve maximum impact. We only encourage the usage of the symbol
               alone when it’s an absolut must and the full logo does not fit at
               all.
@@ -86,7 +86,8 @@ const Press = () => {
             <figure>
               <img src={symbol} alt="revo.js symbol" />
             </figure>
-            <h3>Clear space and Sizing</h3>
+
+            <h3>Clear space and sizing</h3>
             <p>
               The logo or symbol should always be surrounded by generous white
               space. The diagram below shows the minimum amount of clear space
@@ -101,13 +102,16 @@ const Press = () => {
               <strong>25px (height)</strong>, and the minimum print size should
               be <strong>1cm (height)</strong>.
             </p>
-            <h3>Color</h3>
+
+            <h3 id="logo-color">Color</h3>
             <figure>
               <img
                 src={colorStory}
                 alt="revolution red + JavaScript yellow = revorange"
               />
             </figure>
+
+            <h3 id="logo-variants">Logo variants</h3>
             <p>
               Our logo is primary used on our dark grey and black backgrounds,
               using the color combinations listed below. It can also be used on
