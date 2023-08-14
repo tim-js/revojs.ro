@@ -51,6 +51,11 @@ export const friends = [
     name: "Zeama de Developer",
     image: "partners/zdd_podcast_logo.svg",
     url: "https://podcast.sensidev.net/"
+  },
+  {
+    name: "Glorium Technologies",
+    image: "partners/glorium_logo.svg",
+    url: "https://gloriumtech.com/"
   }
 ];
 
