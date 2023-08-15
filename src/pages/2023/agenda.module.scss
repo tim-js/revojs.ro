@@ -112,9 +112,10 @@
 }
 
 .content {
-  padding-top: 20rem;
+  padding-top: 13rem;
 
   @include breakpoint(md) {
+    padding-top: 17rem;
     display: flex;
   }
 
