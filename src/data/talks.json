@@ -148,7 +148,7 @@
   },
   {
     "talkId": "tug-of-war",
-    "talk": "Tug Of War - Pushing and Pulling In JavaScript",
+    "talk": "Tug of War – Pushing and Pulling In JavaScript",
     "abstract": "<p>In this talk we'll explore what 'push' and 'pull' mean as concepts in programming, where you see this in JavaScript, and why it's important. We'll be looking at the differences and similarities in different asynchronous and synchronous interfaces, and talking about some of the pros and cons of each. In this talk I hope to help everyone unlock a new understanding of what's happening in their applications at a lower level, and hopefully start seeing all of their code through the lens of 'push vs pull'.</p>",
     "speakers": [{ "speakerId": "ben-lesh" }],
     "edition": 2023,
@@ -157,7 +157,7 @@
   },
   {
     "talkId": "async-debugging",
-    "talk": "Have You Heard The Joke About Async Debugging? I Promise It Is Good.",
+    "talk": "Have You Heard the Joke About Async Debugging? I Promise It Is Good.",
     "abstract": "<p>Asynchronous code is hard to write, debug, and maintain. Most applications also contain unrecognized race conditions, missed resource cleanup, and other bugs. In this talk, Jay will talk through some of the most common examples of async bugs, and how to identify, debug, fix them, and avoid them in the future, regardless of which UI framework you prefer.</p>",
     "speakers": [{ "speakerId": "jay-phelps" }],
     "edition": 2023,
@@ -166,7 +166,7 @@
   },
   {
     "talkId": "web-beyond-today",
-    "talk": "Beyond the web of today",
+    "talk": "Beyond the Web of Today",
     "abstract": "<p>At Intel we work on the forefront of innovation as our hardware roadmaps are defined years ahead of release. This means that we need to make sure that the web platform takes advantage of new hardware capabilities as they are released or shortly after. This ranges from enabling new form factors to taking advantage of hardware accelerators.</p> <p>In this talk we will discuss some of the new innovations that Intel is bringing to the web, such as WebNN, which enables access to fast neural network and machine learning capabilities; WebGPU and Compute Pressure, a new API enabling better user experience and bringing adaptive compute capabilities to the client, just like adaptive streaming has improved streaming use-cases by adapting to live network conditions.</p>",
     "speakers": [{ "speakerId": "kenneth-rohde-christiansen" }],
     "edition": 2023,
@@ -184,7 +184,7 @@
   },
   {
     "talkId": "bag-of-spanners",
-    "talk": "Bag of spanners",
+    "talk": "Bag of Spanners",
     "abstract": "<p>In the UK we say that something is a 'bag of spanners' when it seems to work, but when you look inside it turns out to be badly implemented.</p><p>Implementing  accessible code can sometimes feel like a bag of spanners - something thrown together in ways that will probably give you (or someone using your product) trouble.</p><p>It doesn't have to be like this though.</p><p>With an understanding of how accessibility mechanics work in the browser, knowledge of how to provide or polyfill accessibility semantics, and a little bit of effort, you can turn your bag of spanners into a useful set of tools.</p>",
     "speakers": [{ "speakerId": "leonie-watson" }],
     "edition": 2023,
@@ -193,7 +193,7 @@
   },
   {
     "talkId": "performance-tooling",
-    "talk": "Demystifying web performance tooling",
+    "talk": "Demystifying Web Performance Tooling",
     "abstract": "<p>Web performance has been one of the most talked about web development topics in the recent years. Yet if you try to start your journey with the speed optimisations, you might find yourself in a pickle. With the tooling, you might feel overwhelmed—it looks complex and hard to comprehend. With the metrics: at first glance all of them seem similar, not to mention that they change over time and you cannot figure out which of them to take into account.</p><p>In this talk I we will take a look at the most useful web performance tooling. There will be no more secrets around the topic and you will be able to dive into the web speed optimisations with confidence. We will also briefly mention metrics and services to monitor your improvements over time.</p>",
     "speakers": [{ "speakerId": "anna-migas" }],
     "edition": 2023,
@@ -202,7 +202,7 @@
   },
   {
     "talkId": "css-features-2023",
-    "talk": "New CSS features you can use today",
+    "talk": "New CSS Teatures You Can Use Today",
     "abstract": "New CSS features are landing on the web platform at a rate we've never seen before, but is it too early to start to use the latest shiny thing everyone is talking about? In this talk Rachel Andrew will share some of the new features that you can feel confident to use today, and those that are just around the corner. You'll also learn how browsers are working together to make it easier to understand what's available and working well cross-browser.",
     "speakers": [{ "speakerId": "rachel-andrew" }],
     "edition": 2023,
@@ -220,7 +220,7 @@
   },
   {
     "talkId": "no-generic",
-    "talk": "There Is No Such Thing As A 'Generic'",
+    "talk": "There Is No Such Thing as a 'Generic'",
     "abstract": "<p>When you think of the hardest thing about TypeScript, the word 'generics' comes to mind. Generics feel mystical, impossible to grok - but powerful. Generics are at the heart of TypeScript's most powerful abstractions, from Zod to tRPC to your frontend framework.</p> <p>The truth is that there's no such thing as a 'generic' in TypeScript. There are type arguments, and type parameters. There are generic types. Generic functions. Generic classes. And once you realise that, their power unlocks itself.</p>",
     "speakers": [{ "speakerId": "matt-pocock" }],
     "edition": 2023,
@@ -238,7 +238,7 @@
   },
   {
     "talkId": "node-testing-2023",
-    "talk": "Node.js in 2023 - What's new in the Node.js native test runner",
+    "talk": "Node.js in 2023 – What’s New in the Node.js Native Test Runner",
     "abstract": "<p>Node.js has been evolving fast. Jest? Mocha? What about using only Node.js without installing any additional libraries?</p><p>Node.js has been receiving a lot of updates to empower you to test, mock and automate repetitive tasks.</p><p>You'll learn by real scenarios the best Node.js test runner can offer and how you can start using it right away</p><p>This talk will cover the following topics:<ul><li>Overview of the Node.js test runner</li><li>How to mock, stub and Spy functions</li><li>How the Node.js' watch mode is working alongside the test runner</li></ul></p>",
     "speakers": [{ "speakerId": "erick-wendel" }],
     "edition": 2023,
@@ -256,7 +256,7 @@
   },
   {
     "talkId": "generative-art",
-    "talk": "Breaking down Javascript complexities with generative art",
+    "talk": "Breaking Down JavaScript Complexities With Generative Art",
     "abstract": "Are you struggling to wrap your head around complex JavaScript concepts? Have you ever considered using generative art to visualize and simplify these concepts? In this talk, we will explore how generative art can be used to break down complex concepts in JavaScript. You will learn about various tools and libraries for creating generative art, and we will demonstrate live-coding examples to make it all come to life. Join us to discover a creative and engaging approach to understanding JavaScript complexities.",
     "speakers": [{ "speakerId": "ritvi-mishra" }],
     "edition": 2023,
@@ -283,7 +283,7 @@
   },
   {
     "talkId": "apis-requiem",
-    "talk": "Requiem for APIs - The evolution of web development",
+    "talk": "Requiem for APIs – The Evolution of Web Development",
     "abstract": "<p>Finding ways to optimize your web apps is always a complex juggling exercise between user experience and developer convenience. However, for the ones brave enough to embrace the bleeding edge in web development, things are about to get simpler, but not necessarily less sophisticated.</p><p>We will revisit some patterns from the good old days of web development and see how we can blend those with the current technologies, trying to cut the middleman and optimize both the user experience and developer convenience. What is old is new again</p>",
     "speakers": [{ "speakerId": "ciprian-caba" }],
     "edition": 2023,
