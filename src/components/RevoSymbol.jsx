@@ -18,5 +18,5 @@ export const RevoSymbol = ({ color = "orange" }) => {
 };
 
 RevoSymbol.propTypes = {
-  color: PropTypes.oneOf(["white", "orange"]),
+  color: PropTypes.oneOf(["white", "orange", "grey"]),
 };
