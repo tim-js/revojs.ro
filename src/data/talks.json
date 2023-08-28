@@ -239,7 +239,7 @@
   {
     "talkId": "node-testing-2023",
     "talk": "Node.js in 2023 – What’s New in the Node.js Native Test Runner",
-    "abstract": "<p>Node.js has been evolving fast. Jest? Mocha? What about using only Node.js without installing any additional libraries?</p><p>Node.js has been receiving a lot of updates to empower you to test, mock and automate repetitive tasks.</p><p>You'll learn by real scenarios the best Node.js test runner can offer and how you can start using it right away</p><p>This talk will cover the following topics:<ul><li>Overview of the Node.js test runner</li><li>How to mock, stub and Spy functions</li><li>How the Node.js' watch mode is working alongside the test runner</li></ul></p>",
+    "abstract": "<p>Node.js has been evolving fast. Jest? Mocha? What about using only Node.js without installing any additional libraries?</p><p>Node.js has been receiving a lot of updates to empower you to test, mock and automate repetitive tasks.</p><p>You'll learn by real scenarios the best Node.js test runner can offer and how you can start using it right away.</p><p>This talk will cover the following topics:<ul><li>Overview of the Node.js test runner</li><li>How to mock, stub and Spy functions</li><li>How the Node.js' watch mode is working alongside the test runner</li></ul></p>",
     "speakers": [{ "speakerId": "erick-wendel" }],
     "edition": 2023,
     "recordingUrl": "",
@@ -284,7 +284,7 @@
   {
     "talkId": "apis-requiem",
     "talk": "Requiem for APIs – The Evolution of Web Development",
-    "abstract": "<p>Finding ways to optimize your web apps is always a complex juggling exercise between user experience and developer convenience. However, for the ones brave enough to embrace the bleeding edge in web development, things are about to get simpler, but not necessarily less sophisticated.</p><p>We will revisit some patterns from the good old days of web development and see how we can blend those with the current technologies, trying to cut the middleman and optimize both the user experience and developer convenience. What is old is new again</p>",
+    "abstract": "<p>Finding ways to optimize your web apps is always a complex juggling exercise between user experience and developer convenience. However, for the ones brave enough to embrace the bleeding edge in web development, things are about to get simpler, but not necessarily less sophisticated.</p><p>We will revisit some patterns from the good old days of web development and see how we can blend those with the current technologies, trying to cut the middleman and optimize both the user experience and developer convenience. What is old is new again.</p>",
     "speakers": [{ "speakerId": "ciprian-caba" }],
     "edition": 2023,
     "recordingUrl": "",
