@@ -27,7 +27,7 @@ const Tickets = () => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.tickets_image}`}>Tickets</h1>
         <div className="subtitle2023">
-          Regular tickets now on sale. Get yours. Revolve.
+          Better late than never. Late Bird tickets are still available.
         </div>
 
         <div className={styles.cta}>
@@ -68,7 +68,7 @@ const Tickets = () => {
                 <strong className={styles.ticket_note}>SOLD OUT</strong>
               </li>
 
-              <li className={styles.tickets_rollout__regular}>
+              <li className={styles.tickets_rollout__inactive}>
                 <span className={styles.ticket_price}>&euro;210</span>
                 <div className={styles.ticket_content}>
                   <strong className={styles.ticket_name}>Regular</strong>
@@ -76,13 +76,7 @@ const Tickets = () => {
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
                 <strong className={styles.ticket_note}>
-                  <OutboundLink
-                    className={styles.ticket_cta}
-                    href={TICKETS_URL}
-                    target="_blank"
-                  >
-                    ON SALE
-                  </OutboundLink>
+                  ENDED
                 </strong>
               </li>
 
@@ -93,7 +87,16 @@ const Tickets = () => {
                   {LATE_START} - {LATE_END}{" "}
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
-                <strong className={styles.ticket_note}></strong>
+                <strong className={styles.ticket_note}>
+                <OutboundLink
+                    className={styles.ticket_cta}
+                    href={TICKETS_URL}
+                    target="_blank"
+                  >
+                    ON SALE
+                  </OutboundLink>
+
+                </strong>
               </li>
 
               <li

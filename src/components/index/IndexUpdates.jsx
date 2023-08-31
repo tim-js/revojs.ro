@@ -15,35 +15,34 @@ const IndexUpdates = () => {
 
       <ul className="updates-list">
         <li>
+          <Link to="/2023/tickets/" className="updates-link">
+            <strong className="update-title mono">Tickets</strong>
+            <p className="update-content light-faded">
+              <strong>Late Bird tickets</strong> are now available! Better late than never.
+            </p>
+            <div className="arrow">
+              <Arrow color="primary" />
+            </div>
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/2023/agenda/" className="updates-link">
+            <strong className="update-title mono">Agenda</strong>
+            <p className="update-content light-faded">
+              The conference agenda is up. Check it out to plan your event accordingly.
+            </p>
+            <div className="arrow">
+              <Arrow color="primary" />
+            </div>
+          </Link>
+        </li>
+
+        <li>
           <Link to="/2023/speakers/" className="updates-link">
             <strong className="update-title mono">Speakers</strong>
             <p className="update-content light-faded">
               Our lineup is complete. Meet our 2023 speakers.
-            </p>
-            <div className="arrow">
-              <Arrow color="primary" />
-            </div>
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/2023/tickets/" className="updates-link">
-            <strong className="update-title mono">Tickets</strong>
-            <p className="update-content light-faded">
-              <strong>Regular tickets</strong> are now on sale! Get yours and
-              see you in October.
-            </p>
-            <div className="arrow">
-              <Arrow color="primary" />
-            </div>
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/2023/workshops/" className="updates-link">
-            <strong className="update-title mono">Workshop</strong>
-            <p className="update-content light-faded">
-              More details coming soon. Stay tuned for your chance to join.
             </p>
             <div className="arrow">
               <Arrow color="primary" />

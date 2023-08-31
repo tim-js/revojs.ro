@@ -22,15 +22,15 @@ const Workshops = ({ data }) => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.workshops_image}`}>Workshops</h1>
         <p className="subtitle2023">
-          Workshops will be announced soon. <br /> Stay tuned...
+          Unfortunately, we won't have any workshops this year ;(
         </p>
 
-        <br />
+        {/* <br />
         <br />
 
         <a href="#subscribe">
           <Button>Subscribe for Updates</Button>
-        </a>
+        </a> */}
 
       </Header>
 
@@ -38,20 +38,26 @@ const Workshops = ({ data }) => {
         <Content centered>
 
           <Note>
-            <p>
+            {/* <p>
               All workshops will take place on the <strong>4th of October</strong>, before the conference.
             </p>
             <p>
               Workshops are not included in the conference ticket.<br />They require separate purchase.
+            </p> */}
+            <p>
+              Due to reasons beyond our control, we were unable to bring you workshops this year, as we have initially planned.
+            </p>
+            <p>
+              If you were eager to attend the workshop(s), we're very sorry for letting you down. However, we'll make sure that the 2 conference days will be a blast.
             </p>
           </Note>
 
-          <section id="subscribe">
+          {/* <section id="subscribe">
             <br />
             <h2>Stay up to date</h2>
             <p>Subscribe to find out when Tickets go on sale:</p>
             <Subscribe light />
-          </section>
+          </section> */}
 
         </Content>
       </Section>

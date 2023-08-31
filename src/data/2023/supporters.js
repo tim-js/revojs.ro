@@ -10,6 +10,11 @@ export const communities = [
     url: "https://jsgirls.ro/"
   },
   {
+    name: "JSLeague",
+    image: "communities/JSLeague_logo.svg",
+    url: "https://jsleague.ro/"
+  },
+  {
     name: "Frontend Hub",
     image: "communities/frontend_hub_logo.svg",
     url: "https://www.facebook.com/frontendhub/"
@@ -42,11 +47,6 @@ export const friends = [
   //   image: "partners/DevPlant_logo.svg",
   //   url: "https://devplant.ro/"
   // },
-  {
-    name: "JSLeague",
-    image: "communities/JSLeague_logo.svg",
-    url: "https://jsleague.ro/"
-  },
   {
     name: "Zeama de Developer",
     image: "partners/zdd_podcast_logo.svg",
