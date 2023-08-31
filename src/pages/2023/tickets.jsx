@@ -76,7 +76,7 @@ const Tickets = () => {
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
                 <strong className={styles.ticket_note}>
-                  ENDED
+                  EXPIRED
                 </strong>
               </li>
 
