@@ -99,7 +99,7 @@ const Tickets = () => {
                 </strong>
               </li>
 
-              <li
+              {/* <li
                 className={styles.tickets_rollout__workshop}
                 style={{ marginTop: "2em" }}
               >
@@ -113,7 +113,7 @@ const Tickets = () => {
                   </Link>
                 </div>
                 <strong className={styles.ticket_note}></strong>
-              </li>
+              </li> */}
             </ul>
           </section>
           <section>
