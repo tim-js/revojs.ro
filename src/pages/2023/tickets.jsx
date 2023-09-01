@@ -122,13 +122,13 @@ const Tickets = () => {
             <ul className="bullet">
               <li>
                 <strong>Full conference access</strong> on the 5th and 6th of
-                October (Thursday + Friday);
+                October (Thursday + Friday).
               </li>
               <li>
-                <strong>Coffee, water, and tea to fuel and hydrate you;</strong>;
+                <strong>Coffee, water and tea</strong>, to fuel and hydrate yourself.
               </li>
               <li>
-                <strong>Lunch</strong> including vegetarian and vegan options;
+                <strong>Lunch</strong> including vegetarian and vegan options.
               </li>
               {/* <li>
                 <strong>Snacks</strong> during coffee breaks;
@@ -137,10 +137,10 @@ const Tickets = () => {
                 <strong>After party</strong> access (Friday evening).
               </li>
               <li>
-                Option to <strong>reassign your ticket</strong> free of charge.
+                <strong>No hidden taxes.</strong> What you see it what you pay.
               </li>
               <li>
-                <strong>No hidden taxes.</strong> What you see it what you pay.
+                Option to <strong>reassign your ticket</strong> to someone else, <strong>free of charge</strong>.
               </li>
             </ul>
 
