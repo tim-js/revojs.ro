@@ -125,16 +125,22 @@ const Tickets = () => {
                 October (Thursday + Friday);
               </li>
               <li>
-                <strong>Coffee, water and tea</strong>;
+                <strong>Coffee, water, and tea to fuel and hydrate you;</strong>;
               </li>
               <li>
-                <strong>Lunch</strong>, including vegetarian and vegan options;
+                <strong>Lunch</strong> including vegetarian and vegan options;
               </li>
               {/* <li>
                 <strong>Snacks</strong> during coffee breaks;
               </li> */}
               <li>
                 <strong>After party</strong> access (Friday evening).
+              </li>
+              <li>
+                Option to <strong>reassign your ticket</strong> free of charge.
+              </li>
+              <li>
+                <strong>No hidden taxes.</strong> What you see it what you pay.
               </li>
             </ul>
 
