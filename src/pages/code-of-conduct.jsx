@@ -90,7 +90,7 @@ const CodeOfConduct = () => {
                 If you are being harassed, notice that someone else is being
                 harassed, or have any other concerns, please notify a member of
                 the conference staff immediately or write to us on{" "}
-                <a href="mailto:coc@revojs.ro">coc@revojs.ro</a>.
+                <a href="mailto:info@revojs.ro">info@revojs.ro</a>.
               </strong>
             </p>
 
