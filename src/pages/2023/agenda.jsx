@@ -12,6 +12,8 @@ import Section from "@components/Section";
 import { PurchaseTicket } from "@components/CTA";
 
 import { day0, day1, day2 } from "@data/2023/agenda";
+import { sponsors } from "@data/2023/supporters";
+
 import { getEdition } from "@utils";
 
 import * as styles from "./agenda.module.scss";
@@ -28,17 +30,17 @@ const Agenda = ({ data }) => {
 
   // day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
   day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
-  day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images);
+  day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images, sponsors);
 
   useEffect(() => {
     const mainNavLinks = document.querySelectorAll(`.${styles.nav} a`);
-    
+
     function onScroll() {
       const scrolled = window.scrollY;
-      
-      mainNavLinks.forEach(link => {
+
+      mainNavLinks.forEach((link) => {
         const section = document.querySelector(link.hash);
-        
+
         if (
           section.offsetTop - 200 <= scrolled &&
           section.offsetTop + section.offsetHeight > scrolled + 200
@@ -49,7 +51,7 @@ const Agenda = ({ data }) => {
         }
       });
     }
-    
+
     onScroll();
     window.addEventListener("scroll", onScroll);
 
@@ -101,7 +103,7 @@ const Agenda = ({ data }) => {
           <br />
           <br />
           <br />
-          <p  className={styles.cta}>Don't miss out to see these great talks</p>
+          <p className={styles.cta}>Don't miss out to see these great talks</p>
           <PurchaseTicket label="Grab your conference ticket" white />
         </div>
 
@@ -120,7 +122,7 @@ const Agenda = ({ data }) => {
         <DayHeader data={data} />
 
         <ul className={styles.slots}>
-          {workshops.map(workshop => (
+          {workshops.map((workshop) => (
             <li key={workshop.time} className={`${styles.slot} ${styles.talk}`}>
               <time
                 dateTime={`${dateIso}T${workshop.time}:00`}
@@ -144,10 +146,12 @@ const Agenda = ({ data }) => {
         <DayHeader data={data} />
 
         <ul className={styles.slots}>
-          {talks.map(talk => (
+          {talks.map((talk) => (
             <li
               key={talk.time}
-              className={`${styles.slot} ${talk.talkId ? styles.talk : styles.coffee}`}
+              className={`${styles.slot} ${
+                talk.talkId ? styles.talk : styles.coffee
+              }`}
             >
               <time
                 dateTime={`${dateIso}T${talk.time}:00`}
@@ -210,11 +214,7 @@ const AgendaPage = (props) => {
           node {
             base
             childImageSharp {
-              gatsbyImageData(
-                width: 400
-                height: 400
-                layout: CONSTRAINED
-              )
+              gatsbyImageData(width: 400, height: 400, layout: CONSTRAINED)
             }
           }
         }
@@ -236,10 +236,14 @@ function Workshop({ data }) {
         <div>{data.description}</div>
 
         <figure className={styles.speakers}>
-          {data.speakers.map(speaker => <SpeakerPhoto speaker={speaker} />)}
+          {data.speakers.map((speaker) => (
+            <SpeakerPhoto speaker={speaker} />
+          ))}
 
           <div>
-            {data.speakers.map((speaker, i) => <SpeakerInfo speaker={speaker} multiple={i > 0} />)}
+            {data.speakers.map((speaker, i) => (
+              <SpeakerInfo speaker={speaker} multiple={i > 0} />
+            ))}
           </div>
         </figure>
       </div>
@@ -300,14 +304,24 @@ function Slot({ slot }) {
     );
   } else if (slot.description) {
     return (
-      // <div className={styles.slot_content}>
+      <div className={styles.slot_content}>
         <span className={styles.slot_title}>{slot.description}</span>
-      // </div>
+        {slot.sponsor && (
+          <>
+            <span className={styles.slot_title}>provided by</span>
+            <img
+              src={require(`@assets/${slot.sponsor.image}`).default}
+              alt={slot.sponsor.name}
+              height="70px"
+            />
+          </>
+        )}
+      </div>
     );
   } else if (slot.placeholder) {
     return (
       // <div className={styles.slot_content} style={{ alignSelf: "center" }}>
-        <span>{slot.placeholder}</span>
+      <span>{slot.placeholder}</span>
       // </div>
     );
   }
@@ -339,9 +353,16 @@ function mergeWorkshopDetails(workshops, speakers, images) {
   });
 }
 
-function mergeTalkDetails(agenda, talks, speakers, images) {
+function mergeTalkDetails(agenda, talks, speakers, images, sponsors = {}) {
   return agenda.map((slot) => {
     const { talkId } = slot;
+
+    if (slot.partner) {
+      const sponsor = Object.values(sponsors)
+        .flat()
+        .find((s) => s.name === slot.partner);
+      slot = { ...slot, sponsor };
+    }
 
     if (!talkId) {
       return slot;
