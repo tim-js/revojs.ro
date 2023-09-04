@@ -13,9 +13,9 @@ export const main = [
   {
     name: "Tickets",
   },
-  {
-    name: "Workshops",
-  },
+  // {
+  //   name: "Workshops",
+  // },
   // {
   //   name: "Venue"
   // },

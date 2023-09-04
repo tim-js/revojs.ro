@@ -26,7 +26,7 @@ const Agenda = ({ data }) => {
   const speakers = allSpeakersJson.edges.map((e) => e.node);
   const images = speakerImages.edges.map((e) => e.node);
 
-  day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
+  // day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
   day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
   day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images);
 
@@ -69,10 +69,10 @@ const Agenda = ({ data }) => {
 
       <div className={`${styles.nav_wrapper}`}>
         <nav className={styles.nav}>
-          <a href="#workshop-day">
+          {/* <a href="#workshop-day">
             <span className={styles.nav_title}>{day0.title}</span>
             <strong className="mono">Oct 4th</strong>
-          </a>
+          </a> */}
           <a href="#conference-day1">
             <span className={styles.nav_title}>{day1.title}</span>
             <strong className="mono">Oct 5th</strong>
@@ -85,9 +85,9 @@ const Agenda = ({ data }) => {
       </div>
 
       <div className={styles.content_wrapper}>
-        <section id="workshop-day" className={styles.content}>
+        {/* <section id="workshop-day" className={styles.content}>
           <WorkshopDay data={day0} />
-        </section>
+        </section> */}
 
         <section id="conference-day1" className={styles.content}>
           <ConferenceDay data={day1} />
