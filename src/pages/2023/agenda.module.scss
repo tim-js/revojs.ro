@@ -189,17 +189,63 @@
   }
 }
 
-.slot_sponsor {
+.slot_afterparty {
   display: flex;
-  @include breakpoint(sm, max) {
-    display: none;
+  flex-direction: column;
+
+  @include breakpoint(sm) {
+    flex-direction: row;
   }
 }
 
-.slot_sponsor_title {
+.slot_afterparty_title {
+  font-size: 22px;
+  display: block;
+  @include font(mono);
+  margin: 0;
+  line-height: 1.2;
+  color: inherit;
+  min-width: 4em;
+
+  @include breakpoint(sm, max) {
+    font-size: 16px;
+  }
+}
+
+.slot_afterparty_provided {
   font-size: 18px;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
+  @include font(mono);
+  @include breakpoint(sm, max) {
+    font-size: 14px;
+  }
+}
+
+.slot_afterparty_content {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+  gap: 1em;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.slot_afterparty_time {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  @include font(mono);
+  margin: 0;
+  line-height: 1.2;
+  color: inherit;
+  min-width: 4em;
+
+  @include breakpoint(sm, max) {
+    font-size: 16px;
+  }
 }
 
 .slot_title,

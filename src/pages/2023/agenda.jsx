@@ -11,8 +11,7 @@ import Section from "@components/Section";
 // import Button from "@components/Button";
 import { PurchaseTicket } from "@components/CTA";
 
-import { day0, day1, day2 } from "@data/2023/agenda";
-import { sponsors } from "@data/2023/supporters";
+import { day1, day2 } from "@data/2023/agenda";
 
 import { getEdition } from "@utils";
 
@@ -30,7 +29,7 @@ const Agenda = ({ data }) => {
 
   // day0.workshops = mergeWorkshopDetails(day0.workshops, speakers, images);
   day1.talks = mergeTalkDetails(day1.talks, talks, speakers, images);
-  day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images, sponsors);
+  day2.talks = mergeTalkDetails(day2.talks, talks, speakers, images);
 
   useEffect(() => {
     const mainNavLinks = document.querySelectorAll(`.${styles.nav} a`);
@@ -96,7 +95,9 @@ const Agenda = ({ data }) => {
         </section>
 
         <section id="conference-day2" className={styles.content}>
-          <ConferenceDay data={day2} />
+          <ConferenceDay data={day2}>
+            <AfterParty />
+          </ConferenceDay>
         </section>
 
         <div style={{ textAlign: "center" }}>
@@ -138,7 +139,7 @@ const Agenda = ({ data }) => {
     );
   }
 
-  function ConferenceDay({ data }) {
+  function ConferenceDay({ data, children }) {
     const { dateIso, talks } = data;
 
     return (
@@ -162,6 +163,7 @@ const Agenda = ({ data }) => {
               <Slot slot={talk} />
             </li>
           ))}
+          {children}
         </ul>
       </>
     );
@@ -178,6 +180,27 @@ const Agenda = ({ data }) => {
       link.classList.remove(ACTIVE_CLASS);
     }
   }
+};
+
+const AfterParty = () => {
+  return (
+    <li key="afterparty" className={`${styles.slot} ${styles.coffee}`}>
+      <time dateTime={`19:00`} className={styles.slot_afterparty_time}>
+        19:00
+      </time>
+      <div className={styles.slot_afterparty_content}>
+        <span className={styles.slot_afterparty_title}>After party</span>
+        <div className={styles.slot_afterparty}>
+          <span className={styles.slot_afterparty_provided}>provided by</span>
+          <img
+            src={require(`@assets/sponsors/2023/visma_logo.svg`).default}
+            alt="Visma Logo"
+            height="110px"
+          />
+        </div>
+      </div>
+    </li>
+  );
 };
 
 const AgendaPage = (props) => {
@@ -304,19 +327,9 @@ function Slot({ slot }) {
     );
   } else if (slot.description) {
     return (
-      <div className={styles.slot_content}>
-        <span className={styles.slot_title}>{slot.description}</span>
-        {slot.sponsor && (
-          <div className={styles.slot_sponsor}>
-            <span className={styles.slot_sponsor_title}>provided by</span>
-            <img
-              src={require(`@assets/${slot.sponsor.image}`).default}
-              alt={slot.sponsor.name}
-              height="110px"
-            />
-          </div>
-        )}
-      </div>
+      // <div className={styles.slot_content}>
+      <span className={styles.slot_title}>{slot.description}</span>
+      // </div>
     );
   } else if (slot.placeholder) {
     return (
@@ -353,16 +366,9 @@ function mergeWorkshopDetails(workshops, speakers, images) {
   });
 }
 
-function mergeTalkDetails(agenda, talks, speakers, images, sponsors = {}) {
+function mergeTalkDetails(agenda, talks, speakers, images) {
   return agenda.map((slot) => {
     const { talkId } = slot;
-
-    if (slot.partner) {
-      const sponsor = Object.values(sponsors)
-        .flat()
-        .find((s) => s.name === slot.partner);
-      slot = { ...slot, sponsor };
-    }
 
     if (!talkId) {
       return slot;
