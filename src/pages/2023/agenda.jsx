@@ -307,14 +307,14 @@ function Slot({ slot }) {
       <div className={styles.slot_content}>
         <span className={styles.slot_title}>{slot.description}</span>
         {slot.sponsor && (
-          <>
-            <span className={styles.slot_title}>provided by</span>
+          <div className={styles.slot_sponsor}>
+            <span className={styles.slot_sponsor_title}>provided by</span>
             <img
               src={require(`@assets/${slot.sponsor.image}`).default}
               alt={slot.sponsor.name}
-              height="70px"
+              height="110px"
             />
-          </>
+          </div>
         )}
       </div>
     );
