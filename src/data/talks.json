@@ -211,8 +211,8 @@
   },
   {
     "talkId": "talk2023-martin",
-    "talk": "Talk to be announced",
-    "abstract": "",
+    "talk": "No-BS SEO for web developers",
+    "abstract": "<p>You did it! You built this great website and now people will come and use it and give you money and life will be wonderful, right?</p><p>Except that's not how it goes. You either buy ads to point people towards your website or you make sure people who should use it, will find it when searching in a search engine of their choice. </p><p>And that's where SEO comes in. Wait? SEO? But I'm a web developer? Why would I care? And isn't it all smoke and mirrors? </p><p>In this talk we'll look at what we need to look out for when building web apps or websites so that the people we want on the site can find it. </p><p>We will also look at a few myths, SEOs might tell you and if they're true or not.</p>",
     "speakers": [{ "speakerId": "martin-splitt" }],
     "edition": 2023,
     "recordingUrl": "",
