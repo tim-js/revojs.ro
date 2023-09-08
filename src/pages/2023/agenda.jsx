@@ -191,11 +191,10 @@ const AfterParty = () => {
       <div className={styles.slot_afterparty_content}>
         <span className={styles.slot_afterparty_title}>After party</span>
         <div className={styles.slot_afterparty}>
-          <span className={styles.slot_afterparty_provided}>provided by</span>
+          <span className={styles.slot_afterparty_label}>Powered by</span>
           <img
             src={require(`@assets/sponsors/2023/visma_logo.svg`).default}
             alt="Visma Logo"
-            height="110px"
           />
         </div>
       </div>

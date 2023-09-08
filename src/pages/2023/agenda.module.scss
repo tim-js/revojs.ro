@@ -191,7 +191,7 @@
 
 .slot_afterparty {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
 
   @include breakpoint(sm) {
     flex-direction: row;
@@ -212,31 +212,43 @@
   }
 }
 
-.slot_afterparty_provided {
-  font-size: 18px;
+.slot_afterparty_label {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   @include font(mono);
-  @include breakpoint(sm, max) {
-    font-size: 14px;
+  
+  font-size: 14px;
+  @include breakpoint(sm) {
+    font-size: 18px;
   }
 }
 
 .slot_afterparty_content {
   display: flex;
-  flex-direction: row;
   margin: 0;
-  align-items: center;
-  gap: 1em;
   flex: 1;
   justify-content: space-between;
+  
+  flex-direction: column;
+  align-items: flex-start;
+  @include breakpoint(sm) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img {
+    height: 60px;
+
+    @include breakpoint(sm) {
+      height: 110px;
+    }
+  }
 }
 
 .slot_afterparty_time {
   font-size: 22px;
   display: flex;
-  align-items: center;
   @include font(mono);
   margin: 0;
   line-height: 1.2;
@@ -252,7 +264,6 @@
 .slot_time {
   font-size: 22px;
   display: block;
-  // font-weight: inherit;
   @include font(mono);
   margin: 0;
   line-height: 1.2;
