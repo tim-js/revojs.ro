@@ -54,7 +54,7 @@
       display: block;
       line-height: 1.2;
       font-size: 16px;
-      
+
       @include breakpoint(sm) {
         font-size: 18px;
       }
@@ -81,20 +81,19 @@
       margin-left: 50%;
       bottom: 0;
       transform: translateY(-4px) translateX(-50%);
-      
+
       @include breakpoint(sm) {
         width: 6px;
         height: 6px;
         transform: translateY(-2px) translateX(-50%);
       }
     }
-
   }
 }
 
 .nav_title {
   display: none;
-  
+
   @include breakpoint(sm) {
     display: block;
   }
@@ -159,7 +158,7 @@
   padding: 2rem 0;
   border-top: 1px #eee solid;
   display: flex;
-  
+
   @include breakpoint(sm) {
     gap: 1em;
     align-items: center;
@@ -190,11 +189,80 @@
   }
 }
 
+.slot_afterparty {
+  display: flex;
+
+  @include breakpoint(sm) {
+    flex-direction: row;
+  }
+}
+
+.slot_afterparty_title {
+  font-size: 20px;
+  display: block;
+  @include font(mono);
+  margin: 0;
+  line-height: 1.2;
+  color: inherit;
+  min-width: 4em;
+
+  @include breakpoint(sm, max) {
+    font-size: 16px;
+  }
+}
+
+.slot_afterparty_label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @include font(mono);
+  
+  font-size: 14px;
+  @include breakpoint(sm) {
+    font-size: 16px;
+  }
+}
+
+.slot_afterparty_content {
+  display: flex;
+  margin: 0;
+  flex: 1;
+  justify-content: space-between;
+  
+  flex-direction: column;
+  align-items: flex-start;
+  @include breakpoint(sm) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img {
+    height: 60px;
+
+    @include breakpoint(sm) {
+      height: 110px;
+    }
+  }
+}
+
+.slot_afterparty_time {
+  font-size: 20px;
+  display: flex;
+  @include font(mono);
+  margin: 0;
+  line-height: 1.2;
+  color: inherit;
+  min-width: 4em;
+
+  @include breakpoint(sm, max) {
+    font-size: 16px;
+  }
+}
+
 .slot_title,
 .slot_time {
-  font-size: 22px;
+  font-size: 20px;
   display: block;
-  // font-weight: inherit;
   @include font(mono);
   margin: 0;
   line-height: 1.2;
@@ -215,7 +283,7 @@
   gap: 1em;
   flex: 1;
   justify-content: space-between;
-  
+
   @include breakpoint(sm) {
     flex-direction: row;
   }

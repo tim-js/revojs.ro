@@ -11,7 +11,8 @@ import Section from "@components/Section";
 // import Button from "@components/Button";
 // import { PurchaseTicket } from "@components/CTA";
 
-import { day0, day1, day2 } from "@data/2023/agenda";
+import { day1, day2 } from "@data/2023/agenda";
+
 import { getEdition } from "@utils";
 
 import * as styles from "./agenda.module.scss";
@@ -32,13 +33,13 @@ const Agenda = ({ data }) => {
 
   useEffect(() => {
     const mainNavLinks = document.querySelectorAll(`.${styles.nav} a`);
-    
+
     function onScroll() {
       const scrolled = window.scrollY;
-      
-      mainNavLinks.forEach(link => {
+
+      mainNavLinks.forEach((link) => {
         const section = document.querySelector(link.hash);
-        
+
         if (
           section.offsetTop - 200 <= scrolled &&
           section.offsetTop + section.offsetHeight > scrolled + 200
@@ -49,7 +50,7 @@ const Agenda = ({ data }) => {
         }
       });
     }
-    
+
     onScroll();
     window.addEventListener("scroll", onScroll);
 
@@ -94,14 +95,16 @@ const Agenda = ({ data }) => {
         </section>
 
         <section id="conference-day2" className={styles.content}>
-          <ConferenceDay data={day2} />
+          <ConferenceDay data={day2}>
+            <AfterParty />
+          </ConferenceDay>
         </section>
 
         {/* <div style={{ textAlign: "center" }}>
           <br />
           <br />
           <br />
-          <p  className={styles.cta}>Don't miss out to see these great talks</p>
+          <p className={styles.cta}>Don't miss out to see these great talks</p>
           <PurchaseTicket label="Grab your conference ticket" white />
         </div> */}
 
@@ -120,7 +123,7 @@ const Agenda = ({ data }) => {
         <DayHeader data={data} />
 
         <ul className={styles.slots}>
-          {workshops.map(workshop => (
+          {workshops.map((workshop) => (
             <li key={workshop.time} className={`${styles.slot} ${styles.talk}`}>
               <time
                 dateTime={`${dateIso}T${workshop.time}:00`}
@@ -136,7 +139,7 @@ const Agenda = ({ data }) => {
     );
   }
 
-  function ConferenceDay({ data }) {
+  function ConferenceDay({ data, children }) {
     const { dateIso, talks } = data;
 
     return (
@@ -144,10 +147,12 @@ const Agenda = ({ data }) => {
         <DayHeader data={data} />
 
         <ul className={styles.slots}>
-          {talks.map(talk => (
+          {talks.map((talk) => (
             <li
               key={talk.time}
-              className={`${styles.slot} ${talk.talkId ? styles.talk : styles.coffee}`}
+              className={`${styles.slot} ${
+                talk.talkId ? styles.talk : styles.coffee
+              }`}
             >
               <time
                 dateTime={`${dateIso}T${talk.time}:00`}
@@ -158,6 +163,7 @@ const Agenda = ({ data }) => {
               <Slot slot={talk} />
             </li>
           ))}
+          {children}
         </ul>
       </>
     );
@@ -174,6 +180,26 @@ const Agenda = ({ data }) => {
       link.classList.remove(ACTIVE_CLASS);
     }
   }
+};
+
+const AfterParty = () => {
+  return (
+    <li key="afterparty" className={`${styles.slot} ${styles.coffee}`}>
+      <time dateTime={`19:00`} className={styles.slot_afterparty_time}>
+        19:00
+      </time>
+      <div className={styles.slot_afterparty_content}>
+        <span className={styles.slot_afterparty_title}>After party</span>
+        <div className={styles.slot_afterparty}>
+          <span className={styles.slot_afterparty_label}>Powered by</span>
+          <img
+            src={require(`@assets/sponsors/2023/visma_logo.svg`).default}
+            alt="Visma Logo"
+          />
+        </div>
+      </div>
+    </li>
+  );
 };
 
 const AgendaPage = (props) => {
@@ -210,11 +236,7 @@ const AgendaPage = (props) => {
           node {
             base
             childImageSharp {
-              gatsbyImageData(
-                width: 400
-                height: 400
-                layout: CONSTRAINED
-              )
+              gatsbyImageData(width: 400, height: 400, layout: CONSTRAINED)
             }
           }
         }
@@ -236,10 +258,14 @@ function Workshop({ data }) {
         <div>{data.description}</div>
 
         <figure className={styles.speakers}>
-          {data.speakers.map(speaker => <SpeakerPhoto speaker={speaker} />)}
+          {data.speakers.map((speaker) => (
+            <SpeakerPhoto speaker={speaker} />
+          ))}
 
           <div>
-            {data.speakers.map((speaker, i) => <SpeakerInfo speaker={speaker} multiple={i > 0} />)}
+            {data.speakers.map((speaker, i) => (
+              <SpeakerInfo speaker={speaker} multiple={i > 0} />
+            ))}
           </div>
         </figure>
       </div>
@@ -301,13 +327,13 @@ function Slot({ slot }) {
   } else if (slot.description) {
     return (
       // <div className={styles.slot_content}>
-        <span className={styles.slot_title}>{slot.description}</span>
+      <span className={styles.slot_title}>{slot.description}</span>
       // </div>
     );
   } else if (slot.placeholder) {
     return (
       // <div className={styles.slot_content} style={{ alignSelf: "center" }}>
-        <span>{slot.placeholder}</span>
+      <span>{slot.placeholder}</span>
       // </div>
     );
   }

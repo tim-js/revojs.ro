@@ -65,6 +65,5 @@ export const day2 = {
     { time: "15:15", talkId: "apis-requiem" },
     { time: "15:45", talkId: "web-beyond-today" },
     { time: "16:15", description: "Closing words" },
-    { time: "19:00", description: "After party", },
   ],
 };
