@@ -59,14 +59,14 @@ const Index = (props) => {
         <div className={styles.cta}>
           {/* <PurchaseTicket /> */}
 
-          {/* <div className={`mono ${styles.tagline}`}>
+          <div className={`mono ${styles.tagline}`}>
             <div className={`${styles.revo_symbol}`}><RevoSymbol color="grey" /></div>
             <div>
               <strong>Technology focused.</strong>
               <strong>Community driven.</strong>
               <strong>JavaScript conference.</strong>
             </div>
-          </div> */}
+          </div>
 
           {/* <a href="#speakers">
             <Button>Meet the Speakers</Button>
@@ -87,7 +87,7 @@ const Index = (props) => {
 
 
       <Separator2023 />
-      <IndexUpdates />
+      {/* <IndexUpdates /> */}
       <IndexSpeakers />
 
       <Section id="subscribe-form" centered>
