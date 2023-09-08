@@ -191,7 +191,6 @@
 
 .slot_afterparty {
   display: flex;
-  // flex-direction: column;
 
   @include breakpoint(sm) {
     flex-direction: row;
@@ -199,7 +198,7 @@
 }
 
 .slot_afterparty_title {
-  font-size: 22px;
+  font-size: 20px;
   display: block;
   @include font(mono);
   margin: 0;
@@ -220,7 +219,7 @@
   
   font-size: 14px;
   @include breakpoint(sm) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -247,7 +246,7 @@
 }
 
 .slot_afterparty_time {
-  font-size: 22px;
+  font-size: 20px;
   display: flex;
   @include font(mono);
   margin: 0;
@@ -262,7 +261,7 @@
 
 .slot_title,
 .slot_time {
-  font-size: 22px;
+  font-size: 20px;
   display: block;
   @include font(mono);
   margin: 0;
