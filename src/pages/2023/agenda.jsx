@@ -9,7 +9,7 @@ import Header from "@components/layout/Header";
 import Section from "@components/Section";
 // import Note from "@components/Note";
 // import Button from "@components/Button";
-import { PurchaseTicket } from "@components/CTA";
+// import { PurchaseTicket } from "@components/CTA";
 
 import { day0, day1, day2 } from "@data/2023/agenda";
 import { getEdition } from "@utils";
@@ -97,13 +97,13 @@ const Agenda = ({ data }) => {
           <ConferenceDay data={day2} />
         </section>
 
-        <div style={{ textAlign: "center" }}>
+        {/* <div style={{ textAlign: "center" }}>
           <br />
           <br />
           <br />
           <p  className={styles.cta}>Don't miss out to see these great talks</p>
           <PurchaseTicket label="Grab your conference ticket" white />
-        </div>
+        </div> */}
 
         <p className={styles.note}>
           <strong>NOTE:</strong> minor changes to the agenda might occur

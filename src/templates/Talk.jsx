@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import Section from "@components/Section";
 import Content from "@components/Content";
+import Button from "@components/Button";
 import { PurchaseTicket } from "@components/CTA";
 
 import SpeakerInfo from "./SpeakerInfo";
@@ -75,9 +77,14 @@ const TalkPage = (props) => {
     return (
       <>
         <br />
-        {talk && <h2>Want to see {getName(speakers)} talk?</h2>}
         <br />
-        <PurchaseTicket white style={{ margin: 0 }} />
+        <Link to="/agenda">
+          <Button white>View the Agenda</Button>
+        </Link>
+
+        {/* {talk && <h2>Want to see {getName(speakers)} talk?</h2>}
+        <br />
+        <PurchaseTicket white style={{ margin: 0 }} /> */}
       </>
     );
   }

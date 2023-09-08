@@ -18,7 +18,7 @@ const IndexUpdates = () => {
           <Link to="/2023/tickets/" className="updates-link">
             <strong className="update-title mono">Tickets</strong>
             <p className="update-content light-faded">
-              <strong>Late Bird tickets</strong> are now available! Better late than never.
+              We are <strong>SOLD OUT</strong>!
             </p>
             <div className="arrow">
               <Arrow color="primary" />
@@ -30,7 +30,7 @@ const IndexUpdates = () => {
           <Link to="/2023/agenda/" className="updates-link">
             <strong className="update-title mono">Agenda</strong>
             <p className="update-content light-faded">
-              The conference agenda is up. Check it out to plan your event accordingly.
+              The conference agenda is up.
             </p>
             <div className="arrow">
               <Arrow color="primary" />
@@ -42,7 +42,7 @@ const IndexUpdates = () => {
           <Link to="/2023/speakers/" className="updates-link">
             <strong className="update-title mono">Speakers</strong>
             <p className="update-content light-faded">
-              Our lineup is complete. Meet our 2023 speakers.
+              Our lineup is complete.
             </p>
             <div className="arrow">
               <Arrow color="primary" />

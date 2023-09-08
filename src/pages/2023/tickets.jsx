@@ -27,12 +27,12 @@ const Tickets = () => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.tickets_image}`}>Tickets</h1>
         <div className="subtitle2023">
-          Better late than never. Late Bird tickets are still available.
+          No more tickets left, we are SOLD OUT!
         </div>
 
-        <div className={styles.cta}>
+        {/* <div className={styles.cta}>
           <PurchaseTicket />
-        </div>
+        </div> */}
 
         {/* <a href="#subscribe" className={styles.cta}>
           <Button>Subscribe for Updates</Button>
@@ -41,12 +41,13 @@ const Tickets = () => {
 
       <Section light>
         <Content centered>
-          <Note>
+          {/* <Note>
             <p>
               Grab your ticket and get ready for insightful talks, exciting
               networking and a good time all-around.
             </p>
-          </Note>
+          </Note> */}
+
           <section>
             <h2>Rollout plan</h2>
 
@@ -80,7 +81,7 @@ const Tickets = () => {
                 </strong>
               </li>
 
-              <li className={styles.tickets_rollout__late}>
+              <li className={styles.tickets_rollout__inactive}>
                 <span className={styles.ticket_price}>&euro;260</span>
                 <div className={styles.ticket_content}>
                   <strong className={styles.ticket_name}>Late Bird</strong>
@@ -88,14 +89,14 @@ const Tickets = () => {
                   <span className="light-faded">(21:00 UTC)</span>{" "}
                 </div>
                 <strong className={styles.ticket_note}>
-                <OutboundLink
-                    className={styles.ticket_cta}
-                    href={TICKETS_URL}
-                    target="_blank"
-                  >
-                    ON SALE
-                  </OutboundLink>
-
+                  SOLD OUT
+                  {/* <OutboundLink
+                      className={styles.ticket_cta}
+                      href={TICKETS_URL}
+                      target="_blank"
+                    >
+                      ON SALE
+                  </OutboundLink> */}
                 </strong>
               </li>
 
@@ -183,10 +184,11 @@ const Tickets = () => {
               </span>
             </p>
           </section> */}
+          {/* <br />
           <br />
-          <br />
-          <PurchaseTicket white />
-          <section>
+          <PurchaseTicket white /> */}
+
+          {/* <section>
             <h2>Bulk Tickets for Companies</h2>
 
             <p>Change happens when like-minded people get together.</p>
@@ -201,7 +203,8 @@ const Tickets = () => {
             </p>
 
             <p>We’ll be prompt to answer!</p>
-          </section>
+          </section> */}
+
           <section>
             <h2>Ticket Reassignment</h2>
 
@@ -255,6 +258,7 @@ const Tickets = () => {
               </li>
             </ul>
           </section>
+
           {/* <section id="subscribe">
             <br />
             <br />
@@ -262,9 +266,10 @@ const Tickets = () => {
             <p>Subscribe to find out when Tickets go on sale:</p>
             <Subscribe light />
           </section> */}
+
+          {/* <br />
           <br />
-          <br />
-          <PurchaseTicket white />
+          <PurchaseTicket white /> */}
         </Content>
       </Section>
     </Layout>
