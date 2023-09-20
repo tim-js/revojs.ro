@@ -149,7 +149,7 @@ const SpeakerInfo = () => {
                 @anca_spatariu
               </a>
               <h3>Andrei Pfeiffer</h3>
-              <p>Reach to him for anything else.</p>
+              <p>Reach out to him for anything else.</p>
               <strong>Phone</strong>: +40 720 340 104
               <br />
               <strong>X (former Twitter)</strong>:{" "}
@@ -194,7 +194,7 @@ const SpeakerInfo = () => {
 
               <h3>The hotel</h3>
               <p>
-                During the conference, you will stay at{" "}
+                During the conference, most of you will stay at{" "}
                 <a
                   href="https://goo.gl/maps/jSkmaqWhodQ3sF9V8"
                   target="_blank"
@@ -202,9 +202,8 @@ const SpeakerInfo = () => {
                 >
                   <strong>Hotel Timișoara</strong>
                 </a>
-                , situated in the center of the town. It is within walking
-                distance of all the places you might want to visit during your
-                stay.
+                , situated in the city center. It is within walking distance of
+                all the places you might want to visit during your stay.
               </p>
               <p>
                 The <strong>hotel address</strong> is: Strada Mărășești 1-3,
