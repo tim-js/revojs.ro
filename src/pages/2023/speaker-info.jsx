@@ -76,7 +76,8 @@ const SpeakerInfo = () => {
                 <li>
                   <strong>8:00 - Conference Registration and Coffee</strong>
                   <br />
-                  Please arrive at the venue at least 2 hours before your talk
+                  We kindly ask you to arrive at the venue at least 2 hours
+                  before your talk
                 </li>
               </ul>
               <h3>Fri, 6th of October</h3>
@@ -84,7 +85,8 @@ const SpeakerInfo = () => {
                 <li>
                   <strong>8:30 - Conference Registration and Coffee</strong>
                   <br />
-                  Please arrive at the venue at least 2 hours before your talk
+                  We kindly ask you to arrive at the venue at least 2 hours
+                  before your talk
                 </li>
                 <li>
                   <strong>19:00 - After Party</strong> at{" "}
@@ -116,29 +118,38 @@ const SpeakerInfo = () => {
             <section>
               <h2 id="contact">Contact information</h2>
               <p>
-                <strong>Andrea Sisak</strong> is your contact during your stay
-                in Timisoara. If you have any questions or problems, please talk
-                to her.
+                <strong>Andrea Sisak</strong> is your primary contact during
+                your stay in Timisoara. If you have any questions or problems,
+                please talk to her.
               </p>
               <p>
-                You can also contact <strong>Lucian</strong> or{" "}
+                You can also contact <strong>Anca</strong> or{" "}
                 <strong>Andrei</strong> at any time during your stay.
               </p>
               <h3>Andrea Sisak</h3>
+              <p>
+                She takes care of travel, accommodation, and your stay in
+                Timisoara.
+              </p>
               <strong>Phone</strong>: +40 741 063 012
               <br />
-              <h3>Lucian Pacurar</h3>
-              <strong>Phone</strong>: +40 726 356 446
+              <h3>Anca Spatariu</h3>
+              <p>
+                You can reach out to her regarding any questions about your
+                talk, or the venue.
+              </p>
+              <strong>Phone</strong>: +40 723 752 126
               <br />
               <strong>X (former Twitter)</strong>:{" "}
               <a
-                href="https://twitter.com/lucianpacurar"
+                href="https://twitter.com/anca_spatariu"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                @lucianpacurar
+                @anca_spatariu
               </a>
               <h3>Andrei Pfeiffer</h3>
+              <p>Reach to him for anything else.</p>
               <strong>Phone</strong>: +40 720 340 104
               <br />
               <strong>X (former Twitter)</strong>:{" "}
@@ -162,6 +173,7 @@ const SpeakerInfo = () => {
                 >
                   revoconference.slack.com
                 </a>
+                .
               </p>
             </section>
 
@@ -253,8 +265,9 @@ const SpeakerInfo = () => {
               </p>
               <h3>AV / Technical</h3>
               <p>
-                The venue is equipped with a Full HD 1080P projector, having a
-                1920x1080 resolution.
+                The venue is equipped with a LED screen about 7.5/4m (24.5/13ft)
+                and your slides will be displayed on a portion of the screen at
+                1920x1080px.
               </p>
               <p>
                 On stage there will be an HDMI connection. We'll provide mini-DP
@@ -278,8 +291,9 @@ const SpeakerInfo = () => {
             <section>
               <h2 id="talk">Your Talk</h2>
               <p>
-                Be sure to make yourself familiar with the conference schedule
-                and the time of your talk.
+                Be sure to make yourself familiar with the{" "}
+                <a href="/2023/agenda/">conference schedule</a> and the time of
+                your talk.
               </p>
               <p>
                 <strong>
@@ -288,9 +302,9 @@ const SpeakerInfo = () => {
                 </strong>
               </p>
               <p>
-                However, if that's not possible, please be at the venue{" "}
-                <strong>at least 2 hours before</strong> it is your turn to
-                enter the stage.
+                However, if that's not possible, we kindly ask you to be at the
+                venue <strong>at least 2 hours before</strong> it is your turn
+                to enter the stage.
               </p>
               <p>
                 The talks will be presented in pairs and there will be a break
@@ -301,6 +315,7 @@ const SpeakerInfo = () => {
               <p>
                 <strong>
                   There will be visually impaired people among the participants
+                  and speakers
                 </strong>
                 , so we are striving to make the content of the conference
                 accessible to everybody.
@@ -317,10 +332,7 @@ const SpeakerInfo = () => {
                 .
               </p>
               <h3>Live captions</h3>
-              <p>
-                There will be live captions for all talks, which will later be
-                used for video captions on the recorded videos.{" "}
-              </p>
+              <p>There will be live captions for all talks.</p>
               <p>
                 In order for this to go as planned, please provide us with as
                 much insight as possible about your presentation, before the
@@ -431,8 +443,8 @@ const SpeakerInfo = () => {
                 , about 100km away from Timisoara.
               </p>
               <p>
-                We’ll taste several traditional Romanian dishes. Both
-                non-vegetarian and vegetarian options are available.
+                We’ll taste several traditional Romanian dishes. Vegetarian and
+                vegan options are also included.
               </p>
               <p>
                 A bus will pick you up at the hotel, we’ll spend around 3-4
@@ -519,60 +531,6 @@ const SpeakerInfo = () => {
                   permanent exhibitions, like Corneliu Baba, Romanian and
                   European Art exhibitions.
                 </li>
-                <li>
-                  <strong>The three synagogues</strong>, with their specific
-                  architecture, are well worth a visit.{" "}
-                  <a
-                    href="https://goo.gl/maps/iRUx9WFMCAe5CvEGA"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    The Stronghold Synagogue
-                  </a>{" "}
-                  was built around 1863-1865 in Moorish style.{" "}
-                  <a
-                    href="https://goo.gl/maps/8JqbuZLrmag5bQi19"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Iosefin Synagogue
-                  </a>
-                  , also called the Orthodox Temple, is located in Iosefin
-                  neighborhood. The last one is the{" "}
-                  <a
-                    href="https://goo.gl/maps/w6Dx178qvggKUnCr8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Fabric New Synagogue
-                  </a>
-                  , which is a Neologue synagogue in the Fabric neighborhood.
-                </li>
-                <li>
-                  <strong>Trip to Herneacova.</strong> If you want to make a
-                  trip outside the city,{" "}
-                  <a
-                    href="https://www.herneacova.ro/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Herneacova
-                  </a>{" "}
-                  is a popular destination. There is a restaurant, an adventure
-                  parc and, if you're up for it, you can also do horse riding.
-                </li>
-                <li>
-                  <strong>Trip to Bazoș.</strong> If you prefer a quiet walk
-                  outside the city,{" "}
-                  <a
-                    href="https://goo.gl/maps/EePt3SQGbab3aqAx8"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Bazoș Dendrological park
-                  </a>{" "}
-                  is a great destination. There's also a restaurant nearby.
-                </li>
               </ul>
 
               <h3 className="dark">Specialty Coffee</h3>
@@ -598,16 +556,6 @@ const SpeakerInfo = () => {
                   </a>{" "}
                   offers 2 types of coffee to choose from. Great place for a
                   quick bite, also.
-                </li>
-                <li>
-                  <a
-                    href="https://g.page/Typica?share"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <strong>Typica</strong>
-                  </a>{" "}
-                  is situated in the Union Square.
                 </li>
               </ul>
 
@@ -687,13 +635,13 @@ const SpeakerInfo = () => {
               </li>
               <li>
                 <a
-                  href="https://goo.gl/maps/ZUV5Cv5KyedUUFq2A"
+                  href="https://maps.app.goo.gl/uCJhPwwbor7pL66WA"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <strong>August Pasta Bar</strong>
+                  <strong>Locanda Del Corso</strong>
                 </a>{" "}
-                is the go-to place for pasta lovers.
+                is the go-to place for italian cuisine.
               </li>
             </ul>
 
