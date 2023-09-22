@@ -18,8 +18,8 @@ const Venue = () => {
       <Header type="main" centered>
         <h1 className={`title2023 ${styles.venueImage}`}>Venue</h1>
         <div className="subtitle2023">
-          revo.js will revolve at <br />
-          Timișoara Convention Center
+          revo.js 2023 will take place at the <br />
+          Iulius Congress Hall
         </div>
       </Header>
 
@@ -28,16 +28,23 @@ const Venue = () => {
           <section id="venue-details">
             <h2>Location</h2>
             <p>
-              <strong>Timișoara Convention Center</strong> is located in the
-              heart of the city's center.
+              <a
+                href="https://g.page/Iulius_Congress_Hall?share"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Iulius Congress Hall</strong>
+              </a>{" "}
+              situated in the heart of Timisoara’s modern side, inside{" "}
+              <strong>Iulius Town</strong>.
             </p>
             <p>
-              <strong>Venue address</strong>: Strada Mărășești 1-3, Timișoara
-              300086
+              <strong>Venue address</strong>: The venue address is: Str.
+              Aristide Demetriade nr. 1, Timișoara 300088.
             </p>
             <p>
               <OutboundLink
-                href="https://goo.gl/maps/Htx5Diy42UMDwUU29"
+                href="https://maps.app.goo.gl/Q2car6UVAYCmXmvt8"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -49,9 +56,9 @@ const Venue = () => {
             <br />
             <br />
 
-            <Note>
+            {/* <Note>
               <p>More details coming soon...</p>
-            </Note>
+            </Note> */}
           </section>
 
           {/*
