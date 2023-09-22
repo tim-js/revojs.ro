@@ -17,7 +17,7 @@ const SpeakerInfo = () => {
         <Content centered>
           <p>
             This page contains all the important information you need as a
-            speaker for revo.js 2023:
+            speaker at revo.js 2023:
             <ul>
               <li>
                 <a href="#schedule">Schedule Overview</a>
@@ -102,7 +102,7 @@ const SpeakerInfo = () => {
               <h3>Sat, 7th of October</h3>
               <ul className="bullet">
                 <li>
-                  <strong>11:00 - Saturday Trip</strong> to{" "}
+                  <strong>11:00 - Saturday Trip</strong> to a nearby village for{" "}
                   <a
                     href="https://maps.app.goo.gl/5p4HGsYq7FXviMF7A"
                     target="_blank"
@@ -223,7 +223,7 @@ const SpeakerInfo = () => {
               <h2 id="dinner">Speakers’ dinner</h2>
               <p>
                 <strong>Wednesday, 4nd of October</strong>, at{" "}
-                <strong>19:00</strong>, there will be a speakers’ dinner at{" "}
+                <strong>19:00</strong>, we invite you to a speakers’ dinner at{" "}
                 <a
                   href="https://goo.gl/maps/qUg2xCn4Vtkt2R9A6"
                   target="_blank"
@@ -231,7 +231,7 @@ const SpeakerInfo = () => {
                 >
                   PASO Local Cuisine
                 </a>
-                , 8 minutes away from your hotel.
+                , an 8-minute walk from your hotel.
               </p>
 
               <p>
@@ -251,8 +251,8 @@ const SpeakerInfo = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <strong>Iulius Congress Hall</strong>{" "}
-                </a>
+                  <strong>Iulius Congress Hall</strong>
+                </a>{" "}
                 situated in the heart of Timisoara’s modern side, inside{" "}
                 <strong>Iulius Town</strong>.
               </p>
@@ -260,7 +260,7 @@ const SpeakerInfo = () => {
                 <a href="/2023/venue/">The venue</a> address is: Str. Aristide
                 Demetriade nr. 1, Timișoara 300088.
                 <br />
-                It's about 22-minute walk from the hotel.
+                It's a 22-minute walk from the hotel.
               </p>
               <h3>AV / Technical</h3>
               <p>
@@ -281,9 +281,9 @@ const SpeakerInfo = () => {
               <h3>WIFI</h3>
               <p>
                 The venue has WIFI, but you should prepare your talk and demos
-                as if there is no Internet connection available, as it might not
-                function properly due to the large number of people who will use
-                it.
+                as if there was no Internet connection available, as it might
+                not function properly due to the large number of people who will
+                use it.
               </p>
             </section>
 
@@ -306,9 +306,10 @@ const SpeakerInfo = () => {
                 to enter the stage.
               </p>
               <p>
-                The talks will be presented in pairs and there will be a break
-                before each pair. During that break, we will need to make sure
-                that everything related to your presentation works as expected.
+                Each presentation session will contain two talks, and there will
+                be a break before each session. In the break prior to your talk,
+                we’ll need to ensure everything related to your presentation
+                works as expected.
               </p>
               <h3>Content accessibility</h3>
               <p>
@@ -386,7 +387,8 @@ const SpeakerInfo = () => {
                   YouTube channel
                 </a>{" "}
                 as fast as possible after the conference. If you don’t want your
-                talk to be recorded and published, please let us know up front.
+                talk to be recorded and published, please let us know in
+                advance.
               </p>
               <p>
                 All videos will be published under a{" "}
@@ -455,10 +457,10 @@ const SpeakerInfo = () => {
             <section>
               <h2 id="timisoara">Around Timișoara</h2>
               <p>
-                We've put together a list of interesting places that you could
-                and should visit during your stay in Timișoara. This year,
-                Timișoara is an European Capital of Culture, so there are
-                several events linked to this.
+                We've put together a list of interesting places that you can
+                visit during your stay in Timișoara. This year, Timișoara is an
+                European Capital of Culture, so there are several events linked
+                to this.
               </p>
 
               <h3 className="dark">Events</h3>
@@ -542,8 +544,8 @@ const SpeakerInfo = () => {
                   >
                     <strong>Doppio</strong>
                   </a>{" "}
-                  offers different coffee almost everyday. It's only a few steps
-                  away from your hotel.
+                  offers different types of specialty coffee. It's only a few
+                  steps away from your hotel.
                 </li>
                 <li>
                   <a
