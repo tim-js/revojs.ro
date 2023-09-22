@@ -8,9 +8,9 @@ import Section from "@components/Section";
 
 const SpeakerInfo = () => {
   return (
-    <Layout title="revo.js Speaker Info 2023">
+    <Layout title="revo.js Speaker Guide 2023">
       <Header centered type="secondary">
-        <h1>Speaker Info</h1>
+        <h1>Speaker Guide</h1>
       </Header>
 
       <Section light>
@@ -99,7 +99,7 @@ const SpeakerInfo = () => {
                   </a>
                 </li>
               </ul>
-              <h3>Sat, 5th of October</h3>
+              <h3>Sat, 7th of October</h3>
               <ul className="bullet">
                 <li>
                   <strong>11:00 - Saturday Trip</strong> to{" "}
