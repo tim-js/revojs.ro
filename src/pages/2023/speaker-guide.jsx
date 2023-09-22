@@ -257,8 +257,8 @@ const SpeakerInfo = () => {
                 <strong>Iulius Town</strong>.
               </p>
               <p>
-                The venue address is: Str. Aristide Demetriade nr. 1, Timișoara
-                300088.
+                <a href="/2023/venue/">The venue</a> address is: Str. Aristide
+                Demetriade nr. 1, Timișoara 300088.
                 <br />
                 It's about 22-minute walk from the hotel.
               </p>
