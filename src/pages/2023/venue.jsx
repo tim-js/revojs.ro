@@ -6,7 +6,7 @@ import Header from "@components/layout/Header";
 import Content from "@components/Content";
 import Section from "@components/Section";
 import Button from "@components/Button";
-import Note from "@components/Note";
+// import Note from "@components/Note";
 
 import * as styles from "./venue.module.scss";
 
