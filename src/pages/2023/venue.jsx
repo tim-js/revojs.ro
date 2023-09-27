@@ -44,7 +44,7 @@ const Venue = () => {
             </p>
             <p>
               <OutboundLink
-                href="https://maps.app.goo.gl/Q2car6UVAYCmXmvt8"
+                href="https://g.page/Iulius_Congress_Hall?share"
                 target="_blank"
                 rel="noopener noreferrer"
               >
