@@ -221,6 +221,7 @@ const AgendaPage = (props) => {
         edges {
           node {
             speakerId
+            slug
             firstname
             lastname
             image
@@ -301,7 +302,7 @@ function SpeakerInfo({ speaker, multiple = false }) {
   return (
     <React.Fragment key={speaker.speakerId}>
       {multiple > 0 && " & "}
-      <Link to={`/${edition}/speakers/${speaker.speakerId}`}>
+      <Link to={`/${edition}/speakers/${speaker.slug}`}>
         {`${speaker.firstname} ${speaker.lastname}`}
       </Link>
     </React.Fragment>
@@ -314,7 +315,7 @@ function Slot({ slot }) {
     const speaker = slot.speakers[0];
 
     return (
-      <Link to={`/${edition}/speakers/${speaker.speakerId}`}>
+      <Link to={`/${edition}/speakers/${speaker.slug}`}>
         <div className={styles.slot_content}>
           <SpeakerPhoto speaker={speaker} />
           <div>
