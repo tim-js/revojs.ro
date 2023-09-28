@@ -10,7 +10,7 @@ import Button from "@components/Button";
 
 import * as styles from "./venue.module.scss";
 
-// import map from "@assets/venue_location@2x.png";
+import map from "@assets/revojs_where-to.png";
 
 const Venue = () => {
   return (
@@ -55,15 +55,27 @@ const Venue = () => {
             <br />
             <br />
             <br />
+            <br />
 
-            {/* <Note>
-              <p>More details coming soon...</p>
-            </Note> */}
+            <img
+              src={map}
+              alt="Iulius Congress Hall location map"
+              width="100%"
+            />
           </section>
 
-          {/*
           <section>
             <h2>Getting there</h2>
+
+            <section>
+              <h3>Access</h3>
+              <p>
+                When you arrive at Tucano Coffee within Iulius Town, you have
+                two choices. If you are facing the coffee shop, you can take the
+                escalators on your right to reach the venue. Alternatively, on
+                your left, there is an elevator that will also take you there.
+              </p>
+            </section>
 
             <section>
               <h3>By foot</h3>
@@ -114,11 +126,11 @@ const Venue = () => {
               </p>
               <p>
                 Bus tickets can be purchased from the{" "}
-                <strong>Domestic Flights Terminal</strong> and they cost 2.5 RON
-                (0.5 EUR) / trip.
+                <strong>Domestic Flights Terminal</strong> and they cost 4 RON
+                (0.8 EUR) / trip.
               </p>
               <hr />
-              <p>You can also take a Taxi. It costs around 45 RON (10 EUR).</p>
+              <p>You can also take a Taxi. It costs around 65 RON (13 EUR).</p>
               <p>
                 <strong>IMPORTANT</strong>: use the cars that have a company
                 name displayed: Tudo, Radio, Pro, Autogenn, Index, Fan, etc.
@@ -127,7 +139,6 @@ const Venue = () => {
               <p>Uber and Bolt are also available in Timisoara.</p>
             </section>
           </section>
-          */}
         </Content>
       </Section>
     </Layout>
