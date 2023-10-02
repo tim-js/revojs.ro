@@ -12,7 +12,7 @@
     "web": "https://tink.uk",
     "title": "Director",
     "company": "TetraLogical",
-    "talkId": "bag-of-spanners"
+    "talks": [{ "talkId": "bag-of-spanners" }]
   },
   {
     "edition": 2023,
@@ -27,7 +27,7 @@
     "web": "https://trentwillis.com",
     "title": "Staff Software Engineer",
     "company": "Netflix",
-    "talkId": "testing-strategy"
+    "talks": [{ "talkId": "testing-strategy" }]
   },
   {
     "edition": 2023,
@@ -41,7 +41,7 @@
     "mastodon": "",
     "title": "Developer Relations Engineer",
     "company": "Google",
-    "talkId": "talk2023-martin"
+    "talks": [{ "talkId": "talk2023-martin" }]
   },
   {
     "edition": 2023,
@@ -55,7 +55,7 @@
     "mastodon": "",
     "title": "Principal Engineer and Web Platform Architect",
     "company": "Intel",
-    "talkId": "web-beyond-today"
+    "talks": [{ "talkId": "web-beyond-today" }]
   },
   {
     "edition": 2023,
@@ -69,7 +69,7 @@
     "mastodon": "",
     "title": "Software Engineer",
     "company": "Netflix",
-    "talkId": "async-debugging"
+    "talks": [{ "talkId": "async-debugging" }]
   },
   {
     "edition": 2023,
@@ -83,7 +83,7 @@
     "mastodon": "",
     "title": "Lead UI Developer",
     "company": "Field Intelligence",
-    "talkId": "performance-tooling"
+    "talks": [{ "talkId": "performance-tooling" }]
   },
   {
     "edition": 2023,
@@ -97,7 +97,7 @@
     "mastodon": "",
     "title": "Development Lead",
     "company": "RxJS",
-    "talkId": "tug-of-war"
+    "talks": [{ "talkId": "tug-of-war" }]
   },
   {
     "edition": 2023,
@@ -111,7 +111,7 @@
     "mastodon": "",
     "title": "TypeScript Educator",
     "company": "",
-    "talkId": "no-generic"
+    "talks": [{ "talkId": "no-generic" }]
   },
   {
     "edition": 2023,
@@ -125,7 +125,7 @@
     "mastodon": "https://front-end.social/@rachelandrew",
     "title": "Content Lead for Chrome Web Developer Relations",
     "company": "Google",
-    "talkId": "css-features-2023"
+    "talks": [{ "talkId": "css-features-2023" }]
   },
   {
     "edition": 2023,
@@ -139,7 +139,7 @@
     "mastodon": "",
     "title": "MC and Host",
     "company": "",
-    "talkId": ""
+    "talks": []
   },
   {
     "edition": 2023,
@@ -152,7 +152,7 @@
     "twitter": "AtilaFassina",
     "title": "DevRel Engineer & Educator",
     "company": "",
-    "talkId": "rendering-patterns"
+    "talks": [{ "talkId": "rendering-patterns" }]
   },
   {
     "edition": 2023,
@@ -165,7 +165,7 @@
     "twitter": "erickwendel_",
     "title": "Node.js core team member",
     "company": "",
-    "talkId": "node-testing-2023"
+    "talks": [{ "talkId": "node-testing-2023" }]
   },
   {
     "edition": 2023,
@@ -178,7 +178,7 @@
     "twitter": "alexnmoldovan",
     "title": "Product Engineer",
     "company": "CodeSandbox",
-    "talkId": "ethical-choice"
+    "talks": [{ "talkId": "ethical-choice" }]
   },
   {
     "edition": 2023,
@@ -191,7 +191,7 @@
     "twitter": "frenzyritz13",
     "title": "Developer Advocate",
     "company": "Dyte",
-    "talkId": "generative-art"
+    "talks": [{ "talkId": "generative-art" }]
   },
   {
     "edition": 2023,
@@ -204,7 +204,7 @@
     "twitter": "",
     "title": "Open Source Developer",
     "company": "",
-    "talkId": "type-safe-css"
+    "talks": [{ "talkId": "type-safe-css" }, { "talkId": "not-linting-enough" }]
   },
   {
     "edition": 2023,
@@ -217,7 +217,7 @@
     "twitter": "",
     "title": "Staff Software Engineer",
     "company": "Shopify",
-    "talkId": "security-by-design"
+    "talks": [{ "talkId": "security-by-design" }]
   },
   {
     "edition": 2023,
@@ -230,7 +230,7 @@
     "twitter": "cipriancaba",
     "title": "VP of Engineering",
     "company": "7879",
-    "talkId": "apis-requiem"
+    "talks": [{ "talkId": "apis-requiem" }]
   },
   {
     "edition": 2019,
@@ -243,7 +243,7 @@
     "twitter": "martin_hotell",
     "title": "Principal Engineer",
     "company": "Productboard",
-    "talkId": "web-components"
+    "talks": [{ "talkId": "web-components" }]
   },
   {
     "edition": 2019,
@@ -256,7 +256,7 @@
     "twitter": "boyanio",
     "title": "Software Architect and Developer",
     "company": "Fadata",
-    "talkId": "web-assembly"
+    "talks": [{ "talkId": "web-assembly" }]
   },
   {
     "edition": 2019,
@@ -269,7 +269,7 @@
     "twitter": "bahmutov",
     "title": "VP of Engineering",
     "company": "Cypress.io",
-    "talkId": "testing"
+    "talks": [{ "talkId": "testing" }]
   },
   {
     "edition": 2019,
@@ -282,7 +282,7 @@
     "twitter": "nicolaraluk",
     "title": "Product Engineer",
     "company": "Esri",
-    "talkId": "cartography"
+    "talks": [{ "talkId": "cartography" }]
   },
   {
     "edition": 2019,
@@ -295,7 +295,7 @@
     "twitter": "sebawita",
     "title": "Senior Developer Advocate",
     "company": "Progress",
-    "talkId": "chat-bots"
+    "talks": [{ "talkId": "chat-bots" }]
   },
   {
     "edition": 2019,
@@ -308,7 +308,7 @@
     "twitter": "KKoschland",
     "title": "Engineer",
     "company": "The Financial Times",
-    "talkId": "load-testing"
+    "talks": [{ "talkId": "load-testing" }]
   },
   {
     "edition": 2019,
@@ -321,7 +321,7 @@
     "twitter": "auchenberg",
     "title": "Developer Experience",
     "company": "Stripe",
-    "talkId": "devtools"
+    "talks": [{ "talkId": "devtools" }]
   },
   {
     "edition": 2019,
@@ -334,7 +334,7 @@
     "twitter": "BenedekGagyi",
     "title": "Software Engineer",
     "company": "Cloudera",
-    "talkId": "xxss"
+    "talks": [{ "talkId": "xxss" }]
   },
   {
     "edition": 2019,
@@ -347,7 +347,7 @@
     "twitter": "expensivestevie",
     "title": "Frontend Engineering Lead",
     "company": "BCaster",
-    "talkId": "oss"
+    "talks": [{ "talkId": "oss" }]
   },
   {
     "edition": 2019,
@@ -360,7 +360,7 @@
     "twitter": "TitianCernicova",
     "title": "Freelance Software Developer",
     "company": "",
-    "talkId": "ts"
+    "talks": [{ "talkId": "ts" }]
   },
   {
     "edition": 2019,
@@ -373,7 +373,7 @@
     "twitter": "alexnmoldovan",
     "title": "Open Source Engineer",
     "company": "teleportHQ",
-    "talkId": "performance"
+    "talks": [{ "talkId": "performance" }]
   },
   {
     "edition": 2019,
@@ -386,7 +386,7 @@
     "twitter": "degrammer",
     "title": "Software Engineer",
     "company": "Auth0",
-    "talkId": "auth"
+    "talks": [{ "talkId": "auth" }]
   },
   {
     "edition": 2019,
@@ -399,7 +399,7 @@
     "twitter": "likeOMGitsFEDAY",
     "title": "JavaScript Developer",
     "company": "Bitovi",
-    "talkId": "pa11y"
+    "talks": [{ "talkId": "pa11y" }]
   },
   {
     "edition": 2019,
@@ -412,7 +412,7 @@
     "twitter": "p01",
     "title": "Senior Software Development Engineer",
     "company": "Microsoft",
-    "talkId": "e2e"
+    "talks": [{ "talkId": "e2e" }]
   },
   {
     "edition": 2019,
@@ -425,7 +425,7 @@
     "twitter": "PatkosCsaba",
     "title": "Technical Team Lead",
     "company": "Syneto",
-    "talkId": "clean-architecture"
+    "talks": [{ "talkId": "clean-architecture" }]
   },
   {
     "edition": 2019,
@@ -438,7 +438,7 @@
     "twitter": "kwintenp",
     "title": "Co-founder and Mentor",
     "company": "Strongbrew",
-    "talkId": "angular"
+    "talks": [{ "talkId": "angular" }]
   },
   {
     "edition": 2019,
@@ -451,7 +451,7 @@
     "twitter": "elmd_",
     "title": "Software Engineer",
     "company": "StackBlitz",
-    "talkId": "angular"
+    "talks": [{ "talkId": "angular" }]
   },
   {
     "edition": 2019,
@@ -464,6 +464,6 @@
     "twitter": "DianaMacau",
     "title": "MC and Host",
     "company": "",
-    "talkId": ""
+    "talks": []
   }
 ]

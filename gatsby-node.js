@@ -29,8 +29,10 @@ exports.createPages = ({ graphql, actions }) => {
               speakerId
               slug
               image
-              talkId
               edition
+              talks {
+                talkId
+              }
             }
           }
         }
@@ -76,6 +78,7 @@ exports.createPages = ({ graphql, actions }) => {
       // Gatsby uses Redux to manage its internal state.
       // Plugins and sites can use functions like "createPage"
       // to interact with Gatsby.
+
       createPage({
         // Each page is required to have a `path` as well
         // as a template component. The `context` is
@@ -88,7 +91,7 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           id: edge.node.speakerId,
           image: edge.node.image,
-          talkId: edge.node.talkId,
+          talks: edge.node.talks.map((talk) => talk.talkId),
         },
       });
     });

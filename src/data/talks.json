@@ -273,6 +273,15 @@
     "recordingImage": ""
   },
   {
+    "talkId": "not-linting-enough",
+    "talk": "You're Not Linting Enough!",
+    "abstract": "<p>TypeScript brought type safety into the forefront of modern web development, and along with ESLint, helped popularize development-time 'static analysis' checks for JavaScript(-like) projects. But the vast majority of software projects don't fully configure either tool to its maximum potential. I'm going to show you all the wonderful bugs, code smells, and general bad practices that can be detected automatically before your code gets run.</p>",
+    "speakers": [{ "speakerId": "josh-goldberg" }],
+    "edition": 2023,
+    "recordingUrl": "",
+    "recordingImage": ""
+  },
+  {
     "talkId": "security-by-design",
     "talk": "Security by(e) Design?",
     "abstract": "Application security and UX seem like two very distant fields, but they have a surprisingly large influence over one another. Through this talk we’ll rethink the intricate relationship between these two fields, highlighting how UX designers can unintentionally compromise security and the challenges security engineers face in maintaining a smooth UX. Moreover, we will explore the invaluable insights developers can glean from these challenges, making them better developers and empowering them to serve as bridges between these distinct worlds. Join us as we navigate this convergence of disciplines and unveil practical strategies to harmonise application security and UX, paving the way for enhanced digital experiences.",
