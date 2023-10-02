@@ -320,7 +320,10 @@ function Slot({ slot }) {
           <SpeakerPhoto speaker={speaker} />
           <div>
             <strong className={styles.slot_title}>{slot.title}</strong>
-            {`${speaker.firstname} ${speaker.lastname}`}
+            {`${speaker.firstname} ${speaker.lastname}`}{" "}
+            <span className={styles.slot_notes} s>
+              {slot.notes}
+            </span>
           </div>
         </div>
       </Link>
