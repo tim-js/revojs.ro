@@ -20,11 +20,6 @@ import * as styles from "./agenda.module.scss";
 const edition = getEdition();
 const ACTIVE_CLASS = styles.active;
 
-const allSpeakers = [...day1.talks, ...day2.talks]
-  .flatMap((talk) => talk.speakers)
-  .filter(Boolean)
-  .map((speaker) => speaker.speakerId);
-
 const Agenda = ({ data }) => {
   const { allTalksJson, allSpeakersJson, speakerImages } = data;
 
@@ -318,6 +313,12 @@ function Slot({ slot }) {
   if (slot.talkId) {
     // we have only 1 speaker / talk
     const speaker = slot.speakers[0];
+
+    const allSpeakers = [...day1.talks, ...day2.talks]
+      .flatMap((talk) => talk.speakers)
+      .filter(Boolean)
+      .map((speaker) => speaker.speakerId);
+
     const multipleTalks =
       allSpeakers.filter((id) => id === speaker.speakerId).length > 1;
 
