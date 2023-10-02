@@ -183,15 +183,6 @@
     "recordingImage": ""
   },
   {
-    "talkId": "bag-of-spanners",
-    "talk": "Bag of Spanners",
-    "abstract": "<p>In the UK we say that something is a 'bag of spanners' when it seems to work, but when you look inside it turns out to be badly implemented.</p><p>Implementing  accessible code can sometimes feel like a bag of spanners - something thrown together in ways that will probably give you (or someone using your product) trouble.</p><p>It doesn't have to be like this though.</p><p>With an understanding of how accessibility mechanics work in the browser, knowledge of how to provide or polyfill accessibility semantics, and a little bit of effort, you can turn your bag of spanners into a useful set of tools.</p>",
-    "speakers": [{ "speakerId": "leonie-watson" }],
-    "edition": 2023,
-    "recordingUrl": "",
-    "recordingImage": ""
-  },
-  {
     "talkId": "performance-tooling",
     "talk": "Demystifying Web Performance Tooling",
     "abstract": "<p>Web performance has been one of the most talked about web development topics in the recent years. Yet if you try to start your journey with the speed optimisations, you might find yourself in a pickle. With the tooling, you might feel overwhelmed—it looks complex and hard to comprehend. With the metrics: at first glance all of them seem similar, not to mention that they change over time and you cannot figure out which of them to take into account.</p><p>In this talk I we will take a look at the most useful web performance tooling. There will be no more secrets around the topic and you will be able to dive into the web speed optimisations with confidence. We will also briefly mention metrics and services to monitor your improvements over time.</p>",
