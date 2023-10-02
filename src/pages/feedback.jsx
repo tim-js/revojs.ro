@@ -19,7 +19,7 @@ const Feedback = () => {
           <br />
           <br />
           <a
-            href="https://revojs.typeform.com/to/viDEFY"
+            href="https://revojs.typeform.com/to/BF1i3Dd6"
             target="_blank"
             rel="noopener noreferrer"
           >
