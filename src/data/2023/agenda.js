@@ -51,7 +51,11 @@ export const day2 = {
     { time: "09:00", description: "Welcoming words" },
     // { time: "09:30", placeholder: "Morning session 1" },
     // { time: "09:30", talkId: "bag-of-spanners" },
-    { time: "09:30", talkId: "not-linting-enough" },
+    {
+      time: "09:30",
+      talkId: "not-linting-enough",
+      notes: "(replacing Léonie Watson's talk)",
+    },
     { time: "10:00", talkId: "ethical-choice" },
     { time: "10:30", description: "Coffee Break" },
     // { time: "11:15", placeholder: "Morning session 2" },
