@@ -12,7 +12,7 @@ const Speakers = ({ data }) => {
   const edition = getEdition();
   const speakers = allSpeakersJson.edges
     .map((e) => e.node)
-    .filter((speaker) => speaker.talkId)
+    .filter((speaker) => speaker.talks.length > 0)
     .filter((speaker) => speaker.edition === edition)
     .map((speaker) => {
       const speakerImage = getImage(speaker.image);
@@ -66,7 +66,9 @@ const IndexSpeakers = (props) => {
             image
             title
             company
-            talkId
+            talks {
+              talkId
+            }
             edition
           }
         }

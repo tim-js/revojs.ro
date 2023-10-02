@@ -23,8 +23,7 @@ const TalkDetails = (props) => {
   });
 
   const talkData = {
-    talk,
-    abstract,
+    slots: [{ talk, abstract }],
     speakers: speakersData,
   };
 

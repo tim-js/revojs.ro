@@ -18,9 +18,17 @@ function getName(speakers) {
 }
 
 const TalkPage = (props) => {
-  const { talk, abstract, speakers } = props.talk;
+  const { slots, speakers } = props.talk;
 
   const multiple = speakers.length > 1 ? " multiple" : "";
+
+  const getTalkTitle = (talk, index) => {
+    if (slots.length > 1) {
+      return `${index + 1}. ${talk}`;
+    }
+
+    return talk;
+  };
 
   return (
     <Section light className={`content-speaker ${multiple}`}>
@@ -37,19 +45,17 @@ const TalkPage = (props) => {
             );
           })}
         </figure>
-
         {speakers.map((speaker) => (
           <SpeakerInfo key={speaker.speakerId} speaker={speaker} />
         ))}
 
-        {talk && (
-          <>
+        {slots?.map((slot, index) => (
+          <div key={slot.talkId}>
             <br />
-            <h2>{talk}</h2>
-            <div dangerouslySetInnerHTML={{ __html: abstract }} />
-          </>
-        )}
-
+            <h2>{getTalkTitle(slot.talk, index)}</h2>
+            <div dangerouslySetInnerHTML={{ __html: slot.abstract }} />
+          </div>
+        ))}
         {speakers.map((speaker) => (
           <React.Fragment key={speaker.speakerId}>
             <h2>About {speaker.firstname}</h2>
@@ -63,7 +69,6 @@ const TalkPage = (props) => {
             )}
           </React.Fragment>
         ))}
-
         {renderCTA(speakers)}
       </Content>
     </Section>

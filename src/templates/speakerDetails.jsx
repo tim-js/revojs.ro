@@ -6,15 +6,20 @@ import Layout from "@components/Layout";
 import Talk from "./Talk";
 
 const SpeakerDetails = (props) => {
-  const { speakersJson, talksJson, file } = props.data;
+  const { speakersJson, allTalksJson, file } = props.data;
+  const { pageContext } = props;
 
   const speakerData = {
     ...speakersJson,
     image: file,
   };
 
+  const filteredTalks = allTalksJson.edges
+    .map((e) => e.node)
+    .filter((talk) => pageContext.talks.includes(talk.talkId));
+
   const talkData = {
-    ...talksJson,
+    slots: filteredTalks,
     speakers: [speakerData],
   };
 
@@ -36,7 +41,7 @@ const SpeakerDetails = (props) => {
 export default SpeakerDetails;
 
 export const pageQuery = graphql`
-  query ($id: String!, $image: String!, $talkId: String!) {
+  query ($id: String!, $image: String!) {
     speakersJson(speakerId: { eq: $id }) {
       speakerId
       firstname
@@ -48,11 +53,18 @@ export const pageQuery = graphql`
       company
       bio
       image
+      talks {
+        talkId
+      }
     }
-    talksJson(talkId: { eq: $talkId }) {
-      talkId
-      talk
-      abstract
+    allTalksJson(limit: 1000) {
+      edges {
+        node {
+          talkId
+          talk
+          abstract
+        }
+      }
     }
     file(relativePath: { eq: $image }) {
       base
