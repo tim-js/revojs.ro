@@ -16,9 +16,9 @@ export const main = [
   // {
   //   name: "Workshops",
   // },
-  // {
-  //   name: "Venue"
-  // },
+  {
+    name: "Venue",
+  },
   {
     name: "Supporters",
   },

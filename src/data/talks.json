@@ -202,7 +202,7 @@
   },
   {
     "talkId": "css-features-2023",
-    "talk": "New CSS Teatures You Can Use Today",
+    "talk": "New CSS Features You Can Use Today",
     "abstract": "New CSS features are landing on the web platform at a rate we've never seen before, but is it too early to start to use the latest shiny thing everyone is talking about? In this talk Rachel Andrew will share some of the new features that you can feel confident to use today, and those that are just around the corner. You'll also learn how browsers are working together to make it easier to understand what's available and working well cross-browser.",
     "speakers": [{ "speakerId": "rachel-andrew" }],
     "edition": 2023,
