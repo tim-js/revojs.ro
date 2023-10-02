@@ -52,7 +52,7 @@ const TalkPage = (props) => {
         {slots?.map((slot, index) => (
           <div key={slot.talkId}>
             <br />
-            <h2>{getTalkTitle(slot.talk, index)}</h2>
+            <h2 id={slot.talkId}>{getTalkTitle(slot.talk, index)}</h2>
             <div dangerouslySetInnerHTML={{ __html: slot.abstract }} />
           </div>
         ))}
