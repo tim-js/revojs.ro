@@ -265,7 +265,7 @@
   },
   {
     "talkId": "not-linting-enough",
-    "talk": "You're Not Linting Enough!",
+    "talk": "You Could Lint More",
     "abstract": "<p>TypeScript brought type safety into the forefront of modern web development, and along with ESLint, helped popularize development-time 'static analysis' checks for JavaScript(-like) projects. But the vast majority of software projects don't fully configure either tool to its maximum potential. I'm going to show you all the wonderful bugs, code smells, and general bad practices that can be detected automatically before your code gets run.</p>",
     "speakers": [{ "speakerId": "josh-goldberg" }],
     "edition": 2023,
