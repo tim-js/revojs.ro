@@ -131,6 +131,7 @@ const Organizers = ({ data }) => {
           <br />
           <br />
           <ul className="crew-list">
+            <li>Alex Iliescu</li>
             <li>Ami Totorean</li>
             <li>Bogdan Cubleșan</li>
             <li>Andrei Laza</li>
