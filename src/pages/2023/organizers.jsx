@@ -118,7 +118,7 @@ const Organizers = ({ data }) => {
           </ul>
         </section>
 
-        {/* <br />
+        <br />
 
         <section>
           <h2>
@@ -131,13 +131,13 @@ const Organizers = ({ data }) => {
           <br />
           <br />
           <ul className="crew-list">
-            <li>Milena Vlad</li>
-            <li>Mădălina Mohorîta</li>
+            <li>Ami Totorean</li>
             <li>Bogdan Cubleșan</li>
-            <li>Marius Cristea</li>
-            <li>Denis Troncotă</li>
+            <li>Andrei Laza</li>
+            <li>Athena Gândilă</li>
+            <li>Arnold Ișpan</li>
           </ul>
-        </section> */}
+        </section>
       </Section>
     </Layout>
   );
