@@ -125,14 +125,18 @@ const Organizers = ({ data }) => {
             <span style={{ fontSize: "2em" }}>Special Thanks</span>
           </h2>
           <p className="light-faded">
-            Last, but surely not least, let's give a huge hug to the extended
-            crew that helped during the event:
+            We have to give a special shoutout to the ones that helped us during the year:
           </p>
-          <br />
-          <br />
-          <ul className="crew-list">
+          <ul className={styles.crew_list}>
             <li>Alex Iliescu</li>
             <li>Ami Totorean</li>
+          </ul>
+          <br />
+          <p className="light-faded">
+            And last, but surely not least, a huge hug to the extended
+            crew that helped during the event:
+          </p>
+          <ul className={styles.crew_list}>
             <li>Bogdan Cubleșan</li>
             <li>Andrei Laza</li>
             <li>Athena Gândilă</li>
