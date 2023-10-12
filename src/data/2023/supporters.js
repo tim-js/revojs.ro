@@ -56,6 +56,11 @@ export const friends = [
     name: "Glorium Technologies",
     image: "partners/glorium_logo.svg",
     url: "https://gloriumtech.com/"
+  },
+  {
+    name: "DS Smith",
+    image: "partners/ds-smith_logo.svg",
+    url: "https://www.dssmith.com/"
   }
 ];
 
