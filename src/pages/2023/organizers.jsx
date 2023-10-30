@@ -118,26 +118,31 @@ const Organizers = ({ data }) => {
           </ul>
         </section>
 
-        {/* <br />
+        <br />
 
         <section>
           <h2>
             <span style={{ fontSize: "2em" }}>Special Thanks</span>
           </h2>
           <p className="light-faded">
-            Last, but surely not least, let's give a huge hug to the extended
+            We have to give a special shoutout to the ones that helped us during the year:
+          </p>
+          <ul className={styles.crew_list}>
+            <li>Alex Iliescu</li>
+            <li>Ami Totorean</li>
+          </ul>
+          <br />
+          <p className="light-faded">
+            And last, but surely not least, a huge hug to the extended
             crew that helped during the event:
           </p>
-          <br />
-          <br />
-          <ul className="crew-list">
-            <li>Milena Vlad</li>
-            <li>Mădălina Mohorîta</li>
+          <ul className={styles.crew_list}>
             <li>Bogdan Cubleșan</li>
-            <li>Marius Cristea</li>
-            <li>Denis Troncotă</li>
+            <li>Andrei Laza</li>
+            <li>Athena Gândilă</li>
+            <li>Arnold Ișpan</li>
           </ul>
-        </section> */}
+        </section>
       </Section>
     </Layout>
   );

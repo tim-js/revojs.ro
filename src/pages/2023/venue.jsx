@@ -90,7 +90,8 @@ const Venue = () => {
               <h3>By car</h3>
               <p>
                 Since the venue is hosted by Iulius Town, there are plenty of
-                parking spots in the mall’s parking area.
+                parking spots in the mall’s parking area. The parking is paid,
+                around 3 RON / hour.
               </p>
             </section>
 

@@ -10,9 +10,9 @@ export const main = [
   //   name: "Call for Papers",
   //   path: "cfp",
   // },
-  {
-    name: "Tickets",
-  },
+  // {
+  //   name: "Tickets",
+  // },
   // {
   //   name: "Workshops",
   // },
