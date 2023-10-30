@@ -25,6 +25,9 @@ export const main = [
   {
     name: "Organizers",
   },
+  {
+    name: "Media",
+  },
 ];
 
 export const secondary = [
@@ -40,9 +43,6 @@ export const secondary = [
   },
   // {
   //   name: "Manifest"
-  // },
-  // {
-  //   name: "Media"
   // },
   {
     name: "Press Info",

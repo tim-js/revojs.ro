@@ -228,7 +228,7 @@ const MediaPage = () => {
 
 export default MediaPage;
 
-function mergeTalkRecordings(agenda, talks, speakers, images) {
+export function mergeTalkRecordings(agenda, talks, speakers, images) {
   const recordings = [];
 
   agenda.forEach((slot) => {

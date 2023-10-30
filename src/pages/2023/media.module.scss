@@ -1,0 +1,104 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.title {
+  --width: 2em;
+}
+
+.after-movie {
+  display: block;
+  margin-top: 2em;
+  @include font(mono);
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover::after {
+    background-color: var(--primary);
+  }
+}
+
+.after-movie::before {
+  background: url("/2023/img-after-movie-2023.jpg");
+  background-size: cover;
+  background-position: center top;
+  content: "";
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.after-movie::after {
+  @include play();
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  z-index: 2;
+  opacity: 1;
+  transform: scale(1);
+  margin-top: 1em;
+}
+
+.media-photos {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.media-heading {
+  padding-left: var(--spacing-content);
+  padding-right: var(--spacing-content);
+  padding-top: 0;
+
+  @include breakpoint(sm) {
+    font-size: 4em;
+  }
+}
+
+.media-photos-list {
+  display: grid;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15em;
+  grid-gap: var(--space-16) 0;
+
+  @include breakpoint(sm, max) {
+    margin-top: 10rem;
+  }
+
+  @include breakpoint(md) {
+    grid-template-columns: auto;
+    grid-gap: calc((100vw - 2 * var(--spacing-content)) / 4 * 40 / 100) 0;
+  }
+}
+
+.media-videos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: var(--spacing-content) 0;
+
+  display: grid;
+  grid-gap: var(--spacing-content);
+
+  grid-template-columns: 1fr;
+
+  @include breakpoint(sm, max) {
+    grid-row-gap: 10rem;
+    margin: 10rem 0;
+  }
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include breakpoint(md) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
