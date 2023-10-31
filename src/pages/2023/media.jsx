@@ -45,51 +45,49 @@ const Media = ({ data }) => {
       </Header>
 
       <Section light className={`${styles.mediaPhotos}`}>
-        <Content centered>
-          <section>
-            <h2 className={`${styles.mediaHeading} big revo-font`}>Photos</h2>
+        <section>
+          <h2 className={`${styles.mediaHeading} big revo-font`}>Photos</h2>
 
-            <ul className={`${styles.mediaPhotosList}`}>
-              <li>
-                <CardPhotos
-                  white
-                  href="https://drive.google.com/drive/folders/18FczA1PJV3w4aDdz_TwWaaMWMWa0UMa4?usp=drive_link"
-                  img={
-                    <GatsbyImage
-                      image={data.imgConference.childImageSharp.gatsbyImageData}
-                      alt="Black and white photo from revo.js 2023 conference, showing the conference venue with participants in audience"
-                    />
-                  }
-                  heading={
-                    <span>
-                      Conference <br />
-                      photos
-                    </span>
-                  }
-                />
-              </li>
+          <ul className={`${styles.mediaPhotosList}`}>
+            <li>
+              <CardPhotos
+                white
+                href="https://drive.google.com/drive/folders/18FczA1PJV3w4aDdz_TwWaaMWMWa0UMa4?usp=drive_link"
+                img={
+                  <GatsbyImage
+                    image={data.imgConference.childImageSharp.gatsbyImageData}
+                    alt="Black and white photo from revo.js 2023 conference, showing the conference venue with participants in audience"
+                  />
+                }
+                heading={
+                  <span>
+                    Conference <br />
+                    photos
+                  </span>
+                }
+              />
+            </li>
 
-              <li>
-                <CardPhotos
-                  white
-                  href="https://drive.google.com/drive/folders/1FRn5ZXIJ1DeQWiEfuXWJCkhNRFXQskep?usp=drive_link"
-                  img={
-                    <GatsbyImage
-                      image={data.imgAfterParty.childImageSharp.gatsbyImageData}
-                      alt="Black and white photo from revo.js 2023 After Party, showing participants talking"
-                    />
-                  }
-                  heading={
-                    <span>
-                      After Party <br />
-                      photos
-                    </span>
-                  }
-                />
-              </li>
-            </ul>
-          </section>
-        </Content>
+            <li>
+              <CardPhotos
+                white
+                href="https://drive.google.com/drive/folders/1FRn5ZXIJ1DeQWiEfuXWJCkhNRFXQskep?usp=drive_link"
+                img={
+                  <GatsbyImage
+                    image={data.imgAfterParty.childImageSharp.gatsbyImageData}
+                    alt="Black and white photo from revo.js 2023 After Party, showing participants talking"
+                  />
+                }
+                heading={
+                  <span>
+                    After Party <br />
+                    photos
+                  </span>
+                }
+              />
+            </li>
+          </ul>
+        </section>
       </Section>
 
       <Section centered dark>
@@ -129,8 +127,6 @@ const MediaPage = () => {
       ) {
         childImageSharp {
           gatsbyImageData(
-            width: 600
-            height: 600
             layout: FULL_WIDTH
             transformOptions: { grayscale: true }
           )
@@ -141,8 +137,6 @@ const MediaPage = () => {
       ) {
         childImageSharp {
           gatsbyImageData(
-            width: 600
-            height: 600
             layout: FULL_WIDTH
             transformOptions: { grayscale: true }
           )

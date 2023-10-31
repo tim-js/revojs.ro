@@ -64,16 +64,30 @@
   display: grid;
   list-style-type: none;
   padding: 0;
-  margin-top: 15em;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-gap: var(--space-16) 0;
-
-  @include breakpoint(sm, max) {
-    margin-top: 10rem;
-  }
+  margin: 0 var(--spacing-content);
+  margin-top: 15em;
 
   @include breakpoint(md) {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr;
     grid-gap: calc((100vw - 2 * var(--spacing-content)) / 4 * 40 / 100) 0;
+  }
+}
+
+.media-photos-list > li.last-odd {
+  @include breakpoint(md) {
+    transform: translateX(
+      calc((100vw - 2 * var(--spacing-content)) / 4 * 70 / 100)
+    );
+  }
+}
+.media-photos-list > li:nth-child(even) {
+  @include breakpoint(md) {
+    transform: translateY(
+      calc((100vw - 2 * var(--spacing-content)) / 4 * 10 / 100)
+    );
   }
 }
 
