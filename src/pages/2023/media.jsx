@@ -170,7 +170,7 @@ const MediaPage = () => {
           node {
             base
             childImageSharp {
-              gatsbyImageData(width: 400, height: 400, layout: FULL_WIDTH)
+              gatsbyImageData(width: 400, height: 400, layout: CONSTRAINED)
             }
           }
         }
