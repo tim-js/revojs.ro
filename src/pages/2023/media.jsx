@@ -5,7 +5,6 @@ import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 import Layout from "@components/Layout";
 import Header from "@components/layout/Header";
-import Content from "@components/Content";
 import Section from "@components/Section";
 import CardPhotos from "@components/CardPhotos";
 import TalkVideo from "@components/TalkVideo";
@@ -31,16 +30,15 @@ const Media = ({ data }) => {
 
   return (
     <Layout title="revo.js Media" noFooterSeparation>
-      <Header centered type="secondary">
+      <Header centered type="secondary" className={styles.header}>
         <h1 className={`title2023 ${styles.title}`}>Media</h1>
-
         <OutboundLink
           className={styles.afterMovie}
           href="https://youtu.be/Bfvts5TXSTE?si=zkbSjL90hjNPyDrB"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="subtitle2023">2023 After Movie</h2>
+          <h2 className={styles.afterMovieTitle}>2023 After Movie</h2>
         </OutboundLink>
       </Header>
 
@@ -52,7 +50,7 @@ const Media = ({ data }) => {
             <li>
               <CardPhotos
                 white
-                href="https://drive.google.com/drive/folders/18FczA1PJV3w4aDdz_TwWaaMWMWa0UMa4?usp=drive_link"
+                href="https://drive.google.com/drive/folders/18FczA1PJV3w4aDdz_TwWaaMWMWa0UMa4?usp=share_link"
                 img={
                   <GatsbyImage
                     image={data.imgConference.childImageSharp.gatsbyImageData}
@@ -71,7 +69,7 @@ const Media = ({ data }) => {
             <li>
               <CardPhotos
                 white
-                href="https://drive.google.com/drive/folders/1FRn5ZXIJ1DeQWiEfuXWJCkhNRFXQskep?usp=drive_link"
+                href="https://drive.google.com/drive/folders/1FRn5ZXIJ1DeQWiEfuXWJCkhNRFXQskep?usp=share_link"
                 img={
                   <GatsbyImage
                     image={data.imgAfterParty.childImageSharp.gatsbyImageData}
@@ -100,7 +98,7 @@ const Media = ({ data }) => {
             {recordings.map((video) => {
               return (
                 <li key={video.title}>
-                  <TalkVideo video={video} />
+                  <TalkVideo video={video} className={styles.mediaVideo} />
                 </li>
               );
             })}
@@ -172,16 +170,7 @@ const MediaPage = () => {
           node {
             base
             childImageSharp {
-              gatsbyImageData(
-                width: 400
-                height: 400
-                transformOptions: {
-                  grayscale: true
-                  fit: COVER
-                  cropFocus: ATTENTION
-                }
-                layout: CONSTRAINED
-              )
+              gatsbyImageData(width: 400, height: 400, layout: FULL_WIDTH)
             }
           }
         }
