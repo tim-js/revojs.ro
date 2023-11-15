@@ -3,7 +3,6 @@
 
 .title {
   --width: 2em;
-  margin-top: 2em;
 }
 
 .after-movie-title {
@@ -154,8 +153,10 @@
       opacity: 0;
       transform: scale(0);
     }
+  }
 
-    &:hover {
+  &:hover {
+    div {
       filter: none;
 
       &::before {
