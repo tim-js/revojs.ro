@@ -166,13 +166,16 @@
     }
   }
 
-  strong {
-    line-height: 1;
-    margin-bottom: 1em;
+
+  & :global(.talk-video-speaker) {
+    display: block;
+    line-height: 1.4;
+    margin-bottom: 0.25em;
     margin-top: 0;
   }
 
-  span {
-    line-height: 1;
+  & :global(.talk-video-title) {
+    display: block;
+    line-height: 1.4;
   }
 }
