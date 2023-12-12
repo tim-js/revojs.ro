@@ -4,7 +4,7 @@ date: "2023-12-11"
 title: "revo.js 2023 Aftermath"
 ---
 
-The second edition of [revo.js](https://revojs.ro/2023) finally took place between **5-6 October 2023**, after an unexpected 3 years pandemic break.
+The second edition of [revo.js](https://revojs.ro/2023) finally took place between **5-6 October 2023**, after an unexpected 3 year pandemic break.
 
 The event was **sold out** one month in advance, gathering more than **300 participants** and **15 speakers** from 10 countries (and 4 continents), during two conference days.
 
@@ -61,7 +61,7 @@ We were pleased to see that many participants appreciated the overall organizati
 
 ### Sound & Video quality
 
-The last (which was also the first) edition of revo.js we hve relied heavily on the technical equipment from the venue, which was not great. That's why we put extra effort to make sound quality a top priority. In addition, we also opted for a large LED screen which also allowed us to overlay the live captions.
+The last (which was also the first) edition of revo.js we have relied heavily on the technical equipment from the venue, which was not great. That's why we've put extra effort to make sound quality a top priority. In addition, we have also opted for a large LED screen which also allowed us to overlay the live captions.
 
 ### Coding challenges
 
@@ -91,9 +91,14 @@ We didn't get involved into any aspects of the catering, since we were expected 
 
 We got mixed feedback regarding the venue. Some liked it, others didn't. As organizers, we have a similar dilema because we know the strengths and weaknesses of the location. The sad part is that there's not much of a choice really in regard to tech event venues in Timisoara. Hopefully, new locations will be built in the near future.
 
-## Next step
+## Next steps
 
 Before we close this retrospective, we'll have to address one of the elephants in the room, which is the next edition. We have decided to skip 2024 and focus on a potential edition in 2025. The reasons are entirely internal: the 2023 edition was quite difficult and we need some rest, but we also need to reconfigure our core team, which will take some time.
 
 In the mean time, don't forget to visit the [media page](/2023/media) if you want to (re)watch any of the talk, look over the photos, or feel the vibe of the event by watching the after movie.
 
+---
+
+We'd like to give a huge thank you to all our [supporters](/2023/supporters), including sponsors, communities, and friends, to the [organizing team](/2023/organizers), including the volunteers which helped during the event, to our [speakers](/2023/speakers) for sharing their knowledge with us, and last but not least, to all our participants for attending revo.js 2023.
+
+**See you all next edition!**
