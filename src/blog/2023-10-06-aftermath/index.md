@@ -35,7 +35,7 @@ In the end, the total cost for revo.js 2023 was around **82.000 EUR**. Here's a 
 
 <br />
 
-Doing some math, we end up with **16.000 EUR** profit. Most of the extra money resulted from an extra sponsor that joined late in the summer, some speakers that covered their travel costs, and changing the venue.
+Doing some math, we end up with **16.000 EUR** below the budget. Most of the extra money resulted from an extra sponsor that joined late in the summer, some speakers that covered their travel costs, and changing the venue.
 
 Since revo.js is a not-for-profit event, we will use the extra money to grow the local JavaScript community as well as to reinvest them in the next edition of revo.js.
 
@@ -81,9 +81,9 @@ We are aware that any speaker lineup we might have, there will always be someone
 
 However, 25% of the feedback mentioned that the overall level of the talks could have been **more advanced** and more **live coding**. Since all participants spend their work day writing code, it's definitely easier to understand code while it's being written or executed during a **live demo**. We'll definitely put this point on out bullet list for the next edition.
 
-### Poor catering
+### Large catering queues
 
-The problems with the catering, that we identified ourselves as well, were multiple. First, the coffee machines were too few, resulting on long queues during the breaks. Second, the lunch setup was really inefficient, resulting again in very long queues which could have been drastically reduced.
+The shortcomings of catering struck us, as organizers, as well. First, the coffee machines were too few, resulting on long queues during the breaks. Second, the lunch setup was really inefficient, resulting again in very long queues which could have been drastically reduced.
 
 We didn't get involved into any aspects of the catering, since we were expected everything to go smooth. We put extra effort into the technical part, which we knew we had to address ourselves, but neglected the catering. We'll definitely have to get involved into this area in future events.
 
