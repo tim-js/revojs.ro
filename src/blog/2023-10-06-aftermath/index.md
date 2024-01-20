@@ -19,7 +19,7 @@ revo.js follows the [JSHeroes](https://jsheroes.io/) initiative, publishing a tr
 
 Our total initial estimated budget, calculated in the summer of 2022, was around **110.000 EUR**. We planned to raise around 60% of the required budget from sponsors and the rest of 40% through tickets.
 
-We managed to raise **64.000 EUR** through sponsorships and **34.000 EUR** from tickets sales, bringing us to a total budget of **98.000 EUR**, a bit lower than initially estimated. This outcome was mainly due to budget cuts within the marketing departments of tech companies.
+We managed to raise **98.000 EUR**: 64.000 EUR through sponsorships and 34.000 EUR from tickets sales. The budget was a bit lower than initially estimated, mainly due to budget cuts within the marketing departments of tech companies.
 
 ### Expenses breakdown
 
